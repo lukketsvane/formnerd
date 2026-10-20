@@ -1,0 +1,151 @@
+{
+  "dato": "2026-10-20",
+  "referanse_file_tokens": {
+    "ref-1-mesh-render.png": "file_f2a72ef3-a495-4158-8b99-08cb867f334d",
+    "ref-2-tube-render.png": "file_45c89564-4f66-4980-851e-5ad75705a917",
+    "ref-3-skisse.jpg": "file_e7e5e72e-f52b-4529-b648-3db9c8aa31bc",
+    "ref-4-kube-handtak.jpg": "file_644f53b9-dd31-4d3a-9606-d92f15a218a9",
+    "ref-5-kube-grid.png": "file_04c231f3-8cba-4021-a3fe-241a90f72f6a"
+  },
+  "modelltest": [
+    {
+      "namn": "ab-seedream",
+      "task_id": "4af3c48f-314a-4b0d-9d7c-56f1903421b2",
+      "model": "seedream_v5",
+      "status": "success",
+      "credits": 5.0
+    },
+    {
+      "namn": "ab-flare",
+      "task_id": null,
+      "model": "chat_image_2.5_flare",
+      "status": "error",
+      "credits": null
+    }
+  ],
+  "konsept": [
+    {
+      "konsept": "01-aatte",
+      "task_id": "5e5df23a-5304-48b5-80d1-b1dddd4ef3ff",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_45c89564-4f66-4980-851e-5ad75705a917",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a"
+      ],
+      "prompt": "New product design render of a compact STEREOSCOPIC camera in exactly the visual language of image[1] and image[2]: soft matte light warm-grey round tubes, thick and pillowy, bundled and draped over a dark graphite rounded-box core, dark grey cylindrical puck buttons on top. This camera has TWO identical lenses side by side on the front, same height, horizontally aligned, for stereo 3D photography. One continuous light-grey tube coils around both lenses in a figure-eight, then rises over the top in an S-shaped wave and runs down the left side as a vertical grip of three stacked ribs. Each lens shows a small square image sensor behind a dark bezel. Palm-sized, cube-like proportions, about 75 mm wide, 55 mm tall, 40 mm deep. USB-C port on the left side. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, high-detail industrial design render, no text, no logos."
+    },
+    {
+      "konsept": "02-dobbel-spole",
+      "task_id": "30d9a8ea-7dcf-4bd2-badf-c96b725312e4",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_45c89564-4f66-4980-851e-5ad75705a917",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. Each lens is wrapped by its own tight spiral of two concentric tube rings, the two spirals touching in the middle like a pair of binocular eyepieces. A bundle of three parallel tubes leaves the spirals, sweeps up over the top in a long gentle arc and drops down the back. Tall dark cylindrical shutter tower on the top right. USB-C port on the right side. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "03-fletta",
+      "task_id": "942d7086-c2e0-4a6d-b3fa-e641d16743b9",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_45c89564-4f66-4980-851e-5ad75705a917",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a",
+        "file_e7e5e72e-f52b-4529-b648-3db9c8aa31bc"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. Two tubes emerge from a rounded vertical hand grip on the left, braid over each other across the top in a loose twist and plunge down the right side, like the tube path in the sketch image[3]. The front is a flat dark graphite plate with the two lenses, each lens framed by one slim light-grey tube ring. Puck shutter button on top of the grip. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "04-kube-boyle",
+      "task_id": "5ae37be8-bebf-43c5-ac6a-2cc928371967",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_644f53b9-dd31-4d3a-9606-d92f15a218a9",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. A compact rounded light-grey cube body with a thin horizontal parting line near the bottom, and a bent dark-grey sheet-metal L-shaped carry handle screwed to the side with two small screws, wrapping under the base and rising above the top like image[1]. On the front, each of the two lenses is framed by a soft tube loop that dips down and joins the other loop. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "05-tube-hank",
+      "task_id": "9f262b4c-1eac-4c9d-b2f7-df635c25d076",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. A rounded light-grey cube body. One thick light-grey tube forms a tall arched carry loop on top, then runs down the front face and curls once around each lens, ending in a small dark round button on the side. Thin horizontal parting line near the bottom. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "06-diagonal",
+      "task_id": "5ae5eafe-2e99-4e11-a04f-d4bd7ee434c0",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. A rounded light-grey cube body with one fat tube draped diagonally over the top-left corner and down across the right side like a sash, never covering the lenses. A dark graphite insert panel on the front holds both lenses. Dark puck dial on top, small dark tab handle at the bottom right. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "07-tvillingkubar",
+      "task_id": "f0009962-aee6-47e5-925f-a6e11f87aa37",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. Two identical small rounded cube modules sit side by side, one lens on the front of each cube, joined into one object by a thick light-grey tube bridge that arches over the top between them and doubles as a carry handle. Each lens has a light tube ring. Dark puck shutter on top of the right cube. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "08-belte",
+      "task_id": "7a72086a-74c7-4ac1-a66e-8b758e6f7e63",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_45c89564-4f66-4980-851e-5ad75705a917",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. A wide landscape body. A belt of three parallel light-grey tubes wraps horizontally around the whole body, and at the front the belt splits and loops around the two lenses before rejoining. Dark graphite core visible above and below the belt. Puck shutter button on the top right. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "09-symmetri",
+      "task_id": "bf24a55e-58c1-488a-be39-1cdc09d81eb7",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_45c89564-4f66-4980-851e-5ad75705a917",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. A perfectly symmetric landscape body like a stereo viewer: a vertical grip of three stacked tube ribs on BOTH the left and the right side, the two lenses in a dark graphite centre section between the grips, a single tube wave across the top centre, one dark puck shutter on the top centre. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    },
+    {
+      "konsept": "10-skulder",
+      "task_id": "2689065a-e583-49c9-891f-5731bf7db44d",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_45c89564-4f66-4980-851e-5ad75705a917",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a",
+        "file_f2a72ef3-a495-4158-8b99-08cb867f334d"
+      ],
+      "prompt": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. A dark graphite rounded box core with the two lenses each set in a light-grey tube ring. A raised tube shoulder on the top right carries a dark cylindrical dial; a long tube sweeps from that shoulder across the top and down the left side into a vertical grip of stacked ribs. USB-C port on the left side. This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos."
+    }
+  ]
+}
