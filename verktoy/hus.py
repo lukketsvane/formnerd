@@ -7,12 +7,10 @@ import trimesh
 from scipy import ndimage
 from skimage import measure
 
-KJELDE = "A2/runde-3/3d/04-brei-basis-eitt-bilete/model.glb"
-BREIDD = 110.0
 PITCH = 0.25
 
 
-def last_ytre(sti=KJELDE, breidd=BREIDD):
+def last_ytre(sti, breidd):
     m = trimesh.load(sti, force="mesh")
     m.merge_vertices(merge_tex=True, merge_norm=True)
     m.apply_translation(-m.bounds[0])
