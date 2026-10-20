@@ -1,0 +1,56 @@
+{
+  "01a-tvillingloep-sunburst/model.glb": {
+    "fyllgrad": 0.517,
+    "to_cam": {
+      "minste_breidd_mm": 113,
+      "hogd_mm": 69,
+      "djupn_mm": 83
+    },
+    "to_cam_pluss_mb": {
+      "minste_breidd_mm": 115,
+      "hogd_mm": 71,
+      "djupn_mm": 84
+    },
+    "delt_i_to_rom": {
+      "minste_breidd_mm": 89,
+      "hogd_mm": 55,
+      "djupn_mm": 65
+    }
+  },
+  "02-eitt-vindauge/model.glb": {
+    "fyllgrad": 0.604,
+    "to_cam": {
+      "minste_breidd_mm": 75,
+      "hogd_mm": 63,
+      "djupn_mm": 53
+    },
+    "to_cam_pluss_mb": {
+      "minste_breidd_mm": 80,
+      "hogd_mm": 67,
+      "djupn_mm": 57
+    },
+    "delt_i_to_rom": {
+      "minste_breidd_mm": 77,
+      "hogd_mm": 65,
+      "djupn_mm": 55
+    }
+  },
+  "04-visir/model.glb": {
+    "fyllgrad": 0.501,
+    "to_cam": {
+      "minste_breidd_mm": 97,
+      "hogd_mm": 64,
+      "djupn_mm": 71
+    },
+    "to_cam_pluss_mb": {
+      "minste_breidd_mm": 110,
+      "hogd_mm": 73,
+      "djupn_mm": 81
+    },
+    "delt_i_to_rom": {
+      "minste_breidd_mm": 91,
+      "hogd_mm": 60,
+      "djupn_mm": 67
+    }
+  }
+}
