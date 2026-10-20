@@ -1,0 +1,528 @@
+{
+  "cam": {
+    "maal": [
+      {
+        "namn": "Kortomriss B × L (nominelt og målt)",
+        "verdi": "27,0 × 40,5 mm (±0,2) nominelt. Teikninga er målsett til 27 × 40,0. Målt: 27,25 × 40,35 og 27,2 × 40,1. Hjørneradius ≈ 2–3 mm.",
+        "kjelde": "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://datasheet.lcsc.com/datasheet/pdf/a6b8e236d770ab01c85fedd0de00a6bb.pdf?productCode=C277946 ; https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png ; https://www.handsontec.com/dataspecs/module/ESP32-CAM.pdf ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad",
+        "tillit": "hoeg",
+        "merknad": "Ai-Thinker sitt datablad er sjølvmotseiande: teksten seier 27*40,5*4,5 (±0,2), men den målsette teikninga seier 40 mm. Handsontec-fotoet er påskrive 40,0 × 27,0. To hobbymålingar med skyvelære gav 40,35 × 27,25 (rcland12) og 40,1 × 27,2 (VE7IT/bullestock). Breidda 27 er sikker. For lengda bør lomma ta minst 40,5 pluss klaring. Hjørneradiusen er ikkje målsett nokon stad: eg målte ca. 3,0 mm i pikslar på Ai-Thinker sin renderte topp-/botnvising (biletet i databladet), og mdaughtrey-modellen brukar 80 mil = 2,0 mm. Alle fire hjørna er avrunda."
+      },
+      {
+        "namn": "Kva 4,5 mm i «27 × 40,5 × 4,5» omfattar",
+        "verdi": "Truleg kretskort (1,0–1,5) + ESP32-S-modul (3,0 ±0,2) ≈ 4,0–4,7 mm, utan stiftlister, microSD-sokkel og kamera. Målt totaltjukn med SD-sokkel (utan stift og kamera): 6,70 mm.",
+        "kjelde": "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://datasheet.lcsc.com/datasheet/pdf/64c809fa198202a6fe4f560f9dddd0e6.pdf?productCode=C277944 ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md",
+        "tillit": "middels",
+        "merknad": "Ingen kjelde seier kva 4,5 mm omfattar, så dette er ein slutning. ESP32-S-databladet gir modulen 18,0 × 25,5 × 3,0 (±0,2), og PCB pluss modul gir om lag 4,5. På den andre sida står SD-sokkelen (~2 mm) og kameraet på SD-sokkelen, og dei er ikkje med i talet. Ei skyvelære-måling inkludert SD-sokkelen gav 6,70 mm."
+      },
+      {
+        "namn": "PCB-tjukkleik",
+        "verdi": "1,0–1,6 mm. Målt 1,05 og 1,25; CAD-modellar brukar 1,0, 1,2 og 1,5.",
+        "kjelde": "https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad ; https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure ; https://github.com/n800sau/roborep/blob/0e9c6173e5f4131d572ce5a0704d17aef9e58ccf/openscad/esp32cam/esp32cam_box.scad ; https://www.printables.com/model/1118515-ai-thinker-esp32-cam-holder",
+        "tillit": "middels",
+        "merknad": "Ingen produsentkjelde oppgir PCB-tjukkleiken. Målt: 1,25 (rcland12) og 1,05 (VE7IT). Modellverdiar: 1,0 (VaTTeRGeR FreeCAD), 1,5 (n800sau) og 1,52 (mdaughtrey). Forfattaren av ein Printables-holdar skriv at det finst ein variant med tynnare og ein med tjukkare PCB (sett berre i søkeutdrag, sida gav 403). Spor/klemmer bør ta 1,0–1,6, eller så må kvart kort målast."
+      },
+      {
+        "namn": "ESP32-S-modul (skjold) – høgd og plassering",
+        "verdi": "Modul 18,0 × 25,5 × 3,0 (±0,2) mm. Toppen står ca. 3,0–3,5 mm over PCB-baksida. Modulen er sentrert på tvers (≈4,5 mm frå kvar langkant) og ligg mot antenneenden, frå ca. 0 til 25,5 mm frå den enden.",
+        "kjelde": "https://datasheet.lcsc.com/datasheet/pdf/64c809fa198202a6fe4f560f9dddd0e6.pdf?productCode=C277944 ; https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://github.com/mdaughtrey/openscad/blob/b29896831d5f656eb754748033ddb6d49238415a/models/model_esp32cam.scad",
+        "tillit": "middels",
+        "merknad": "Ai-Thinker ESP32-S-spesifikasjonen gir 18,0 × 25,5 × 3,0 (±0,2), og dei 3,0 mm omfattar modulen sin eigen PCB. Frå rcland12 avleidd: 6,70 − 1,25 − SD-sokkel (1,8–2,3) ≈ 3,15–3,65. mdaughtrey-modellen har 120 mil = 3,05. Plasseringa er pikselmålt på den renderte Ai-Thinker-vising: skjoldet ligg ca. 4,5–22,5 mm på tvers og 6,1–25,4 mm frå antenneenden. Modulen sit på same side som plasten på stiftlistene, altså motsett side av kameraet."
+      },
+      {
+        "namn": "Kva side kameraet sit på, og om det ligg oppå ESP32-S-modulen",
+        "verdi": "Nei, kameraet ligg ikkje oppå ESP32-S. OV2640 ligg flatt oppå microSD-sokkelen på kamerasida, som er motsett side av ESP32-S-modulen. Linsa peikar rett ut frå kamerasida.",
+        "kjelde": "https://magazine.raspberrypi.com/articles/esp32-cam-review ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://www.lextronic.fr/lextronic_doc/joy-it/SBC-ESP32-CAM.pdf ; https://www.handsontec.com/dataspecs/module/ESP32-CAM.pdf",
+        "tillit": "hoeg",
+        "merknad": "MagPi skriv at kameraet «sits nicely on top of the memory card slot» og må festast med lim eller tape, og rcland12 skriv at det «lays flat on the micro SD card slot». Joy-it- og Handsontec-bileta stadfestar dette. Kamerasida har òg microSD-sporet, FPC-kontakten, den kvite blits-LED-en og silketrykket «ESP32-CAM». Kameraet blir sett på for hand med tape, så plasseringa varierer frå kort til kort."
+      },
+      {
+        "namn": "Linsesenter – avstand frå SD-enden (enden motsett antenna)",
+        "verdi": "8,0–10,6 mm, typisk ≈ 9,5 mm",
+        "kjelde": "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad ; https://github.com/n800sau/roborep/blob/0e9c6173e5f4131d572ce5a0704d17aef9e58ccf/openscad/esp32cam/esp32cam_box.scad ; https://github.com/sidoh/motor_driver_pcb/blob/1fb96846a6ef59ee8adff531baf7582de4963d93/project-box/YAPP_Box-2.0/ESP32-CAM-USB_v19.scad ; https://github.com/59psi/SporePrint/blob/87552326d392b5ec0b7cc28a10111c26f2b7ca71/models/cam_mount.scad ; https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+        "tillit": "middels",
+        "merknad": "Ingen produsent oppgir dette. Uavhengige CAD-kjelder: VaTTeRGeR FreeCAD 9,5 (eg las det ut av .FCStd-fila); VE7IT/bullestock 10,6 (40,1 − 29,5); n800sau ≈8,4 (40,4 − 32); sidoh YAPP har eit hol-sett på 8–10. SporePrint skalerte 10,5 frå Handsontec-figuren. På den renderte Ai-Thinker-vising ligg sentrum av SD-sokkelen ca. 8,0 mm frå SD-enden. Sidan kameraet er tapa på for hand, bør vindauget tole ±1,5 mm i begge retningar. Frå antenneenden blir det ≈ 30–32,5 mm."
+      },
+      {
+        "namn": "Linsesenter – på tvers av kortet",
+        "verdi": "≈ 13,5 mm frå kvar langkant (sentrert). Spreiing 13,5–14,25 mm frå 5V-langkanten.",
+        "kjelde": "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad ; https://github.com/n800sau/roborep/blob/0e9c6173e5f4131d572ce5a0704d17aef9e58ccf/openscad/esp32cam/esp32cam_box.scad ; https://github.com/sidoh/motor_driver_pcb/blob/1fb96846a6ef59ee8adff531baf7582de4963d93/project-box/YAPP_Box-2.0/ESP32-CAM-USB_v19.scad ; https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+        "tillit": "middels",
+        "merknad": "VaTTeRGeR: 13,5 (kamerakropp 9 × 9, frå 9 til 18 mm). bullestock: pcby/2. n800sau: 14 av 28 (med klaring). sidoh: 13,75 + 0,5. SD-sokkelen er òg sentrert (≈13,5) på den renderte vising. Same toleranse for handmontering, ±1,5 mm."
+      },
+      {
+        "namn": "OV2640 – kvadratisk kamerakropp",
+        "verdi": "8,05–8,65 mm kvadrat. Handsontec oppgir 8,6; målt 8,12 × 8,12, 8,15 × 8,25, 8,05 × 8,05 og 8,65. CAD-forenklingar brukar 9 × 9.",
+        "kjelde": "https://www.handsontec.com/dataspecs/module/ESP32-CAM.pdf ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://www.printables.com/model/877739-esp32-cam-ov2640-focus-adjustment-wrench/comments ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad ; https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+        "tillit": "middels",
+        "merknad": "Handsontec sin «Mechanical Dimension»-side har eit foto påskrive 8,6 mm på kamerakroppen. Skyvelære: rcland12 8,12 × 8,12 (og 8,15 × 8,25), ein Printables-kommentator 8,05 × 8,05 (sett berre i søkeutdrag), VE7IT 8,65. Kvadratsokkelen er ca. 2,2 mm høg før løpet byrjar (rcland12)."
+      },
+      {
+        "namn": "OV2640 – diameter på linseløp/linseholdar",
+        "verdi": "7,1–7,92 mm (målt 7,92 og 7,1). Eit estimat i éin modell seier 8.",
+        "kjelde": "https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad ; https://github.com/wouldgo/eth-camera/blob/44347c068e76a686b1e5f4adbdee199795b2eaec/hardware/board.scad",
+        "tillit": "laag",
+        "merknad": "Ingen produsentteikning funnen; Arducam- og Printables-sidene blokkerte henting (403). Grunnlaget er to hobbymålingar som ikkje er samde: 7,92 for det gjenga svarte løpet (rcland12) og 7,1 (VE7IT). Løpet smalnar litt mot toppen."
+      },
+      {
+        "namn": "OV2640-modulen si eiga høgd (sokkel + løp)",
+        "verdi": "≈ 5,85–6,7 mm",
+        "kjelde": "https://welectron.com/Arducam-M0031-OV2640-Camera-Module ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+        "tillit": "middels",
+        "merknad": "Arducam M0031 (OV2640, 24-pin, for ESP32) er oppgitt med totalmål 21 × 12,5 × 5,85 mm, gjengitt hos Welectron. rcland12: kvadratsokkel 2,2 + sylinder ~4,5 ≈ 6,7. VaTTeRGeR modellerer kameraet som ein 9 × 9 × 6,0-boks. Det finst variantar med lengre vidvinkellinse, som er høgare."
+      },
+      {
+        "namn": "Linsetopp over PCB (kamerasida)",
+        "verdi": "≈ 6,6–9,0 mm. Konstruer for minst 9,0 mm, gjerne 9,5, med justering.",
+        "kjelde": "https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad ; https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure ; https://github.com/59psi/SporePrint/blob/87552326d392b5ec0b7cc28a10111c26f2b7ca71/models/cam_mount.scad",
+        "tillit": "laag",
+        "merknad": "rcland12 oppgir «barrel height above PCB face» 8,9. Hans andre mål (12,35 total med kamera og 6,70 med SD-sokkel) gir derimot ≈ 7,55–7,65 over kamerasida, så referanseflata er uklar. VE7IT: linsetopp 7,65 frå PCB-baksida, altså ≈ 6,6 over kamerasida. VaTTeRGeR: kameratopp 8,3 over kamerasida (SD 2,3 + boks 6,0). SporePrint brukar ≤ 9,0. Summen sokkel (~2) + tape + modul (5,85–6,7) peikar mot ca. 8–9 mm. Mål helst eitt av dine eigne kort."
+      },
+      {
+        "namn": "Kameraflatkabel (FPC) og kontakt",
+        "verdi": "Standardmodulen er ca. 21 mm lang totalt (kamera + FPC). 24-pinnars FPC med 0,5 mm pitch, ca. 0,3 mm tjukk; FPC-enden er ca. 12,5 mm brei. Kontakten på kortet ligg ca. 23–29 mm frå SD-enden og ca. 4–22 mm på tvers, på kamerasida.",
+        "kjelde": "https://probots.co.in/ov2640-2-mp-camera-module-2-1cm-66-degree-24pin.html ; https://docs.sunfounder.com/projects/esp-cam-kit/en/latest/component_camera.html ; https://welectron.com/Arducam-M0031-OV2640-Camera-Module ; https://shaddack.mauriceward.com/notes/cam.webt ; https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+        "tillit": "middels",
+        "merknad": "Probots: «Cable Length 21MM», SunFounder: modulen er «21mm in length», Arducam M0031: 21 × 12,5 × 5,85. Kabelen er så kort at kameraet berre får plass bretta 180° tilbake over SD-sokkelen; rcland12 kallar den «extremely short». Vil du flytte kameraet, må du ha 75 mm-varianten. Kontaktposisjonen er pikselmålt på den renderte Ai-Thinker-vising og inkluderer silketrykk. VaTTeRGeR reserverer 17,1–28,5 mm frå SD-enden til kontakt og kabelbrett."
+      },
+      {
+        "namn": "Stiftlister – tal, pitch, rekkjeavstand og posisjon",
+        "verdi": "2 rekkjer × 8 stift (DIP-16), pitch 2,54. Rekkjene står 22,86 mm c/c, dvs. ≈ 2,07 mm frå kvar langkant (renderen viser ≈ 2,2). Stift 5V og 3V3 har senter 4,58 mm frå SD-enden. Siste stiftpar (IO4/GND) står 4,58 + 17,78 = 22,36 mm frå SD-enden, ≈ 18,1 mm frå antenneenden.",
+        "kjelde": "https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png ; https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://datasheet.lcsc.com/datasheet/pdf/a6b8e236d770ab01c85fedd0de00a6bb.pdf?productCode=C277946",
+        "tillit": "hoeg",
+        "merknad": "Den offisielle teikninga målset 22,86, 2,54 og 4,58. Avstanden 2,07 frå kanten er rekna ut med symmetri ((27 − 22,86)/2). Rekkjefølgje frå SD-enden: 5V-rekkja 5V, GND, IO12, IO13, IO15, IO14, IO2, IO4; 3V3-rekkja 3V3, IO16, IO0, GND, VCC, U0R, U0T, GND."
+      },
+      {
+        "namn": "Stift – retning, plast og lengd under PCB",
+        "verdi": "Plasten sit på modulsida (ESP32-S-sida), og stifta peikar bort frå kamerasida. Plasthøgd 2,5 mm. Spissen står ≈ 8,5 mm under PCB-baksida. Halen stikk ≈ 2–2,3 mm opp over kamerasida.",
+        "kjelde": "https://www.handsontec.com/dataspecs/module/ESP32-CAM.pdf ; https://www.lextronic.fr/lextronic_doc/joy-it/SBC-ESP32-CAM.pdf ; https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://github.com/59psi/SporePrint/blob/87552326d392b5ec0b7cc28a10111c26f2b7ca71/models/cam_mount.scad",
+        "tillit": "laag",
+        "merknad": "Retninga er sikker: fotoa hos Handsontec og Joy-it viser plast og lange stift på ESP32-S-sida. Lengdene er ikkje oppgitt av produsenten. VaTTeRGeR-modellen har 11,0 mm frå ESP32-CAM-baksida til komponentsida på MB (2,5 mm hannplast + 8,5 mm hokontakt) og 2,3 mm hale-/loddelag på kamerasida. rcland12: 17,61 med stift mot 12,35 utan, altså stikk spissane 5,26 mm forbi høgaste del på modulsida (skjoldet, ~3,0–3,5), som gir ≈ 8,3–8,8 under PCB. Dette stemmer med ei standard 2,54-hannlist (2,5 plast + ~6 stift)."
+      },
+      {
+        "namn": "MicroSD-spor – posisjon og storleik",
+        "verdi": "På kamerasida ved SD-enden, same ende som 5V/3V3-stifta. Kortet går inn frå kortkanten, og sokkelen er flukt med kanten (0,0 mm overheng). Sokkelen er ≈ 14,5–16 × 14,5–16 mm: ca. 0–15,6 mm frå SD-enden og ca. 5,4–21,7 mm på tvers (sentrert ≈ 13,5). Høgd ≈ 1,8–2,3 mm over PCB.",
+        "kjelde": "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://github.com/mdaughtrey/openscad/blob/b29896831d5f656eb754748033ddb6d49238415a/models/model_esp32cam.scad ; https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure ; https://github.com/bullestock/openscad/blob/774acb4c349689f006f1ae3b60854ce54f7bb7e6/native/esp32cam-enc.scad ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md",
+        "tillit": "middels",
+        "merknad": "Renderen gir 0,2–15,9 × 5,4–21,5. mdaughtrey: 0,65–15,15 × 6,35–21,1 (14,5 × 14,7, høgd 1,78). VaTTeRGeR: 0–15,6 × 5,65–21,7 (høgd 2,3). VE7IT: 15 × 15 sentrert, topp 3,0 frå PCB-baksida. rcland12 målte 0,0 mm overheng forbi PCB-kanten."
+      },
+      {
+        "namn": "Kor langt eit microSD-kort stikk ut",
+        "verdi": "Ikkje funne. Kortet sjølv er 11 × 15 × 1,0 mm.",
+        "kjelde": "https://en.wikipedia.org/wiki/SD_card ; https://thinkrobotics.com/blogs/learn/esp32-cam-a-comprehensive-guide",
+        "tillit": "laag",
+        "merknad": "Ingen kjelde gir utstikket for eit innsett kort. Éi kjelde, sett berre i søkeutdrag, kallar sporet fjørbelasta (push-push). Då må kortet trykkjast inn att for å løysast ut, og veggen treng ei opning med fingertilgang. Sokkelen er ca. 15,6 mm djup og flukt med kanten, så eit innsett kort står truleg nær flukt til nokre få mm ute. Dette må målast."
+      },
+      {
+        "namn": "Blits-LED (kvit, GPIO4)",
+        "verdi": "På kamerasida nær 3V3-langkanten. Senter ≈ 24,5–25 mm frå 5V-kanten (≈ 2–2,5 mm frå 3V3-kanten) og ≈ 29,4–30,8 mm frå SD-enden (≈ 10–10,6 mm frå antenneenden). Ca. 2,5–3 mm kvadrat.",
+        "kjelde": "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://github.com/59psi/SporePrint/blob/87552326d392b5ec0b7cc28a10111c26f2b7ca71/models/cam_mount.scad ; https://github.com/mdaughtrey/openscad/blob/b29896831d5f656eb754748033ddb6d49238415a/models/model_esp32cam.scad ; https://github.com/n800sau/roborep/blob/0e9c6173e5f4131d572ce5a0704d17aef9e58ccf/openscad/esp32cam/esp32cam_box.scad ; https://github.com/sidoh/motor_driver_pcb/blob/1fb96846a6ef59ee8adff531baf7582de4963d93/project-box/YAPP_Box-2.0/ESP32-CAM-USB_v19.scad",
+        "tillit": "middels",
+        "merknad": "Pikselmålt på renderen: senter 24,9 / 29,4, lysflate 23,7–26,2 × 28,2–30,7. SporePrint: 24,5 / 30,2 (målt 24,4–24,9 / 29,8–30,8). mdaughtrey: 8,9–11,9 frå antenneenden og 0,25–3,3 frå kanten. n800sau: hol rundt 25 / 10 frå antenneenden. sidoh: 30 frå SD-enden. LED-en står ved sida av FPC-kontakten, ved U0T/GND-enden av 3V3-rekkja. Høgda er ikkje funnen; modellar brukar 1,6–2,3."
+      },
+      {
+        "namn": "Reset-knapp (RST) på ESP32-CAM",
+        "verdi": "På modulsida (same side som ESP32-S), i hjørnet ved SD-enden ved sida av 5V-stiften. Senter ≈ 5,3–5,5 mm frå 5V-langkanten og ≈ 3,1–3,6 mm frå SD-enden. Kropp ca. 3–4 mm, høgd ≈ 1,5–1,8 mm.",
+        "kjelde": "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://wiki.dfrobot.com/dfr0602/ ; https://github.com/mdaughtrey/openscad/blob/b29896831d5f656eb754748033ddb6d49238415a/models/model_esp32cam.scad",
+        "tillit": "middels",
+        "merknad": "Plasseringa er pikselmålt på renderen (bbox 2,9–7,7 × 34,5–39,3 frå antenneenden, inkl. «RST»-teksten). DFRobot-pinout og Handsontec-foto viser same stad. mdaughtrey: 34,8–38,6 mm frå antenneenden og 3,9–7,0 frå kanten, høgd ≈ 1,5. Når kortet står på MB, er knappen gøymd mellom korta og kan ikkje nåast; bruk RST/IO0 på MB. Den raude LED1 (GPIO33) sit òg på modulsida."
+      },
+      {
+        "namn": "PCB-antenneende og keep-out",
+        "verdi": "Antenna sit i kortenden motsett SD-sporet og 5V/3V3-stifta. Teikninga viser ANT-sona 6,218 mm djup over heile breidda (33,782 mm frå SD-enden). Målt kopar-meander ca. 17,8 mm langs kanten × 7,1 mm inn; IPEX-kontakten ligg ca. 8–10,5 mm inn.",
+        "kjelde": "https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png ; https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md",
+        "tillit": "hoeg",
+        "merknad": "6,218 er målsett på Ai-Thinker-teikninga. 17,82 × 7,11 og 10,5 er rcland12 sine skyvelære-mål. Meanderen ligg på ESP32-S-modulen, altså modulsida. Hald denne enden fri for metall og tjukt materiale; VaTTeRGeR og SporePrint-kjelda brukar tynne veggar der."
+      },
+      {
+        "namn": "Monteringshol",
+        "verdi": "Ingen",
+        "kjelde": "https://magazine.raspberrypi.com/articles/esp32-cam-review ; https://github.com/rcland12/ESP32-Security/blob/633dcb84dc85e364c9f3aa8cd1f421454e744e70/MEASUREMENTS.md ; https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+        "tillit": "hoeg",
+        "merknad": "MagPi nemner «lack of mounting holes», og rcland12 skriv «no mounting holes». Teikninga viser ingen hol. Kortet må haldast i spor, klemmer eller ribber mot kanten, eller gjennom stiftlistene."
+      },
+      {
+        "namn": "Målsett teikning (Ai-Thinker ESP32-CAM V1.0)",
+        "verdi": "Topp-vising: 27 × 40 mm, ANT-sone 6,218, 33,782, rekkjeavstand 22,86, pitch 2,54 og 4,58 frå SD-enden til stift 5V/3V3. Ingen høgder.",
+        "kjelde": "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf ; https://datasheet.lcsc.com/datasheet/pdf/a6b8e236d770ab01c85fedd0de00a6bb.pdf?productCode=C277946 ; https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png",
+        "tillit": "hoeg",
+        "merknad": "Teikninga er eit omriss med avrunda hjørne. Breidda er 27, lengda 40 (ikkje 40,5). «ANT»-feltet er markert øvst med 6,218 mm. 33,782 går frå SD-enden til ANT-lina (40 − 6,218). To loddrette stiftrekkjer à 8 har pin-namn, 22,86 mm mellom rekkjene, 2,54 pitch og 4,58 mm frå nedre kant til senter av stift 5V/3V3. Teikninga viser ikkje kamera, SD-spor, LED, knapp eller høgder. Ved sida står renderte foto av begge sider, skalarette (stiftpitch målt til 2,51 og 4,64 i pikslar), og eg nytta dei til pikselmålingane over. Same teikning ligg i den kinesiske utgåva på LCSC og hos DFRobot (DFR0602)."
+      }
+    ],
+    "samandrag": "Koordinatar: kamerasida (microSD, FPC-kontakt, kvit blits-LED, silketrykk «ESP32-CAM») vender mot lesaren, og «SD-enden» er kortenden ved 5V/3V3-stifta, motsett antenna. Den einaste målsette produsentteikninga er Ai-Thinker si (datablad V1.0, òg hos LCSC og DFRobot). Ho gir 27 × 40 mm (teksten seier 27 × 40,5 × 4,5 ±0,2), ANT-sone 6,218 mm, 2 × 8 stift med 2,54 pitch, 22,86 mm mellom rekkjene og 4,58 mm frå SD-enden til stift 5V/3V3. Ho har ingen høgder, og ingen kjelde seier kva dei 4,5 mm omfattar; truleg PCB + ESP32-S-modul (3,0 ±0,2 etter ESP32-S-databladet), utan stift, SD-sokkel og kamera. Kortet har ingen monteringshol. Stiftplasten og ESP32-S sit på modulsida, og stifta peikar bort frå kamerasida. Står kortet på ESP32-CAM-MB, vender kameraet bort frå MB, og RST-knappen på ESP32-CAM blir gøymd mellom korta. OV2640 ligg ikkje oppå ESP32-S. Det ligg flatt, tapa oppå microSD-sokkelen på kamerasida, med ein ca. 21 mm lang modul/FPC bretta tilbake frå kontakten. Linsesenteret er ikkje oppgitt av produsenten. Fire uavhengige CAD-modellar og pikselmåling av den offisielle renderen gir 8,0–10,6 mm (typisk ~9,5) frå SD-enden, sentrert på tvers (~13,5 mm). Rekn med ±1,5 mm fordi kameraet er handmontert. Kamerakroppen er 8,05–8,65 mm kvadrat (Handsontec 8,6), løpet 7,1–7,9 mm, og linsetoppen står ≈ 6,6–9,0 mm over PCB på kamerasida. Mykje av høgdedata og PCB-tjukkleik (1,0–1,6) kjem frå hobbymålingar og stemmer ikkje heilt overeins, så mål helst eitt kort med skyvelære før endeleg utskrift. Kor langt eit SD-kort stikk ut, fann eg ikkje. Elecrow sin PDF-spegel og Printables/Arducam-sidene kunne ikkje hentast (502/403). Same Ai-Thinker-dokument vart henta frå iarduino og LCSC i staden. Printables- og Thinkrobotics-opplysningane er berre sett i søkeutdrag."
+  },
+  "mb": {
+    "samandrag": "Eg fann inga mekanisk teikning eller datablad for ESP32-CAM-MB frå Ai-Thinker eller LCSC. Mål på kortomriss og kontakttype er henta frå fleire uavhengige forhandlarar. Fleire andre mål har eg rekna ut sjølv frå fire kabinett på Printables som skal passe til CAM+MB (STL lasta ned via API-et og snitta i mm). Dei er derfor merkte laag/middels.\n\nHovudfunn:\n- **Kortomriss:** MB er om lag 40 x 27 mm (spenn 39–40 x 27). Kortet har inga monteringshol.\n- **USB:** Micro-USB B er vanlegast. Kontakten sit sentrert på den eine kortkanten.\n- **Retning i stabelen:** USB-enden fell saman med enden på CAM der PCB-antenna/IPEX, FPC-kontakten og blits-LED-en sit. Linsa (på SD-sporet) og pinneradene sit i motsett ende. Dette er stadfesta av forhandlartekst, produktfoto og kabinett-CAD i eitt stykke.\n- **Hunnheader:** 2 x 1x8 hunnheader, 2,54 mm deling, 22,86 mm mellom radene (c–c).\n- **Knappar:** IO0 og RST er sideaktiverte brytarar på langkantane, om lag 7,5–8,6 mm frå USB-kanten. RST på MB resettar ikkje alltid CAM.\n- **Fotavtrykk:** Stabelen har tilnærma same fotavtrykk som CAM (kabinett med innvendig 40,0–40,5 x 27,3–29,0 mm held heile stabelen).\n- **Stabelhøgd:** Om lag 18–22 mm frå undersida av MB til toppen av linsa, typisk rundt 20 mm. Dette er utleidd, ikkje målt.\n- **Linsa:** Linsesenteret ligg om lag 29,5–30,6 mm frå USB-veggen og nominelt midt på tvers. Kameramodulen kan likevel sitje fleire mm ut av senter.\n\nIkkje funne i nokon kjelde: PCB-tjukkleik, eksakt headerhøgd, eksakte mål på USB-kontakten og komponentar på undersida.\n\nUSB-C-variantar finst, men kortmåla spriker (om lag 48 x 27, 40 x 33 x 12 og 39,8 x 27 mm) og må målast for seg.\n\nFør design for print bør desse måla takast med skyvelære på dei stadfesta korta: PCB-tjukkleik, headerhøgd, stabelhøgd til linsetopp, USB-kontakten (breidd, høgd, plassering og om han stikk ut over kanten), knappeposisjon og kor mykje knappane stikk ut, og kvar linsa faktisk sit.\n\nKopi av PDF-manualen og analyserte STL-filer ligg i /tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/amz og /tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/stl.",
+    "maal": [
+      {
+        "namn": "MB kortomriss (L x B)",
+        "verdi": "40 x 27 mm (spenn 39–40 x 27 mm; ei kjelde seier 40 x 25 mm)",
+        "kjelde": "https://probots.co.in/esp32-cam-mb-micro-usb-programmer-shield-type-a-ch340-serial-downloader.html (40 x 27); https://probots.co.in/usb-ttl-serial-download-module-for-esp32-s-cam-mb-development-programming-board-micro-b.html (40*27); https://www.tinytronics.nl/nl/development-boards/accessoires/adapter-boards/esp32-cam-mb-programmeer-shield (40 x 27); https://thinkrobotics.com/products/esp32-cam-mb-online (40 x 27); https://pacificcustomengineering.com/product/esp32-cam-esp32-cam-mb-5v-wifi-bluetooth-development-board-ch340g-ov2640-camera/ (39,8 x 27); https://abra-electronics.com/wireless/wireless-wifi-en/esp32-cam-mb.html (39 x 27); https://zbotic.in/product/esp32-cam-mb-micro-usb-download-module-for-esp32-cam-development-board/ (40 x 25 x 10, frå søkeutdrag)",
+        "tillit": "middels",
+        "merknad": "Eg fann inga produsentteikning frå Ai-Thinker eller LCSC, berre forhandlarlister. Fleirtalet seier 40 x 27 mm, og 25 mm-breidda er truleg feil. Kabinett som passar til CAM+MB har innvendig 40,0–40,5 x 27,3–29,0 mm (sjå punktet om fotavtrykk), og det stør om lag 40 x 27 mm."
+      },
+      {
+        "namn": "MB høgd utan CAM (PCB + hunnheader)",
+        "verdi": "ca. 10 mm",
+        "kjelde": "https://zbotic.in/product/esp32-cam-mb-micro-usb-download-module-for-esp32-cam-development-board/ (40x25x10, søkeutdrag); https://scccltd.com/products/esp32-cam-mb-ch340-usb-module (40 x 27 x 10, søkeutdrag); https://thinkrobotics.com/products/esp32-cam-mb-online (40 x 27 x 12, uklart kva som er med)",
+        "tillit": "laag",
+        "merknad": "Eg tolkar det tredje talet som høgda. Ingen av kjeldene seier kva som er rekna med. Talet stemmer med 1,6 mm PCB + 8,5 mm header, men begge desse er òg ustadfesta. Ein forhandlar av eit liknande kort (Newegg) åtvarar om 1–2 cm måleavvik."
+      },
+      {
+        "namn": "MB PCB-tjukkleik",
+        "verdi": "Ikkje funne",
+        "kjelde": "Ingen kjelde (søk på 1,6/1,2 mm gav ingen treff for ESP32-CAM-MB)",
+        "tillit": "laag",
+        "merknad": "1,6 mm er vanleg standard, men det er ikkje stadfesta. Eit indirekte teikn: USB-holet i Printables 1524242 (z 4,5–7,0 mm med kortet liggjande på 3,2 mm) passar med om lag 1,2–1,6 mm. Mål med skyvelære."
+      },
+      {
+        "namn": "MB vekt",
+        "verdi": "6 g (Tinytronics) / 10 g (Probots)",
+        "kjelde": "https://www.tinytronics.nl/nl/development-boards/accessoires/adapter-boards/esp32-cam-mb-programmeer-shield ; https://probots.co.in/usb-ttl-serial-download-module-for-esp32-s-cam-mb-development-programming-board-micro-b.html",
+        "tillit": "laag",
+        "merknad": "Usemje kjelder. Talet er ikkje kritisk for kabinettet."
+      },
+      {
+        "namn": "USB-kontakt, type",
+        "verdi": "Micro-USB B er vanlegast. USB-C-variantar finst.",
+        "kjelde": "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/ (micro USB); https://probots.co.in/esp32-cam-mb-micro-usb-programmer-shield-type-a-ch340-serial-downloader.html (Micro-B); https://www.tinytronics.nl/nl/development-boards/accessoires/adapter-boards/esp32-cam-mb-programmeer-shield (Micro USB female); https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (foto s. 8, micro-USB); USB-C: https://circuit.rocks/products/esp32-cam-usb-programmer-esp32-cam-mb-ov2640-2mp-wi-fi-ble-usb-c-ch340-8mb-psram",
+        "tillit": "middels",
+        "merknad": "Nesten alle forhandlarar og kabinett viser micro-B. Kjeldene vekslar mellom CH340G og CH340C som brikke. USB-C-versjonane er andre kort med andre mål (sjå eige punkt)."
+      },
+      {
+        "namn": "USB-posisjon på kortet",
+        "verdi": "Sentrert på den eine kortkanten (avvik ≤0,3 mm frå senter i kabinett-CAD)",
+        "kjelde": "https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (foto s. 8: USB midt mellom IO0 og RST); Printables-CAD: https://www.printables.com/model/1524242 (hol sentrert), https://www.printables.com/model/650751 (senter 114,95 mot kabinettsenter 115,0), https://www.printables.com/model/1164651 (18,49 mot 18,24), https://www.printables.com/model/1057397 (sentrert)",
+        "tillit": "hoeg",
+        "merknad": "Kontakten sit på oversida av MB (komponentsida, mot CAM). Foto tyder på at framkanten ligg om lag kant i kant med PCB-en, men eventuelt utstikk er ikkje stadfesta."
+      },
+      {
+        "namn": "Retning: USB-ende i høve til CAM (antenne/kamera)",
+        "verdi": "USB-enden fell saman med enden på CAM der PCB-antenna/IPEX, FPC-kontakten og blits-LED-en sit. Linsa (på SD-sporet) og pinneradene (3V3/5V-enden) sit i motsett ende, over hunnheaderane.",
+        "kjelde": "https://probots.co.in/esp32-cam-mb-micro-usb-programmer-shield-type-a-ch340-serial-downloader.html («Align the antenna connector of your ESP32-CAM with the same end as the USB port on the shield»); https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (foto s. 1 og 8, og CAM-teikning s. 6: pinnane ligg nær enden utan antenne); https://www.printables.com/model/1164651 og https://www.printables.com/model/1057397 (eitt stykke med linsehol 30,5 og 29,5 mm frå USB-veggen)",
+        "tillit": "hoeg",
+        "merknad": "Tre uavhengige kjelder seier det same. For kabinettet betyr det at antenna sit rett over USB-enden, så det bør ikkje vere metall der. Linsa sit i den andre enden."
+      },
+      {
+        "namn": "Stabel-fotavtrykk / overheng",
+        "verdi": "Inga vesentleg overheng. CAM (27 x 40–40,5) og MB (om lag 27 x 40) ligg tilnærma kant i kant i begge endar. Stabelen får plass i 40,0–40,5 x 27,3–29,0 mm innvendig.",
+        "kjelde": "Printables-CAD (analysert): https://www.printables.com/model/1524242 (innv. 40,0 x 29,0), https://www.printables.com/model/650751 (40,0 x 27,3–27,9), https://www.printables.com/model/1164651 (40,5 x 28,0); CAM: https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf (27 x 40,5)",
+        "tillit": "middels",
+        "merknad": "Utleidd frå kabinett som er publiserte for CAM+MB, ikkje målt direkte. Knappane stikk truleg litt ut forbi langkantane. Dei fleste kabinetta har innvendig breidd 28–29 mm og sidehol for knappane."
+      },
+      {
+        "namn": "Hunnheader (type og plassering på tvers)",
+        "verdi": "2 x 1x8 hunnheader, 2,54 mm deling, 22,86 mm mellom radene (c–c), pinnesenter 2,07 mm frå langkanten",
+        "kjelde": "https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (CAM-teikning s. 6: 22,86 / 2,07 / 2,54; MB-foto s. 8: 2 x 8 hunnheaderar); https://www.tinytronics.nl/nl/development-boards/accessoires/adapter-boards/esp32-cam-mb-programmeer-shield (pinheader female 2,54 mm); https://probots.co.in/esp32-cam-mb-micro-usb-programmer-shield-type-a-ch340-serial-downloader.html (female headers pre-soldered)",
+        "tillit": "middels",
+        "merknad": "Radavstanden er henta frå CAM-teikninga. MB-headerane må ha same avstand for at CAM-en skal passe. CAM-en har hannpinnar på undersida som går ned i MB-headerane."
+      },
+      {
+        "namn": "Hunnheader, høgd over MB-PCB",
+        "verdi": "Ikkje oppgitt for MB. Standard 2,54 mm hunnheader har typisk 8,0–8,5 mm kropp.",
+        "kjelde": "https://protosupplies.com/product/header-female-1x19/ (generisk: 8 mm kropp); indirekte: MB-høgd om lag 10 mm i forhandlarlister (sjå eige punkt)",
+        "tillit": "laag",
+        "merknad": "Ikkje stadfesta for dette kortet. Mål på det faktiske kortet."
+      },
+      {
+        "namn": "Header-posisjon langs kortet",
+        "verdi": "Headerane sit i enden motsett USB. Første pinnesenter ligg om lag 4,6 mm frå denne kortkanten (CAM sin 3V3/5V-ende). Radlengda er 8 x 2,54 = 20,32 mm.",
+        "kjelde": "https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (skalert frå CAM-teikninga s. 6 og fotoa s. 1 og 8)",
+        "tillit": "laag",
+        "merknad": "Eg har målt 4,6 mm i ei udimensjonert, skalert teikning, så rekn med om lag ±0,5 mm. Fotoa stadfestar berre at headerane er i den andre enden enn USB."
+      },
+      {
+        "namn": "Total stabelhøgd (underside MB til topp linse)",
+        "verdi": "ca. 18–22 mm (typisk om lag 20 mm). I tillegg kjem om lag 1–2 mm loddespissar under MB.",
+        "kjelde": "Printables-CAD (analysert): https://www.printables.com/model/1524242 (MB på 3,2 mm, lokk på 22,8 mm: 19,6–20,8 mm, 2,0 mm lomme under MB); https://www.printables.com/model/1164651 (22,0 mm innvendig, MB teipa mot bakveggen); https://www.printables.com/model/1057397 (18 mm djupn + 2 mm frontplate med linsehol); https://www.printables.com/model/650751 (om lag 18,4–21,4 mm)",
+        "tillit": "laag",
+        "merknad": "Utleidd frå innvendige mål i kabinett, ikkje målt direkte. Høgda varierer med kameramodul og linsehøgd, kor høg headeren er, og om modulen er teipa til SD-sporet. Mål dei stadfesta korta."
+      },
+      {
+        "namn": "Linseposisjon i stabelen",
+        "verdi": "Linsesenteret ligg om lag 29,5–30,6 mm frå USB-veggen (innvendig) og om lag 9,3–13,5 mm frå motsett ende, nominelt midt på tvers. Linsehola i kabinetta er Ø7,2–8,5 mm (eller 9 x 9 mm).",
+        "kjelde": "https://www.printables.com/model/1164651 (30,5/10,0 mm, Ø8,5); https://www.printables.com/model/1057397 (29,5/13,5 mm, 9x9); https://www.printables.com/model/650751 (30,5/9,5 mm, Ø8,1); https://www.printables.com/model/1524242 (30,6/9,4 mm, Ø7,2)",
+        "tillit": "laag",
+        "merknad": "At linsa sit i enden motsett USB er sikkert. Den eksakte plasseringa er det ikkje: kameramodulen heng i flatkabelen og ligg laust eller teipa på SD-sporet. Fotoet på s. 1 i Amazon-PDF-en viser linsa fleire mm ut av senter. Lag ei romsleg eller justerbar linseopning."
+      },
+      {
+        "namn": "Blits-LED (på CAM) i høve til USB",
+        "verdi": "I USB-enden, om lag 10 mm frå USB-veggen og om lag 11 mm ut frå senterlinja",
+        "kjelde": "https://www.printables.com/model/650751 (blitshol 5,4 x 5,2 mm, senter 10,3 mm frå USB-veggen og 11,45 mm frå senter); https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (foto s. 1 og 8)",
+        "tillit": "laag",
+        "merknad": "Relevant om kabinettet skal ha blitsopning eller må skjerme blitsen."
+      },
+      {
+        "namn": "Knappar på MB (IO0, RST)",
+        "verdi": "To sideaktiverte brytarar (aktuatoren peikar ut gjennom langkantane), éin på kvar langside nær USB-enden. Med USB mot deg og komponentsida opp sit IO0 til venstre og RST til høgre. Senter er om lag 7,5–8,6 mm frå USB-kanten.",
+        "kjelde": "https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (foto s. 8: IO0 og RST ved USB-hjørna, om lag 8,6 mm frå USB-kanten skalert); https://www.printables.com/model/1164651 (sidehol 7,3 mm breie, 5,0–12,3 mm frå USB-veggen); https://www.printables.com/model/650751 (sidehol 5,5–9,5 mm frå USB-veggen); https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/ (lesarkommentar: IO0 «on the side of the module»)",
+        "tillit": "middels",
+        "merknad": "At brytarane sit på langkantane, er godt underbygt av foto og to kabinett med sidehol. Avstanden frå USB-kanten er eit estimat (laag)."
+      },
+      {
+        "namn": "Knappevariantar og RST-funksjon",
+        "verdi": "Nokre MB-versjonar har berre RST og ingen IO0. RST på MB resettar ikkje alltid CAM-en.",
+        "kjelde": "https://probots.co.in/esp32-cam-mb-micro-usb-programmer-shield-type-a-ch340-serial-downloader.html (ingen Boot/IO0-knapp); https://www.tinytronics.nl/nl/development-boards/accessoires/adapter-boards/esp32-cam-mb-programmeer-shield («De RST knop op dit shield werkt niet»); https://community.platformio.org/t/espcam-vscode-failed-to-connect-esp32-no-serial-data-received/30224?page=2",
+        "tillit": "middels",
+        "merknad": "CAM-en har sin eigen RST-knapp på undersida (modulsida), ved 5V-enden (foto s. 4 i Amazon-PDF-en). I stabelen vender han ned mot MB og er vanskeleg å nå. Vurder ei tilgangsopning eller ein straumbrytar."
+      },
+      {
+        "namn": "USB-kontakt, kroppsstorleik og høgd",
+        "verdi": "Ikkje oppgitt for MB. Ein typisk micro-B SMD-kontakt er om lag 8,0 x 5,6 mm og 3,0 mm høg. Kabinettopning for kontaktflata: 7,0 x 2,5 mm, 1,3–3,8 mm over undersida av MB. Opningar for pluggen er 9–12,5 mm breie.",
+        "kjelde": "https://www.hqonline.com/product-detail/usb-connectors-xkb-u254-051t-4bh23-s2b-2500286497 (generisk døme: 8,00 x 5,61 mm, h 3,00 mm); https://www.printables.com/model/1524242 (hol 7,0 x 2,5 mm på z 4,5–7,0 med MB på 3,2 mm); https://www.printables.com/model/650751 (9,8 x 5,4 mm); https://www.printables.com/model/1057397 (10 mm breidd); https://www.printables.com/model/1164651 (12,5 mm breidd)",
+        "tillit": "laag",
+        "merknad": "Kontaktmåla er generiske og ikkje målte på MB. Kabinettopningane viser kva andre har brukt med hell. Rekn med plass til umoulding på kabelpluggen."
+      },
+      {
+        "namn": "USB-C-variantar av MB",
+        "verdi": "Ikkje standardiserte: om lag 48 x 27 mm (circuit.rocks), 40 x 33 x 12 mm med ekstra ekspansjonsheader (Tokopedia, CH340C Type-C) og 39,8 x 27 mm (Aideepen-lista)",
+        "kjelde": "https://circuit.rocks/products/esp32-cam-usb-programmer-esp32-cam-mb-ov2640-2mp-wi-fi-ble-usb-c-ch340-8mb-psram ; https://www.tokopedia.com/tokosemirsepatu/esp32-cam-mb-development-board-test-backboard-serial-port-burner-module-with-expansion-interface-ch340c-type-c-interface-1730953883287979494 (søkeutdrag) ; https://www.amazon.com/Aideepen-ESP32-CAM-ESP32-CAM-MB-CH-340G-NodeMCU/dp/B0CMTVFCYD (søkeutdrag) ; https://www.printables.com/model/992033 («the bigger USB-C board»)",
+        "tillit": "laag",
+        "merknad": "Om dei stadfesta korta er USB-C, må dei målast heilt for seg. Ingen av desse måla kan overførast frå micro-B-versjonen."
+      },
+      {
+        "namn": "Komponentar på undersida av MB",
+        "verdi": "Ikkje dokumentert. Alle synlege SMD-komponentar (CH340, regulator, kondensatorar, USB, knappar) sit på oversida. Undersida har truleg berre loddepunkt frå headerane.",
+        "kjelde": "https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (MB-foto s. 8, berre oversida); https://www.printables.com/model/1524242 (2,0 mm lomme under MB); https://www.printables.com/model/1164651 (MB teipa rett mot bakveggen)",
+        "tillit": "laag",
+        "merknad": "Set av om lag 2 mm under MB til loddespissar fram til undersida er kontrollert."
+      },
+      {
+        "namn": "Monteringshol på MB",
+        "verdi": "Ingen (ikkje synlege på foto, og ingen kjelde nemner hol)",
+        "kjelde": "https://m.media-amazon.com/images/I/A12ZyNFEJOL.pdf (foto s. 8); https://www.printables.com/model/1164651 («secure the programmer with double-sided tape on its back»)",
+        "tillit": "middels",
+        "merknad": "Kabinetta held korta med lommer, lister, friksjon eller teip, ikkje skruer."
+      },
+      {
+        "namn": "CAM-referansemål (for stabelen)",
+        "verdi": "27 x 40,5 x 4,5 (±0,2) mm",
+        "kjelde": "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf",
+        "tillit": "hoeg",
+        "merknad": "Nokre forhandlarar seier 27 x 40 mm. 4,5 mm er tjukkleiken på CAM utan kamera og pinnar. Teikninga i Amazon-PDF-en gir 40 mm lengd og 22,86 mm mellom pinneradene."
+      }
+    ]
+  },
+  "knapp": {
+    "maal": [
+      {
+        "namn": "6x6 mm taktil brytar: kroppsmål (B x D)",
+        "verdi": "6,0 ± 0,2 x 6,0 ± 0,2 mm",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf (Omron B3F, A070-E1-08, Dimensions 6x6 mm, B3F-1000/1020)",
+        "tillit": "hoeg",
+        "merknad": "Omron B3F er referansedelen for den vanlege 6x6-knappen. Adafruit sin 6x6x5 mm-knapp (produkt 367) viser sjølv til B3F-1000-databladet for mål. Generelle toleransar i databladet er ±0,4 mm der ikkje anna er oppgjeve."
+      },
+      {
+        "namn": "6x6 mm taktil brytar: total høgd over kretskortet",
+        "verdi": "4,3 ± 0,2 mm (B3F-1000) eller 5,0 ± 0,2 mm (B3F-1020). Andre variantar er 7,0, 7,3 (utstikkande stempel) og 9,5 mm.",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf ; https://www.adafruit.com/product/367 (6,0 x 6,0 x 5,0 mm) ; https://grobotronics.com/tact-switch-6x6mm-5mm-4pins.html (høgd 5 mm frå kortet)",
+        "tillit": "hoeg",
+        "merknad": "Knappane i startsetta er oftast 6x6x5 mm, men det har eg ikkje stadfesta frå Arduino eller Elegoo sjølve. Sjølve huset utan stempel er om lag 3,5 mm høgt: det er lese ut av teikninga, så sjå på det som middels sikkert. Ver merksam på at kit kan innehalde 4,3 mm-varianten."
+      },
+      {
+        "namn": "6x6 mm taktil brytar: diameter på stempelet",
+        "verdi": "Ø3,5 mm",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf (teikning B3F-1000/1100: '3.5 dia.')",
+        "tillit": "hoeg",
+        "merknad": "Gjeld runde, flate stempel. Utstikkande variant (B3F-1050) har firkanta stempel på 2,4 x 2,4 ± 0,1 mm. Eigen tilråding: lag hol eller føring for eit printa trykkstempel på minst Ø4,0 mm."
+      },
+      {
+        "namn": "6x6 mm taktil brytar: vandring (pretravel)",
+        "verdi": "0,25 mm (+0,2 / −0,1), altså 0,15–0,45 mm",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf (Operating Characteristics, 6x6) ; https://www.sameskydevices.com/product/switches/tactile-switches/ts02-66-55-bk-100-lcr-d (TS02-66-55: vandring 0,25 mm)",
+        "tillit": "hoeg",
+        "merknad": "Kraft: 0,98 ± 0,29 N (standard), 1,47, 2,55 eller 4,9 N etter variant. Ein printa trykkstav må ha att noko vandring etter monteringstoleransane, elles står brytaren innetrykt heile tida."
+      },
+      {
+        "namn": "6x6 mm taktil brytar: pinneavstand og hol",
+        "verdi": "6,5 ± 0,1 x 4,5 ± 0,1 mm. Hol i kortet Ø1,0 ± 0,1 mm. Bein-spenn utvendig 6,5 ± 0,5 / 7,7 ± 0,5 mm. Beina er 3,4 mm lange under huset.",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf (PCB Processing Dimensions) ; https://grobotronics.com/tact-switch-6x6mm-5mm-4pins.html (4,5 x 6,5 mm)",
+        "tillit": "hoeg",
+        "merknad": "Brytaren har fire bein, men kontaktforma er SPST-NO: to og to bein er kopla saman inne i brytaren. Ein slik knapp kan difor IKKJE skilje to straumkrinsar frå kvarandre. For 7,7 mm totalbreidd over beina bør lomma vere minst 8,5 mm (eigen rekning: 7,7 + 0,5 toleranse + klaring)."
+      },
+      {
+        "namn": "12x12 mm taktil brytar: kropp og høgd",
+        "verdi": "12 ± 0,2 x 12 ± 0,2 mm. Høgd 4,3 ± 0,2 mm (flatt stempel Ø7,1 mm) eller 7,3 ± 0,2 mm (utstikkande firkanta stilk 3,8 ± 0,1 mm, huset 3,5 mm)",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf (B3F-4000 / B3F-4050) ; https://protosupplies.com/product/tactile-momentary-pushbutton-round-12x12/ (12 x 12 x 7,3 mm)",
+        "tillit": "hoeg",
+        "merknad": "Den vanlege 12x12-varianten i sett er 12x12x7,3 mm med firkanta stilk for påsett hette."
+      },
+      {
+        "namn": "12x12 mm taktil brytar: pinneavstand",
+        "verdi": "12,5 ± 0,1 x 5,0 ± 0,1 mm (Omron). Generisk: 12,7 x 5,08 mm.",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf ; https://protosupplies.com/product/tactile-momentary-pushbutton-round-12x12/",
+        "tillit": "middels",
+        "merknad": "Kjeldene er usamde: Omron oppgjev 12,5 x 5,0 mm, ProtoSupplies 12,7 x 5,08 mm (0,5 x 0,2 tommar). Hola er Ø1,2 ± 0,05 mm. Omron har i tillegg to styretappar (Ø1,6 mm, hol Ø1,8 mm, 9 mm avstand) som generiske knappar ofte manglar. Spennet utvendig over beina er 12,5 ± 0,5 / 13,8 ± 0,5 mm."
+      },
+      {
+        "namn": "12x12 mm taktil brytar: vandring",
+        "verdi": "0,3 mm (+0,2 / −0,1)",
+        "kjelde": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf (Operating Characteristics, 12x12)",
+        "tillit": "hoeg",
+        "merknad": "Kraft: 1,27 ± 0,49 N eller 2,55 ± 0,69 N. Den generiske 12x12-knappen hjå ProtoSupplies oppgjev ikkje vandring."
+      },
+      {
+        "namn": "Rund hette for 12x12x7,3-knapp",
+        "verdi": "Ø13 mm x 8 mm høg, for firkanta stilk på 3,4 x 3,8 mm",
+        "kjelde": "https://zbotic.in/?p=454259 ; https://aws.robu.in/?p=890235 (forhandlaroppføringar)",
+        "tillit": "laag",
+        "merknad": "Tala kjem berre frå forhandlarar og er ikkje frå ei produsentteikning. Mål hetta før du lagar holet i huset."
+      },
+      {
+        "namn": "Knappar i startsett (tal og storleik)",
+        "verdi": "Arduino Starter Kit K000007: 10 trykknappar. Elegoo UNO Super Starter Kit: 5 trykknappar. Storleiken er IKKJE stadfesta.",
+        "kjelde": "https://www.pbtech.com/product/SEVARD0039/reg ; https://rapidonline.com/arduino-k000007-starter-kit-including-uno-board-563530 ; https://www.the-diy-life.com/elegoo-uno-project-super-starter-kit-unboxing-review",
+        "tillit": "middels",
+        "merknad": "Eg fann ingen offisiell måltabell for knappane i desse setta. Sidene til Arduino og Elegoo svara med 429/403. Mål eigne knappar med skyvelære. Er det 6x6 mm, gjeld Omron B3F-tala over."
+      },
+      {
+        "namn": "ESP32-CAM: microSD-pinnar",
+        "verdi": "CLK = GPIO14, CMD = GPIO15, D0 = GPIO2, D1 = GPIO4 (blits-LED), D2 = GPIO12, D3 = GPIO13",
+        "kjelde": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/sdmmc_host.html ; https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+        "tillit": "hoeg",
+        "merknad": "I 4-bit-modus brukar SD-kortet alle seks pinnane. I 1-bit-modus brukar det berre CLK, CMD og D0."
+      },
+      {
+        "namn": "ESP32-CAM: GPIO for utløysarknapp med SD-kort i bruk",
+        "verdi": "1-bit SD-modus: bruk GPIO13 (tilrådd). GPIO12 er òg mogleg. 4-bit modus: ingen trygg ledig pinne.",
+        "kjelde": "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/ (1-bit frigjer GPIO 12 og 13) ; https://www.makerguides.com/more-gpio-pins-for-esp32-cam/ ; https://community.platformio.org/t/esp32-cam-and-esp32-cam-mb-how-to-free-gpio12-for-sensor-input/47498",
+        "tillit": "hoeg",
+        "merknad": "Start SD-kortet i 1-bit-modus med SD_MMC.begin(\"/sdcard\", true). Set pinMode(13, INPUT_PULLUP) ETTER at SD_MMC.begin har køyrt. Kopla knappen mellom GPIO13 og GND. Makerguides seier at GPIO16 alltid er ledig, men RandomNerd seier at GPIO16 er brikkeval (CS) for PSRAM på mange kort. Unngå difor GPIO16."
+      },
+      {
+        "namn": "GPIO12 (MTDI) er oppstartspinne",
+        "verdi": "Må vere LÅG ved reset når flashminnet går på 3,3 V. Pinnen har intern pull-down som standard.",
+        "kjelde": "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf (v5.3, tabell 3-1) ; https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/sd_pullup_requirements.html ; https://community.platformio.org/t/esp32-cam-and-esp32-cam-mb-how-to-free-gpio12-for-sensor-input/47498",
+        "tillit": "hoeg",
+        "merknad": "Ein knapp mot GND kan berre trekkje pinnen låg, så han stoppar ikkje oppstarten. Ein ekstern pull-up på GPIO12 gjer derimot at kortet ikkje startar. Brukaren i forumet fekk opplastinga til å virke att etter å ha flytta frå GPIO12 til GPIO13."
+      },
+      {
+        "namn": "GPIO13 = SD DAT3/CS: fallgruve",
+        "verdi": "SD-kortet har intern pull-up på om lag 50 kΩ (±20 kΩ) på DAT3. Er DAT3 låg når kortet får CMD0, går kortet i SPI-modus.",
+        "kjelde": "https://www.electro-tech-online.com/threads/quick-sd-pullup-question.112215/ ; https://csi.pl/wp-content/uploads/2019/01/sd%20interface%20introduction7.pdf",
+        "tillit": "laag",
+        "merknad": "Eigen vurdering ut frå SD-spesifikasjonen, som her berre er sitert av andre kjelder: ikkje hald knappen inne medan kortet startar eller SD-kortet blir initialisert. Etter oppstart er pinnen trygg å bruke. Eg har ikkje stadfesta dette på ESP32-CAM i praksis."
+      },
+      {
+        "namn": "Pinnar som IKKJE eignar seg til knappen (ESP32-CAM på MB-kort)",
+        "verdi": "GPIO0, GPIO1, GPIO3, GPIO16 og GPIO4",
+        "kjelde": "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/ ; https://www.makerguides.com/more-gpio-pins-for-esp32-cam/ ; https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+        "tillit": "middels",
+        "merknad": "GPIO0 er klokke til kameraet (XCLK) og vel oppstartsmodus. MB-kortet styrer han med IO0-knappen og automatisk reset. GPIO1 og GPIO3 er UART-en til CH340C på MB-kortet. GPIO16 er CS for PSRAM. GPIO4 styrer blits-LED-en via ein transistor. Eg fann ingen skjematikk for MB-kortet."
+      },
+      {
+        "namn": "ESP32: intern pull-up og logiske nivå",
+        "verdi": "Intern pull-up 45 kΩ (typisk). Låg-nivå inn (VIL) maks 0,25 x VDD ≈ 0,825 V. Høgt nivå inn (VIH) min 0,75 x VDD ≈ 2,475 V ved 3,3 V.",
+        "kjelde": "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf (tabell 5-3)",
+        "tillit": "hoeg",
+        "merknad": "Kopla to kort til same knappenode, går dei to pull-up-ane parallelt (om lag 22,5 kΩ). Ved lang kabel til knappen tilrår forumkjelder ein sterkare ekstern pull-up, til dømes 4,7–10 kΩ."
+      },
+      {
+        "namn": "Éin knapp til to ESP32-CAM: koplingsval",
+        "verdi": "Det går. A) Felles GND mellom korta og GPIO13 på begge kopla til same knappepol, med INPUT_PULLUP. B) Tilrådd ved to separate USB-forsyningar: topolt (DPST) trykknapp, éin pol per kort, så korta er galvanisk skilde. Ein optokoplar er eit anna alternativ.",
+        "kjelde": "https://forum.arduino.cc/t/one-button-to-control-two-arduinos/353668 (MarkT: \"If the powers are different then you'll need to opto-isolate at least one of them\" ; \"use a double pole switch/button, one pole for each Arduino\") ; https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf (SPST-NO)",
+        "tillit": "middels",
+        "merknad": "Ein vanleg taktil brytar med fire bein er éinpolt og kan ikkje gje løysing B. Med løysing A må GND til begge korta vere kopla saman, og det må gå leidningar frå knappen til begge korta."
+      },
+      {
+        "namn": "Éin knapp til to kort: elektriske fallgruver ved to USB-forsyningar",
+        "verdi": "1) Kopla ALDRI 5V-linjene til dei to korta saman, berre GND. 2) Bakmating: står eitt kort utan straum medan GPIO-ane er direkte samankopla, kan pull-up-en på det andre kortet mate det straumlause kortet gjennom vernedioden i inngangen. 3) Kvar USB-kabel kan ha opptil 125 mV fall på GND, så GND-nivået kan skilje seg litt mellom korta.",
+        "kjelde": "https://forum.arduino.cc/t/reading-an-a-switched-earth-with-arduino-and-another-device/621420 (bakmating, diode som tiltak) ; https://www.usb.org/document-library/usb-20-specification (USB 2.0 §7.2.2: VGNDD maks 125 mV)",
+        "tillit": "laag",
+        "merknad": "Eigen tilråding: set ein Schottky-diode frå kvar GPIO mot knappenoden, med katoden mot knappen, eller ein seriemotstand på kvart kort. Nivået på om lag 0,3–0,5 V når knappen er inne, ligg under VIL-grensa på 0,825 V. GND-avviket er langt under støymarginen. Forum-sitatet om bakmating har eg berre sett i søkjeresultat, ikkje lese i heilskap."
+      },
+      {
+        "namn": "Samtidig biletopptak på to kort",
+        "verdi": "Signalet kjem fram samtidig, men sjølve opptaket kan vere forskyvd med opptil om lag éi bilettid mellom korta.",
+        "kjelde": "https://github.com/espressif/esp32-camera/blob/master/README.md (med fb_count = 1 ventar driveren på VSYNC for gjeldande bilete før DMA startar. fb_count > 1 gjev kontinuerleg modus.)",
+        "tillit": "laag",
+        "merknad": "Eigen tolking: dei to kamerasensorane går ikkje i takt med kvarandre. Med fb_count > 1 kan esp_camera_fb_get() levere eit bilete som alt låg i bufferen. Bruk fb_count = 1 eller CAMERA_GRAB_LATEST om tidsavviket betyr noko."
+      },
+      {
+        "namn": "ESP32-CAM: straumtrekk (5 V-sida)",
+        "verdi": "180 mA utan blits. 310 mA med blits på full styrke. Deep-sleep 6 mA, modem-sleep 20 mA, light-sleep 6,7 mA.",
+        "kjelde": "https://atta.szlcsc.com/upload/public/pdf/source/231023/C17416982-30bc871038898b12774324a310c0150b.pdf (Universal-Solder ESP32-CAM-datablad v1.0, 2021) ; https://docs.sunfounder.com/projects/galaxy-rvr/en/latest/hardware/cpn_esp_32_cam.html",
+        "tillit": "hoeg",
+        "merknad": "Tala stemmer overeins i fleire kjelder, men dei kjem ikkje frå ein PDF eg har henta direkte hjå Ai-Thinker. Det er ikkje oppgjeve om 180 mA inkluderer kontinuerleg WiFi-sending. Eg fann ingen uavhengig måling av toppstraumen under biletopptak."
+      },
+      {
+        "namn": "ESP32-brikka: radiostraum (3,3 V)",
+        "verdi": "Sending: 240 mA (802.11b, 19,5 dBm), 190 mA (802.11g), 180 mA (802.11n MCS7). Mottak: 95–100 mA. Tilrådd forsyning: minst 500 mA.",
+        "kjelde": "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf (v5.3, tabell 5-4 og merknader om straumforsyning)",
+        "tillit": "hoeg",
+        "merknad": "Dette gjeld brikka åleine, målt med 50 % arbeidssyklus. Ein lineær regulator gjev om lag same straum på 5 V-sida, og kamera og PSRAM kjem i tillegg. Toppstraumen under sending er difor høgare enn snittet på 180 mA."
+      },
+      {
+        "namn": "ESP32-CAM: toppstraum og tilrådd forsyning",
+        "verdi": "Toppar opptil om lag 500 mA. Tilrådd 5 V / 2 A, minst 1 A. Forsyningsområde 4,75–5,25 V.",
+        "kjelde": "https://www.makerguides.com/fix-brownout-of-esp32-cam/ ; https://docs.sunfounder.com/projects/galaxy-rvr/en/latest/hardware/cpn_esp_32_cam.html (\"at least 5V 2A, otherwise the picture may have water lines\") ; https://atta.szlcsc.com/upload/public/pdf/source/231023/C17416982-30bc871038898b12774324a310c0150b.pdf (4,75–5,25 V)",
+        "tillit": "middels",
+        "merknad": "500 mA er eit oppgjeve tal, ikkje ei måling eg har sett. Makerguides tilrår òg ein elektrolyttkondensator på 470 µF eller meir mellom 5 V og GND, og rår frå å forsyne kortet direkte frå ein USB-port på ei datamaskin utan ekstern straum."
+      },
+      {
+        "namn": "USB 2.0-port: kor mykje straum han kan gje",
+        "verdi": "500 mA (5 einingslaster à 100 mA) frå ein høgeffektsport, ved 4,75–5,25 V. Einingar som trekkjer meir enn 100 mA, må fungere ned til 4,75 V. Fall over kabelen: maks 125 mV på VBUS og 125 mV på GND.",
+        "kjelde": "https://www.usb.org/document-library/usb-20-specification (USB 2.0-spesifikasjonen §7.2.1–7.2.2)",
+        "tillit": "hoeg",
+        "merknad": "USB-ladarar gjev normalt meir enn dette, men dei er ikkje omfatta av denne kjelda."
+      },
+      {
+        "namn": "AMS1117-3.3 på ESP32-CAM: fall over regulatoren (dropout)",
+        "verdi": "1,1 V typisk og 1,3 V maks ved 0,8 A. Lågare ved mindre last.",
+        "kjelde": "http://www.advanced-monolithic.com/pdf/ds1117.pdf ; https://www.makerguides.com/fix-brownout-of-esp32-cam/ (ESP32-CAM har AMS1117-3.3)",
+        "tillit": "middels",
+        "merknad": "Eigen rekning: for å halde 3,3 V ved høg last treng regulatoren om lag 4,4–4,6 V inn. Ein tynn eller lang USB-kabel kan difor gje brownout-reset, sjølv om straumen i snitt er under 500 mA."
+      },
+      {
+        "namn": "Held USB-straum via ESP32-CAM-MB?",
+        "verdi": "Som regel ja for 180–310 mA i snitt, men det er marginalt frå ein USB 2.0-port på ei datamaskin (500 mA). Tilrådd: éin god 5 V-ladar på 1–2 A per kort og ein kort, god USB-kabel.",
+        "kjelde": "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/ (MB: CH340C, RESET- og IO0-knapp) ; https://www.makerguides.com/fix-brownout-of-esp32-cam/ ; https://probots.co.in/esp32-cam-mb-micro-usb-programmer-shield-type-a-ch340-serial-downloader.html",
+        "tillit": "laag",
+        "merknad": "Eg fann ingen offisiell skjematikk for ESP32-CAM-MB, så det er ikkje stadfesta at USB-5 V går rett til 5 V-pinnen på kameraet, og heller ikkje om det er ein diode eller sikring i vegen. At MB-kortet gjev nok straum, er berre ein påstand frå forhandlaren. Med to kort på to separate ladarar får kvart kort sin eigen straumkjelde."
+      },
+      {
+        "namn": "Mål på ESP32-CAM og ESP32-CAM-MB",
+        "verdi": "ESP32-CAM: 27 x 40,5 x 4,5 (±0,2) mm. ESP32-CAM-MB: om lag 40 x 27 mm (forhandlarar oppgjev 40 x 27 og 39,8 x 27 mm).",
+        "kjelde": "https://atta.szlcsc.com/upload/public/pdf/source/231023/C17416982-30bc871038898b12774324a310c0150b.pdf ; https://docs.sunfounder.com/projects/galaxy-rvr/en/latest/hardware/cpn_esp_32_cam.html ; https://probots.co.in/esp32-cam-mb-micro-usb-programmer-shield-type-a-ch340-serial-downloader.html",
+        "tillit": "middels",
+        "merknad": "Måla på ESP32-CAM har høg tillit. Måla på MB-kortet har låg tillit. Eg fann ingen kjelde til samla høgd for CAM og MB sett saman, eller til kvar micro-USB-kontakten sit på MB-kortet. Mål dette på dei faktiske korta."
+      },
+      {
+        "namn": "Micro-B-plugg: største tillatne støypte kappe (overmold) etter spesifikasjonen",
+        "verdi": "10,6 mm brei x 8,5 mm høg (maks)",
+        "kjelde": "USB-IF Micro-USB Cables and Connectors Specification rev. 1.01 (2007), figur 4-5. Spegel: https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf",
+        "tillit": "hoeg",
+        "merknad": "Spesifikasjonen seier at maksmåla er bindande. Eigen tilråding for FDM: opning på minst 11,2 x 9,1 mm (maksmål + 0,3 mm per side). Kablar som ikkje følgjer standarden, kan vere større."
+      },
+      {
+        "namn": "Micro-B-plugg: typisk kappe i røynda",
+        "verdi": "10 x 6 mm",
+        "kjelde": "https://www.comms-express.com/assets/specs/USBAUB2MBK%20-%20datasheet.pdf (StarTech USBAUB2MBK: kappa er 10 mm brei og 6 mm høg)",
+        "tillit": "middels",
+        "merknad": "Éin produsent oppgjev dette. Ei ROLINE-teikning viser òg om lag 10 x 6,0 ± 0,3 mm, men der er aksane usikre. Kappene varierer frå kabel til kabel."
+      },
+      {
+        "namn": "Micro-B-plugg: metallskal og lengd",
+        "verdi": "Skal 6,85 x 1,8 mm. Pluggen stikk minst 5,4 mm fram frå kappa.",
+        "kjelde": "USB-IF Micro-USB spec rev. 1.01, figur 4-7 og 4-8 (same spegel som over)",
+        "tillit": "middels",
+        "merknad": "5,4 mm er tolka ut frå teikninga (frå framsida av kappa til tuppen av pluggen). Eigen vurdering: framsida av kontakten på kortet må ligge nesten i flukt med ytterveggen, elles kjem ikkje pluggen heilt inn. Gjer veggen tynn eller lag ei forsenking rundt opninga."
+      },
+      {
+        "namn": "USB-C-plugg: største tillatne kappe (overmold) etter spesifikasjonen",
+        "verdi": "12,35 mm brei x 6,5 mm høg (maks)",
+        "kjelde": "https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf (USB Type-C Cable and Connector Spec R2.0, figur 3-3)",
+        "tillit": "hoeg",
+        "merknad": "Kappa er om lag 35 mm lang (referansemål). Eigen tilråding for FDM: opning på minst 13,0 x 7,1 mm."
+      },
+      {
+        "namn": "USB-C-plugg: skal, lengd og klaring",
+        "verdi": "Skal 8,25 ± 0,03 x 2,40 ± 0,03 mm. Pluggen er 6,65 ± 0,10 mm lang frå kappa, med minst 6,51 mm synleg skal. Tilrådd klaring mellom kappe og ytterflata på produktet: minst 0,05 mm når pluggen sit heilt inne. Kontaktar ved sida av kvarandre: 12,85 mm senteravstand. Stabla: 7 mm.",
+        "kjelde": "https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf (figur 3-3, 3-79, 3-80)",
+        "tillit": "hoeg",
+        "merknad": "Gjeld berre dersom kortet har USB-C-kontakt. ESP32-CAM-MB har normalt micro-USB. Joy-IT sin variant (SBC-ESP32-CP) har USB-C."
+      }
+    ],
+    "samandrag": "Knappar: Omron B3F er brukt som referanse for den vanlege 6x6 mm-knappen. Han måler 6 x 6 mm og er 4,3 eller 5,0 mm høg. Stempelet er Ø3,5 mm, vandringa 0,25 mm (+0,2/−0,1) og pinneavstanden 6,5 x 4,5 mm. 12x12-varianten måler 12 x 12 mm og er 4,3 eller 7,3 mm høg, med firkanta stilk på 3,8 mm. Vandringa er 0,3 mm. Pinneavstanden er 12,5 x 5,0 mm hjå Omron og 12,7 x 5,08 mm på ein generisk knapp. Kva storleik Arduino- og Elegoo-setta faktisk har, er ikkje stadfesta: sidene deira svara ikkje, så mål knappane sjølv.\n\nGPIO: Med SD-kortet i 1-bit-modus blir GPIO12 og GPIO13 ledige. GPIO13 er tryggast. GPIO12 er oppstartspinne og må vere låg ved reset, så han må ikkje ha ekstern pull-up. Ein knapp mot GND med INPUT_PULLUP fungerer på begge. I 4-bit-modus finst det ingen trygg ledig pinne. GPIO0, 1, 3, 4 og 16 bør du unngå.\n\nÉin knapp kan styre to kort. Ein vanleg firbeina taktil brytar er éinpolt (SPST), så då må GND til korta vere kopla saman. Ved to separate USB-forsyningar er ein topolt knapp, ein optokoplar eller diode-isolering tryggare. Kopla aldri 5 V-linjene saman.\n\nStraum: Kvar ESP32-CAM trekkjer 180 mA, eller 310 mA med blits på 5 V. Sjølve ESP32-brikka trekkjer 240 mA under WiFi-sending. Andre kjelder oppgjev toppar opptil om lag 500 mA og tilrår 5 V / 2 A. Ein USB 2.0-port gjev 500 mA. Det er nok i snitt, men marginalt med kabeltap og fall over AMS1117-regulatoren. Bruk ein ladar på 1–2 A per kort.\n\nUSB-opningar: Spesifikasjonen tillèt micro-B-kapper på maks 10,6 x 8,5 mm. Typiske kablar er 10 x 6 mm. USB-C-kapper er maks 12,35 x 6,5 mm. Ein micro-B-plugg stikk minst 5,4 mm fram frå kappa, ein USB-C-plugg 6,65 mm. Kontakten på kortet må difor ligge nær ytterveggen.\n\nIkkje funne: offisiell skjematikk og offisielle mål for ESP32-CAM-MB, samla høgd for CAM og MB sett saman, ei uavhengig måling av toppstraumen under biletopptak, og straumtrekket når SD-kortet skriv. Alle eigne vurderingar og utrekningar er merkte som det."
+  }
+}
