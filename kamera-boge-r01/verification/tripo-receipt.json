@@ -1,0 +1,22 @@
+{
+  "input_sha256": "eca20e66d5afdb5ece02e39cf8db3e793b290de6cb810397519fdb4fe5db8630",
+  "tasks": [
+    {
+      "id": "88bfff84-e106-4559-a2a8-c95a64509a84",
+      "operation": "image_to_model",
+      "model": "v3.1-20260211",
+      "credits": 40
+    },
+    {
+      "id": "8f22ad2a-e444-4b52-8ed0-180028fcfed5",
+      "parent": "88bfff84-e106-4559-a2a8-c95a64509a84",
+      "operation": "mesh_segmentation",
+      "model": "v2.0-20260430",
+      "credits": 40
+    }
+  ],
+  "total_credits": 80,
+  "remaining_balance": 70,
+  "frozen": 0,
+  "client": "tripo-cli 0.7.2"
+}

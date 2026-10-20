@@ -1,0 +1,386 @@
+{
+  "project": "Kamera med boge",
+  "geometry_revision": "R01",
+  "document_revision": "M03",
+  "units": "millimeter",
+  "sliced": false,
+  "physically_tested": false,
+  "large_file_manifest": "large-files.json",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 72,
+      "sha256": "21dfe4272f3a4a965a9bed82efa2214369e934993ec6476521e699e4342ffe95"
+    },
+    {
+      "path": "Kamera-boge-Start-P1S.zip",
+      "bytes": 428495,
+      "sha256": "71e6e273c80bd68f207338f3c962a9e4b88fbebb1e1e4d080f9cb3a30ade9b88"
+    },
+    {
+      "path": "Open-Print.ps1",
+      "bytes": 4365,
+      "sha256": "fc105bf35b350c3625fb4402adee1901e280dec31d25322fd4611fcc379dde44"
+    },
+    {
+      "path": "PRINT-P1S.txt",
+      "bytes": 1153,
+      "sha256": "70b242dac04cc7ff5f230ce64c5801c59fa5e3c6d4394e8dd3788267e26e9e56"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3708,
+      "sha256": "aff72a027ca6b0d554ca4aa57c75499acd7d2d0da16110dd53f78a769c1c92cc"
+    },
+    {
+      "path": "cad/BOM.json",
+      "bytes": 3819,
+      "sha256": "bd66249bba061c79b8c73b86b3f3433b8a85ead2cec02a39042372366c501f62"
+    },
+    {
+      "path": "cad/P03.step",
+      "bytes": 24248,
+      "sha256": "1ba04965314835da2d9b2b68607c024f66f76d8f03befb2f7b7708aa937f3b90"
+    },
+    {
+      "path": "cad/P04.step",
+      "bytes": 9474,
+      "sha256": "f44d77f7fd56451ca22326efb6a0b07ab75085bba0255f08157fe309945f61df"
+    },
+    {
+      "path": "cad/P05.step",
+      "bytes": 37442,
+      "sha256": "b91e0abccd436448fbaa801b96d343ea704aa78b86c9356c6dcc05a35a77e852"
+    },
+    {
+      "path": "cad/T01.step",
+      "bytes": 115841,
+      "sha256": "04a65a068e81ca57064788289db4f7152d3b14f92900e34c6be9080190128b24"
+    },
+    {
+      "path": "cad/hardware/lens-screw-01.stl",
+      "bytes": 34684,
+      "sha256": "c4ad85eff0010a8d73c67003235df7a47332a280a2acddd3f34c1216891e0188"
+    },
+    {
+      "path": "cad/hardware/lens-screw-02.stl",
+      "bytes": 34684,
+      "sha256": "5d3d6ae636cf9d73b0e33e939d4d7f7b1d836e800dbc9e32bd81a2bc2cd68e9b"
+    },
+    {
+      "path": "cad/hardware/lens-screw-03.stl",
+      "bytes": 34684,
+      "sha256": "ad326441bb5a4c74cb3186759bb27b9b5d40847f5f24f69d4bc816850ebadb30"
+    },
+    {
+      "path": "cad/hardware/nominal.json",
+      "bytes": 210,
+      "sha256": "375ea3abb17c09433fbf3bceab64e33abba40f9ccb69998ac9b8715a26453699"
+    },
+    {
+      "path": "cad/hardware/nut-01.stl",
+      "bytes": 18084,
+      "sha256": "7a4f329413393d7e798be1828b84ce9d5765f64ea7891d8daaca8defb7cb618f"
+    },
+    {
+      "path": "cad/hardware/nut-02.stl",
+      "bytes": 18084,
+      "sha256": "c6efb23d400092a3ad9d4d0ef657377df0e3b540dc34f8fba329cd7e71824d99"
+    },
+    {
+      "path": "cad/hardware/nut-03.stl",
+      "bytes": 18084,
+      "sha256": "c1dad03fbf4d6ca7e4a27bb6cfba02b9fd67b1ef4a0b5fe5bf9246709fd5fb5d"
+    },
+    {
+      "path": "cad/hardware/nut-04.stl",
+      "bytes": 18084,
+      "sha256": "a740f8041b5a409927e258f9875fd8094fd615fa311c886546318ba0c445ca4e"
+    },
+    {
+      "path": "cad/hardware/rear-screw-01.stl",
+      "bytes": 34684,
+      "sha256": "6e4c2474a32a1735cba08a39a62dde4f9dec2574f114d7a83f95364019745f6e"
+    },
+    {
+      "path": "cad/hardware/rear-screw-02.stl",
+      "bytes": 34684,
+      "sha256": "dd935f3581c2b8f73f9bd1bc8cadf3d3ecdaef537d61869b28fb24a711229b43"
+    },
+    {
+      "path": "cad/hardware/rear-screw-03.stl",
+      "bytes": 34684,
+      "sha256": "9f2e3239ada1f81f34d38f0e94d27dfb87e9ffb03bc0513d3bed3076121f4b00"
+    },
+    {
+      "path": "cad/hardware/rear-screw-04.stl",
+      "bytes": 34684,
+      "sha256": "31ac27dec0ccd971be25156c74cd495e68d0f41420b6740b683fa16052036042"
+    },
+    {
+      "path": "cad/hardware/spring-screw-01.stl",
+      "bytes": 34684,
+      "sha256": "45db009e32b9cafe6a0f59024db69ec1f79ab8e6861ff19d3125d58b73164a44"
+    },
+    {
+      "path": "cad/hardware/spring-screw-02.stl",
+      "bytes": 34684,
+      "sha256": "2ef3aea8c3b07d26fd3dd1bb2cfc53d9379d643f404a185ae08a7e4a162fe674"
+    },
+    {
+      "path": "cad/mechanics-only.step",
+      "bytes": 74131,
+      "sha256": "0c22733e562a262a67ca94489aaa0661c38cf5f58b6d9760b29c0d39c8a7c1ac"
+    },
+    {
+      "path": "cad/parameters.json",
+      "bytes": 779,
+      "sha256": "145828a2c24a2894e088574f919086462435af9624a5acdbc16c08a6c6847d36"
+    },
+    {
+      "path": "large-files.json",
+      "bytes": 2040,
+      "sha256": "c33c8197ebc752e548359c37f59003a59d4cede49f41d27a74774c3d8436701c"
+    },
+    {
+      "path": "manual/Kamera-boge-M03-kjelder.zip",
+      "bytes": 9198198,
+      "sha256": "9e2cab3aa71a71db06886bee2ef1f179e9d48d37dfe3ff95dc046762020b3ff1"
+    },
+    {
+      "path": "manual/Kamera-boge-M03.pdf",
+      "bytes": 472863,
+      "sha256": "1130d65cec9ab2b9fdc2080208a6fc0aa85728a97515d3d09e83264ce103f8fa"
+    },
+    {
+      "path": "manual/pages/side-01.png",
+      "bytes": 82992,
+      "sha256": "0a0cec7344e58365d3d01f5ad818eb66e918f315a7f0017a1adde695d94f6ae1"
+    },
+    {
+      "path": "manual/pages/side-02.png",
+      "bytes": 135802,
+      "sha256": "bfc3f2f29e2c967e1ad64d2d1e91cb01e24e9f68df555832096d854e35e6b611"
+    },
+    {
+      "path": "manual/pages/side-03.png",
+      "bytes": 170809,
+      "sha256": "a2d81b6cec18d311446a91711a2fa636b8415b1c94ca0e7cc42d1ded6da97c71"
+    },
+    {
+      "path": "manual/pages/side-04.png",
+      "bytes": 130000,
+      "sha256": "e3c654720186e065d8c01a6667801598a904834b3de04530eeab78eb9d2192df"
+    },
+    {
+      "path": "manual/pages/side-05.png",
+      "bytes": 85100,
+      "sha256": "74f5991279acf25503da1ccc80a1250f714a8768fd4330bb5bea5ace1919482a"
+    },
+    {
+      "path": "manual/pages/side-06.png",
+      "bytes": 86612,
+      "sha256": "ffb73f0e2023669236a9d6e7289d8e67e158ddfbf1b84118b59494a5e9118e89"
+    },
+    {
+      "path": "manual/pages/side-07.png",
+      "bytes": 79379,
+      "sha256": "d9f370246b1aae1b2c9bbf385ad1c338a43ee72d65592bd4cbf734fe95a271a7"
+    },
+    {
+      "path": "manual/pages/side-08.png",
+      "bytes": 103345,
+      "sha256": "8a2705c79c87d4454620f61ee85c9b7faac29584e83e9fcd12add786ddc872ac"
+    },
+    {
+      "path": "manual/pages/side-09.png",
+      "bytes": 60640,
+      "sha256": "53f9f9430599c19d4108f61000cb8392cea92f4a6e3fd9c7698ab5e92bcc5256"
+    },
+    {
+      "path": "manual/pages/side-10.png",
+      "bytes": 88573,
+      "sha256": "a0606ad8b13c591df3b40706879d295aad2b56f03d4de8b62678569b00896d79"
+    },
+    {
+      "path": "manual/pages/side-11.png",
+      "bytes": 130493,
+      "sha256": "3af089e9e5b3757ffc10027ac7b0103200419db79e5593a0a8de7e157566c39f"
+    },
+    {
+      "path": "manual/pages/side-12.png",
+      "bytes": 108562,
+      "sha256": "76da474f451f9c623e05a68f686b5ff9a782a6a68d0d4b0d75bbf244bc773680"
+    },
+    {
+      "path": "manual/pages/side-13.png",
+      "bytes": 99217,
+      "sha256": "581ed09742a81fe9b8d91bffd1ce203c80e2807e0d3de8b3f0e9ea870fc2682d"
+    },
+    {
+      "path": "manual/pages/side-14.png",
+      "bytes": 108772,
+      "sha256": "a570f24b8dfeb12a65b4600832d489a38693d1c740a5e0c9cca565ff1c0ba83a"
+    },
+    {
+      "path": "manual/pages/side-15.png",
+      "bytes": 104147,
+      "sha256": "fa7eae0a527da40936de31dd1601ef862a1a0174304c75c5fcb030c1778519ca"
+    },
+    {
+      "path": "payloads/assembled.3mf.part-001",
+      "bytes": 8388608,
+      "sha256": "44958b0ec96b0019cc526b8ddfa7c118359845c9d2e63210568b97a67b79269f"
+    },
+    {
+      "path": "payloads/assembled.3mf.part-002",
+      "bytes": 8388608,
+      "sha256": "9b0b5e67e6c664e4c88cdc06b6a63c12fe0e65d4a6f6c823373ebd69c03842d4"
+    },
+    {
+      "path": "payloads/assembled.3mf.part-003",
+      "bytes": 8388608,
+      "sha256": "5edaf66df04fd7b10b2f98e1550067630592c2159f32a2692ec0e8cf358bf493"
+    },
+    {
+      "path": "payloads/assembled.3mf.part-004",
+      "bytes": 7673617,
+      "sha256": "cb16bc894fdd99b10606705d1d8e08afe452844ecc95a4410ba2c4ba066d84b9"
+    },
+    {
+      "path": "payloads/front.3mf.part-001",
+      "bytes": 8388608,
+      "sha256": "6f106c0a54c294ed73396e96a4c0e7421f3e9c3508b8fc10e5c48c09aaf09789"
+    },
+    {
+      "path": "payloads/front.3mf.part-002",
+      "bytes": 8388608,
+      "sha256": "a60ccbf137ccf796012b5bbe7a16b21e00b98e6005a0652ce8ea08aa1fe8fedc"
+    },
+    {
+      "path": "payloads/front.3mf.part-003",
+      "bytes": 8388608,
+      "sha256": "587f1c4f3a604d23e498e7948a5554c1efba37ea51f2a10c5e87f0dcf327f105"
+    },
+    {
+      "path": "payloads/front.3mf.part-004",
+      "bytes": 3399827,
+      "sha256": "54835d0d5c3492461c2b0b496526416ce38feaccba1ee9584eca18b748ec0af8"
+    },
+    {
+      "path": "print/P03.stl",
+      "bytes": 101484,
+      "sha256": "8b409788526513346777de910b7a824b48a6280fe0e15b47311e908937aecfa4"
+    },
+    {
+      "path": "print/P04.stl",
+      "bytes": 33484,
+      "sha256": "a027d71f2cd109d099c6395bff5934da628aac154d7285826f2aaa7164e94684"
+    },
+    {
+      "path": "print/P05.stl",
+      "bytes": 35484,
+      "sha256": "3fe1ca3df5cebea47898ff4522f94585bdec4d66eeb2924a329dde4198d95b34"
+    },
+    {
+      "path": "print/Plate-00-test.3mf",
+      "bytes": 35219,
+      "sha256": "eaeab91d625f9f069106bb38f0f8186843f186a934cf6a14ec6f03a4d1946cef"
+    },
+    {
+      "path": "print/Plate-02-deksel-og-smadelar.3mf",
+      "bytes": 4171539,
+      "sha256": "885be4dc46355358edb20f7d983fd3de4f1dadc3e98fac07a39fd11573254941"
+    },
+    {
+      "path": "print/T01.stl",
+      "bytes": 157284,
+      "sha256": "1927e3ed539da17caf11bd1db0d4210a73fb4c79f0daf32ab90050e7afe66966"
+    },
+    {
+      "path": "reference/sketch.png",
+      "bytes": 654954,
+      "sha256": "eca20e66d5afdb5ece02e39cf8db3e793b290de6cb810397519fdb4fe5db8630"
+    },
+    {
+      "path": "source/verify_package.py",
+      "bytes": 1418,
+      "sha256": "b1677d8c9c77891a4d042a2d056791fe7c9f7f828008895e6e3f88b7d2d40850"
+    },
+    {
+      "path": "verification/assembly-3mf.json",
+      "bytes": 842,
+      "sha256": "ae1104bf1e5fa568e0340dbba49661306eba03de6922e8bb9d8f9e46e49baf25"
+    },
+    {
+      "path": "verification/assembly-paths.json",
+      "bytes": 30850,
+      "sha256": "362d83ce947a6a21f611226c48d0a19911a463e9ca3d1d7cc44a641b5161be40"
+    },
+    {
+      "path": "verification/exports.json",
+      "bytes": 1223,
+      "sha256": "124653351e901afb40c967dd95da43c0ee0840a554b06dbd1995f46643249485"
+    },
+    {
+      "path": "verification/final-print-audit.json",
+      "bytes": 1089,
+      "sha256": "c0e7ba9702833cbae9d2541686bd5bd8062dacff1592d9bdb67e74e92d13ef6b"
+    },
+    {
+      "path": "verification/manual-m03-cad-integrity.json",
+      "bytes": 557,
+      "sha256": "23e5f23d2fafe183440746b008ebcbc2093b35f3997413b914d63f8efefc2556"
+    },
+    {
+      "path": "verification/manual-m03-source-package.json",
+      "bytes": 414,
+      "sha256": "779a8a19211b48cf28d71e11806bff5a873352c903ab00d2b67c335c31e4712c"
+    },
+    {
+      "path": "verification/manual-m03.json",
+      "bytes": 3657,
+      "sha256": "933c11153bf1b85241fafc011276f550154c82bd1dc1cbbcd54a34fa7ea3b3ec"
+    },
+    {
+      "path": "verification/manual-v3-readtest.json",
+      "bytes": 4998,
+      "sha256": "e7a66d60fadf78f4cdfeedef08345c397a049deffb927f8ac0a445c5ec832a3e"
+    },
+    {
+      "path": "verification/mechanics.json",
+      "bytes": 12996,
+      "sha256": "eabd954f07d421e64192030ea1da1ffc80619ed0ef6d0a1427c98e50a90abd88"
+    },
+    {
+      "path": "verification/model-sha256.json",
+      "bytes": 1390,
+      "sha256": "bf9adcc6b867dd8f74a13d79b8e849fa10893bfea5ade76dcb88b10639518205"
+    },
+    {
+      "path": "verification/payload-reassembly.json",
+      "bytes": 801,
+      "sha256": "18fd0dcfd368c126ca3bbac1846a84d0de071382fcc04be19d1c9147a68aadc2"
+    },
+    {
+      "path": "verification/print-plates.json",
+      "bytes": 1785,
+      "sha256": "3f9c5578fa2e510fb431c0ed79f05b36b59e179eca60ad6eb96243421a9855f1"
+    },
+    {
+      "path": "verification/reference.json",
+      "bytes": 889,
+      "sha256": "e4bdd958753b9d0cfbd85bc7c3ee8a0e7ccf2ab6526d4da867c1c6adc2c7375f"
+    },
+    {
+      "path": "verification/tripo-receipt.json",
+      "bytes": 568,
+      "sha256": "fc8c69cb6737b645060223b4994c7f382c9115570358e1489264a0fc12220cba"
+    }
+  ]
+}

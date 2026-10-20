@@ -1,0 +1,23 @@
+{
+  "method": "ordered binary concatenation into a temporary directory, SHA256 compared with immutable R01 source",
+  "result": "pass",
+  "geometry_modified": false,
+  "files": [
+    {
+      "path": "cad/assembled.3mf",
+      "parts": 4,
+      "bytes": 32839441,
+      "original_sha256": "117dda42ec759a4de8b6bcd27b3e5888dd858a630ff5e5ba6bc8d8fdf55d5eab",
+      "reassembled_sha256": "117dda42ec759a4de8b6bcd27b3e5888dd858a630ff5e5ba6bc8d8fdf55d5eab",
+      "identical": true
+    },
+    {
+      "path": "print/Plate-01-framhus.3mf",
+      "parts": 4,
+      "bytes": 28565651,
+      "original_sha256": "629eafaa670cf5ebf2b2e7014f598d7d5054ea3def4a6ce193a7765d157654b0",
+      "reassembled_sha256": "629eafaa670cf5ebf2b2e7014f598d7d5054ea3def4a6ce193a7765d157654b0",
+      "identical": true
+    }
+  ]
+}

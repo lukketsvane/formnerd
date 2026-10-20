@@ -1,0 +1,24 @@
+{
+  "geometry_revision": "R01",
+  "document_revision": "M03",
+  "checked_files": 16,
+  "all_unchanged": true,
+  "results": {
+    "cad/P03.stl": true,
+    "cad/P04.stl": true,
+    "cad/P02.stl": true,
+    "cad/P01.stl": true,
+    "cad/P05.stl": true,
+    "print/T01.stl": true,
+    "print/P03.stl": true,
+    "print/P04.stl": true,
+    "print/P02.stl": true,
+    "print/P01.stl": true,
+    "print/P05.stl": true,
+    "cad/P03.step": true,
+    "cad/P04.step": true,
+    "cad/T01.step": true,
+    "cad/mechanics-only.step": true,
+    "cad/P05.step": true
+  }
+}
