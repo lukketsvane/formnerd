@@ -276,7 +276,7 @@ ob = [o(BORD, color=0xF2F2F2, crease=80, outline=0.3)]
 for n, (px, py) in PL.items():
     ob.append(o(str(P / "printretning" / f"{n}.stl"), pos=[px, py, 0], crease=55))
 img, _ = render(ob, (0.75, -1.0, 1.15), span=150, target=(128, 100, 30))
-plasser(s, beskjer(img).resize((1300, int(1300 * beskjer(img).height / beskjer(img).width)), Image.LANCZOS), (380, 260))
+plasser(s, beskjer(img).resize((1300, int(1300 * beskjer(img).height / beskjer(img).width)), Image.LANCZOS), [], (380, 260))
 sl = json.loads((P / "slicing" / "slicing.json").read_text())
 for i, t in enumerate(["PLA · 0,4 mm dyse · 0,2 mm lag", "3 veggar · 15 % gyroid", "Tre-støtte berre frå plata (kroppen)", "≈ 8 t 45 min · ≈ 200 g", "Fil: 05-print/A3-Entropi-alle-delar.3mf"]):
     tekst(d, (70, 330 + i * 70), t, 36, i == 3)
