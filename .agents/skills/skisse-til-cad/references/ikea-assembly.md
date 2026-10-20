@@ -10,7 +10,7 @@ Hald same grunnkamera og skala gjennom samanhengande steg. Roter berre for å vi
 
 ## Referansesider
 
-`ikea/` har ti sider frå ein ekte monteringsrettleiing som brukaren har valt som stilmål. Sjå dei før du teiknar:
+Ti sider frå ein ekte monteringsrettleiing er valde som stilmål. Dei er tredjepartsmateriale og ligg difor ikkje i skillpakken, men i repoet [`referansar/ikea-monteringsstil/`](https://github.com/lukketsvane/formnerd/tree/claude/stereoskopisk-kamerahus-cjqyqr/referansar/ikea-monteringsstil). Sjå dei før du teiknar når du har repoet; elles gjeld skildringa under:
 
 - `01-framside.jpg`, `02-produkt.jpg`: tittel og éi stor isometrisk strekteikning av det ferdige produktet, i tynn sideramme.
 - `03-deloversikt.jpg`: rutenett med små isometriske delar, kvar med nummer i sirkel og mengd (①×1).
