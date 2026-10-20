@@ -1,0 +1,26 @@
+10 => Processing triangulated mesh
+10 => Processing triangulated mesh
+20 => Generating perimeters
+20 => Generating perimeters
+30 => Preparing infill
+45 => Making infill
+10 => Processing triangulated mesh
+20 => Generating perimeters
+30 => Preparing infill
+45 => Making infill
+30 => Preparing infill
+45 => Making infill
+65 => Searching support spots
+65 => Searching support spots
+65 => Searching support spots
+69 => Alert if supports needed
+70 => Generating support material
+70 => Generating support material
+89 => Calculating overhanging perimeters
+70 => Generating support material
+89 => Calculating overhanging perimeters
+89 => Calculating overhanging perimeters
+88 => Generating skirt and brim
+90 => Exporting G-code to /tmp/a1-assembly-slicing-r01/A1-plate-02/validation-only.gcode
+Slicing result exported to /tmp/a1-assembly-slicing-r01/A1-plate-02/validation-only.gcode
+
