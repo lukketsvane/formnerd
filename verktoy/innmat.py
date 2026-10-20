@@ -6,20 +6,22 @@ import numpy as np
 import trimesh
 from scipy import ndimage
 
-PAKKER = {
-    "to_cam": (58, 42, 12),
-    "to_cam_pluss_mb": (58, 42, 25),
-}
-VEGG = 2.0
 N = 200
+VEGG = 2.0
+KLARING = 0.5
+CAM_MB = (27, 42, 20)
+CAM = (27, 42, 7)
+BATTERI = (34, 50, 6)
+MODUL = (10, 10, 8)
+KANT = 1
 
 
 def fyll(m):
     v, f = m.vertices, m.faces
     lo = v.min(0)
     pitch = m.extents[2] / N
-    ny, nz, nx = (np.ceil(m.extents / pitch).astype(int) + 2)[[1, 2, 0]]
-    t = (v[f] - lo) / pitch + np.array([0.0, 0.0137, 0.0071])
+    ny, nz, nx = (np.ceil(m.extents / pitch).astype(int) + 2 + 2 * KANT)[[1, 2, 0]]
+    t = (v[f] - lo) / pitch + KANT + np.array([0.0, 0.0137, 0.0071])
     ylo, yhi = np.ceil(t[:, :, 1].min(1)).astype(int), np.floor(t[:, :, 1].max(1)).astype(int)
     zlo, zhi = np.ceil(t[:, :, 2].min(1)).astype(int), np.floor(t[:, :, 2].max(1)).astype(int)
     cy, cz = np.clip(yhi - ylo + 1, 0, None), np.clip(zhi - zlo + 1, 0, None)
@@ -40,163 +42,136 @@ def fyll(m):
     yy, zz, x = yy[inne], zz[inne], np.clip(np.ceil(x[inne]).astype(int), 0, nx - 1)
     veksl = np.zeros((ny, nz, nx), np.int32)
     np.add.at(veksl, (yy, zz, x), 1)
+    odde = veksl.sum(2) % 2 == 1
     occ = (np.cumsum(veksl, axis=2) % 2).astype(bool)
-    occ[veksl.sum(2) % 2 == 1] = False
-    return occ.transpose(2, 0, 1)
+    occ[odde] = False
+    occ = occ.transpose(2, 0, 1)
+    return occ, {"odde_kolonnar": int(odde.sum()), "volum_voksel_mot_mesh": round(float(occ.sum() * pitch**3 / m.volume), 4)}
 
 
-def passar(occ, breidd_mm, boks):
-    mm = breidd_mm / N
-    w, h, d = boks
-    size = [int(np.ceil((s + 2 * VEGG) / mm)) for s in (d, h, w)]
-    return bool(ndimage.minimum_filter(occ, size=size, mode="constant", cval=0).any())
+def storleik(boks, mm):
+    return [int(np.ceil((x + 2 * KLARING) / mm)) + 1 for x in boks]
 
 
-def treffpunkt(occ, size):
-    return np.argwhere(ndimage.minimum_filter(occ, size=size, mode="constant", cval=0))
+def hjorne(inner, s):
+    return np.argwhere(ndimage.minimum_filter(inner, size=s, mode="constant", cval=0)) - np.array(s) // 2
 
 
-def delt_passar(occ, breidd_mm, a, b):
-    mm = breidd_mm / N
-    for pa in set(itertools.permutations(a)):
-        sa = [int(np.ceil((s + 2 * VEGG) / mm)) for s in pa]
-        PA = treffpunkt(occ, sa)
-        if not len(PA):
-            continue
-        for pb in set(itertools.permutations(b)):
-            sb = [int(np.ceil((s + 2 * VEGG) / mm)) for s in pb]
-            PB = treffpunkt(occ, sb)
-            if not len(PB):
-                continue
-            for k in range(3):
-                gap = (sa[k] + sb[k]) / 2
-                if PB[:, k].max() - PA[:, k].min() >= gap or PA[:, k].max() - PB[:, k].min() >= gap:
-                    return True
-    return False
+def skjer(inner, lo, s, w):
+    lo = np.maximum(np.array(lo) - w, 0)
+    inner[lo[0]:lo[0] + s[0] + 2 * w, lo[1]:lo[1] + s[1] + 2 * w, lo[2]:lo[2] + s[2] + 2 * w] = False
 
 
-def minste_breidd(test, lo=40, hi=250):
-    hi = next((b for b in range(hi, lo, -10) if test(b)), None)
-    if hi is None:
-        return None
-    while hi - lo > 1:
-        mid = (lo + hi) // 2
-        lo, hi = (lo, mid) if test(mid) else (mid, hi)
-    return hi
-
-
-CAM_MB = (27, 42, 25)
-CAM = (27, 42, 12)
-BATTERI = (34, 50, 6)
-MODUL = (12, 12, 8)
-
-
-def lommar(occ, breidd_mm, linser, modul=MODUL):
-    mm = breidd_mm / N
-    occ = occ.copy()
-    v = VEGG / mm
-    for yf, zf in linser:
-        yi, zi = int(round(yf * N)), int(round(zf * N))
-        hy, hz, d = modul[1] / 2 / mm, modul[0] / 2 / mm, modul[2] / mm
-        y0, y1 = int(np.floor(yi - hy - v)), int(np.ceil(yi + hy + v)) + 1
-        z0, z1 = int(np.floor(zi - hz - v)), int(np.ceil(zi + hz + v)) + 1
-        flate = occ[:, y0:y1, z0:z1]
-        if min(y0, z0) < 0 or not flate.any(axis=0).all():
-            return None
+def lommar(occ, inner, mm, linser):
+    v = int(np.ceil(VEGG / mm))
+    hz, hy, d = int(np.ceil(MODUL[0] / 2 / mm)), int(np.ceil(MODUL[1] / 2 / mm)), int(np.ceil(MODUL[2] / mm))
+    sentrum = [(int(round(yf * N)) + KANT, int(round(zf * N)) + KANT) for yf, zf in linser]
+    (y1, z1), (y2, z2) = sentrum
+    if abs(z1 - z2) < 2 * hz + 1 + v and abs(y1 - y2) < 2 * hy + 1 + v:
+        raise ValueError("linsene står for tett til at kvar modul får eiga lomme")
+    inner = inner.copy()
+    for yi, zi in sentrum:
+        y0, z0 = yi - hy - v, zi - hz - v
+        if min(y0, z0) < 0 or yi + hy + v >= occ.shape[1] or zi + hz + v >= occ.shape[2]:
+            raise ValueError(f"linsa {yi, zi} ligg for nær kanten av kroppen")
+        flate = occ[:, y0:yi + hy + v + 1, z0:zi + hz + v + 1]
+        if not flate.any(axis=0).all():
+            raise ValueError(f"linsa {yi, zi} ligg utanfor kroppen")
         xf = int((flate.shape[0] - 1 - np.argmax(flate[::-1], axis=0)).min())
-        x0, x1 = int(np.floor(xf - 2 * v - d)), xf + 1
-        if x0 < 0 or not occ[x0:x1, y0:y1, z0:z1].all():
-            return None
-        occ[int(np.floor(xf - v - d)):int(np.ceil(xf - v)) + 1, int(np.floor(yi - hy)):int(np.ceil(yi + hy)) + 1, int(np.floor(zi - hz)):int(np.ceil(zi + hz)) + 1] = False
-    return occ
+        lo = (xf - v - d, yi - hy, zi - hz)
+        s = (d + 1, 2 * hy + 1, 2 * hz + 1)
+        if lo[0] < 0 or not inner[lo[0]:lo[0] + s[0], lo[1]:lo[1] + s[1], lo[2]:lo[2] + s[2]].all():
+            return None, None
+        skjer(inner, lo, s, v - 1)
+    return inner, sentrum
 
 
-def grovt(occ, k=2):
+def grovt(occ, k):
     s = [n // k * k for n in occ.shape]
     o = occ[: s[0], : s[1], : s[2]]
     return o.reshape(s[0] // k, k, s[1] // k, k, s[2] // k, k).all(axis=(1, 3, 5))
 
 
-def fit(occ, mm, boks):
-    s = [int(np.ceil((x + 2 * VEGG) / mm)) for x in boks]
-    return s, np.argwhere(ndimage.minimum_filter(occ, size=s, mode="constant", cval=0))
+def mellomvegg(mm, k):
+    return int(np.ceil((VEGG / mm + k - 1) / k))
 
 
-def to_passar(occ, mm, a, b):
-    v = VEGG / mm
-    kart = {}
+def to_boksar(inner, mm, k, b, c):
+    w = mellomvegg(mm, k)
+    mm = mm * k
+    kart = {pc: (storleik(pc, mm),) for pc in set(itertools.permutations(c))}
+    kart = {pc: (s, hjorne(inner, s)) for pc, (s,) in kart.items()}
     for pb in set(itertools.permutations(b)):
-        kart[pb] = fit(occ, mm, pb)
-    for pa in set(itertools.permutations(a)):
-        sa, PA = fit(occ, mm, pa)
-        if not len(PA):
+        sb = storleik(pb, mm)
+        PB = hjorne(inner, sb)
+        if not len(PB):
             continue
-        for sb, PB in kart.values():
-            if not len(PB):
+        for pc, (sc, PC) in kart.items():
+            if not len(PC):
                 continue
             for k in range(3):
-                gap = (sa[k] + sb[k]) / 2 - v
-                if PB[:, k].max() - PA[:, k].min() >= gap or PA[:, k].max() - PB[:, k].min() >= gap:
-                    return True
-    return False
+                if PC[:, k].max() - PB[:, k].min() >= sb[k] - 1 + w:
+                    return [(pb, PB[PB[:, k].argmin()]), (pc, PC[PC[:, k].argmax()])]
+                if PB[:, k].max() - PC[:, k].min() >= sc[k] - 1 + w:
+                    return [(pb, PB[PB[:, k].argmax()]), (pc, PC[PC[:, k].argmin()])]
+    return None
 
 
-def tre_passar(occ, mm, a, b, c):
+def tre_boksar(inner, mm, k, a, b, c, maks=80):
+    w = mellomvegg(mm, k)
+    mmk = mm * k
     for pa in set(itertools.permutations(a)):
-        sa, PA = fit(occ, mm, pa)
+        sa = storleik(pa, mmk)
+        PA = hjorne(inner, sa)
         if not len(PA):
             continue
-        kandidatar = {tuple(PA[f(PA[:, k])]) for k in range(3) for f in (np.argmin, np.argmax)}
-        for p in kandidatar:
-            core = [int(np.ceil(x / mm)) for x in pa]
-            lo = [p[k] - sa[k] // 2 + (sa[k] - core[k]) // 2 for k in range(3)]
-            rest = occ.copy()
-            rest[lo[0]:lo[0] + core[0], lo[1]:lo[1] + core[1], lo[2]:lo[2] + core[2]] = False
-            if to_passar(rest, mm, b, c):
-                return True
-    return False
+        ytst = [PA[f(PA[:, k])] for k in range(3) for f in (np.argmin, np.argmax)]
+        steg = max(1, len(PA) // maks)
+        for p in ytst + list(PA[::steg]):
+            rest = inner.copy()
+            skjer(rest, p, sa, w - 1)
+            r = to_boksar(rest, mm, k, b, c)
+            if r:
+                return [(pa, p)] + r
+    return None
 
 
-def pakking(occ, linser=None, k=2):
-    def test(breidd):
-        o = lommar(occ, breidd, linser) if linser else occ
-        if o is None:
-            return False
-        return tre_passar(grovt(o, k), breidd / N * k, CAM_MB, CAM, BATTERI)
-    return test
+def analyse(m, linser=None, k=2):
+    occ, kontroll = fyll(m)
+    avstand = ndimage.distance_transform_edt(occ)
 
+    def plassering(breidd):
+        mm = breidd / N
+        inner = avstand >= VEGG / mm + 0.5
+        sentrum = None
+        if linser:
+            inner, sentrum = lommar(occ, inner, mm, linser)
+            if inner is None:
+                return None
+        r = tre_boksar(grovt(inner, k), mm, k, CAM_MB, CAM, BATTERI)
+        return r and {"boksar": [{"mål_mm": list(pb), "nedre_hjørne_mm": [round(float(x * mm * k - KANT * mm), 1) for x in p]} for pb, p in r], "linsesentrum_yz_mm": sentrum and [[round((y - KANT) * mm, 1), round((z - KANT) * mm, 1)] for y, z in sentrum]}
 
-if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "--linser":
-    linser = json.loads(sys.argv[2])
-    res = {}
-    for p in sys.argv[3:]:
-        m = trimesh.load(p, force="mesh")
-        m.merge_vertices()
-        occ = fyll(m)
-        e = m.extents / m.extents[2]
-        b0 = minste_breidd(pakking(occ))
-        b1 = minste_breidd(pakking(occ, linser.get(p)))
-        res[p] = {
-            "linser_brøkdel_av_breidd": linser.get(p),
-            "linseavstand_brøkdel_av_breidd": round(float(np.hypot(*np.subtract(*linser[p]))), 3) if p in linser else None,
-            "cam_mb_cam_batteri": {"minste_breidd_mm": b0, "hogd_mm": round(b0 * e[1]) if b0 else None, "djupn_mm": round(b0 * e[0]) if b0 else None},
-            "cam_mb_cam_batteri_og_kameramodular_ved_linsene": {"minste_breidd_mm": b1, "hogd_mm": round(b1 * e[1]) if b1 else None, "djupn_mm": round(b1 * e[0]) if b1 else None},
-        }
-    print(json.dumps(res, indent=2, ensure_ascii=False))
-    sys.exit()
+    lo, hi = 40, next((b for b in range(250, 40, -10) if plassering(b)), None)
+    if hi is None:
+        return {"minste_breidd_mm": None, **kontroll}
+    while hi - lo > 1:
+        mid = (lo + hi) // 2
+        lo, hi = (lo, mid) if plassering(mid) else (mid, hi)
+    monoton = all(plassering(b) for b in range(hi, hi + 4)) and not any(plassering(b) for b in range(hi - 3, hi))
+    e = m.extents / m.extents[2]
+    res = {"minste_breidd_mm": hi, "hogd_mm": round(hi * e[1]), "djupn_mm": round(hi * e[0]), "monoton_rundt_svaret": monoton, **kontroll, "plassering": plassering(hi)}
+    if linser:
+        res["linseavstand_mm"] = round(float(np.hypot(*np.subtract(*linser))) * hi, 1)
+    return res
 
 
 if __name__ == "__main__":
+    linser = json.load(open(sys.argv[1]))
     res = {}
-    for p in sys.argv[1:]:
+    for p, l in linser.items():
+        if p.startswith("_"):
+            continue
         m = trimesh.load(p, force="mesh")
-        m.merge_vertices()
-        occ = fyll(m)
-        e = m.extents / m.extents[2]
-        res[p] = {"fyllgrad": round(float(occ.mean()), 3)}
-        testar = {namn: (lambda br, boks=boks: passar(occ, br, boks)) for namn, boks in PAKKER.items()}
-        testar["delt_i_to_rom"] = lambda br: delt_passar(occ, br, (27, 42, 25), (27, 42, 12))
-        for namn, test in testar.items():
-            b = minste_breidd(test)
-            res[p][namn] = {"minste_breidd_mm": b, "hogd_mm": round(b * e[1]) if b else None, "djupn_mm": round(b * e[0]) if b else None}
-    print(json.dumps(res, indent=2, ensure_ascii=False))
+        res[p] = {"nedre_grense_utan_lommar": analyse(m), "med_kameralommar_ved_linsene": analyse(m, l["linser"])}
+        print(p, res[p]["nedre_grense_utan_lommar"]["minste_breidd_mm"], res[p]["med_kameralommar_ved_linsene"]["minste_breidd_mm"], file=sys.stderr, flush=True)
+    print(json.dumps({"føresetnader": {"N": N, "vegg_mm": VEGG, "klaring_per_side_mm": KLARING, "kort_og_usb_kort": CAM_MB, "kort": CAM, "batteri": BATTERI, "kameramodul_breidd_hogd_djupn": MODUL}, "resultat": res}, indent=2, ensure_ascii=False))
