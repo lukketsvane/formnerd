@@ -1,0 +1,44 @@
+{
+  "geometry_revision": "R01",
+  "units": "millimeter",
+  "model": "3D/3dmodel.model",
+  "assembly_object_names": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "assembly_triangle_counts": [
+    1579076,
+    232578,
+    2028,
+    668,
+    708
+  ],
+  "matches_original_cad_stl_triangle_counts": true,
+  "direct_mesh_objects": true,
+  "build_transforms": "identity",
+  "zip_crc_passed": [
+    "cad/assembled.3mf",
+    "print/Plate-00-test.3mf",
+    "print/Plate-01-framhus.3mf",
+    "print/Plate-02-deksel-og-smadelar.3mf"
+  ],
+  "plate_contents": {
+    "Plate-00-test": [
+      "T01"
+    ],
+    "Plate-01-framhus": [
+      "P01"
+    ],
+    "Plate-02-deksel-og-smadelar": [
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ]
+  },
+  "sliced": false,
+  "computer_run": "not performed; authorized Windows devices offline"
+}
