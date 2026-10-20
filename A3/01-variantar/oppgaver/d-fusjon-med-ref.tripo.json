@@ -1,0 +1,35 @@
+{
+  "task_id": "8bc65667-199d-4991-a7a2-3ead7fdbb632",
+  "status": "success",
+  "credits": 15.0,
+  "files": {
+    "generated_image_url": "images/d_fusion_refs_generated_image_url.png"
+  },
+  "payload": {
+    "inputs": [
+      "input/skisse.jpg",
+      "input/ref_lens.png",
+      "input/ref_open_mount.png"
+    ],
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one compact handheld camera. Use image[1] (sketch) for composition, the exact 3/4 front view, proportions and concept: dark core body; light-grey tubes start at the left hand grip, run over the top, twist and cross between the two top blocks, and wrap a ring around the lens. Use image[2] and image[3] for form language and render quality: plump inflated tubes, round cross-sections, generous fillets, satin soft-touch paint, crisp part lines. But follow image[1] for colour: the core body is deep MATTE BLACK velvet paint, not grey. Concept: entropy, light meeting a black hole. The light-grey tubes are light; the black core swallows them. The tube from the top curves down and wraps the lens as a thick torus; its inner side sinks into a smooth black funnel, its paint fading in a soft airbrushed gradient from light grey outside to black at the inner edge, as if absorbed. Other tube ends dive into the black core and vanish. At the funnel centre: a real camera lens as in image[2], about 35 mm diameter, black knurled anodized barrel, dark coated glass with concentric inner reflections and faint purple-green sheen. Solid painted material only: no LED, no glow. Dark viewfinder block top rear left and dark cylindrical dial block top right with knurled cap, as in image[1]; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the outer left side of the grip, as in image[2]. Reads as a 3D-printed, painted design model. Single camera fully in frame, centred, seamless pure white background, softbox key light upper left, soft contact shadow, sharp focus. No text, no logos, no extra objects, no hands, no glowing ring."
+  },
+  "raw": {
+    "type": "image_to_image",
+    "status": "success",
+    "progress": 100,
+    "input": {
+      "prompt": "Photorealistic industrial-design studio render of one compact handheld camera. Use image[1] (sketch) for composition, the exact 3/4 front view, proportions and concept: dark core body; light-grey tubes start at the left hand grip, run over the top, twist and cross between the two top blocks, and wrap a ring around the lens. Use image[2] and image[3] for form language and render quality: plump inflated tubes, round cross-sections, generous fillets, satin soft-touch paint, crisp part lines. But follow image[1] for colour: the core body is deep MATTE BLACK velvet paint, not grey. Concept: entropy, light meeting a black hole. The light-grey tubes are light; the black core swallows them. The tube from the top curves down and wraps the lens as a thick torus; its inner side sinks into a smooth black funnel, its paint fading in a soft airbrushed gradient from light grey outside to black at the inner edge, as if absorbed. Other tube ends dive into the black core and vanish. At the funnel centre: a real camera lens as in image[2], about 35 mm diameter, black knurled anodized barrel, dark coated glass with concentric inner reflections and faint purple-green sheen. Solid painted material only: no LED, no glow. Dark viewfinder block top rear left and dark cylindrical dial block top right with knurled cap, as in image[1]; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the outer left side of the grip, as in image[2]. Reads as a 3D-printed, painted design model. Single camera fully in frame, centred, seamless pure white background, softbox key light upper left, soft contact shadow, sharp focus. No text, no logos, no extra objects, no hands, no glowing ring.",
+      "model_version": "banana_pro"
+    },
+    "output": {
+      "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_a49067a3d010421cbef4ad1993d1ec39/20261020/8bc65667-199d-4991-a7a2-3ead7fdbb632/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTQ5MDY3YTNkMDEwNDIxY2JlZjRhZDE5OTNkMWVjMzkvMjAyNjEwMjAvOGJjNjU2NjctMTk5ZC00OTkxLWE3YTItM2VhZDdmZGJiNjMyL2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI1OTA4ODF9fX1dfQ__&Signature=HgzdkK6iliLsYFHAfLMB1GUtR9muV78YsCffWVE7opoijg4YRJfTj8jIP0p3e32Ju3qiwAVUee6FvC0AlavSBl-gymfCqYw0NZipzWQ9f4gpl9zUV~ko0~InZ0RSFRZHh6zz75YwNLCU6IJmqD8UZ3xE6wJwy-~Ee~45CQ09MgBvu54K40wzfO~nUYz1miDdJAW7BTg4FWRZWL2LdTAkrfKZ-I5Z2oHn5~UxFh0tiN8yd6HLDzFzQnQccqb1UxNc1rvAt5B5b4AE9t15zfKotkl80Q6n1BavHakaWbmQ9SR7OhuQMbC0nkIaTtwxTjAZeDjzub09OOdV5dgrDHcOAg__&Key-Pair-Id=K1676C64NMVM2J"
+    },
+    "task_id": "8bc65667-199d-4991-a7a2-3ead7fdbb632",
+    "created_at": "2026-10-20T13:54:05.346789Z",
+    "completed_at": "2026-10-20T13:54:39.596221Z",
+    "credits_consumed": 15.0
+  },
+  "note": "tripo.py crashed on the download step (proxy tunnel reset); output re-downloaded from the same task, no new generation"
+}

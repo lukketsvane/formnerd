@@ -1,0 +1,20 @@
+import sys, json
+import numpy as np, trimesh, pymeshfix
+
+src, dst, width_mm, faces = sys.argv[1], sys.argv[2], float(sys.argv[3]), int(sys.argv[4])
+m = trimesh.load(src, force="mesh", process=False)
+m = trimesh.Trimesh(m.vertices, m.faces, process=True)
+m.merge_vertices()
+m = m.simplify_quadric_decimation(face_count=faces)
+m.merge_vertices()
+v, f = pymeshfix.clean_from_arrays(np.ascontiguousarray(m.vertices, dtype=np.float64), np.ascontiguousarray(m.faces, dtype=np.int32))
+m = trimesh.Trimesh(v, f)
+trimesh.repair.fix_normals(m)
+R = trimesh.transformations.rotation_matrix(np.pi / 2, [1, 0, 0])
+m.apply_transform(R)
+m.apply_scale(width_mm / m.extents.max())
+m.apply_translation(-m.bounds[0])
+m.export(dst)
+edges = np.sort(m.edges, axis=1)
+_, counts = np.unique(edges, axis=0, return_counts=True)
+print(json.dumps({"faces": len(m.faces), "extents_mm": [round(x, 1) for x in m.extents], "watertight": bool(m.is_watertight), "winding_consistent": bool(m.is_winding_consistent), "boundary_edges": int((counts == 1).sum()), "nonmanifold_edges": int((counts > 2).sum()), "volume_cm3": round(m.volume / 1000, 1) if m.is_watertight else None}))
