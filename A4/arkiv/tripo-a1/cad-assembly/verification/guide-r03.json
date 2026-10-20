@@ -1,0 +1,371 @@
+{
+  "revision": "R03",
+  "pages": 29,
+  "page_titles": [
+    "A1 / Entropi",
+    "Deloversikt / produkt",
+    "Deloversikt / elektronikk og verktøy",
+    "Eksplodert oversikt",
+    "1 / CAM i MB",
+    "2 / USB til PC",
+    "3 / Installering",
+    "4 / Skisse, kort og port",
+    "5 / Last opp",
+    "6 / Første foto",
+    "7 / Mål brytaren",
+    "8 / Elektrisk utløysar",
+    "9 / Prøv knappen",
+    "10 / Låseprøve",
+    "11 / Print resten",
+    "12 / Prøvepass",
+    "13 / Kort i haldar",
+    "14 / Kamera og klemme",
+    "15 / Utløysar",
+    "16 / Brytar i kassett",
+    "17 / Kassett inn",
+    "18 / Haldar inn",
+    "19 / Open funksjonsprøve",
+    "20 / Frontring",
+    "21 / Baklokk",
+    "22 / Baklåsar",
+    "23 / Sluttprøve",
+    "Feilsøking",
+    "Grunnlag og status"
+  ],
+  "illustrations": [
+    {
+      "page": 1,
+      "file": "finished.png",
+      "sha256": "0e2bb41edffdaee9c94811988bd2d0138e029fce0b091ad411a62a607da62a2b"
+    },
+    {
+      "page": 2,
+      "file": "part-01_outer_shell.png",
+      "sha256": "7074e71928d75fd1da438ef95001697ea74213a2828eb3a94c0d4bac4a4cead7"
+    },
+    {
+      "page": 2,
+      "file": "part-02_native_rear_cover.png",
+      "sha256": "20bee27c95e0309ace9b45b29b5f7b339fb8fa6f6b68478c56518c4aba6b96bb"
+    },
+    {
+      "page": 2,
+      "file": "part-03_esp32_carrier.png",
+      "sha256": "3204bff8677bd55dc914daac2504f6d593fccbbd249cae6c53a8b5c5d8eedfb6"
+    },
+    {
+      "page": 2,
+      "file": "part-04_optical_bezel.png",
+      "sha256": "f973edf1fba6d887178f96e21d82832eeabb8449ad414bb0fabf6861ccfb8542"
+    },
+    {
+      "page": 2,
+      "file": "part-05_lock_1.png",
+      "sha256": "ec446c37d508e69f69d5a2212f5615b3c5edb46668ce9301d9cd35fafb0fe910"
+    },
+    {
+      "page": 2,
+      "file": "part-07_shutter.png",
+      "sha256": "3e8d7b1da9fc61303e05040701659f5b883f684e73517e626f28abcd4b57ae13"
+    },
+    {
+      "page": 2,
+      "file": "part-08_shutter_retainer.png",
+      "sha256": "ff0eda670e6f0d14a662f3d8489442fd7a53b90947345184e92aa8465e8e06c6"
+    },
+    {
+      "page": 2,
+      "file": "part-09_camera_keeper.png",
+      "sha256": "974164f568e2bfcfe2c1a6133ff83d21cfa77e98c038985e42fb49568fff0b04"
+    },
+    {
+      "page": 3,
+      "file": "part-06_lock_tool.png",
+      "sha256": "a36b6d913e1429873bd3643b441247956a821ee6cdad8897d8fa14e2c29b9c5d"
+    },
+    {
+      "page": 3,
+      "file": "part-test_lock_socket.png",
+      "sha256": "171da4975e5cd3b7a7219c0ddd30e95f19ce5e9e5a51c4b20ed8e40551260473"
+    },
+    {
+      "page": 3,
+      "file": "e01-stack.svg",
+      "sha256": "5c0b903c7341459db4ff6b52fb3ec0b54227b7342b294c632c14664f19b1d056"
+    },
+    {
+      "page": 4,
+      "file": "overview.png",
+      "sha256": "6e67b512b6244c7b6ecf2c4437af944dec8bfaa33dd4fd6304b95e57c56f53b0"
+    },
+    {
+      "page": 5,
+      "file": "e01-stack.svg",
+      "sha256": "5c0b903c7341459db4ff6b52fb3ec0b54227b7342b294c632c14664f19b1d056"
+    },
+    {
+      "page": 6,
+      "file": "e02-usb.svg",
+      "sha256": "71e043f033912da9559365a2289057473e44cd7f48ea5dbb9574d779aac857ea"
+    },
+    {
+      "page": 10,
+      "file": "e05-bench.svg",
+      "sha256": "b8b63d5909547b4ae3787214e128fe8899e45c4ddb363dc2988dec1a6a2de138"
+    },
+    {
+      "page": 11,
+      "file": "e04-continuity.svg",
+      "sha256": "695121968981a02f9351574fd79bccf7df0b4e12a07ab7b7f2031a751b723d29"
+    },
+    {
+      "page": 12,
+      "file": "e03-wiring.svg",
+      "sha256": "95a1ccdf01bb030c0da5392954ebd6c7f9b0b3ea5e91ad54e854f0a3788adf79"
+    },
+    {
+      "page": 13,
+      "file": "e03-wiring.svg",
+      "sha256": "95a1ccdf01bb030c0da5392954ebd6c7f9b0b3ea5e91ad54e854f0a3788adf79"
+    },
+    {
+      "page": 14,
+      "file": "part-05_lock_1.png",
+      "sha256": "ec446c37d508e69f69d5a2212f5615b3c5edb46668ce9301d9cd35fafb0fe910"
+    },
+    {
+      "page": 14,
+      "file": "part-06_lock_tool.png",
+      "sha256": "a36b6d913e1429873bd3643b441247956a821ee6cdad8897d8fa14e2c29b9c5d"
+    },
+    {
+      "page": 14,
+      "file": "part-test_lock_socket.png",
+      "sha256": "171da4975e5cd3b7a7219c0ddd30e95f19ce5e9e5a51c4b20ed8e40551260473"
+    },
+    {
+      "page": 14,
+      "file": "m02.png",
+      "sha256": "1c335ebacdc5c86067ffdbe6a56cd3561e4d5a6a7408b98838c390e8a356bc68"
+    },
+    {
+      "page": 14,
+      "file": "lock-seat.png",
+      "sha256": "57858e8dd6d9d6e258a029d25c9b616f6b41a5960159484e1a2aee22a285280a"
+    },
+    {
+      "page": 14,
+      "file": "lock-turn.png",
+      "sha256": "fbe9a24ca6725d9711ccdf43d135e5f67aa609db4066cab76f4066771865afd0"
+    },
+    {
+      "page": 14,
+      "file": "lock-held.png",
+      "sha256": "b208ab0905eda2e7a8a1838cd65877934f0cade888ffe74406c9f3975da38cab"
+    },
+    {
+      "page": 15,
+      "file": "part-01_outer_shell.png",
+      "sha256": "7074e71928d75fd1da438ef95001697ea74213a2828eb3a94c0d4bac4a4cead7"
+    },
+    {
+      "page": 15,
+      "file": "part-02_native_rear_cover.png",
+      "sha256": "20bee27c95e0309ace9b45b29b5f7b339fb8fa6f6b68478c56518c4aba6b96bb"
+    },
+    {
+      "page": 15,
+      "file": "part-03_esp32_carrier.png",
+      "sha256": "3204bff8677bd55dc914daac2504f6d593fccbbd249cae6c53a8b5c5d8eedfb6"
+    },
+    {
+      "page": 15,
+      "file": "part-04_optical_bezel.png",
+      "sha256": "f973edf1fba6d887178f96e21d82832eeabb8449ad414bb0fabf6861ccfb8542"
+    },
+    {
+      "page": 15,
+      "file": "part-05_lock_1.png",
+      "sha256": "ec446c37d508e69f69d5a2212f5615b3c5edb46668ce9301d9cd35fafb0fe910"
+    },
+    {
+      "page": 15,
+      "file": "part-07_shutter.png",
+      "sha256": "3e8d7b1da9fc61303e05040701659f5b883f684e73517e626f28abcd4b57ae13"
+    },
+    {
+      "page": 15,
+      "file": "part-08_shutter_retainer.png",
+      "sha256": "ff0eda670e6f0d14a662f3d8489442fd7a53b90947345184e92aa8465e8e06c6"
+    },
+    {
+      "page": 15,
+      "file": "part-09_camera_keeper.png",
+      "sha256": "974164f568e2bfcfe2c1a6133ff83d21cfa77e98c038985e42fb49568fff0b04"
+    },
+    {
+      "page": 16,
+      "file": "e06-flex.svg",
+      "sha256": "8858eb4eb7ddde1d21bc60b63b50781a00e425651cdd529aafa0cd013bbcb281"
+    },
+    {
+      "page": 16,
+      "file": "part-03_esp32_carrier.png",
+      "sha256": "3204bff8677bd55dc914daac2504f6d593fccbbd249cae6c53a8b5c5d8eedfb6"
+    },
+    {
+      "page": 17,
+      "file": "part-03_esp32_carrier.png",
+      "sha256": "3204bff8677bd55dc914daac2504f6d593fccbbd249cae6c53a8b5c5d8eedfb6"
+    },
+    {
+      "page": 17,
+      "file": "m03.png",
+      "sha256": "2f85f4ad9fcea4938ca3474f6d434beff97ba95df878847415e248853b7aa81b"
+    },
+    {
+      "page": 18,
+      "file": "part-09_camera_keeper.png",
+      "sha256": "974164f568e2bfcfe2c1a6133ff83d21cfa77e98c038985e42fb49568fff0b04"
+    },
+    {
+      "page": 18,
+      "file": "m04.png",
+      "sha256": "0ebefeb59f81bb5af5529a3658f7c43201a7c8c2ef418a237a30b7d9a03ec1bf"
+    },
+    {
+      "page": 18,
+      "file": "e06-flex.svg",
+      "sha256": "8858eb4eb7ddde1d21bc60b63b50781a00e425651cdd529aafa0cd013bbcb281"
+    },
+    {
+      "page": 19,
+      "file": "part-07_shutter.png",
+      "sha256": "3e8d7b1da9fc61303e05040701659f5b883f684e73517e626f28abcd4b57ae13"
+    },
+    {
+      "page": 19,
+      "file": "m05.png",
+      "sha256": "c99d04a74fb1603326eb18921781458afb698a6d1755b568b7a308d873fd8007"
+    },
+    {
+      "page": 19,
+      "file": "m05-detail.png",
+      "sha256": "3e17c0c6b71252d37a661f85041104effc520a0ab8b92daff817bd6f127aa421"
+    },
+    {
+      "page": 20,
+      "file": "part-08_shutter_retainer.png",
+      "sha256": "ff0eda670e6f0d14a662f3d8489442fd7a53b90947345184e92aa8465e8e06c6"
+    },
+    {
+      "page": 20,
+      "file": "m06.png",
+      "sha256": "75566c00c587dc8f38d626c2b3b40a4b440ca637972fe0c29e91265c228b843a"
+    },
+    {
+      "page": 21,
+      "file": "part-08_shutter_retainer.png",
+      "sha256": "ff0eda670e6f0d14a662f3d8489442fd7a53b90947345184e92aa8465e8e06c6"
+    },
+    {
+      "page": 21,
+      "file": "m07.png",
+      "sha256": "6304207f1c51eea3c89d947392f32c5a3c69ec45c0db3143d3e5f99d7264e9a5"
+    },
+    {
+      "page": 21,
+      "file": "m07-detail.png",
+      "sha256": "5fb210b34d8f650380aeba72ec371498613a15b7d5628f46962f2a459ff5edee"
+    },
+    {
+      "page": 22,
+      "file": "part-03_esp32_carrier.png",
+      "sha256": "3204bff8677bd55dc914daac2504f6d593fccbbd249cae6c53a8b5c5d8eedfb6"
+    },
+    {
+      "page": 22,
+      "file": "m08.png",
+      "sha256": "4a5a1197caa34de90df6787546a835bcd720bc98bc2783103a9c92b302c0c763"
+    },
+    {
+      "page": 22,
+      "file": "m08-detail.png",
+      "sha256": "0f00b679b2ef0d296e6d0634019390dfb8a1980e50df800997a32d541d828c91"
+    },
+    {
+      "page": 23,
+      "file": "open-test.png",
+      "sha256": "ff3bafe8e0b9e9158318fba4b68d9a393dced969f8f5e82f2ea3b0287571ee18"
+    },
+    {
+      "page": 23,
+      "file": "e05-bench.svg",
+      "sha256": "b8b63d5909547b4ae3787214e128fe8899e45c4ddb363dc2988dec1a6a2de138"
+    },
+    {
+      "page": 24,
+      "file": "part-04_optical_bezel.png",
+      "sha256": "f973edf1fba6d887178f96e21d82832eeabb8449ad414bb0fabf6861ccfb8542"
+    },
+    {
+      "page": 24,
+      "file": "m09.png",
+      "sha256": "a769de1d0a8d85fa2d7c835ad31d554d2a4adc21a121ebd22bebd4600ac44e1a"
+    },
+    {
+      "page": 24,
+      "file": "m09-detail.png",
+      "sha256": "dd1d52178c5bb53e9cb0f9b6811701d1db7f71bb78a92def2a19920493331d38"
+    },
+    {
+      "page": 25,
+      "file": "part-02_native_rear_cover.png",
+      "sha256": "20bee27c95e0309ace9b45b29b5f7b339fb8fa6f6b68478c56518c4aba6b96bb"
+    },
+    {
+      "page": 25,
+      "file": "m10.png",
+      "sha256": "dd327a101f668b4d1c9b78881ae77d6f0d64bc660af2d9801a8ede61702be852"
+    },
+    {
+      "page": 26,
+      "file": "part-05_lock_1.png",
+      "sha256": "ec446c37d508e69f69d5a2212f5615b3c5edb46668ce9301d9cd35fafb0fe910"
+    },
+    {
+      "page": 26,
+      "file": "part-06_lock_tool.png",
+      "sha256": "a36b6d913e1429873bd3643b441247956a821ee6cdad8897d8fa14e2c29b9c5d"
+    },
+    {
+      "page": 26,
+      "file": "m11.png",
+      "sha256": "a0c8f9b8c5e668a4d34ea54694903bbdf11a9767a4c7ca3806fd3ab7d8b68fac"
+    },
+    {
+      "page": 26,
+      "file": "lock-seat.png",
+      "sha256": "57858e8dd6d9d6e258a029d25c9b616f6b41a5960159484e1a2aee22a285280a"
+    },
+    {
+      "page": 26,
+      "file": "lock-turn.png",
+      "sha256": "fbe9a24ca6725d9711ccdf43d135e5f67aa609db4066cab76f4066771865afd0"
+    },
+    {
+      "page": 26,
+      "file": "lock-held.png",
+      "sha256": "b208ab0905eda2e7a8a1838cd65877934f0cade888ffe74406c9f3975da38cab"
+    },
+    {
+      "page": 27,
+      "file": "finished.png",
+      "sha256": "0e2bb41edffdaee9c94811988bd2d0138e029fce0b091ad411a62a607da62a2b"
+    }
+  ],
+  "cad_geometry_modified": false,
+  "physical_fit_verified": false,
+  "imagegen_used": false,
+  "pdf_sha256": "382c4ddc98cca2cd954bd0160677c65c96ed2ee69c30813bd4979634cd50bb67"
+}

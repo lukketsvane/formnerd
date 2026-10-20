@@ -6,27 +6,23 @@ Den valde Tripo-forma har fått eit faktisk mekanisk delsett: eit maskinert ytte
 
 **Status: digitalt kontrollert mekanisk prototype. Fysisk passform og kamerafunksjon er ikkje frigjevne.** Brukaren har valt ESP32-CAM + MB. Nøyaktig kortvariant, MB-mål, kamerafleks, kontaktar og brytar er ikkje målte.
 
-[Ny byggjeguide R02, 28 sider](review/A1-Byggjesteg-R02.pdf) · [A1-testprogram for ESP32-CAM](firmware/README.md) · [Eksplodert vising](review/A1-exploded.png) · [Samla assembly i 3MF](review/A1-assembled.3mf) · [Samla GLB-vising](review/A1-assembled.glb)
+[Byggjerettleiing R03, 29 sider](review/A1-Byggjerettleiing-R03.pdf) · [Alle sidebileta](review/Byggjesteg-R03-bilete.md) · [P1S-handoff](PRINT-P1S.md) · [A1-testprogram for ESP32-CAM](firmware/README.md) · [Eksplodert vising](review/A1-exploded.png) · [Samla assembly i 3MF](review/A1-assembled.3mf) · [Samla GLB-vising](review/A1-assembled.glb)
 
-## Byggjesteg R02
+## Byggjesteg R03
 
-Den nye guiden erstattar den korte seks-siders rettleiinga som hovudrettleiing. Han har 24 byggjesteg, deloversikt, feilsøking og kjelder. Kvart steg har ei stor teikning, handlingar og kontroll før neste steg. Elektronikk, programmering, elektrisk utløysar og mekanisk montering blir viste i rekkjefølgje.
+R03 er hovudrettleiinga: 29 A4-sider med 23 nummererte byggjesteg, deloversikter, eksplodert CAD-vising, isometriske monteringssteg, detaljbilete av låsing, elektronikk, feilsøking og kontrollpunkt. Dei mekaniske teikningane er avleidde frå eksisterande CAD. Guide R03 endrar ikkje printgeometrien.
 
-Start med Arduino IDE på PC-en, set ESP32-CAM i MB og prøv kameraet på bordet. Eit separat Arduino-kort er ikkje nødvendig når MB blir brukt. A1-programmet lagar Wi-Fi-nettet `A1-Camera`, med passord `A1camera2026`, og nettsida `http://192.168.4.1/`. Ein normalt open knapp mellom GPIO13 og GND tek eit bilete. Denne ruta brukar ingen SD-kort; berre siste JPEG ligg i RAM og må lastast ned før neste foto eller fråkopling av straum.
+[PDF](review/A1-Byggjerettleiing-R03.pdf) · [29 sidebilete](review/Byggjesteg-R03-bilete.md) · [Bilete og portabel kjeldepakke](review/A1-R03-bilete-og-kjelde.zip) · [Kontrollgrunnlag](verification/guide-r03.json)
 
-Elektronikkteikningane er skjematiske og føreset ikkje eit målt pinneoppsett. Guide R02 endrar ikkje mekanisk CAD. Faktisk kortstakk, fleks, USB-plugg, brytar og fysisk fasthalding må kontrollerast ved prøvepass. Særleg viser steg 14 ei nominell plassering av CAM/MB; ein fysisk innføringsveg for den faktiske stakken er ikkje verifisert. Batteri, USB-C-lading og varig fotolagring er framleis ikkje løyste.
+Pakk ut kjeldepakken, installer `requirements.txt` og køyr `python source/build_manual_r03.py` frå den utpakka mappa. Pakken inneheld figurgrunnlag, alle sidebilete og PDF-byggjaren.
 
-[Firmwarekontroll](verification/firmware-r02.json) · [Logikk- og nettlesarkontroll](verification/firmware-host-r02.json) · [Guidegrunnlag](verification/guide-r02.json). Kompilering og simulering er ikkje ein fysisk test av kort, kamera eller brytar.
+Start med ESP32-CAM i MB og prøv kameraet på bordet. Arduino IDE er programvara; eit separat Arduino-kort trengst ikkje. A1-programmet lagar Wi-Fi-nettet `A1-Camera`, med passord `A1camera2026`, og nettsida `http://192.168.4.1/`. Ein normalt open knapp mellom GPIO13 og GND tek eit bilete. Ruta brukar ingen SD-kort; berre siste JPEG ligg i RAM og må lastast ned før neste foto eller fråkopling av straum.
 
-Figurkjelde og PDF-bygging ligg i `cad/`. Med mekanikkdata bygde etter instruksane nedanfor kan figurane og rettleiinga byggjast på nytt:
+Elektronikkteikningane er skjematiske. Faktisk CAM/MB-stakk, kamerafleks, USB-plugg, brytar, innføring og fasthalding må kontrollerast fysisk ved prøvepass. Batteri, USB-C-lading og varig fotolagring er framleis ikkje løyste.
 
-```bash
-python cad/electronics_figures_r02.py
-python cad/mechanical_steps_r02.py
-python cad/build_guide_r02.py
-```
+[Firmwarekontroll](verification/firmware-r02.json) · [Logikk- og nettlesarkontroll](verification/firmware-host-r02.json). Kompilering og simulering er ikkje fysisk test av kort, kamera eller brytar.
 
-Bruk `cad/requirements-manual.txt` i tillegg til CAD-avhengigheitene. Den tidlegare [R01-guiden](review/A1-Montering-R01.pdf) er behalden som historikk.
+Tidlegare [R02-guide](review/A1-Byggjesteg-R02.pdf), [R02-sidebilete](review/Byggjesteg-R02-bilete.md), figurkjelde i `cad/` og [R01-guide](review/A1-Montering-R01.pdf) er behaldne som historikk.
 
 ## Utskrift
 
@@ -71,3 +67,4 @@ python cad/verify_walls.py
 - Prøveprint, faktisk montering, optikk, varme og bruk er ikkje testa fysisk.
 
 Sjå `bill-of-materials.json`, `release-info.json` og rapportane i `verification/` for status og avgrensingar.
+
