@@ -1,0 +1,21 @@
+{
+  "revision": "A1-Assembly-R01",
+  "units": "mm",
+  "source_width": 140.0,
+  "axes": {"X": "source Z, width", "Y": "source X, front", "Z": "source Y, up"},
+  "optical_axis_xz": [-31.7, -8.4],
+  "cavity": {"centre_xz": [-31.7, -4.0], "width": 40.0, "height": 56.0, "rear": -32.4, "front": 3.0, "corner_radius": 3.0},
+  "rear_split_y": -29.0,
+  "rear_seam_gap": 0.3,
+  "sliding_clearance_per_side": 0.3,
+  "lock_centres_xz": [[-31.7, 30.0], [-31.7, -38.0], [20.0, 27.0], [42.0, -22.0]],
+  "lock_seat_y": -31.5,
+  "lock_channel_y": [-20.5, -18.2],
+  "bezel": {"bore_diameter": 34.6, "barrel_diameter": 34.0, "clear_aperture_diameter": 30.0, "flange_diameter": 38.0, "seat_y": 28.0, "flange_thickness": 1.8, "lug_y": [24.2, 25.6], "locked_rotation_deg": 45.0},
+  "esp32_cam": {"width": 27.0, "length": 40.5, "thickness": 4.5, "basis": "Ai-Thinker V1.0 nominal datasheet, not measured user hardware"},
+  "stack_placeholder": {"width": 28.0, "height": 48.0, "depth": 22.0, "measured": false},
+  "camera_flex_module_placeholder": {"width": 9.0, "height": 9.0, "lens_diameter": 8.0, "lens_tip_y": 28.0, "measured": false},
+  "carrier": {"width": 35.6, "height": 51.6, "rear_y": -23.6, "front_y": 2.4, "centre_z": -4.0},
+  "usb_access": {"width": 15.0, "height": 12.0, "rear_access": true, "connector_dimensions_measured": false},
+  "hardware_release": {"actual_esp32_variant_verified": false, "actual_mb_measured": false, "camera_ribbon_reach_verified": false, "switch_owned_verified": false, "battery_charger_owned_verified": false, "usb_c_charge_data_solution_verified": false, "physical_print_fit_verified": false}
+}

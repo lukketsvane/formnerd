@@ -1,0 +1,106 @@
+{
+  "valid": true,
+  "profile": "generic-test-PLA-0.4mm-0.2mm.ini",
+  "physical_print_tested": false,
+  "actual_Bambu_P1S_profile_verified": false,
+  "plates": [
+    {
+      "xy_extrusion_moves": 2160809,
+      "model_xy_extrusion_moves": 2051617,
+      "support_xy_extrusion_moves": 109192,
+      "perimeter_xy_extrusion_moves": 600347,
+      "layers": 601,
+      "extrusion_xy_bounds_mm": [
+        [
+          4.345,
+          6.727
+        ],
+        [
+          231.187,
+          231.115
+        ]
+      ],
+      "extrusion_within_256mm_bed": true,
+      "support_filament_mm": 19539.04602000042,
+      "statistics": {
+        "filament used [mm]": "97030.20",
+        "filament used [g]": "289.40",
+        "estimated printing time (normal mode)": "22h 35m 4s"
+      },
+      "valid": true,
+      "plate": "print/A1-plate-01.3mf",
+      "expected_object_names": [
+        "01_outer_shell",
+        "02_native_rear_cover",
+        "03_esp32_carrier",
+        "04_optical_bezel",
+        "05_lock_1",
+        "05_lock_2",
+        "05_lock_3",
+        "05_lock_4",
+        "06_lock_tool",
+        "07_shutter"
+      ],
+      "gcode_object_names": [
+        "01_outer_shell",
+        "02_native_rear_cover",
+        "03_esp32_carrier",
+        "04_optical_bezel",
+        "05_lock_1",
+        "05_lock_2",
+        "05_lock_3",
+        "05_lock_4",
+        "06_lock_tool",
+        "07_shutter"
+      ],
+      "all_expected_objects_in_gcode": true,
+      "warnings": [],
+      "slicer": "PrusaSlicer 2.7.2",
+      "physical_print_tested": false,
+      "actual_Bambu_P1S_profile_verified": false,
+      "gcode_delivered": false
+    },
+    {
+      "xy_extrusion_moves": 39896,
+      "model_xy_extrusion_moves": 36213,
+      "support_xy_extrusion_moves": 3683,
+      "perimeter_xy_extrusion_moves": 19198,
+      "layers": 179,
+      "extrusion_xy_bounds_mm": [
+        [
+          4.693,
+          5.015
+        ],
+        [
+          82.375,
+          57.485
+        ]
+      ],
+      "extrusion_within_256mm_bed": true,
+      "support_filament_mm": 483.30831000000205,
+      "statistics": {
+        "filament used [mm]": "3078.39",
+        "filament used [g]": "9.18",
+        "estimated printing time (normal mode)": "53m 27s"
+      },
+      "valid": true,
+      "plate": "print/A1-plate-02.3mf",
+      "expected_object_names": [
+        "08_shutter_retainer",
+        "09_camera_keeper",
+        "test_lock_socket"
+      ],
+      "gcode_object_names": [
+        "08_shutter_retainer",
+        "09_camera_keeper",
+        "test_lock_socket"
+      ],
+      "all_expected_objects_in_gcode": true,
+      "warnings": [],
+      "slicer": "PrusaSlicer 2.7.2",
+      "physical_print_tested": false,
+      "actual_Bambu_P1S_profile_verified": false,
+      "gcode_delivered": false
+    }
+  ]
+}

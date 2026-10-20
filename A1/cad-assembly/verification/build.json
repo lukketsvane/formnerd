@@ -1,0 +1,229 @@
+{
+  "revision": "A1-Assembly-R01",
+  "parts": {
+    "01_outer_shell": {
+      "triangles": 2257178,
+      "components": 1,
+      "volume_mm3": 459373.59841140645,
+      "bounds_mm": [
+        -70.0,
+        -28.849999999999994,
+        -52.03306257724762,
+        70.0,
+        36.105841398239136,
+        52.03306257724762
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": false
+    },
+    "02_native_rear_cover": {
+      "triangles": 240958,
+      "components": 1,
+      "volume_mm3": 49426.76641176395,
+      "bounds_mm": [
+        -61.73728664453366,
+        -36.10584557056427,
+        -43.71761120222888,
+        64.43205771115277,
+        -25.799999999999997,
+        34.75319663297548
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": false
+    },
+    "03_esp32_carrier": {
+      "triangles": 5598,
+      "components": 1,
+      "volume_mm3": 11684.624414376904,
+      "bounds_mm": [
+        -49.5,
+        -23.6,
+        -29.8,
+        -13.899999999999999,
+        24.8,
+        21.8
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "04_optical_bezel": {
+      "triangles": 2264,
+      "components": 1,
+      "volume_mm3": 1627.539409113907,
+      "bounds_mm": [
+        -50.69710620797143,
+        24.0,
+        -27.397106207971433,
+        -12.702893792028565,
+        29.8,
+        10.59710620797144
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "05_lock_1": {
+      "triangles": 1692,
+      "components": 1,
+      "volume_mm3": 267.72303801737945,
+      "bounds_mm": [
+        -35.7,
+        -33.5,
+        25.5,
+        -27.699999999999996,
+        -18.5,
+        34.5
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "05_lock_2": {
+      "triangles": 1692,
+      "components": 1,
+      "volume_mm3": 267.72303801737934,
+      "bounds_mm": [
+        -35.7,
+        -33.5,
+        -42.49999999999999,
+        -27.7,
+        -18.5,
+        -33.49999999999999
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "05_lock_3": {
+      "triangles": 1692,
+      "components": 1,
+      "volume_mm3": 267.72303801737934,
+      "bounds_mm": [
+        16.0,
+        -33.5,
+        22.500000000000004,
+        24.0,
+        -18.5,
+        31.500000000000004
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "05_lock_4": {
+      "triangles": 1692,
+      "components": 1,
+      "volume_mm3": 267.72303801737945,
+      "bounds_mm": [
+        38.0,
+        -33.5,
+        -26.5,
+        46.0,
+        -18.5,
+        -17.5
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "06_lock_tool": {
+      "triangles": 28,
+      "components": 1,
+      "volume_mm3": 207.8375,
+      "bounds_mm": [
+        -7.0,
+        -1.75,
+        -2.5,
+        7.0,
+        1.75,
+        5.75
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "07_shutter": {
+      "triangles": 22014,
+      "components": 1,
+      "volume_mm3": 641.609121646183,
+      "bounds_mm": [
+        37.91291296482086,
+        1.5032955259084702,
+        30.3,
+        52.0220810174942,
+        15.260138362646103,
+        40.44087886810303
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": false
+    },
+    "08_shutter_retainer": {
+      "triangles": 620,
+      "components": 1,
+      "volume_mm3": 2405.549146206199,
+      "bounds_mm": [
+        35.7,
+        -25.7,
+        24.0,
+        54.3,
+        16.8,
+        35.2
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "09_camera_keeper": {
+      "triangles": 2296,
+      "components": 1,
+      "volume_mm3": 179.72374643369125,
+      "bounds_mm": [
+        -39.7,
+        21.6,
+        -16.4,
+        -23.7,
+        24.8,
+        -0.40000000000000036
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    },
+    "test_lock_socket": {
+      "triangles": 2324,
+      "components": 1,
+      "volume_mm3": 5696.365782822741,
+      "bounds_mm": [
+        -9.0,
+        -35.0,
+        -9.0,
+        9.0,
+        -15.0,
+        9.0
+      ],
+      "closed": true,
+      "winding_consistent": true,
+      "cad_step": true
+    }
+  },
+  "mechanical_hardware_fit_measured": false,
+  "source_geometry": "Boolean-machined native detailed Tripo outer geometry; not reconstructed by hand",
+  "units": "mm",
+  "axes": {
+    "X": "source Z, width",
+    "Y": "source X, front",
+    "Z": "source Y, up"
+  },
+  "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+  "numerical_fragments_removed": {
+    "01_outer_shell_export": {
+      "closed_numerical_components_removed": 115,
+      "sum_absolute_signed_volume_mm3": 0.0011683917520004096,
+      "maximum_permitted_removal_mm3": 0.01
+    }
+  }
+}
