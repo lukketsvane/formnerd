@@ -16,14 +16,14 @@ Huset er bygd rundt delane som er valde for prosjektet: to ESP32-CAM, kvar sett 
 
 `A2-hus-alle-delar.3mf` har alle tre på éi 256 mm-plate. `provebitar/` har sju små utdrag (skøyt framme, bak og plate, og holdar og linse/USB for kvar stabel) av dei same delane, til å prøve skøyten, styrebena, linsehol og USB-tunnel før sluttprint. `renderar/` har samla, eksplodert og snitt.
 
-`bambu/` har ferdig slica filer for Bambu Lab P1S (Bambu Studio 2.8.2, 0,4 mm dyse, 0,20 mm Standard, Bambu PLA Basic, tre-støtte berre frå plata, 3 veggar, 15 % fyll, Textured PEI). Profilane ligg i `bambu/profil/`, og `bash verktoy/bambu_slice.sh A2` slicar på nytt.
+`bambu/` har ferdig slica filer for Bambu Lab P1S (Bambu Studio 2.8.2, 0,4 mm dyse, 0,20 mm Standard, Bambu PLA Basic @BBL P1S, tre-støtte berre frå plata, 3 veggar med Arachne, 15 % fyll, Textured PEI). Profilane ligg i `bambu/profil/`, og `bash verktoy/bambu_slice.sh A2` slicar på nytt.
 
 | Fil | Plate | Innhald | Tid | Filament |
 | --- | --- | --- | --- | --- |
-| `A2-hus-P1S.gcode.3mf` | 1 | alle tre delane | 6 t 35 min | 133,1 g |
-| `A2-provebitar-P1S.gcode.3mf` | 1 | sju prøvebitar | 2 t 52 min | 55,4 g |
+| `A2-hus-P1S.gcode.3mf` | 1 | alle tre delane | 6 t 6 min | 132,4 g |
+| `A2-provebitar-P1S.gcode.3mf` | 1 | sju prøvebitar | 2 t 44 min | 55,3 g |
 
-Slicaren gav inga åtvaring. Byt skrivar, plate eller filament i Bambu Studio om oppsettet ditt er eit anna.
+Slicaren gav inga åtvaring. `verktoy/bambu_etter.py` stadfestar P1S-startkode, AMS-lasting, 220 °C og `printer_model_id` C12. (Den første slicinga brukte ein profil-flatar som ikkje følgde `include`, og fekk generisk startkode med 205 °C. Dei filene er sletta.) Byt skrivar, plate eller filament i Bambu Studio om oppsettet ditt er eit anna.
 
 Konstruksjon (`verktoy/bygg_hus.py A2`, mål i `print/parametrar.json`):
 
