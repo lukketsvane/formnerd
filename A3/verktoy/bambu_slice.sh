@@ -6,10 +6,12 @@ P="$HER/../05-print"
 APP="$(flatpak info --user --show-location com.bambulab.BambuStudio)/files"
 RT="$(flatpak info --user --show-location org.gnome.Platform//50)/files"
 GL="$(ls -d "$(dirname "$(dirname "$RT")")"/../../../org.freedesktop.Platform.GL.default/x86_64/25.08/active/files 2>/dev/null | head -1)"
+TMPD="$(mktemp -d)"
+trap 'rm -rf "$TMPD"' EXIT
 bambu() {
-  xvfb-run -a -s "-screen 0 1280x1024x24 +extension GLX" env LD_LIBRARY_PATH="$APP/lib:$RT/lib/x86_64-linux-gnu:$RT/lib:$GL/lib" \
+  (cd "$TMPD" && xvfb-run -a -s "-screen 0 1280x1024x24 +extension GLX" env LD_LIBRARY_PATH="$APP/lib:$RT/lib/x86_64-linux-gnu:$RT/lib:$GL/lib" \
     LIBGL_DRIVERS_PATH="$GL/lib/dri" __EGL_VENDOR_LIBRARY_DIRS="$GL/glvnd/egl_vendor.d" LIBGL_ALWAYS_SOFTWARE=1 GALLIUM_DRIVER=llvmpipe \
-    "$RT/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2" "$APP/bin/bambu-studio" "$@"
+    "$RT/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2" "$APP/bin/bambu-studio" "$@")
 }
 python3 "$HER/bambu_profil.py" "$APP/share/BambuStudio/profiles/BBL" "$P/bambu/profil"
 DELAR=("$P/printretning/kropp.stl" "$P/printretning/luke.stl" "$P/printretning/stabelhaldar.stl" "$P/printretning/utloysar.stl" "$P/printretning/usb-lokk.stl")
