@@ -1,5 +1,7 @@
 # Stereoskopisk kamerahus
 
+> Sjå òg [A3 – Entropi](A3/README.md): handhalde kamera med konseptordet entropi, laga med Tripo frå skisse til utskriftsklar STL.
+
 Formutvikling for eit stereokamera med to ESP32-CAM-modular. Bileta og 3D-modellane er laga med Tripo-API-et (sjå `verktoy/`). Alle meshar er formreferansar for CAD, ikkje ferdige produksjonsfiler.
 
 ## Runde 2 – stilen frå ref-7, elektronikken skjult
