@@ -8,6 +8,21 @@ Bruk få strekvekter: tydeleg ytterkontur, lettare detaljar og fine leiarar. Bru
 
 Hald same grunnkamera og skala gjennom samanhengande steg. Roter berre for å vise ei elles skjult handling, og gjer vendinga tydeleg. Bruk modellavleidd line-render, vektor der det fungerer og raster med tilstrekkeleg oppløysing for print der meshforma krev det. Bevar kjelda for ny projeksjon.
 
+## Referansesider
+
+`ikea/` har ti sider frå ein ekte monteringsrettleiing som brukaren har valt som stilmål. Sjå dei før du teiknar:
+
+- `01-framside.jpg`, `02-produkt.jpg`: tittel og éi stor isometrisk strekteikning av det ferdige produktet, i tynn sideramme.
+- `03-deloversikt.jpg`: rutenett med små isometriske delar, kvar med nummer i sirkel og mengd (①×1).
+- `04-beslag.jpg`: beslag med bokstav over og mengd under (A ×81), rader skilde med vassrette strekar.
+- `05-eksplodert-oversikt.jpg`: heile produktet eksplodert, med nummer i sirkel på kvar del og innfelt boks for underenheiter som går igjen (×8).
+- `06-steg-forstorringsbobler.jpg`: førebuing av delar med stipla innstikksliner, merke som «A×6» og runde forstørringsbobler som viser ei handling i tre trinn med hole piler mellom.
+- `07-steg-underdelar.jpg`, `08-steg-beslagkolonne.jpg`: fleire delhandlingar på same side, hole piler (⇨) mellom før og etter, og beslagkolonne til høgre med bokstav, bilete og mengd for steget.
+- `09-steg-multiplikator.jpg`: stor multiplikator (×8) ved figurar som skal gjentakast.
+- `10-atvaring-verktoy.jpg`: åtvaringar, verktøy og forbodssymbol.
+
+Felles for alle: berre svart strek på kvitt, jamn linjevekt, inga skugge eller farge, glas markert med to skrå strekar, enkel sans-serif, tal og bokstavar i staden for tekst.
+
 ## Bygg frå deldata
 
 Lag scenemanifest med del-ID-ar, synlege delar, transformasjonar, innføringsvektor/rotasjonsakse og kamera per steg. Bruk monterte posisjonar som felles fasit. Eksplodering er ei illustrasjonstransformasjon av rette delar langs forståelege retningar.
