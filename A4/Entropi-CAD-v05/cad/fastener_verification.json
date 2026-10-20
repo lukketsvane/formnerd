@@ -1,0 +1,575 @@
+{
+  "units": "mm",
+  "assembly_part_count": 18,
+  "assembly_part_names": [
+    "01_rib_cage",
+    "02_chassis",
+    "03_rear_cover",
+    "04_esp32_carrier",
+    "05_board_clamp",
+    "06_optical_baffle",
+    "07_shutter",
+    "08_shutter_pin",
+    "09_rear_dial",
+    "10_io_plate",
+    "12_lens_blank",
+    "13_lens_blank_retainer",
+    "14_dial_retainer",
+    "15_shutter_return_flexure",
+    "17_camera_saddle",
+    "18_camera_clamp",
+    "19_usb_retainer",
+    "20_shutter_service_cover"
+  ],
+  "shaft_radius_mm": 1.0,
+  "head_radius_mm": 1.9,
+  "head_height_mm": 2.0,
+  "volume_tolerance_mm3": 0.0001,
+  "scope": "Static native BRep clearance of simplified M2 shaft and cylindrical head envelopes. Pilot receiver shaft interference is expected for direct plastic threading and is recorded, not counted as a collision. Heads are checked against every part. This is not a tool-access, thread-strength, screw-to-screw or physical-fit certificate.",
+  "fasteners": [
+    {
+      "name": "cage_1",
+      "seat_mm": [
+        -56,
+        -13.4,
+        22
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "01_rib_cage",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.417079270946383,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "cage_2",
+      "seat_mm": [
+        -56,
+        -13.4,
+        66
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "01_rib_cage",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.417079270946342,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "cage_3",
+      "seat_mm": [
+        54,
+        -13.4,
+        21
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "01_rib_cage",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.417079270946383,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "cage_4",
+      "seat_mm": [
+        48,
+        -13.4,
+        71
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "01_rib_cage",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.417079270946342,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "cover_1",
+      "seat_mm": [
+        -59,
+        26.9,
+        16
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 3.9395571876008226,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "cover_2",
+      "seat_mm": [
+        -59,
+        26.9,
+        72
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 3.939557187600796,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "cover_3",
+      "seat_mm": [
+        59,
+        26.9,
+        16
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 3.9395571876008226,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "cover_4",
+      "seat_mm": [
+        59,
+        26.9,
+        72
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 3.939557187600796,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "carrier_1",
+      "seat_mm": [
+        12,
+        2,
+        15
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.178318229273598,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "carrier_2",
+      "seat_mm": [
+        50,
+        2,
+        15
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.178318229273586,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "carrier_3",
+      "seat_mm": [
+        12,
+        2,
+        71
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.178318229273573,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "carrier_4",
+      "seat_mm": [
+        40,
+        2,
+        71
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 10,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 4.178318229273566,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "board_clamp_1",
+      "seat_mm": [
+        16,
+        -4,
+        66.25
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "04_esp32_carrier",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.148849375054999,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "board_clamp_2",
+      "seat_mm": [
+        46,
+        -4,
+        66.25
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "04_esp32_carrier",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.1488493750550033,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "baffle_1",
+      "seat_mm": [
+        14,
+        -9,
+        43
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "06_optical_baffle",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 3.5814156250916724,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "baffle_2",
+      "seat_mm": [
+        48,
+        -9,
+        43
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "06_optical_baffle",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 3.581415625091662,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "io_1",
+      "seat_mm": [
+        -59.2,
+        -4.5,
+        37
+      ],
+      "head_direction": [
+        1,
+        0,
+        0
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.2682298958913982,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "io_2",
+      "seat_mm": [
+        -59.2,
+        18.5,
+        37
+      ],
+      "head_direction": [
+        1,
+        0,
+        0
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "02_chassis",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.2682298958913965,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "dial_retainer",
+      "seat_mm": [
+        47,
+        10,
+        79
+      ],
+      "head_direction": [
+        0,
+        0,
+        -1
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "09_rear_dial",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.8651325000739316,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "optional_lens_blank",
+      "seat_mm": [
+        31,
+        -27.8,
+        43
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 4,
+      "pilot_receiver": "12_lens_blank",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 1.671327291709451,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "service_cover",
+      "seat_mm": [
+        -70.5,
+        21.4,
+        78
+      ],
+      "head_direction": [
+        0,
+        1,
+        0
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "01_rib_cage",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.9248227604914874,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "camera_base_1",
+      "seat_mm": [
+        21.0,
+        -16.7,
+        36.0
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "06_optical_baffle",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.0891591146368054,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "camera_cap_1",
+      "seat_mm": [
+        21.5,
+        -22.9,
+        48.3
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "17_camera_saddle",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 1.4325662500366692,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "camera_base_2",
+      "seat_mm": [
+        41.0,
+        -16.7,
+        36.0
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "06_optical_baffle",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 2.089159114636808,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "camera_cap_2",
+      "seat_mm": [
+        40.5,
+        -22.9,
+        48.3
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 8,
+      "pilot_receiver": "17_camera_saddle",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 1.4325662500366727,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "usb_retainer_1",
+      "seat_mm": [
+        -45.4,
+        -2.8000000000000007,
+        38.099999999999994
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "10_io_plate",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 1.969778593800414,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    },
+    {
+      "name": "usb_retainer_2",
+      "seat_mm": [
+        -45.4,
+        16.8,
+        38.099999999999994
+      ],
+      "head_direction": [
+        0,
+        0,
+        1
+      ],
+      "shaft_length_mm": 6,
+      "pilot_receiver": "10_io_plate",
+      "head_collisions": [],
+      "shaft_collisions": [],
+      "receiver_shaft_intersection_mm3": 1.969778593800414,
+      "pilot_receiver_present": true,
+      "clearance_pass": true
+    }
+  ],
+  "errors": [],
+  "fastener_count": 27,
+  "geometry_pass": true,
+  "physical_fit_verified": false
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "file": "materialstudie-01.png",
+    "original_name": "exec-1629890c-1e00-4ac3-ac60-53e3fef5beef.png",
+    "kind": "AI_materialstudie",
+    "actual_CAD_geometry": false,
+    "sha256": "02157deacb024be4e5a3c55f438106b9de0644a267cf64c3a6063ae6c8fdcb95"
+  },
+  {
+    "file": "materialstudie-02.png",
+    "original_name": "exec-3fdb0c10-b74d-48f7-8a90-61308ab50ab5.png",
+    "kind": "AI_materialstudie",
+    "actual_CAD_geometry": false,
+    "sha256": "27c539c40fd917fb04a104665fd70955b84ee0df2e5a1d75d589082beedaf68c"
+  },
+  {
+    "file": "materialstudie-03.png",
+    "original_name": "exec-52f0fd4c-d1e2-4f0d-bcb6-91b7d5323378.png",
+    "kind": "AI_materialstudie",
+    "actual_CAD_geometry": false,
+    "sha256": "18fc53f7fe81bfbd2a11edae90eb23d19291a7e63057305233d3c49c608cfe27"
+  },
+  {
+    "file": "materialstudie-04.png",
+    "original_name": "exec-6de815f4-d35a-4e8f-bb6f-34126a765628.png",
+    "kind": "AI_materialstudie",
+    "actual_CAD_geometry": false,
+    "sha256": "dc2e15f0eae2c7c89067747086ab0c60cbd5408f4873adf87f464363f0b99a86"
+  },
+  {
+    "file": "materialstudie-05.png",
+    "original_name": "exec-6ed05dca-514f-4350-b3cf-49c6bab6ae19.png",
+    "kind": "AI_materialstudie",
+    "actual_CAD_geometry": false,
+    "sha256": "0ece6de655e2f1a22489ccfa683bf30de690316f7a137011eeb1ee6022c55cdd"
+  },
+  {
+    "file": "materialstudie-06.png",
+    "original_name": "exec-aac9b9c4-19b8-4ca8-afdf-269f597a62b3.png",
+    "kind": "AI_materialstudie",
+    "actual_CAD_geometry": false,
+    "sha256": "19f7f3d6d097a12f23c449ef41da96948c2db48f89ea0f1fe2d66b6819d6376b"
+  },
+  {
+    "file": "materialstudie-07.png",
+    "original_name": "exec-d2287ab2-b944-4e15-af02-b36d4632f993.png",
+    "kind": "AI_materialstudie",
+    "actual_CAD_geometry": false,
+    "sha256": "5faa73fb14297de0b11c69efb5857b1d4ea6e38a39587bbafcdde01c216164df"
+  }
+]

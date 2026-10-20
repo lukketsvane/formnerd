@@ -1,0 +1,1121 @@
+{
+  "project": "Entropi",
+  "version": "v05",
+  "created_utc": "2026-10-20T15:03:31.041893+00:00",
+  "release_status": "VALIDATED_DIGITAL_GEOMETRY_AND_PRINT_PREPARATION",
+  "units": "mm",
+  "assembly_envelope_xyz_mm": [
+    143.0000002,
+    72.9000001,
+    108.50375246380146
+  ],
+  "assembly_envelope_provenance": "cad/export_verification.json; native assembly STEP readback.",
+  "assembly_parts": 18,
+  "native_part_step_files": 20,
+  "native_part_stl_files": 20,
+  "print_part_stl_files": 20,
+  "calibration_parts": [
+    "11_fit_coupon",
+    "16_shutter_calibration"
+  ],
+  "assembly_verification": {
+    "report": "cad/verification_report.json",
+    "geometry_pass": true,
+    "valid_single_solids": 18,
+    "watertight_assembly_stls": 18,
+    "static_pairs": 153,
+    "maximum_intersection_volume_mm3": 0.0,
+    "volume_tolerance_mm3": 0.0001,
+    "errors": [],
+    "removal_paths": [
+      {
+        "name": "service_cover_removal",
+        "clear": true,
+        "travel_mm": 30,
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "sample_step_mm": 2.0,
+        "sample_count": 16,
+        "continuous_swept_envelope_proof": false
+      },
+      {
+        "name": "rear_cover_removal",
+        "clear": true,
+        "travel_mm": 85,
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "sample_step_mm": 2.0,
+        "sample_count": 44,
+        "continuous_swept_envelope_proof": false
+      },
+      {
+        "name": "cassette_removal",
+        "clear": true,
+        "travel_mm": 85,
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "sample_step_mm": 2.0,
+        "sample_count": 44,
+        "continuous_swept_envelope_proof": false
+      },
+      {
+        "name": "baffle_removal",
+        "clear": true,
+        "travel_mm": 50.0,
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "sample_step_mm": null,
+        "sample_count": null,
+        "continuous_swept_envelope_proof": true
+      },
+      {
+        "name": "chassis_removal",
+        "clear": true,
+        "travel_mm": 105,
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "sample_step_mm": 2.0,
+        "sample_count": 54,
+        "continuous_swept_envelope_proof": false
+      }
+    ]
+  },
+  "shutter_verification": {
+    "report": "cad/shutter_verification.json",
+    "pass": true,
+    "stroke_states": 5,
+    "native_intersection_checks": 240,
+    "positive_overtravel_stops": [
+      {
+        "displacement_mm": -0.25,
+        "moving_part": "pin",
+        "intersection_with_cage_mm3": 1.6794312484237301,
+        "positive_stop_blocks_overtravel": true
+      },
+      {
+        "displacement_mm": 1.25,
+        "moving_part": "shutter",
+        "intersection_with_cage_mm3": 14.419910279976705,
+        "positive_stop_blocks_overtravel": true
+      }
+    ],
+    "errors": [],
+    "scope": "Exact BRep intersections at five prescribed deformation states; analytic spring sizing only. The deformed beam is a geometric kinematic approximation, not an FEA or physical spring-force test. Snap insertion, actual switch fit and cyclic life are not verified."
+  },
+  "fastener_verification": {
+    "report": "cad/fastener_verification.json",
+    "pass": true,
+    "fasteners": 27,
+    "assembly_parts_checked": 18,
+    "errors": [],
+    "scope": "Static native BRep clearance of simplified M2 shaft and cylindrical head envelopes. Pilot receiver shaft interference is expected for direct plastic threading and is recorded, not counted as a collision. Heads are checked against every part. This is not a tool-access, thread-strength, screw-to-screw or physical-fit certificate."
+  },
+  "print_preparation": {
+    "manifest": "print/print_manifest.json",
+    "pass": true,
+    "parts": 20,
+    "plates": 2,
+    "plate_size_mm": [
+      250.0,
+      250.0
+    ],
+    "edge_margin_mm": 5.0,
+    "part_gap_mm": 8.0,
+    "all_parts_z0": true,
+    "all_parts_watertight": true,
+    "volume_preserved": true,
+    "source_hashes_match": true,
+    "plate_files": [
+      "plate_01_pale_gray.3mf",
+      "plate_02_dark_gray.3mf"
+    ],
+    "generic_3mf_geometry_only": true,
+    "slicer_profile_included": false,
+    "supports_generated": false,
+    "machine_gcode_included": false
+  },
+  "glb": {
+    "file": "Entropi-assembly-v05.glb",
+    "version": 2,
+    "named_mesh_nodes": 18,
+    "root_scale": [
+      0.001,
+      0.001,
+      0.001
+    ],
+    "root_rotation_quaternion_xyzw": [
+      -0.7071067811865475,
+      0.0,
+      0.0,
+      0.7071067811865475
+    ],
+    "world_units": "m",
+    "nonmetallic_pbr_materials": true
+  },
+  "cmf": {
+    "material_definition": "cad/cmf_materials.json",
+    "finish": "Smooth satin gray polymer and fine matte charcoal polymer; no visible orange-peel texture. Polished dark form plug, not optical glass.",
+    "ai_material_images_included": false
+  },
+  "design_review": "cad/design_review.md",
+  "form_refinements": {
+    "report": "cad/form_refinement_report.json",
+    "native_feature_pass": true,
+    "native_feature_count": 11,
+    "upward_terminal_faces_before": 3,
+    "upward_terminal_faces_after": 0
+  },
+  "usb_access": {
+    "report": "cad/usb_access_verification.json",
+    "nominal_access_pass": true,
+    "continuous_swept_checks": 36,
+    "housing_width_height_length_mm": [
+      12.0,
+      7.0,
+      22.0
+    ],
+    "nose_width_height_length_mm": [
+      8.8,
+      3.0,
+      6.5
+    ],
+    "physical_connector_fit_verified": false
+  },
+  "export_verification": {
+    "assembly_step_valid": true,
+    "assembly_step_solids": 18,
+    "native_size_mm": [
+      143.0000002,
+      72.9000001,
+      108.50375246380146
+    ],
+    "glb_world_size_m": [
+      0.14300000000000002,
+      0.1085032157897949,
+      0.07289999961853028
+    ],
+    "glb_meshes": [
+      {
+        "name": "01_rib_cage",
+        "vertices": 266983,
+        "triangles": 534014,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "02_chassis",
+        "vertices": 15197,
+        "triangles": 30426,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "03_rear_cover",
+        "vertices": 35240,
+        "triangles": 70492,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "04_esp32_carrier",
+        "vertices": 2980,
+        "triangles": 5980,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "05_board_clamp",
+        "vertices": 7976,
+        "triangles": 15956,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "06_optical_baffle",
+        "vertices": 2544,
+        "triangles": 5096,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "07_shutter",
+        "vertices": 7436,
+        "triangles": 14872,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "08_shutter_pin",
+        "vertices": 1780,
+        "triangles": 3556,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "09_rear_dial",
+        "vertices": 14858,
+        "triangles": 29712,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "10_io_plate",
+        "vertices": 9622,
+        "triangles": 19260,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "12_lens_blank",
+        "vertices": 948,
+        "triangles": 1892,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "13_lens_blank_retainer",
+        "vertices": 632,
+        "triangles": 1264,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "14_dial_retainer",
+        "vertices": 632,
+        "triangles": 1264,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "15_shutter_return_flexure",
+        "vertices": 46,
+        "triangles": 88,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "17_camera_saddle",
+        "vertices": 1548,
+        "triangles": 3108,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "18_camera_clamp",
+        "vertices": 932,
+        "triangles": 1868,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "19_usb_retainer",
+        "vertices": 648,
+        "triangles": 1300,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      },
+      {
+        "name": "20_shutter_service_cover",
+        "vertices": 2247,
+        "triangles": 4494,
+        "boundary_or_nonmanifold_edges": 0,
+        "closed": true
+      }
+    ],
+    "glb_root_scale": [
+      [
+        0.001,
+        0.001,
+        0.001
+      ]
+    ],
+    "glb_root_rotation": [
+      [
+        -0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ]
+    ],
+    "all_materials_nonmetallic": true,
+    "export_pass": true
+  },
+  "remaining_visual_limitations": [
+    "Local blends preserve the selected rib shapes; no G2 surface continuity claim is made."
+  ],
+  "previews": [
+    {
+      "file": "preview/hero.png",
+      "size_px": [
+        1600,
+        1200
+      ],
+      "sha256": "2401c2e4d9683ecbe36ee81166f2bab9c8c265e781995a61e6671075593f6615"
+    },
+    {
+      "file": "preview/back.png",
+      "size_px": [
+        1600,
+        1200
+      ],
+      "sha256": "56e9217fb3ed3e3d51337ffd6da1b27f7efec6fe50327f4bc4af883cc57a3ee5"
+    },
+    {
+      "file": "preview/left.png",
+      "size_px": [
+        1600,
+        1200
+      ],
+      "sha256": "4d07b36b34ddb118aa124f50556b4d16bf7ded3bb22f7a157e1db52712c9d193"
+    },
+    {
+      "file": "preview/front.png",
+      "size_px": [
+        1600,
+        1200
+      ],
+      "sha256": "833ac5351102d938f0811c4e343c3b378493382115a917d88dea5206b5cb4302"
+    },
+    {
+      "file": "preview/right.png",
+      "size_px": [
+        1600,
+        1200
+      ],
+      "sha256": "045c46d336a6cf46c5650e923b2e308d2769627329aae0eb1696fd7a9645bebf"
+    },
+    {
+      "file": "preview/top.png",
+      "size_px": [
+        1600,
+        1200
+      ],
+      "sha256": "e988e7e7b8d0845c53563a4e2c7ffc07a0bd069473f9f84e4f598c60d17a445b"
+    },
+    {
+      "file": "preview/exploded.png",
+      "size_px": [
+        1600,
+        1200
+      ],
+      "sha256": "321360100846eaa6d3a6a05d58112381e44aad32ed1ef39f96428446a568b30b"
+    }
+  ],
+  "preview_review": {
+    "final_views_confirmed_complete": true,
+    "inspected_views": [
+      "hero",
+      "top"
+    ],
+    "clipping_or_detached_fragments_observed": false,
+    "exploded_parts_separate": 18,
+    "remaining_visual_note": "The three upward terminal faces are removed; a continuous visible bottom rail joins the rib feet."
+  },
+  "print_source_sha256": [
+    {
+      "file": "parts/01_rib_cage.stl",
+      "sha256": "bd60f9059eee1a9f466b2d22b7aa93c92173904381f3566dcdcca52efea9a1ed"
+    },
+    {
+      "file": "parts/02_chassis.stl",
+      "sha256": "893be9e5b385ee7de48d61143813b3ba47899b5f2855894df36b882a2fc9bd0b"
+    },
+    {
+      "file": "parts/03_rear_cover.stl",
+      "sha256": "fac24442d0790b27a464dad3915ab05c184d5c34692b2ab28430377c6fc658ab"
+    },
+    {
+      "file": "parts/04_esp32_carrier.stl",
+      "sha256": "f0fe6c431ce7189c154e3a90bfe287fb16d6b4a0eabf557c1429241fcd0df677"
+    },
+    {
+      "file": "parts/05_board_clamp.stl",
+      "sha256": "7aaf15957a432be1fcd381ff7703bccf713a9b0fff4db5f7274ba91e5dd32275"
+    },
+    {
+      "file": "parts/06_optical_baffle.stl",
+      "sha256": "ab371f584282c9baeb2c369486e016a266b23f557917136e43b2ac6b262e2232"
+    },
+    {
+      "file": "parts/07_shutter.stl",
+      "sha256": "e9c20e376cddf95b0dde918902147d0e7e32cc1b82ca5a1f7d5488b3d40785e8"
+    },
+    {
+      "file": "parts/08_shutter_pin.stl",
+      "sha256": "8fe8aeab54f2ac4813e860b6ba0505a69319a69d98cb0c2210ea3f913e430949"
+    },
+    {
+      "file": "parts/09_rear_dial.stl",
+      "sha256": "8bb8589d601e9cc4fe62e6d816500776093cd29c4e36dad034abdaa9fe0c95fa"
+    },
+    {
+      "file": "parts/10_io_plate.stl",
+      "sha256": "52724a5689beee7d895a6aaabcb9211dc9609a6ecc9fabc6f488da534ab34a9b"
+    },
+    {
+      "file": "parts/12_lens_blank.stl",
+      "sha256": "9a68c1cbd61f566e58a8487f2ebafc013835d8d3cec813da0e555a96c41de458"
+    },
+    {
+      "file": "parts/13_lens_blank_retainer.stl",
+      "sha256": "f4345bce3b8399ab530b7935e8d536e3165d15b40e2535f9b43e2ef47d799b7a"
+    },
+    {
+      "file": "parts/14_dial_retainer.stl",
+      "sha256": "28e18ab9fea9ca8d8f73e087b6e78a23ff38ddf1d5f40f54e8b1510ed8cc65d2"
+    },
+    {
+      "file": "parts/15_shutter_return_flexure.stl",
+      "sha256": "ff4fca2272a7a823ad2cd40a25289e1328fecd648b22e331ae168779a21ee06d"
+    },
+    {
+      "file": "parts/17_camera_saddle.stl",
+      "sha256": "3a3ad1a587bc316925d7c7c692e626fde45f5162f1b32f41ac2f987120a6bd50"
+    },
+    {
+      "file": "parts/18_camera_clamp.stl",
+      "sha256": "8661bd5b40beb39fb7e0b50b2c97a5091da2890ec67f2944acffc84f62372f1c"
+    },
+    {
+      "file": "parts/19_usb_retainer.stl",
+      "sha256": "e85be4431ae0f0436aacbeeefb947c06b9c8a2c60cf6994c9beb7eb5166cf474"
+    },
+    {
+      "file": "parts/20_shutter_service_cover.stl",
+      "sha256": "31ec0c2ddd6b831dfd018eeee81eaccb55f7eb8038c1fa80fa7794afa7facce8"
+    },
+    {
+      "file": "parts/11_fit_coupon.stl",
+      "sha256": "50bfc8da5c5b6e66d0e624ae3a3eff98c1b720315cbdc2839adff92a255c171d"
+    },
+    {
+      "file": "parts/16_shutter_calibration.stl",
+      "sha256": "8651ab2dc6c84cbf3b075523176be02fd71de337492b94441eb2111ef8882ff9"
+    }
+  ],
+  "baffle_native_source_sha256": [
+    {
+      "name": "06_optical_baffle",
+      "file": "parts/06_optical_baffle.step",
+      "sha256": "c3f48f20c5fd930c670e0a9dca5728ae32643d5b4285dbc864bd7af01824378a"
+    },
+    {
+      "name": "12_lens_blank",
+      "file": "parts/12_lens_blank.step",
+      "sha256": "a231ff9730ec05a9eeb1f64df9e7c487ce3e60a939426cfe73f31aeb4f63a3e9"
+    },
+    {
+      "name": "13_lens_blank_retainer",
+      "file": "parts/13_lens_blank_retainer.step",
+      "sha256": "41e991c7a8eaa78061fa02694d9142c8480111dbf192956ac652fcaeab83d970"
+    },
+    {
+      "name": "17_camera_saddle",
+      "file": "parts/17_camera_saddle.step",
+      "sha256": "fe82d989ad0d92bbb15c9b4648336937943275d9529ec7cd8aaecb757efde852"
+    },
+    {
+      "name": "18_camera_clamp",
+      "file": "parts/18_camera_clamp.step",
+      "sha256": "e5b3861450d14ffd2341c45741a8153d5e061638435a21edff62cc24a7dda1ea"
+    },
+    {
+      "name": "01_rib_cage",
+      "file": "parts/01_rib_cage.step",
+      "sha256": "5c9448cbb4f30125563504719ddccccef8671ee9fdbb5c17aee64190ae4ad156"
+    },
+    {
+      "name": "02_chassis",
+      "file": "parts/02_chassis.step",
+      "sha256": "48b49438030a71d3ae890d46efd27fa6bfcc249dbb2d11f829cdda78a6e3aa8b"
+    },
+    {
+      "name": "07_shutter",
+      "file": "parts/07_shutter.step",
+      "sha256": "eef31513c1014f10da6f84aa7e51d12e8583765da5bf5b4d82ff722cd02f5201"
+    },
+    {
+      "name": "08_shutter_pin",
+      "file": "parts/08_shutter_pin.step",
+      "sha256": "be79dd638e11cdacf64283d3837009793d8421206f280311ce061c669d1061ff"
+    },
+    {
+      "name": "09_rear_dial",
+      "file": "parts/09_rear_dial.step",
+      "sha256": "19691bd5cbe084f808689ec51f28dcf580b1e29faaffa2da78fb97c094604fdd"
+    },
+    {
+      "name": "10_io_plate",
+      "file": "parts/10_io_plate.step",
+      "sha256": "907890a02c57498c2b618896168dfd69abff22ce3e8c8104961049fb1cb945b6"
+    },
+    {
+      "name": "14_dial_retainer",
+      "file": "parts/14_dial_retainer.step",
+      "sha256": "45fb72e14d94512106716bcf1f75a6e47d6f50f1a513741838a9716eef2d9f93"
+    },
+    {
+      "name": "15_shutter_return_flexure",
+      "file": "parts/15_shutter_return_flexure.step",
+      "sha256": "ea48adbf62683ad2ac6f0152c7ee555c75754f7431d06141ebca29ec5b51f67b"
+    },
+    {
+      "name": "19_usb_retainer",
+      "file": "parts/19_usb_retainer.step",
+      "sha256": "3031d3b63c0544692d2796a316415c1b40f264f1d300385c9599abe28b9a9f10"
+    },
+    {
+      "name": "20_shutter_service_cover",
+      "file": "parts/20_shutter_service_cover.step",
+      "sha256": "8b42d1c36dcc00f6882bc9c542845535aa722d566184573c52271a0e62c24567"
+    }
+  ],
+  "payload_files": [
+    {
+      "file": "Entropi-assembly-v05.glb",
+      "bytes": 15447356,
+      "sha256": "e7370a78ed20aaaa8320c1a5c72c32405c1248cdea0a35ecc110b608e815532f"
+    },
+    {
+      "file": "Entropi-assembly-v05.step",
+      "bytes": 7300711,
+      "sha256": "5952f25806ea524f2ab35edde3400a2bae58bca2f3b245cd85896fbe3a4ad084"
+    },
+    {
+      "file": "README.md",
+      "bytes": 8902,
+      "sha256": "7735d44e30af3cdf07648b67bcbf0c9dc680a217876dc50c3d4bb4266790fc3e"
+    },
+    {
+      "file": "cad/assembly_manifest.json",
+      "bytes": 3441,
+      "sha256": "950a5f93c6dd7589265d49aa3d923a25737f6e9bdca88a2e4e46913d9c8dd406"
+    },
+    {
+      "file": "cad/build_assembly.py",
+      "bytes": 14139,
+      "sha256": "24a06563e90e221b9ea8b58b77c726cde0d5dc36b1f5ea0518d8867cfc60b55a"
+    },
+    {
+      "file": "cad/check_export_files.py",
+      "bytes": 4112,
+      "sha256": "2c4574ae75bc50cc7afd0102c9240c6912175d05db25b7fa9ae10b3a779b9f0c"
+    },
+    {
+      "file": "cad/cmf_materials.json",
+      "bytes": 666,
+      "sha256": "1244d2ad17c1a097841047a978cb0f5248ccb2fc2d535bef2e88c5f59c0bcf28"
+    },
+    {
+      "file": "cad/design_review.md",
+      "bytes": 1476,
+      "sha256": "782e4830decaef110e1feb05fb3ca8b359008ff2e04a34109f4d7703a78514ea"
+    },
+    {
+      "file": "cad/explode_positions.json",
+      "bytes": 940,
+      "sha256": "4f1e2ee92f71de18bab83d93c0c8fdd0b49026c4730d778c6404431a879dbcc5"
+    },
+    {
+      "file": "cad/export_verification.json",
+      "bytes": 3375,
+      "sha256": "2e0bc135cda2ef0dce30a27db1a676d23388c73544d6c76fe2ddfa605375516c"
+    },
+    {
+      "file": "cad/fastener_verification.json",
+      "bytes": 12696,
+      "sha256": "f91a324093c082ec4cab511d5313839a98f65b873e0561265fc8b4a2bdb06c04"
+    },
+    {
+      "file": "cad/form_refinement_report.json",
+      "bytes": 2518,
+      "sha256": "92b5a859d87536a5ac0a95ecb65de29098ebf7a17b7f63840ad2d357ff1f6910"
+    },
+    {
+      "file": "cad/form_refinements.py",
+      "bytes": 7473,
+      "sha256": "61912dee1dbb41fda2019381d6c2d9ddaffe1a0e07e70d679d8ee9898bc75ff9"
+    },
+    {
+      "file": "cad/geometry_checks.json",
+      "bytes": 3929,
+      "sha256": "9cf52e2a5ed0d2e8c099044b4915256e3e37e631f4d5c21dd370f797e980a2d8"
+    },
+    {
+      "file": "cad/normalize_glb.py",
+      "bytes": 3756,
+      "sha256": "457d8ae70bb5fe3f8cbd7ab5017fd3986fe6561e9d84402b5928cafaa9ebec11"
+    },
+    {
+      "file": "cad/optical_io_details.py",
+      "bytes": 5023,
+      "sha256": "0d5c96bbc15e30870022762b2fa8738d9b123f14397d608a312ae3460d123030"
+    },
+    {
+      "file": "cad/parameters.json",
+      "bytes": 2621,
+      "sha256": "52745bf1077504b967539a711922577351d53d18ee1da6915923d47c2de18469"
+    },
+    {
+      "file": "cad/prepare_print.py",
+      "bytes": 19059,
+      "sha256": "6fed728b9d00fd8b0ae79b41612d5dec0e65c8b4f8aa72a24a29ba73733a9cfb"
+    },
+    {
+      "file": "cad/render_preview.py",
+      "bytes": 9800,
+      "sha256": "da7602d0ec7c884dadad324b29b26ae0a6bb57d725a8d64d33f20fe05e049214"
+    },
+    {
+      "file": "cad/service_cover.py",
+      "bytes": 1851,
+      "sha256": "74d2073f88596e11ec289b5e308bd71a67d41d7c890ecff1da83750b0c48ce0c"
+    },
+    {
+      "file": "cad/shutter_details.py",
+      "bytes": 6828,
+      "sha256": "f6370a7ba697a5680887f3b0e5044943cb337d6f055cbc334931839d0cadf973"
+    },
+    {
+      "file": "cad/shutter_verification.json",
+      "bytes": 13126,
+      "sha256": "d6c8e86b44f37bdd73fa22e6d79f05f71cd5365472827835bfc614887b18ff52"
+    },
+    {
+      "file": "cad/usb_access_verification.json",
+      "bytes": 4554,
+      "sha256": "c95bf99658d6faa8e6853bc529f23b56e4fbace4ec5d898f1569c10b3e0b1c4f"
+    },
+    {
+      "file": "cad/verification_report.json",
+      "bytes": 53912,
+      "sha256": "ccc2ea3e705e8a287634f5b37491493411bdccfabc3c8d6b0d43bf4bdb3b6a90"
+    },
+    {
+      "file": "cad/verify_assembly.py",
+      "bytes": 11583,
+      "sha256": "32ad6a6ea09b374ff7df649ab9bbe2e266de9ccddda829d9cd9e498225d76638"
+    },
+    {
+      "file": "cad/verify_baffle.py",
+      "bytes": 7905,
+      "sha256": "a5979a7c7c7f9b91e264c18525e03041cbf2ffe6889ba391d370e5d6d7b9382b"
+    },
+    {
+      "file": "cad/verify_fasteners.py",
+      "bytes": 7404,
+      "sha256": "e99c32ab87d28465c81791f38f55ffdfdb3187ba09d95eb38d2c6b0380506ff4"
+    },
+    {
+      "file": "cad/verify_shutter.py",
+      "bytes": 5112,
+      "sha256": "40537ff5fcf92e226b49365f1eabb9572029a447da89c679b0959c10bd2f7e99"
+    },
+    {
+      "file": "cad/verify_usb_access.py",
+      "bytes": 2616,
+      "sha256": "cb3fc805f286059c1c09d942d308bfea1ed191919af4f9b73cf9efe05f188b83"
+    },
+    {
+      "file": "parts/01_rib_cage.step",
+      "bytes": 5077217,
+      "sha256": "5c9448cbb4f30125563504719ddccccef8671ee9fdbb5c17aee64190ae4ad156"
+    },
+    {
+      "file": "parts/01_rib_cage.stl",
+      "bytes": 29347384,
+      "sha256": "bd60f9059eee1a9f466b2d22b7aa93c92173904381f3566dcdcca52efea9a1ed"
+    },
+    {
+      "file": "parts/02_chassis.step",
+      "bytes": 296291,
+      "sha256": "48b49438030a71d3ae890d46efd27fa6bfcc249dbb2d11f829cdda78a6e3aa8b"
+    },
+    {
+      "file": "parts/02_chassis.stl",
+      "bytes": 1521384,
+      "sha256": "893be9e5b385ee7de48d61143813b3ba47899b5f2855894df36b882a2fc9bd0b"
+    },
+    {
+      "file": "parts/03_rear_cover.step",
+      "bytes": 223271,
+      "sha256": "5b0400ca2221c9b51c95742d96dd037d1f0cd4515770c7f4220081ea62058daa"
+    },
+    {
+      "file": "parts/03_rear_cover.stl",
+      "bytes": 3524684,
+      "sha256": "fac24442d0790b27a464dad3915ab05c184d5c34692b2ab28430377c6fc658ab"
+    },
+    {
+      "file": "parts/04_esp32_carrier.step",
+      "bytes": 188343,
+      "sha256": "775760e98cc900cf2eab876170ce545f1c218406548a980c583243772d6047b0"
+    },
+    {
+      "file": "parts/04_esp32_carrier.stl",
+      "bytes": 299084,
+      "sha256": "f0fe6c431ce7189c154e3a90bfe287fb16d6b4a0eabf557c1429241fcd0df677"
+    },
+    {
+      "file": "parts/05_board_clamp.step",
+      "bytes": 73663,
+      "sha256": "e893df56fde836a2a1a4a3af6beac46a388ff4c7313154495274aa0df9cf769a"
+    },
+    {
+      "file": "parts/05_board_clamp.stl",
+      "bytes": 798284,
+      "sha256": "7aaf15957a432be1fcd381ff7703bccf713a9b0fff4db5f7274ba91e5dd32275"
+    },
+    {
+      "file": "parts/06_optical_baffle.step",
+      "bytes": 63736,
+      "sha256": "c3f48f20c5fd930c670e0a9dca5728ae32643d5b4285dbc864bd7af01824378a"
+    },
+    {
+      "file": "parts/06_optical_baffle.stl",
+      "bytes": 254884,
+      "sha256": "ab371f584282c9baeb2c369486e016a266b23f557917136e43b2ac6b262e2232"
+    },
+    {
+      "file": "parts/07_shutter.step",
+      "bytes": 38721,
+      "sha256": "eef31513c1014f10da6f84aa7e51d12e8583765da5bf5b4d82ff722cd02f5201"
+    },
+    {
+      "file": "parts/07_shutter.stl",
+      "bytes": 743684,
+      "sha256": "e9c20e376cddf95b0dde918902147d0e7e32cc1b82ca5a1f7d5488b3d40785e8"
+    },
+    {
+      "file": "parts/08_shutter_pin.step",
+      "bytes": 139550,
+      "sha256": "be79dd638e11cdacf64283d3837009793d8421206f280311ce061c669d1061ff"
+    },
+    {
+      "file": "parts/08_shutter_pin.stl",
+      "bytes": 177884,
+      "sha256": "8fe8aeab54f2ac4813e860b6ba0505a69319a69d98cb0c2210ea3f913e430949"
+    },
+    {
+      "file": "parts/09_rear_dial.step",
+      "bytes": 351683,
+      "sha256": "19691bd5cbe084f808689ec51f28dcf580b1e29faaffa2da78fb97c094604fdd"
+    },
+    {
+      "file": "parts/09_rear_dial.stl",
+      "bytes": 1485684,
+      "sha256": "8bb8589d601e9cc4fe62e6d816500776093cd29c4e36dad034abdaa9fe0c95fa"
+    },
+    {
+      "file": "parts/10_io_plate.step",
+      "bytes": 224542,
+      "sha256": "907890a02c57498c2b618896168dfd69abff22ce3e8c8104961049fb1cb945b6"
+    },
+    {
+      "file": "parts/10_io_plate.stl",
+      "bytes": 963484,
+      "sha256": "52724a5689beee7d895a6aaabcb9211dc9609a6ecc9fabc6f488da534ab34a9b"
+    },
+    {
+      "file": "parts/11_fit_coupon.step",
+      "bytes": 139316,
+      "sha256": "e42ae73346798b33c2efa199d821c0daf22b694264d72a3e6e47e9f8a48aa128"
+    },
+    {
+      "file": "parts/11_fit_coupon.stl",
+      "bytes": 461684,
+      "sha256": "50bfc8da5c5b6e66d0e624ae3a3eff98c1b720315cbdc2839adff92a255c171d"
+    },
+    {
+      "file": "parts/12_lens_blank.step",
+      "bytes": 13353,
+      "sha256": "a231ff9730ec05a9eeb1f64df9e7c487ce3e60a939426cfe73f31aeb4f63a3e9"
+    },
+    {
+      "file": "parts/12_lens_blank.stl",
+      "bytes": 94684,
+      "sha256": "9a68c1cbd61f566e58a8487f2ebafc013835d8d3cec813da0e555a96c41de458"
+    },
+    {
+      "file": "parts/13_lens_blank_retainer.step",
+      "bytes": 9274,
+      "sha256": "41e991c7a8eaa78061fa02694d9142c8480111dbf192956ac652fcaeab83d970"
+    },
+    {
+      "file": "parts/13_lens_blank_retainer.stl",
+      "bytes": 63284,
+      "sha256": "f4345bce3b8399ab530b7935e8d536e3165d15b40e2535f9b43e2ef47d799b7a"
+    },
+    {
+      "file": "parts/14_dial_retainer.step",
+      "bytes": 10423,
+      "sha256": "45fb72e14d94512106716bcf1f75a6e47d6f50f1a513741838a9716eef2d9f93"
+    },
+    {
+      "file": "parts/14_dial_retainer.stl",
+      "bytes": 63284,
+      "sha256": "28e18ab9fea9ca8d8f73e087b6e78a23ff38ddf1d5f40f54e8b1510ed8cc65d2"
+    },
+    {
+      "file": "parts/15_shutter_return_flexure.step",
+      "bytes": 83953,
+      "sha256": "ea48adbf62683ad2ac6f0152c7ee555c75754f7431d06141ebca29ec5b51f67b"
+    },
+    {
+      "file": "parts/15_shutter_return_flexure.stl",
+      "bytes": 4484,
+      "sha256": "ff4fca2272a7a823ad2cd40a25289e1328fecd648b22e331ae168779a21ee06d"
+    },
+    {
+      "file": "parts/16_shutter_calibration.step",
+      "bytes": 95892,
+      "sha256": "8c5862d801365c1b361edc6b3514e504675760149fa03debf1ab948659ae68bf"
+    },
+    {
+      "file": "parts/16_shutter_calibration.stl",
+      "bytes": 193884,
+      "sha256": "8651ab2dc6c84cbf3b075523176be02fd71de337492b94441eb2111ef8882ff9"
+    },
+    {
+      "file": "parts/17_camera_saddle.step",
+      "bytes": 103928,
+      "sha256": "fe82d989ad0d92bbb15c9b4648336937943275d9529ec7cd8aaecb757efde852"
+    },
+    {
+      "file": "parts/17_camera_saddle.stl",
+      "bytes": 155484,
+      "sha256": "3a3ad1a587bc316925d7c7c692e626fde45f5162f1b32f41ac2f987120a6bd50"
+    },
+    {
+      "file": "parts/18_camera_clamp.step",
+      "bytes": 48045,
+      "sha256": "e5b3861450d14ffd2341c45741a8153d5e061638435a21edff62cc24a7dda1ea"
+    },
+    {
+      "file": "parts/18_camera_clamp.stl",
+      "bytes": 93484,
+      "sha256": "8661bd5b40beb39fb7e0b50b2c97a5091da2890ec67f2944acffc84f62372f1c"
+    },
+    {
+      "file": "parts/19_usb_retainer.step",
+      "bytes": 38788,
+      "sha256": "3031d3b63c0544692d2796a316415c1b40f264f1d300385c9599abe28b9a9f10"
+    },
+    {
+      "file": "parts/19_usb_retainer.stl",
+      "bytes": 65084,
+      "sha256": "e85be4431ae0f0436aacbeeefb947c06b9c8a2c60cf6994c9beb7eb5166cf474"
+    },
+    {
+      "file": "parts/20_shutter_service_cover.step",
+      "bytes": 197764,
+      "sha256": "8b42d1c36dcc00f6882bc9c542845535aa722d566184573c52271a0e62c24567"
+    },
+    {
+      "file": "parts/20_shutter_service_cover.stl",
+      "bytes": 224884,
+      "sha256": "31ec0c2ddd6b831dfd018eeee81eaccb55f7eb8038c1fa80fa7794afa7facce8"
+    },
+    {
+      "file": "preview/back.png",
+      "bytes": 183517,
+      "sha256": "56e9217fb3ed3e3d51337ffd6da1b27f7efec6fe50327f4bc4af883cc57a3ee5"
+    },
+    {
+      "file": "preview/exploded.png",
+      "bytes": 177080,
+      "sha256": "321360100846eaa6d3a6a05d58112381e44aad32ed1ef39f96428446a568b30b"
+    },
+    {
+      "file": "preview/front.png",
+      "bytes": 520115,
+      "sha256": "833ac5351102d938f0811c4e343c3b378493382115a917d88dea5206b5cb4302"
+    },
+    {
+      "file": "preview/hero.png",
+      "bytes": 482054,
+      "sha256": "2401c2e4d9683ecbe36ee81166f2bab9c8c265e781995a61e6671075593f6615"
+    },
+    {
+      "file": "preview/left.png",
+      "bytes": 172294,
+      "sha256": "4d07b36b34ddb118aa124f50556b4d16bf7ded3bb22f7a157e1db52712c9d193"
+    },
+    {
+      "file": "preview/right.png",
+      "bytes": 141705,
+      "sha256": "045c46d336a6cf46c5650e923b2e308d2769627329aae0eb1696fd7a9645bebf"
+    },
+    {
+      "file": "preview/top.png",
+      "bytes": 190885,
+      "sha256": "e988e7e7b8d0845c53563a4e2c7ffc07a0bd069473f9f84e4f598c60d17a445b"
+    },
+    {
+      "file": "print/plate_01_pale_gray.3mf",
+      "bytes": 8614815,
+      "sha256": "a24aeea7a48ec785fd445980fc560785e809d135768d93a182199238ab60e639"
+    },
+    {
+      "file": "print/plate_02_dark_gray.3mf",
+      "bytes": 2133115,
+      "sha256": "1e34b62340f092910dbbab7e1ecd5c7506bc195f98164ff51adafb083c66e3a3"
+    },
+    {
+      "file": "print/print_manifest.json",
+      "bytes": 60331,
+      "sha256": "d71c88091178a45e35fec07fa03db520759025c57a69f0a00f26fb7707a3a6ba"
+    },
+    {
+      "file": "print/stl/01_rib_cage.stl",
+      "bytes": 29346284,
+      "sha256": "d73faa603ef7cb45c61f383c0b1e790f118ca15e071790b46c7729623b160705"
+    },
+    {
+      "file": "print/stl/02_chassis.stl",
+      "bytes": 1521384,
+      "sha256": "e7b760870d5120e3551106e067d77dbb2e5ba57f3b9c2db0e0ccf6a6d799a7a2"
+    },
+    {
+      "file": "print/stl/03_rear_cover.stl",
+      "bytes": 3524684,
+      "sha256": "fe05acf4a9ef579bb37faecdb986d5af4fc60bde3284339462d6e5452e8af4a3"
+    },
+    {
+      "file": "print/stl/04_esp32_carrier.stl",
+      "bytes": 299084,
+      "sha256": "ebd0eb952e089de6f60e52890131d2c87a089b00cbe9edb558a334b9bcd3370f"
+    },
+    {
+      "file": "print/stl/05_board_clamp.stl",
+      "bytes": 797884,
+      "sha256": "ddbe1617908658c69830a9ac82f04bad91c063431fb76ac06b434707a4ca95f9"
+    },
+    {
+      "file": "print/stl/06_optical_baffle.stl",
+      "bytes": 254884,
+      "sha256": "ab03e0860e12650959d5305eb69943ec048ea035ae7304bade0701eb25346ef3"
+    },
+    {
+      "file": "print/stl/07_shutter.stl",
+      "bytes": 743684,
+      "sha256": "93ac4ec445452929dd467f5e6616ecdc93e856872f72425c5408b39c8af921e1"
+    },
+    {
+      "file": "print/stl/08_shutter_pin.stl",
+      "bytes": 177884,
+      "sha256": "bdcf97b7d6a5372fcbba4880d1841a110309a23bee01ace7a804aabde0b1cbfb"
+    },
+    {
+      "file": "print/stl/09_rear_dial.stl",
+      "bytes": 1485684,
+      "sha256": "9fb3223614f0bc575d3dd2dbcae8a67db94b0a5cae7cadafb044c3f156a07fb6"
+    },
+    {
+      "file": "print/stl/10_io_plate.stl",
+      "bytes": 963084,
+      "sha256": "5d8e0687c8b7f957826094e1ff5e2e4f172ceadb0d8b2bbd104e940fd340229a"
+    },
+    {
+      "file": "print/stl/11_fit_coupon.stl",
+      "bytes": 461284,
+      "sha256": "016d92f88ac2870cd75d61fc47797864fbfa5c9f1e043a4612651704aa34a873"
+    },
+    {
+      "file": "print/stl/12_lens_blank.stl",
+      "bytes": 94684,
+      "sha256": "86998275a909dbb59a86129fc9f3b94cd21a20a8191cf710e8bcec614a535e1d"
+    },
+    {
+      "file": "print/stl/13_lens_blank_retainer.stl",
+      "bytes": 63284,
+      "sha256": "c3d17d511b553486548ac7f531a5ce92e3fa4aa83dd1ea4e565df65e3cf10bb4"
+    },
+    {
+      "file": "print/stl/14_dial_retainer.stl",
+      "bytes": 63284,
+      "sha256": "3521aca93ba4c655dcd74ce83f9c884b01cb6e7a7a6f064e3e85f158d530ee95"
+    },
+    {
+      "file": "print/stl/15_shutter_return_flexure.stl",
+      "bytes": 4484,
+      "sha256": "c962a74bbf84f87dc45a03b84ae13385cb5325cf12a3fe5247ab5b8b4baed249"
+    },
+    {
+      "file": "print/stl/16_shutter_calibration.stl",
+      "bytes": 193884,
+      "sha256": "5fd8db83b67cce4ec6d270c6419944a5e15d4ca9f55746f39a1f604a15dc080b"
+    },
+    {
+      "file": "print/stl/17_camera_saddle.stl",
+      "bytes": 155484,
+      "sha256": "d06bf3b6ead6646492b76432d10d86ad3c83a479977f2127f8e38569cc1e48e1"
+    },
+    {
+      "file": "print/stl/18_camera_clamp.stl",
+      "bytes": 93484,
+      "sha256": "78c2e425e39807563e60decbc47a6b7cdcc8dbfe9d3fa8182f1d96abb5b9f751"
+    },
+    {
+      "file": "print/stl/19_usb_retainer.stl",
+      "bytes": 65084,
+      "sha256": "47c92337374db4871a044022654820e2e32ef0e3ed98a2246b7247a1f90d3b8e"
+    },
+    {
+      "file": "print/stl/20_shutter_service_cover.stl",
+      "bytes": 224784,
+      "sha256": "9db210afa92be75a962eeceaf07f5c8f737d5705495ca3525c8cea14182d7c5c"
+    },
+    {
+      "file": "reference/detail-markup.png",
+      "bytes": 347586,
+      "sha256": "1d82e4bafe8d018539f3c882e38188773775098239d3363ce8d28d2a75417809"
+    },
+    {
+      "file": "reference/selected-form.png",
+      "bytes": 645436,
+      "sha256": "41b373f118ec147d46a8cf4775c717bed824d2c57cd98b843de6dc57e0a37814"
+    },
+    {
+      "file": "reference_hardware/esp32_cam_mb_keepout_ASSUMED.step",
+      "bytes": 15436,
+      "sha256": "44c522038a4b1baa4fc2bd957bd123a072623139d7079570e800330ef81dd9f5"
+    },
+    {
+      "file": "reference_hardware/esp32_pcb_nominal.step",
+      "bytes": 15561,
+      "sha256": "74edad79b3cf0d7ac49968dad1d4cdd5ca0aae474936afe6790e844a369361c9"
+    }
+  ],
+  "payload_hash_scope": "Every included file except release_summary.json itself; ZIP validation separately checks every archived file, including this summary, against the final local payload.",
+  "archive": {
+    "file": "Entropi-CAD-v05.zip",
+    "root_directory": "Entropi-CAD-v05",
+    "expected_file_count": 104,
+    "excluded": [
+      "__pycache__/",
+      "*.pyc",
+      "*.tmp",
+      "targeted verification_*_removal.json reports"
+    ]
+  },
+  "physical_hardware_fit_verified": false,
+  "usb_charge_transfer_function_verified": false,
+  "battery_and_thermal_design_verified": false,
+  "spring_fatigue_verified": false
+}

@@ -1,0 +1,36 @@
+name: Restore verified A4 design files
+on:
+  push:
+    branches:
+      - claude/stereoskopisk-kamerahus-cjqyqr
+    paths:
+      - A4/.upload-staging/import.json
+permissions:
+  contents: write
+concurrency:
+  group: a4-design-import
+  cancel-in-progress: false
+jobs:
+  restore:
+    if: github.repository == 'lukketsvane/formnerd'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 1
+      - name: Restore and verify exact design bytes
+        run: python A4/.upload-staging/restore.py
+      - name: Commit verified originals
+        env:
+          A4_SOURCE_SHA: ${{ github.sha }}
+          A4_SOURCE_BRANCH: ${{ github.ref_name }}
+        run: |
+          git fetch origin "$A4_SOURCE_BRANCH"
+          test "$(git rev-parse HEAD)" = "$A4_SOURCE_SHA"
+          test "$(git rev-parse FETCH_HEAD)" = "$A4_SOURCE_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -- A4
+          git commit -m 'Restore verified A4 CAD and design deliverables'
+          git push origin "HEAD:refs/heads/$A4_SOURCE_BRANCH"
