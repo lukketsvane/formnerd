@@ -1,0 +1,143 @@
+{
+  "A1-exploded-lines.png": {
+    "path": "review/A1-exploded-lines.png",
+    "camera_direction": [
+      0.5773502691896258,
+      -0.5773502691896258,
+      0.5773502691896258
+    ],
+    "camera_up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "orthographic": true,
+    "part_translation_offsets_mm": {
+      "01_outer_shell": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "02_native_rear_cover": [
+        0.0,
+        -105.0,
+        0.0
+      ],
+      "03_esp32_carrier": [
+        0.0,
+        -54.0,
+        0.0
+      ],
+      "04_optical_bezel": [
+        0.0,
+        48.0,
+        0.0
+      ],
+      "05_lock_1": [
+        0.0,
+        -155.0,
+        0.0
+      ],
+      "05_lock_2": [
+        0.0,
+        -155.0,
+        0.0
+      ],
+      "05_lock_3": [
+        0.0,
+        -155.0,
+        0.0
+      ],
+      "05_lock_4": [
+        0.0,
+        -155.0,
+        0.0
+      ],
+      "07_shutter": [
+        0.0,
+        0.0,
+        33.0
+      ],
+      "08_shutter_retainer": [
+        0.0,
+        -55.0,
+        0.0
+      ],
+      "09_camera_keeper": [
+        0.0,
+        -112.0,
+        0.0
+      ]
+    },
+    "offsets_are_illustration_only_not_insertion_path_certification": true,
+    "geometry_simplified": false,
+    "ground_or_environment": false,
+    "technical_linework": true,
+    "appearance_mapping": {},
+    "sha256": "a5bffab86866efc7d23a6da2616f114f2c18fd857def39da874139240c95b8c6"
+  },
+  "A1-carrier-detail.png": {
+    "path": "review/A1-carrier-detail.png",
+    "camera_direction": [
+      0.5773502691896258,
+      -0.5773502691896258,
+      0.5773502691896258
+    ],
+    "camera_up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "orthographic": true,
+    "part_translation_offsets_mm": {
+      "03_esp32_carrier": [
+        0.0,
+        -54.0,
+        0.0
+      ],
+      "09_camera_keeper": [
+        0.0,
+        -112.0,
+        0.0
+      ]
+    },
+    "offsets_are_illustration_only_not_insertion_path_certification": true,
+    "geometry_simplified": false,
+    "ground_or_environment": false,
+    "technical_linework": true,
+    "appearance_mapping": {},
+    "sha256": "080ced764dd985816c53dd044d7c934cbf6ed66a8293d566315029ec86d76528"
+  },
+  "A1-shutter-detail.png": {
+    "path": "review/A1-shutter-detail.png",
+    "camera_direction": [
+      0.5773502691896258,
+      -0.5773502691896258,
+      0.5773502691896258
+    ],
+    "camera_up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "orthographic": true,
+    "part_translation_offsets_mm": {
+      "07_shutter": [
+        0.0,
+        0.0,
+        33.0
+      ],
+      "08_shutter_retainer": [
+        0.0,
+        -55.0,
+        0.0
+      ]
+    },
+    "offsets_are_illustration_only_not_insertion_path_certification": true,
+    "geometry_simplified": false,
+    "ground_or_environment": false,
+    "technical_linework": true,
+    "appearance_mapping": {},
+    "sha256": "2af10a6af96e46358a53eeac7d2b9c4282f1aa0fec7bd06700f07cb12455b38d"
+  }
+}

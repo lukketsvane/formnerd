@@ -1,4 +1,14 @@
-# Entropi – A1
+# Entropi - A1
+
+[Opne ny mekanisk assembly R01](cad-assembly/README.md)
+
+![Mekanisk assembly R01](cad-assembly/review/A1-assembled.png)
+
+Ny CAD-versjon med 11 mekaniske produktdelar, separate printmodellar og seks sider med monteringssteg. Begge printplatene er digitalt slicer-verifiserte. Faktiske ESP32-CAM/MB-mål, brytar, straum/USB og fysisk prøvepass står att før frigjeving.
+
+[Monteringssteg](cad-assembly/review/A1-Montering-R01.pdf) | [Eksplodert isometrisk teikning](cad-assembly/review/A1-exploded-lines.png) | [CAD- og printfiler](cad-assembly/)
+
+## Opphavleg Tripo-formgrunnlag
 
 ![Samla Tripo-form](review/assembled.png)
 
