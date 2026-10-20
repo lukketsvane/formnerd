@@ -9,6 +9,8 @@ Alt samla arbeid med dette ribba kameradesignet høyrer til her. Siste redigerba
 | Føremål | Plassering |
 |---|---|
 | Start, mål og monteringsrekkjefølgje | [Entropi-CAD-v05/README.md](Entropi-CAD-v05/README.md) |
+| Stegvis monteringsrettleiing, 19 sider | [Entropi-v05-Montering-R01.pdf](montering/v05-r01/Entropi-v05-Montering-R01.pdf) |
+| Monteringssteg som enkeltbilete | [montering/v05-r01](montering/v05-r01/README.md) |
 | Native CAD-samanstilling | [Entropi-assembly-v05.step](Entropi-CAD-v05/Entropi-assembly-v05.step) |
 | Farga 3D-visning | [Entropi-assembly-v05.glb](Entropi-CAD-v05/Entropi-assembly-v05.glb) |
 | Separate STEP- og STL-delar | [Entropi-CAD-v05/parts](Entropi-CAD-v05/parts/) |
@@ -38,4 +40,3 @@ Fysisk passform, faktisk elektronikk, fjørlevetid, optikk, lading og biletoverf
 ## Struktur vidare
 
 Nye versjonar av dette designet skal leggjast under `A4`. Behald versjonsnummer og tilhøyrande kjelde, kontrollrapportar, referansar og rendringar samla. Den gamle `A1`-leveransen ligg no i `arkiv/tripo-a1`, den organiserte `A3`-leveransen ligg i `arkiv/entropi-a3`, og råinnhaldet frå Entropi-greina er samla i `arkiv/entropi-tripo`.
-
