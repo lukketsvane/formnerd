@@ -6,183 +6,306 @@
     }
   ],
   "sveip_trimma_mm3": {
-    "bakre_skal": 171.1,
-    "innmatsramme": 509.3
+    "bakre_skal": 154.9,
+    "innmatsramme": 491.2
   },
   "knastar": [
     [
-      35.0,
-      61.7,
+      33.3,
+      61.5,
       57.5
     ],
     [
-      35.0,
-      7.1,
+      33.3,
+      6.9,
       57.5
     ],
     [
-      35.0,
+      33.3,
       48.6,
       112.4
     ],
     [
-      35.0,
+      33.3,
       47.5,
-      6.8
+      6.9
     ],
     [
-      35.0,
-      20.0,
-      5.7
+      33.3,
+      20.1,
+      5.9
     ],
     [
-      35.0,
+      33.3,
       19.2,
       112.4
     ]
   ],
-  "x_skøyt": 37.7,
+  "x_skøyt": 37.28,
   "stereobasis_mm": 30.27,
   "stablar": [
     {
       "za": 63.37,
       "zb": 103.87,
+      "mza": 63.87,
+      "mzb": 103.87,
       "y0": 20.43,
       "y1": 47.43,
-      "xb": 40.2,
-      "xL": 62.2,
-      "xp": 53.2,
+      "yc": 33.93,
+      "xb": 41.03,
+      "xL": 63.03,
+      "xp": 54.03,
       "z_usb": 103.87,
       "z_sd": 63.37,
       "lz": 72.87,
       "retning": 1.0,
-      "visir_x": 65.25,
-      "minste_avstand_til_innervegg_mm": 0.48,
-      "usb_kontakt_til_ytterflate_mm": 10.88
+      "visir_x": 65.5,
+      "linse_under_maks": 1.07,
+      "ytre_min_x": 64.0,
+      "klaring_til_fremre_skal_mm": 2.1,
+      "trongaste_del": "cam",
+      "linseløp_til_holkant_mm": 1.55,
+      "usb_kontakt_til_ytterflate_mm": 10.63
     },
     {
       "za": 11.6,
       "zb": 52.1,
+      "mza": 11.6,
+      "mzb": 51.6,
       "y0": 20.43,
       "y1": 47.43,
-      "xb": 42.35,
-      "xL": 64.35,
-      "xp": 55.35,
+      "yc": 33.93,
+      "xb": 42.04,
+      "xL": 64.04,
+      "xp": 55.04,
       "z_usb": 11.6,
       "z_sd": 52.1,
       "lz": 42.6,
       "retning": -1.0,
       "visir_x": 65.75,
-      "minste_avstand_til_innervegg_mm": 0.52,
+      "linse_under_maks": 0.31,
+      "ytre_min_x": 65.5,
+      "klaring_til_fremre_skal_mm": 0.5,
+      "trongaste_del": "cam",
+      "linseløp_til_holkant_mm": 1.83,
       "usb_kontakt_til_ytterflate_mm": 10.6
     }
   ],
   "kollisjonar_mm3": {},
+  "påskyving_mm3": {
+    "0.0": 0.0,
+    "0.1": 0.0,
+    "0.25": 0.0,
+    "0.5": 0.0,
+    "1.0": 0.0,
+    "2.0": 0.0,
+    "3.0": 0.0,
+    "5.0": 0.0,
+    "8.0": 0.0,
+    "12.0": 0.0,
+    "20.0": 0.0,
+    "30.0": 0.0
+  },
   "delar": {
     "fremre_skal": {
-      "volum_cm3": 44.7,
-      "masse_g_massiv": 55.5,
+      "volum_cm3": 44.2,
+      "masse_g_massiv": 54.8,
       "mål_mm": [
         115.0,
         77.9,
-        43.3
+        43.7
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 190782,
-      "flate_på_seng_mm2": 501.0,
-      "overheng_over_45_mm2": 5418.0
+      "trekantar": 228618,
+      "flate_på_seng_mm2": 483.0,
+      "overheng_over_45_mm2": 5165.0,
+      "lag1_mm2": 477.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 0.0,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
     },
     "bakre_skal": {
-      "volum_cm3": 31.0,
-      "masse_g_massiv": 38.5,
+      "volum_cm3": 30.9,
+      "masse_g_massiv": 38.3,
       "mål_mm": [
-        112.7,
-        77.1,
-        35.0
+        112.0,
+        76.9,
+        34.6
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 125398,
-      "flate_på_seng_mm2": 261.0,
-      "overheng_over_45_mm2": 5322.0
+      "trekantar": 171488,
+      "flate_på_seng_mm2": 545.0,
+      "overheng_over_45_mm2": 5058.0,
+      "lag1_mm2": 541.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 7.2,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
     },
     "innmatsramme": {
       "volum_cm3": 18.4,
       "masse_g_massiv": 22.8,
       "mål_mm": [
-        109.8,
-        74.1,
-        16.1
+        109.9,
+        74.0,
+        16.3
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 10482,
-      "flate_på_seng_mm2": 6512.0,
-      "overheng_over_45_mm2": 0.0
+      "trekantar": 69706,
+      "flate_på_seng_mm2": 6496.0,
+      "overheng_over_45_mm2": 17.0,
+      "lag1_mm2": 6493.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 2.1,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
     },
     "prove_skoyt_framme": {
-      "volum_cm3": 2.7,
-      "masse_g_massiv": 3.3,
+      "volum_cm3": 2.6,
+      "masse_g_massiv": 3.2,
       "mål_mm": [
-        37.6,
+        37.5,
         66.9,
         11.0
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 19378,
-      "flate_på_seng_mm2": 181.0,
-      "overheng_over_45_mm2": 208.0
+      "trekantar": 31930,
+      "flate_på_seng_mm2": 168.0,
+      "overheng_over_45_mm2": 129.0,
+      "lag1_mm2": 164.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 0.4,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
     },
     "prove_skoyt_bak": {
       "volum_cm3": 2.7,
-      "masse_g_massiv": 3.3,
+      "masse_g_massiv": 3.4,
       "mål_mm": [
-        36.4,
-        65.3,
+        35.9,
+        65.1,
         10.3
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 18532,
-      "flate_på_seng_mm2": 88.0,
-      "overheng_over_45_mm2": 224.0
+      "trekantar": 34568,
+      "flate_på_seng_mm2": 182.0,
+      "overheng_over_45_mm2": 151.0,
+      "lag1_mm2": 180.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 2.3,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
     },
-    "prove_holdar": {
-      "volum_cm3": 6.2,
-      "masse_g_massiv": 7.7,
+    "prove_skoyt_ramme": {
+      "volum_cm3": 4.3,
+      "masse_g_massiv": 5.4,
+      "mål_mm": [
+        34.9,
+        62.4,
+        4.5
+      ],
+      "får_plass_på_P1S": true,
+      "vasstett": true,
+      "komponentar": 1,
+      "trekantar": 23222,
+      "flate_på_seng_mm2": 1836.0,
+      "overheng_over_45_mm2": 5.0,
+      "lag1_mm2": 1834.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 0.8,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
+    },
+    "prove_holdar_1": {
+      "volum_cm3": 6.4,
+      "masse_g_massiv": 7.9,
       "mål_mm": [
         52.5,
         39.0,
-        14.0
+        15.2
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 194,
+      "trekantar": 178,
       "flate_på_seng_mm2": 2048.0,
-      "overheng_over_45_mm2": 0.0
+      "overheng_over_45_mm2": 0.0,
+      "lag1_mm2": 2048.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 0.4,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
     },
-    "prove_linse_usb": {
-      "volum_cm3": 8.5,
-      "masse_g_massiv": 10.5,
+    "prove_linse_usb_1": {
+      "volum_cm3": 7.8,
+      "masse_g_massiv": 9.7,
       "mål_mm": [
         55.6,
         39.0,
-        37.6
+        36.8
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 34970,
-      "flate_på_seng_mm2": 97.0,
-      "overheng_over_45_mm2": 1658.0
+      "trekantar": 33782,
+      "flate_på_seng_mm2": 65.0,
+      "overheng_over_45_mm2": 1665.0,
+      "lag1_mm2": 64.0,
+      "lag1_bitar": 2,
+      "lag1_smalare_enn_2_liner_mm2": 0.7,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
+    },
+    "prove_holdar_2": {
+      "volum_cm3": 6.4,
+      "masse_g_massiv": 8.0,
+      "mål_mm": [
+        52.5,
+        39.0,
+        16.3
+      ],
+      "får_plass_på_P1S": true,
+      "vasstett": true,
+      "komponentar": 1,
+      "trekantar": 7548,
+      "flate_på_seng_mm2": 2026.0,
+      "overheng_over_45_mm2": 1.0,
+      "lag1_mm2": 2025.0,
+      "lag1_bitar": 1,
+      "lag1_smalare_enn_2_liner_mm2": 0.4,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
+    },
+    "prove_linse_usb_2": {
+      "volum_cm3": 9.4,
+      "masse_g_massiv": 11.7,
+      "mål_mm": [
+        56.1,
+        39.0,
+        35.9
+      ],
+      "får_plass_på_P1S": true,
+      "vasstett": true,
+      "komponentar": 1,
+      "trekantar": 39024,
+      "flate_på_seng_mm2": 74.0,
+      "overheng_over_45_mm2": 1618.0,
+      "lag1_mm2": 73.0,
+      "lag1_bitar": 2,
+      "lag1_smalare_enn_2_liner_mm2": 1.9,
+      "stl_vasstett": true,
+      "stl_kantar_med_fleire_enn_2_flater": 0
     }
   }
 }

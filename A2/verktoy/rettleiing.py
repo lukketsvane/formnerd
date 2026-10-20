@@ -131,16 +131,19 @@ def sider():
     for n, (namn, retn) in enumerate((("fremre_skal", (1, 0.9, 0.7)), ("bakre_skal", (1, 0.9, 0.7)), ("innmatsramme", (1, 0.9, 0.7)))):
         t, _ = teikn(f"print_{n}", [[{"fil": f"/tmp/a2-print/{namn}.glb"}], [{"fil": f"/tmp/a2-print/seng_{namn}.glb"}]], retn, grå_grupper=(1,), zoom=0.95, opp=(0, 0, 1))
         lim(im, t, 90 + (n % 2) * 760, 330 + (n // 2) * 700, 720, 660)
-    for n, linje in enumerate(("print/bambu/A2-hus-P1S.gcode.3mf", "P1S · PLA · 0,4 mm dyse · 0,20 mm lag", "plate 1: skala, 6 t 15 min, 118 g", "plate 2: ramma, 37 min, 19 g", "tre-støtte frå plata")):
+    sl = json.load(open("A2/print/bambu/A2-hus-P1S.json"))
+    plater = [f"plate {n}: {innh}, {tid(p['tid'])}, {g:.0f} g" for n, (innh, p, g) in enumerate(zip(("skala", "ramma"), sl["plater"], sl["vekt_g"]), 1)]
+    for n, linje in enumerate(["print/bambu/A2-hus-P1S.gcode.3mf", "P1S · PLA · 0,4 mm dyse · 0,20 mm lag"] + plater + ["tre-støtte frå plata"]):
         dr.text((900, 1100 + n * 60), linje, font=font(36), fill=(60, 60, 60))
     sidene.append(im)
 
     im, dr = side(2, "Print prøvebitane først")
-    t, _ = teikn("prove", [[{"fil": "/tmp/a2-print/prove_skoyt_framme.glb", "flytt": [0, 0, 0]}], [{"fil": "/tmp/a2-print/prove_skoyt_bak.glb", "flytt": [80, 0, 0]}], [{"fil": "/tmp/a2-print/prove_holdar.glb", "flytt": [0, 90, 0]}], [{"fil": "/tmp/a2-print/prove_linse_usb.glb", "flytt": [80, 90, 0]}]], (1, 0.9, 0.9), opp=(0, 0, 1))
-    lim(im, t, 90, 320, 1480, 1300)
-    dr.text((90, 1700), "Kontroller før du printar heile huset:", font=font(40, True), fill=(20, 20, 20))
-    for n, linje in enumerate(("skøyten klikkar saman og sit fast", "kortet går ned mellom styrebena utan press", "linseløpet går gjennom holet", "USB-pluggen går heilt inn i kontakten")):
-        dr.text((110, 1780 + n * 64), "□  " + linje, font=font(38), fill=(40, 40, 40))
+    prøver = sorted(glob.glob("/tmp/a2-print/prove_*.glb"))
+    t, _ = teikn("prove", [[{"fil": f, "flytt": [(n % 4) * 75, (n // 4) * 80, 0]}] for n, f in enumerate(prøver)], (1, 0.9, 0.9), opp=(0, 0, 1))
+    lim(im, t, 90, 300, 1480, 1240)
+    dr.text((90, 1600), "Kontroller før du printar heile huset:", font=font(40, True), fill=(20, 20, 20))
+    for n, linje in enumerate(("ramma ligg i bakre lepp, fremre bit klikkar på og sit fast", "kortet går ned mellom styrebena utan press", "linseløpet går gjennom holet, linsa er fri", "USB-pluggen går heilt inn i kontakten", "same for begge kamera (bit 1 og 2)")):
+        dr.text((110, 1680 + n * 64), "□  " + linje, font=font(38), fill=(40, 40, 40))
     sidene.append(im)
 
     im, dr = side(3, "Last opp program før montering")
@@ -210,6 +213,25 @@ def sider():
     return sidene
 
 
+def kablar():
+    import trimesh
+    k = json.load(open("A2/print/kontroll.json"))
+    P = json.load(open("A2/print/parametrar.json"))
+    h = P["stabel"]["usb_over_mb_underside"]["verdi"]
+    for i, s in enumerate(k["stablar"], 1):
+        ux, r, z = s["xb"] + h, s["retning"], s["z_usb"]
+        plugg = trimesh.creation.box(extents=(6.0, 10.0, 18.0), transform=trimesh.transformations.translation_matrix((ux, s["yc"], z + r * 9.0)))
+        leidning = trimesh.creation.cylinder(radius=1.75, height=42.0, transform=trimesh.transformations.translation_matrix((ux, s["yc"], z + r * 39.0)))
+        trimesh.util.concatenate([plugg, leidning]).export(f"{M}/kabel_{i}.glb")
+
+
+def tid(t):
+    import re
+    v = dict((e, int(n)) for n, e in re.findall(r"(\d+)([hms])", t))
+    m = round(v.get("h", 0) * 60 + v.get("m", 0) + v.get("s", 0) / 60)
+    return f"{m // 60} t {m % 60} min" if m >= 60 else f"{m} min"
+
+
 def print_glb():
     import trimesh
     os.makedirs("/tmp/a2-print", exist_ok=True)
@@ -222,6 +244,7 @@ def print_glb():
 
 
 if __name__ == "__main__":
+    kablar()
     print_glb()
     os.makedirs(UT, exist_ok=True)
     s = sider()
