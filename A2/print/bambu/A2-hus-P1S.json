@@ -11,18 +11,12 @@
   "plater": [
     {
       "fil": "Metadata/plate_1.gcode",
-      "tid": "6h 14m 59s",
-      "lag": 216
-    },
-    {
-      "fil": "Metadata/plate_2.gcode",
-      "tid": "36m 30s",
-      "lag": 81
+      "tid": "6h 35m 9s",
+      "lag": 218
     }
   ],
   "vekt_g": [
-    117.64,
-    18.63
+    133.09
   ],
   "objekt": [
     "fremre_skal.stl",

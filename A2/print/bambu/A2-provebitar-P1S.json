@@ -11,18 +11,21 @@
   "plater": [
     {
       "fil": "Metadata/plate_1.gcode",
-      "tid": "1h 31m 56s",
-      "lag": 188
+      "tid": "2h 51m 36s",
+      "lag": 184
     }
   ],
   "vekt_g": [
-    28.96
+    55.43
   ],
   "objekt": [
-    "prove_linse_usb.stl",
+    "prove_linse_usb_1.stl",
+    "prove_linse_usb_2.stl",
     "prove_skoyt_framme.stl",
+    "prove_holdar_1.stl",
     "prove_skoyt_bak.stl",
-    "prove_holdar.stl"
+    "prove_holdar_2.stl",
+    "prove_skoyt_ramme.stl"
   ],
   "åtvaringar": []
 }
