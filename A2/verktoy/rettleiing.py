@@ -132,7 +132,7 @@ def sider():
         t, _ = teikn(f"print_{n}", [[{"fil": f"/tmp/a2-print/{namn}.glb"}], [{"fil": f"/tmp/a2-print/seng_{namn}.glb"}]], retn, grå_grupper=(1,), zoom=0.95, opp=(0, 0, 1))
         lim(im, t, 90 + (n % 2) * 760, 330 + (n // 2) * 700, 720, 660)
     sl = json.load(open("A2/print/bambu/A2-hus-P1S.json"))
-    plater = [f"plate {n}: {innh}, {tid(p['tid'])}, {g:.0f} g" for n, (innh, p, g) in enumerate(zip(("skala", "ramma"), sl["plater"], sl["vekt_g"]), 1)]
+    plater = [f"plate {n}: {innh}, {tid(p['tid'])}, {g:.0f} g" for n, (innh, p, g) in enumerate(zip(("skala", "ramma") if len(sl["plater"]) == 2 else ("alle tre delane",), sl["plater"], sl["vekt_g"]), 1)]
     for n, linje in enumerate(["print/bambu/A2-hus-P1S.gcode.3mf", "P1S · PLA · 0,4 mm dyse · 0,20 mm lag"] + plater + ["tre-støtte frå plata"]):
         dr.text((900, 1100 + n * 60), linje, font=font(36), fill=(60, 60, 60))
     sidene.append(im)
