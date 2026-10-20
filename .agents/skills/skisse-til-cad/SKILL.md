@@ -5,6 +5,8 @@ description: Gå frå skisse eller produktbilete via Tripo image-to-3D, segmente
 
 # Skisse til CAD og montering
 
+Kjelde: [lukketsvane/formnerd](https://github.com/lukketsvane/formnerd). Stiar merka **Praksis** i referansane (t.d. `A4/arkiv/...`, `verktoy/tripo.py`) viser til det repoet.
+
 Følg kjeda: skisse / referansebilete → Tripo image-to-3D → segmentering og eventuelt lettare mesh → mekanisk CAD → kontrollert printgrunnlag → IKEA-liknande assembly. Bevar den valde forma gjennom heile kjeda.
 
 ## Start frå rett grunnlag
