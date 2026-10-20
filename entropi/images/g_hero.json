@@ -1,0 +1,30 @@
+{
+  "task_id": "1c1bb81a-4931-4733-8138-15768cbbba41",
+  "status": "success",
+  "credits": 15.0,
+  "files": {
+    "generated_image_url": "images/g_hero_generated_image_url.png"
+  },
+  "payload": {
+    "input": "file_9ff4eb2c-4778-45e1-9498-137aa65cb559",
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Edit this render into the final CMF hero. Keep the camera identity, 3/4 front view, framing and proportions: grip left, two dark top blocks, grey tubes braiding over the top. Concept: entropy, order pulled into a black hole. FORM: 1) The black front funnel becomes a deep well, curving ever steeper toward the axis and ending at ONE crisp knife-edge lip that breaks sharply into a dark throat; lens glass sits 15 mm deep behind the lip, real shadow. Other transitions soft. 2) The right tube coming down the front enters the funnel rim and coils 1.5 turns inward down the wall, thinning as it descends, fused with soft fillets; inner coil much tighter than outer. 3) Tubes full at the grip, stretched thin and taut over the top, compressed into the coil; fused at the crossing, no gaps. 4) Grip rear, viewfinder and dial blocks are crisp geometry with flat planes and small chamfers, both blocks leaning slightly toward the lens; the shell softens and inflates toward the lens. Grip and tube merge into one volume. DETAILS: shutter button moved forward where the grip tube starts stretching, tilted along the flow, thin titanium bezel, clearly visible. USB-C clearly visible on the left side of the grip in a recessed black inset. Eyepiece on the viewfinder; one knurled dial cap. Real lens: 50 mm knurled black ring, thin titanium accent, 38 mm dark coated front element, barrel inside the well. CMF: tubes satin pearl light grey, reflections bending toward the lens, fading along their path to graphite as they spiral in, deep velvet matte black in the throat; core matte black. Airbrushed, no banding, no LED, no glow. Premium studio product photo, white background, softbox upper left, subtle rim light, soft contact shadow, sharp. One camera in frame. No text, logos, hands."
+  },
+  "raw": {
+    "type": "image_to_image",
+    "status": "success",
+    "progress": 100,
+    "input": {
+      "prompt": "Edit this render into the final CMF hero. Keep the camera identity, 3/4 front view, framing and proportions: grip left, two dark top blocks, grey tubes braiding over the top. Concept: entropy, order pulled into a black hole. FORM: 1) The black front funnel becomes a deep well, curving ever steeper toward the axis and ending at ONE crisp knife-edge lip that breaks sharply into a dark throat; lens glass sits 15 mm deep behind the lip, real shadow. Other transitions soft. 2) The right tube coming down the front enters the funnel rim and coils 1.5 turns inward down the wall, thinning as it descends, fused with soft fillets; inner coil much tighter than outer. 3) Tubes full at the grip, stretched thin and taut over the top, compressed into the coil; fused at the crossing, no gaps. 4) Grip rear, viewfinder and dial blocks are crisp geometry with flat planes and small chamfers, both blocks leaning slightly toward the lens; the shell softens and inflates toward the lens. Grip and tube merge into one volume. DETAILS: shutter button moved forward where the grip tube starts stretching, tilted along the flow, thin titanium bezel, clearly visible. USB-C clearly visible on the left side of the grip in a recessed black inset. Eyepiece on the viewfinder; one knurled dial cap. Real lens: 50 mm knurled black ring, thin titanium accent, 38 mm dark coated front element, barrel inside the well. CMF: tubes satin pearl light grey, reflections bending toward the lens, fading along their path to graphite as they spiral in, deep velvet matte black in the throat; core matte black. Airbrushed, no banding, no LED, no glow. Premium studio product photo, white background, softbox upper left, subtle rim light, soft contact shadow, sharp. One camera in frame. No text, logos, hands.",
+      "model_version": "banana_pro"
+    },
+    "output": {
+      "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_a49067a3d010421cbef4ad1993d1ec39/20261020/1c1bb81a-4931-4733-8138-15768cbbba41/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTQ5MDY3YTNkMDEwNDIxY2JlZjRhZDE5OTNkMWVjMzkvMjAyNjEwMjAvMWMxYmI4MWEtNDkzMS00NzMzLTgxMzgtMTU3NjhjYmJiYTQxL2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI1OTEzMzV9fX1dfQ__&Signature=nixtjZiJSL-X95rZlImaDNhlM6G8-JsbMMH4ic7V6XbMWlamQWVBG9IxcIbMg3ljhDZ08XJXOiZ~lUiLqlA014qyYEj2H9Rg9mUsdT9V01Nc7pN4fSBE~~OOQYJtKNtIJEMp13pvaj~tCrYCjzpDe8Pt2LBirnROQ0Yl~SnZLkpbvhXe~vVo9tkStCGMSl2mnYPIUkqCtWP0bAyGfSRBze3RT7KLZhqfzTQNtLIHDtMunqF7xvvlegN1qtc78rdSbyiK1Kigb9SCXSoMho~xbiwTFLHP~xxGYhePqZfH1MVWR6zmTkQrsLBrakFW74Ryb7NKGBjLVgYcwRrsByRh0w__&Key-Pair-Id=K1676C64NMVM2J"
+    },
+    "task_id": "1c1bb81a-4931-4733-8138-15768cbbba41",
+    "created_at": "2026-10-20T14:01:34.838461Z",
+    "completed_at": "2026-10-20T14:02:13.876068Z",
+    "credits_consumed": 15.0
+  }
+}
