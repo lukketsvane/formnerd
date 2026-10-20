@@ -54,7 +54,15 @@ def leidning(y_pin, dx, topp=66.0):
 
 
 GND_Y, IO13_Y = sy["sd_ende"] + 7.12, sy["sd_ende"] + 12.20
+UTE = (-skyv, 0.0, -42.0)
+
+
+def leidning_ute(y_pin, dx, topp=70.0):
+    p = [x_pin + UTE[0], y_pin, z_pin + UTE[2]]
+    return [p, [p[0] + 2, y_pin, p[2] + 1.5], [46.5 + dx, 54.8, -4], [46.5 + dx, 54.8, 35], [46 + dx, 53.4, 40],
+            [kt_slutt[0] + dx, kt_slutt[1], kt_slutt[2]], [bx + dx, by, lomme_botn + 1.5], [bx + dx, by, topp]]
 LEID = lagre(trimesh.util.concatenate([rør(leidning(GND_Y, -0.8)), rør(leidning(IO13_Y, 0.8))]), "leidning")
+LEID_UTE = lagre(trimesh.util.concatenate([rør(leidning_ute(GND_Y, -0.8)), rør(leidning_ute(IO13_Y, 0.8))]), "leidning_ute")
 LEID_KORT = lagre(trimesh.util.concatenate([rør([[x_pin, y, z_pin], [x_pin + 6, y, z_pin + 2], [x_pin + 14, y - 6, z_pin + 6]]) for y in (GND_Y, IO13_Y)]), "leidning_kort")
 LEID_BRYTAR = lagre(trimesh.util.concatenate([rør([[bx + d, by, 58.0], [bx + d * 3.5, by - 6, 66.0], [bx + d * 5, by - 14, 70.0]]) for d in (-0.8, 0.8)]), "leidning_brytar")
 
@@ -252,7 +260,7 @@ SIDER.append(("00-framside", s))
 s, d = ny_side()
 tekst(d, (60, 40), "Delar", 90, True)
 rad = [("kropp", "1x"), ("luke", "1x"), ("haldar", "1x"), ("knapp", "1x"), ("lokk", "1x")]
-rad2 = [("cam", "1x"), ("mb", "1x"), ("brytar", "1x"), ("magnet", "8x"), ("leidning", "2x"), ("kabel", "1x")]
+rad2 = [("cam", "1x"), ("mb", "1x"), ("brytar", "1x"), ("magnet", "8x Ø6×3"), ("leidning", "2x"), ("kabel", "1x")]
 for yy, rk, hh in ((230, rad, 330), (720, rad2, 250)):
     xx = 70
     for k, n in rk:
@@ -264,7 +272,7 @@ for yy, rk, hh in ((230, rad, 330), (720, rad2, 250)):
         s.paste(im.resize((tw, th), Image.LANCZOS), (xx, yy + (hh - th) // 2))
         tekst(d, (xx + tw // 2, yy + hh + 55), n, 46, True, "ms")
         xx += max(tw, 150) + 45
-tekst(d, (70, 1135), "ESP32-CAM + ESP32-CAM-MB · 6×6 mm trykknapp · magnet Ø6×3 mm · 2 tynne leidningar ≈ 15 cm · lim · loddebolt · micro-USB-kabel", 30)
+tekst(d, (70, 1135), "ESP32-CAM + ESP32-CAM-MB · 6×6 mm trykknapp · magnet Ø6×3 mm · 2 tynne leidningar ca. 15 cm · lim · loddebolt · micro-USB-kabel", 30)
 d.line([(60, 660), (W - 60, 660)], fill=(0, 0, 0), width=3)
 SIDER.append(("01-delar", s))
 
@@ -276,10 +284,13 @@ ob = [o(BORD, color=0xF2F2F2, crease=80, outline=0.3)]
 for n, (px, py) in PL.items():
     ob.append(o(str(P / "printretning" / f"{n}.stl"), pos=[px, py, 0], crease=55))
 img, _ = render(ob, (0.75, -1.0, 1.15), span=150, target=(128, 100, 30))
-plasser(s, beskjer(img).resize((1300, int(1300 * beskjer(img).height / beskjer(img).width)), Image.LANCZOS), [], (380, 260))
-sl = json.loads((P / "slicing" / "slicing.json").read_text())
-for i, t in enumerate(["PLA · 0,4 mm dyse · 0,2 mm lag", "3 veggar · 15 % gyroid", "Tre-støtte berre frå plata (kroppen)", "≈ 8 t 45 min · ≈ 200 g", "Fil: 05-print/A3-Entropi-alle-delar.3mf"]):
-    tekst(d, (70, 330 + i * 70), t, 36, i == 3)
+b = beskjer(img)
+plasser(s, b.resize((1000, int(1000 * b.height / b.width)), Image.LANCZOS), [], (700, 230))
+sl = json.loads((P / "bambu" / "slicing.json").read_text())
+t_ = sl["tid"].replace("h", " t").replace("m", " min").split(" min")[0] + " min"
+linjer = ["Bambu Studio · Bambu Lab P1S", "0,4 mm dyse · 0,20 mm Standard", "Bambu PLA Basic", "Textured PEI-plate", "3 veggar · 15 % fyll", "Tre-støtte berre frå plata", f"ca. {t_} · {round(sl['vekt_g'])} g", "A3-Entropi-P1S.gcode.3mf"]
+for i, t in enumerate(linjer):
+    tekst(d, (70, 300 + i * 68), t, 36, i in (0, 6))
 SIDER.append(("02-print", s))
 
 # 3 Magnetar i kroppen
@@ -312,7 +323,7 @@ A = plasser(s, img, a2)
 pil(d, A[0], A[1])
 utsnitt_img, _ = render([o(DEL["kropp"], crease=55)] + [o(m) for m in mag] + [o(m, pos=[0, 0, -3.0]) for m in mag], UNDER, OPP_NED, span=12, target=(22.5, 77, 6))
 utsnitt(s, d, utsnitt_img, (1480, 380), 190, linje_til=A[2])
-tekst(d, (1480, 610), "N ▸ S", 40, True, "ma")
+tekst(d, (1480, 610), "N – S", 40, True, "ma")
 SIDER.append(("04-magnetar-luke", s))
 
 # 5 Lodd leidningar til ESP32-CAM
@@ -323,10 +334,11 @@ ikon_lodde(d, 820, 90)
 ob = [o(PX[n], crease=30, outline=0.25) for n in CAM] + [o(LEID_KORT, color=0x222222, outline=0.15)]
 img, a2 = render(ob, (1, -0.25, 0.55), span=26, target=(sx["cam_front"], 70, 34), anchors=[[x_pin, GND_Y, z_pin], [x_pin, IO13_Y, z_pin]])
 A = plasser(s, img, a2)
-for (px, py), t in zip(A, ("GND", "IO13")):
+for (px, py), t, dx in zip(A, ("GND", "IO13"), (-1, 1)):
     d.ellipse([px - 24, py - 24, px + 24, py + 24], outline=(0, 0, 0), width=5)
-    tekst(d, (px - 10, py - 60), t, 46, True, "rs")
-tekst(d, (1200, 1150), "≈ 15 cm", 46, True)
+    d.line([(px + dx * 20, py - 20), (px + dx * 120, py - 130)], fill=(0, 0, 0), width=4)
+    tekst(d, (px + dx * 128, py - 140), t, 48, True, "rs" if dx < 0 else "ls")
+tekst(d, (1200, 1150), "ca. 15 cm", 46, True)
 SIDER.append(("05-lodd-cam", s))
 
 # 6 CAM på MB
@@ -343,8 +355,8 @@ SIDER.append(("06-cam-paa-mb", s))
 s, d = ny_side()
 stegnummer(d, 6)
 ikon_snu(d, 1560, 60)
-ob = [o(DEL["kropp"], crease=55, opacity=0.22, noOutline=True)] + stabel((0, 0, 0)) + [o(LEID, color=0x222222, outline=0.15)]
-img, a2 = render(ob, UNDER, OPP_NED, span=64, target=(45, 60, 38), anchors=[[kt_slutt[0], kt_slutt[1], kt_slutt[2]], [bx, by, lomme_botn + 2], [bx, by, 64], [bx, by, 78]])
+ob = [o(DEL["kropp"], crease=55, opacity=0.22, noOutline=True)] + stabel(UTE) + [o(LEID_UTE, color=0x222222, outline=0.15)]
+img, a2 = render(ob, UNDER, OPP_NED, span=70, target=(45, 60, 22), anchors=[[46.5, 54.8, 8], [46.5, 54.8, 30], [bx, by, 62], [bx, by, 80]])
 A = plasser(s, img, a2)
 pil(d, A[0], A[1], w=9)
 pil(d, A[2], A[3], w=9)
@@ -353,9 +365,9 @@ SIDER.append(("07-leidning-tunnel", s))
 # 8 Stabelen inn og fram
 s, d = ny_side()
 stegnummer(d, 7)
-ob = [o(DEL["kropp"], crease=55, opacity=0.22, noOutline=True)] + stabel((-skyv, 0, -42), med_leidning=False)
+ob = [o(DEL["kropp"], crease=55, opacity=0.22, noOutline=True)] + stabel(UTE) + [o(LEID_UTE, color=0x222222, outline=0.15)]
 img, a2 = render(ob, UNDER, OPP_NED, span=70, target=(45, 70, 22),
-                 anchors=[[sx["mb_botn"] - skyv + 8, 75, -42 + 18], [sx["mb_botn"] - skyv + 8, 75, 14], [sx["mb_botn"] - skyv + 8, 100.5, 32], [sx["mb_botn"] + 8, 100.5, 32]])
+                 anchors=[[sx["mb_botn"] - skyv + 8, 80, -42 + 18], [sx["mb_botn"] - skyv + 8, 80, 14], [sx["mb_botn"] - skyv + 8, 100.5, 32], [sx["mb_botn"] + 8, 100.5, 32]])
 A = plasser(s, img, a2)
 pil(d, A[0], A[1])
 pil(d, A[2], A[3])
@@ -412,11 +424,11 @@ SIDER.append(("12-knapp", s))
 s, d = ny_side()
 stegnummer(d, 12)
 yut = R["usb_tunnel_ut_y"]
-ob = [o(DEL["kropp"], crease=55), o(DEL["utloysar"]), o(DEL["usb-lokk"], pos=[0, 26, 0]), o(PX["usb_plugg"], pos=[0, 48, 0]), o(KABEL, pos=[0, 48, 0], color=0x222222, outline=0.2)]
-img, a2 = render(ob, (0.55, 1.0, 0.45), span=70, target=(48, 100, 34),
-                 anchors=[[R["usb_akse_x"], yut + 3, az + 7], [R["usb_akse_x"], yut + 22, az + 7], [R["usb_akse_x"], sy["usb_munn"] + 70, az - 8], [R["usb_akse_x"], yut + 2, az - 8]])
+ob = [o(DEL["kropp"], crease=55), o(DEL["utloysar"]), o(DEL["usb-lokk"], pos=[0, 18, 22]), o(PX["usb_plugg"], pos=[0, 40, 0]), o(KABEL, pos=[0, 40, 0], color=0x222222, outline=0.2)]
+img, a2 = render(ob, (0.55, 1.0, 0.45), span=72, target=(48, 105, 38),
+                 anchors=[[R["usb_akse_x"], yut - 1, az + 4], [R["usb_akse_x"], yut + 12, az + 20], [R["usb_akse_x"], sy["usb_munn"] + 66, az - 6], [R["usb_akse_x"], yut + 4, az - 6]])
 A = plasser(s, img, a2)
-pil(d, A[0], A[1])
+pil(d, A[0], A[1], w=10)
 pil(d, A[2], A[3])
 SIDER.append(("13-usb", s))
 

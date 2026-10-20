@@ -12,12 +12,13 @@ const page = `<!doctype html><html><body style="margin:0;background:#fff">
 <script type="module">
 import * as THREE from 'three';
 import { STLLoader } from 'three/addons/loaders/STLLoader.js';
+import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { mergeVertices } from 'three/addons/utils/BufferGeometryUtils.js';
 const spec = await (await fetch('/spec.json')).json();
 const [W, H] = spec.size || [1600, 1200];
 const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
-r.setPixelRatio(1); r.setSize(W, H); r.outputColorSpace = THREE.SRGBColorSpace;
+r.setPixelRatio(1); r.setSize(W, H); r.localClippingEnabled = true; r.outputColorSpace = THREE.SRGBColorSpace;
 r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = spec.exposure || 0.9;
 document.body.appendChild(r.domElement);
 const scene = new THREE.Scene(); scene.background = new THREE.Color(spec.bg || 0xffffff);
@@ -30,8 +31,11 @@ const outlineMat = (w) => new THREE.ShaderMaterial({
 const loader = new STLLoader();
 const box = new THREE.Box3();
 for (const o of spec.objects) {
-  let g = loader.parse(await (await fetch('/f/' + encodeURIComponent(o.stl))).arrayBuffer());
-  g.deleteAttribute('normal'); g = mergeVertices(g, 1e-4); g.computeVertexNormals();
+  const buf = await (await fetch('/f/' + encodeURIComponent(o.stl || o.ply))).arrayBuffer();
+  let g = o.ply ? new PLYLoader().parse(buf) : loader.parse(buf);
+  if (!o.ply) { g.deleteAttribute('normal'); g = mergeVertices(g, 1e-4); }
+  g.computeVertexNormals();
+  const clip = o.clip ? [new THREE.Plane(new THREE.Vector3(...o.clip.slice(0, 3)), o.clip[3])] : [];
   const grp = new THREE.Group();
   if (o.style === 'ikea') {
     const fm = new THREE.MeshBasicMaterial({ color: o.color ?? 0xffffff, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1, transparent: (o.opacity ?? 1) < 1, opacity: o.opacity ?? 1 }); fm.toneMapped = false;
@@ -43,12 +47,14 @@ for (const o of spec.objects) {
     grp.add(e);
     if (o.shade) { const sh = new THREE.Mesh(g, new THREE.MeshLambertMaterial({ color: 0xffffff, transparent: true, opacity: o.shade })); grp.add(sh); }
   } else {
-    grp.add(new THREE.Mesh(g, new THREE.MeshStandardMaterial({ color: o.color ?? 0xcccccc, roughness: o.rough ?? 0.6, metalness: 0, transparent: (o.opacity ?? 1) < 1, opacity: o.opacity ?? 1, side: THREE.DoubleSide })));
+    grp.add(new THREE.Mesh(g, new THREE.MeshStandardMaterial({ color: o.ply ? 0xffffff : (o.color ?? 0xcccccc), vertexColors: !!o.ply, roughness: o.rough ?? 0.6, metalness: 0, transparent: (o.opacity ?? 1) < 1, opacity: o.opacity ?? 1, side: THREE.DoubleSide, clippingPlanes: clip })));
   }
   if (o.pos) grp.position.set(...o.pos);
   scene.add(grp); if (!o.noFit) box.expandByObject(grp);
 }
-if (spec.light !== false) scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+if (spec.light !== false) scene.add(new THREE.AmbientLight(0xffffff, spec.ambient ?? 0.35));
+if (spec.fill) { const fl = new THREE.DirectionalLight(0xffffff, spec.fill); fl.position.set(120, 80, 60); scene.add(fl); }
+if (spec.ground) { const gm = new THREE.Mesh(new THREE.PlaneGeometry(2000, 2000), new THREE.ShadowMaterial({ opacity: 0.18 })); gm.position.z = spec.ground; scene.add(gm); }
 const c = spec.target ? new THREE.Vector3(...spec.target) : box.getCenter(new THREE.Vector3());
 const size = box.getSize(new THREE.Vector3()).length();
 const dir = new THREE.Vector3(...(spec.dir || [1, -1, 0.8])).normalize();
