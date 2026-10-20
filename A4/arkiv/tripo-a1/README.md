@@ -4,9 +4,9 @@
 
 ![Mekanisk assembly R01](cad-assembly/review/A1-assembled.png)
 
-Ny CAD-versjon med 11 mekaniske produktdelar, separate printmodellar og ein ny byggjeguide R02 på 28 sider, frå Arduino IDE og ESP32-CAM til utløysar og mekanisk montering. Begge printplatene er digitalt slicer-verifiserte. Faktiske ESP32-CAM/MB-mål, brytar, straum/USB og fysisk prøvepass står att før frigjeving.
+Ny CAD-versjon med 11 mekaniske produktdelar, separate printmodellar og ei byggjerettleiing R03 på 29 sider med 23 byggjesteg, frå Arduino IDE og ESP32-CAM til utløysar og mekanisk montering. Begge printplatene er digitalt slicer-verifiserte. Faktiske ESP32-CAM/MB-mål, brytar, straum/USB og fysisk prøvepass står att før frigjeving.
 
-[Ny byggjeguide R02](cad-assembly/review/A1-Byggjesteg-R02.pdf) | [Alle sidene som bilete](cad-assembly/review/Byggjesteg-R02-bilete.md) | [ESP32-testprogram](cad-assembly/firmware/README.md) | [Eksplodert isometrisk teikning](cad-assembly/review/A1-exploded-lines.png) | [CAD- og printfiler](cad-assembly/)
+[Byggjerettleiing R03](cad-assembly/review/A1-Byggjerettleiing-R03.pdf) | [Alle sidene som bilete](cad-assembly/review/Byggjesteg-R03-bilete.md) | [P1S-instruks](cad-assembly/PRINT-P1S.md) | [ESP32-testprogram](cad-assembly/firmware/README.md) | [Eksplodert isometrisk teikning](cad-assembly/review/A1-exploded-lines.png) | [CAD- og printfiler](cad-assembly/)
 
 ## Opphavleg Tripo-formgrunnlag
 
