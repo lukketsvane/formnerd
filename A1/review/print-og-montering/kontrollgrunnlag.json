@@ -1,0 +1,76 @@
+{
+  "model_source": "A1/mesh/03-quick-capped.glb",
+  "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+  "triangles": 2490708,
+  "render_geometry_modified": false,
+  "mesh_simplified": false,
+  "scale_mm_per_source_unit": 140,
+  "views": [
+    {
+      "filename": "A1-isometrisk.png",
+      "direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "printer_pose": false
+    },
+    {
+      "filename": "A1-printretning.png",
+      "direction": [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "printer_pose": true
+    },
+    {
+      "filename": "A1-bakside-isometrisk.png",
+      "direction": [
+        -0.5773502691896258,
+        0.5773502691896258,
+        -0.5773502691896258
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "printer_pose": false
+    }
+  ],
+  "hardware_dimensions_confirmed": false,
+  "working_camera_assembly_verified": false,
+  "pdf_is_valid_assembly_manual": false,
+  "purpose": "Exact isometric model views, form-print preparation and explicit assembly blockers",
+  "equipment_source": "Utstyret-me-har(1).pdf, 20 October 2026, page 1",
+  "project_brief_source": "FormNerd - Prosjektoversikt.pdf, page 2",
+  "outputs": {
+    "A1-Print-og-Monteringskontroll.pdf": {
+      "bytes": 696977,
+      "sha256": "25d9c055ed744bec742d7237b0f7ae6206a90a62e586fcd85974ded087eb4643"
+    },
+    "A1-bakside-isometrisk.png": {
+      "bytes": 118009,
+      "sha256": "1faac24ee20f5c0a8326761acd173f3e5463f7b5320c7f7edc666b1ab8ccd32e"
+    },
+    "A1-isometrisk.png": {
+      "bytes": 299813,
+      "sha256": "f8585bdba4c0b7354fc8679a1d731d7e4083a2f5a238204d3e1ec31c96eeeb61"
+    },
+    "A1-printretning.png": {
+      "bytes": 150230,
+      "sha256": "fc46992c48b7511a94a4f00778238b7b935c320a7f8a9265867fa0b952cb9459"
+    }
+  }
+}
