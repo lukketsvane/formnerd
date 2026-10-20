@@ -1,0 +1,100 @@
+{
+  "felles_start": "New product design render in exactly the visual language of image[1] and image[2]: the same soft matte light warm-grey round tubes (thick, pillowy, smooth), the same dark graphite rounded core, the same dark grey cylindrical puck buttons, the same materials, colours, lighting and render style. ",
+  "felles_stereo": " This is a STEREOSCOPIC camera: it has exactly TWO identical lenses side by side on the front face, at the same height, horizontally aligned, about 35 mm apart, each with a small square image sensor visible behind a dark bezel. Palm-sized, about 75 mm wide, 55 mm tall, 40 mm deep, built to hold two small ESP32-CAM camera boards. ",
+  "felles_slutt": "Three-quarter front view, single object, centered, pure white seamless background, soft studio lighting, soft contact shadow, photoreal industrial design product render, no text, no logos.",
+  "konsept": [
+    {
+      "id": "01",
+      "namn": "aatte",
+      "refs": [
+        "ref-2",
+        "ref-5"
+      ],
+      "tekst": "One continuous light-grey tube coils around both lenses in a figure-eight, then rises over the top in an S-shaped wave and runs down the left side as a vertical grip of three stacked ribs. USB-C port on the left side."
+    },
+    {
+      "id": "02",
+      "namn": "dobbel-spole",
+      "refs": [
+        "ref-2",
+        "ref-5"
+      ],
+      "tekst": "Each lens is wrapped by its own tight spiral of two concentric tube rings, the two spirals touching in the middle like a pair of binocular eyepieces. A bundle of three parallel tubes leaves the spirals, sweeps up over the top in a long gentle arc and drops down the back. Tall dark cylindrical shutter tower on the top right. USB-C port on the right side."
+    },
+    {
+      "id": "03",
+      "namn": "fletta",
+      "refs": [
+        "ref-2",
+        "ref-5",
+        "ref-3"
+      ],
+      "tekst": "Two tubes emerge from a rounded vertical hand grip on the left, braid over each other across the top in a loose twist and plunge down the right side, like the tube path in the sketch image[3]. The front is a flat dark graphite plate with the two lenses, each lens framed by one slim light-grey tube ring. Puck shutter button on top of the grip."
+    },
+    {
+      "id": "04",
+      "namn": "kube-boyle",
+      "refs": [
+        "ref-4",
+        "ref-5",
+        "ref-2"
+      ],
+      "tekst": "A compact rounded light-grey cube body with a thin horizontal parting line near the bottom, and a bent dark-grey sheet-metal L-shaped carry handle screwed to the side with two small screws, wrapping under the base and rising above the top like image[1]. On the front, each of the two lenses is framed by a soft tube loop that dips down and joins the other loop."
+    },
+    {
+      "id": "05",
+      "namn": "tube-hank",
+      "refs": [
+        "ref-5",
+        "ref-2"
+      ],
+      "tekst": "A rounded light-grey cube body. One thick light-grey tube forms a tall arched carry loop on top, then runs down the front face and curls once around each lens, ending in a small dark round button on the side. Thin horizontal parting line near the bottom."
+    },
+    {
+      "id": "06",
+      "namn": "diagonal",
+      "refs": [
+        "ref-5",
+        "ref-2"
+      ],
+      "tekst": "A rounded light-grey cube body with one fat tube draped diagonally over the top-left corner and down across the right side like a sash, never covering the lenses. A dark graphite insert panel on the front holds both lenses. Dark puck dial on top, small dark tab handle at the bottom right."
+    },
+    {
+      "id": "07",
+      "namn": "tvillingkubar",
+      "refs": [
+        "ref-5",
+        "ref-2"
+      ],
+      "tekst": "Two identical small rounded cube modules sit side by side, one lens on the front of each cube, joined into one object by a thick light-grey tube bridge that arches over the top between them and doubles as a carry handle. Each lens has a light tube ring. Dark puck shutter on top of the right cube."
+    },
+    {
+      "id": "08",
+      "namn": "belte",
+      "refs": [
+        "ref-2",
+        "ref-5"
+      ],
+      "tekst": "A wide landscape body. A belt of three parallel light-grey tubes wraps horizontally around the whole body, and at the front the belt splits and loops around the two lenses before rejoining. Dark graphite core visible above and below the belt. Puck shutter button on the top right."
+    },
+    {
+      "id": "09",
+      "namn": "symmetri",
+      "refs": [
+        "ref-2",
+        "ref-5"
+      ],
+      "tekst": "A perfectly symmetric landscape body like a stereo viewer: a vertical grip of three stacked tube ribs on BOTH the left and the right side, the two lenses in a dark graphite centre section between the grips, a single tube wave across the top centre, one dark puck shutter on the top centre."
+    },
+    {
+      "id": "10",
+      "namn": "skulder",
+      "refs": [
+        "ref-2",
+        "ref-5",
+        "ref-1"
+      ],
+      "tekst": "A dark graphite rounded box core with the two lenses each set in a light-grey tube ring. A raised tube shoulder on the top right carries a dark cylindrical dial; a long tube sweeps from that shoulder across the top and down the left side into a vertical grip of stacked ribs. USB-C port on the left side."
+    }
+  ]
+}
