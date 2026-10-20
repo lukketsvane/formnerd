@@ -4,6 +4,8 @@ import sys
 import manifold3d as mf
 import numpy as np
 import trimesh
+from scipy import ndimage
+from skimage import measure
 
 import hus
 
@@ -90,6 +92,25 @@ def stabel_modell(S, xb, ly, lz, retning):
     return d, dict(za=za, zb=zb, y0=y0, y1=y1, xb=xb, xL=xL, xp=xp, z_usb=z_usb, z_sd=z_sd)
 
 
+def sveip_fram(F, x0, x1, klaring, pitch=0.2):
+    """Alt som ligg framfor (+x) eller i same kolonne som fremre skal: må vere tomt for at skalet kan skyvast på langs -x."""
+    tm = hus.til_tm(F)
+    occ, lo = hus.fyll(tm, pitch=pitch)
+    har = occ.any(0)
+    minx = np.where(har, np.argmax(occ, axis=0), occ.shape[0])
+    i0, i1 = max(int((x0 - lo[0]) / pitch), 0), min(int((x1 - lo[0]) / pitch), occ.shape[0])
+    ix = np.arange(i0, i1)[:, None, None]
+    S = ix >= minx[None]
+    r = int(np.ceil(klaring / pitch))
+    S = ndimage.binary_dilation(S, structure=np.ones((1, 2 * r + 1, 2 * r + 1), bool))
+    S = np.pad(S, 1)
+    v, f, _, _ = measure.marching_cubes(S.astype(np.float32), level=0.5, spacing=(pitch,) * 3)
+    m = trimesh.Trimesh(v + lo + np.array([(i0 - 1) * pitch, -pitch, -pitch]), f[:, ::-1], process=True)
+    if m.volume < 0:
+        m.invert()
+    return hus.til_mf(m).simplify(0.02)
+
+
 def bygg(P):
     K, R, S, Li, U = (P[k] for k in ("kropp", "ramme", "stabel", "linser", "usb_plugg"))
     W, t, to, c, L = K["breidd"], K["vegg"], K["lepp_ytre"], K["lepp_klaring"], K["lepp_lengd"]
@@ -135,7 +156,7 @@ def bygg(P):
     front = front + ((Oy - I_o) ^ hus.halvrom_x(x_s - L, x_s))
     bak = (Oy - I_t) ^ hus.halvrom_x(-1e3, x_s - L - c)
     bak = bak + ((I_oc - I_t) ^ hus.halvrom_x(x_s - L - c, x_s - P_ - c))
-    ramme = storst(I_oc ^ hus.halvrom_x(x_s - P_, x_s - 0.05))
+    ramme = storst(I_oc ^ hus.halvrom_x(x_s - P_, x_s - 0.15))
 
     cl, sv, sh = R["klaring"], R["styrevegg"], R["styrehogd"]
     hol = []
@@ -157,6 +178,11 @@ def bygg(P):
 
     for h in hol:
         front, bak, ramme = front - h, bak - h, ramme - h
+
+    sveip = sveip_fram(front, x_s - L - c - 1.0, x_s + sh + 20.0, c)
+    v0 = bak.volume(), ramme.volume()
+    bak, ramme = bak - sveip, ramme - sveip
+    kontroll["sveip_trimma_mm3"] = {"bakre_skal": round(v0[0] - bak.volume(), 1), "innmatsramme": round(v0[1] - ramme.volume(), 1)}
 
     xm = x_s - L / 2 - c
     sentrum = np.array([ly, W / 2])
