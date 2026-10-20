@@ -1,0 +1,9 @@
+{
+  "zip": "/workspace/scratch/6049a6a98eee/Kamera-boge-M03-kjelder.zip",
+  "bytes": 9198198,
+  "sha256": "9e2cab3aa71a71db06886bee2ef1f179e9d48d37dfe3ff95dc046762020b3ff1",
+  "zip_crc": "pass",
+  "tested_rebuild_payload_files_identical": 90,
+  "write_method": "Validated closed random temporary archive; one atomic os.replace into final filename.",
+  "rebuild_report": "camera-boge/verification/manual-m03.json"
+}

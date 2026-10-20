@@ -1,0 +1,11 @@
+FØRSTE PRINT
+
+Opne Plate-00-test.3mf i Bambu Studio. Vel faktisk Bambu Lab P1S, dyse, plate og PLA. Førebels start: 0,4 mm dyse, 0,20 mm lag, 3 veggar, 15 prosent gyroid. Dette er innstillingar som skal vurderast, ikkje ein validert slicerprofil.
+
+Print T01 og P04 først. Prøv knappen i 16,4 mm-hòlet, M3-mutter i 5,9 mm-lomma, og faktiske M3/M2.5-skruar i pilotane. Knappen skal gli og kunne løftast ut; mutteren skal kunne førast inn og halde mot rotasjon. Juster parametrane og bygg på nytt ved behov.
+
+Deretter print Plate-01-framhus.3mf og Plate-02-deksel-og-smadelar.3mf. P01 er oppreist og krev vurdert brim og støtte; kontroller innvendig tak, kanal, boge og tilgjenge for å fjerne støtte gjennom bakopninga. Smådelane er orienterte for flat kontakt. Kontroller alle lag og støtter før utskrift.
+
+Platefilene inneheld geometri, ikkje G-kode. Ingen P1S-slicing eller fysisk prøve er utført. Ytterform er mesh; STEP dekkjer berre analytisk mekanikk.
+
+Feste: 6 M3x12, 4 M3-mutrar, 3 M2.5x8. Maskinvare er nominell og må kontrollerast. Stram varsamt i printa pilotar. Følg manualen for innføringsrekkjefølgje og funksjonsprøve.

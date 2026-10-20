@@ -1,0 +1,51 @@
+{
+  "width_mm": 145,
+  "measured": false,
+  "seam_front_y": -31.6,
+  "seam_rear_y": -32.0,
+  "cavity": [
+    116,
+    47.5,
+    62
+  ],
+  "cavity_center": [
+    0,
+    -11.75,
+    45
+  ],
+  "lens_center": [
+    -38,
+    41.5
+  ],
+  "lens_bore": 38,
+  "button_center": [
+    48,
+    10
+  ],
+  "button_bore": 16.4,
+  "button_diameter": 16,
+  "button_travel": 1.2,
+  "rear_screws": [
+    [
+      -48,
+      18
+    ],
+    [
+      48,
+      18
+    ],
+    [
+      -48,
+      62
+    ],
+    [
+      48,
+      62
+    ]
+  ],
+  "rear_screw": "M3x12 socket cap",
+  "rear_nut": "M3 hex AF5.5 thickness2.4",
+  "spring_screws": "2 x M3x12 into printed pilot2.5",
+  "lens_screws": "3 x M2.5x8 into printed pilot2.0",
+  "fit_status": "digital only; physical coupon and actual hardware required"
+}

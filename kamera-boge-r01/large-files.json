@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "chunk_size_bytes": 8388608,
+  "method": "lossless ordered binary concatenation",
+  "files": [
+    {
+      "id": "assembled",
+      "path": "cad/assembled.3mf",
+      "bytes": 32839441,
+      "sha256": "117dda42ec759a4de8b6bcd27b3e5888dd858a630ff5e5ba6bc8d8fdf55d5eab",
+      "parts": [
+        {
+          "path": "payloads/assembled.3mf.part-001",
+          "bytes": 8388608,
+          "sha256": "44958b0ec96b0019cc526b8ddfa7c118359845c9d2e63210568b97a67b79269f"
+        },
+        {
+          "path": "payloads/assembled.3mf.part-002",
+          "bytes": 8388608,
+          "sha256": "9b0b5e67e6c664e4c88cdc06b6a63c12fe0e65d4a6f6c823373ebd69c03842d4"
+        },
+        {
+          "path": "payloads/assembled.3mf.part-003",
+          "bytes": 8388608,
+          "sha256": "5edaf66df04fd7b10b2f98e1550067630592c2159f32a2692ec0e8cf358bf493"
+        },
+        {
+          "path": "payloads/assembled.3mf.part-004",
+          "bytes": 7673617,
+          "sha256": "cb16bc894fdd99b10606705d1d8e08afe452844ecc95a4410ba2c4ba066d84b9"
+        }
+      ]
+    },
+    {
+      "id": "front",
+      "path": "print/Plate-01-framhus.3mf",
+      "bytes": 28565651,
+      "sha256": "629eafaa670cf5ebf2b2e7014f598d7d5054ea3def4a6ce193a7765d157654b0",
+      "parts": [
+        {
+          "path": "payloads/front.3mf.part-001",
+          "bytes": 8388608,
+          "sha256": "6f106c0a54c294ed73396e96a4c0e7421f3e9c3508b8fc10e5c48c09aaf09789"
+        },
+        {
+          "path": "payloads/front.3mf.part-002",
+          "bytes": 8388608,
+          "sha256": "a60ccbf137ccf796012b5bbe7a16b21e00b98e6005a0652ce8ea08aa1fe8fedc"
+        },
+        {
+          "path": "payloads/front.3mf.part-003",
+          "bytes": 8388608,
+          "sha256": "587f1c4f3a604d23e498e7948a5554c1efba37ea51f2a10c5e87f0dcf327f105"
+        },
+        {
+          "path": "payloads/front.3mf.part-004",
+          "bytes": 3399827,
+          "sha256": "54835d0d5c3492461c2b0b496526416ce38feaccba1ee9584eca18b748ec0af8"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "cleanup": {
+    "threshold_mm3": 1.0,
+    "removed_count": 1,
+    "removed_volume_mm3": 0.22942088852615308,
+    "reason": "detached sliver left by replacing original raised button",
+    "export_simplification_tolerance_mm": 0.0001
+  },
+  "status": "digital mechanical prototype",
+  "hardware_measured": false,
+  "sliced_for_P1S": false,
+  "physically_tested": false,
+  "parts": [
+    {
+      "id": "P01",
+      "name": "Framhus",
+      "quantity": 1,
+      "material": "PLA",
+      "volume_mm3": 397900.9188912345,
+      "bounds_mm": [
+        [
+          -72.5,
+          -34.599998474121094,
+          0.0
+        ],
+        [
+          72.5,
+          42.09553527832031,
+          107.3148422241211
+        ]
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "brep": false,
+      "assembly_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -3.7477684020996094
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "Bakdeksel",
+      "quantity": 1,
+      "material": "PLA",
+      "volume_mm3": 58769.774043769525,
+      "bounds_mm": [
+        [
+          -64.7730484008789,
+          -42.013885498046875,
+          4.806047439575195
+        ],
+        [
+          67.81044006347656,
+          -32.0,
+          90.70629119873047
+        ]
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "brep": false,
+      "assembly_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5186958312988281
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -47.75616931915283
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          -32.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "P03",
+      "name": "Linseinnsats",
+      "quantity": 1,
+      "material": "PLA",
+      "volume_mm3": 4020.81665120815,
+      "bounds_mm": [
+        [
+          -62.70000076293945,
+          32.5,
+          16.799999237060547
+        ],
+        [
+          -13.300000190734863,
+          40.5,
+          66.19999694824219
+        ]
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "brep": true,
+      "assembly_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          38.00000047683716
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -41.49999809265137
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          40.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "P04",
+      "name": "Utl\u00f8ysarknapp",
+      "quantity": 1,
+      "material": "PLA",
+      "volume_mm3": 5475.084985303559,
+      "bounds_mm": [
+        [
+          38.5,
+          0.5,
+          74.4000015258789
+        ],
+        [
+          57.5,
+          19.5,
+          101.0
+        ]
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "brep": true,
+      "assembly_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -48.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -74.4000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "P05",
+      "name": "Pr\u00f8vefj\u00f8r",
+      "quantity": 1,
+      "material": "PLA",
+      "volume_mm3": 1476.7266685724026,
+      "bounds_mm": [
+        [
+          32.5,
+          -24.0,
+          68.4000015258789
+        ],
+        [
+          57.5,
+          14.0,
+          74.4000015258789
+        ]
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "brep": true,
+      "assembly_to_print": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -45.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          -4.999999999999992
+        ],
+        [
+          0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          74.4000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "pair_collisions": [
+    {
+      "parts": [
+        "P01",
+        "P02"
+      ],
+      "overlap_mm3": 1.0772632785815972e-15
+    },
+    {
+      "parts": [
+        "P01",
+        "P03"
+      ],
+      "overlap_mm3": 3.0364268454206316e-14
+    },
+    {
+      "parts": [
+        "P01",
+        "P04"
+      ],
+      "overlap_mm3": 5.273559366969494e-16
+    },
+    {
+      "parts": [
+        "P01",
+        "P05"
+      ],
+      "overlap_mm3": 5.551115123125783e-16
+    },
+    {
+      "parts": [
+        "P02",
+        "P03"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "P02",
+        "P04"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "P02",
+        "P05"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "P03",
+        "P04"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "P03",
+        "P05"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "P04",
+        "P05"
+      ],
+      "overlap_mm3": 5.390132784555135e-14
+    }
+  ],
+  "insertion_paths": {
+    "P02": {
+      "method": "21 discrete rigid positions, not continuous sweep",
+      "samples": [
+        {
+          "offset_mm": 0.1,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0949999999999998,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.09,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 6.084999999999999,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.08,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.075,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.069999999999999,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 14.065,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 16.06,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 18.055,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.05,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 22.045,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 24.04,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 26.035,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 28.03,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 30.025,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 32.019999999999996,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 34.015,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 36.01,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 38.005,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "housing_overlap_mm3": 0.0
+        }
+      ]
+    },
+    "P03": {
+      "method": "21 discrete rigid positions, not continuous sweep",
+      "samples": [
+        {
+          "offset_mm": 0.1,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.845,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.59,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 5.334999999999999,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.079999999999999,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.825,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.569999999999999,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.315,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 14.059999999999999,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.804999999999998,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 17.55,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 19.295,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 21.04,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 22.785,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 24.53,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 26.275,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 28.02,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 29.765,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 31.509999999999998,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 33.255,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "offset_mm": 35.0,
+          "housing_overlap_mm3": 0.0
+        }
+      ]
+    }
+  },
+  "button_motion": {
+    "method": "13 discrete rigid positions; spring deformation not simulated",
+    "samples": [
+      {
+        "travel_mm": 0.0,
+        "housing_overlap_mm3": -3.2282774424577594e-14
+      },
+      {
+        "travel_mm": 0.09999999999999999,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.19999999999999998,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.3,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.39999999999999997,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.49999999999999994,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.6,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.7,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.7999999999999999,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.8999999999999999,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.9999999999999999,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 1.0999999999999999,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 1.2,
+        "housing_overlap_mm3": 0.0
+      }
+    ]
+  },
+  "clearances_mm": {
+    "rear_seam": 0.4,
+    "button_diametral": 0.4,
+    "lens_diametral": 0.4,
+    "screw_through_diametral": 0.4
+  },
+  "spring_estimate": {
+    "model": "linear cantilever, assumed PLA E=2000MPa",
+    "length_mm": 25,
+    "width_mm": 10,
+    "thickness_mm": 1,
+    "travel_mm": 1.2,
+    "force_N": 0.384,
+    "bending_stress_MPa": 5.76,
+    "not_physical_validation": true
+  },
+  "wall_check": "Nominal cavity boundary and bore annuli checked; organic surface minimum thickness requires ray sampling in verify.py",
+  "export_normalization": [
+    {
+      "id": "P01",
+      "input_triangles": 1582948,
+      "output_triangles": 1579076,
+      "float32_normalization_passes": 1,
+      "per_pass_simplification_tolerance_mm": 0.0001,
+      "final_watertight": true,
+      "final_winding_consistent": true
+    },
+    {
+      "id": "P02",
+      "input_triangles": 232578,
+      "output_triangles": 232578,
+      "float32_normalization_passes": 0,
+      "per_pass_simplification_tolerance_mm": 0.0001,
+      "final_watertight": true,
+      "final_winding_consistent": true
+    },
+    {
+      "id": "P03",
+      "input_triangles": 2028,
+      "output_triangles": 2028,
+      "float32_normalization_passes": 0,
+      "per_pass_simplification_tolerance_mm": 0.0001,
+      "final_watertight": true,
+      "final_winding_consistent": true
+    },
+    {
+      "id": "P04",
+      "input_triangles": 668,
+      "output_triangles": 668,
+      "float32_normalization_passes": 0,
+      "per_pass_simplification_tolerance_mm": 0.0001,
+      "final_watertight": true,
+      "final_winding_consistent": true
+    },
+    {
+      "id": "P05",
+      "input_triangles": 708,
+      "output_triangles": 708,
+      "float32_normalization_passes": 0,
+      "per_pass_simplification_tolerance_mm": 0.0001,
+      "final_watertight": true,
+      "final_winding_consistent": true
+    }
+  ]
+}
