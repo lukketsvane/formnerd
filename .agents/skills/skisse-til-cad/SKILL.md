@@ -18,7 +18,7 @@ Følg kjeda: skisse / referansebilete → Tripo image-to-3D → segmentering og 
 
 Bruk éi eintydig vald skisse eller eitt produkt per bilete, kvit bakgrunn og lesbar silhuett. Bruk imagegen til formutprøving, konsistente referansevisingar eller layoututkast når det hjelper. Merk utkast. Bruk faktisk CAD til endelege tekniske rendringar og monteringsillustrasjonar.
 
-Bevar originalreferansen og namngi den valde varianten. Bruk multiview berre når bileta viser same objekt og detaljar. Ikkje generer nye variantar når brukaren har valt og bedt om ferdigstilling.
+Følg biletsteget i [Tripo-oppskrifta](references/tripo-bruk.md#biletsteget-før-3d): konseptvariantar med image-to-image éin om gongen (biletgenerering har samtidigheit 1), val, eit eige to3d-bilete (1:1, sentrert, kvit bakgrunn, nøytralt mjukt lys, matte flater, 3/4 litt ovanfrå), og godkjenning før 3D. Bevar originalreferansen og namngi den valde varianten. Bruk multiview berre når bileta viser same objekt og detaljar. Ikkje generer nye variantar når brukaren har valt og bedt om ferdigstilling.
 
 ## 2. Bygg og del Tripo-forma
 
