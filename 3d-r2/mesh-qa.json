@@ -1,0 +1,83 @@
+{
+  "01a-tvillingloep-sunburst/model.glb": {
+    "sha256": "753070d41eeef8839165422527c127d4ced1b9d67779f0df6756934bc009601f",
+    "file_size_bytes": 2876592,
+    "extents_xyz_model_units": [
+      0.7337531447410583,
+      0.6139557361602783,
+      1.0
+    ],
+    "raw_indexed_topology": {
+      "vertices": 53591,
+      "faces": 96686,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 10254,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 121
+    },
+    "exact_position_welded_analysis_only": {
+      "vertices": 48343,
+      "faces": 96686,
+      "watertight_trimesh": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 1
+    }
+  },
+  "02-eitt-vindauge/model.glb": {
+    "sha256": "0b6d0a9e082c80e3bf17b1b395cff4862b877ec77d6df8185876df9914635dfb",
+    "file_size_bytes": 2866508,
+    "extents_xyz_model_units": [
+      0.7116795778274536,
+      0.838572084903717,
+      1.0
+    ],
+    "raw_indexed_topology": {
+      "vertices": 53445,
+      "faces": 96234,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 10400,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 128
+    },
+    "exact_position_welded_analysis_only": {
+      "vertices": 48117,
+      "faces": 96234,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 4,
+      "nonmanifold_edges_more_than_two_faces": 4,
+      "connected_components": 1
+    }
+  },
+  "04-visir/model.glb": {
+    "sha256": "9bf09bb8ad026b853d1a53681381a597efec0b4d73126759a5e195ffd6a5bcbb",
+    "file_size_bytes": 2878940,
+    "extents_xyz_model_units": [
+      0.7320650815963745,
+      0.6636600494384766,
+      1.0
+    ],
+    "raw_indexed_topology": {
+      "vertices": 53541,
+      "faces": 97014,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 9844,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 112
+    },
+    "exact_position_welded_analysis_only": {
+      "vertices": 48509,
+      "faces": 97014,
+      "watertight_trimesh": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 1
+    }
+  }
+}

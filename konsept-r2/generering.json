@@ -1,0 +1,146 @@
+{
+  "dato": "2026-10-20",
+  "referanse_file_tokens": {
+    "ref-1-mesh-render.png": "file_f2a72ef3-a495-4158-8b99-08cb867f334d",
+    "ref-2-tube-render.png": "file_45c89564-4f66-4980-851e-5ad75705a917",
+    "ref-3-skisse.jpg": "file_e7e5e72e-f52b-4529-b648-3db9c8aa31bc",
+    "ref-4-kube-handtak.jpg": "file_644f53b9-dd31-4d3a-9606-d92f15a218a9",
+    "ref-5-kube-grid.png": "file_04c231f3-8cba-4021-a3fe-241a90f72f6a",
+    "ref-7-hovudreferanse.png": "file_e8d96ef9-df67-4657-946b-d896b6aefb04"
+  },
+  "konsept": [
+    {
+      "konsept": "01a-tvillingloep-sunburst",
+      "task_id": "24819f39-931d-436a-897f-30ef02d81c82",
+      "type": "image_to_image",
+      "model": "chat_image_2.5_sunburst",
+      "credits": 10.0,
+      "inputs": [
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04"
+      ],
+      "prompt": "Edit image[1] into a STEREOSCOPIC camera and keep everything else exactly as it is: replace the single big lens with TWO identical, slightly smaller deep lens barrels side by side at the same height, both facing straight forward, about 40 mm apart. The big sweeping tube now coils around both barrels as one continuous stadium-shaped loop, the way it wrapped the single lens. Each barrel shows only deep dark glass in stepped concentric black and graphite rings. No image sensor, square chip or electronics visible anywhere. Same camera angle, lighting, white background and render quality."
+    },
+    {
+      "konsept": "01b-tvillingloep",
+      "task_id": "e4455518-0923-420c-8172-07023bbb9e48",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render that belongs to exactly the same design as image[1]: the same few, very fat, pillowy, matte light warm-grey round tubes, the same vertical grip of three stacked tube ribs with a dark grey puck button on top, the same single big tube that sweeps diagonally over the top, the same dark graphite core, the same dark recessed USB-C pocket on the grip side, the same proportions, materials, lighting and render quality. It is a STEREOSCOPIC camera: replace the single big lens of image[1] with TWO identical deep lens barrels side by side at the same height, both facing straight forward, about 40 mm apart. The big sweeping tube coils around both barrels as one continuous stadium-shaped loop. Hide the electronics completely: no image sensor, no square chip, no circuit board, no screws, no vents anywhere; any lens reads only as deep, dark, glossy glass inside stepped concentric black and graphite rings, exactly like the lens in image[1]. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[1]. Single object, centered, no text, no logos."
+    },
+    {
+      "konsept": "02-eitt-vindauge",
+      "task_id": "f5c5b3a8-8f3f-49d1-9dc8-51f61031ba72",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render that belongs to exactly the same design as image[1]: the same few, very fat, pillowy, matte light warm-grey round tubes, the same vertical grip of three stacked tube ribs with a dark grey puck button on top, the same single big tube that sweeps diagonally over the top, the same dark graphite core, the same dark recessed USB-C pocket on the grip side, the same proportions, materials, lighting and render quality. The big sweeping tube coils around ONE wide horizontal oval window of dark smoked glass on the front. Behind that glass, two identical camera lenses side by side at the same height are only faintly visible as two subtle dark circles, so the stereo pair is almost invisible and the camera reads as a single sculpted eye. Hide the electronics completely: no image sensor, no square chip, no circuit board, no screws, no vents anywhere; any lens reads only as deep, dark, glossy glass inside stepped concentric black and graphite rings, exactly like the lens in image[1]. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[1]. Single object, centered, no text, no logos."
+    },
+    {
+      "konsept": "03-roeyrende",
+      "task_id": "a9a1b9ec-852b-4266-8c7b-9f362af783e7",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render that belongs to exactly the same design as image[1]: the same few, very fat, pillowy, matte light warm-grey round tubes, the same vertical grip of three stacked tube ribs with a dark grey puck button on top, the same single big tube that sweeps diagonally over the top, the same dark graphite core, the same dark recessed USB-C pocket on the grip side, the same proportions, materials, lighting and render quality. Two of the fat tubes sweep over the top and curl down to end facing straight forward, side by side at the same height, as two open hollow tube ends. Each open tube end holds a deep dark glass lens inside it, so the two stereo lenses are hidden inside the ends of the tubes themselves. Hide the electronics completely: no image sensor, no square chip, no circuit board, no screws, no vents anywhere; any lens reads only as deep, dark, glossy glass inside stepped concentric black and graphite rings, exactly like the lens in image[1]. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[1]. Single object, centered, no text, no logos."
+    },
+    {
+      "konsept": "04-visir",
+      "task_id": "b9a8553f-1753-4d8d-af7f-5f291e8306f2",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render that belongs to exactly the same design as image[1]: the same few, very fat, pillowy, matte light warm-grey round tubes, the same vertical grip of three stacked tube ribs with a dark grey puck button on top, the same single big tube that sweeps diagonally over the top, the same dark graphite core, the same dark recessed USB-C pocket on the grip side, the same proportions, materials, lighting and render quality. A smooth dark glossy horizontal visor of smoked glass spans the front between the grip ribs and the right shoulder, framed above and below by the fat tubes. Two identical camera lenses side by side at the same height sit hidden behind the visor, only hinted at as two faint circular reflections. Hide the electronics completely: no image sensor, no square chip, no circuit board, no screws, no vents anywhere; any lens reads only as deep, dark, glossy glass inside stepped concentric black and graphite rings, exactly like the lens in image[1]. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[1]. Single object, centered, no text, no logos."
+    },
+    {
+      "konsept": "05-brille",
+      "task_id": "26a20c2b-da68-4b2b-ad73-b25594098fdc",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04",
+        "file_45c89564-4f66-4980-851e-5ad75705a917"
+      ],
+      "prompt": "New product design render that belongs to exactly the same design as image[1]: the same few, very fat, pillowy, matte light warm-grey round tubes, the same vertical grip of three stacked tube ribs with a dark grey puck button on top, the same single big tube that sweeps diagonally over the top, the same dark graphite core, the same dark recessed USB-C pocket on the grip side, the same proportions, materials, lighting and render quality. It is a STEREOSCOPIC camera with TWO identical deep lens barrels side by side at the same height, both facing straight forward. Each barrel sits in its own thick tube coil, and the two coils flow up into the single big tube that sweeps diagonally over the top to the grip, like a pair of eyes sharing one brow. Hide the electronics completely: no image sensor, no square chip, no circuit board, no screws, no vents anywhere; any lens reads only as deep, dark, glossy glass inside stepped concentric black and graphite rings, exactly like the lens in image[1]. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[1]. Single object, centered, no text, no logos."
+    },
+    {
+      "konsept": "06-kube",
+      "task_id": "e643d400-c20a-477b-966c-f9796a58a1ce",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04",
+        "file_04c231f3-8cba-4021-a3fe-241a90f72f6a"
+      ],
+      "prompt": "New product design render that belongs to exactly the same design as image[1]: the same few, very fat, pillowy, matte light warm-grey round tubes, the same vertical grip of three stacked tube ribs with a dark grey puck button on top, the same single big tube that sweeps diagonally over the top, the same dark graphite core, the same dark recessed USB-C pocket on the grip side, the same proportions, materials, lighting and render quality. Make it more compact and cube-like, like the small cube cameras in image[2], while keeping the tube language of image[1]. It is a STEREOSCOPIC camera with TWO identical deep lens barrels side by side at the same height, both facing straight forward, nested inside one fat tube that sweeps over the top and coils around both. Hide the electronics completely: no image sensor, no square chip, no circuit board, no screws, no vents anywhere; any lens reads only as deep, dark, glossy glass inside stepped concentric black and graphite rings, exactly like the lens in image[1]. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[1]. Single object, centered, no text, no logos."
+    }
+  ],
+  "modellar": [
+    {
+      "konsept": "01a-tvillingloep-sunburst",
+      "task_id": "e992a7ed-5dfd-4aba-8b0a-29ab67c84413",
+      "type": "image_to_model",
+      "input_task_id": "24819f39-931d-436a-897f-30ef02d81c82",
+      "parameters": {
+        "model": "v3.1-20260211",
+        "texture": false,
+        "pbr": false,
+        "face_limit": 100000,
+        "geometry_quality": "standard"
+      },
+      "credits": 20.0,
+      "model_file": "01a-tvillingloep-sunburst/model.glb",
+      "preview_file": "01a-tvillingloep-sunburst/preview.png"
+    },
+    {
+      "konsept": "04-visir",
+      "task_id": "953704b9-78fe-4429-9885-3b2656a12d45",
+      "type": "image_to_model",
+      "input_task_id": "b9a8553f-1753-4d8d-af7f-5f291e8306f2",
+      "parameters": {
+        "model": "v3.1-20260211",
+        "texture": false,
+        "pbr": false,
+        "face_limit": 100000,
+        "geometry_quality": "standard"
+      },
+      "credits": 20.0,
+      "model_file": "04-visir/model.glb",
+      "preview_file": "04-visir/preview.png"
+    },
+    {
+      "konsept": "02-eitt-vindauge",
+      "task_id": "a5539ff1-02d4-480e-958f-614d452bcbd7",
+      "type": "image_to_model",
+      "input_task_id": "f5c5b3a8-8f3f-49d1-9dc8-51f61031ba72",
+      "parameters": {
+        "model": "v3.1-20260211",
+        "texture": false,
+        "pbr": false,
+        "face_limit": 100000,
+        "geometry_quality": "standard"
+      },
+      "credits": 20.0,
+      "model_file": "02-eitt-vindauge/model.glb",
+      "preview_file": "02-eitt-vindauge/preview.png"
+    }
+  ]
+}
