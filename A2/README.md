@@ -12,9 +12,19 @@ Huset er bygd rundt delane som er valde for prosjektet: to ESP32-CAM, kvar sett 
 | --- | --- | --- | --- | --- |
 | `fremre_skal.stl` | skøytesida ned | 115 × 78 × 43 | ca. 56 g | tre-støtte |
 | `bakre_skal.stl` | skøytesida ned | 113 × 77 × 35 | ca. 39 g | tre-støtte |
-| `innmatsramme.stl` | plata ned | 110 × 74 × 16 | ca. 23 g | ingen |
+| `innmatsramme.stl` | plata ned | 110 × 74 × 16 | ca. 23 g | tre-støtte (slicaren legg til litt) |
 
 `A2-hus-alle-delar.3mf` har alle tre på éi 256 mm-plate. `provebitar/` har fire små utdrag av dei same delane, til å prøve skøyten, styrebena, linsehol og USB-tunnel før sluttprint. `renderar/` har samla, eksplodert og snitt.
+
+`bambu/` har ferdig slica filer for Bambu Lab P1S (Bambu Studio 2.8.2, 0,4 mm dyse, 0,20 mm Standard, Bambu PLA Basic, tre-støtte berre frå plata, 3 veggar, 15 % fyll, Textured PEI). Profilane ligg i `bambu/profil/`, og `verktoy/bambu_slice.sh` slicar på nytt.
+
+| Fil | Plate | Innhald | Tid | Filament |
+| --- | --- | --- | --- | --- |
+| `A2-hus-P1S.gcode.3mf` | 1 | fremre og bakre skal | 6 t 15 min | 117,6 g |
+| `A2-hus-P1S.gcode.3mf` | 2 | innmatsramme | 37 min | 18,6 g |
+| `A2-provebitar-P1S.gcode.3mf` | 1 | fire prøvebitar | 1 t 32 min | 29,0 g |
+
+Slicaren gav inga åtvaring. Byt skrivar, plate eller filament i Bambu Studio om oppsettet ditt er eit anna.
 
 Konstruksjon (`verktoy/bygg_hus.py`, mål i `print/parametrar.json`):
 
@@ -43,7 +53,7 @@ Kontrollar som er gjorde (`print/kontroll.json`):
    - kortlengda
    - høgda til USB-kontakten
 2. **Prøvebitane er ikkje printa.** Skøyten, klikk-knastane, styrebena og USB-tunnelen er ikkje prøvde fysisk.
-3. **Ikkje slica.** Støtte, tid og første lag er ikkje kontrollerte i Bambu Studio med P1S-profilen.
+3. **Slica, men ikkje printa.** Bambu Studio gav inga åtvaring, men tre-støtta under visiret og første lag må sjåast etter på den første printen.
 4. **Krava i prosjektoversikta er ikkje oppfylte:**
    - Linsa er under 30 mm (holet er 9,5 mm).
    - Utløysaren finst berre i programvaren.
@@ -60,14 +70,14 @@ Runde 3, variant 04 (`runde-3/3d/04-brei-basis-eitt-bilete/`) er forma printpakk
 
 | Mappe | Innhald |
 | --- | --- |
-| `print/` | STL og 3MF i printretning, prøvebitar, parametrar, publiserte delmål, kontrollrapport og renderar |
+| `print/` | STL og 3MF i printretning, slica P1S-filer (`bambu/`), prøvebitar, parametrar, publiserte delmål, kontrollrapport og renderar |
 | `rettleiing/` | Monteringsrettleiing i IKEA-stil, 13 sider (PNG og PDF) |
 | `referansar/` | Stilreferansar. ref-7 er hovudreferansen, og ref-6 er ESP32-CAM-annonsen |
 | `runde-1/` | Ti første konsept i rør- og kubestil, forkasta |
 | `runde-2/konsept/`, `runde-2/3d/` | Sju konsept etter ref-7 med skjult elektronikk, og tre 3D-modellar |
 | `runde-3/konsept/`, `runde-3/3d/` | Tett visir etter kritikken, og to 3D-modellar |
 | `analyse/` | Linsesentrum, innmatsanalyse og verifiseringa av kritikken og verktøyet |
-| `verktoy/` | Skript for Tripo, mesh-QA, innmatsanalyse, husbygging, renderar og rettleiing |
+| `verktoy/` | Skript for Tripo, mesh-QA, innmatsanalyse, husbygging, slicing, renderar og rettleiing |
 
 Kvar konseptmappe har `promptar.json` og `generering.json` med oppgåve-ID-ar, og kvar 3D-mappe har `model.glb`, Tripo-førehandsvising, `visningar.png` (front, 3/4, topp og bak) og `mesh-qa.json`.
 
@@ -144,6 +154,7 @@ Krev `TRIPO_API_KEY` i miljøet og Python-pakkane `requests`, `trimesh` og `scip
 - `mesh_qa.py fil.glb …` – topologisjekk (rå og sveisa analysekopi)
 - `innmat.py A2/analyse/linser.json [prosessar] > A2/analyse/innmat.json` – innmatsanalysen over
 - `bygg_hus.py` – byggjer printdelane, prøvebitane, 3MF og `print/kontroll.json` frå `print/parametrar.json` (krev òg `manifold3d` og `scikit-image`)
+- `bambu_slice.sh` – slicar huset og prøvebitane med Bambu Studio (Flathub, under `xvfb-run`) og dei offisielle P1S-profilane, via `bambu_profil.py`
 - `renderar.py` og `rettleiing.py` – fargerenderar og IKEA-rettleiinga. Dei krev Node med Playwright og `npm install` i `verktoy/` for three.js.
 
 ## Kredittar
