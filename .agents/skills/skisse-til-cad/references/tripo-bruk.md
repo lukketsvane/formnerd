@@ -181,7 +181,7 @@ Kjelder: [introduksjon](https://developers.tripo3d.ai/en/docs/introduction), [fi
 7. Skriv ein `task.json` per jobb med endepunkt, body utan nøkkel, wire-modell, seed, task-ID, `credits_consumed` som desimaltal og SHA-256 for kvar fil.
 8. Valider lokalt før kostnad: eksplisitt modell, P1 utan quad, rett `face_limit`-område, `generate_parts`-reglane, `smart_uv` berre på v3.0 og maks 80 000 trekantar inn til `/mesh/uv`.
 
-**Praksis:** A1 køyrde CLI-en via Codex, og Entropi køyrde repoet sin eigen v3-klient. `verktoy/tripo.py` manglar fleire av punkta per 20.10.2026.
+**Praksis:** A1 køyrde CLI-en via Codex, og Entropi køyrde repoet sin eigen v3-klient. `verktoy/tripo.py` og `verktoy/kjor.py` følgjer punkta 1–7 og validerer punkt 8 lokalt (utan `/mesh/uv`-grensa) sidan 20.10.2026; `python3 verktoy/tripo.py valider jobbar.json` sjekkar ei jobbliste utan kostnad.
 
 **Innsending.** Lagre task-ID-en straks. CLI-en prøver oppretting på nytt berre ved 429, og spørjingar inntil tre gonger ved nettverksfeil eller 5xx. Feilsida rår til å prøve 500 på nytt, men CLI-dokumentet seier at oppretting ikkje skal sendast på nytt, og ingen idempotensnøkkel er dokumentert *(kjeldekonflikt)*. Send derfor aldri POST på nytt automatisk *(metodeval)*. Er utfallet av ein POST uvisst, sjekk `frozen` i `GET /v3/account/balance`, usage og konsollen før ei eventuell ny innsending. **Praksis:** i Entropi krasja to nedlastingar (a og d) på proxyavbrot, og filene vart henta frå same task. I A1 fekk retopologien eit nettverksavbrot, og same task vart henta inn att. Ingen av gongene trongst ny generering.
 
