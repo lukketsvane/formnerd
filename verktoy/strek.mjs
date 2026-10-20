@@ -1,7 +1,8 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
+let chromium;
+try { ({ chromium } = await import('playwright')); } catch { ({ chromium } = await import('/opt/node22/lib/node_modules/playwright/index.mjs')); }
 
 const [scenefil, utmappe] = process.argv.slice(2);
 const scene = JSON.parse(fs.readFileSync(scenefil, 'utf8'));

@@ -1,6 +1,6 @@
 # A2 – stereoskopisk kamerahus
 
-Kamerahus for to ESP32-CAM i stilen frå referansane: feite, mjuke tubar rundt ein mørk kjerne, og elektronikken skjult. Bileta og 3D-modellane er laga med Tripo (skripta ligg i `verktoy/`). Meshane er formreferansar for CAD, ikkje produksjonsfiler.
+Kamerahus for to ESP32-CAM i stilen frå referansane: feite, mjuke tubar rundt ein mørk kjerne, og elektronikken skjult. Bileta og 3D-modellane er laga med Tripo (skripta ligg i det felles `verktoy/` på rota). Meshane er formreferansar for CAD, ikkje produksjonsfiler.
 
 ## Printpakke (`print/`) og monteringsrettleiing (`rettleiing/`)
 
@@ -16,7 +16,7 @@ Huset er bygd rundt delane som er valde for prosjektet: to ESP32-CAM, kvar sett 
 
 `A2-hus-alle-delar.3mf` har alle tre på éi 256 mm-plate. `provebitar/` har sju små utdrag (skøyt framme, bak og plate, og holdar og linse/USB for kvar stabel) av dei same delane, til å prøve skøyten, styrebena, linsehol og USB-tunnel før sluttprint. `renderar/` har samla, eksplodert og snitt.
 
-`bambu/` har ferdig slica filer for Bambu Lab P1S (Bambu Studio 2.8.2, 0,4 mm dyse, 0,20 mm Standard, Bambu PLA Basic, tre-støtte berre frå plata, 3 veggar, 15 % fyll, Textured PEI). Profilane ligg i `bambu/profil/`, og `verktoy/bambu_slice.sh` slicar på nytt.
+`bambu/` har ferdig slica filer for Bambu Lab P1S (Bambu Studio 2.8.2, 0,4 mm dyse, 0,20 mm Standard, Bambu PLA Basic, tre-støtte berre frå plata, 3 veggar, 15 % fyll, Textured PEI). Profilane ligg i `bambu/profil/`, og `bash verktoy/bambu_slice.sh A2` slicar på nytt.
 
 | Fil | Plate | Innhald | Tid | Filament |
 | --- | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ Huset er bygd rundt delane som er valde for prosjektet: to ESP32-CAM, kvar sett 
 
 Slicaren gav inga åtvaring. Byt skrivar, plate eller filament i Bambu Studio om oppsettet ditt er eit anna.
 
-Konstruksjon (`verktoy/bygg_hus.py`, mål i `print/parametrar.json`):
+Konstruksjon (`verktoy/bygg_hus.py A2`, mål i `print/parametrar.json`):
 
 - **Kropp:** Formen er runde 3, variant 04, skalert til 115 mm breidd, med 2,4 mm vegg.
 - **Skøyt:** Fremre og bakre skal møtest i ein halv overlappskøyt med 0,2 mm klaring og seks klikk-knastar (heile kalottar midt på bakre lepp, 0,3 mm interferens). Bakre innerlepp er 0,8 mm tjukkare innover, så ho står på ein heil ring. Steget på bakre skal har ei 45°-fuge, og skuldra i fremre skal er 45°, så skøyten treng inga støtte.
@@ -76,7 +76,6 @@ Runde 3, variant 04 (`runde-3/3d/04-brei-basis-eitt-bilete/`) er forma printpakk
 | `runde-2/konsept/`, `runde-2/3d/` | Sju konsept etter ref-7 med skjult elektronikk, og tre 3D-modellar |
 | `runde-3/konsept/`, `runde-3/3d/` | Tett visir etter kritikken, og to 3D-modellar |
 | `analyse/` | Linsesentrum, innmatsanalyse og verifiseringa av kritikken og verktøyet |
-| `verktoy/` | Skript for Tripo, mesh-QA, innmatsanalyse, husbygging, slicing, renderar og rettleiing |
 
 Kvar konseptmappe har `promptar.json` og `generering.json` med oppgåve-ID-ar, og kvar 3D-mappe har `model.glb`, Tripo-førehandsvising, `visningar.png` (front, 3/4, topp og bak) og `mesh-qa.json`.
 
@@ -144,17 +143,17 @@ Revisjonane av sjølve analyseverktøyet fann feil i begge versjonane. Alle er r
 
 **Runde 1** (`runde-1/`): Ti konsept etter ref-1 til ref-5. Dei er forkasta fordi sensoren var synleg i linsene og forma låg for langt frå ønskt uttrykk.
 
-## Verktøy (`verktoy/`)
+## Verktøy
 
-Krev `TRIPO_API_KEY` i miljøet og Python-pakkane `requests`, `trimesh` og `scipy`. Køyr frå rota av repoet.
+Skripta er flytte til det felles verktøyet i [`../verktoy/`](../verktoy/README.md) og tek prosjektmappa som argument. Pipelinen er skildra i skillen `formnerd-hus` (`.claude/skills/formnerd-hus/SKILL.md`). Slik køyrer du A2 frå rota av repoet:
 
-- `tripo.py` – opplasting, oppgåver, polling og nedlasting
-- `kjor.py jobbar.json ut.json [parallelle]` – køyrer ei liste med Tripo-oppgåver og lastar ned resultata. Biletgenerering tillèt berre éi oppgåve om gongen, så bruk `1` der.
-- `mesh_qa.py fil.glb …` – topologisjekk (rå og sveisa analysekopi)
-- `innmat.py A2/analyse/linser.json [prosessar] > A2/analyse/innmat.json` – innmatsanalysen over
-- `bygg_hus.py` – byggjer printdelane, prøvebitane, 3MF og `print/kontroll.json` frå `print/parametrar.json` (krev òg `manifold3d` og `scikit-image`)
-- `bambu_slice.sh` – slicar huset og prøvebitane med Bambu Studio (Flathub, under `xvfb-run`) og dei offisielle P1S-profilane, via `bambu_profil.py`
-- `renderar.py` og `rettleiing.py` – fargerenderar og IKEA-rettleiinga. Dei krev Node med Playwright og `npm install` i `verktoy/` for three.js.
+```bash
+python3 verktoy/bygg_hus.py A2
+bash verktoy/bambu_slice.sh A2
+python3 verktoy/renderar.py A2
+python3 verktoy/rettleiing.py A2
+python3 verktoy/innmat.py A2/analyse/linser.json > A2/analyse/innmat.json
+```
 
 ## Kredittar
 

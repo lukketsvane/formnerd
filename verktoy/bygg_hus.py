@@ -10,13 +10,11 @@ from skimage import measure
 
 import hus
 
-PARAM = "A2/print/parametrar.json"
-UT = "A2/print"
 PLA = 1.24e-3
 SENG = 256.0
 
 
-def les(sti=PARAM):
+def les(sti):
     P = json.load(open(sti))
     return {g: {k: v["verdi"] for k, v in d.items() if not k.startswith("_")} for g, d in P.items() if not g.startswith("_")}
 
@@ -160,7 +158,7 @@ def sveip_fram(F, x0, x1, klaring, pitch=0.2):
 def bygg(P):
     K, R, S, Li, U = (P[k] for k in ("kropp", "ramme", "stabel", "linser", "usb_plugg"))
     W, t, to, c, L = K["breidd"], K["vegg"], K["lepp_ytre"], K["lepp_klaring"], K["lepp_lengd"]
-    m = hus.last_ytre(breidd=W)
+    m = hus.last_ytre(K["kjelde_mesh"], W)
     O = hus.til_mf(m)
     occ, lo = hus.fyll(m)
     d = hus.avstand(occ)
@@ -380,7 +378,8 @@ def lagre_3mf(sti, delar, mellomrom=8.0):
 
 
 if __name__ == "__main__":
-    P = les()
+    UT = f"{sys.argv[1]}/print"
+    P = les(f"{UT}/parametrar.json")
     deler, innmat, kontroll = bygg(P)
     kontroll["delar"] = {}
     utskrift = []
@@ -390,14 +389,14 @@ if __name__ == "__main__":
         hus.til_tm(M).export(f"{UT}/montert/{namn}.glb")
         kontroll["delar"][namn] = printsjekk(Mp, f"{UT}/{namn}.stl")
         utskrift.append((namn, Mp))
-    lagre_3mf(f"{UT}/A2-hus-alle-delar.3mf", utskrift)
+    lagre_3mf(f"{UT}/{sys.argv[1]}-hus-alle-delar.3mf", utskrift)
     prøve = []
     for namn, (rot, M) in prøvebitar(P, deler, kontroll).items():
         Mp = print_retning(rot, storst(M))
         hus.til_tm(Mp).export(f"{UT}/provebitar/{namn}.stl")
         kontroll["delar"][namn] = printsjekk(Mp, f"{UT}/provebitar/{namn}.stl")
         prøve.append((namn, Mp))
-    lagre_3mf(f"{UT}/provebitar/A2-provebitar.3mf", prøve)
+    lagre_3mf(f"{UT}/provebitar/{sys.argv[1]}-provebitar.3mf", prøve)
     for namn, M in innmat.items():
         hus.til_tm(M).export(f"{UT}/montert/{namn}.glb")
     json.dump(kontroll, open(f"{UT}/kontroll.json", "w"), indent=2, ensure_ascii=False)

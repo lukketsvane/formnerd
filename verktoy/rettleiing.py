@@ -8,8 +8,6 @@ from PIL import Image, ImageDraw, ImageFont
 
 import strek
 
-M = "A2/print/montert"
-UT = "A2/rettleiing"
 KJELDE = "/usr/share/fonts/truetype/dejavu/"
 SIDE = (1654, 2339)
 TEIKN = 3000
@@ -42,7 +40,7 @@ def teikn(namn, objekt, retning, utheva_grupper=(), grå_grupper=(), ankre=(), z
         for o in gruppe:
             flat.append(o)
             grupper.append(g)
-    mappe = f"/tmp/a2-rettleiing/{namn}"
+    mappe = f"{TMP}/rettleiing/{namn}"
     scene = {"storleik": TEIKN, "retning": list(retning), "zoom": zoom, "opp": list(opp), "objekt": flat, "ankre": [list(a) for a in ankre]}
     a2d = strek.render(scene, mappe)
     utheva = [i + 1 for i, g in enumerate(grupper) if g in utheva_grupper]
@@ -79,7 +77,7 @@ def side(steg=None, tittel=None):
         x = 90 + dr.textlength(str(steg), font=font(170, True)) + 50
     if tittel:
         dr.text((x, 130), tittel, font=font(44), fill=(70, 70, 70))
-    dr.text((SIDE[0] - 260, SIDE[1] - 90), "A2 · FormNerd", font=font(30), fill=(140, 140, 140))
+    dr.text((SIDE[0] - 260, SIDE[1] - 90), f"{PROSJEKT} · FormNerd", font=font(30), fill=(140, 140, 140))
     return im, dr
 
 
@@ -92,7 +90,7 @@ def lim(im, teikning, x, y, maks_b, maks_h):
 
 
 def sider():
-    k = json.load(open("A2/print/kontroll.json"))
+    k = json.load(open(f"{PR}/kontroll.json"))
     s1, s2 = k["stablar"]
     xs = k["x_skøyt"]
     ly = (s1["y0"] + s1["y1"]) / 2
@@ -103,8 +101,8 @@ def sider():
     im, dr = side()
     t, _ = teikn("framside", [del_("fremre_skal"), del_("bakre_skal")], FR, zoom=1.0)
     lim(im, t, 80, 420, 1500, 1500)
-    dr.text((90, 110), "A2", font=font(220, True), fill=(20, 20, 20))
-    dr.text((95, 360), "Stereokamera for to ESP32-CAM", font=font(52), fill=(60, 60, 60))
+    dr.text((90, 110), PROSJEKT, font=font(220, True), fill=(20, 20, 20))
+    dr.text((95, 360), json.load(open(f"{PR}/parametrar.json")).get("_tittel", ""), font=font(52), fill=(60, 60, 60))
     dr.text((95, 2080), "Monteringsrettleiing · utkast før prøveprint", font=font(38), fill=(120, 120, 120))
     sidene.append(im)
 
@@ -129,16 +127,17 @@ def sider():
 
     im, dr = side(1, "Print delane")
     for n, (namn, retn) in enumerate((("fremre_skal", (1, 0.9, 0.7)), ("bakre_skal", (1, 0.9, 0.7)), ("innmatsramme", (1, 0.9, 0.7)))):
-        t, _ = teikn(f"print_{n}", [[{"fil": f"/tmp/a2-print/{namn}.glb"}], [{"fil": f"/tmp/a2-print/seng_{namn}.glb"}]], retn, grå_grupper=(1,), zoom=0.95, opp=(0, 0, 1))
+        t, _ = teikn(f"print_{n}", [[{"fil": f"{TMP}/print/{namn}.glb"}], [{"fil": f"{TMP}/print/seng_{namn}.glb"}]], retn, grå_grupper=(1,), zoom=0.95, opp=(0, 0, 1))
         lim(im, t, 90 + (n % 2) * 760, 330 + (n // 2) * 700, 720, 660)
-    sl = json.load(open("A2/print/bambu/A2-hus-P1S.json"))
-    plater = [f"plate {n}: {innh}, {tid(p['tid'])}, {g:.0f} g" for n, (innh, p, g) in enumerate(zip(("skala", "ramma") if len(sl["plater"]) == 2 else ("alle tre delane",), sl["plater"], sl["vekt_g"]), 1)]
-    for n, linje in enumerate(["print/bambu/A2-hus-P1S.gcode.3mf", "P1S · PLA · 0,4 mm dyse · 0,20 mm lag"] + plater + ["tre-støtte frå plata"]):
+    slicefil = f"{PR}/bambu/{PROSJEKT}-hus-P1S.json"
+    sl = json.load(open(slicefil)) if os.path.exists(slicefil) else {"plater": [], "vekt_g": []}
+    plater = [f"plate {n}: {innh}, {tid(p['tid'])}, {g:.0f} g" for n, (innh, p, g) in enumerate(zip(("skala", "ramma") if len(sl["plater"]) == 2 else ("alle tre delane",), sl["plater"], sl["vekt_g"]), 1)] or ["ikkje slica enno: køyr verktoy/bambu_slice.sh"]
+    for n, linje in enumerate([f"print/bambu/{PROSJEKT}-hus-P1S.gcode.3mf", "P1S · PLA · 0,4 mm dyse · 0,20 mm lag"] + plater + ["tre-støtte frå plata"]):
         dr.text((900, 1100 + n * 60), linje, font=font(36), fill=(60, 60, 60))
     sidene.append(im)
 
     im, dr = side(2, "Print prøvebitane først")
-    prøver = sorted(glob.glob("/tmp/a2-print/prove_*.glb"))
+    prøver = sorted(glob.glob(f"{TMP}/print/prove_*.glb"))
     t, _ = teikn("prove", [[{"fil": f, "flytt": [(n % 4) * 75, (n // 4) * 80, 0]}] for n, f in enumerate(prøver)], (1, 0.9, 0.9), opp=(0, 0, 1))
     lim(im, t, 90, 300, 1480, 1240)
     dr.text((90, 1600), "Kontroller før du printar heile huset:", font=font(40, True), fill=(20, 20, 20))
@@ -215,8 +214,8 @@ def sider():
 
 def kablar():
     import trimesh
-    k = json.load(open("A2/print/kontroll.json"))
-    P = json.load(open("A2/print/parametrar.json"))
+    k = json.load(open(f"{PR}/kontroll.json"))
+    P = json.load(open(f"{PR}/parametrar.json"))
     h = P["stabel"]["usb_over_mb_underside"]["verdi"]
     for i, s in enumerate(k["stablar"], 1):
         ux, r, z = s["xb"] + h, s["retning"], s["z_usb"]
@@ -234,21 +233,24 @@ def tid(t):
 
 def print_glb():
     import trimesh
-    os.makedirs("/tmp/a2-print", exist_ok=True)
-    for f in glob.glob("A2/print/*.stl") + glob.glob("A2/print/provebitar/*.stl"):
-        trimesh.load(f).export(f"/tmp/a2-print/{os.path.basename(f)[:-4]}.glb")
-    for f in glob.glob("A2/print/*.stl"):
+    os.makedirs(f"{TMP}/print", exist_ok=True)
+    for f in glob.glob(f"{PR}/*.stl") + glob.glob(f"{PR}/provebitar/*.stl"):
+        trimesh.load(f).export(f"{TMP}/print/{os.path.basename(f)[:-4]}.glb")
+    for f in glob.glob(f"{PR}/*.stl"):
         b = trimesh.load(f).bounds
         e = b[1] - b[0] + 24
-        trimesh.creation.box(extents=(e[0], e[1], 1.0), transform=trimesh.transformations.translation_matrix(((b[0][0] + b[1][0]) / 2, (b[0][1] + b[1][1]) / 2, -0.5))).export(f"/tmp/a2-print/seng_{os.path.basename(f)[:-4]}.glb")
+        trimesh.creation.box(extents=(e[0], e[1], 1.0), transform=trimesh.transformations.translation_matrix(((b[0][0] + b[1][0]) / 2, (b[0][1] + b[1][1]) / 2, -0.5))).export(f"{TMP}/print/seng_{os.path.basename(f)[:-4]}.glb")
 
 
 if __name__ == "__main__":
+    PROSJEKT = sys.argv[1]
+    PR = f"{PROSJEKT}/print"
+    M, UT, TMP = f"{PR}/montert", f"{PROSJEKT}/rettleiing", f"/tmp/hus-{PROSJEKT}"
     kablar()
     print_glb()
     os.makedirs(UT, exist_ok=True)
     s = sider()
     for i, im in enumerate(s):
         im.save(f"{UT}/side-{i:02d}.png")
-    s[0].save(f"{UT}/A2-monteringsrettleiing.pdf", save_all=True, append_images=s[1:], resolution=200)
+    s[0].save(f"{UT}/{PROSJEKT}-monteringsrettleiing.pdf", save_all=True, append_images=s[1:], resolution=200)
     print(len(s), "sider")

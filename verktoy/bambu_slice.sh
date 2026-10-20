@@ -1,8 +1,9 @@
 #!/bin/bash
-# Slicar A2-delane med Bambu Studio (Flathub) og dei offisielle P1S-profilane.
+# Slicar husdelane og prøvebitane i eit prosjekt med Bambu Studio (Flathub) og dei offisielle P1S-profilane.
 set -euo pipefail
 HER="$(cd "$(dirname "$0")" && pwd)"
-P="$HER/../print"
+PROSJEKT="${1:?bruk: bambu_slice.sh <prosjektmappe, t.d. A2>}"
+P="$(cd "$HER/.." && pwd)/$PROSJEKT/print"
 APP="$(flatpak info --user --show-location com.bambulab.BambuStudio)/files"
 RTREF="$(flatpak info --user -m com.bambulab.BambuStudio | sed -n 's/^runtime=//p')"
 RT="$(flatpak info --user --show-location "$RTREF")/files"
@@ -40,5 +41,5 @@ json.dump(ut, open(sys.argv[2], "w"), indent=2, ensure_ascii=False)
 print(json.dumps(ut, indent=1, ensure_ascii=False))
 PY
 }
-slice A2-hus-P1S "$P/fremre_skal.stl" "$P/bakre_skal.stl" "$P/innmatsramme.stl"
-slice A2-provebitar-P1S "$P"/provebitar/prove_*.stl
+slice "$PROSJEKT-hus-P1S" "$P/fremre_skal.stl" "$P/bakre_skal.stl" "$P/innmatsramme.stl"
+slice "$PROSJEKT-provebitar-P1S" "$P"/provebitar/prove_*.stl
