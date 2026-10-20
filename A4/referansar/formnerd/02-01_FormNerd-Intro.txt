@@ -1,0 +1,292 @@
+Forelesning 1
+FormNerd
+Høst 2026
+FormNerd
+Trym Abrahamsen
+29.09.2026
+
+Trym Abrahamsen
+Designer som har jobbet med industri- og bildesign flere 
+steder. Tok grunnutdanningen min ved AHO.
+Trym Abrahamsen
+2
+
+PhD-prosjekt
+Jeg tar for tiden en PhD ved AHO: «Anvendt 
+formgivning i utdanning og praksis innen 
+industridesign».
+
+Prosjektet skal undersøke hvordan vi som designere 
+skaper form, både konstruktivt og analytisk. Det utforsker 
+forholdet mellom hvordan vi underviser i formgivning 
+ved institusjonene, og hvordan det faktisk foregår i 
+praksis. Gjennom samarbeid med studenter, institusjoner 
+og profesjonelle ser prosjektet ikke bare på historiske 
+teorier, men også på eksisterende praksis.
+Trym Abrahamsen
+3
+
+Kursets Innhold
+01
+Semiotikk
+Å uttrykke og tolke mening gjennom 
+form
+02
+Formgivning
+Evne til å utvikle produkters form 
+gjennom ulike verktøy og 
+virkemiddler
+03
+Estetikk
+Å vurdere estetiske komponenter i et 
+design
+Trym Abrahamsen
+4
+
+Læringsmål
+01
+Semiotikk
+Forstå hva semiotikk betyr i kontekst av industridesign.
+Evne til praktisk å kommunisere ulike konsepter gjennom 
+form, samt å argumentere for formvalg og koblingen mellom 
+«melding» og det designede objektet.
+Evne til å diskutere hva et produkt kommuniserer, og 
+hvordan ulike deler av formen bidrar til uttrykket.
+02
+Formgivning
+Evne til å «se», dekomponere og analysere form på ulike 
+nivåer, fra proporsjoner til overflater, materialer og detaljer.
+Evne til å bruke 2D-skisse som verktøy i 
+formutviklingsprosessen.
+Evne til å lage digitale 3D-modeller på grunnlag av tegninger 
+og fysiske modeller, på et nivå der de kan 3D-printes og 
+rendres godt.
+Evne til å lage fysiske modeller i ulike ferdighetsnivåer og 
+materialer, som verktøy for formutvikling.
+Evne til å bruke referansebilder og formføringsplansjer til å 
+kommunisere kobling mellom form og intensjon.
+03
+Estetikk
+En grunnleggende forståelse for estetikkbegrepet.
+En forståelse for grunnleggende prinsipper innenfor 
+designkvalitet og utførelse, og hvordan de kan brukes for å 
+skape attraktive og profesjonelt utseende produkter.
+Trym Abrahamsen
+5
+
+Tidsplan
+Undervisning
+Oppstart og veiledning
+Egenarbeid
+Formgivningstest
+Leveranse
+Mandagskurs
+Uke 1 Proporsjoner og holdning
+Man 28.09
+Tir 29.09
+Ons 30.09
+Mandagskurs
+Formgivningstest
+Rammeverk for 
+formanalyse
+Analyse av ulike 
+konsepter
+Kickoff + 
+semiotikk
+Tor 01.10
+2D-skisse: 
+proporsjoner på 
+de ulike 
+konseptene
+Fre 02.10
+Modellbygging + 
+skisseteknikk
+Skissemodell: 
+proporsjoner og 
+holdning
+Uke 2 Grafiske inndelinger, flater og overganger
+Man 05.10
+Tir 06.10
+Ons 07.10
+Tor 08.10
+Mandagskurs
+Endelig valg av 
+konsept og 
+objekt. 
+Individuelle 
+tilbakemeldinger
+Flater og 
+overganger
+Modellbygging
+Fortsatt 2D-
+skisse. Start på 
+3D-modell, f.eks. 
+i skum
+Fre 09.10
+Skissemodell og 
+2D-skisser: 
+grafiske 
+inndelinger
+Leveranse og 
+diskusjon: 
+konseptmodell
+3D
+2D
+Uke 3 Sammenføyninger og detaljer
+Man 12.10
+Tir 13.10
+Ons 14.10
+Mandagskurs
+Besøk: Richard. 
+Samtale med 
+verkstedet. 
+Individuelle 
+tilbakemeldinger
+Detaljering og 
+sammenføyninger
+Fortsatt 2D-
+skisse: detaljer. 
+Start på 3D-
+modellering
+Tor 15.10
+Digital 3D-modell
+Fre 16.10
+Detaljering og 
+raffinering
+Leveranse og 
+diskusjon: digital 
+modell
+3D
+2D
+Uke 4 CMF, utførelse og presentasjon
+Man 19.10
+Tir 20.10
+Ons 21.10
+Mandagskurs
+Intro: CMF og 
+visualisering
+Veiledning: 
+rendering i 
+Blender
+Modellbygging og 
+hero-shot
+Modellbygging og 
+hero-shot
+Tor 22.10
+Egenarbeid
+Formgivningstest
+Fre 23.10
+Presentasjon med 
+sensor
+2D
+3D
+Leveranse kl. 12: digital presentasjon 
+og fysisk modell
+6
+Trym Abrahamsen
+
+Mål for ukene
+Kun Analogt
+Uke 01
+Uke 02
+Analyse og 
+proporsjoner
+Utvikle form
+Velg ett konseptord og 
+videreutvikle modellen. 
+Tenk på overflater, 
+overganger og grafisk 
+distribusjon.
+Analyser konseptordene og 
+lag 2D skisser og enkle 
+modeller i billige materialer.
+Digitalt + analogt
+uke 03
+uke 04
+Sammenføyninger 
+og detaljer
+Utførelse
+Her skal vi bygge den ferdige 
+modellen, samt å lage 
+renderinger og 
+presentasjonsmateriale.
+Tiden for å rafinere designet 
+og å tenke på detaljering.
+Begyn å 3D modellere 
+digitalt.
+Trym Abrahamsen
+7
+
+Kjøreregler
+1
+Vær på tiden
+Forelesninger starter 09:00. 
+Vær der gjerne et par minutter før så du 
+rekker å finne en plass. 
+
+Si ifra på forhånd om du ikke kan 
+komme. 
+2
+Vær på salen
+Vi har kjernetid 09:00-16:00. (Dett
+Dette er et kort kurs der dere bør være til 
+stede for å få maksimalt utbytte. 
+3
+Vær til hjelp
+Pass på å støtte hverandre og å dele 
+kunnskap. Man lærer mye av å lære bort, 
+og dersom klassen lykkes så heves nivået 
+til alle.(
+Design er en gruppeaktivitet, ikke et 
+soloshow
+4
+Still spørsmål!
+Lurer du på noe om prosjektet? Trengerr 
+du tilbakemeldinger? Spør meg eller en 
+klassekamerat. Pass på å ikke sitte for 
+lenge med ubesvarte spørsmål.
+Lurer du på tidspunkter, leveranser, 
+timeplaner eller annet, så spør.
+Trym Abrahamsen
+8
+
+Part 01 / 04
+Kurset som del av 
+forskning
+9
+
+Datainnsamling
+Godkjenning for å samle inn data fra kurset
+Trym Abrahamsen
+Scan denne
+10
+
+To grupper
+Gruppe 1
+Starter her
+Jon
+Edvin
+Johann
+Jazmin
+Iver
+Thea
+Elena
+Markus
+Gruppe 2
+Starter på verkstedet
+Mila
+Mona
+Martin
+Helena
+Teo
+Maria
+Marte
+Veronika
+Trym Abrahamsen
+11
+
+Formgivningstest
+Teoretisk del
+Trym Abrahamsen
+Scan denne
+12

@@ -1,0 +1,111 @@
+{
+  "units": "mm",
+  "features": [
+    {
+      "feature": "continuous_base",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123435.13720777651
+    },
+    {
+      "feature": "shutter_root",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123436.94683217924
+    },
+    {
+      "feature": "base_blend_1",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123440.17064505836
+    },
+    {
+      "feature": "base_blend_3",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123439.6426411932
+    },
+    {
+      "feature": "base_blend_2",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123439.77942261254
+    },
+    {
+      "feature": "base_blend_4",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123440.11696637396
+    },
+    {
+      "feature": "front_fan_lower",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123445.30567643861
+    },
+    {
+      "feature": "front_fan_upper",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123454.0635207135
+    },
+    {
+      "feature": "front_crown",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123454.20945837766
+    },
+    {
+      "feature": "front_fan_middle",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 123439.05678421355
+    },
+    {
+      "feature": "usb_access_well",
+      "native_valid": true,
+      "step_readback_valid": true,
+      "solids": 1,
+      "volume_mm3": 122494.79524187169
+    }
+  ],
+  "upward_terminal_faces_before": [
+    {
+      "center_mm": [
+        -44.99999999974288,
+        -20.999999999505377,
+        14.999999999747505
+      ],
+      "area_mm2": 63.05261281497342
+    },
+    {
+      "center_mm": [
+        -33.999999999862425,
+        -21.00000000083923,
+        17.000000000370964
+      ],
+      "area_mm2": 54.21482505653567
+    },
+    {
+      "center_mm": [
+        -22.999999999783935,
+        -20.999999999509942,
+        18.99999999971983
+      ],
+      "area_mm2": 48.02420493986312
+    }
+  ],
+  "upward_terminal_faces_after": [],
+  "native_feature_pass": true,
+  "physical_fit_tested": false
+}

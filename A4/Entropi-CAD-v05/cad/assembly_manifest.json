@@ -1,0 +1,254 @@
+[
+  {
+    "name": "01_rib_cage",
+    "file": "parts/01_rib_cage.stl",
+    "color": [
+      0.68,
+      0.7,
+      0.7
+    ],
+    "explode": [
+      -145,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "02_chassis",
+    "file": "parts/02_chassis.stl",
+    "color": [
+      0.24,
+      0.27,
+      0.28
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "03_rear_cover",
+    "file": "parts/03_rear_cover.stl",
+    "color": [
+      0.24,
+      0.27,
+      0.28
+    ],
+    "explode": [
+      150,
+      10,
+      0
+    ]
+  },
+  {
+    "name": "04_esp32_carrier",
+    "file": "parts/04_esp32_carrier.stl",
+    "color": [
+      0.48,
+      0.51,
+      0.52
+    ],
+    "explode": [
+      0,
+      0,
+      115
+    ]
+  },
+  {
+    "name": "05_board_clamp",
+    "file": "parts/05_board_clamp.stl",
+    "color": [
+      0.48,
+      0.51,
+      0.52
+    ],
+    "explode": [
+      0,
+      0,
+      155
+    ]
+  },
+  {
+    "name": "06_optical_baffle",
+    "file": "parts/06_optical_baffle.stl",
+    "color": [
+      0.2,
+      0.23,
+      0.24
+    ],
+    "explode": [
+      -65,
+      0,
+      -95
+    ]
+  },
+  {
+    "name": "07_shutter",
+    "file": "parts/07_shutter.stl",
+    "color": [
+      0.22,
+      0.25,
+      0.26
+    ],
+    "explode": [
+      -145,
+      0,
+      45
+    ]
+  },
+  {
+    "name": "08_shutter_pin",
+    "file": "parts/08_shutter_pin.stl",
+    "color": [
+      0.22,
+      0.25,
+      0.26
+    ],
+    "explode": [
+      -168,
+      -20,
+      90
+    ]
+  },
+  {
+    "name": "09_rear_dial",
+    "file": "parts/09_rear_dial.stl",
+    "color": [
+      0.22,
+      0.25,
+      0.26
+    ],
+    "explode": [
+      -110,
+      0,
+      95
+    ]
+  },
+  {
+    "name": "10_io_plate",
+    "file": "parts/10_io_plate.stl",
+    "color": [
+      0.22,
+      0.25,
+      0.26
+    ],
+    "explode": [
+      -70,
+      -10,
+      165
+    ]
+  },
+  {
+    "name": "12_lens_blank",
+    "file": "parts/12_lens_blank.stl",
+    "color": [
+      0.14,
+      0.17,
+      0.18
+    ],
+    "explode": [
+      10,
+      -15,
+      -100
+    ]
+  },
+  {
+    "name": "13_lens_blank_retainer",
+    "file": "parts/13_lens_blank_retainer.stl",
+    "color": [
+      0.22,
+      0.25,
+      0.26
+    ],
+    "explode": [
+      75,
+      -15,
+      -95
+    ]
+  },
+  {
+    "name": "14_dial_retainer",
+    "file": "parts/14_dial_retainer.stl",
+    "color": [
+      0.22,
+      0.25,
+      0.26
+    ],
+    "explode": [
+      -78,
+      0,
+      135
+    ]
+  },
+  {
+    "name": "15_shutter_return_flexure",
+    "file": "parts/15_shutter_return_flexure.stl",
+    "color": [
+      0.38,
+      0.41,
+      0.42
+    ],
+    "explode": [
+      -125,
+      0,
+      125
+    ]
+  },
+  {
+    "name": "17_camera_saddle",
+    "file": "parts/17_camera_saddle.stl",
+    "color": [
+      0.35,
+      0.38,
+      0.39
+    ],
+    "explode": [
+      115,
+      0,
+      105
+    ]
+  },
+  {
+    "name": "18_camera_clamp",
+    "file": "parts/18_camera_clamp.stl",
+    "color": [
+      0.35,
+      0.38,
+      0.39
+    ],
+    "explode": [
+      115,
+      0,
+      145
+    ]
+  },
+  {
+    "name": "19_usb_retainer",
+    "file": "parts/19_usb_retainer.stl",
+    "color": [
+      0.35,
+      0.38,
+      0.39
+    ],
+    "explode": [
+      260,
+      0,
+      115
+    ]
+  },
+  {
+    "name": "20_shutter_service_cover",
+    "file": "parts/20_shutter_service_cover.stl",
+    "color": [
+      0.68,
+      0.7,
+      0.7
+    ],
+    "explode": [
+      -95,
+      0,
+      150
+    ]
+  }
+]

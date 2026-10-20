@@ -1,0 +1,31 @@
+{
+  "task_id": "b414b9eb-fc89-402b-a97b-4fd07c45bd7b",
+  "status": "success",
+  "credits": 10.0,
+  "files": {
+    "generated_image_url": "images/f_light_gradient_generated_image_url.png"
+  },
+  "payload": {
+    "input": "file_268f31cb-75be-42fc-9b3e-9134f9c55ec1",
+    "model": "chat_image_2.5_flare",
+    "quality": "medium",
+    "prompt": "Turn this rough sketch into a photorealistic industrial-design studio render of one compact handheld camera. Keep the exact same 3/4 front view, form and proportions: rounded hand grip on the left, lens on the front right, dark viewfinder block top rear left, dark cylindrical dial block top right. Concept: entropy, light losing energy as it falls into a black hole. Core body: deep matte black, velvety light-absorbing paint. Over it run two or three plump inflated round tubes in satin paint: rays of light losing energy. One continuous smooth colour gradient runs along every tube: on the grip they are bright warm ivory white; rising over the top, where they twist and cross between viewfinder and dial, they cool through pale grey to mid grey; curving down onto the front and wrapping a thick ring around the lens they turn charcoal, then near-black, melting seamlessly into the black core so the tube end vanishes into the darkness. Airbrushed gradient, no hard bands. Lens: a real camera lens about 35 mm diameter in the centre of the ring, black knurled anodized barrel, dark coated glass with concentric inner reflections and faint purple-green sheen. Solid painted material only: no LED, no glow. Clearly visible: round black shutter button on top of the grip; small USB-C port in a black inset on the outer left side of the grip; knurled cap on the dial. Generous fillets, crisp part lines, reads as a 3D-printed, painted design model. Single camera fully in frame, centred, seamless white studio background, soft key light upper left, soft contact shadow, sharp focus. No text, no logos, no hands, no extra objects."
+  },
+  "raw": {
+    "type": "image_to_image",
+    "status": "success",
+    "progress": 100,
+    "input": {
+      "prompt": "Turn this rough sketch into a photorealistic industrial-design studio render of one compact handheld camera. Keep the exact same 3/4 front view, form and proportions: rounded hand grip on the left, lens on the front right, dark viewfinder block top rear left, dark cylindrical dial block top right. Concept: entropy, light losing energy as it falls into a black hole. Core body: deep matte black, velvety light-absorbing paint. Over it run two or three plump inflated round tubes in satin paint: rays of light losing energy. One continuous smooth colour gradient runs along every tube: on the grip they are bright warm ivory white; rising over the top, where they twist and cross between viewfinder and dial, they cool through pale grey to mid grey; curving down onto the front and wrapping a thick ring around the lens they turn charcoal, then near-black, melting seamlessly into the black core so the tube end vanishes into the darkness. Airbrushed gradient, no hard bands. Lens: a real camera lens about 35 mm diameter in the centre of the ring, black knurled anodized barrel, dark coated glass with concentric inner reflections and faint purple-green sheen. Solid painted material only: no LED, no glow. Clearly visible: round black shutter button on top of the grip; small USB-C port in a black inset on the outer left side of the grip; knurled cap on the dial. Generous fillets, crisp part lines, reads as a 3D-printed, painted design model. Single camera fully in frame, centred, seamless white studio background, soft key light upper left, soft contact shadow, sharp focus. No text, no logos, no hands, no extra objects.",
+      "quality": "medium",
+      "model_version": "chat_image_2.5_flare"
+    },
+    "output": {
+      "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_a49067a3d010421cbef4ad1993d1ec39/20261020/b414b9eb-fc89-402b-a97b-4fd07c45bd7b/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTQ5MDY3YTNkMDEwNDIxY2JlZjRhZDE5OTNkMWVjMzkvMjAyNjEwMjAvYjQxNGI5ZWItZmM4OS00MDJiLWE5N2ItNGZkMDdjNDViZDdiL2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI1OTA5NTZ9fX1dfQ__&Signature=fclj2meYQVhBy9yIewskJuMz3Tuajy0KnoTonzit-V32MW5IydBb0hg52gH8Zs-y93m04~bRU6u5BaEqf4yxRXHqnIGlG~QlmLRd1pDyGj~Ocqdy38uAtU-K0qkc4IkzofJX00SusJVlndJASt8q0za~WQ7imXZb59XiXHpjizAVhnxJlE2D1HzDyRcBgUs4AHRF0WYbS6lMuLPk7grdsV1aMHC7FLdPL6XUoxSjvJX8jV44qobejfYpo6bazu883WC6W~1nhdeUHz4dMjaDguUPyZG2DkRDYKIElCW3capkgYZtegJOAIzYiGE9t3fDNz5mUo5qknj4aVhflgb~cQ__&Key-Pair-Id=K1676C64NMVM2J"
+    },
+    "task_id": "b414b9eb-fc89-402b-a97b-4fd07c45bd7b",
+    "created_at": "2026-10-20T13:55:20.069050Z",
+    "completed_at": "2026-10-20T13:55:54.600654Z",
+    "credits_consumed": 10.0
+  }
+}
