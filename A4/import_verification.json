@@ -1,0 +1,665 @@
+{
+  "all_files_verified": true,
+  "file_count": 131,
+  "restored_large_files": 8,
+  "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6",
+  "staging_commit": "4896a2f98a030cdc157cf1e9f9a15e11004ea9d1",
+  "verification": "Exact original size and SHA256 for every new or updated file",
+  "files": [
+    {
+      "file": "A4/Entropi-CAD-v05/Entropi-assembly-v05.glb",
+      "bytes": 15447356,
+      "sha256": "e7370a78ed20aaaa8320c1a5c72c32405c1248cdea0a35ecc110b608e815532f"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/Entropi-assembly-v05.step",
+      "bytes": 7300711,
+      "sha256": "5952f25806ea524f2ab35edde3400a2bae58bca2f3b245cd85896fbe3a4ad084"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/README.md",
+      "bytes": 8902,
+      "sha256": "7735d44e30af3cdf07648b67bcbf0c9dc680a217876dc50c3d4bb4266790fc3e"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/assembly_manifest.json",
+      "bytes": 3441,
+      "sha256": "950a5f93c6dd7589265d49aa3d923a25737f6e9bdca88a2e4e46913d9c8dd406"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/build_assembly.py",
+      "bytes": 14139,
+      "sha256": "24a06563e90e221b9ea8b58b77c726cde0d5dc36b1f5ea0518d8867cfc60b55a"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/check_export_files.py",
+      "bytes": 4112,
+      "sha256": "2c4574ae75bc50cc7afd0102c9240c6912175d05db25b7fa9ae10b3a779b9f0c"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/cmf_materials.json",
+      "bytes": 666,
+      "sha256": "1244d2ad17c1a097841047a978cb0f5248ccb2fc2d535bef2e88c5f59c0bcf28"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/design_review.md",
+      "bytes": 1476,
+      "sha256": "782e4830decaef110e1feb05fb3ca8b359008ff2e04a34109f4d7703a78514ea"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/explode_positions.json",
+      "bytes": 940,
+      "sha256": "4f1e2ee92f71de18bab83d93c0c8fdd0b49026c4730d778c6404431a879dbcc5"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/export_verification.json",
+      "bytes": 3375,
+      "sha256": "2e0bc135cda2ef0dce30a27db1a676d23388c73544d6c76fe2ddfa605375516c"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/fastener_verification.json",
+      "bytes": 12696,
+      "sha256": "f91a324093c082ec4cab511d5313839a98f65b873e0561265fc8b4a2bdb06c04"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/form_refinement_report.json",
+      "bytes": 2518,
+      "sha256": "92b5a859d87536a5ac0a95ecb65de29098ebf7a17b7f63840ad2d357ff1f6910"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/form_refinements.py",
+      "bytes": 7473,
+      "sha256": "61912dee1dbb41fda2019381d6c2d9ddaffe1a0e07e70d679d8ee9898bc75ff9"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/geometry_checks.json",
+      "bytes": 3929,
+      "sha256": "9cf52e2a5ed0d2e8c099044b4915256e3e37e631f4d5c21dd370f797e980a2d8"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/normalize_glb.py",
+      "bytes": 3756,
+      "sha256": "457d8ae70bb5fe3f8cbd7ab5017fd3986fe6561e9d84402b5928cafaa9ebec11"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/optical_io_details.py",
+      "bytes": 5023,
+      "sha256": "0d5c96bbc15e30870022762b2fa8738d9b123f14397d608a312ae3460d123030"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/parameters.json",
+      "bytes": 2621,
+      "sha256": "52745bf1077504b967539a711922577351d53d18ee1da6915923d47c2de18469"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/prepare_print.py",
+      "bytes": 19059,
+      "sha256": "6fed728b9d00fd8b0ae79b41612d5dec0e65c8b4f8aa72a24a29ba73733a9cfb"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/render_preview.py",
+      "bytes": 9800,
+      "sha256": "da7602d0ec7c884dadad324b29b26ae0a6bb57d725a8d64d33f20fe05e049214"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/service_cover.py",
+      "bytes": 1851,
+      "sha256": "74d2073f88596e11ec289b5e308bd71a67d41d7c890ecff1da83750b0c48ce0c"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/shutter_details.py",
+      "bytes": 6828,
+      "sha256": "f6370a7ba697a5680887f3b0e5044943cb337d6f055cbc334931839d0cadf973"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/shutter_verification.json",
+      "bytes": 13126,
+      "sha256": "d6c8e86b44f37bdd73fa22e6d79f05f71cd5365472827835bfc614887b18ff52"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/usb_access_verification.json",
+      "bytes": 4554,
+      "sha256": "c95bf99658d6faa8e6853bc529f23b56e4fbace4ec5d898f1569c10b3e0b1c4f"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/verification_report.json",
+      "bytes": 53912,
+      "sha256": "ccc2ea3e705e8a287634f5b37491493411bdccfabc3c8d6b0d43bf4bdb3b6a90"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/verify_assembly.py",
+      "bytes": 11583,
+      "sha256": "32ad6a6ea09b374ff7df649ab9bbe2e266de9ccddda829d9cd9e498225d76638"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/verify_baffle.py",
+      "bytes": 7905,
+      "sha256": "a5979a7c7c7f9b91e264c18525e03041cbf2ffe6889ba391d370e5d6d7b9382b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/verify_fasteners.py",
+      "bytes": 7404,
+      "sha256": "e99c32ab87d28465c81791f38f55ffdfdb3187ba09d95eb38d2c6b0380506ff4"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/verify_shutter.py",
+      "bytes": 5112,
+      "sha256": "40537ff5fcf92e226b49365f1eabb9572029a447da89c679b0959c10bd2f7e99"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/cad/verify_usb_access.py",
+      "bytes": 2616,
+      "sha256": "cb3fc805f286059c1c09d942d308bfea1ed191919af4f9b73cf9efe05f188b83"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/01_rib_cage.step",
+      "bytes": 5077217,
+      "sha256": "5c9448cbb4f30125563504719ddccccef8671ee9fdbb5c17aee64190ae4ad156"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/01_rib_cage.stl",
+      "bytes": 29347384,
+      "sha256": "bd60f9059eee1a9f466b2d22b7aa93c92173904381f3566dcdcca52efea9a1ed"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/02_chassis.step",
+      "bytes": 296291,
+      "sha256": "48b49438030a71d3ae890d46efd27fa6bfcc249dbb2d11f829cdda78a6e3aa8b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/02_chassis.stl",
+      "bytes": 1521384,
+      "sha256": "893be9e5b385ee7de48d61143813b3ba47899b5f2855894df36b882a2fc9bd0b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/03_rear_cover.step",
+      "bytes": 223271,
+      "sha256": "5b0400ca2221c9b51c95742d96dd037d1f0cd4515770c7f4220081ea62058daa"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/03_rear_cover.stl",
+      "bytes": 3524684,
+      "sha256": "fac24442d0790b27a464dad3915ab05c184d5c34692b2ab28430377c6fc658ab"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/04_esp32_carrier.step",
+      "bytes": 188343,
+      "sha256": "775760e98cc900cf2eab876170ce545f1c218406548a980c583243772d6047b0"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/04_esp32_carrier.stl",
+      "bytes": 299084,
+      "sha256": "f0fe6c431ce7189c154e3a90bfe287fb16d6b4a0eabf557c1429241fcd0df677"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/05_board_clamp.step",
+      "bytes": 73663,
+      "sha256": "e893df56fde836a2a1a4a3af6beac46a388ff4c7313154495274aa0df9cf769a"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/05_board_clamp.stl",
+      "bytes": 798284,
+      "sha256": "7aaf15957a432be1fcd381ff7703bccf713a9b0fff4db5f7274ba91e5dd32275"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/06_optical_baffle.step",
+      "bytes": 63736,
+      "sha256": "c3f48f20c5fd930c670e0a9dca5728ae32643d5b4285dbc864bd7af01824378a"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/06_optical_baffle.stl",
+      "bytes": 254884,
+      "sha256": "ab371f584282c9baeb2c369486e016a266b23f557917136e43b2ac6b262e2232"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/07_shutter.step",
+      "bytes": 38721,
+      "sha256": "eef31513c1014f10da6f84aa7e51d12e8583765da5bf5b4d82ff722cd02f5201"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/07_shutter.stl",
+      "bytes": 743684,
+      "sha256": "e9c20e376cddf95b0dde918902147d0e7e32cc1b82ca5a1f7d5488b3d40785e8"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/08_shutter_pin.step",
+      "bytes": 139550,
+      "sha256": "be79dd638e11cdacf64283d3837009793d8421206f280311ce061c669d1061ff"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/08_shutter_pin.stl",
+      "bytes": 177884,
+      "sha256": "8fe8aeab54f2ac4813e860b6ba0505a69319a69d98cb0c2210ea3f913e430949"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/09_rear_dial.step",
+      "bytes": 351683,
+      "sha256": "19691bd5cbe084f808689ec51f28dcf580b1e29faaffa2da78fb97c094604fdd"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/09_rear_dial.stl",
+      "bytes": 1485684,
+      "sha256": "8bb8589d601e9cc4fe62e6d816500776093cd29c4e36dad034abdaa9fe0c95fa"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/10_io_plate.step",
+      "bytes": 224542,
+      "sha256": "907890a02c57498c2b618896168dfd69abff22ce3e8c8104961049fb1cb945b6"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/10_io_plate.stl",
+      "bytes": 963484,
+      "sha256": "52724a5689beee7d895a6aaabcb9211dc9609a6ecc9fabc6f488da534ab34a9b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/11_fit_coupon.step",
+      "bytes": 139316,
+      "sha256": "e42ae73346798b33c2efa199d821c0daf22b694264d72a3e6e47e9f8a48aa128"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/11_fit_coupon.stl",
+      "bytes": 461684,
+      "sha256": "50bfc8da5c5b6e66d0e624ae3a3eff98c1b720315cbdc2839adff92a255c171d"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/12_lens_blank.step",
+      "bytes": 13353,
+      "sha256": "a231ff9730ec05a9eeb1f64df9e7c487ce3e60a939426cfe73f31aeb4f63a3e9"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/12_lens_blank.stl",
+      "bytes": 94684,
+      "sha256": "9a68c1cbd61f566e58a8487f2ebafc013835d8d3cec813da0e555a96c41de458"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/13_lens_blank_retainer.step",
+      "bytes": 9274,
+      "sha256": "41e991c7a8eaa78061fa02694d9142c8480111dbf192956ac652fcaeab83d970"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/13_lens_blank_retainer.stl",
+      "bytes": 63284,
+      "sha256": "f4345bce3b8399ab530b7935e8d536e3165d15b40e2535f9b43e2ef47d799b7a"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/14_dial_retainer.step",
+      "bytes": 10423,
+      "sha256": "45fb72e14d94512106716bcf1f75a6e47d6f50f1a513741838a9716eef2d9f93"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/14_dial_retainer.stl",
+      "bytes": 63284,
+      "sha256": "28e18ab9fea9ca8d8f73e087b6e78a23ff38ddf1d5f40f54e8b1510ed8cc65d2"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/15_shutter_return_flexure.step",
+      "bytes": 83953,
+      "sha256": "ea48adbf62683ad2ac6f0152c7ee555c75754f7431d06141ebca29ec5b51f67b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/15_shutter_return_flexure.stl",
+      "bytes": 4484,
+      "sha256": "ff4fca2272a7a823ad2cd40a25289e1328fecd648b22e331ae168779a21ee06d"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/16_shutter_calibration.step",
+      "bytes": 95892,
+      "sha256": "8c5862d801365c1b361edc6b3514e504675760149fa03debf1ab948659ae68bf"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/16_shutter_calibration.stl",
+      "bytes": 193884,
+      "sha256": "8651ab2dc6c84cbf3b075523176be02fd71de337492b94441eb2111ef8882ff9"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/17_camera_saddle.step",
+      "bytes": 103928,
+      "sha256": "fe82d989ad0d92bbb15c9b4648336937943275d9529ec7cd8aaecb757efde852"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/17_camera_saddle.stl",
+      "bytes": 155484,
+      "sha256": "3a3ad1a587bc316925d7c7c692e626fde45f5162f1b32f41ac2f987120a6bd50"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/18_camera_clamp.step",
+      "bytes": 48045,
+      "sha256": "e5b3861450d14ffd2341c45741a8153d5e061638435a21edff62cc24a7dda1ea"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/18_camera_clamp.stl",
+      "bytes": 93484,
+      "sha256": "8661bd5b40beb39fb7e0b50b2c97a5091da2890ec67f2944acffc84f62372f1c"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/19_usb_retainer.step",
+      "bytes": 38788,
+      "sha256": "3031d3b63c0544692d2796a316415c1b40f264f1d300385c9599abe28b9a9f10"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/19_usb_retainer.stl",
+      "bytes": 65084,
+      "sha256": "e85be4431ae0f0436aacbeeefb947c06b9c8a2c60cf6994c9beb7eb5166cf474"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/20_shutter_service_cover.step",
+      "bytes": 197764,
+      "sha256": "8b42d1c36dcc00f6882bc9c542845535aa722d566184573c52271a0e62c24567"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/parts/20_shutter_service_cover.stl",
+      "bytes": 224884,
+      "sha256": "31ec0c2ddd6b831dfd018eeee81eaccb55f7eb8038c1fa80fa7794afa7facce8"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/preview/back.png",
+      "bytes": 183517,
+      "sha256": "56e9217fb3ed3e3d51337ffd6da1b27f7efec6fe50327f4bc4af883cc57a3ee5"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/preview/exploded.png",
+      "bytes": 177080,
+      "sha256": "321360100846eaa6d3a6a05d58112381e44aad32ed1ef39f96428446a568b30b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/preview/front.png",
+      "bytes": 520115,
+      "sha256": "833ac5351102d938f0811c4e343c3b378493382115a917d88dea5206b5cb4302"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/preview/hero.png",
+      "bytes": 482054,
+      "sha256": "2401c2e4d9683ecbe36ee81166f2bab9c8c265e781995a61e6671075593f6615"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/preview/left.png",
+      "bytes": 172294,
+      "sha256": "4d07b36b34ddb118aa124f50556b4d16bf7ded3bb22f7a157e1db52712c9d193"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/preview/right.png",
+      "bytes": 141705,
+      "sha256": "045c46d336a6cf46c5650e923b2e308d2769627329aae0eb1696fd7a9645bebf"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/preview/top.png",
+      "bytes": 190885,
+      "sha256": "e988e7e7b8d0845c53563a4e2c7ffc07a0bd069473f9f84e4f598c60d17a445b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/plate_01_pale_gray.3mf",
+      "bytes": 8614815,
+      "sha256": "a24aeea7a48ec785fd445980fc560785e809d135768d93a182199238ab60e639"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/plate_02_dark_gray.3mf",
+      "bytes": 2133115,
+      "sha256": "1e34b62340f092910dbbab7e1ecd5c7506bc195f98164ff51adafb083c66e3a3"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/print_manifest.json",
+      "bytes": 60331,
+      "sha256": "d71c88091178a45e35fec07fa03db520759025c57a69f0a00f26fb7707a3a6ba"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/01_rib_cage.stl",
+      "bytes": 29346284,
+      "sha256": "d73faa603ef7cb45c61f383c0b1e790f118ca15e071790b46c7729623b160705"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/02_chassis.stl",
+      "bytes": 1521384,
+      "sha256": "e7b760870d5120e3551106e067d77dbb2e5ba57f3b9c2db0e0ccf6a6d799a7a2"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/03_rear_cover.stl",
+      "bytes": 3524684,
+      "sha256": "fe05acf4a9ef579bb37faecdb986d5af4fc60bde3284339462d6e5452e8af4a3"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/04_esp32_carrier.stl",
+      "bytes": 299084,
+      "sha256": "ebd0eb952e089de6f60e52890131d2c87a089b00cbe9edb558a334b9bcd3370f"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/05_board_clamp.stl",
+      "bytes": 797884,
+      "sha256": "ddbe1617908658c69830a9ac82f04bad91c063431fb76ac06b434707a4ca95f9"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/06_optical_baffle.stl",
+      "bytes": 254884,
+      "sha256": "ab03e0860e12650959d5305eb69943ec048ea035ae7304bade0701eb25346ef3"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/07_shutter.stl",
+      "bytes": 743684,
+      "sha256": "93ac4ec445452929dd467f5e6616ecdc93e856872f72425c5408b39c8af921e1"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/08_shutter_pin.stl",
+      "bytes": 177884,
+      "sha256": "bdcf97b7d6a5372fcbba4880d1841a110309a23bee01ace7a804aabde0b1cbfb"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/09_rear_dial.stl",
+      "bytes": 1485684,
+      "sha256": "9fb3223614f0bc575d3dd2dbcae8a67db94b0a5cae7cadafb044c3f156a07fb6"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/10_io_plate.stl",
+      "bytes": 963084,
+      "sha256": "5d8e0687c8b7f957826094e1ff5e2e4f172ceadb0d8b2bbd104e940fd340229a"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/11_fit_coupon.stl",
+      "bytes": 461284,
+      "sha256": "016d92f88ac2870cd75d61fc47797864fbfa5c9f1e043a4612651704aa34a873"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/12_lens_blank.stl",
+      "bytes": 94684,
+      "sha256": "86998275a909dbb59a86129fc9f3b94cd21a20a8191cf710e8bcec614a535e1d"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/13_lens_blank_retainer.stl",
+      "bytes": 63284,
+      "sha256": "c3d17d511b553486548ac7f531a5ce92e3fa4aa83dd1ea4e565df65e3cf10bb4"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/14_dial_retainer.stl",
+      "bytes": 63284,
+      "sha256": "3521aca93ba4c655dcd74ce83f9c884b01cb6e7a7a6f064e3e85f158d530ee95"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/15_shutter_return_flexure.stl",
+      "bytes": 4484,
+      "sha256": "c962a74bbf84f87dc45a03b84ae13385cb5325cf12a3fe5247ab5b8b4baed249"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/16_shutter_calibration.stl",
+      "bytes": 193884,
+      "sha256": "5fd8db83b67cce4ec6d270c6419944a5e15d4ca9f55746f39a1f604a15dc080b"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/17_camera_saddle.stl",
+      "bytes": 155484,
+      "sha256": "d06bf3b6ead6646492b76432d10d86ad3c83a479977f2127f8e38569cc1e48e1"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/18_camera_clamp.stl",
+      "bytes": 93484,
+      "sha256": "78c2e425e39807563e60decbc47a6b7cdcc8dbfe9d3fa8182f1d96abb5b9f751"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/19_usb_retainer.stl",
+      "bytes": 65084,
+      "sha256": "47c92337374db4871a044022654820e2e32ef0e3ed98a2246b7247a1f90d3b8e"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/print/stl/20_shutter_service_cover.stl",
+      "bytes": 224784,
+      "sha256": "9db210afa92be75a962eeceaf07f5c8f737d5705495ca3525c8cea14182d7c5c"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/reference/detail-markup.png",
+      "bytes": 347586,
+      "sha256": "1d82e4bafe8d018539f3c882e38188773775098239d3363ce8d28d2a75417809"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/reference/selected-form.png",
+      "bytes": 645436,
+      "sha256": "41b373f118ec147d46a8cf4775c717bed824d2c57cd98b843de6dc57e0a37814"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/reference_hardware/esp32_cam_mb_keepout_ASSUMED.step",
+      "bytes": 15436,
+      "sha256": "44c522038a4b1baa4fc2bd957bd123a072623139d7079570e800330ef81dd9f5"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/reference_hardware/esp32_pcb_nominal.step",
+      "bytes": 15561,
+      "sha256": "74edad79b3cf0d7ac49968dad1d4cdd5ca0aae474936afe6790e844a369361c9"
+    },
+    {
+      "file": "A4/Entropi-CAD-v05/release_summary.json",
+      "bytes": 33856,
+      "sha256": "7ffaa666560438bb3f1d296ef686dd77ade3ca38d0ed4d8d7734d82de04dfa03"
+    },
+    {
+      "file": "A4/README.md",
+      "bytes": 2725,
+      "sha256": "0b8f27f5425a72a0086763b00313375558868621013429427243628f0ab563c0"
+    },
+    {
+      "file": "A4/arkiv/README.md",
+      "bytes": 869,
+      "sha256": "7a8c82e7226996fc664057d4240dedb0f483c3eb8cf54df98ee7ec9bc12377c2"
+    },
+    {
+      "file": "A4/arkiv/cad/Entropi-CAD-v02.zip",
+      "bytes": 16153632,
+      "sha256": "c133930aa4a83b1b346bae7f03814fba832e3cc64cd0378e881af0d1e0c76c2f"
+    },
+    {
+      "file": "A4/arkiv/cad/Entropi-CAD-v03.zip",
+      "bytes": 37782814,
+      "sha256": "764704035b79fba24461fa8970915728f27709f9d95ca67e737a3719e4563a2d"
+    },
+    {
+      "file": "A4/arkiv/cad/Entropi-CAD-v04.zip",
+      "bytes": 38280598,
+      "sha256": "2cd547e9c10ebc8ed38cc9b3bf0bb86f374b8ba8de1b86502aeef369769a0f54"
+    },
+    {
+      "file": "A4/leveransar/Entropi-CAD-v05.zip",
+      "bytes": 59962298,
+      "sha256": "39b1653f4ab2f1a3aebb32201a4d8d46b190fb0f4e2ad09b65b5ff2b157473a1"
+    },
+    {
+      "file": "A4/organisering.json",
+      "bytes": 95199,
+      "sha256": "107662be2cae26d2caf23bf0a39faf2f204a928f1d88b72b725020a007885b2a"
+    },
+    {
+      "file": "A4/referansar/README.md",
+      "bytes": 508,
+      "sha256": "1268f48e488769362ae070811d700c6ceb880fd8921e8366b8a201b54b2b863b"
+    },
+    {
+      "file": "A4/referansar/formnerd/01-FormNerd-Prosjektoversikt.pdf",
+      "bytes": 3707245,
+      "sha256": "98636399786df0026948cc0482fe42bc9f2918deddc470420a40f9f3e929754e"
+    },
+    {
+      "file": "A4/referansar/formnerd/01-FormNerd-Prosjektoversikt.txt",
+      "bytes": 5450,
+      "sha256": "a3d8741aee91b91e4988f1aad4a24d56fcc125d3030f595ba9c5a702bc24eee0"
+    },
+    {
+      "file": "A4/referansar/formnerd/02-01_FormNerd-Intro.pdf",
+      "bytes": 4998610,
+      "sha256": "4e8d9ad4494887cc9f57bf24d6d7fbcf49696796cd230493114665a50b9483f5"
+    },
+    {
+      "file": "A4/referansar/formnerd/02-01_FormNerd-Intro.txt",
+      "bytes": 5344,
+      "sha256": "a5f624a0e050724d11ee6f287c19f7e80e2ac45345fc0b654689a067d58b68f5"
+    },
+    {
+      "file": "A4/referansar/formnerd/03-02_Semiotikk.pdf",
+      "bytes": 7773941,
+      "sha256": "290de0ca49dca4502bdfa20f19ae250bede5257708d013c77bbb931e72f10ec0"
+    },
+    {
+      "file": "A4/referansar/formnerd/03-02_Semiotikk.txt",
+      "bytes": 8582,
+      "sha256": "f77c08cc775bfcd5bf2cbb04239506242dae65c0b99223d415fbd0e806118845"
+    },
+    {
+      "file": "A4/referansar/formnerd/04-03_Formanalyse-Rammeverk.pdf",
+      "bytes": 20266689,
+      "sha256": "60fcc3ab7e0fb4861578376bb46179ec40e750ef7d3224ac6f88d9fa31d3f746"
+    },
+    {
+      "file": "A4/referansar/formnerd/04-03_Formanalyse-Rammeverk.txt",
+      "bytes": 21021,
+      "sha256": "b1aaf439a62e05d3b6e5d100a2f2f700390f7e1ff1981a9bcd137aac83ead339"
+    },
+    {
+      "file": "A4/rendringar/README.md",
+      "bytes": 349,
+      "sha256": "20879fe338d328054b3a030c131bd2e85efca4c16472a1187332660aa50b04ab"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/README.md",
+      "bytes": 366,
+      "sha256": "4eb8ba8449e10105cdf6ec4b6378f203a9fa53b046c203ddd82071e7189e03be"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/manifest.json",
+      "bytes": 1851,
+      "sha256": "07a7cbd9ce9892c6e7f30c7b7fb842f2fc1b69060b98d0220208c6b3396b020b"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/materialstudie-01.png",
+      "bytes": 1171442,
+      "sha256": "02157deacb024be4e5a3c55f438106b9de0644a267cf64c3a6063ae6c8fdcb95"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/materialstudie-02.png",
+      "bytes": 1646355,
+      "sha256": "27c539c40fd917fb04a104665fd70955b84ee0df2e5a1d75d589082beedaf68c"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/materialstudie-03.png",
+      "bytes": 1373643,
+      "sha256": "18fc53f7fe81bfbd2a11edae90eb23d19291a7e63057305233d3c49c608cfe27"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/materialstudie-04.png",
+      "bytes": 1134580,
+      "sha256": "dc2e15f0eae2c7c89067747086ab0c60cbd5408f4873adf87f464363f0b99a86"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/materialstudie-05.png",
+      "bytes": 1797394,
+      "sha256": "0ece6de655e2f1a22489ccfa683bf30de690316f7a137011eeb1ee6022c55cdd"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/materialstudie-06.png",
+      "bytes": 1297317,
+      "sha256": "19f7f3d6d097a12f23c449ef41da96948c2db48f89ea0f1fe2d66b6819d6376b"
+    },
+    {
+      "file": "A4/rendringar/materialstudiar/materialstudie-07.png",
+      "bytes": 1352241,
+      "sha256": "5faa73fb14297de0b11c69efb5857b1d4ea6e38a39587bbafcdde01c216164df"
+    },
+    {
+      "file": "README.md",
+      "bytes": 528,
+      "sha256": "d63274863b8e237d2be38349aa178069f83ce98e0065eed9bf3240786a2f93b5"
+    }
+  ]
+}

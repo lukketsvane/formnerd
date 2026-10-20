@@ -1,0 +1,207 @@
+{
+  "units": "mm",
+  "scope": "Exact continuous straight insertion envelope for an assumed USB plug housing and metal nose, tested against every printed assembly part. Actual cable, socket and electronics remain unmeasured.",
+  "housing_width_height_length_mm": [
+    12.0,
+    7.0,
+    22.0
+  ],
+  "nose_width_height_length_mm": [
+    8.8,
+    3.0,
+    6.5
+  ],
+  "housing_tip_x_mm": -62.2,
+  "insertion_direction": [
+    1,
+    0,
+    0
+  ],
+  "insertion_travel_mm": 30.0,
+  "part_count": 18,
+  "checks": [
+    {
+      "part": "01_rib_cage",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "01_rib_cage",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "02_chassis",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "02_chassis",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "03_rear_cover",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "03_rear_cover",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "04_esp32_carrier",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "04_esp32_carrier",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "05_board_clamp",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "05_board_clamp",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "06_optical_baffle",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "06_optical_baffle",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "07_shutter",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "07_shutter",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "08_shutter_pin",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "08_shutter_pin",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "09_rear_dial",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "09_rear_dial",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "10_io_plate",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "10_io_plate",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "12_lens_blank",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "12_lens_blank",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "13_lens_blank_retainer",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "13_lens_blank_retainer",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "14_dial_retainer",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "14_dial_retainer",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "15_shutter_return_flexure",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "15_shutter_return_flexure",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "17_camera_saddle",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "17_camera_saddle",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "18_camera_clamp",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "18_camera_clamp",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "19_usb_retainer",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "19_usb_retainer",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "20_shutter_service_cover",
+      "gauge": "housing",
+      "swept_intersection_mm3": 0.0
+    },
+    {
+      "part": "20_shutter_service_cover",
+      "gauge": "metal_nose",
+      "swept_intersection_mm3": 0.0
+    }
+  ],
+  "errors": [],
+  "nominal_access_pass": true,
+  "physical_connector_fit_verified": false
+}

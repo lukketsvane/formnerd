@@ -1,0 +1,273 @@
+{
+  "revision": "A1-Byggjesteg-R02",
+  "passed": true,
+  "pages": 28,
+  "render_dpi": 120,
+  "all_page_png_integrity_passed": true,
+  "pdf_sha256": "dc111bce40b270e1285a2ffc23dac8b7b094545ff136b5d7adcbe1c9fd909c08",
+  "visual_review": {
+    "pages_01_to_14": "assembly_evidence: individually inspected, passed; grammar fixed on page11 and rechecked by root",
+    "pages_15_to_28": "root: individually inspected, passed; pages16/17 revised and rechecked",
+    "final_changes": "Page11 grammar, page16 placement wording, page17 enlarged camera detail; remaining25 PNGs identical to reviewed pass",
+    "clipping_or_overlap_found": false,
+    "blank_pages_found": false
+  },
+  "link_annotations": 8,
+  "images": [
+    {
+      "page": 1,
+      "path": "review/pages-r02/page-01.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "0bdc00d3bef034b8afcbf6f4b351dedf54b3135dc8e6ab6c83a951f657205935"
+    },
+    {
+      "page": 2,
+      "path": "review/pages-r02/page-02.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "db26c022b4201659305b493d17f743662fb28a567ecd624ef8092aed627197d0"
+    },
+    {
+      "page": 3,
+      "path": "review/pages-r02/page-03.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "685684088f6cc4bf341a0b18a71e4177f1b43d988cbc66d865adf6afe53a2baa"
+    },
+    {
+      "page": 4,
+      "path": "review/pages-r02/page-04.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "6b2fbc1db54c8f609c924f0ba841f6988368408646193bd2af752ace398146e1"
+    },
+    {
+      "page": 5,
+      "path": "review/pages-r02/page-05.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "f38c3da8ac2167459f1ed9dabde3a4e9af7c5b21da09f98e6637fefb57861a7a"
+    },
+    {
+      "page": 6,
+      "path": "review/pages-r02/page-06.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "8cc6e692c6fb300f209f7a3049bc0001a9dff3fb359bea7b62a6d71afb1f227c"
+    },
+    {
+      "page": 7,
+      "path": "review/pages-r02/page-07.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "9547944535423795ca18050de03086a0a4b1cfa99247e9cca4bf5c73b2a5d06e"
+    },
+    {
+      "page": 8,
+      "path": "review/pages-r02/page-08.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "723122f8249807806aa1b9a817e9cf4fb53f8d988f3b74cead28cc9d0951f816"
+    },
+    {
+      "page": 9,
+      "path": "review/pages-r02/page-09.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "2b2ec467b0b478418766aee3b933237014bd8267e277c8a3616b96a4d7cea5fd"
+    },
+    {
+      "page": 10,
+      "path": "review/pages-r02/page-10.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "5904240d0240fda2fb460871a8cb7e9e336b7d2b4630d57d474b45a4c97caed6"
+    },
+    {
+      "page": 11,
+      "path": "review/pages-r02/page-11.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "21fcb1fef1eb43cf8c080451df2c508ef5873a7f80adcd4354e63572a1f528d3"
+    },
+    {
+      "page": 12,
+      "path": "review/pages-r02/page-12.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "991d13c850adfdf13e61b490a77f9575383e2518d2617dc50373bf98e27b6c69"
+    },
+    {
+      "page": 13,
+      "path": "review/pages-r02/page-13.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "2b3a4a2f0d1c35b1a645b29ee93be8823fe7cd2f2c01585402811118bde60d7e"
+    },
+    {
+      "page": 14,
+      "path": "review/pages-r02/page-14.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "5891136ce9898e44b38cae004cb9e2bbd5ac77dd08e40e4a92e8ff43d5592f1d"
+    },
+    {
+      "page": 15,
+      "path": "review/pages-r02/page-15.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "a7fe3edb4d67bc08fa5feb4443381e8cf5693bf5957939b1008d5f78c29ad00d"
+    },
+    {
+      "page": 16,
+      "path": "review/pages-r02/page-16.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "b68925d1a9cdb7227c0d621b0ee635c823b839d2b5febc0e7a8d1bfdb606d328"
+    },
+    {
+      "page": 17,
+      "path": "review/pages-r02/page-17.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "2346e468a45150e40bae3ea8658e572ca8c1eba124d5961c3137788e486440a0"
+    },
+    {
+      "page": 18,
+      "path": "review/pages-r02/page-18.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "237dd1acf07704dc9f710349b79a56d8bd4fbb5f76216396a33c1298421850b1"
+    },
+    {
+      "page": 19,
+      "path": "review/pages-r02/page-19.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "731839fe3e3cdbcc63af6b5bcdc3b9550fe43653173a582515b07de302f279e0"
+    },
+    {
+      "page": 20,
+      "path": "review/pages-r02/page-20.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "6cc7bb35ea355e02554a748b9a4ef47e7bdb0e1ff26e19f129ab85cf556a4f8f"
+    },
+    {
+      "page": 21,
+      "path": "review/pages-r02/page-21.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "bf6f6eb39334b062bfd95c7f5fad4ef42d8790015b931cef1569fec7a67e2e87"
+    },
+    {
+      "page": 22,
+      "path": "review/pages-r02/page-22.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "0d36199dbe4f43e428ad26a269d3c3f5d4cc834bff8a5fec864de96e654ba51b"
+    },
+    {
+      "page": 23,
+      "path": "review/pages-r02/page-23.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "433425b48e62a7691bbfeb9cb5232bc7d2f66b7b1d213d72cc5402958b9f9bb7"
+    },
+    {
+      "page": 24,
+      "path": "review/pages-r02/page-24.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "18dc84dc7a16d2885c30829957380609090b11e30979ffbf38b633f9e28370a5"
+    },
+    {
+      "page": 25,
+      "path": "review/pages-r02/page-25.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "8b75f2faf0f17cb05a9b68ecb99fb13f99a5f9c33ca9962203600e94b9f92de6"
+    },
+    {
+      "page": 26,
+      "path": "review/pages-r02/page-26.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "1af05a90d36796567181fc523c63bdf7ef959efed223fc804ae94558dc1ffd96"
+    },
+    {
+      "page": 27,
+      "path": "review/pages-r02/page-27.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "8636226cb96a36076aa204483b64b333021f12fc9eaa80bd25b64495c4ce822a"
+    },
+    {
+      "page": 28,
+      "path": "review/pages-r02/page-28.png",
+      "pixels": [
+        1404,
+        993
+      ],
+      "sha256": "38b389589175c6f090b479ca3283b9b1caf9af478bf26c16b2a7a01a90d1d7b4"
+    }
+  ],
+  "mechanical_geometry_changed": false,
+  "electronics_figures_schematic": true,
+  "physical_hardware_tested": false
+}

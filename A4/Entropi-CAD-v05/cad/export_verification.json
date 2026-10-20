@@ -1,0 +1,159 @@
+{
+  "assembly_step_valid": true,
+  "assembly_step_solids": 18,
+  "native_size_mm": [
+    143.0000002,
+    72.9000001,
+    108.50375246380146
+  ],
+  "glb_world_size_m": [
+    0.14300000000000002,
+    0.1085032157897949,
+    0.07289999961853028
+  ],
+  "glb_meshes": [
+    {
+      "name": "01_rib_cage",
+      "vertices": 266983,
+      "triangles": 534014,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "02_chassis",
+      "vertices": 15197,
+      "triangles": 30426,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "03_rear_cover",
+      "vertices": 35240,
+      "triangles": 70492,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "04_esp32_carrier",
+      "vertices": 2980,
+      "triangles": 5980,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "05_board_clamp",
+      "vertices": 7976,
+      "triangles": 15956,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "06_optical_baffle",
+      "vertices": 2544,
+      "triangles": 5096,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "07_shutter",
+      "vertices": 7436,
+      "triangles": 14872,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "08_shutter_pin",
+      "vertices": 1780,
+      "triangles": 3556,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "09_rear_dial",
+      "vertices": 14858,
+      "triangles": 29712,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "10_io_plate",
+      "vertices": 9622,
+      "triangles": 19260,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "12_lens_blank",
+      "vertices": 948,
+      "triangles": 1892,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "13_lens_blank_retainer",
+      "vertices": 632,
+      "triangles": 1264,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "14_dial_retainer",
+      "vertices": 632,
+      "triangles": 1264,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "15_shutter_return_flexure",
+      "vertices": 46,
+      "triangles": 88,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "17_camera_saddle",
+      "vertices": 1548,
+      "triangles": 3108,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "18_camera_clamp",
+      "vertices": 932,
+      "triangles": 1868,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "19_usb_retainer",
+      "vertices": 648,
+      "triangles": 1300,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    },
+    {
+      "name": "20_shutter_service_cover",
+      "vertices": 2247,
+      "triangles": 4494,
+      "boundary_or_nonmanifold_edges": 0,
+      "closed": true
+    }
+  ],
+  "glb_root_scale": [
+    [
+      0.001,
+      0.001,
+      0.001
+    ]
+  ],
+  "glb_root_rotation": [
+    [
+      -0.7071067811865475,
+      0.0,
+      0.0,
+      0.7071067811865475
+    ]
+  ],
+  "all_materials_nonmetallic": true,
+  "export_pass": true
+}

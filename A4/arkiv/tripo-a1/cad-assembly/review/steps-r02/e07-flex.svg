@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1300" viewBox="0 0 1800 1300"><rect width="1800" height="1300" fill="white"/>
+<polygon points="827.25,622.00 1201.38,838.00 1201.38,818.80 827.25,602.80" fill="#d5d8da" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1201.38,838.00 827.25,1054.00 827.25,1034.80 1201.38,818.80" fill="#aeb4b7" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="827.25,602.80 1201.38,818.80 827.25,1034.80 453.13,818.80" fill="#e7eaeb" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="453.13,838.00 827.25,1054.00 827.25,1034.80 453.13,818.80" fill="#d5d8da" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="681.76,734.80 931.18,878.80 931.18,845.20 681.76,701.20" fill="#d5d8da" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="931.18,878.80 889.61,902.80 889.61,869.20 931.18,845.20" fill="#aeb4b7" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="681.76,701.20 931.18,845.20 889.61,869.20 640.19,725.20" fill="#b9c1c5" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="640.19,758.80 889.61,902.80 889.61,869.20 640.19,725.20" fill="#d5d8da" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="671.37,730.00 879.22,850.00 785.68,874.00 692.15,820.00 484.31,700.00 577.84,754.00" fill="#c9bcae" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="702.55,745.60 609.02,769.60 515.48,715.60" fill="none" stroke="#a4937e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="733.72,763.60 640.19,787.60 546.66,733.60" fill="none" stroke="#a4937e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="764.90,781.60 671.37,805.60 577.84,751.60" fill="none" stroke="#a4937e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="796.08,799.60 702.55,823.60 609.02,769.60" fill="none" stroke="#a4937e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="827.25,817.60 733.72,841.60 640.19,787.60" fill="none" stroke="#a4937e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="858.43,835.60 764.90,859.60 671.37,805.60" fill="none" stroke="#a4937e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="473.92,682.00 744.12,838.00 744.12,808.00 473.92,652.00" fill="#d5d8da" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="744.12,838.00 525.88,964.00 525.88,934.00 744.12,808.00" fill="#aeb4b7" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="473.92,652.00 744.12,808.00 525.88,934.00 255.68,778.00" fill="#a5adb2" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="255.68,808.00 525.88,964.00 525.88,934.00 255.68,778.00" fill="#d5d8da" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="499.8962652" cy="775.0" rx="82.0" ry="54.0" fill="#333a3e" stroke="#17191b" stroke-width="5"/>
+<ellipse cx="499.8962652" cy="775.0" rx="44.0" ry="29.0" fill="#8c999f" stroke="#17191b" stroke-width="3"/>
+<polyline points="681.76,718.00 720.00,330.00 390.00,330.00" fill="none" stroke="#17191b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="681.7615992" cy="718.0" rx="5.0" ry="5.0" fill="#17191b" stroke="#17191b" stroke-width="1"/>
+<text x="376" y="347.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="44" text-anchor="end">FFC</text>
+<polyline points="754.51,844.00 1160.00,560.00 1410.00,560.00" fill="none" stroke="#17191b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="754.5077328" cy="844.0" rx="5.0" ry="5.0" fill="#17191b" stroke="#17191b" stroke-width="1"/>
+<text x="1424" y="570.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="37" text-anchor="start">Mjuk boge</text>
+<polyline points="499.90,775.00 570.00,1050.00 380.00,1050.00" fill="none" stroke="#17191b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="499.8962652" cy="775.0" rx="5.0" ry="5.0" fill="#17191b" stroke="#17191b" stroke-width="1"/>
+<text x="366" y="1063.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="40" text-anchor="end">OV2640</text>
+</svg>

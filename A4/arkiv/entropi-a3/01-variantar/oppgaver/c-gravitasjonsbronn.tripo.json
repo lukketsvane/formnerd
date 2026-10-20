@@ -1,0 +1,30 @@
+{
+  "task_id": "fd5fcf23-89cb-477c-a845-fa2fddcaa097",
+  "status": "success",
+  "credits": 15.0,
+  "files": {
+    "generated_image_url": "images/c_gravity_well_generated_image_url.png"
+  },
+  "payload": {
+    "input": "file_10536c7f-21ca-462e-879b-6f21d88d0beb",
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a compact handheld camera, same 3/4 front view and proportions as the sketch, hand grip on the left. Concept: a gravitational well, light falling into a black hole. Core body: deep matte black light-absorbing paint. The front face of the black core is sculpted as a smooth funnel: the surface curves inward in a deep continuous hyperbolic slope like warped spacetime, gentle at the outer edges and sinking steeply toward the center, a deep vortex well. Soft inflated light-grey tubes in satin soft-touch paint form the rounded grip on the left, run over the top, twist and cross between the two top blocks, then flow onto the front and follow the funnel curvature, bending, stretching and narrowing as they slide down the slope and spiral inward, as if falling in. Deep at the bottom of the funnel sits a real camera lens about 35 mm diameter: black anodized knurled barrel, dark coated glass with concentric inner reflections and a faint purple-green sheen. All solid painted material: no LED, no glow. Details: dark viewfinder block top rear left; dark cylindrical dial block top right with knurled cap; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the left outer side of the grip in a black inset. Clean surfaces, reads as a 3D-printed and painted design model. One single camera fully in frame, seamless pure white background, softbox key light from upper left, soft contact shadow, sharp focus. No text, no logos, no glowing ring, no extra objects, no hands."
+  },
+  "raw": {
+    "type": "image_to_image",
+    "status": "success",
+    "progress": 100,
+    "input": {
+      "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a compact handheld camera, same 3/4 front view and proportions as the sketch, hand grip on the left. Concept: a gravitational well, light falling into a black hole. Core body: deep matte black light-absorbing paint. The front face of the black core is sculpted as a smooth funnel: the surface curves inward in a deep continuous hyperbolic slope like warped spacetime, gentle at the outer edges and sinking steeply toward the center, a deep vortex well. Soft inflated light-grey tubes in satin soft-touch paint form the rounded grip on the left, run over the top, twist and cross between the two top blocks, then flow onto the front and follow the funnel curvature, bending, stretching and narrowing as they slide down the slope and spiral inward, as if falling in. Deep at the bottom of the funnel sits a real camera lens about 35 mm diameter: black anodized knurled barrel, dark coated glass with concentric inner reflections and a faint purple-green sheen. All solid painted material: no LED, no glow. Details: dark viewfinder block top rear left; dark cylindrical dial block top right with knurled cap; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the left outer side of the grip in a black inset. Clean surfaces, reads as a 3D-printed and painted design model. One single camera fully in frame, seamless pure white background, softbox key light from upper left, soft contact shadow, sharp focus. No text, no logos, no glowing ring, no extra objects, no hands.",
+      "model_version": "banana_pro"
+    },
+    "output": {
+      "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_a49067a3d010421cbef4ad1993d1ec39/20261020/fd5fcf23-89cb-477c-a845-fa2fddcaa097/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTQ5MDY3YTNkMDEwNDIxY2JlZjRhZDE5OTNkMWVjMzkvMjAyNjEwMjAvZmQ1ZmNmMjMtODljYi00NzdjLWE4NDUtZmEyZmRkY2FhMDk3L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI1OTA4MjR9fX1dfQ__&Signature=hie80~klOsan8jIP8~2Xoj7jVxDC3XcYVloxa8HFk60SS2xGSAQ4dPJk7Nkp~mH-RYa-20fTgPkglMIvnkd2wtRkQYKRHk7XHzKwyxBYxPayDBi51AL2ui3gLtxrW7jFHMd2w~uBflmQ2ri3ciC3Iqmmdc-V63x7Ne5BbYt~xvusIq3VK4niS7exb7xRyrHyxmTfZzReFkN8l4gRQtmRYh9O2YKp2tqFKtQPBXZ2WbJyfPzi3icOZMkI9ueFQQn235ijl7wXSdhXUbp4kg~rX0XlTOoMLp2m4~trkOLW~~zZjf3Bd7h0ojP927kU78MasP-kCcaukScY0vO8xkAxiQ__&Key-Pair-Id=K1676C64NMVM2J"
+    },
+    "task_id": "fd5fcf23-89cb-477c-a845-fa2fddcaa097",
+    "created_at": "2026-10-20T13:53:00.916148Z",
+    "completed_at": "2026-10-20T13:53:42.779849Z",
+    "credits_consumed": 15.0
+  }
+}

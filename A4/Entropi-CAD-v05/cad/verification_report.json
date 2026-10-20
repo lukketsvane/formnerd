@@ -1,0 +1,2249 @@
+{
+  "units": "mm",
+  "volume_tolerance_mm3": 0.0001,
+  "check_scope": "full_assembly",
+  "motion_selector": null,
+  "parts": [
+    {
+      "name": "01_rib_cage",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 122494.79524187169,
+      "size_mm": [
+        143.0000002,
+        67.5000002,
+        108.50375246380146
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 293438,
+        "triangles": 586924,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 122364.38610476027,
+        "watertight": true
+      }
+    },
+    {
+      "name": "02_chassis",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 65571.74876042278,
+      "size_mm": [
+        130.0,
+        41.5,
+        78.0000001
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 15197,
+        "triangles": 30426,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 65569.88384370694,
+        "watertight": true
+      }
+    },
+    {
+      "name": "03_rear_cover",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 24897.583072667017,
+      "size_mm": [
+        129.4,
+        4.700000000000003,
+        77.4
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 35240,
+        "triangles": 70492,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 24897.393173011253,
+        "watertight": true
+      }
+    },
+    {
+      "name": "04_esp32_carrier",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8475.691885377286,
+      "size_mm": [
+        46.0,
+        11.0,
+        64.0
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 2980,
+        "triangles": 5980,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 8475.706516825094,
+        "watertight": true
+      }
+    },
+    {
+      "name": "05_board_clamp",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 659.6951906454334,
+      "size_mm": [
+        36.0,
+        8.0,
+        2.4000000000000057
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 7976,
+        "triangles": 15956,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 659.6919578851652,
+        "watertight": true
+      }
+    },
+    {
+      "name": "06_optical_baffle",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3860.7249538148144,
+      "size_mm": [
+        40.400000000000006,
+        21.0,
+        40.400000000000006
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 2544,
+        "triangles": 5096,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3859.894338661912,
+        "watertight": true
+      }
+    },
+    {
+      "name": "07_shutter",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 689.7727173132664,
+      "size_mm": [
+        12.000000100000001,
+        12.0000002,
+        11.000000099999994
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 7436,
+        "triangles": 14872,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 689.5901376890279,
+        "watertight": true
+      }
+    },
+    {
+      "name": "08_shutter_pin",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 43.472813562760294,
+      "size_mm": [
+        4.0,
+        14.400000100000002,
+        1.8000001999999995
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 1780,
+        "triangles": 3556,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 43.466476034477154,
+        "watertight": true
+      }
+    },
+    {
+      "name": "09_rear_dial",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1288.4678712110317,
+      "size_mm": [
+        20.0,
+        20.0000001,
+        6.799999999999997
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 14858,
+        "triangles": 29712,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1288.2582403013967,
+        "watertight": true
+      }
+    },
+    {
+      "name": "10_io_plate",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2041.0330581714002,
+      "size_mm": [
+        26.800000000000004,
+        27.4,
+        14.400000000000002
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 9622,
+        "triangles": 19260,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 2041.0105652716586,
+        "watertight": true
+      }
+    },
+    {
+      "name": "12_lens_blank",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2305.43263609568,
+      "size_mm": [
+        39.2,
+        4.5,
+        39.2
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 948,
+        "triangles": 1892,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 2304.8250549482664,
+        "watertight": true
+      }
+    },
+    {
+      "name": "13_lens_blank_retainer",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 266.94741096083766,
+      "size_mm": [
+        17.0,
+        1.1999999999999993,
+        17.0
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 632,
+        "triangles": 1264,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 266.87719941995147,
+        "watertight": true
+      }
+    },
+    {
+      "name": "14_dial_retainer",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 70.91202937683053,
+      "size_mm": [
+        9.0,
+        9.0,
+        1.2000000000000028
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 632,
+        "triangles": 1264,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 70.89316141707666,
+        "watertight": true
+      }
+    },
+    {
+      "name": "15_shutter_return_flexure",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 130.17900000002496,
+      "size_mm": [
+        6.6499999999999915,
+        22.2,
+        5.200000000000003
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 46,
+        "triangles": 88,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 130.17914655827008,
+        "watertight": true
+      }
+    },
+    {
+      "name": "17_camera_saddle",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1147.341624775152,
+      "size_mm": [
+        25.0,
+        12.799999999999999,
+        8.900000000000006
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 1548,
+        "triangles": 3108,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1147.3080226406698,
+        "watertight": true
+      }
+    },
+    {
+      "name": "18_camera_clamp",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 593.0638067481506,
+      "size_mm": [
+        23.400000000000002,
+        6.199999999999999,
+        7.200000000000003
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 932,
+        "triangles": 1868,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 592.9940947572208,
+        "watertight": true
+      }
+    },
+    {
+      "name": "19_usb_retainer",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 238.4453115783865,
+      "size_mm": [
+        4.0,
+        24.6,
+        3.0
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 648,
+        "triangles": 1300,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 238.45091855406767,
+        "watertight": true
+      }
+    },
+    {
+      "name": "20_shutter_service_cover",
+      "step_valid": true,
+      "solid_count": 1,
+      "volume_mm3": 88.8394143819034,
+      "size_mm": [
+        9.000000200000002,
+        5.405023649648296,
+        8.800000200000014
+      ],
+      "within_250mm_cube_axis_aligned": true,
+      "mesh": {
+        "vertices": 2247,
+        "triangles": 4494,
+        "boundary_or_nonmanifold_edges": 0,
+        "connected_components": 1,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 88.83825209508298,
+        "watertight": true
+      }
+    }
+  ],
+  "intersections": [
+    {
+      "parts": [
+        "01_rib_cage",
+        "02_chassis"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 3.768413474999761,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "03_rear_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "04_esp32_carrier"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 1.28716359200007,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "05_board_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 1.0131633929995587,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "06_optical_baffle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 3.175355113999103,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "07_shutter"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.5264420949988562,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "08_shutter_pin"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.7923947100007354,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.6127972329995828,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 1.2628697870004544,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 2.917356641999504,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 2.398096318000171,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.46182474700071907,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.7030491679997795,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 4.183571870999003,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 2.51133576599932,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.9342799450005259,
+      "collision": false
+    },
+    {
+      "parts": [
+        "01_rib_cage",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.6502031540003372,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "03_rear_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.12135260600007314,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "04_esp32_carrier"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.07766637699933199,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "05_board_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.016390545999456663,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "06_optical_baffle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.031356665000203066,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "07_shutter"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.01638463400013279,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "08_shutter_pin"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.06990789500014216,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.047885242998745525,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.017316885001491755,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.014613445000577485,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.017221515998244286,
+      "collision": false
+    },
+    {
+      "parts": [
+        "02_chassis",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "04_esp32_carrier"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "05_board_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "06_optical_baffle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "07_shutter"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "08_shutter_pin"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "03_rear_cover",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "05_board_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.05337372699978005,
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "06_optical_baffle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "07_shutter"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "08_shutter_pin"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "04_esp32_carrier",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "06_optical_baffle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "07_shutter"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "08_shutter_pin"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "05_board_clamp",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "07_shutter"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "08_shutter_pin"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.013783864998913486,
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.003969482000684366,
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.007270726999195176,
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.005294100999890361,
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "06_optical_baffle",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "08_shutter_pin"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.09362921600040863,
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "07_shutter",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "09_rear_dial"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "08_shutter_pin",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "10_io_plate"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "09_rear_dial",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "12_lens_blank"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.023214277998704347,
+      "collision": false
+    },
+    {
+      "parts": [
+        "10_io_plate",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "12_lens_blank",
+        "13_lens_blank_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "12_lens_blank",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "12_lens_blank",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "12_lens_blank",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "12_lens_blank",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "12_lens_blank",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "12_lens_blank",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "13_lens_blank_retainer",
+        "14_dial_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "13_lens_blank_retainer",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "13_lens_blank_retainer",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "13_lens_blank_retainer",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "13_lens_blank_retainer",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "13_lens_blank_retainer",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "14_dial_retainer",
+        "15_shutter_return_flexure"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "14_dial_retainer",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "14_dial_retainer",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "14_dial_retainer",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "14_dial_retainer",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "15_shutter_return_flexure",
+        "17_camera_saddle"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "15_shutter_return_flexure",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "15_shutter_return_flexure",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "15_shutter_return_flexure",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "BRep_common",
+      "elapsed_seconds": 0.019783574000030058,
+      "collision": false
+    },
+    {
+      "parts": [
+        "17_camera_saddle",
+        "18_camera_clamp"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "17_camera_saddle",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "17_camera_saddle",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "18_camera_clamp",
+        "19_usb_retainer"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "18_camera_clamp",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    },
+    {
+      "parts": [
+        "19_usb_retainer",
+        "20_shutter_service_cover"
+      ],
+      "volume_mm3": 0.0,
+      "method": "disjoint_bounding_boxes",
+      "collision": false
+    }
+  ],
+  "motions": [
+    {
+      "name": "service_cover_removal",
+      "moving_parts": [
+        "20_shutter_service_cover"
+      ],
+      "previously_removed_parts": [],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "travel_mm": 30,
+      "sample_step_mm": 2.0,
+      "sample_count_requested": 16,
+      "pair_checks_completed": 272,
+      "blockers": [],
+      "sampled_path_clear": true,
+      "scope": "Discrete translation samples after fastener removal; not a continuous swept-volume certificate or hardware fit test."
+    },
+    {
+      "name": "rear_cover_removal",
+      "moving_parts": [
+        "03_rear_cover"
+      ],
+      "previously_removed_parts": [],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "travel_mm": 85,
+      "sample_step_mm": 2.0,
+      "sample_count_requested": 44,
+      "pair_checks_completed": 748,
+      "blockers": [],
+      "sampled_path_clear": true,
+      "scope": "Discrete translation samples after fastener removal; not a continuous swept-volume certificate or hardware fit test."
+    },
+    {
+      "name": "cassette_removal",
+      "moving_parts": [
+        "04_esp32_carrier",
+        "05_board_clamp"
+      ],
+      "previously_removed_parts": [
+        "03_rear_cover"
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "travel_mm": 85,
+      "sample_step_mm": 2.0,
+      "sample_count_requested": 44,
+      "pair_checks_completed": 1320,
+      "blockers": [],
+      "sampled_path_clear": true,
+      "scope": "Discrete translation samples after fastener removal; not a continuous swept-volume certificate or hardware fit test."
+    },
+    {
+      "name": "baffle_removal",
+      "check_scope": "continuous_baffle_translation_swept_envelope",
+      "moving_parts": [
+        "06_optical_baffle",
+        "12_lens_blank",
+        "13_lens_blank_retainer",
+        "17_camera_saddle",
+        "18_camera_clamp"
+      ],
+      "baffle_parts": [
+        "06_optical_baffle",
+        "12_lens_blank",
+        "13_lens_blank_retainer",
+        "17_camera_saddle",
+        "18_camera_clamp"
+      ],
+      "previously_removed_parts": [
+        "03_rear_cover",
+        "04_esp32_carrier",
+        "05_board_clamp"
+      ],
+      "fixed_parts": [
+        "01_rib_cage",
+        "02_chassis",
+        "07_shutter",
+        "08_shutter_pin",
+        "09_rear_dial",
+        "10_io_plate",
+        "14_dial_retainer",
+        "15_shutter_return_flexure",
+        "19_usb_retainer",
+        "20_shutter_service_cover"
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "travel_mm": 50.0,
+      "volume_tolerance_mm3": 0.0001,
+      "containment_records": [
+        {
+          "part": "06_optical_baffle",
+          "method": "BRep_cut",
+          "contained": true,
+          "outside_envelope_volume_mm3": 0.0,
+          "elapsed_seconds": 0.013473693999912939
+        },
+        {
+          "part": "12_lens_blank",
+          "method": "BRep_cut",
+          "contained": true,
+          "outside_envelope_volume_mm3": 0.0,
+          "elapsed_seconds": 0.006105667000156245
+        },
+        {
+          "part": "13_lens_blank_retainer",
+          "method": "BRep_cut",
+          "contained": true,
+          "outside_envelope_volume_mm3": 0.0,
+          "elapsed_seconds": 0.00424903900056961
+        },
+        {
+          "part": "17_camera_saddle",
+          "method": "BRep_cut",
+          "contained": true,
+          "outside_envelope_volume_mm3": 0.0,
+          "elapsed_seconds": 0.01332737800112227
+        },
+        {
+          "part": "18_camera_clamp",
+          "method": "BRep_cut",
+          "contained": true,
+          "outside_envelope_volume_mm3": 0.0,
+          "elapsed_seconds": 0.007245048000186216
+        }
+      ],
+      "fixed_part_results": [
+        {
+          "fixed_part": "01_rib_cage",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.3127998429990839
+        },
+        {
+          "fixed_part": "02_chassis",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.012963367998963804
+        },
+        {
+          "fixed_part": "07_shutter",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.0016865030011103954
+        },
+        {
+          "fixed_part": "08_shutter_pin",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.006847295000625309
+        },
+        {
+          "fixed_part": "09_rear_dial",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.011685884001053637
+        },
+        {
+          "fixed_part": "10_io_plate",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.008561480999560445
+        },
+        {
+          "fixed_part": "14_dial_retainer",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.0013516210001398576
+        },
+        {
+          "fixed_part": "15_shutter_return_flexure",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.0030393589986488223
+        },
+        {
+          "fixed_part": "19_usb_retainer",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.0023052420001477003
+        },
+        {
+          "fixed_part": "20_shutter_service_cover",
+          "method": "BRep_common",
+          "clear": true,
+          "intersection_volume_mm3": 0.0,
+          "elapsed_seconds": 0.0052712960005010245
+        }
+      ],
+      "source_step_files": [
+        {
+          "name": "06_optical_baffle",
+          "file": "parts/06_optical_baffle.step",
+          "sha256": "c3f48f20c5fd930c670e0a9dca5728ae32643d5b4285dbc864bd7af01824378a"
+        },
+        {
+          "name": "12_lens_blank",
+          "file": "parts/12_lens_blank.step",
+          "sha256": "a231ff9730ec05a9eeb1f64df9e7c487ce3e60a939426cfe73f31aeb4f63a3e9"
+        },
+        {
+          "name": "13_lens_blank_retainer",
+          "file": "parts/13_lens_blank_retainer.step",
+          "sha256": "41e991c7a8eaa78061fa02694d9142c8480111dbf192956ac652fcaeab83d970"
+        },
+        {
+          "name": "17_camera_saddle",
+          "file": "parts/17_camera_saddle.step",
+          "sha256": "fe82d989ad0d92bbb15c9b4648336937943275d9529ec7cd8aaecb757efde852"
+        },
+        {
+          "name": "18_camera_clamp",
+          "file": "parts/18_camera_clamp.step",
+          "sha256": "e5b3861450d14ffd2341c45741a8153d5e061638435a21edff62cc24a7dda1ea"
+        },
+        {
+          "name": "01_rib_cage",
+          "file": "parts/01_rib_cage.step",
+          "sha256": "5c9448cbb4f30125563504719ddccccef8671ee9fdbb5c17aee64190ae4ad156"
+        },
+        {
+          "name": "02_chassis",
+          "file": "parts/02_chassis.step",
+          "sha256": "48b49438030a71d3ae890d46efd27fa6bfcc249dbb2d11f829cdda78a6e3aa8b"
+        },
+        {
+          "name": "07_shutter",
+          "file": "parts/07_shutter.step",
+          "sha256": "eef31513c1014f10da6f84aa7e51d12e8583765da5bf5b4d82ff722cd02f5201"
+        },
+        {
+          "name": "08_shutter_pin",
+          "file": "parts/08_shutter_pin.step",
+          "sha256": "be79dd638e11cdacf64283d3837009793d8421206f280311ce061c669d1061ff"
+        },
+        {
+          "name": "09_rear_dial",
+          "file": "parts/09_rear_dial.step",
+          "sha256": "19691bd5cbe084f808689ec51f28dcf580b1e29faaffa2da78fb97c094604fdd"
+        },
+        {
+          "name": "10_io_plate",
+          "file": "parts/10_io_plate.step",
+          "sha256": "907890a02c57498c2b618896168dfd69abff22ce3e8c8104961049fb1cb945b6"
+        },
+        {
+          "name": "14_dial_retainer",
+          "file": "parts/14_dial_retainer.step",
+          "sha256": "45fb72e14d94512106716bcf1f75a6e47d6f50f1a513741838a9716eef2d9f93"
+        },
+        {
+          "name": "15_shutter_return_flexure",
+          "file": "parts/15_shutter_return_flexure.step",
+          "sha256": "ea48adbf62683ad2ac6f0152c7ee555c75754f7431d06141ebca29ec5b51f67b"
+        },
+        {
+          "name": "19_usb_retainer",
+          "file": "parts/19_usb_retainer.step",
+          "sha256": "3031d3b63c0544692d2796a316415c1b40f264f1d300385c9599abe28b9a9f10"
+        },
+        {
+          "name": "20_shutter_service_cover",
+          "file": "parts/20_shutter_service_cover.step",
+          "sha256": "8b42d1c36dcc00f6882bc9c542845535aa722d566184573c52271a0e62c24567"
+        }
+      ],
+      "blockers": [],
+      "sampled_path_clear": true,
+      "continuous_envelope_clear": true,
+      "scope": "Exact native BRep cuts prove initial optical-part containment in a coaxial cylinder extending through the full 50 mm negative-Y translation. Exact native BRep common volumes test this bounding swept cylinder against every remaining fixed part. This certifies continuous positive-volume clearance within the stated tolerance; zero-volume contact is allowed. Input shapes must be valid solids and fasteners must be removed. Physical hardware fit is not verified.",
+      "envelope": {
+        "shape": "coaxial_cylinder",
+        "axis_point_xz_mm": [
+          31.0,
+          43.0
+        ],
+        "radius_mm": 20.25,
+        "y_min_mm": -83.5,
+        "y_max_mm": -11.0,
+        "bounds_mm": [
+          10.75,
+          51.25,
+          -83.5,
+          -11.0,
+          22.75,
+          63.25
+        ],
+        "valid": true
+      },
+      "pair_checks_completed": 15,
+      "proof": "Each initial moving part lies inside the cylinder. Its Y minimum is the minimum initial part Y minus 50 mm, and its Y maximum is -11 mm. Any negative-Y translation from 0 through 50 mm preserves radial containment and remains within these Y limits. Cylinder clearance therefore implies clearance for every translated optical part throughout the continuous path."
+    },
+    {
+      "name": "chassis_removal",
+      "moving_parts": [
+        "02_chassis",
+        "09_rear_dial",
+        "10_io_plate",
+        "14_dial_retainer",
+        "19_usb_retainer"
+      ],
+      "previously_removed_parts": [
+        "03_rear_cover",
+        "04_esp32_carrier",
+        "05_board_clamp",
+        "06_optical_baffle",
+        "12_lens_blank",
+        "13_lens_blank_retainer",
+        "17_camera_saddle",
+        "18_camera_clamp"
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "travel_mm": 105,
+      "sample_step_mm": 2.0,
+      "sample_count_requested": 54,
+      "pair_checks_completed": 1350,
+      "blockers": [],
+      "sampled_path_clear": true,
+      "scope": "Discrete translation samples after fastener removal; not a continuous swept-volume certificate or hardware fit test."
+    }
+  ],
+  "parameters": {
+    "used_by_builder": [
+      "base_end_blend_radius",
+      "base_end_cap_radius",
+      "base_main_blend_radius",
+      "base_narrow_blend_radius",
+      "base_rail_depth",
+      "base_rail_height",
+      "base_start_cap_radius",
+      "board_edge_clearance",
+      "board_plane_y",
+      "body_bottom_z",
+      "body_front_y",
+      "body_height",
+      "body_rear_y",
+      "body_width",
+      "camera_barrel_diameter_assumed",
+      "camera_barrel_diametral_clearance",
+      "camera_collar_depth",
+      "camera_collar_split_gap",
+      "camera_collar_y",
+      "corner_radius",
+      "esp32_board_length_nominal",
+      "esp32_board_width_nominal",
+      "esp32_pcb_thickness_assumed",
+      "fit_clearance",
+      "front_crown_blend_radius",
+      "front_fan_blend_radius",
+      "front_middle_blend_radius",
+      "front_ring_clear_diameter",
+      "front_ring_outer_diameter",
+      "io_mount_pitch",
+      "io_plate_width",
+      "mb_keepout_depth_assumed",
+      "mb_keepout_height_assumed",
+      "mb_keepout_width_assumed",
+      "optical_axis_x",
+      "optical_axis_z",
+      "pilot_diameter",
+      "port_lip_radius",
+      "port_well_corner_radius",
+      "port_well_height",
+      "port_well_width",
+      "rear_optical_clear_diameter",
+      "screw_clearance_diameter",
+      "shutter_flexure_length",
+      "shutter_flexure_seat_clearance",
+      "shutter_flexure_thickness",
+      "shutter_flexure_width",
+      "shutter_pin_diameter",
+      "shutter_pin_diametral_clearance",
+      "shutter_root_fillet_radius",
+      "shutter_service_cover_edge_clearance",
+      "shutter_service_cover_thickness",
+      "shutter_shoulder_fillet",
+      "shutter_switch_body_clearance",
+      "shutter_switch_body_height_assumed",
+      "shutter_switch_length_assumed",
+      "shutter_switch_plunger_height_assumed",
+      "shutter_switch_pretravel_gap_assumed",
+      "shutter_switch_seat_enabled",
+      "shutter_switch_width_assumed",
+      "shutter_travel",
+      "usb_axis_y",
+      "usb_pcb_length_assumed",
+      "usb_pcb_seat_z_assumed",
+      "usb_pcb_thickness_assumed",
+      "usb_pcb_width_assumed",
+      "usb_plug_body_height_assumed",
+      "usb_plug_body_length_assumed",
+      "usb_plug_body_tip_x_assumed",
+      "usb_plug_body_width_assumed",
+      "usb_plug_nose_height_assumed",
+      "usb_plug_nose_length_assumed",
+      "usb_plug_nose_width_assumed",
+      "wall"
+    ],
+    "declared_but_not_used_by_builder": []
+  },
+  "errors": [],
+  "geometry_pass": true,
+  "physical_hardware_fit_verified": false,
+  "usb_charge_transfer_function_verified": false,
+  "battery_and_thermal_design_verified": false,
+  "release_status": "DIGITAL_GEOMETRY_ONLY"
+}

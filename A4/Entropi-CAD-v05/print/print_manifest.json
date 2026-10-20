@@ -1,0 +1,2770 @@
+{
+  "units": "mm",
+  "source_assembly_manifest": "cad/assembly_manifest.json",
+  "plate_size_mm": [
+    250.0,
+    250.0
+  ],
+  "maximum_print_height_mm": 250.0,
+  "plate_edge_margin_mm": 5.0,
+  "part_gap_mm": 8.0,
+  "suggested_maximum_brim_mm": 3.5,
+  "part_count": 20,
+  "plate_count": 2,
+  "parts": [
+    {
+      "name": "01_rib_cage",
+      "source_file": "parts/01_rib_cage.stl",
+      "source_sha256": "bd60f9059eee1a9f466b2d22b7aa93c92173904381f3566dcdcca52efea9a1ed",
+      "print_file": "stl/01_rib_cage.stl",
+      "units": "mm",
+      "orientation": "Front annulus face down; arch and grip rise above the plate.",
+      "support_caution": "Supports from the build plate are required beneath elevated ribs and grip. Inspect visible surfaces and support access in the slicer.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        78.0,
+        112.5010757446289,
+        45.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          142.99777221679688,
+          108.50321960449219,
+          67.5
+        ]
+      ],
+      "size_mm": [
+        142.99777221679688,
+        108.50321960449219,
+        67.5
+      ],
+      "material_group": "pale_gray",
+      "verification": {
+        "triangles": 586922,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 122364.38610476027,
+        "print_signed_volume_mm3": 122364.3846388614,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "01_rib_cage",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          5.0,
+          5.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            147.99777221679688,
+            113.50321960449219,
+            67.5
+          ]
+        ]
+      }
+    },
+    {
+      "name": "02_chassis",
+      "source_file": "parts/02_chassis.stl",
+      "source_sha256": "893be9e5b385ee7de48d61143813b3ba47899b5f2855894df36b882a2fc9bd0b",
+      "print_file": "stl/02_chassis.stl",
+      "units": "mm",
+      "orientation": "Front wall face down; the rear cavity opens upward.",
+      "support_caution": "Inspect local supports beneath internal screw bridges; keep fastener bores and the optical opening clear.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        65.0,
+        83.0,
+        16.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          130.0,
+          78.0,
+          41.5
+        ]
+      ],
+      "size_mm": [
+        130.0,
+        78.0,
+        41.5
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 30426,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 65569.88384370694,
+        "print_signed_volume_mm3": 65569.87838202347,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "02_chassis",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          5.0,
+          5.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            5.0,
+            5.0,
+            0.0
+          ],
+          [
+            135.0,
+            83.0,
+            41.5
+          ]
+        ]
+      }
+    },
+    {
+      "name": "03_rear_cover",
+      "source_file": "parts/03_rear_cover.stl",
+      "source_sha256": "fac24442d0790b27a464dad3915ab05c184d5c34692b2ab28430377c6fc658ab",
+      "print_file": "stl/03_rear_cover.stl",
+      "units": "mm",
+      "orientation": "Exterior rear face down; locating lip points upward.",
+      "support_caution": "Normally no supports; inspect countersinks and lip starts.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        64.69999694824219,
+        -5.300000190734863,
+        27.899999618530273
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          129.39999389648438,
+          77.39999389648438,
+          4.69999885559082
+        ]
+      ],
+      "size_mm": [
+        129.39999389648438,
+        77.39999389648438,
+        4.69999885559082
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 70492,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 24897.393173011253,
+        "print_signed_volume_mm3": 24897.392243189537,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "03_rear_cover",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          5.0,
+          91.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            5.0,
+            91.0,
+            0.0
+          ],
+          [
+            134.39999389648438,
+            168.39999389648438,
+            4.69999885559082
+          ]
+        ]
+      }
+    },
+    {
+      "name": "04_esp32_carrier",
+      "source_file": "parts/04_esp32_carrier.stl",
+      "source_sha256": "f0fe6c431ce7189c154e3a90bfe287fb16d6b4a0eabf557c1429241fcd0df677",
+      "print_file": "stl/04_esp32_carrier.stl",
+      "units": "mm",
+      "orientation": "Broad rear frame face down; PCB rails point upward.",
+      "support_caution": "Keep PCB grooves free of supports; inspect short bridges over the grooves.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -8.0,
+        -11.0,
+        2.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          46.0,
+          64.0,
+          11.0
+        ]
+      ],
+      "size_mm": [
+        46.0,
+        64.0,
+        11.0
+      ],
+      "material_group": "pale_gray",
+      "verification": {
+        "triangles": 5980,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 8475.706516825094,
+        "print_signed_volume_mm3": 8475.706459090692,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "04_esp32_carrier",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          219.99777221679688,
+          5.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            155.99777221679688,
+            5.0,
+            0.0
+          ],
+          [
+            219.99777221679688,
+            51.0,
+            11.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "05_board_clamp",
+      "source_file": "parts/05_board_clamp.stl",
+      "source_sha256": "7aaf15957a432be1fcd381ff7703bccf713a9b0fff4db5f7274ba91e5dd32275",
+      "print_file": "stl/05_board_clamp.stl",
+      "units": "mm",
+      "orientation": "Broad horizontal face down.",
+      "support_caution": "Normally no supports; retain calibrated hole and slot sizes.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        -13.0,
+        9.0,
+        -63.849998474121094
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          36.0,
+          8.0,
+          2.4000015258789062
+        ]
+      ],
+      "size_mm": [
+        36.0,
+        8.0,
+        2.4000015258789062
+      ],
+      "material_group": "pale_gray",
+      "verification": {
+        "triangles": 15956,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 659.6919578851652,
+        "print_signed_volume_mm3": 659.6919588480708,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "05_board_clamp",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          235.99777221679688,
+          5.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            227.99777221679688,
+            5.0,
+            0.0
+          ],
+          [
+            235.99777221679688,
+            41.0,
+            2.4000015258789062
+          ]
+        ]
+      }
+    },
+    {
+      "name": "06_optical_baffle",
+      "source_file": "parts/06_optical_baffle.stl",
+      "source_sha256": "ab371f584282c9baeb2c369486e016a266b23f557917136e43b2ac6b262e2232",
+      "print_file": "stl/06_optical_baffle.stl",
+      "units": "mm",
+      "orientation": "Broad front disc face down; posts or stem point upward.",
+      "support_caution": "Normally no supports; keep optical bore and screw holes clear. Remove optional blank parts before fitting real optics.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -10.803993225097656,
+        63.20000076293945,
+        32.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          40.39201354980469,
+          40.400001525878906,
+          21.0
+        ]
+      ],
+      "size_mm": [
+        40.39201354980469,
+        40.400001525878906,
+        21.0
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 5096,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 3859.894338661912,
+        "print_signed_volume_mm3": 3859.894340496505,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "06_optical_baffle",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          183.4000015258789,
+          5.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            143.0,
+            5.0,
+            0.0
+          ],
+          [
+            183.4000015258789,
+            45.39201354980469,
+            21.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "07_shutter",
+      "source_file": "parts/07_shutter.stl",
+      "source_sha256": "e9c20e376cddf95b0dde918902147d0e7e32cc1b82ca5a1f7d5488b3d40785e8",
+      "print_file": "stl/07_shutter.stl",
+      "units": "mm",
+      "orientation": "Control cap top face down; stem points upward.",
+      "support_caution": "Inspect the cap rim and small horizontal pin hole; avoid support material inside fits.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "translation_mm": [
+        74.0,
+        5.998814105987549,
+        89.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          12.0,
+          11.997628211975098,
+          11.0
+        ]
+      ],
+      "size_mm": [
+        12.0,
+        11.997628211975098,
+        11.0
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 14872,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 689.5901376890279,
+        "print_signed_volume_mm3": 689.5901312887937,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "07_shutter",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          80.39999961853027,
+          176.39999389648438,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            80.39999961853027,
+            176.39999389648438,
+            0.0
+          ],
+          [
+            92.39999961853027,
+            188.39762210845947,
+            11.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "08_shutter_pin",
+      "source_file": "parts/08_shutter_pin.stl",
+      "source_sha256": "8fe8aeab54f2ac4813e860b6ba0505a69319a69d98cb0c2210ea3f913e430949",
+      "print_file": "stl/08_shutter_pin.stl",
+      "units": "mm",
+      "orientation": "Pin axis Y horizontal; split barb bending in X remains in the layer plane.",
+      "support_caution": "Inspect the small barrel contact area and head overhang; use a removable brim and local supports if needed. Keep the barb slit clear and test retention with the shutter calibration coupon.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        70.0,
+        6.199999809265137,
+        -79.19999694824219
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          14.399999618530273,
+          1.8000030517578125
+        ]
+      ],
+      "size_mm": [
+        4.0,
+        14.399999618530273,
+        1.8000030517578125
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 3556,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 43.466476034477154,
+        "print_signed_volume_mm3": 43.466476269531064,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "08_shutter_pin",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          72.39999961853027,
+          176.39999389648438,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            58.0,
+            176.39999389648438,
+            0.0
+          ],
+          [
+            72.39999961853027,
+            180.39999389648438,
+            1.8000030517578125
+          ]
+        ]
+      }
+    },
+    {
+      "name": "09_rear_dial",
+      "source_file": "parts/09_rear_dial.stl",
+      "source_sha256": "8bb8589d601e9cc4fe62e6d816500776093cd29c4e36dad034abdaa9fe0c95fa",
+      "print_file": "stl/09_rear_dial.stl",
+      "units": "mm",
+      "orientation": "Control cap top face down; stem points upward.",
+      "support_caution": "Inspect the cap rim and small horizontal pin hole; avoid support material inside fits.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "translation_mm": [
+        -37.0,
+        19.99894142150879,
+        87.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20.0,
+          19.997882843017578,
+          6.8000030517578125
+        ]
+      ],
+      "size_mm": [
+        20.0,
+        19.997882843017578,
+        6.8000030517578125
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 29712,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 1288.2582403013967,
+        "print_signed_volume_mm3": 1288.2582437175508,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "09_rear_dial",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          5.0,
+          176.39999389648438,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            5.0,
+            176.39999389648438,
+            0.0
+          ],
+          [
+            25.0,
+            196.39787673950195,
+            6.8000030517578125
+          ]
+        ]
+      }
+    },
+    {
+      "name": "10_io_plate",
+      "source_file": "parts/10_io_plate.stl",
+      "source_sha256": "52724a5689beee7d895a6aaabcb9211dc9609a6ecc9fabc6f488da534ab34a9b",
+      "print_file": "stl/10_io_plate.stl",
+      "units": "mm",
+      "orientation": "Broad side face down; port opening remains vertical through the print.",
+      "support_caution": "Normally no supports; verify the actual connector and plug envelope before installation.",
+      "rotation_3x3": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        44.20000076293945,
+        6.699999809265137,
+        61.20000076293945
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          14.400001525878906,
+          27.400001525878906,
+          26.799999237060547
+        ]
+      ],
+      "size_mm": [
+        14.400001525878906,
+        27.400001525878906,
+        26.799999237060547
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 19260,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 2041.0105652716586,
+        "print_signed_volume_mm3": 2041.0106289863188,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "10_io_plate",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          169.79999542236328,
+          91.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            142.39999389648438,
+            91.0,
+            0.0
+          ],
+          [
+            169.79999542236328,
+            105.4000015258789,
+            26.799999237060547
+          ]
+        ]
+      }
+    },
+    {
+      "name": "12_lens_blank",
+      "source_file": "parts/12_lens_blank.stl",
+      "source_sha256": "9a68c1cbd61f566e58a8487f2ebafc013835d8d3cec813da0e555a96c41de458",
+      "print_file": "stl/12_lens_blank.stl",
+      "units": "mm",
+      "orientation": "Broad front disc face down; posts or stem point upward.",
+      "support_caution": "Normally no supports; keep optical bore and screw holes clear. Remove optional blank parts before fitting real optics.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -11.403874397277832,
+        62.599998474121094,
+        33.5
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          39.19225311279297,
+          39.19999694824219,
+          4.5
+        ]
+      ],
+      "size_mm": [
+        39.19225311279297,
+        39.19999694824219,
+        4.5
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 1892,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 2304.8250549482664,
+        "print_signed_volume_mm3": 2304.8251473115865,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "12_lens_blank",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          230.5999984741211,
+          5.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            191.4000015258789,
+            5.0,
+            0.0
+          ],
+          [
+            230.5999984741211,
+            44.19225311279297,
+            4.5
+          ]
+        ]
+      }
+    },
+    {
+      "name": "13_lens_blank_retainer",
+      "source_file": "parts/13_lens_blank_retainer.stl",
+      "source_sha256": "f4345bce3b8399ab530b7935e8d536e3165d15b40e2535f9b43e2ef47d799b7a",
+      "print_file": "stl/13_lens_blank_retainer.stl",
+      "units": "mm",
+      "orientation": "Broad front disc face down; posts or stem point upward.",
+      "support_caution": "Normally no supports; keep optical bore and screw holes clear. Remove optional blank parts before fitting real optics.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -22.501680374145508,
+        51.5,
+        29.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          16.996641159057617,
+          17.0,
+          1.2000007629394531
+        ]
+      ],
+      "size_mm": [
+        16.996641159057617,
+        17.0,
+        1.2000007629394531
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 1264,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 266.87719941995147,
+        "print_signed_volume_mm3": 266.8771994199538,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "13_lens_blank_retainer",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          50.0,
+          176.39999389648438,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            33.0,
+            176.39999389648438,
+            0.0
+          ],
+          [
+            50.0,
+            193.396635055542,
+            1.2000007629394531
+          ]
+        ]
+      }
+    },
+    {
+      "name": "14_dial_retainer",
+      "source_file": "parts/14_dial_retainer.stl",
+      "source_sha256": "28e18ab9fea9ca8d8f73e087b6e78a23ff38ddf1d5f40f54e8b1510ed8cc65d2",
+      "print_file": "stl/14_dial_retainer.stl",
+      "units": "mm",
+      "orientation": "Broad horizontal face down.",
+      "support_caution": "Normally no supports; retain calibrated hole and slot sizes.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        -42.5,
+        -5.500889301300049,
+        -79.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          9.0,
+          8.998220443725586,
+          1.1999969482421875
+        ]
+      ],
+      "size_mm": [
+        9.0,
+        8.998220443725586,
+        1.1999969482421875
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 1264,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 70.89316141707666,
+        "print_signed_volume_mm3": 70.89316198346867,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "14_dial_retainer",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          100.39999961853027,
+          176.39999389648438,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            100.39999961853027,
+            176.39999389648438,
+            0.0
+          ],
+          [
+            109.39999961853027,
+            185.39821434020996,
+            1.1999969482421875
+          ]
+        ]
+      }
+    },
+    {
+      "name": "15_shutter_return_flexure",
+      "source_file": "parts/15_shutter_return_flexure.stl",
+      "source_sha256": "ff4fca2272a7a823ad2cd40a25289e1328fecd648b22e331ae168779a21ee06d",
+      "print_file": "stl/15_shutter_return_flexure.stl",
+      "units": "mm",
+      "orientation": "Original positive X face down; flexure length Y and bending direction Z remain in the layer plane.",
+      "support_caution": "Keep the thin leaf free of supports. Inspect adhesion and use a removable brim if needed; validate elastic return with the shutter calibration coupon before assembly.",
+      "rotation_3x3": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -72.80000305175781,
+        1.2000000476837158,
+        -65.4000015258789
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          5.1999969482421875,
+          22.200000762939453,
+          6.650001525878906
+        ]
+      ],
+      "size_mm": [
+        5.1999969482421875,
+        22.200000762939453,
+        6.650001525878906
+      ],
+      "material_group": "pale_gray",
+      "verification": {
+        "triangles": 88,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 130.17914655827008,
+        "print_signed_volume_mm3": 130.1791487040537,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "15_shutter_return_flexure",
+        "rotation_z_degrees": 90,
+        "rotation_3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          97.20000076293945,
+          121.50321960449219,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            75.0,
+            121.50321960449219,
+            0.0
+          ],
+          [
+            97.20000076293945,
+            126.70321655273438,
+            6.650001525878906
+          ]
+        ]
+      }
+    },
+    {
+      "name": "17_camera_saddle",
+      "source_file": "parts/17_camera_saddle.stl",
+      "source_sha256": "3a3ad1a587bc316925d7c7c692e626fde45f5162f1b32f41ac2f987120a6bd50",
+      "print_file": "stl/17_camera_saddle.stl",
+      "units": "mm",
+      "orientation": "Largest exterior planar support face selected automatically.",
+      "support_caution": "Inspect the selected face, overhangs, fastening access and thin features in the slicer.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        -18.5,
+        26.399999618530273,
+        -33.79999923706055
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          25.0,
+          12.799999237060547,
+          8.900001525878906
+        ]
+      ],
+      "size_mm": [
+        25.0,
+        12.799999237060547,
+        8.900001525878906
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 3108,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 1147.3080226406698,
+        "print_signed_volume_mm3": 1147.3080226406735,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "17_camera_saddle",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          177.79999542236328,
+          91.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            177.79999542236328,
+            91.0,
+            0.0
+          ],
+          [
+            202.79999542236328,
+            103.79999923706055,
+            8.900001525878906
+          ]
+        ]
+      }
+    },
+    {
+      "name": "18_camera_clamp",
+      "source_file": "parts/18_camera_clamp.stl",
+      "source_sha256": "8661bd5b40beb39fb7e0b50b2c97a5091da2890ec67f2944acffc84f62372f1c",
+      "print_file": "stl/18_camera_clamp.stl",
+      "units": "mm",
+      "orientation": "Broad horizontal face down.",
+      "support_caution": "Normally no supports; retain calibrated hole and slot sizes.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        -19.299999237060547,
+        26.0,
+        -43.29999923706055
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          23.400001525878906,
+          6.200000762939453,
+          7.1985015869140625
+        ]
+      ],
+      "size_mm": [
+        23.400001525878906,
+        6.200000762939453,
+        7.1985015869140625
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 1868,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 592.9940947572208,
+        "print_signed_volume_mm3": 592.9940947572205,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "18_camera_clamp",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          210.79999542236328,
+          91.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            210.79999542236328,
+            91.0,
+            0.0
+          ],
+          [
+            234.1999969482422,
+            97.20000076293945,
+            7.1985015869140625
+          ]
+        ]
+      }
+    },
+    {
+      "name": "19_usb_retainer",
+      "source_file": "parts/19_usb_retainer.stl",
+      "source_sha256": "e85be4431ae0f0436aacbeeefb947c06b9c8a2c60cf6994c9beb7eb5166cf474",
+      "print_file": "stl/19_usb_retainer.stl",
+      "units": "mm",
+      "orientation": "Broad horizontal face down.",
+      "support_caution": "Normally no supports; retain calibrated hole and slot sizes.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        47.400001525878906,
+        5.300000190734863,
+        -35.099998474121094
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          24.599998474121094,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        4.0,
+        24.599998474121094,
+        3.0
+      ],
+      "material_group": "dark_gray",
+      "verification": {
+        "triangles": 1300,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 238.45091855406767,
+        "print_signed_volume_mm3": 238.4509062371967,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "19_usb_retainer",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          238.5999984741211,
+          5.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            238.5999984741211,
+            5.0,
+            0.0
+          ],
+          [
+            242.5999984741211,
+            29.599998474121094,
+            3.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "20_shutter_service_cover",
+      "source_file": "parts/20_shutter_service_cover.stl",
+      "source_sha256": "31ec0c2ddd6b831dfd018eeee81eaccb55f7eb8038c1fa80fa7794afa7facce8",
+      "print_file": "stl/20_shutter_service_cover.stl",
+      "units": "mm",
+      "orientation": "Original positive X planar side face down; the curved cap and bearing rise above the plate.",
+      "support_caution": "Use a removable brim for the small contact face. Inspect local supports beneath the bearing overhang and curved skin; keep the fastening bore clear.",
+      "rotation_3x3": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -73.0999984741211,
+        -17.095041275024414,
+        -65.4000015258789
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          8.800003051757812,
+          5.404958724975586,
+          9.0
+        ]
+      ],
+      "size_mm": [
+        8.800003051757812,
+        5.404958724975586,
+        9.0
+      ],
+      "material_group": "pale_gray",
+      "verification": {
+        "triangles": 4494,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 88.83825209508298,
+        "print_signed_volume_mm3": 88.83825209508409,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "20_shutter_service_cover",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          105.20000076293945,
+          121.50321960449219,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            105.20000076293945,
+            121.50321960449219,
+            0.0
+          ],
+          [
+            114.00000381469727,
+            126.90817832946777,
+            9.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "11_fit_coupon",
+      "source_file": "parts/11_fit_coupon.stl",
+      "source_sha256": "50bfc8da5c5b6e66d0e624ae3a3eff98c1b720315cbdc2839adff92a255c171d",
+      "print_file": "stl/11_fit_coupon.stl",
+      "units": "mm",
+      "orientation": "Original broad base face down; calibration features remain upright.",
+      "support_caution": "Print before the fitted parts. Measure the holes and flexure samples with the intended material and nozzle; retain the calibrated feature sizes.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        31.0,
+        12.0,
+        -0.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          62.0,
+          24.0,
+          3.200000047683716
+        ]
+      ],
+      "size_mm": [
+        62.0,
+        24.0,
+        3.200000047683716
+      ],
+      "material_group": "pale_gray",
+      "verification": {
+        "triangles": 9224,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 4398.290880877159,
+        "print_signed_volume_mm3": 4398.290837801935,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "11_fit_coupon",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          5.0,
+          121.50321960449219,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            5.0,
+            121.50321960449219,
+            0.0
+          ],
+          [
+            67.0,
+            145.5032196044922,
+            3.200000047683716
+          ]
+        ]
+      }
+    },
+    {
+      "name": "16_shutter_calibration",
+      "source_file": "parts/16_shutter_calibration.stl",
+      "source_sha256": "8651ab2dc6c84cbf3b075523176be02fd71de337492b94441eb2111ef8882ff9",
+      "print_file": "stl/16_shutter_calibration.stl",
+      "units": "mm",
+      "orientation": "Original broad base face down; calibration features remain upright.",
+      "support_caution": "Print before the fitted parts. Measure the holes and flexure samples with the intended material and nozzle; retain the calibrated feature sizes.",
+      "rotation_3x3": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        35.0,
+        12.5,
+        -0.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          41.79999923706055,
+          25.0,
+          8.399999618530273
+        ]
+      ],
+      "size_mm": [
+        41.79999923706055,
+        25.0,
+        8.399999618530273
+      ],
+      "material_group": "pale_gray",
+      "verification": {
+        "triangles": 3876,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "degenerate_triangles": 0,
+        "minimum_z_mm": 0.0,
+        "source_signed_volume_mm3": 1783.5735614323082,
+        "print_signed_volume_mm3": 1783.5735038414398,
+        "volume_preserved": true,
+        "rigid_rotation": true
+      },
+      "plate_placement": {
+        "name": "16_shutter_calibration",
+        "rotation_z_degrees": 0,
+        "rotation_3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          5.0,
+          153.5032196044922,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            5.0,
+            153.5032196044922,
+            0.0
+          ],
+          [
+            46.79999923706055,
+            178.5032196044922,
+            8.399999618530273
+          ]
+        ]
+      }
+    }
+  ],
+  "plates": [
+    {
+      "material_group": "pale_gray",
+      "parts": [
+        {
+          "name": "01_rib_cage",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            5.0,
+            5.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              5.0,
+              5.0,
+              0.0
+            ],
+            [
+              147.99777221679688,
+              113.50321960449219,
+              67.5
+            ]
+          ]
+        },
+        {
+          "name": "04_esp32_carrier",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            219.99777221679688,
+            5.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              155.99777221679688,
+              5.0,
+              0.0
+            ],
+            [
+              219.99777221679688,
+              51.0,
+              11.0
+            ]
+          ]
+        },
+        {
+          "name": "11_fit_coupon",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            5.0,
+            121.50321960449219,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              5.0,
+              121.50321960449219,
+              0.0
+            ],
+            [
+              67.0,
+              145.5032196044922,
+              3.200000047683716
+            ]
+          ]
+        },
+        {
+          "name": "16_shutter_calibration",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            5.0,
+            153.5032196044922,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              5.0,
+              153.5032196044922,
+              0.0
+            ],
+            [
+              46.79999923706055,
+              178.5032196044922,
+              8.399999618530273
+            ]
+          ]
+        },
+        {
+          "name": "05_board_clamp",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            235.99777221679688,
+            5.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              227.99777221679688,
+              5.0,
+              0.0
+            ],
+            [
+              235.99777221679688,
+              41.0,
+              2.4000015258789062
+            ]
+          ]
+        },
+        {
+          "name": "15_shutter_return_flexure",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            97.20000076293945,
+            121.50321960449219,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              75.0,
+              121.50321960449219,
+              0.0
+            ],
+            [
+              97.20000076293945,
+              126.70321655273438,
+              6.650001525878906
+            ]
+          ]
+        },
+        {
+          "name": "20_shutter_service_cover",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            105.20000076293945,
+            121.50321960449219,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              105.20000076293945,
+              121.50321960449219,
+              0.0
+            ],
+            [
+              114.00000381469727,
+              126.90817832946777,
+              9.0
+            ]
+          ]
+        }
+      ],
+      "file": "plate_01_pale_gray.3mf",
+      "verification": {
+        "unit_millimeter": true,
+        "all_parts_z0": true,
+        "within_plate_margin": true,
+        "xy_bounding_boxes_nonoverlapping": true,
+        "object_count": 7
+      }
+    },
+    {
+      "material_group": "dark_gray",
+      "parts": [
+        {
+          "name": "02_chassis",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            5.0,
+            5.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              5.0,
+              5.0,
+              0.0
+            ],
+            [
+              135.0,
+              83.0,
+              41.5
+            ]
+          ]
+        },
+        {
+          "name": "03_rear_cover",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            5.0,
+            91.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              5.0,
+              91.0,
+              0.0
+            ],
+            [
+              134.39999389648438,
+              168.39999389648438,
+              4.69999885559082
+            ]
+          ]
+        },
+        {
+          "name": "06_optical_baffle",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            183.4000015258789,
+            5.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              143.0,
+              5.0,
+              0.0
+            ],
+            [
+              183.4000015258789,
+              45.39201354980469,
+              21.0
+            ]
+          ]
+        },
+        {
+          "name": "12_lens_blank",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            230.5999984741211,
+            5.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              191.4000015258789,
+              5.0,
+              0.0
+            ],
+            [
+              230.5999984741211,
+              44.19225311279297,
+              4.5
+            ]
+          ]
+        },
+        {
+          "name": "10_io_plate",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            169.79999542236328,
+            91.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              142.39999389648438,
+              91.0,
+              0.0
+            ],
+            [
+              169.79999542236328,
+              105.4000015258789,
+              26.799999237060547
+            ]
+          ]
+        },
+        {
+          "name": "17_camera_saddle",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            177.79999542236328,
+            91.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              177.79999542236328,
+              91.0,
+              0.0
+            ],
+            [
+              202.79999542236328,
+              103.79999923706055,
+              8.900001525878906
+            ]
+          ]
+        },
+        {
+          "name": "19_usb_retainer",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            238.5999984741211,
+            5.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              238.5999984741211,
+              5.0,
+              0.0
+            ],
+            [
+              242.5999984741211,
+              29.599998474121094,
+              3.0
+            ]
+          ]
+        },
+        {
+          "name": "18_camera_clamp",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            210.79999542236328,
+            91.0,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              210.79999542236328,
+              91.0,
+              0.0
+            ],
+            [
+              234.1999969482422,
+              97.20000076293945,
+              7.1985015869140625
+            ]
+          ]
+        },
+        {
+          "name": "09_rear_dial",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            5.0,
+            176.39999389648438,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              5.0,
+              176.39999389648438,
+              0.0
+            ],
+            [
+              25.0,
+              196.39787673950195,
+              6.8000030517578125
+            ]
+          ]
+        },
+        {
+          "name": "13_lens_blank_retainer",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            50.0,
+            176.39999389648438,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              33.0,
+              176.39999389648438,
+              0.0
+            ],
+            [
+              50.0,
+              193.396635055542,
+              1.2000007629394531
+            ]
+          ]
+        },
+        {
+          "name": "08_shutter_pin",
+          "rotation_z_degrees": 90,
+          "rotation_3x3": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            72.39999961853027,
+            176.39999389648438,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              58.0,
+              176.39999389648438,
+              0.0
+            ],
+            [
+              72.39999961853027,
+              180.39999389648438,
+              1.8000030517578125
+            ]
+          ]
+        },
+        {
+          "name": "07_shutter",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            80.39999961853027,
+            176.39999389648438,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              80.39999961853027,
+              176.39999389648438,
+              0.0
+            ],
+            [
+              92.39999961853027,
+              188.39762210845947,
+              11.0
+            ]
+          ]
+        },
+        {
+          "name": "14_dial_retainer",
+          "rotation_z_degrees": 0,
+          "rotation_3x3": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            100.39999961853027,
+            176.39999389648438,
+            0.0
+          ],
+          "bounds_mm": [
+            [
+              100.39999961853027,
+              176.39999389648438,
+              0.0
+            ],
+            [
+              109.39999961853027,
+              185.39821434020996,
+              1.1999969482421875
+            ]
+          ]
+        }
+      ],
+      "file": "plate_02_dark_gray.3mf",
+      "verification": {
+        "unit_millimeter": true,
+        "all_parts_z0": true,
+        "within_plate_margin": true,
+        "xy_bounding_boxes_nonoverlapping": true,
+        "object_count": 13
+      }
+    }
+  ],
+  "geometry_verification_pass": true,
+  "slicer_profile_included": false,
+  "support_geometry_included": false,
+  "machine_gcode_included": false,
+  "physical_fit_verified": false,
+  "instructions": "Generic standards-based 3MF geometry in millimetres. Open in the slicer, select the actual printer/nozzle/material, add the indicated supports or brim, inspect toolpaths, then slice. Colours indicate suggested filament groups only and do not assign extruders. Print the fit coupon first."
+}
