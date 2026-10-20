@@ -1,0 +1,579 @@
+{
+  "føresetnader": {
+    "N": 200,
+    "vegg_mm": 2.0,
+    "klaring_per_side_mm": 0.5,
+    "kort_og_usb_kort": [
+      27,
+      42,
+      20
+    ],
+    "kort": [
+      27,
+      42,
+      7
+    ],
+    "batteri": [
+      34,
+      50,
+      6
+    ],
+    "kameramodul_breidd_hogd_djupn": [
+      10,
+      10,
+      8
+    ]
+  },
+  "resultat": {
+    "A2/runde-2/3d/01a-tvillingloep-sunburst/model.glb": {
+      "nedre_grense_utan_lommar": {
+        "minste_breidd_mm": 100,
+        "hogd_mm": 61,
+        "djupn_mm": 73,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9995,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                27,
+                42,
+                20
+              ],
+              "nedre_hjørne_mm": [
+                28.0,
+                6.0,
+                69.0
+              ]
+            },
+            {
+              "mål_mm": [
+                7,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                43.0,
+                5.0,
+                19.0
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                27.0,
+                6.0,
+                15.0
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": null
+        }
+      },
+      "med_kameralommar_ved_linsene": {
+        "minste_breidd_mm": 103,
+        "hogd_mm": 63,
+        "djupn_mm": 76,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9995,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                27,
+                42,
+                20
+              ],
+              "nedre_hjørne_mm": [
+                21.6,
+                7.2,
+                70.0
+              ]
+            },
+            {
+              "mål_mm": [
+                7,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                23.7,
+                5.1,
+                20.6
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                34.0,
+                6.2,
+                15.4
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": [
+            [
+              21.1,
+              54.6
+            ],
+            [
+              21.1,
+              22.7
+            ]
+          ]
+        },
+        "linseavstand_mm": 31.8
+      }
+    },
+    "A2/runde-2/3d/04-visir/model.glb": {
+      "nedre_grense_utan_lommar": {
+        "minste_breidd_mm": 100,
+        "hogd_mm": 66,
+        "djupn_mm": 73,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 1.0002,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                27,
+                42,
+                20
+              ],
+              "nedre_hjørne_mm": [
+                20.0,
+                12.0,
+                65.0
+              ]
+            },
+            {
+              "mål_mm": [
+                7,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                20.0,
+                12.0,
+                19.0
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                37.0,
+                11.0,
+                12.0
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": null
+        }
+      },
+      "med_kameralommar_ved_linsene": {
+        "minste_breidd_mm": 100,
+        "hogd_mm": 66,
+        "djupn_mm": 73,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 1.0002,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                27,
+                42,
+                20
+              ],
+              "nedre_hjørne_mm": [
+                20.0,
+                12.0,
+                65.0
+              ]
+            },
+            {
+              "mål_mm": [
+                7,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                20.0,
+                12.0,
+                19.0
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                37.0,
+                11.0,
+                12.0
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": [
+            [
+              28.5,
+              26.5
+            ],
+            [
+              28.5,
+              57.0
+            ]
+          ]
+        },
+        "linseavstand_mm": 30.4
+      }
+    },
+    "A2/runde-2/3d/02-eitt-vindauge/model.glb": {
+      "nedre_grense_utan_lommar": {
+        "minste_breidd_mm": 78,
+        "hogd_mm": 65,
+        "djupn_mm": 56,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9997,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                27,
+                20,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                11.0,
+                27.4,
+                14.9
+              ]
+            },
+            {
+              "mål_mm": [
+                27,
+                7,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                10.2,
+                7.1,
+                17.3
+              ]
+            },
+            {
+              "mål_mm": [
+                34,
+                6,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                9.5,
+                18.1,
+                14.2
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": null
+        }
+      },
+      "med_kameralommar_ved_linsene": {
+        "minste_breidd_mm": 84,
+        "hogd_mm": 70,
+        "djupn_mm": 60,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9997,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                20,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                8.5,
+                11.0,
+                17.7
+              ]
+            },
+            {
+              "mål_mm": [
+                27,
+                42,
+                7
+              ],
+              "nedre_hjørne_mm": [
+                13.5,
+                8.5,
+                68.1
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                32.0,
+                11.8,
+                12.7
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": [
+            [
+              29.4,
+              44.1
+            ],
+            [
+              29.4,
+              28.6
+            ]
+          ]
+        },
+        "linseavstand_mm": 15.5
+      }
+    },
+    "A2/runde-3/3d/01-eitt-bilete/model.glb": {
+      "nedre_grense_utan_lommar": {
+        "minste_breidd_mm": 98,
+        "hogd_mm": 66,
+        "djupn_mm": 65,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9998,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                20,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                27.4,
+                12.8,
+                45.1
+              ]
+            },
+            {
+              "mål_mm": [
+                7,
+                42,
+                27
+              ],
+              "nedre_hjørne_mm": [
+                28.4,
+                6.9,
+                13.7
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                15.7,
+                11.8,
+                31.4
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": null
+        }
+      },
+      "med_kameralommar_ved_linsene": {
+        "minste_breidd_mm": 100,
+        "hogd_mm": 67,
+        "djupn_mm": 66,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9998,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                20,
+                42,
+                27
+              ],
+              "nedre_hjørne_mm": [
+                23.0,
+                9.0,
+                64.0
+              ]
+            },
+            {
+              "mål_mm": [
+                7,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                17.0,
+                11.0,
+                19.0
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                32.0,
+                10.0,
+                11.0
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": [
+            [
+              29.0,
+              55.0
+            ],
+            [
+              29.0,
+              29.0
+            ]
+          ]
+        },
+        "linseavstand_mm": 26.2
+      }
+    },
+    "A2/runde-3/3d/04-brei-basis-eitt-bilete/model.glb": {
+      "nedre_grense_utan_lommar": {
+        "minste_breidd_mm": 100,
+        "hogd_mm": 68,
+        "djupn_mm": 66,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9996,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                20,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                28.0,
+                13.0,
+                23.0
+              ]
+            },
+            {
+              "mål_mm": [
+                27,
+                42,
+                7
+              ],
+              "nedre_hjørne_mm": [
+                19.0,
+                9.0,
+                82.0
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                19.0,
+                14.0,
+                17.0
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": null
+        }
+      },
+      "med_kameralommar_ved_linsene": {
+        "minste_breidd_mm": 108,
+        "hogd_mm": 73,
+        "djupn_mm": 71,
+        "monoton_rundt_svaret": true,
+        "odde_kolonnar": 0,
+        "volum_voksel_mot_mesh": 0.9996,
+        "plassering": {
+          "boksar": [
+            {
+              "mål_mm": [
+                27,
+                42,
+                20
+              ],
+              "nedre_hjørne_mm": [
+                22.6,
+                12.9,
+                77.7
+              ]
+            },
+            {
+              "mål_mm": [
+                7,
+                27,
+                42
+              ],
+              "nedre_hjørne_mm": [
+                18.3,
+                19.4,
+                28.0
+              ]
+            },
+            {
+              "mål_mm": [
+                6,
+                34,
+                50
+              ],
+              "nedre_hjørne_mm": [
+                34.5,
+                9.7,
+                12.9
+              ]
+            }
+          ],
+          "linsesentrum_yz_mm": [
+            [
+              31.3,
+              68.6
+            ],
+            [
+              32.4,
+              21.1
+            ]
+          ]
+        },
+        "linseavstand_mm": 47.7
+      }
+    }
+  }
+}
