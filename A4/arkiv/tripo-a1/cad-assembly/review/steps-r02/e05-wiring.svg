@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1300" viewBox="0 0 1800 1300"><rect width="1800" height="1300" fill="white"/>
+<rect x="160" y="220" width="640" height="790" rx="24" fill="#f4f5f5" stroke="#17191b" stroke-width="5"/>
+<text x="480" y="311.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="44" text-anchor="middle">ESP32-CAM</text>
+<rect x="300" y="480" width="410" height="110" rx="12" fill="white" stroke="#17191b" stroke-width="4"/>
+<text x="450" y="545.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="40" text-anchor="middle">GPIO13</text>
+<ellipse cx="662.0" cy="535.0" rx="17.0" ry="17.0" fill="#b95c24" stroke="#17191b" stroke-width="2"/>
+<rect x="300" y="770" width="410" height="110" rx="12" fill="white" stroke="#17191b" stroke-width="4"/>
+<text x="450" y="835.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="40" text-anchor="middle">GND</text>
+<ellipse cx="662.0" cy="825.0" rx="17.0" ry="17.0" fill="#17191b" stroke="#17191b" stroke-width="2"/>
+<polygon points="1242.61,689.00 1296.31,720.00 1296.31,698.30 1242.61,667.30" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1296.31,720.00 1274.83,732.40 1274.83,710.70 1296.31,698.30" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1242.61,667.30 1296.31,698.30 1274.83,710.70 1221.14,679.70" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1221.14,701.40 1274.83,732.40 1274.83,710.70 1221.14,679.70" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1135.23,751.00 1188.92,782.00 1188.92,760.30 1135.23,729.30" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1188.92,782.00 1167.44,794.40 1167.44,772.70 1188.92,760.30" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1135.23,729.30 1188.92,760.30 1167.44,772.70 1113.75,741.70" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1113.75,763.40 1167.44,794.40 1167.44,772.70 1113.75,741.70" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1511.08,844.00 1564.77,875.00 1564.77,853.30 1511.08,822.30" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1564.77,875.00 1543.30,887.40 1543.30,865.70 1564.77,853.30" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1511.08,822.30 1564.77,853.30 1543.30,865.70 1489.60,834.70" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1489.60,856.40 1543.30,887.40 1543.30,865.70 1489.60,834.70" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1403.69,906.00 1457.39,937.00 1457.39,915.30 1403.69,884.30" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1457.39,937.00 1435.91,949.40 1435.91,927.70 1457.39,915.30" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1403.69,884.30 1457.39,915.30 1435.91,927.70 1382.22,896.70" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1382.22,918.40 1435.91,949.40 1435.91,927.70 1382.22,896.70" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1350.00,720.00 1511.08,813.00 1511.08,704.50 1350.00,611.50" fill="#aab1b6" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1511.08,813.00 1350.00,906.00 1350.00,797.50 1511.08,704.50" fill="#aeb4b7" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1350.00,611.50 1511.08,704.50 1350.00,797.50 1188.92,704.50" fill="#d7dcdf" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1188.92,813.00 1350.00,906.00 1350.00,797.50 1188.92,704.50" fill="#aab1b6" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="1350.0" cy="682.8" rx="32.0" ry="20.0" fill="#5d666b" stroke="#17191b" stroke-width="3"/>
+<polyline points="662.00,535.00 940.00,535.00 1050.00,700.00 1151.33,751.00" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="662.00,535.00 940.00,535.00 1050.00,700.00 1151.33,751.00" fill="none" stroke="#b95c24" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="662.00,825.00 940.00,825.00 1110.00,930.00 1419.80,906.00" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="662.00,825.00 940.00,825.00 1110.00,930.00 1419.80,906.00" fill="none" stroke="#17191b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1091.33377324" y="706.5" fill="#b95c24" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="38" text-anchor="start">A</text>
+<text x="1449.80164724" y="951.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="38" text-anchor="start">B</text>
+<text x="1350" y="571.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="44" text-anchor="middle">E3</text>
+<text x="1350" y="1042.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="45" text-anchor="middle">A ≠ B</text>
+<text x="875" y="1178.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="400" font-size="30" text-anchor="middle">Funksjon, ikkje fysisk pinneplassering</text>
+</svg>

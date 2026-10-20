@@ -1,0 +1,2124 @@
+{
+  "project": "Entropi",
+  "canonical_directory": "A4",
+  "current_version": "v05",
+  "base_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6",
+  "legacy_files": [
+    {
+      "from": "entropi/images/a_sketch_hero.json",
+      "to": "A4/arkiv/entropi-tripo/images/a_sketch_hero.json",
+      "git_blob_sha": "d9f61997cf3e909473a6c96893df34d76c7f2e17",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/a_sketch_hero_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/a_sketch_hero_generated_image_url.png",
+      "git_blob_sha": "f9f558bfe339f462efe43f61bcc96072a5924755",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/b_spaghettification.json",
+      "to": "A4/arkiv/entropi-tripo/images/b_spaghettification.json",
+      "git_blob_sha": "f83f9ce500b54e32aa0efa7d9771f9b2553c8123",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/b_spaghettification_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/b_spaghettification_generated_image_url.png",
+      "git_blob_sha": "21628863c8d1c80ddf5c0d0f8f3048f4ebce6b0e",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/c_gravity_well.json",
+      "to": "A4/arkiv/entropi-tripo/images/c_gravity_well.json",
+      "git_blob_sha": "955834a4d4078982928a7f433a098f8d181da03d",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/c_gravity_well_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/c_gravity_well_generated_image_url.png",
+      "git_blob_sha": "d40e4a4a49ea2f9c9d4ad9e8ff5f387a8a968b2d",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/cal_banana_pro.json",
+      "to": "A4/arkiv/entropi-tripo/images/cal_banana_pro.json",
+      "git_blob_sha": "a8872d34579dd391e994e1d45054abf5c60a49a8",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/cal_banana_pro_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/cal_banana_pro_generated_image_url.png",
+      "git_blob_sha": "c0452f5094c9a5ecb1a4b088fe82c6ea1f6b506f",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/d_fusion_refs.json",
+      "to": "A4/arkiv/entropi-tripo/images/d_fusion_refs.json",
+      "git_blob_sha": "a5d39318fdd195110c5ecef758e6f2b360cab8cd",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/d_fusion_refs_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/d_fusion_refs_generated_image_url.png",
+      "git_blob_sha": "090d6065e4ecead4cedacf4b402b1d03e7bddd02",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/f_light_gradient.json",
+      "to": "A4/arkiv/entropi-tripo/images/f_light_gradient.json",
+      "git_blob_sha": "e05328ef64c0f7dfb610438cb620253a1d635e5a",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/f_light_gradient_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/f_light_gradient_generated_image_url.png",
+      "git_blob_sha": "08cc9e5a115ff42a28c039c438723ab0fb0deac5",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/g_hero.json",
+      "to": "A4/arkiv/entropi-tripo/images/g_hero.json",
+      "git_blob_sha": "77f42dd2a4368dd083c0cea34e472d2eab7886cb",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/g_hero_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/g_hero_generated_image_url.png",
+      "git_blob_sha": "9c4b301cfd071227400616cda6d7ed04c1af1102",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/g_to3d.json",
+      "to": "A4/arkiv/entropi-tripo/images/g_to3d.json",
+      "git_blob_sha": "e6f04e52f72be690477a3c36af38701eba1f174c",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/g_to3d_generated_image_url.png",
+      "to": "A4/arkiv/entropi-tripo/images/g_to3d_generated_image_url.png",
+      "git_blob_sha": "c507a22c1d9e90de1b4345babdd22163298800ce",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/images/kontaktark.jpg",
+      "to": "A4/arkiv/entropi-tripo/images/kontaktark.jpg",
+      "git_blob_sha": "f9167b088487de07cfe9360a3587b4d363022e1c",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/input/ref_lens.png",
+      "to": "A4/arkiv/entropi-tripo/input/ref_lens.png",
+      "git_blob_sha": "74a115f2ab426709e62ada17009cb545eaeffde0",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/input/ref_open_mount.png",
+      "to": "A4/arkiv/entropi-tripo/input/ref_open_mount.png",
+      "git_blob_sha": "9ca5456e0593b09b07a5ffe3513f30bb5e252a06",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/input/skisse.jpg",
+      "to": "A4/arkiv/entropi-tripo/input/skisse.jpg",
+      "git_blob_sha": "180a773d92aedf5b7454870fbdb95eec2e6d7144",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/jury.json",
+      "to": "A4/arkiv/entropi-tripo/jury.json",
+      "git_blob_sha": "13811f3a7d16d69bdf5d412744d72c40db5fce6b",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/lens_check.py",
+      "to": "A4/arkiv/entropi-tripo/lens_check.py",
+      "git_blob_sha": "e0188a6b4e84fd9af2f0e075e940bac6734ca1ca",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/models/m_hero.json",
+      "to": "A4/arkiv/entropi-tripo/models/m_hero.json",
+      "git_blob_sha": "42bf6eb3b05a95acf074e249d05b3c0c0f3b2a4b",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/models/m_hero_mesh_qa.json",
+      "to": "A4/arkiv/entropi-tripo/models/m_hero_mesh_qa.json",
+      "git_blob_sha": "ff87dc877e505dca72a35d1266e19d08377a937e",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/models/m_hero_model_url.glb",
+      "to": "A4/arkiv/entropi-tripo/models/m_hero_model_url.glb",
+      "git_blob_sha": "0feade05a1640166f4df5664699db3900fd2783f",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/models/m_hero_print_120mm.stl",
+      "to": "A4/arkiv/entropi-tripo/models/m_hero_print_120mm.stl",
+      "git_blob_sha": "48517f026c9172c56e7e5217bcaa110d1f548233",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/models/m_hero_rendered_image_url.webp",
+      "to": "A4/arkiv/entropi-tripo/models/m_hero_rendered_image_url.webp",
+      "git_blob_sha": "282151eda4fb3383f1cae434a854b44df24adf71",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/models/m_hero_web.glb",
+      "to": "A4/arkiv/entropi-tripo/models/m_hero_web.glb",
+      "git_blob_sha": "3ffe22e03523d7a56bb4afff62cea76c73863bbd",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/a_sketch_hero.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/a_sketch_hero.json",
+      "git_blob_sha": "fb80d6c92a635c4f5e89c986abc1ac2ff0a3ed2b",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/b_spaghettification.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/b_spaghettification.json",
+      "git_blob_sha": "66f1117af928e3853d9aea0af90c51ff39f6ed40",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/c_gravity_well.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/c_gravity_well.json",
+      "git_blob_sha": "fdff2338124fe88f743b50d3124d2a3a5e1bf3e1",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/d_fusion_refs.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/d_fusion_refs.json",
+      "git_blob_sha": "b99d7f66a8a5a073107d95a82591450e6f18e88d",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/e_seedream.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/e_seedream.json",
+      "git_blob_sha": "7b40d79c6fb036d221b384e9e1f5e510bac53087",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/f_light_gradient.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/f_light_gradient.json",
+      "git_blob_sha": "6428ab38ab75fc91b33f3b0c1795a5fe9083bae6",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/g_hero.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/g_hero.json",
+      "git_blob_sha": "8204ac31f485ef525f4940d8fb55f1588f65d6e5",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/g_to3d.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/g_to3d.json",
+      "git_blob_sha": "97101f4a960b7ea2f203aacf5ed4f09d7decf14d",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/payloads/m_hero.json",
+      "to": "A4/arkiv/entropi-tripo/payloads/m_hero.json",
+      "git_blob_sha": "a117524d975cbb355fe31352dd7f31bc7110443f",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/print_stl.py",
+      "to": "A4/arkiv/entropi-tripo/print_stl.py",
+      "git_blob_sha": "47e04eac0453da0e10a64a53fd5e6f0295c5ed2e",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_clay_back34.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_clay_back34.png",
+      "git_blob_sha": "feb9ac7786190c616a4ab94ada94fcc2b9554567",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_clay_front.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_clay_front.png",
+      "git_blob_sha": "82454e100f78e69d9d164229085cdc59a84843d8",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_clay_front34.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_clay_front34.png",
+      "git_blob_sha": "fd71c1e0b1113445c650d0622d388b258f0ce1fd",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_clay_left.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_clay_left.png",
+      "git_blob_sha": "06bc8f964012259d5014b131e42b685413aecf8c",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_clay_right.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_clay_right.png",
+      "git_blob_sha": "dc328b0bcd6c10402d73e6478a9dfc70358979b5",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_clay_sheet.jpg",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_clay_sheet.jpg",
+      "git_blob_sha": "3ed1fc8592fcafce4f48fbffcd1882017ab0c54e",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_clay_top.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_clay_top.png",
+      "git_blob_sha": "f0c7ad4e55029f02766ebe1be4d751ed68f23e0e",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_depth_front.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_depth_front.png",
+      "git_blob_sha": "26993fbdc9ff8edcd0bf78c58d7775213d472d15",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_depth_grid.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_depth_grid.png",
+      "git_blob_sha": "7fe31e3ab207824e7f01ef87a119ee8cc52b059b",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_print_clay_back34.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_print_clay_back34.png",
+      "git_blob_sha": "66f9d05dcf61f9b95f0f1ea3f3f9a71a60a32d5c",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_print_clay_front.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_print_clay_front.png",
+      "git_blob_sha": "87800a62ca8632fe1160e2911f840354d8a1d4c1",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_print_clay_front34.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_print_clay_front34.png",
+      "git_blob_sha": "3e6aee3a11920dc71f1ec4eb3fc478452fed7ac7",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_print_clay_left.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_print_clay_left.png",
+      "git_blob_sha": "47ae95244897997f3696127d9fb2a4eeda8e4597",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_print_clay_right.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_print_clay_right.png",
+      "git_blob_sha": "6705e931e74c9f30b82b4c3533292843c2540862",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_print_clay_sheet.jpg",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_print_clay_sheet.jpg",
+      "git_blob_sha": "71393032c91f0f149d49fb92dcc9d54144b9c0ad",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_print_clay_top.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_print_clay_top.png",
+      "git_blob_sha": "628a4e6da7f108f952d7b82c41c0a06eb106b699",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_tex_back34.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_tex_back34.png",
+      "git_blob_sha": "7b88451da2e2511ad24976f3a4b4635378fe0885",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_tex_front.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_tex_front.png",
+      "git_blob_sha": "25a3895689eef27f673236b02989484887bff0e1",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_tex_front34.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_tex_front34.png",
+      "git_blob_sha": "e4ba10be734c4e48739ef548c69be85249587a8d",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_tex_left.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_tex_left.png",
+      "git_blob_sha": "e8d486baf3c780bff9d7869bdcc6a874bd60e1d4",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_tex_right.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_tex_right.png",
+      "git_blob_sha": "c42de5bdb4a80e50495bbe0bafdbd1c467aba62e",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_tex_sheet.jpg",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_tex_sheet.jpg",
+      "git_blob_sha": "cbcbbe1cc867bfdf583b71f315b60881c5e21541",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/renders/m_hero_tex_top.png",
+      "to": "A4/arkiv/entropi-tripo/renders/m_hero_tex_top.png",
+      "git_blob_sha": "77f08f1ee678725143a7777b4114f2616120eab9",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "entropi/tripo.py",
+      "to": "A4/arkiv/entropi-tripo/tripo.py",
+      "git_blob_sha": "c806fd646f1d8f6e42bccbd728b637ec4c1ee554",
+      "source_commit": "3758d9d55649beab09bb2696449d773b72dfc72f"
+    },
+    {
+      "from": "A1/LES-MEG.txt",
+      "to": "A4/arkiv/tripo-a1/LES-MEG.txt",
+      "git_blob_sha": "79acd74cb8bc648c8a7826b31aa0db0b6d714939",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/README.md",
+      "to": "A4/arkiv/tripo-a1/README.md",
+      "git_blob_sha": "c162feab6ced69468d3ce014e7c865c47dd6a2ed",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/A1_Analytic_Mechanism.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/A1_Analytic_Mechanism.step",
+      "git_blob_sha": "96701a4e1e018b874775539924225fd046a0f5f4",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/README.md",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/README.md",
+      "git_blob_sha": "fe740f882e4ddbb18772dbefc1d1135904ddb977",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/bill-of-materials.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/bill-of-materials.json",
+      "git_blob_sha": "76ef480db1bcbeac26c6f17e747329d635e6a7ba",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/build_assembly.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/build_assembly.py",
+      "git_blob_sha": "a8e08e10311cbbaa9380959638f47bb576ef602b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/build_guide_r02.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/build_guide_r02.py",
+      "git_blob_sha": "99570dd728ac6fb1b8f80fd1fcbb87596e8dc206",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/build_manual.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/build_manual.py",
+      "git_blob_sha": "41e0ff1140a02b759765b303f54b931cafb53c58",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/cache_source.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/cache_source.py",
+      "git_blob_sha": "c993cc8db0d0d62be282bdfb8116a84792a4426c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/electronics_figures_r02.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/electronics_figures_r02.py",
+      "git_blob_sha": "0451af080466e112ba55ba0ebc76712606ab83f4",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/export_review.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/export_review.py",
+      "git_blob_sha": "d6bc2c477c498f27afe66e6b6b462e741e3d52a2",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/mechanical_steps_r02.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/mechanical_steps_r02.py",
+      "git_blob_sha": "1aa5d21b3d0f0d53a9971fbbbf90f28c02ebf504",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/parameters.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/parameters.json",
+      "git_blob_sha": "96a7f7abb606b2402ec98177e27af3b79429f6d7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/requirements-manual.txt",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/requirements-manual.txt",
+      "git_blob_sha": "cd8df9fa83c356e5b795be0a62ffcd7da03da5a7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/requirements.txt",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/requirements.txt",
+      "git_blob_sha": "cc99c233faff3a468f7f92eb248905fea963ad6b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/shutter_module.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/shutter_module.py",
+      "git_blob_sha": "758d680f7b72fa2de092346af57d9b713e8d7af1",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/verify_assembly.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/verify_assembly.py",
+      "git_blob_sha": "f18b840bb175b9515a9aebade7badb2d4b4232db",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/verify_firmware_r02.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/verify_firmware_r02.py",
+      "git_blob_sha": "a02e0206d29018a334ecc968d13b16548bb18119",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/verify_slicing.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/verify_slicing.py",
+      "git_blob_sha": "f6281d975adee86a462fbe0e204301594144329b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/cad/verify_walls.py",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/cad/verify_walls.py",
+      "git_blob_sha": "30e6acd5845c1d4c5f1af76559d44c088e34d839",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/firmware/A1_Bench_Camera/A1_Bench_Camera.ino",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/firmware/A1_Bench_Camera/A1_Bench_Camera.ino",
+      "git_blob_sha": "85368284fa4e6c5b6f13a76e8a681b3ba067198b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/firmware/README.md",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/firmware/README.md",
+      "git_blob_sha": "fe2708a936ef1b945d7ae444fe341fe4e817798c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/manifest.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/manifest.json",
+      "git_blob_sha": "dabcdd4f492e1616e36ca23c1265e88414793fdd",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/03_esp32_carrier.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/03_esp32_carrier.step",
+      "git_blob_sha": "a98c9be229e60bc8e539f2639c50b6012c857ee3",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/04_optical_bezel.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/04_optical_bezel.step",
+      "git_blob_sha": "2633527df703c6844fbb86c3dadfaa6e44bb518a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/05_lock_1.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/05_lock_1.step",
+      "git_blob_sha": "6d8bacd8c8a8425c79f56f2e2eac142e897e6153",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/05_lock_2.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/05_lock_2.step",
+      "git_blob_sha": "aafab1684f249cd7f48ca419320ba710ab9eb64e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/05_lock_3.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/05_lock_3.step",
+      "git_blob_sha": "2c301877e715ef10a755f3c06508f7747e677549",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/05_lock_4.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/05_lock_4.step",
+      "git_blob_sha": "759c82249d54b361a74249911f6e8f5887b826b8",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/06_lock_tool.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/06_lock_tool.step",
+      "git_blob_sha": "848d852db51a8498eb537fa289640c542225bd5b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/07_shutter_stem.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/07_shutter_stem.step",
+      "git_blob_sha": "4e711af9a9e5be56fc6bccc64bad8dba966c4650",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/08_shutter_retainer.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/08_shutter_retainer.step",
+      "git_blob_sha": "dc875374a7bd33af9559b58837e122019ec6fa7a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/09_camera_keeper.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/09_camera_keeper.step",
+      "git_blob_sha": "44d27a3cc9b401d4870beb018687d9f8468df220",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/parts/test_lock_socket.step",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/parts/test_lock_socket.step",
+      "git_blob_sha": "3554d64176968ed71651a4bef6be7046cc5e6ced",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/01_outer_shell.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/01_outer_shell.3mf",
+      "git_blob_sha": "df3f541dd38844bc22a7bc2056304c19436e3a08",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/02_native_rear_cover.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/02_native_rear_cover.3mf",
+      "git_blob_sha": "e4f14cae6ad2f9105b3c7a8e424b0be0fcf3836b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/03_esp32_carrier.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/03_esp32_carrier.3mf",
+      "git_blob_sha": "3e4f7652544e964dd54b30a54ebcc2174406645d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/04_optical_bezel.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/04_optical_bezel.3mf",
+      "git_blob_sha": "afaedd58d2beddef014617a94a72aa301584fba6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/05_lock_1.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/05_lock_1.3mf",
+      "git_blob_sha": "f4912dfcae6254847791f88c381c215d581fcdcc",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/05_lock_2.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/05_lock_2.3mf",
+      "git_blob_sha": "df00668520319955ecb534239e4290182a1084ec",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/05_lock_3.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/05_lock_3.3mf",
+      "git_blob_sha": "be478b8a5b5146b1c1c3beadb460ed17c06243c4",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/05_lock_4.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/05_lock_4.3mf",
+      "git_blob_sha": "6212954613823f04525efda77a099908f0541bb7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/06_lock_tool.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/06_lock_tool.3mf",
+      "git_blob_sha": "2ac73abeca082c2b0b12489247bd6cc97f12c980",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/07_shutter.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/07_shutter.3mf",
+      "git_blob_sha": "38120436743472e0152037a0e08fea12912c8907",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/08_shutter_retainer.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/08_shutter_retainer.3mf",
+      "git_blob_sha": "405ca3f0d6865866ab0d9b20fca5d5a8d5577bb3",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/09_camera_keeper.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/09_camera_keeper.3mf",
+      "git_blob_sha": "c3a97acf459c3a3142a29f507fea56b0630ac1f6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/A1-plate-01.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/A1-plate-01.3mf",
+      "git_blob_sha": "0addeb85a19517f77c55165c22d3db2a8233cd15",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/A1-plate-02.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/A1-plate-02.3mf",
+      "git_blob_sha": "dc8b17830515cbf20602d839246a2f8ce343fd6d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/generic-test-PLA-0.4mm-0.2mm.ini",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/generic-test-PLA-0.4mm-0.2mm.ini",
+      "git_blob_sha": "2502d9f39f68e3660e33e74c67540ae337097499",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/print/test_lock_socket.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/print/test_lock_socket.3mf",
+      "git_blob_sha": "d9658525d1e3d8a57019aaece0e67e6f969f6e91",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/release-info.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/release-info.json",
+      "git_blob_sha": "6db88dbf8e40a585b56a5b7cacd787efc5df18db",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-Byggjesteg-R02-sider.zip",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-Byggjesteg-R02-sider.zip",
+      "git_blob_sha": "a491ea5283188df053e53097023e2c7e9624c59e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-Byggjesteg-R02.pdf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-Byggjesteg-R02.pdf",
+      "git_blob_sha": "09e1fd3160f3f7091fc832abefff1df1505d351a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-Montering-R01.pdf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-Montering-R01.pdf",
+      "git_blob_sha": "6210469a359fe2df01a63ebe5e3b5980ed033799",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-assembled.3mf",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-assembled.3mf",
+      "git_blob_sha": "5d4d7ec590060b53f1991cb5cef6b67996894ecc",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-assembled.glb",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-assembled.glb",
+      "git_blob_sha": "f9729c9db82ad1f145e9a5b37eb3f895d653be6a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-assembled.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-assembled.png",
+      "git_blob_sha": "9c68d25a1246bb81e34f0511e1baf5765394253d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-carrier-detail.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-carrier-detail.png",
+      "git_blob_sha": "0bc13a0ba860761decade36d9ad6131dea0325af",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-exploded-lines.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-exploded-lines.png",
+      "git_blob_sha": "5bef1038093890b6702e085c7f36d68fe1d7cdd9",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-exploded.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-exploded.png",
+      "git_blob_sha": "1f6d5f8c1c98b0730ad6f3e72e710dc70071c508",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/A1-shutter-detail.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/A1-shutter-detail.png",
+      "git_blob_sha": "bf966e5bcdadacffa2d36a3067e54c0eb58a765f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/Byggjesteg-R02-bilete.md",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/Byggjesteg-R02-bilete.md",
+      "git_blob_sha": "62d80a805350c7ae097c42b2dfc52b8e480cd22d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-01.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-01.png",
+      "git_blob_sha": "6e8eae91824dcb1846cbfef23aac3e9852124341",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-02.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-02.png",
+      "git_blob_sha": "d47b6d232cfd3b40044d40fc4713f5d26efe4bbd",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-03.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-03.png",
+      "git_blob_sha": "c20e9bc920c08bf822b69033380f9d2c684ace64",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-04.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-04.png",
+      "git_blob_sha": "47c1ccb289a8fe30ba9038376ef1c1a17c7e3fc8",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-05.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-05.png",
+      "git_blob_sha": "de0dacabd41c101a6060be9bec9397c1f11ba95d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-06.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-06.png",
+      "git_blob_sha": "71c0d193f8ef713d47b01c4175c6e888a7b00996",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-07.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-07.png",
+      "git_blob_sha": "b21c452fb1d571fa9e7d477db3bfa14b7b0be54d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-08.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-08.png",
+      "git_blob_sha": "61169773b18b67f1b59c5cc1206749ae5c2fc5af",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-09.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-09.png",
+      "git_blob_sha": "392d2b1e810a0913ba70d10988bc34831bc3a4be",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-10.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-10.png",
+      "git_blob_sha": "a4b9338ab80a399d1ba501e4396caf35f05ec21a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-11.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-11.png",
+      "git_blob_sha": "01c0d17773b2615b356aa89dd1eccc793d1e8f2c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-12.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-12.png",
+      "git_blob_sha": "871f27108f6deeb6313844089a89de7a47323153",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-13.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-13.png",
+      "git_blob_sha": "5ad1f55c208490dc0eada112291dcce320dbdd2f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-14.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-14.png",
+      "git_blob_sha": "b9f7e9c0d9af3a0999478c2308eda477f584d94e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-15.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-15.png",
+      "git_blob_sha": "71462487a20300467463f490410dc0dc0bc89dbb",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-16.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-16.png",
+      "git_blob_sha": "a0dadbc018667321ff3ed61ed69ea4f896ade87b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-17.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-17.png",
+      "git_blob_sha": "addd482f44db6d98abc28304dd2e0d821b7df8c7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-18.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-18.png",
+      "git_blob_sha": "4d8b99449c1c70ef85475586af09accc352876dc",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-19.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-19.png",
+      "git_blob_sha": "607c2b37fddb5323b6b62fc3916158831839d140",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-20.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-20.png",
+      "git_blob_sha": "7c1d244df086cc3bf6409391683cc7a742349236",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-21.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-21.png",
+      "git_blob_sha": "e0bd5eef66926f7a243d3ee315ce475a4bc1b371",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-22.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-22.png",
+      "git_blob_sha": "1262dcf02a8bad34538947687b57b9cbd2eed3de",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-23.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-23.png",
+      "git_blob_sha": "f0a99f6add06989a925879b61f07c2bd270b566e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-24.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-24.png",
+      "git_blob_sha": "520b8b970922010bd27e7fbfca8dcb64eca62b4c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-25.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-25.png",
+      "git_blob_sha": "e2955990b4a03da176d738ad9223c387c44b9a86",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-26.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-26.png",
+      "git_blob_sha": "3ae80f270b5880f3475d8d58254c495f4417e3ac",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-27.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-27.png",
+      "git_blob_sha": "3620dd0c87819fe968072daa5d4c142a7d9a1ca9",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/pages-r02/page-28.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/pages-r02/page-28.png",
+      "git_blob_sha": "46d78fcbe8f5ba4130c7710358b7f719cd7c7d8d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e01-stack.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e01-stack.png",
+      "git_blob_sha": "5345428ed30b5c9e01c107f1392d839785de4354",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e01-stack.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e01-stack.svg",
+      "git_blob_sha": "1efe22f42e2aba65fb8072dba38413c485c6aa6f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e02-usb.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e02-usb.png",
+      "git_blob_sha": "5151f74a68b57ac1fda4b2144a284c5c610e20d4",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e02-usb.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e02-usb.svg",
+      "git_blob_sha": "a7b90c6c6c9958a46713069f2139cc698ce59e70",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e03-switch-test.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e03-switch-test.png",
+      "git_blob_sha": "e1a403fb35b5101b386cb4923c9358c146f9e238",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e03-switch-test.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e03-switch-test.svg",
+      "git_blob_sha": "27a9950abbda78ec213c5eceadb7daea5781bd25",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e04-schematic.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e04-schematic.png",
+      "git_blob_sha": "a24d8b6ad019954d90ff2aeecc15d3072233cec3",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e04-schematic.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e04-schematic.svg",
+      "git_blob_sha": "8c59b891c1b10d2b8fa163b155cb64e25d3e0fd3",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e05-wiring.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e05-wiring.png",
+      "git_blob_sha": "e821617f5002ba64c9733640a516b17cb7971f2c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e05-wiring.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e05-wiring.svg",
+      "git_blob_sha": "4a98dbc5234ddbced674456cb1f6050ee687829d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e06-bench.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e06-bench.png",
+      "git_blob_sha": "8a84aa5140536725550acca43651d53d5346c3af",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e06-bench.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e06-bench.svg",
+      "git_blob_sha": "9354ce6096f081e5a78caab47328499285b97be5",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e07-flex.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e07-flex.png",
+      "git_blob_sha": "95137eaf1653fe8ea73fb824865865589ade7ba3",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e07-flex.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e07-flex.svg",
+      "git_blob_sha": "2d026483eccc4c38779baa25c04902166e4a9d84",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e08-disconnect.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e08-disconnect.png",
+      "git_blob_sha": "63d3c017499560351ecf3efbbed2b0c8f9f267e7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/e08-disconnect.svg",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/e08-disconnect.svg",
+      "git_blob_sha": "24b4ed482b2861f856336857b550d57ce959562b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m01-inventory.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m01-inventory.png",
+      "git_blob_sha": "eff366ac0d5e7357631e7c9b3822c1dca9b816fd",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m02-lock-test.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m02-lock-test.png",
+      "git_blob_sha": "2065acc6ce6c2e4b60362210914d9898531a126f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m03-carrier.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m03-carrier.png",
+      "git_blob_sha": "f46fb0e21a78990e1a2c7622211778204ca7b2a9",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m04-camera.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m04-camera.png",
+      "git_blob_sha": "aa83d14e674f94370c2a9eed71c81ca1835d4c5f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m05-button.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m05-button.png",
+      "git_blob_sha": "0c82f162c24afd8a971cea5d545122bb4b1baf11",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m06-switch-seat.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m06-switch-seat.png",
+      "git_blob_sha": "e3c1107ece52c90fa2f84312957c424c967c25d9",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m07-cassette.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m07-cassette.png",
+      "git_blob_sha": "fe2e1a883eb79d480f35c60390c157cf1b7db1e2",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m08-carrier-insert.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m08-carrier-insert.png",
+      "git_blob_sha": "7bc4179e7775e5e27586c20f2947d8a4b1a5c1b1",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m09-bezel.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m09-bezel.png",
+      "git_blob_sha": "72388910d8618c08fa2d2cf56627fac6649e8bef",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m10-cover.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m10-cover.png",
+      "git_blob_sha": "e21b4f4af004bae358d8c25daa15ee3c936d9090",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m11-locks.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m11-locks.png",
+      "git_blob_sha": "c425300e4eca3758092837a100cff015b1636270",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/m12-finished.png",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/m12-finished.png",
+      "git_blob_sha": "fb900f79de33dd36c0899bca0c3c976f7bfabfc2",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/review/steps-r02/metadata.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/review/steps-r02/metadata.json",
+      "git_blob_sha": "0f54a5f49155db6da65e21d007ac2fc1dd31bbc7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/A1-plate-01-slicer.log",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/A1-plate-01-slicer.log",
+      "git_blob_sha": "4dc6eed1d6bcd0a16dac25ff6fc624a6d15b43fd",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/A1-plate-02-slicer.log",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/A1-plate-02-slicer.log",
+      "git_blob_sha": "623da3a9fca5af586dfbc77622d5efe5aaa61c91",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/assembly-independent.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/assembly-independent.json",
+      "git_blob_sha": "66e32a14b29a7154387b8e6dd2395ed6e869338b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/build.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/build.json",
+      "git_blob_sha": "556ddef41983b166a52d7f6ea560fa9bc6e7b2e3",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/exports.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/exports.json",
+      "git_blob_sha": "c2f2ea244d16ef7c3dccd44e58d508efc2292bf4",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/firmware-compile-r02.log",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/firmware-compile-r02.log",
+      "git_blob_sha": "f9b43bf9bb04aa6ca05326e53972eb2ddb65b4d6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/firmware-host-r02.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/firmware-host-r02.json",
+      "git_blob_sha": "3e926a97045db33fb48ca7b91855fdfd2743f0d7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/firmware-r02.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/firmware-r02.json",
+      "git_blob_sha": "562b5c64ecfd7c618b39fdd55fa15849c35101bf",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/guide-r02-qa.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/guide-r02-qa.json",
+      "git_blob_sha": "7e28d864dc411ea90299bc01fbd39b3bec097513",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/guide-r02.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/guide-r02.json",
+      "git_blob_sha": "bcf184c411f0cba34ef712696c4e319cab2b4954",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/manual-renders.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/manual-renders.json",
+      "git_blob_sha": "5fe4a96cae62b700eba7bb93601bfc1f378106d6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/shutter-interface.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/shutter-interface.json",
+      "git_blob_sha": "6ce3d4baa47a1b11599ebe391998ea1b279b38ab",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/slicing.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/slicing.json",
+      "git_blob_sha": "18680f7bbc9ff7ab88b81038d86ffa71adaa9a49",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/source-union.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/source-union.json",
+      "git_blob_sha": "d1301ab476cb909f9e97b17a293af6cd2d5a43a0",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/cad-assembly/verification/targeted-walls-and-optics.json",
+      "to": "A4/arkiv/tripo-a1/cad-assembly/verification/targeted-walls-and-optics.json",
+      "git_blob_sha": "f01c754dbdb1c5b28dbae5da6e701c46196db18e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/manifest.json",
+      "to": "A4/arkiv/tripo-a1/manifest.json",
+      "git_blob_sha": "7cc9d1981112a143330d58bfeb1696ab965b1140",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/mesh/01-ultra-original.glb",
+      "to": "A4/arkiv/tripo-a1/mesh/01-ultra-original.glb",
+      "git_blob_sha": "a3a7120bb3e353e7081ba6fd9012e9f8ad2daac6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/mesh/02-smart-segmented.glb",
+      "to": "A4/arkiv/tripo-a1/mesh/02-smart-segmented.glb",
+      "git_blob_sha": "c23f2e440df94fbd0193521e9f4a4538e5738513",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/mesh/03-quick-capped.glb",
+      "to": "A4/arkiv/tripo-a1/mesh/03-quick-capped.glb",
+      "git_blob_sha": "988aa81ad6cf216d3225edc44b67950f99bde5cb",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/mesh/04-smart-retopology-preview.glb",
+      "to": "A4/arkiv/tripo-a1/mesh/04-smart-retopology-preview.glb",
+      "git_blob_sha": "0b7e3d4942e99ae815109c520ef70d28f5b4710d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/parts-map.json",
+      "to": "A4/arkiv/tripo-a1/parts-map.json",
+      "git_blob_sha": "444ba254f16326038561b18dfeca08ea56cac66c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/print-manifest.json",
+      "to": "A4/arkiv/tripo-a1/print-manifest.json",
+      "git_blob_sha": "6f08f15acee980fce8665b1c3f399c1cbd6fae13",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/print/Entropi-140mm.3mf",
+      "to": "A4/arkiv/tripo-a1/print/Entropi-140mm.3mf",
+      "git_blob_sha": "4e4121043d5c2b91de9a2965cc2f411e8b04b653",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/print/generic-PLA-0.4mm-0.2mm.ini",
+      "to": "A4/arkiv/tripo-a1/print/generic-PLA-0.4mm-0.2mm.ini",
+      "git_blob_sha": "2502d9f39f68e3660e33e74c67540ae337097499",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/print/poses.json",
+      "to": "A4/arkiv/tripo-a1/print/poses.json",
+      "git_blob_sha": "9e2a0400d4fec5ebcb4fca155cfc6c99eeaf4897",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/provenance.json",
+      "to": "A4/arkiv/tripo-a1/provenance.json",
+      "git_blob_sha": "7c8f0b983c087019c800b9ddbde1a80fce41153d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/reference/selected-version.png",
+      "to": "A4/arkiv/tripo-a1/reference/selected-version.png",
+      "git_blob_sha": "265ef1a4771036a865cb8f6ea44b1a72c4de03ed",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/release-info.json",
+      "to": "A4/arkiv/tripo-a1/release-info.json",
+      "git_blob_sha": "6e4890c2bf23318ab033e2e76d949e1d8911951f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/assembled.png",
+      "to": "A4/arkiv/tripo-a1/review/assembled.png",
+      "git_blob_sha": "68be084cd304e4f8a7a43ba39e35dd31af580946",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/print-og-montering/A1-Print-og-Monteringskontroll.pdf",
+      "to": "A4/arkiv/tripo-a1/review/print-og-montering/A1-Print-og-Monteringskontroll.pdf",
+      "git_blob_sha": "6f73572193eaaae93d1e14d6531bb9524dc3061b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/print-og-montering/A1-bakside-isometrisk.png",
+      "to": "A4/arkiv/tripo-a1/review/print-og-montering/A1-bakside-isometrisk.png",
+      "git_blob_sha": "43a9711159a5d1105f137b6e9af3bb65cee7e3a8",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/print-og-montering/A1-isometrisk.png",
+      "to": "A4/arkiv/tripo-a1/review/print-og-montering/A1-isometrisk.png",
+      "git_blob_sha": "a18ad044177f1b91509cfbf504e71cbf686c927e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/print-og-montering/A1-printretning.png",
+      "to": "A4/arkiv/tripo-a1/review/print-og-montering/A1-printretning.png",
+      "git_blob_sha": "f84c396dc834c4bd1b1ab30750bbbe48cb7236d9",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/print-og-montering/kontrollgrunnlag.json",
+      "to": "A4/arkiv/tripo-a1/review/print-og-montering/kontrollgrunnlag.json",
+      "git_blob_sha": "5df3f6465c46070fd36614f319f015b29316c1dc",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/render_metadata.json",
+      "to": "A4/arkiv/tripo-a1/review/render_metadata.json",
+      "git_blob_sha": "0a9206a65d0097c7bdd45d3d2925540933a622ce",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/review/selected-assembled-colour.glb",
+      "to": "A4/arkiv/tripo-a1/review/selected-assembled-colour.glb",
+      "git_blob_sha": "a90ef563ec5dc5173ae191102d2f629b5c3d967e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/segmentation-result.json",
+      "to": "A4/arkiv/tripo-a1/segmentation-result.json",
+      "git_blob_sha": "d9c674c65f1ff14cf9684580f9542d8b477873b6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/tools/audit_assembled_thin_samples.py",
+      "to": "A4/arkiv/tripo-a1/tools/audit_assembled_thin_samples.py",
+      "git_blob_sha": "554c549258dcbf96d469ba7391bbcd12c4f06022",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/tools/mesh_print_audit.py",
+      "to": "A4/arkiv/tripo-a1/tools/mesh_print_audit.py",
+      "git_blob_sha": "926a6627813fe3c630c7d7eb977bf4c258397eb0",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/tools/prepare_print.py",
+      "to": "A4/arkiv/tripo-a1/tools/prepare_print.py",
+      "git_blob_sha": "8e030287ffbdb10baec9c09ac89a9210f9992a26",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/tripo-receipts.json",
+      "to": "A4/arkiv/tripo-a1/tripo-receipts.json",
+      "git_blob_sha": "6586f1ccd9ffadafc0fbaec21e6a57c04d84a059",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/verification/assembled-thin-samples.json",
+      "to": "A4/arkiv/tripo-a1/verification/assembled-thin-samples.json",
+      "git_blob_sha": "b69655f6c7be56fd4df5e9d82dbf6651940b7915",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/verification/mesh-audit-microscopic-weld-diagnostic.json",
+      "to": "A4/arkiv/tripo-a1/verification/mesh-audit-microscopic-weld-diagnostic.json",
+      "git_blob_sha": "d250dd2e4a4a1c299cd080357a502f13b2490475",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/verification/mesh-audit.json",
+      "to": "A4/arkiv/tripo-a1/verification/mesh-audit.json",
+      "git_blob_sha": "3f52e65a4ee3cc5edaed002f2c45ff347fa56797",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/verification/mesh-topology-details.json",
+      "to": "A4/arkiv/tripo-a1/verification/mesh-topology-details.json",
+      "git_blob_sha": "f4cf2bab5f416f3747b638ae210ae60072de627a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/verification/print-export.json",
+      "to": "A4/arkiv/tripo-a1/verification/print-export.json",
+      "git_blob_sha": "048a7b6d29855393033ed5345a2265e438d0380d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A1/verification/slicer-checks.json",
+      "to": "A4/arkiv/tripo-a1/verification/slicer-checks.json",
+      "git_blob_sha": "7320a002d15f094a249130d8577a062a3f85c718",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/00-input/ref-tube-med-linse.png",
+      "to": "A4/arkiv/entropi-a3/00-input/ref-tube-med-linse.png",
+      "git_blob_sha": "74a115f2ab426709e62ada17009cb545eaeffde0",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/00-input/ref-tube-open-fatning.png",
+      "to": "A4/arkiv/entropi-a3/00-input/ref-tube-open-fatning.png",
+      "git_blob_sha": "9ca5456e0593b09b07a5ffe3513f30bb5e252a06",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/00-input/skisse.jpg",
+      "to": "A4/arkiv/entropi-a3/00-input/skisse.jpg",
+      "git_blob_sha": "180a773d92aedf5b7454870fbdb95eec2e6d7144",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/0-kalibrering.png",
+      "to": "A4/arkiv/entropi-a3/01-variantar/0-kalibrering.png",
+      "git_blob_sha": "c0452f5094c9a5ecb1a4b088fe82c6ea1f6b506f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/a-skisse-hero.png",
+      "to": "A4/arkiv/entropi-a3/01-variantar/a-skisse-hero.png",
+      "git_blob_sha": "f9f558bfe339f462efe43f61bcc96072a5924755",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/b-spaghettifisering.png",
+      "to": "A4/arkiv/entropi-a3/01-variantar/b-spaghettifisering.png",
+      "git_blob_sha": "21628863c8d1c80ddf5c0d0f8f3048f4ebce6b0e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/c-gravitasjonsbronn.png",
+      "to": "A4/arkiv/entropi-a3/01-variantar/c-gravitasjonsbronn.png",
+      "git_blob_sha": "d40e4a4a49ea2f9c9d4ad9e8ff5f387a8a968b2d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/d-fusjon-med-ref.png",
+      "to": "A4/arkiv/entropi-a3/01-variantar/d-fusjon-med-ref.png",
+      "git_blob_sha": "090d6065e4ecead4cedacf4b402b1d03e7bddd02",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/f-lysgradient.png",
+      "to": "A4/arkiv/entropi-a3/01-variantar/f-lysgradient.png",
+      "git_blob_sha": "08cc9e5a115ff42a28c039c438723ab0fb0deac5",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/jury.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/jury.json",
+      "git_blob_sha": "13811f3a7d16d69bdf5d412744d72c40db5fce6b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/kontaktark.jpg",
+      "to": "A4/arkiv/entropi-a3/01-variantar/kontaktark.jpg",
+      "git_blob_sha": "f9167b088487de07cfe9360a3587b4d363022e1c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/0-kalibrering.tripo.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/0-kalibrering.tripo.json",
+      "git_blob_sha": "a8872d34579dd391e994e1d45054abf5c60a49a8",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/a-skisse-hero.payload.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/a-skisse-hero.payload.json",
+      "git_blob_sha": "fb80d6c92a635c4f5e89c986abc1ac2ff0a3ed2b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/a-skisse-hero.tripo.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/a-skisse-hero.tripo.json",
+      "git_blob_sha": "d9f61997cf3e909473a6c96893df34d76c7f2e17",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/b-spaghettifisering.payload.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/b-spaghettifisering.payload.json",
+      "git_blob_sha": "66f1117af928e3853d9aea0af90c51ff39f6ed40",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/b-spaghettifisering.tripo.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/b-spaghettifisering.tripo.json",
+      "git_blob_sha": "f83f9ce500b54e32aa0efa7d9771f9b2553c8123",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/c-gravitasjonsbronn.payload.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/c-gravitasjonsbronn.payload.json",
+      "git_blob_sha": "fdff2338124fe88f743b50d3124d2a3a5e1bf3e1",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/c-gravitasjonsbronn.tripo.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/c-gravitasjonsbronn.tripo.json",
+      "git_blob_sha": "955834a4d4078982928a7f433a098f8d181da03d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/d-fusjon-med-ref.payload.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/d-fusjon-med-ref.payload.json",
+      "git_blob_sha": "b99d7f66a8a5a073107d95a82591450e6f18e88d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/d-fusjon-med-ref.tripo.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/d-fusjon-med-ref.tripo.json",
+      "git_blob_sha": "a5d39318fdd195110c5ecef758e6f2b360cab8cd",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/e-seedream-feila.payload.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/e-seedream-feila.payload.json",
+      "git_blob_sha": "7b40d79c6fb036d221b384e9e1f5e510bac53087",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/f-lysgradient.payload.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/f-lysgradient.payload.json",
+      "git_blob_sha": "6428ab38ab75fc91b33f3b0c1795a5fe9083bae6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/01-variantar/oppgaver/f-lysgradient.tripo.json",
+      "to": "A4/arkiv/entropi-a3/01-variantar/oppgaver/f-lysgradient.tripo.json",
+      "git_blob_sha": "e05328ef64c0f7dfb610438cb620253a1d635e5a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/02-hero/3d-referanse.png",
+      "to": "A4/arkiv/entropi-a3/02-hero/3d-referanse.png",
+      "git_blob_sha": "c507a22c1d9e90de1b4345babdd22163298800ce",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/02-hero/hero-cmf.png",
+      "to": "A4/arkiv/entropi-a3/02-hero/hero-cmf.png",
+      "git_blob_sha": "9c4b301cfd071227400616cda6d7ed04c1af1102",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/02-hero/oppgaver/3d-referanse.payload.json",
+      "to": "A4/arkiv/entropi-a3/02-hero/oppgaver/3d-referanse.payload.json",
+      "git_blob_sha": "97101f4a960b7ea2f203aacf5ed4f09d7decf14d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/02-hero/oppgaver/3d-referanse.tripo.json",
+      "to": "A4/arkiv/entropi-a3/02-hero/oppgaver/3d-referanse.tripo.json",
+      "git_blob_sha": "e6f04e52f72be690477a3c36af38701eba1f174c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/02-hero/oppgaver/hero-cmf.payload.json",
+      "to": "A4/arkiv/entropi-a3/02-hero/oppgaver/hero-cmf.payload.json",
+      "git_blob_sha": "8204ac31f485ef525f4940d8fb55f1588f65d6e5",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/02-hero/oppgaver/hero-cmf.tripo.json",
+      "to": "A4/arkiv/entropi-a3/02-hero/oppgaver/hero-cmf.tripo.json",
+      "git_blob_sha": "77f42dd2a4368dd083c0cea34e472d2eab7886cb",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/03-3d/a3-entropi-pbr.glb",
+      "to": "A4/arkiv/entropi-a3/03-3d/a3-entropi-pbr.glb",
+      "git_blob_sha": "a96244820c3d8c534c9289b4dea035a71928203e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/03-3d/a3-entropi-print-120mm.stl",
+      "to": "A4/arkiv/entropi-a3/03-3d/a3-entropi-print-120mm.stl",
+      "git_blob_sha": "48517f026c9172c56e7e5217bcaa110d1f548233",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/03-3d/a3-entropi-web.glb",
+      "to": "A4/arkiv/entropi-a3/03-3d/a3-entropi-web.glb",
+      "git_blob_sha": "1c7ccc83bf1cab592152c3eb8f6900ab46a4adc6",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/03-3d/mesh-qa.json",
+      "to": "A4/arkiv/entropi-a3/03-3d/mesh-qa.json",
+      "git_blob_sha": "ff87dc877e505dca72a35d1266e19d08377a937e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/03-3d/oppgaver/image-to-model.payload.json",
+      "to": "A4/arkiv/entropi-a3/03-3d/oppgaver/image-to-model.payload.json",
+      "git_blob_sha": "a117524d975cbb355fe31352dd7f31bc7110443f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/03-3d/oppgaver/image-to-model.tripo.json",
+      "to": "A4/arkiv/entropi-a3/03-3d/oppgaver/image-to-model.tripo.json",
+      "git_blob_sha": "42bf6eb3b05a95acf074e249d05b3c0c0f3b2a4b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/03-3d/tripo-forehandsvising.webp",
+      "to": "A4/arkiv/entropi-a3/03-3d/tripo-forehandsvising.webp",
+      "git_blob_sha": "282151eda4fb3383f1cae434a854b44df24adf71",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/djupnekart-linse-mm.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/djupnekart-linse-mm.png",
+      "git_blob_sha": "7fe31e3ab207824e7f01ef87a119ee8cc52b059b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/leire-seks-visningar.jpg",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/leire-seks-visningar.jpg",
+      "git_blob_sha": "3ed1fc8592fcafce4f48fbffcd1882017ab0c54e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/print-stl-seks-visningar.jpg",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/print-stl-seks-visningar.jpg",
+      "git_blob_sha": "71393032c91f0f149d49fb92dcc9d54144b9c0ad",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/tekstur-seks-visningar.jpg",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/tekstur-seks-visningar.jpg",
+      "git_blob_sha": "7ef7c8dc5f832d37ad6ab196f3a2150377e59674",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/verifisering.json",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/verifisering.json",
+      "git_blob_sha": "ca9bdd32790d8b7b8496dca6478578f55d9c0886",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/leire-bak.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/leire-bak.png",
+      "git_blob_sha": "06bc8f964012259d5014b131e42b685413aecf8c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/leire-grepside.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/leire-grepside.png",
+      "git_blob_sha": "82454e100f78e69d9d164229085cdc59a84843d8",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/leire-linse.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/leire-linse.png",
+      "git_blob_sha": "dc328b0bcd6c10402d73e6478a9dfc70358979b5",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/leire-skra-bak.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/leire-skra-bak.png",
+      "git_blob_sha": "feb9ac7786190c616a4ab94ada94fcc2b9554567",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/leire-skra-framme.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/leire-skra-framme.png",
+      "git_blob_sha": "fd71c1e0b1113445c650d0622d388b258f0ce1fd",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/leire-topp.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/leire-topp.png",
+      "git_blob_sha": "f0c7ad4e55029f02766ebe1be4d751ed68f23e0e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/tekstur-bak.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/tekstur-bak.png",
+      "git_blob_sha": "1e82c88acf1fe42ac6d93e9a94f68288acbf4d68",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/tekstur-grepside.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/tekstur-grepside.png",
+      "git_blob_sha": "ad75f9aa485aaa0cf9e1b69edad6d5f2fc816677",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/tekstur-linse.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/tekstur-linse.png",
+      "git_blob_sha": "3583ba89a44c1bfb845e7907d40d1e2407e01ea5",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/tekstur-skra-bak.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/tekstur-skra-bak.png",
+      "git_blob_sha": "74de02f8acc3af70105f262f59b0bca6f488f981",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/tekstur-skra-framme.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/tekstur-skra-framme.png",
+      "git_blob_sha": "251476fb227e7d0eeb612623055ab343e0d0216e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/04-kontroll/visningar/tekstur-topp.png",
+      "to": "A4/arkiv/entropi-a3/04-kontroll/visningar/tekstur-topp.png",
+      "git_blob_sha": "f1b89e5982c7ba55328d37373a20587e8e979b0a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/A3-Entropi-alle-delar.3mf",
+      "to": "A4/arkiv/entropi-a3/05-print/A3-Entropi-alle-delar.3mf",
+      "git_blob_sha": "7e761b657c0fac31c97ae9baeee5306fd4b601db",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/bambu/profil/filament.json",
+      "to": "A4/arkiv/entropi-a3/05-print/bambu/profil/filament.json",
+      "git_blob_sha": "c61d304b5f7d392dbb2066b636224892d678c412",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/bambu/profil/maskin.json",
+      "to": "A4/arkiv/entropi-a3/05-print/bambu/profil/maskin.json",
+      "git_blob_sha": "7f3a61ebf507be1c422c96e0744f302930d5188c",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/bambu/profil/prosess.json",
+      "to": "A4/arkiv/entropi-a3/05-print/bambu/profil/prosess.json",
+      "git_blob_sha": "917c6f7c2b9d14e43ee064a2135e36c6a2e8535d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/bambu/slicing.json",
+      "to": "A4/arkiv/entropi-a3/05-print/bambu/slicing.json",
+      "git_blob_sha": "cecab891f96f279aa8eed4d52f83391d8856f366",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/komponentmaal.json",
+      "to": "A4/arkiv/entropi-a3/05-print/komponentmaal.json",
+      "git_blob_sha": "5d9e159ac442e3d1620ce6f12275026becf5d7fc",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/kontroll.json",
+      "to": "A4/arkiv/entropi-a3/05-print/kontroll.json",
+      "git_blob_sha": "32c14b8948c41a6f3ab5f454e5081c2a66666ad7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/printretning/kropp.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/printretning/kropp.stl",
+      "git_blob_sha": "fa8fd616040cfe77ecaea3b750daf14e83890de0",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/printretning/luke.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/printretning/luke.stl",
+      "git_blob_sha": "f9c45fe91ca1734cb3e8b729f031527913ee0913",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/printretning/retningar.json",
+      "to": "A4/arkiv/entropi-a3/05-print/printretning/retningar.json",
+      "git_blob_sha": "3a1a426fc3e3a2f2494619d6dbf75a140fe9a5cf",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/printretning/stabelhaldar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/printretning/stabelhaldar.stl",
+      "git_blob_sha": "6ed57d26fa0619287efb3289cd1149586de30db9",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/printretning/usb-lokk.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/printretning/usb-lokk.stl",
+      "git_blob_sha": "91942d9368dafee08c0fbb771fc01ee0b00f7c05",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/printretning/utloysar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/printretning/utloysar.stl",
+      "git_blob_sha": "dda4199ca308ddb12cc8a5b6946d44a4b466f736",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/brytar6x6.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/brytar6x6.stl",
+      "git_blob_sha": "7144ffcdd4dc5db8328badb9b481dd5681af661b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/cam_kort.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/cam_kort.stl",
+      "git_blob_sha": "c05005479ae0ba678f20b123037cac0fcab5c04b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/esp32s.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/esp32s.stl",
+      "git_blob_sha": "7c7a23c079fc2840b27c81be9219516c451cd23e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/headerar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/headerar.stl",
+      "git_blob_sha": "633356026d3f063cf2808cd370d583f565982bfa",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/kameramodul.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/kameramodul.stl",
+      "git_blob_sha": "68b4300d6ce250b21b2fc8f28f143dbb55ea3aec",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/magnetar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/magnetar.stl",
+      "git_blob_sha": "147f39f7e132a5e01987cc613e297d4e799f992a",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/mb_knappar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/mb_knappar.stl",
+      "git_blob_sha": "0116743bb68fd554bfe676c2c1274971e218b875",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/mb_kort.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/mb_kort.stl",
+      "git_blob_sha": "e5840bad6c657c4fdf444ca52ebfe216293db7ad",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/mb_tappar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/mb_tappar.stl",
+      "git_blob_sha": "b86185d3a99160b39270c1e380119f3433a8b28b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/sd_og_fpc.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/sd_og_fpc.stl",
+      "git_blob_sha": "6efac422d5b7de43649af420a64686825a8a2c25",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/usb_kontakt.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/usb_kontakt.stl",
+      "git_blob_sha": "dfaefa88b74d97951901849e9ffad75674a09b98",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/proxy/usb_plugg.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/proxy/usb_plugg.stl",
+      "git_blob_sha": "d786593347054ed1671b90b11ec34b9b129d7718",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/slicing/P1S-generisk-PLA-0.2.ini",
+      "to": "A4/arkiv/entropi-a3/05-print/slicing/P1S-generisk-PLA-0.2.ini",
+      "git_blob_sha": "6a420f6614bbd1bf6fe6f1e64598fc2494e64ffb",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/slicing/slicing.json",
+      "to": "A4/arkiv/entropi-a3/05-print/slicing/slicing.json",
+      "git_blob_sha": "8ca297ed84937cb42003c00a3f4e123aca6c6da7",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/stl/kropp.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/stl/kropp.stl",
+      "git_blob_sha": "fa8fd616040cfe77ecaea3b750daf14e83890de0",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/stl/luke.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/stl/luke.stl",
+      "git_blob_sha": "5569cd4f4537f61929b992a3522921c4f15cc567",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/stl/stabelhaldar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/stl/stabelhaldar.stl",
+      "git_blob_sha": "f9d19a725e01ffc3d76bdb52e268c6dbeedcc594",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/stl/usb-lokk.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/stl/usb-lokk.stl",
+      "git_blob_sha": "a2ad6e768c2e69e629fa2a76a580af15031c6841",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/05-print/stl/utloysar.stl",
+      "to": "A4/arkiv/entropi-a3/05-print/stl/utloysar.stl",
+      "git_blob_sha": "ac53bdf451455db0d80b37cb98056532c15d9b71",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/00-framside.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/00-framside.png",
+      "git_blob_sha": "3b2ab0a0d2ec9ab4ea91bdf21bb4d47fea204178",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/01-delar.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/01-delar.png",
+      "git_blob_sha": "c113db6ace2b2d2ffa8ed7cc7d9cbeeca9925883",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/02-print.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/02-print.png",
+      "git_blob_sha": "707bb5ba072f574c745104ef810a9f36d14e51bc",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/03-magnetar-kropp.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/03-magnetar-kropp.png",
+      "git_blob_sha": "ad3606144f312af7f73da3b99684f149a89643ef",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/04-magnetar-luke.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/04-magnetar-luke.png",
+      "git_blob_sha": "3f2250225199a44e03b0a9d85bbc5ae8772c4e56",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/05-lodd-cam.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/05-lodd-cam.png",
+      "git_blob_sha": "b8a804f9a646b7c5369f5f5d67fe8e652ae00f60",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/06-cam-paa-mb.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/06-cam-paa-mb.png",
+      "git_blob_sha": "eb96cc509fe0217cd542d5f3ceb3fc07905427db",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/07-leidning-tunnel.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/07-leidning-tunnel.png",
+      "git_blob_sha": "b5e3f9330c69bde23c4a47243cd08d001566e653",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/08-stabel-inn.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/08-stabel-inn.png",
+      "git_blob_sha": "4e37e39aff2a6d3187513bfd94f6292de496d318",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/09-haldar.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/09-haldar.png",
+      "git_blob_sha": "507820bbd8e00440ed97a3a59d80ae2e34f01d5b",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/10-luke.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/10-luke.png",
+      "git_blob_sha": "3421c2a3775471bd89d7a15d9ca952dacddd8d49",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/11-brytar.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/11-brytar.png",
+      "git_blob_sha": "a769b99002cc2120232494fa3d13e8ab71dee901",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/12-knapp.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/12-knapp.png",
+      "git_blob_sha": "a632f328d13844d291ec7246eadce39f85590015",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/13-usb.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/13-usb.png",
+      "git_blob_sha": "a756ad2c2a849a2ce77c5d47002f051059fd4583",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/14-ferdig.png",
+      "to": "A4/arkiv/entropi-a3/06-montering/14-ferdig.png",
+      "git_blob_sha": "ffce5a41ba5d1af9b90ddcdb88e5b3eab0c99cc1",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/06-montering/A3-Entropi-montering.pdf",
+      "to": "A4/arkiv/entropi-a3/06-montering/A3-Entropi-montering.pdf",
+      "git_blob_sha": "c3f4b23c595911ac05325816b1ef14c1ded87a16",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/README.md",
+      "to": "A4/arkiv/entropi-a3/README.md",
+      "git_blob_sha": "3fc3e2998338d26221c7f1c729fed792e305d542",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/bambu_profil.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/bambu_profil.py",
+      "git_blob_sha": "7a8a845c7407cda4f12c75709d70a92fb8da03bc",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/bambu_slice.sh",
+      "to": "A4/arkiv/entropi-a3/verktoy/bambu_slice.sh",
+      "git_blob_sha": "06acde7e4c106f875bbb3a539c5763b741c64b98",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/cmf_overfor.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/cmf_overfor.py",
+      "git_blob_sha": "e9e6f0e008adfd2dcec4dd9964e09c1d0197ab90",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/delar_konfig.json",
+      "to": "A4/arkiv/entropi-a3/verktoy/delar_konfig.json",
+      "git_blob_sha": "09b7a3d95906559ac06c09245811677f448cd572",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/ikea.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/ikea.py",
+      "git_blob_sha": "dc98682cd24886aa3fcd70d548d7c36e56aa8281",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/lag_delar.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/lag_delar.py",
+      "git_blob_sha": "7480a327f292e6ffeec88b0830bef57d1c64ef19",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/linse_kontroll.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/linse_kontroll.py",
+      "git_blob_sha": "026d819ad380d64813a6f8855b01a4519321c35f",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/matt_material.mjs",
+      "to": "A4/arkiv/entropi-a3/verktoy/matt_material.mjs",
+      "git_blob_sha": "8eba946d810e79142f4a30854b6861d38b249051",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/package-lock.json",
+      "to": "A4/arkiv/entropi-a3/verktoy/package-lock.json",
+      "git_blob_sha": "68be969226d3d5ae93a32944276616d4b294582d",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/package.json",
+      "to": "A4/arkiv/entropi-a3/verktoy/package.json",
+      "git_blob_sha": "2a269403b7e27cbdb7c13e9c079e95d77b8d8743",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/print_plate.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/print_plate.py",
+      "git_blob_sha": "ad214c203a4c9eef8b4f1d56adf35c722fbeba0e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/print_stl.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/print_stl.py",
+      "git_blob_sha": "47e04eac0453da0e10a64a53fd5e6f0295c5ed2e",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/render.mjs",
+      "to": "A4/arkiv/entropi-a3/verktoy/render.mjs",
+      "git_blob_sha": "071f9f5d25deacec21d82101a4e47bcd834bd4fb",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/scene.mjs",
+      "to": "A4/arkiv/entropi-a3/verktoy/scene.mjs",
+      "git_blob_sha": "f5acb596371ed91813a1dc2c304be66e97334d10",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/sheet.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/sheet.py",
+      "git_blob_sha": "6ad88984124cf38b542cb05c1806dbe3ddae42de",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/tripo.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/tripo.py",
+      "git_blob_sha": "c806fd646f1d8f6e42bccbd728b637ec4c1ee554",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    },
+    {
+      "from": "A3/verktoy/veggkart.py",
+      "to": "A4/arkiv/entropi-a3/verktoy/veggkart.py",
+      "git_blob_sha": "15d8ffc6a91302d3ae06dd099ac485c2afd5fb85",
+      "source_commit": "ae307c7c847feb31ccfe2b56a48e4f7fc4ff6fe6"
+    }
+  ],
+  "legacy_file_bytes_changed": false,
+  "historical_CAD_packages": [
+    {
+      "file": "arkiv/cad/Entropi-CAD-v02.zip",
+      "bytes": 16153632,
+      "sha256": "c133930aa4a83b1b346bae7f03814fba832e3cc64cd0378e881af0d1e0c76c2f",
+      "status": "historisk_versjon"
+    },
+    {
+      "file": "arkiv/cad/Entropi-CAD-v03.zip",
+      "bytes": 37782814,
+      "sha256": "764704035b79fba24461fa8970915728f27709f9d95ca67e737a3719e4563a2d",
+      "status": "historisk_versjon"
+    },
+    {
+      "file": "arkiv/cad/Entropi-CAD-v04.zip",
+      "bytes": 38280598,
+      "sha256": "2cd547e9c10ebc8ed38cc9b3bf0bb86f374b8ba8de1b86502aeef369769a0f54",
+      "status": "historisk_versjon"
+    }
+  ],
+  "local_scratch_excluded": [
+    "temporary logs",
+    "failed geometry experiments",
+    "cached CAD checkpoints",
+    "conversation exports",
+    "credentials"
+  ],
+  "unrelated_stereoscopic_project_moved": false,
+  "previously_inspected_base_commit": "1ef25fd8a053585c7504feee8ddac7a1fb4bf2fb",
+  "preserved_other_design_tree": {
+    "path": "A2",
+    "git_tree_sha": "a2e0c030965cb0b86ce356ecf0333a9aa688665d"
+  }
+}

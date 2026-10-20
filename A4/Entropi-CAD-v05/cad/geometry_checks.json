@@ -1,0 +1,218 @@
+[
+  {
+    "name": "01_rib_cage",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 122494.79524187169,
+    "size_mm": [
+      143.0000002,
+      67.5000002,
+      108.50375246380146
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "02_chassis",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 65571.74876042278,
+    "size_mm": [
+      130.0,
+      41.5,
+      78.0000001
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "03_rear_cover",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 24897.583072667017,
+    "size_mm": [
+      129.4,
+      4.700000000000003,
+      77.4
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "04_esp32_carrier",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 8475.691885377286,
+    "size_mm": [
+      46.0,
+      11.0,
+      64.0
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "05_board_clamp",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 659.6951906454334,
+    "size_mm": [
+      36.0,
+      8.0,
+      2.4000000000000057
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "06_optical_baffle",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 3860.7249538148144,
+    "size_mm": [
+      40.400000000000006,
+      21.0,
+      40.400000000000006
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "07_shutter",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 689.7727173132664,
+    "size_mm": [
+      12.000000100000001,
+      12.0000002,
+      11.000000099999994
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "08_shutter_pin",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 43.472813562760294,
+    "size_mm": [
+      4.0,
+      14.400000100000002,
+      1.8000001999999995
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "09_rear_dial",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 1288.4678712110317,
+    "size_mm": [
+      20.0,
+      20.0000001,
+      6.799999999999997
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "10_io_plate",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 2041.0330581714002,
+    "size_mm": [
+      26.800000000000004,
+      27.4,
+      14.400000000000002
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "12_lens_blank",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 2305.43263609568,
+    "size_mm": [
+      39.2,
+      4.5,
+      39.2
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "13_lens_blank_retainer",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 266.94741096083766,
+    "size_mm": [
+      17.0,
+      1.1999999999999993,
+      17.0
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "14_dial_retainer",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 70.91202937683053,
+    "size_mm": [
+      9.0,
+      9.0,
+      1.2000000000000028
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "15_shutter_return_flexure",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 130.17900000002496,
+    "size_mm": [
+      6.6499999999999915,
+      22.2,
+      5.200000000000003
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "17_camera_saddle",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 1147.341624775152,
+    "size_mm": [
+      25.0,
+      12.799999999999999,
+      8.900000000000006
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "18_camera_clamp",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 593.0638067481506,
+    "size_mm": [
+      23.400000000000002,
+      6.199999999999999,
+      7.200000000000003
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "19_usb_retainer",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 238.4453115783865,
+    "size_mm": [
+      4.0,
+      24.6,
+      3.0
+    ],
+    "fits_p1s_bbox": true
+  },
+  {
+    "name": "20_shutter_service_cover",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 88.8394143819034,
+    "size_mm": [
+      9.000000200000002,
+      5.405023649648296,
+      8.800000200000014
+    ],
+    "fits_p1s_bbox": true
+  }
+]

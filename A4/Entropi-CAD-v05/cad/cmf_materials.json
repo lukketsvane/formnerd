@@ -1,0 +1,30 @@
+{
+  "default": {
+    "metallicFactor": 0.0,
+    "roughnessFactor": 0.55
+  },
+  "parts": {
+    "01_rib_cage": {
+      "roughnessFactor": 0.38
+    },
+    "02_chassis": {
+      "roughnessFactor": 0.55
+    },
+    "03_rear_cover": {
+      "roughnessFactor": 0.55
+    },
+    "07_shutter": {
+      "roughnessFactor": 0.36
+    },
+    "09_rear_dial": {
+      "roughnessFactor": 0.36
+    },
+    "12_lens_blank": {
+      "roughnessFactor": 0.14
+    },
+    "20_shutter_service_cover": {
+      "roughnessFactor": 0.38
+    }
+  },
+  "finish": "Smooth satin gray polymer and fine matte charcoal polymer; no visible orange-peel texture. Polished dark form plug, not optical glass."
+}

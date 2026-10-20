@@ -1,0 +1,134 @@
+AHO Industridesign
+Høst 2026
+29.09   23.10
+FormNerd
+Trym Abrahamsen
+Formgivning og semiotikk
+
+Velkommen
+Her deler vi prosjektene og prosessen i kurset FormNerd, høst 2026.
+Legg igjen kommentarer med kommentarverktøyet eller som tekst. Alle innspill er 
+velkomne.
+01 Kommenter
+Bruk sidepanelet til venstre. «Intro» har prosjektbeskrivelse, datoer og leveranser. 
+«Prosjekter» har ett område per student.
+02 Naviger
+Prosjektbeskrivelse
+Tema
+Varighet
+Format
+Kursansvarlig
+Evaluering
+Formgivning og semiotikk
+29. september   23. oktober 2026
+Individuell besvarelse
+Trym Abrahamsen
+Bestått / ikke bestått
+Kursbeskrivelse
+I kurset FormNerd utforsker studentene semiotikk og form. Kurset kombinerer praktisk øvelse i formgivning 
+med en serie korte forelesninger om semiotikk, estetikk og form.
+Oppgavebeskrivelse
+Dere skal formgi et håndholdt kamera. Kurset legger spesiell vekt på de ekspressive egenskapene ved produktets 
+form: kameraet skal uttrykke ett konkret konseptord. Dere starter med tre konseptord, og vi velger ett av dem 
+sammen etter første uke.
+
+Målet er å øve på å utvikle formkonsepter gjennom fysiske og analoge metoder som tegning, skissemodell og 
+skalamodell. Den endelige modellen bygges fysisk, og kan utvikles med valgfri teknikk (digital eller analog).
+
+Kurset oppmuntrer til raske, inkrementelle iterasjoner i fysisk form og refleksjon rundt disse. Hver iterasjon 
+dokumenteres med foto, og til slutt settes stadiene sammen i en bildeserie der man ser objektet utvikle seg mot 
+sin endelige gestalt. Kvaliteten på den siste modellen vektlegges i prosjektets avsluttende fase.
+
+Målet er at dere over fire uker utvikler et formkonsept som kommuniserer konseptordet, med en gjennomgående 
+jevn modellfinish.
+Oppgaven
+Håndholdt kamera
+Minimum 30 mm i diameter
+01 Linse
+En funksjon for å ta bilder
+02 Utløser
+For å lade og overføre bilder
+03 USB-C-port
+Tenk først og fremst på hvordan kameraet uttrykker konseptordet. Estetikk og teknikk er sekundært.
+Viktige datoer
+Tir 29.09
+Tir 06.10
+Fre 09.10
+Tir 13.10
+Fre 16.10
+Tor 22.10
+Fre 23.10
+Oppstart kl. 09:00. Kickoff, semiotikk og formgivningstest
+Delleveranse: analyse av tre konseptord
+Delleveranse: konseptmodell og valgt designtema
+Besøk og individuelle tilbakemeldinger med Richard
+Delleveranse: ferdig digital modell
+Kl. 12:00: levering av fysisk modell og digital presentasjon. Formgivningstest
+Sluttpresentasjon med sensor
+Leveranser
+Tir 06.10
+Analyse
+Analyse av tre konseptord, tre enkle 
+proporsjonsmodeller og 2D-skisser.
+Fre 09.10
+Konseptmodell
+Utviklet konseptmodell og retning for valgt 
+designtema. Fortsatt skissenivå, men med et mer 
+utviklet formspråk, overganger og flater.
+Fre 16.10
+Fre 23.10
+Digital modell
+Sluttpresentasjon
+Ferdig digital modell, klar for printing og rendering. 
+En forklaring av hvordan formen uttrykker det valgte 
+konseptordet. Vis skisseprosessen.
+Presentasjon med sensor. Fysisk modell med høyt 
+detaljeringsnivå, malt i definerte farger. Et hero-shot 
+som viser designet med riktig CMF. En 7 minutters 
+presentasjon av designet, konseptordet og prosessen.
+Fysiske modeller og digitale presentasjoner leveres kl. 12:00 dagen før sluttpresentasjonen.
+Læringsmål
+Semiotikk
+Forstå hva semiotikk betyr i kontekst av industridesign.
+Evne til å diskutere hva et produkt kommuniserer, og hvordan ulike deler av formen bidrar til uttrykket.
+Evne til praktisk å kommunisere ulike konsepter gjennom form, samt å argumentere for formvalg og koblingen 
+mellom «melding» og det designede objektet.
+Formgivning
+Evne til å «se», dekomponere og analysere form på ulike nivåer, fra proporsjoner til overflater, materialer og 
+detaljer.
+Evne til å lage fysiske modeller i ulike ferdighetsnivåer og materialer, som verktøy for formutvikling.
+Evne til å bruke 2D-skisse som verktøy i formutviklingsprosessen.
+Evne til å bruke referansebilder og formføringsplansjer til å kommunisere kobling mellom form og intensjon.
+Evne til å lage digitale 3D-modeller på grunnlag av tegninger og fysiske modeller, på et nivå der de kan 3D-
+printes og rendres godt.
+Estetikk
+En grunnleggende forståelse for estetikkbegrepet.
+En forståelse for grunnleggende prinsipper innenfor designkvalitet og utførelse, og hvordan de kan brukes for å 
+skape attraktive og profesjonelt utseende produkter.
+Dokumentasjon
+Figma-prosess
+Ukentlig oppdatering i Figma av designprosessen, 
+med utvalgt materiale som tydelig viser utforskning, 
+funn og utvikling. Dette er en del av 
+evalueringsgrunnlaget.
+Fysiske modeller
+Minst tre fysiske modeller bygget fra bunnen, 
+dokumentert med bilder og satt sammen til en 
+bildeserie. Den siste modellen bygges i høy 
+modellfinish og males i én farge, slik at formen er lett 
+å lese.
+Digital render
+Et hero-shot som viser prosjektets CMF, laget med 
+valgfri digital teknikk: 3D-render, Photoshop eller AI. 
+Renderen skal vise prosjektet slik det er ment å bli 
+produsert.
+Presentasjon
+Fredag 23. oktober. 7 minutter per presentasjon. 
+Fysiske modeller og digitale presentasjoner leveres kl. 
+12:00 dagen før.
+Evaluering
+Grad av profesjonalitet i prosjektet, gjennom prosess og begrunnelse av designløsningen.
+Produktets estetiske og semantiske kvaliteter i form og utførelse.
+Samsvar mellom det valgte konseptordet og det endelige formuttrykket.
+Mestring av grunnleggende skisse- og modellbyggingsferdigheter.
+Kommunikasjon av prosjektet gjennom visuelt materiale og presentasjon.

@@ -1,0 +1,427 @@
+{
+  "units": "mm",
+  "cage_source": "parts/01_rib_cage.step",
+  "other_fixed_assembly_parts": [
+    "02_chassis",
+    "03_rear_cover",
+    "04_esp32_carrier",
+    "05_board_clamp",
+    "06_optical_baffle",
+    "09_rear_dial",
+    "10_io_plate",
+    "12_lens_blank",
+    "13_lens_blank_retainer",
+    "14_dial_retainer",
+    "17_camera_saddle",
+    "18_camera_clamp",
+    "19_usb_retainer",
+    "20_shutter_service_cover"
+  ],
+  "volume_tolerance_mm3": 0.0001,
+  "nominal_motion_states": [
+    {
+      "displacement_mm": 0,
+      "validity": {
+        "cage": {
+          "valid": true,
+          "solids": 1
+        },
+        "shutter": {
+          "valid": true,
+          "solids": 1
+        },
+        "pin": {
+          "valid": true,
+          "solids": 1
+        },
+        "spring": {
+          "valid": true,
+          "solids": 1
+        }
+      },
+      "intersection_volumes_mm3": {
+        "cage/shutter": 0.0,
+        "cage/pin": 0.0,
+        "cage/spring": 0.0,
+        "shutter/pin": 0.0,
+        "shutter/spring": 0.0,
+        "pin/spring": 0.0
+      },
+      "fixed_assembly_intersection_volumes_mm3": {
+        "shutter/02_chassis": 0.0,
+        "shutter/03_rear_cover": 0.0,
+        "shutter/04_esp32_carrier": 0.0,
+        "shutter/05_board_clamp": 0.0,
+        "shutter/06_optical_baffle": 0.0,
+        "shutter/09_rear_dial": 0.0,
+        "shutter/10_io_plate": 0.0,
+        "shutter/12_lens_blank": 0.0,
+        "shutter/13_lens_blank_retainer": 0.0,
+        "shutter/14_dial_retainer": 0.0,
+        "shutter/17_camera_saddle": 0.0,
+        "shutter/18_camera_clamp": 0.0,
+        "shutter/19_usb_retainer": 0.0,
+        "shutter/20_shutter_service_cover": 0.0,
+        "pin/02_chassis": 0.0,
+        "pin/03_rear_cover": 0.0,
+        "pin/04_esp32_carrier": 0.0,
+        "pin/05_board_clamp": 0.0,
+        "pin/06_optical_baffle": 0.0,
+        "pin/09_rear_dial": 0.0,
+        "pin/10_io_plate": 0.0,
+        "pin/12_lens_blank": 0.0,
+        "pin/13_lens_blank_retainer": 0.0,
+        "pin/14_dial_retainer": 0.0,
+        "pin/17_camera_saddle": 0.0,
+        "pin/18_camera_clamp": 0.0,
+        "pin/19_usb_retainer": 0.0,
+        "pin/20_shutter_service_cover": 0.0,
+        "spring/02_chassis": 0.0,
+        "spring/03_rear_cover": 0.0,
+        "spring/04_esp32_carrier": 0.0,
+        "spring/05_board_clamp": 0.0,
+        "spring/06_optical_baffle": 0.0,
+        "spring/09_rear_dial": 0.0,
+        "spring/10_io_plate": 0.0,
+        "spring/12_lens_blank": 0.0,
+        "spring/13_lens_blank_retainer": 0.0,
+        "spring/14_dial_retainer": 0.0,
+        "spring/17_camera_saddle": 0.0,
+        "spring/18_camera_clamp": 0.0,
+        "spring/19_usb_retainer": 0.0,
+        "spring/20_shutter_service_cover": 0.0
+      }
+    },
+    {
+      "displacement_mm": 0.25,
+      "validity": {
+        "cage": {
+          "valid": true,
+          "solids": 1
+        },
+        "shutter": {
+          "valid": true,
+          "solids": 1
+        },
+        "pin": {
+          "valid": true,
+          "solids": 1
+        },
+        "spring": {
+          "valid": true,
+          "solids": 1
+        }
+      },
+      "intersection_volumes_mm3": {
+        "cage/shutter": 0.0,
+        "cage/pin": 0.0,
+        "cage/spring": 0.0,
+        "shutter/pin": 0.0,
+        "shutter/spring": 0.0,
+        "pin/spring": 0.0
+      },
+      "fixed_assembly_intersection_volumes_mm3": {
+        "shutter/02_chassis": 0.0,
+        "shutter/03_rear_cover": 0.0,
+        "shutter/04_esp32_carrier": 0.0,
+        "shutter/05_board_clamp": 0.0,
+        "shutter/06_optical_baffle": 0.0,
+        "shutter/09_rear_dial": 0.0,
+        "shutter/10_io_plate": 0.0,
+        "shutter/12_lens_blank": 0.0,
+        "shutter/13_lens_blank_retainer": 0.0,
+        "shutter/14_dial_retainer": 0.0,
+        "shutter/17_camera_saddle": 0.0,
+        "shutter/18_camera_clamp": 0.0,
+        "shutter/19_usb_retainer": 0.0,
+        "shutter/20_shutter_service_cover": 0.0,
+        "pin/02_chassis": 0.0,
+        "pin/03_rear_cover": 0.0,
+        "pin/04_esp32_carrier": 0.0,
+        "pin/05_board_clamp": 0.0,
+        "pin/06_optical_baffle": 0.0,
+        "pin/09_rear_dial": 0.0,
+        "pin/10_io_plate": 0.0,
+        "pin/12_lens_blank": 0.0,
+        "pin/13_lens_blank_retainer": 0.0,
+        "pin/14_dial_retainer": 0.0,
+        "pin/17_camera_saddle": 0.0,
+        "pin/18_camera_clamp": 0.0,
+        "pin/19_usb_retainer": 0.0,
+        "pin/20_shutter_service_cover": 0.0,
+        "spring/02_chassis": 0.0,
+        "spring/03_rear_cover": 0.0,
+        "spring/04_esp32_carrier": 0.0,
+        "spring/05_board_clamp": 0.0,
+        "spring/06_optical_baffle": 0.0,
+        "spring/09_rear_dial": 0.0,
+        "spring/10_io_plate": 0.0,
+        "spring/12_lens_blank": 0.0,
+        "spring/13_lens_blank_retainer": 0.0,
+        "spring/14_dial_retainer": 0.0,
+        "spring/17_camera_saddle": 0.0,
+        "spring/18_camera_clamp": 0.0,
+        "spring/19_usb_retainer": 0.0,
+        "spring/20_shutter_service_cover": 0.0
+      }
+    },
+    {
+      "displacement_mm": 0.5,
+      "validity": {
+        "cage": {
+          "valid": true,
+          "solids": 1
+        },
+        "shutter": {
+          "valid": true,
+          "solids": 1
+        },
+        "pin": {
+          "valid": true,
+          "solids": 1
+        },
+        "spring": {
+          "valid": true,
+          "solids": 1
+        }
+      },
+      "intersection_volumes_mm3": {
+        "cage/shutter": 0.0,
+        "cage/pin": 0.0,
+        "cage/spring": 0.0,
+        "shutter/pin": 0.0,
+        "shutter/spring": 0.0,
+        "pin/spring": 0.0
+      },
+      "fixed_assembly_intersection_volumes_mm3": {
+        "shutter/02_chassis": 0.0,
+        "shutter/03_rear_cover": 0.0,
+        "shutter/04_esp32_carrier": 0.0,
+        "shutter/05_board_clamp": 0.0,
+        "shutter/06_optical_baffle": 0.0,
+        "shutter/09_rear_dial": 0.0,
+        "shutter/10_io_plate": 0.0,
+        "shutter/12_lens_blank": 0.0,
+        "shutter/13_lens_blank_retainer": 0.0,
+        "shutter/14_dial_retainer": 0.0,
+        "shutter/17_camera_saddle": 0.0,
+        "shutter/18_camera_clamp": 0.0,
+        "shutter/19_usb_retainer": 0.0,
+        "shutter/20_shutter_service_cover": 0.0,
+        "pin/02_chassis": 0.0,
+        "pin/03_rear_cover": 0.0,
+        "pin/04_esp32_carrier": 0.0,
+        "pin/05_board_clamp": 0.0,
+        "pin/06_optical_baffle": 0.0,
+        "pin/09_rear_dial": 0.0,
+        "pin/10_io_plate": 0.0,
+        "pin/12_lens_blank": 0.0,
+        "pin/13_lens_blank_retainer": 0.0,
+        "pin/14_dial_retainer": 0.0,
+        "pin/17_camera_saddle": 0.0,
+        "pin/18_camera_clamp": 0.0,
+        "pin/19_usb_retainer": 0.0,
+        "pin/20_shutter_service_cover": 0.0,
+        "spring/02_chassis": 0.0,
+        "spring/03_rear_cover": 0.0,
+        "spring/04_esp32_carrier": 0.0,
+        "spring/05_board_clamp": 0.0,
+        "spring/06_optical_baffle": 0.0,
+        "spring/09_rear_dial": 0.0,
+        "spring/10_io_plate": 0.0,
+        "spring/12_lens_blank": 0.0,
+        "spring/13_lens_blank_retainer": 0.0,
+        "spring/14_dial_retainer": 0.0,
+        "spring/17_camera_saddle": 0.0,
+        "spring/18_camera_clamp": 0.0,
+        "spring/19_usb_retainer": 0.0,
+        "spring/20_shutter_service_cover": 0.0
+      }
+    },
+    {
+      "displacement_mm": 0.75,
+      "validity": {
+        "cage": {
+          "valid": true,
+          "solids": 1
+        },
+        "shutter": {
+          "valid": true,
+          "solids": 1
+        },
+        "pin": {
+          "valid": true,
+          "solids": 1
+        },
+        "spring": {
+          "valid": true,
+          "solids": 1
+        }
+      },
+      "intersection_volumes_mm3": {
+        "cage/shutter": 0.0,
+        "cage/pin": 0.0,
+        "cage/spring": 0.0,
+        "shutter/pin": 0.0,
+        "shutter/spring": 0.0,
+        "pin/spring": 0.0
+      },
+      "fixed_assembly_intersection_volumes_mm3": {
+        "shutter/02_chassis": 0.0,
+        "shutter/03_rear_cover": 0.0,
+        "shutter/04_esp32_carrier": 0.0,
+        "shutter/05_board_clamp": 0.0,
+        "shutter/06_optical_baffle": 0.0,
+        "shutter/09_rear_dial": 0.0,
+        "shutter/10_io_plate": 0.0,
+        "shutter/12_lens_blank": 0.0,
+        "shutter/13_lens_blank_retainer": 0.0,
+        "shutter/14_dial_retainer": 0.0,
+        "shutter/17_camera_saddle": 0.0,
+        "shutter/18_camera_clamp": 0.0,
+        "shutter/19_usb_retainer": 0.0,
+        "shutter/20_shutter_service_cover": 0.0,
+        "pin/02_chassis": 0.0,
+        "pin/03_rear_cover": 0.0,
+        "pin/04_esp32_carrier": 0.0,
+        "pin/05_board_clamp": 0.0,
+        "pin/06_optical_baffle": 0.0,
+        "pin/09_rear_dial": 0.0,
+        "pin/10_io_plate": 0.0,
+        "pin/12_lens_blank": 0.0,
+        "pin/13_lens_blank_retainer": 0.0,
+        "pin/14_dial_retainer": 0.0,
+        "pin/17_camera_saddle": 0.0,
+        "pin/18_camera_clamp": 0.0,
+        "pin/19_usb_retainer": 0.0,
+        "pin/20_shutter_service_cover": 0.0,
+        "spring/02_chassis": 0.0,
+        "spring/03_rear_cover": 0.0,
+        "spring/04_esp32_carrier": 0.0,
+        "spring/05_board_clamp": 0.0,
+        "spring/06_optical_baffle": 0.0,
+        "spring/09_rear_dial": 0.0,
+        "spring/10_io_plate": 0.0,
+        "spring/12_lens_blank": 0.0,
+        "spring/13_lens_blank_retainer": 0.0,
+        "spring/14_dial_retainer": 0.0,
+        "spring/17_camera_saddle": 0.0,
+        "spring/18_camera_clamp": 0.0,
+        "spring/19_usb_retainer": 0.0,
+        "spring/20_shutter_service_cover": 0.0
+      }
+    },
+    {
+      "displacement_mm": 1.0,
+      "validity": {
+        "cage": {
+          "valid": true,
+          "solids": 1
+        },
+        "shutter": {
+          "valid": true,
+          "solids": 1
+        },
+        "pin": {
+          "valid": true,
+          "solids": 1
+        },
+        "spring": {
+          "valid": true,
+          "solids": 1
+        }
+      },
+      "intersection_volumes_mm3": {
+        "cage/shutter": 0.0,
+        "cage/pin": 0.0,
+        "cage/spring": 0.0,
+        "shutter/pin": 0.0,
+        "shutter/spring": 0.0,
+        "pin/spring": 0.0
+      },
+      "fixed_assembly_intersection_volumes_mm3": {
+        "shutter/02_chassis": 0.0,
+        "shutter/03_rear_cover": 0.0,
+        "shutter/04_esp32_carrier": 0.0,
+        "shutter/05_board_clamp": 0.0,
+        "shutter/06_optical_baffle": 0.0,
+        "shutter/09_rear_dial": 0.0,
+        "shutter/10_io_plate": 0.0,
+        "shutter/12_lens_blank": 0.0,
+        "shutter/13_lens_blank_retainer": 0.0,
+        "shutter/14_dial_retainer": 0.0,
+        "shutter/17_camera_saddle": 0.0,
+        "shutter/18_camera_clamp": 0.0,
+        "shutter/19_usb_retainer": 0.0,
+        "shutter/20_shutter_service_cover": 0.0,
+        "pin/02_chassis": 0.0,
+        "pin/03_rear_cover": 0.0,
+        "pin/04_esp32_carrier": 0.0,
+        "pin/05_board_clamp": 0.0,
+        "pin/06_optical_baffle": 0.0,
+        "pin/09_rear_dial": 0.0,
+        "pin/10_io_plate": 0.0,
+        "pin/12_lens_blank": 0.0,
+        "pin/13_lens_blank_retainer": 0.0,
+        "pin/14_dial_retainer": 0.0,
+        "pin/17_camera_saddle": 0.0,
+        "pin/18_camera_clamp": 0.0,
+        "pin/19_usb_retainer": 0.0,
+        "pin/20_shutter_service_cover": 0.0,
+        "spring/02_chassis": 0.0,
+        "spring/03_rear_cover": 0.0,
+        "spring/04_esp32_carrier": 0.0,
+        "spring/05_board_clamp": 0.0,
+        "spring/06_optical_baffle": 0.0,
+        "spring/09_rear_dial": 0.0,
+        "spring/10_io_plate": 0.0,
+        "spring/12_lens_blank": 0.0,
+        "spring/13_lens_blank_retainer": 0.0,
+        "spring/14_dial_retainer": 0.0,
+        "spring/17_camera_saddle": 0.0,
+        "spring/18_camera_clamp": 0.0,
+        "spring/19_usb_retainer": 0.0,
+        "spring/20_shutter_service_cover": 0.0
+      }
+    }
+  ],
+  "overtravel_stops": [
+    {
+      "displacement_mm": -0.25,
+      "moving_part": "pin",
+      "intersection_with_cage_mm3": 1.6794312484237301,
+      "positive_stop_blocks_overtravel": true
+    },
+    {
+      "displacement_mm": 1.25,
+      "moving_part": "shutter",
+      "intersection_with_cage_mm3": 14.419910279976705,
+      "positive_stop_blocks_overtravel": true
+    }
+  ],
+  "exported_geometry_comparison": [
+    {
+      "part": "07_shutter",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "08_shutter_pin",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "15_shutter_return_flexure",
+      "symmetric_difference_mm3": 0.0
+    }
+  ],
+  "beam": {
+    "root_to_contact_mm": 14.8,
+    "flexible_span_mm": 13.600000000000001,
+    "width_mm": 4.8,
+    "thickness_mm": 0.8,
+    "analytic_small_deflection_max_strain_at_1mm": 0.006487889273356401,
+    "fatigue_or_material_verification": false
+  },
+  "scope": "Exact BRep intersections at five prescribed deformation states; analytic spring sizing only. The deformed beam is a geometric kinematic approximation, not an FEA or physical spring-force test. Snap insertion, actual switch fit and cyclic life are not verified.",
+  "errors": [],
+  "nominal_geometry_and_positive_stops_pass": true
+}
