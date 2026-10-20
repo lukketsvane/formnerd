@@ -6,17 +6,169 @@
   "plate": "Textured PEI Plate",
   "stotte": "tree(auto), berre fraa plata=1",
   "veggar": "3",
+  "veggmotor": "arachne",
   "fyll": "15%",
   "lag_mm": "0.2",
-  "tid": "5h 35m 8s",
-  "vekt_g": 191.05,
+  "tid": "5h 35m 45s",
+  "vekt_g": 191.06,
   "lag": 424,
-  "miniatyr": false,
   "objekt": [
     "kropp.stl",
     "stabelhaldar.stl",
     "luke.stl",
     "usb-lokk.stl",
     "utloysar.stl"
-  ]
+  ],
+  "kontroll": {
+    "p1s_startkode": true,
+    "ams_lasting": true,
+    "dysetemp_220": true,
+    "printer_model_id": "C12"
+  },
+  "miniatyr": false,
+  "filer": {
+    "A3-Entropi-P1S-utan-haldar.gcode.3mf": {
+      "tid": "5h 15m 30s",
+      "vekt_g": 176.98,
+      "lag": 424,
+      "objekt": [
+        "kropp.stl",
+        "luke.stl",
+        "usb-lokk.stl",
+        "utloysar.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D14.0.gcode.3mf": {
+      "tid": "28m 25s",
+      "vekt_g": 14.91,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D14.0.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D14.5.gcode.3mf": {
+      "tid": "28m 40s",
+      "vekt_g": 14.67,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D14.5.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D15.0.gcode.3mf": {
+      "tid": "28m 17s",
+      "vekt_g": 14.41,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D15.0.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D15.5.gcode.3mf": {
+      "tid": "28m 23s",
+      "vekt_g": 14.24,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D15.5.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D16.0.gcode.3mf": {
+      "tid": "28m 13s",
+      "vekt_g": 14.15,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D16.0.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D16.5.gcode.3mf": {
+      "tid": "28m 16s",
+      "vekt_g": 14.08,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D16.5.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D17.0.gcode.3mf": {
+      "tid": "28m 14s",
+      "vekt_g": 14.04,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D17.0.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D17.5.gcode.3mf": {
+      "tid": "28m 7s",
+      "vekt_g": 13.95,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D17.5.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    },
+    "haldar-p1s/stabelhaldar-D18.0.gcode.3mf": {
+      "tid": "28m 3s",
+      "vekt_g": 13.79,
+      "lag": 185,
+      "objekt": [
+        "stabelhaldar-D18.0.stl"
+      ],
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    }
+  }
 }
