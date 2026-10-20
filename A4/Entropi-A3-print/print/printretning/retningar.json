@@ -1,0 +1,72 @@
+{
+  "kropp": {
+    "botn_mot_bordet": [
+      0,
+      0,
+      -1
+    ],
+    "storleik_mm": [
+      90.2,
+      120.0,
+      84.7
+    ],
+    "vasstett": true,
+    "volum_cm3": 411.75
+  },
+  "luke": {
+    "botn_mot_bordet": [
+      0,
+      0,
+      1
+    ],
+    "storleik_mm": [
+      43.6,
+      50.1,
+      7.0
+    ],
+    "vasstett": true,
+    "volum_cm3": 12.05
+  },
+  "utloysar": {
+    "botn_mot_bordet": [
+      0,
+      0,
+      -1
+    ],
+    "storleik_mm": [
+      13.0,
+      13.0,
+      5.6
+    ],
+    "vasstett": true,
+    "volum_cm3": 0.57
+  },
+  "stabelhaldar": {
+    "botn_mot_bordet": [
+      0,
+      0,
+      -1
+    ],
+    "storleik_mm": [
+      25.0,
+      46.1,
+      37.0
+    ],
+    "vasstett": true,
+    "volum_cm3": 29.54
+  },
+  "usb-lokk": {
+    "botn_mot_bordet": [
+      0,
+      -1,
+      0
+    ],
+    "storleik_mm": [
+      12.8,
+      12.8,
+      9.4
+    ],
+    "vasstett": true,
+    "volum_cm3": 1.26
+  }
+}
