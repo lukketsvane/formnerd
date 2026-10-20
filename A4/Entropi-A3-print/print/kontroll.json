@@ -24,7 +24,7 @@
   "delar": {
     "kropp": {
       "status": "Error.NoError",
-      "volum_cm3": 411.746,
+      "volum_cm3": 412.278,
       "genus": 10,
       "komponentar": 1,
       "bbox": [
@@ -42,7 +42,7 @@
     },
     "luke": {
       "status": "Error.NoError",
-      "volum_cm3": 12.052,
+      "volum_cm3": 12.046,
       "genus": 0,
       "komponentar": 1,
       "bbox": [
@@ -60,25 +60,25 @@
     },
     "utloysar": {
       "status": "Error.NoError",
-      "volum_cm3": 0.566,
+      "volum_cm3": 0.429,
       "genus": 0,
       "komponentar": 1,
       "bbox": [
         [
-          39.0,
-          6.5,
+          39.9,
+          7.9,
           58.3
         ],
         [
-          52.0,
-          19.5,
-          63.88
+          51.1,
+          19.1,
+          63.78
         ]
       ]
     },
     "stabelhaldar": {
       "status": "Error.NoError",
-      "volum_cm3": 29.537,
+      "volum_cm3": 30.14,
       "genus": 0,
       "komponentar": 1,
       "bbox": [
@@ -96,19 +96,19 @@
     },
     "usb-lokk": {
       "status": "Error.NoError",
-      "volum_cm3": 1.262,
+      "volum_cm3": 1.285,
       "genus": 0,
       "komponentar": 1,
       "bbox": [
         [
-          43.02,
+          43.5,
           108.95,
-          25.62
+          25.6
         ],
         [
-          55.78,
-          118.33,
-          38.38
+          55.3,
+          118.24,
+          42.6
         ]
       ]
     }
@@ -116,12 +116,12 @@
   "veggar_mm": {
     "rom_A": 2.93,
     "rom_B": 7.69,
-    "brytarlomme": 2.52,
+    "brytarlomme": 2.54,
     "kabeltunnel": 4.78,
     "magnetlommer": 4.68,
-    "kabelgap": 9.07,
+    "kabelgap": 8.98,
     "sd_spor": 4.88,
-    "usb_tunnel_sidevegg": 2.37,
+    "usb_tunnel_sidevegg": 2.39,
     "usbc_mot_holrom": 23.37,
     "okular_mot_holrom": 30.0
   },
@@ -195,7 +195,7 @@
     "stabelhaldar_mot_kropp": 0.0,
     "luke_mot_kropp": 0.0,
     "usb-lokk_mot_kropp": 0.0,
-    "stabelhaldar_mot_luke": 0.0
+    "stabelhaldar_mot_luke": -0.0
   },
   "stabel_klaring_mm": {
     "kropp": 0.1,
