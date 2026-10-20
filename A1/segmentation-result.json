@@ -1,0 +1,23 @@
+{
+  "type": [
+    "smartsegment_model"
+  ],
+  "status": [
+    "success"
+  ],
+  "prompt": [
+    "front frame with ribs, top bridge, outer circular ring, rear camera body, circular inner front cover, shutter button, top control dial, left front grip, mesh silhouette, openings"
+  ],
+  "seg_task_id": [
+    "10d1c148-313f-4010-8623-f829ac497be7"
+  ],
+  "model_task_id": [
+    "4db8abf2-adf0-4b30-9add-0f8597c328c4"
+  ],
+  "task_id": [
+    "0e8af52b-a059-45a7-99bf-ce9f5cdefd01"
+  ],
+  "credits_consumed": [
+    55
+  ]
+}

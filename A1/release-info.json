@@ -1,0 +1,41 @@
+{
+  "status": "digitally_verified_supported_3mf_physical_print_not_tested",
+  "reference_image_sha256": "41b373f118ec147d46a8cf4775c717bed824d2c57cd98b843de6dc57e0a37814",
+  "reference_basis": "Tripo generation from the selected single image; not the original source mesh or a measured replica.",
+  "generation_model": "v3.1-20260211",
+  "operations": [
+    "image_to_model Ultra",
+    "Smart Segment fine",
+    "Quick Cap",
+    "smart retopology v3.0 on a separate preview copy"
+  ],
+  "tripo_credits_consumed": 160,
+  "native_capped_triangles": 2490708,
+  "segmented_nodes": 11,
+  "print_object_count": 1,
+  "print_volume_count": 11,
+  "assumed_width_mm": 140,
+  "dimension_is_measured": false,
+  "print_dimensions_xyz_mm": [
+    140,
+    104.06612515449524,
+    72.2116869688034
+  ],
+  "primary_print_file": "print/Entropi-140mm.3mf",
+  "source_geometry_simplified": false,
+  "exact_3mf_coordinates_and_indices_preserved": true,
+  "native_triangle_count_retained_by_slicer": true,
+  "supported_test_slice_passed": true,
+  "slicer_warnings": [],
+  "generic_estimate_g": 218.4,
+  "generic_estimate_duration": "16h20m41s",
+  "actual_Bambu_P1S_profile_verified": false,
+  "physical_print_tested": false,
+  "working_camera_or_mechanical_assembly_kit": false,
+  "separate_part_fit_verified": false,
+  "global_minimum_wall_certified": false,
+  "retopology_is_print_master": false,
+  "binary_stl_delivered": false,
+  "binary_stl_exclusion_reason": "Float32 export collapses six microscopic triangles; the exact high-precision3MF is delivered instead.",
+  "gcode_delivered": false
+}

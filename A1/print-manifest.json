@@ -1,0 +1,45 @@
+{
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "LES-MEG.txt",
+      "size_bytes": 2932,
+      "sha256": "d5ffb1da0ee51cbafb9ab44205048e9120e47866e7de00282a6f63be5fdd34d7"
+    },
+    {
+      "path": "print/Entropi-140mm.3mf",
+      "size_bytes": 50116982,
+      "sha256": "b31696e2058c31abc33bcf633eecd8b139027d3636940012948efdd1dc5c770f"
+    },
+    {
+      "path": "print/generic-PLA-0.4mm-0.2mm.ini",
+      "size_bytes": 8410,
+      "sha256": "e1a76513ed9ba02072915cb3fd7ccbcf0babddc91a164554a4212405ac1f9b5b"
+    },
+    {
+      "path": "print/poses.json",
+      "size_bytes": 2784,
+      "sha256": "7fbb80a0ec272c7e8c6f9ca3240a98622605e87219e7553c53c077574f858598"
+    },
+    {
+      "path": "release-info.json",
+      "size_bytes": 1577,
+      "sha256": "32454995351d16d733c5fa26091f6f69c4a2885b6cb65758531ed8bcbf430233"
+    },
+    {
+      "path": "review/assembled.png",
+      "size_bytes": 485595,
+      "sha256": "d88266fdbbd20acf1fe195806f63c29fc479ceee78e02b84345bc6c666e4307a"
+    },
+    {
+      "path": "verification/print-export.json",
+      "size_bytes": 11665,
+      "sha256": "77b736c0eddccefe8a32e7cf1327cea7b7ad26271aece5e4173f7aabff9c9a63"
+    },
+    {
+      "path": "verification/slicer-checks.json",
+      "size_bytes": 1889,
+      "sha256": "d21e2d47adc503f18a6668b1b25a7e950f598670bccb00417aebeda1c5ed36f2"
+    }
+  ]
+}

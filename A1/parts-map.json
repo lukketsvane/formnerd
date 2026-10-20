@@ -1,0 +1,68 @@
+{
+  "part_names_are_descriptive_review_labels": true,
+  "native_tripo_node_names_preserved": true,
+  "mechanical_separation_verified": false,
+  "parts": [
+    {
+      "node": "tripo_part_0",
+      "description": "main_front_frame_and_outer_ring",
+      "display_colour": "light_grey"
+    },
+    {
+      "node": "tripo_part_1",
+      "description": "rear_body_right",
+      "display_colour": "dark_grey"
+    },
+    {
+      "node": "tripo_part_2",
+      "description": "rear_body_left",
+      "display_colour": "dark_grey"
+    },
+    {
+      "node": "tripo_part_3",
+      "description": "grip_rib_surfaces",
+      "display_colour": "light_grey"
+    },
+    {
+      "node": "tripo_part_4",
+      "description": "left_grip_cover_and_small_patch",
+      "display_colour": "light_grey"
+    },
+    {
+      "node": "tripo_part_5",
+      "description": "front_body_panel_and_circular_front_disc",
+      "display_colour": "dark_grey"
+    },
+    {
+      "node": "tripo_part_6",
+      "description": "shoulder_and_under_bridge_patches",
+      "display_colour": "light_grey"
+    },
+    {
+      "node": "tripo_part_7",
+      "description": "inner_front_ring",
+      "display_colour": "dark_grey"
+    },
+    {
+      "node": "tripo_part_8",
+      "description": "upper_outer_bridge",
+      "display_colour": "light_grey"
+    },
+    {
+      "node": "tripo_part_9",
+      "description": "top_control",
+      "display_colour": "dark_grey"
+    },
+    {
+      "node": "tripo_part_10",
+      "description": "front_shutter_button",
+      "display_colour": "dark_grey"
+    }
+  ],
+  "notes": [
+    "Smart Segment labels are surface regions, not automatically mechanically separable parts.",
+    "Quick Cap connects the front body panel and front disc internally in node5.",
+    "Nodes4 and7 each contain two closed components.",
+    "The printable3MF keeps every region in one assembled form object."
+  ]
+}
