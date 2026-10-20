@@ -1,0 +1,1444 @@
+{
+  "revision": "A1-Assembly-R01",
+  "units": "mm",
+  "interference_limit_mm3": 0.01,
+  "parts": {
+    "01_outer_shell": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 459373.59922791255,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 1121315,
+      "triangles": 2257178,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 459373.59922791296,
+      "bounds_mm": [
+        -70.0,
+        -28.849999999999994,
+        -52.03306257724762,
+        70.0,
+        36.105841398239136,
+        52.03306257724762
+      ]
+    },
+    "02_native_rear_cover": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 49426.76641176396,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 120143,
+      "triangles": 240958,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 49426.76641176395,
+      "bounds_mm": [
+        -61.73728664453366,
+        -36.10584557056427,
+        -43.71761120222888,
+        64.43205771115277,
+        -25.799999999999997,
+        34.75319663297548
+      ]
+    },
+    "03_esp32_carrier": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 11684.624414376905,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 2791,
+      "triangles": 5598,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 11684.624414376904,
+      "bounds_mm": [
+        -49.5,
+        -23.6,
+        -29.8,
+        -13.899999999999999,
+        24.8,
+        21.8
+      ]
+    },
+    "04_optical_bezel": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 1627.5394091138994,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 1132,
+      "triangles": 2264,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 1627.539409113907,
+      "bounds_mm": [
+        -50.69710620797143,
+        24.0,
+        -27.397106207971433,
+        -12.702893792028565,
+        29.8,
+        10.59710620797144
+      ]
+    },
+    "05_lock_1": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 267.7230380173878,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 848,
+      "triangles": 1692,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 267.72303801737945,
+      "bounds_mm": [
+        -35.7,
+        -33.5,
+        25.5,
+        -27.699999999999996,
+        -18.5,
+        34.5
+      ]
+    },
+    "05_lock_2": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 267.72303801740617,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 848,
+      "triangles": 1692,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 267.72303801737934,
+      "bounds_mm": [
+        -35.7,
+        -33.5,
+        -42.49999999999999,
+        -27.7,
+        -18.5,
+        -33.49999999999999
+      ]
+    },
+    "05_lock_3": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 267.72303801737075,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 848,
+      "triangles": 1692,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 267.72303801737934,
+      "bounds_mm": [
+        16.0,
+        -33.5,
+        22.500000000000004,
+        24.0,
+        -18.5,
+        31.500000000000004
+      ]
+    },
+    "05_lock_4": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 267.72303801738207,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 848,
+      "triangles": 1692,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 267.72303801737945,
+      "bounds_mm": [
+        38.0,
+        -33.5,
+        -26.5,
+        46.0,
+        -18.5,
+        -17.5
+      ]
+    },
+    "06_lock_tool": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 207.8375,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 16,
+      "triangles": 28,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 207.8375,
+      "bounds_mm": [
+        -7.0,
+        -1.75,
+        -2.5,
+        7.0,
+        1.75,
+        5.75
+      ]
+    },
+    "07_shutter": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 641.6091216461336,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 11009,
+      "triangles": 22014,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 641.609121646183,
+      "bounds_mm": [
+        37.91291296482086,
+        1.5032955259084702,
+        30.3,
+        52.0220810174942,
+        15.260138362646103,
+        40.44087886810303
+      ]
+    },
+    "08_shutter_retainer": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 2405.5491462061927,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 308,
+      "triangles": 620,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 2405.549146206199,
+      "bounds_mm": [
+        35.7,
+        -25.7,
+        24.0,
+        54.3,
+        16.8,
+        35.2
+      ]
+    },
+    "09_camera_keeper": {
+      "valid": true,
+      "finite_coordinates": true,
+      "indices_in_range": true,
+      "open_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_mm3": 179.72374643368835,
+      "connected_components": 1,
+      "connectivity_basis": "scipy.sparse.csgraph vertex connectivity on exact triangle indices",
+      "topology_basis": "Exact triangle indices and float64 coordinates; no tolerance welding",
+      "vertices": 1148,
+      "triangles": 2296,
+      "manifold_status": "Error.NoError",
+      "manifold_volume_mm3": 179.72374643369125,
+      "bounds_mm": [
+        -39.7,
+        21.6,
+        -16.4,
+        -23.7,
+        24.8,
+        -0.40000000000000036
+      ]
+    }
+  },
+  "static_pairs": [
+    {
+      "a": "01_outer_shell",
+      "b": "02_native_rear_cover",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "03_esp32_carrier",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "04_optical_bezel",
+      "tested": true,
+      "volume_mm3": 1.809967106747301e-14,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "05_lock_1",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "05_lock_2",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "05_lock_3",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "05_lock_4",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "07_shutter",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "08_shutter_retainer",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "01_outer_shell",
+      "b": "09_camera_keeper",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "03_esp32_carrier",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "04_optical_bezel",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "05_lock_1",
+      "tested": true,
+      "volume_mm3": 3.333921680392926e-15,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "05_lock_2",
+      "tested": true,
+      "volume_mm3": -8.91105765565836e-16,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "05_lock_3",
+      "tested": true,
+      "volume_mm3": 2.475884081087898e-15,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "05_lock_4",
+      "tested": true,
+      "volume_mm3": 7.312293132111236e-15,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "07_shutter",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "08_shutter_retainer",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "02_native_rear_cover",
+      "b": "09_camera_keeper",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "04_optical_bezel",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "05_lock_1",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "05_lock_2",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "05_lock_3",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "05_lock_4",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "07_shutter",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "08_shutter_retainer",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "03_esp32_carrier",
+      "b": "09_camera_keeper",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "04_optical_bezel",
+      "b": "05_lock_1",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "04_optical_bezel",
+      "b": "05_lock_2",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "04_optical_bezel",
+      "b": "05_lock_3",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "04_optical_bezel",
+      "b": "05_lock_4",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "04_optical_bezel",
+      "b": "07_shutter",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "04_optical_bezel",
+      "b": "08_shutter_retainer",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "04_optical_bezel",
+      "b": "09_camera_keeper",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "05_lock_1",
+      "b": "05_lock_2",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_1",
+      "b": "05_lock_3",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_1",
+      "b": "05_lock_4",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_1",
+      "b": "07_shutter",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_1",
+      "b": "08_shutter_retainer",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_1",
+      "b": "09_camera_keeper",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_2",
+      "b": "05_lock_3",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_2",
+      "b": "05_lock_4",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_2",
+      "b": "07_shutter",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_2",
+      "b": "08_shutter_retainer",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_2",
+      "b": "09_camera_keeper",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_3",
+      "b": "05_lock_4",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_3",
+      "b": "07_shutter",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_3",
+      "b": "08_shutter_retainer",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_3",
+      "b": "09_camera_keeper",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_4",
+      "b": "07_shutter",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_4",
+      "b": "08_shutter_retainer",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "05_lock_4",
+      "b": "09_camera_keeper",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "07_shutter",
+      "b": "08_shutter_retainer",
+      "tested": true,
+      "volume_mm3": 0.0,
+      "status": "Error.NoError",
+      "valid": true
+    },
+    {
+      "a": "07_shutter",
+      "b": "09_camera_keeper",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    },
+    {
+      "a": "08_shutter_retainer",
+      "b": "09_camera_keeper",
+      "tested": false,
+      "volume_mm3": 0.0,
+      "status": "bounds_disjoint"
+    }
+  ],
+  "motions": [
+    {
+      "label": "Remove rear cover after unlocking and removing locks",
+      "moving_parts": [
+        "02_native_rear_cover"
+      ],
+      "prerequisites_removed": [
+        "05_lock_1",
+        "05_lock_2",
+        "05_lock_3",
+        "05_lock_4"
+      ],
+      "rotation_axis": null,
+      "rotation_centre_xz_mm": null,
+      "samples": [
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "boolean_tests": 1,
+          "bounds_skipped": 5,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -2.0,
+            0.0
+          ],
+          "boolean_tests": 1,
+          "bounds_skipped": 5,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -8.0,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 6,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -40.0,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 6,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    },
+    {
+      "label": "Extract carrier with attached camera keeper after rear cover and bezel removal",
+      "moving_parts": [
+        "03_esp32_carrier",
+        "09_camera_keeper"
+      ],
+      "prerequisites_removed": [
+        "05_lock_1",
+        "05_lock_2",
+        "05_lock_3",
+        "05_lock_4",
+        "02_native_rear_cover",
+        "04_optical_bezel"
+      ],
+      "rotation_axis": null,
+      "rotation_centre_xz_mm": null,
+      "samples": [
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 4,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -2.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 4,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -8.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 4,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -40.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 4,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -55.64999999999999,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 6,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    },
+    {
+      "label": "Unlock bezel then extract through front",
+      "moving_parts": [
+        "04_optical_bezel"
+      ],
+      "prerequisites_removed": [],
+      "rotation_axis": "+Y",
+      "rotation_centre_xz_mm": [
+        -31.7,
+        -8.4
+      ],
+      "samples": [
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -22.5,
+          "boolean_tests": 3,
+          "bounds_skipped": 7,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -45.0,
+          "boolean_tests": 3,
+          "bounds_skipped": 7,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boolean_tests": 3,
+          "bounds_skipped": 7,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "boolean_tests": 1,
+          "bounds_skipped": 9,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            8.0,
+            0.0
+          ],
+          "boolean_tests": 1,
+          "bounds_skipped": 9,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 10,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    },
+    {
+      "label": "Quarter-turn unlock then remove 05_lock_1",
+      "moving_parts": [
+        "05_lock_1"
+      ],
+      "prerequisites_removed": [],
+      "rotation_axis": "+Y",
+      "rotation_centre_xz_mm": [
+        -31.7,
+        30.0
+      ],
+      "samples": [
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -45.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -90.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -2.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -8.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -40.0,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 10,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    },
+    {
+      "label": "Quarter-turn unlock then remove 05_lock_2",
+      "moving_parts": [
+        "05_lock_2"
+      ],
+      "prerequisites_removed": [],
+      "rotation_axis": "+Y",
+      "rotation_centre_xz_mm": [
+        -31.7,
+        -38.0
+      ],
+      "samples": [
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -45.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -90.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -2.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -8.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -40.0,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 10,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    },
+    {
+      "label": "Quarter-turn unlock then remove 05_lock_3",
+      "moving_parts": [
+        "05_lock_3"
+      ],
+      "prerequisites_removed": [],
+      "rotation_axis": "+Y",
+      "rotation_centre_xz_mm": [
+        20.0,
+        27.0
+      ],
+      "samples": [
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -45.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -90.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -2.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -8.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -40.0,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 10,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    },
+    {
+      "label": "Quarter-turn unlock then remove 05_lock_4",
+      "moving_parts": [
+        "05_lock_4"
+      ],
+      "prerequisites_removed": [],
+      "rotation_axis": "+Y",
+      "rotation_centre_xz_mm": [
+        42.0,
+        -22.0
+      ],
+      "samples": [
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -45.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "unlock_rotation",
+          "angle_deg": -90.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -2.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -8.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -40.0,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 10,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    },
+    {
+      "label": "Shutter downward travel",
+      "moving_parts": [
+        "07_shutter"
+      ],
+      "samples": [
+        {
+          "travel_mm": 0.0,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "travel_mm": 0.6,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "travel_mm": 1.2,
+          "boolean_tests": 2,
+          "bounds_skipped": 8,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "valid": true,
+      "scope": "Discrete rigid-part samples only; switch actuation, return force and physical fit remain unverified"
+    },
+    {
+      "label": "Remove shutter retainer through rear access",
+      "moving_parts": [
+        "08_shutter_retainer"
+      ],
+      "prerequisites_removed": [
+        "05_lock_1",
+        "05_lock_2",
+        "05_lock_3",
+        "05_lock_4",
+        "02_native_rear_cover"
+      ],
+      "rotation_axis": null,
+      "rotation_centre_xz_mm": null,
+      "samples": [
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 3,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -2.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 3,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -8.0,
+            0.0
+          ],
+          "boolean_tests": 2,
+          "bounds_skipped": 3,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -40.0,
+            0.0
+          ],
+          "boolean_tests": 1,
+          "bounds_skipped": 4,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        },
+        {
+          "phase": "extraction",
+          "translation_mm": [
+            0.0,
+            -47.64999999999999,
+            0.0
+          ],
+          "boolean_tests": 0,
+          "bounds_skipped": 5,
+          "interferences": [],
+          "errors": [],
+          "valid": true
+        }
+      ],
+      "final_bounds_clear": true,
+      "valid": true,
+      "scope": "Discrete collision samples only; continuous swept collision, deformation, friction and physical fit are not certified"
+    }
+  ],
+  "excluded_from_assembly": [
+    {
+      "part": "06_lock_tool",
+      "reason": "Assembly tool or fit coupon"
+    },
+    {
+      "part": "test_lock_socket",
+      "reason": "Separate test or coupon artifact"
+    }
+  ],
+  "hardware_fit_verified": false,
+  "physical_print_tested": false,
+  "continuous_swept_motion_verified": false,
+  "missing_required_parts": [],
+  "static_interferences": [],
+  "static_errors": [],
+  "valid": true,
+  "scope": "Independent float64 mesh topology and sampled rigid assembly checks. Passing these checks is not physical print approval, measured hardware fit, working electronics, optical validation or a complete tolerance certificate."
+}

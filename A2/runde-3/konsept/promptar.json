@@ -1,7 +1,7 @@
 {
   "grunnlag": {
-    "image[1]": "konsept-r2/04-visir/bilete.png (file_106666bc-ea63-4d95-87bf-65586abc1efa)",
-    "image[2]": "referansar/ref-7-hovudreferanse.png (file_e8d96ef9-df67-4657-946b-d896b6aefb04)"
+    "image[1]": "A2/runde-2/konsept/04-visir/bilete.png (file_106666bc-ea63-4d95-87bf-65586abc1efa)",
+    "image[2]": "A2/referansar/ref-7-hovudreferanse.png (file_e8d96ef9-df67-4657-946b-d896b6aefb04)"
   },
   "konsept": [
     {
@@ -26,7 +26,7 @@
       "id": "04",
       "namn": "visir-tett-brei-basis",
       "model": "chat_image_2.5_sunburst",
-      "grunnlag": "konsept-r3/01-visir-tett-sunburst/bilete.png (file_84ba1a06-f723-4573-9089-ad8a35bab62c)",
+      "grunnlag": "A2/runde-3/konsept/01-visir-tett-sunburst/bilete.png (file_84ba1a06-f723-4573-9089-ad8a35bab62c)",
       "tekst": "Edit image[1] and keep everything exactly as it is (same tubes, grip, band, buttons, USB-C pocket, camera angle, lighting, white background, render quality). Only change: move the two small lens openings apart so that they sit near the two far ends of the dark opaque visor panel, at the same height, as far apart as the panel allows. Keep the lenses the same small size. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs."
     }
   ]

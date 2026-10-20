@@ -1,0 +1,152 @@
+{
+  "revision": "A1-Assembly-R01",
+  "printed_parts": [
+    {
+      "part": "01_outer_shell",
+      "name": "Ytterskal",
+      "quantity": 1,
+      "print_file": "print/01_outer_shell.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "02_native_rear_cover",
+      "name": "Krummt baklokk",
+      "quantity": 1,
+      "print_file": "print/02_native_rear_cover.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "03_esp32_carrier",
+      "name": "CAM/MB-haldar med framført kamerasete",
+      "quantity": 1,
+      "print_file": "print/03_esp32_carrier.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "04_optical_bezel",
+      "name": "Bajonettring, 30 mm fri opning",
+      "quantity": 1,
+      "print_file": "print/04_optical_bezel.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "05_lock_1",
+      "name": "Kvartomdreiingslås",
+      "quantity": 1,
+      "print_file": "print/05_lock_1.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "05_lock_2",
+      "name": "Kvartomdreiingslås",
+      "quantity": 1,
+      "print_file": "print/05_lock_2.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "05_lock_3",
+      "name": "Kvartomdreiingslås",
+      "quantity": 1,
+      "print_file": "print/05_lock_3.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "05_lock_4",
+      "name": "Kvartomdreiingslås",
+      "quantity": 1,
+      "print_file": "print/05_lock_4.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "06_lock_tool",
+      "name": "Låseverktøy",
+      "quantity": 1,
+      "print_file": "print/06_lock_tool.3mf",
+      "role": "assembly_tool"
+    },
+    {
+      "part": "07_shutter",
+      "name": "Utløysar med native knappetopp",
+      "quantity": 1,
+      "print_file": "print/07_shutter.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "08_shutter_retainer",
+      "name": "Utløysarkassett",
+      "quantity": 1,
+      "print_file": "print/08_shutter_retainer.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "09_camera_keeper",
+      "name": "Nominell kameraklemme",
+      "quantity": 1,
+      "print_file": "print/09_camera_keeper.3mf",
+      "role": "product_part"
+    },
+    {
+      "part": "test_lock_socket",
+      "name": "Testhylse for kvartomdreiingslås",
+      "quantity": 1,
+      "print_file": "print/test_lock_socket.3mf",
+      "role": "test_coupon"
+    }
+  ],
+  "printed_product_part_count": 11,
+  "external_parts": [
+    {
+      "name": "ESP32-CAM + ESP32-CAM-MB",
+      "quantity": 1,
+      "selection_confirmed_by_user": true,
+      "receipt_confirmed_in_equipment_pdf": false,
+      "actual_dimensions_verified": false,
+      "nominal_cam_mm": [
+        27,
+        40.5,
+        4.5
+      ],
+      "stack_placeholder_mm": [
+        28,
+        48,
+        22
+      ]
+    },
+    {
+      "name": "Kameramodul med fleks",
+      "quantity": 1,
+      "part_of_advertised_set": true,
+      "exact_model_dimensions_and_ribbon_reach_verified": false
+    },
+    {
+      "name": "Utløysarbrytar",
+      "quantity": 1,
+      "nominal_interface_mm": [
+        6,
+        6
+      ],
+      "owned_verified": false,
+      "actuation_height_overtravel_return_and_electrical_connection_verified": false
+    },
+    {
+      "name": "Straum og kabel til faktisk MB-port",
+      "owned_verified": false,
+      "connector_and_insertion_path_verified_with_real_hardware": false
+    }
+  ],
+  "purchased_fasteners_required_by_plastic_design": false,
+  "camera_keeper_retention_status": "Nominal slip-fit locating pegs; physical retention with the actual camera module must be verified before release.",
+  "battery_or_charger_assumed_owned": false,
+  "primary_sources": [
+    {
+      "title": "Ai-Thinker ESP32-CAM Module V1.0",
+      "url": "https://manuals.plus/m/de33092f058c4bef61e6faa236c401f7311fcad82c51193ed4c3d0717170efc7.pdf",
+      "pages": "1-2"
+    },
+    {
+      "title": "Olimex ESP32-CAM-MB schematic",
+      "url": "https://www.olimex.com/Products/IoT/ESP32/ESP32-CAM/resources/ESP32-CAM-MB-S001.jpg"
+    }
+  ],
+  "equipment_source": "Utstyret-me-har(1).pdf, 20 October 2026, page 1"
+}

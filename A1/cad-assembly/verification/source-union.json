@@ -1,0 +1,65 @@
+{
+  "tripo_part_0": {
+    "status": "Error.NoError",
+    "triangles": 796918,
+    "components": 1
+  },
+  "tripo_part_1": {
+    "status": "Error.NoError",
+    "triangles": 452300,
+    "components": 1
+  },
+  "tripo_part_10": {
+    "status": "Error.NoError",
+    "triangles": 23138,
+    "components": 1
+  },
+  "tripo_part_2": {
+    "status": "Error.NoError",
+    "triangles": 354972,
+    "components": 1
+  },
+  "tripo_part_3": {
+    "status": "Error.NoError",
+    "triangles": 200442,
+    "components": 1
+  },
+  "tripo_part_4": {
+    "status": "Error.NoError",
+    "triangles": 165666,
+    "components": 2
+  },
+  "tripo_part_5": {
+    "status": "Error.NoError",
+    "triangles": 147142,
+    "components": 1
+  },
+  "tripo_part_6": {
+    "status": "Error.NoError",
+    "triangles": 82504,
+    "components": 1
+  },
+  "tripo_part_7": {
+    "status": "Error.NoError",
+    "triangles": 92630,
+    "components": 2
+  },
+  "tripo_part_8": {
+    "status": "Error.NoError",
+    "triangles": 142070,
+    "components": 1
+  },
+  "tripo_part_9": {
+    "status": "Error.NoError",
+    "triangles": 32926,
+    "components": 1
+  },
+  "union": {
+    "status": "Error.NoError",
+    "triangles": 2703536,
+    "components": 1909,
+    "volume_mm3": 637033.7972604855
+  },
+  "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+  "cleanup_basis": "Largest exact-coordinate connected component retained; 1733 closed numerical slivers total signed volume -0.0007419659423670975 mm3 excluded. The detailed source mesh remains unchanged."
+}
