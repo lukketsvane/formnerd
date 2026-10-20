@@ -14,28 +14,14 @@ bambu() {
     "$RT/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2" "$APP/bin/bambu-studio" "$@")
 }
 python3 "$HER/bambu_profil.py" "$APP/share/BambuStudio/profiles/BBL" "$P/bambu/profil"
-DELAR=("$P/printretning/kropp.stl" "$P/printretning/luke.stl" "$P/printretning/stabelhaldar.stl" "$P/printretning/utloysar.stl" "$P/printretning/usb-lokk.stl")
+R="$P/printretning"
+DELAR=("$R/kropp.stl" "$R/luke.stl" "$R/stabelhaldar.stl" "$R/utloysar.stl" "$R/usb-lokk.stl")
 INN=(--orient 0 --arrange 1 --load-settings "$P/bambu/profil/maskin.json;$P/bambu/profil/prosess.json" --load-filaments "$P/bambu/profil/filament.json")
 bambu --debug 1 "${INN[@]}" --export-3mf "$P/A3-Entropi-P1S.3mf" "${DELAR[@]}"
 bambu --debug 1 "${INN[@]}" --slice 0 --export-3mf "$P/A3-Entropi-P1S.gcode.3mf" "${DELAR[@]}"
-python3 - "$P" <<'PY'
-import json, re, sys, zipfile, pathlib
-P = pathlib.Path(sys.argv[1])
-z = zipfile.ZipFile(P / "A3-Entropi-P1S.gcode.3mf")
-g = z.read("Metadata/plate_1.gcode").decode(errors="ignore")[:20000]
-info = z.read("Metadata/slice_info.config").decode()
-ps = json.loads(z.read("Metadata/project_settings.config"))
-out = {
-    "programvare": re.search(r'X-BBL-Client-Version" value="([^"]+)', info).group(1),
-    "skrivar": ps["printer_settings_id"], "prosess": ps["print_settings_id"], "filament": ps["filament_settings_id"][0],
-    "plate": ps["curr_bed_type"], "stotte": f'{ps["support_type"]}, berre fraa plata={ps["support_on_build_plate_only"]}',
-    "veggar": ps["wall_loops"], "fyll": ps["sparse_infill_density"], "lag_mm": ps["layer_height"],
-    "tid": re.search(r"total estimated time: ([^\n;]+)", g).group(1).strip(),
-    "vekt_g": float(re.search(r'key="weight" value="([\d.]+)', info).group(1)),
-    "lag": int(re.search(r"total layer number: (\d+)", g).group(1)),
-    "miniatyr": any(n.endswith(".png") for n in z.namelist()),
-    "objekt": re.findall(r'<object identify_id="\d+" name="([^"]+)"', info),
-}
-(P / "bambu" / "slicing.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
-print(json.dumps(out, indent=1, ensure_ascii=False))
-PY
+bambu --debug 1 "${INN[@]}" --slice 0 --export-3mf "$P/A3-Entropi-P1S-utan-haldar.gcode.3mf" "$R/kropp.stl" "$R/luke.stl" "$R/utloysar.stl" "$R/usb-lokk.stl"
+mkdir -p "$P/haldar-p1s"
+for f in "$R"/haldar-variantar/*.stl; do
+  bambu --debug 1 "${INN[@]}" --slice 0 --export-3mf "$P/haldar-p1s/$(basename "${f%.stl}").gcode.3mf" "$f"
+done
+python3 "$HER/bambu_etter.py" "$P" "$APP/share/BambuStudio/profiles/BBL"
