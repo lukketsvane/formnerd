@@ -41,6 +41,17 @@ def rboks_y(y0, y1, xc, zc, bx, hz, r):
                                 for sx in (-1, 1) for sz in (-1, 1)])
 
 
+def rboks_y_tak(y0, y1, xc, zc, bx, hz, r):
+    topp = zc + hz / 2 - r + (bx / 2 - r) + r * np.sqrt(2)
+    return Manifold.batch_hull([rboks_y(y0, y1, xc, zc, bx, hz, r), Manifold.cylinder(y1 - y0, 0.2, 0.2, 12).rotate([-90, 0, 0]).translate([xc, y0, topp - 0.2])])
+
+
+def draape(a, b, r):
+    a, b = np.array(a, float), np.array(b, float)
+    opp, tupp = np.array([0, 0, r * 0.6]), np.array([0, 0, r * 0.6 + r * np.sqrt(2) - 0.2])
+    return Manifold.batch_hull([Manifold.sphere(r, 32).translate(p) for p in (a, b, a + opp, b + opp)] + [Manifold.sphere(0.2, 12).translate(p) for p in (a + tupp, b + tupp)])
+
+
 def prisme(poly, z0, z1):
     return CrossSection([[tuple(p) for p in poly]], FillRule.Positive).extrude(z1 - z0).translate([0, 0, z0])
 
@@ -114,7 +125,7 @@ sd_spor = boks([x_kort - (x_tappar - rom["bak_x"] - 0.1) - sk["klaring"], rom["d
 sd_spor += boks([rom["deling_x"], x_kort + 0.8 + sk["klaring"]], [sk["spor_y_fraa"], rom["y"][0] + 0.01], [az - 5.5 - sk["klaring"], az + 5.5 + sk["klaring"]])
 frontstopp = sum((boks([x_cam_front + fs["klaring"], rom["front_x"] + 0.01], fs["y"], z) for z in fs["z"]), Manifold())
 ks, lk = K["kamerasete"], K["linsekonus"]
-sete = boks([rom["front_x"] - 0.1, x_konus + 0.1], [ay - ks["side"] / 2, ay + ks["side"] / 2], [az - ks["side"] / 2, az + ks["side"] / 2])
+sete = boks([rom["front_x"] - 0.1, x_konus + 0.8], [ay - ks["side"] / 2, ay + ks["side"] / 2], [az - ks["side"] / 2, az + ks["side"] / 2])
 konus = Manifold.batch_hull([xskive(x_konus, ay, az, lk["bak_r"]), xskive(lk["front_x"], ay, az, lk["front_r"])])
 konus += Manifold.cylinder(lk["fram_til_x"] - lk["front_x"], lk["front_r"], lk["front_r"], SEG).rotate([0, 90, 0]).translate([lk["front_x"], ay, az])
 
@@ -127,16 +138,16 @@ lomme_botn = ut_["kapp_z"] - br["hogd_med_bein"]
 bx, by = br["senter"]
 brytarlomme = boks([bx - br["side_x"] / 2, bx + br["side_x"] / 2], [by - br["side_y"] / 2, by + br["side_y"] / 2], [lomme_botn, brunn_golv + 0.1])
 kt = K["kabeltunnel"]
-kabeltunnel = tunnel([bx, by, lomme_botn + kt["r"] * 0.5], kt["slutt"], kt["r"]) + tunnel([bx, by, lomme_botn + kt["r"] * 0.5], kt["slutt"], kt["r"]).translate([0, 0, kt["r"] * 0.6])
+kabeltunnel = draape([bx, by, lomme_botn + kt["r"] * 0.5], kt["slutt"], kt["r"])
 
 ut_t = K["usb_tunnel"]
 y_hjul_usb = flate_y(x_usb, az, False)
-usb_tunnel = rboks_y(rom["y"][1] - 0.5, y_hjul_usb + 5, x_usb, az, ut_t["b_x"], ut_t["h_z"], ut_t["r"])
+usb_tunnel = rboks_y_tak(rom["y"][1] - 0.5, y_hjul_usb + 5, x_usb, az, ut_t["b_x"], ut_t["h_z"], ut_t["r"])
 
 lu, mg = K["luke"], K["magnetar"]
 luke_prisme = prisme(lu["polygon"], -5, golv)
 mag_d, mag_h = mg["d"] + mg["klaring_d"], mg["h"] + mg["klaring_h"]
-mag_kropp = sum((vsyl(x, y, mag_d / 2, golv - 0.01, golv + mag_h) for x, y in mg["pos"]), Manifold())
+mag_kropp = sum((vsyl(x, y, mag_d / 2, golv - 0.01, golv + mag_h) + Manifold.cylinder(mag_d / 2 - 0.3, mag_d / 2, 0.3, SEG).translate([x, y, golv + mag_h - 0.01]) for x, y in mg["pos"]), Manifold())
 mag_luke = sum((vsyl(x, y, mag_d / 2, golv - mag_h, golv + 0.01) for x, y in mg["pos"]), Manifold())
 
 HOLROM = romA + romB + sete + konus + brunn + brytarlomme + kabeltunnel + usb_tunnel + usbc + okular + kabelgap + sd_spor - frontstopp
@@ -159,6 +170,9 @@ def haldar(D):
     h = boks([rom["bak_x"] + c, xf - c], [rom["y"][0] + c, rom["y"][1] - c], [golv, rom["tak_z"] - 2.0])
     h += boks([xf - c - 0.01, rom["deling_x"] - c], [hd["vogge_y"][0], sm["y_fraa"] - c], [golv, z_lag - c])
     h += boks([xf - c - 0.01, sm["x_maks"] - c], [sm["y_fraa"] - 0.01, hd["vogge_y"][1]], [golv, z_lag - c])
+    h += boks([xf - c - 0.01, x_mb_topp - 0.3], [rom["y"][0] + c, y_usb - st["mb_lengd"] - c], [golv, 34.0])
+    h += boks([xf - c - 0.01, x_mb_topp - 0.3], [y_usb - st["mb_lengd"] - 0.6, hd["vogge_y"][0] + 0.1], [golv, z_lag - c])
+    h += boks([xf - c - 0.01, x_mb_topp - 0.3], [y_usb + c, rom["y"][1] - c], [z_lag + 0.5, rom["tak_z"] - 2.0])
     h -= rboks_y(y_usb - 3.5, rom["y"][1] + 5, x_usb, az, ut_t["b_x"], ut_t["h_z"], ut_t["r"])
     h -= boks(ksp["x"], [ksp["y"][0] - 1, ksp["y"][1]], [golv - 1, rom["tak_z"]])
     return h
@@ -168,7 +182,7 @@ D_NOM = round(x_stopp - x_tappar, 2)
 HALDAR = haldar(D_NOM)
 HALDAR_VAR = {D: haldar(D) for D in hd["d_variantar"]}
 
-lokk_ytre = rboks_y(y_hjul_usb - ut_t["lokk_lengd"], y_hjul_usb + 6, x_usb, az, ut_t["b_x"] - 2 * ut_t["lokk_klaring"], ut_t["h_z"] - 2 * ut_t["lokk_klaring"], max(ut_t["r"] - ut_t["lokk_klaring"], 0.5))
+lokk_ytre = rboks_y_tak(y_hjul_usb - ut_t["lokk_lengd"], y_hjul_usb + 6, x_usb, az, ut_t["b_x"] - 2 * ut_t["lokk_klaring"], ut_t["h_z"] - 2 * ut_t["lokk_klaring"], max(ut_t["r"] - ut_t["lokk_klaring"], 0.5))
 USBLOKK = KROPP0 ^ lokk_ytre
 
 # --- komponent-proxyar ----------------------------------------------------

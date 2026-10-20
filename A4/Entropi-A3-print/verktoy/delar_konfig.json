@@ -42,7 +42,7 @@
    "z_under": 16.6
   },
   "kabelgap": {
-   "y_fraa": 52.4,
+   "y_fraa": 51.2,
    "z_fraa": 34.0,
    "x": [
     41.0,
@@ -56,12 +56,12 @@
    ],
    "z": [
     [
-     18.6,
+     18.29,
      20.6
     ],
     [
      43.4,
-     45.4
+     46.01
     ]
    ],
    "klaring": 0.1
@@ -71,7 +71,7 @@
     85.5,
     93.5
    ],
-   "z_topp": 47.3
+   "z_topp": 48.3
   }
  },
  "golv_z": 7.0,
@@ -81,7 +81,7 @@
  "linsekonus": {
   "bak_r": 6.0,
   "front_x": 86.0,
-  "front_r": 17.8,
+  "front_r": 16.6,
   "fram_til_x": 96.0
  },
  "luke": {
@@ -134,19 +134,19 @@
  "magnetar": {
   "d": 6.0,
   "h": 3.0,
-  "klaring_d": 0.2,
+  "klaring_d": 0.25,
   "klaring_h": 0.2,
   "pos": [
    [
-    22.5,
+    22.6,
     58.0
    ],
    [
-    22.5,
+    22.6,
     77.0
    ],
    [
-    22.5,
+    22.6,
     96.0
    ],
    [
@@ -184,21 +184,21 @@
   ]
  },
  "usb_tunnel": {
-  "b_x": 13.0,
+  "b_x": 12.0,
   "h_z": 13.0,
-  "r": 2.0,
-  "lokk_klaring": 0.12,
+  "r": 3.0,
+  "lokk_klaring": 0.1,
   "lokk_lengd": 8.0
  },
  "utloysar": {
   "senter": [
    45.5,
-   13.0
+   13.5
   ],
-  "kapp_r": 6.5,
-  "brunn_r": 6.8,
+  "kapp_r": 5.6,
+  "brunn_r": 5.9,
   "kapp_z": 58.3,
-  "vandring": 0.6
+  "vandring": 0.9
  },
  "brytar": {
   "side_x": 7.8,
