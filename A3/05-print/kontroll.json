@@ -1,0 +1,216 @@
+{
+  "stabel_x": {
+    "tappar": 44.55,
+    "mb_botn": 46.55,
+    "mb_topp": 48.15,
+    "cam_bak": 59.15,
+    "cam_front": 60.4,
+    "linse_tupp": 69.3
+  },
+  "stabel_y": {
+    "sd_ende": 55.2,
+    "antenne_ende": 95.7,
+    "usb_munn": 97.7
+  },
+  "stabel_z": [
+    18.5,
+    45.5
+  ],
+  "usb_akse_x": 49.4,
+  "usb_tunnel_ut_y": 116.95162674662636,
+  "brytarlomme_botn_z": 49.8,
+  "y_grep_flate": 1.236117364989589,
+  "y_hjul_panel": 118.78699161271334,
+  "delar": {
+    "kropp": {
+      "status": "Error.NoError",
+      "volum_cm3": 415.965,
+      "genus": 11,
+      "komponentar": 1,
+      "bbox": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          90.17,
+          120.0,
+          84.73
+        ]
+      ]
+    },
+    "luke": {
+      "status": "Error.NoError",
+      "volum_cm3": 12.238,
+      "genus": 0,
+      "komponentar": 1,
+      "bbox": [
+        [
+          18.0,
+          51.0,
+          0.0
+        ],
+        [
+          62.0,
+          101.5,
+          7.0
+        ]
+      ]
+    },
+    "utloysar": {
+      "status": "Error.NoError",
+      "volum_cm3": 0.747,
+      "genus": 0,
+      "komponentar": 1,
+      "bbox": [
+        [
+          37.65,
+          6.0,
+          58.3
+        ],
+        [
+          53.35,
+          20.35,
+          63.93
+        ]
+      ]
+    },
+    "stabelhaldar": {
+      "status": "Error.NoError",
+      "volum_cm3": 29.034,
+      "genus": 0,
+      "komponentar": 1,
+      "bbox": [
+        [
+          27.25,
+          54.25,
+          7.0
+        ],
+        [
+          52.25,
+          98.75,
+          44.0
+        ]
+      ]
+    },
+    "usb-lokk": {
+      "status": "Error.NoError",
+      "volum_cm3": 0.984,
+      "genus": 0,
+      "komponentar": 1,
+      "bbox": [
+        [
+          43.1,
+          108.95,
+          26.95
+        ],
+        [
+          55.7,
+          118.29,
+          37.05
+        ]
+      ]
+    }
+  },
+  "veggar_mm": {
+    "rom_A": 2.93,
+    "rom_B": 7.69,
+    "brytarlomme": 2.1,
+    "kabeltunnel": 4.58,
+    "magnetlommer": 4.68,
+    "kabelgap": 9.07,
+    "usb_tunnel_sidevegg": 2.36,
+    "usbc_mot_holrom": 23.43,
+    "okular_mot_holrom": 30.0,
+    "brunn_golv_mot_kabeltunnel": 1.85
+  },
+  "kollisjonar_mm3": {
+    "mb_kort": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "mb_tappar": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "usb_kontakt": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "mb_knappar": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "headerar": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "esp32s": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "cam_kort": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "sd_og_fpc": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "kameramodul": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "brytar6x6": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "magnetar": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "usb_plugg": {
+      "kropp": 0.0,
+      "luke": 0.0,
+      "haldar": 0.0
+    },
+    "utloysar_mot_kropp": 0.0,
+    "stabelhaldar_mot_kropp": 0.0,
+    "luke_mot_kropp": 0.0,
+    "usb-lokk_mot_kropp": 0.0,
+    "stabelhaldar_mot_luke": -0.0
+  },
+  "stabel_klaring_mm": {
+    "kropp": 0.1,
+    "haldar": 0.25
+  },
+  "monteringsveg_kollisjon_mm3": {
+    "stabel_lyft_opp_gjennom_luka": 0.0,
+    "stabel_skyv_fram_til_linsa": 0.0,
+    "haldar_lyft_opp_bak_stabelen": 0.0
+  },
+  "stabel_innsetjing": {
+    "skyv_fram_mm": 17.55,
+    "stabel_inn_i_romA_ved_innsetjing": true
+  },
+  "luke_tjukn_mm": {
+    "min": 2.63,
+    "p5": 4.45,
+    "min_ved": [
+      51.5,
+      91.5
+    ]
+  }
+}

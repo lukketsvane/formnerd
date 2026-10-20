@@ -1,0 +1,39 @@
+{
+  "kropp": {
+    "tid": "7h 42m 26s",
+    "filament_cm3": 141.87,
+    "filament_g_pla": 175.9,
+    "lag": 424,
+    "stotte": true
+  },
+  "luke": {
+    "tid": "18m 46s",
+    "filament_cm3": 6.4,
+    "filament_g_pla": 7.9,
+    "lag": 35,
+    "stotte": false
+  },
+  "utloysar": {
+    "tid": "3m 9s",
+    "filament_cm3": 0.52,
+    "filament_g_pla": 0.6,
+    "lag": 28,
+    "stotte": false
+  },
+  "stabelhaldar": {
+    "tid": "28m 13s",
+    "filament_cm3": 10.84,
+    "filament_g_pla": 13.4,
+    "lag": 185,
+    "stotte": false
+  },
+  "usb-lokk": {
+    "tid": "6m 34s",
+    "filament_cm3": 0.67,
+    "filament_g_pla": 0.8,
+    "lag": 47,
+    "stotte": false
+  },
+  "sum_g_pla": 198.6,
+  "profil": "P1S-generisk-PLA-0.2.ini (PrusaSlicer 2.7.2): 0,4 mm dyse, 0,2 mm lag, 3 veggar, 15 % gyroid, organisk stotte berre fraa byggjeplata pa kroppen"
+}
