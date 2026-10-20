@@ -1,0 +1,29 @@
+{
+  "entropi/models/m_hero_model_url.glb": {
+    "sha256": "e7b996925396c899206c208d9b8e0386a996f32259b1634b00b04193fd7e858b",
+    "file_size_bytes": 62288316,
+    "extents_xyz_model_units": [
+      0.7363659143447876,
+      0.6919295191764832,
+      0.9799216687679291
+    ],
+    "raw_indexed_topology": {
+      "vertices": 1015477,
+      "faces": 1966980,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 63254,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 360
+    },
+    "exact_position_welded_analysis_only": {
+      "vertices": 983476,
+      "faces": 1966980,
+      "watertight_trimesh": false,
+      "winding_consistent": false,
+      "boundary_edges": 8,
+      "nonmanifold_edges_more_than_two_faces": 5,
+      "connected_components": 1
+    }
+  }
+}

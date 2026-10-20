@@ -1,0 +1,30 @@
+{
+  "task_id": "23510474-1ec4-4947-ad86-6f5ffe1042c6",
+  "status": "success",
+  "credits": 15.0,
+  "files": {
+    "generated_image_url": "images/g_to3d_generated_image_url.png"
+  },
+  "payload": {
+    "input": "file_94968b37-ca98-46d7-8636-27ce8731528f",
+    "model": "banana_pro",
+    "aspect_ratio": "1:1",
+    "prompt": "Edit this render into a clean 3D-reconstruction reference of the same camera. Keep identity: grip left, matte black core with front funnel, two dark top blocks, grey tubes braiding over the top. Edits: the funnel is a deep well, ever steeper toward the axis, ending at one crisp lip into a dark throat; lens 15 mm deep as a solid stepped barrel, 50 mm knurled ring, 38 mm front element of dark near-matte glass with one soft highlight, no purple or green reflections. The right tube coming down the front enters the funnel rim and coils 1.5 turns inward down the wall, thinning, fused with one continuous soft blend. Tubes full at the grip, thinner over the top, fused at the crossing, no air gaps; every tube sits on the body with a filleted contact patch, no floating parts or open slots. Viewfinder and dial blocks crisp with flat planes and small chamfers, leaning slightly toward the lens; eyepiece on the viewfinder; one knurled dial cap. Shutter button forward on the grip tube, tilted along the flow. Small shallow USB-C port on the left side of the grip in a black inset. Colours: matte light-grey tubes fading to graphite as they spiral in, matte black core, all matte or satin. VIEW: 3/4 front from slightly above, 25-30 degrees elevation, so top braid, funnel depth and grip side read; long lens, low perspective. Single object centered, 10% margin. Plain white background, even neutral soft light, soft rim light so black edges and recesses show gentle shading, small soft contact shadow only. Crisp silhouette, sharp. No glow, LED, transparency, chrome or strong reflections. No text, logos, hands, extra objects."
+  },
+  "raw": {
+    "type": "image_to_image",
+    "status": "success",
+    "progress": 100,
+    "input": {
+      "prompt": "Edit this render into a clean 3D-reconstruction reference of the same camera. Keep identity: grip left, matte black core with front funnel, two dark top blocks, grey tubes braiding over the top. Edits: the funnel is a deep well, ever steeper toward the axis, ending at one crisp lip into a dark throat; lens 15 mm deep as a solid stepped barrel, 50 mm knurled ring, 38 mm front element of dark near-matte glass with one soft highlight, no purple or green reflections. The right tube coming down the front enters the funnel rim and coils 1.5 turns inward down the wall, thinning, fused with one continuous soft blend. Tubes full at the grip, thinner over the top, fused at the crossing, no air gaps; every tube sits on the body with a filleted contact patch, no floating parts or open slots. Viewfinder and dial blocks crisp with flat planes and small chamfers, leaning slightly toward the lens; eyepiece on the viewfinder; one knurled dial cap. Shutter button forward on the grip tube, tilted along the flow. Small shallow USB-C port on the left side of the grip in a black inset. Colours: matte light-grey tubes fading to graphite as they spiral in, matte black core, all matte or satin. VIEW: 3/4 front from slightly above, 25-30 degrees elevation, so top braid, funnel depth and grip side read; long lens, low perspective. Single object centered, 10% margin. Plain white background, even neutral soft light, soft rim light so black edges and recesses show gentle shading, small soft contact shadow only. Crisp silhouette, sharp. No glow, LED, transparency, chrome or strong reflections. No text, logos, hands, extra objects.",
+      "model_version": "banana_pro"
+    },
+    "output": {
+      "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_a49067a3d010421cbef4ad1993d1ec39/20261020/23510474-1ec4-4947-ad86-6f5ffe1042c6/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTQ5MDY3YTNkMDEwNDIxY2JlZjRhZDE5OTNkMWVjMzkvMjAyNjEwMjAvMjM1MTA0NzQtMWVjNC00OTQ3LWFkODYtNmY1ZmZlMTA0MmM2L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI1OTEzOTR9fX1dfQ__&Signature=hOTchJRezjUeUGb7oNGMjay9xaASc775qecOGPjS1~ppgamiGq43bQb0fZMKWfS6~xMfh4YsUeA12ff8lyHXIxTDp2PMqhVKeUKYs5lSx8NkaMCVW3VHfxnHTu~rrp-1eeTHrRlHrHeUcJURUzvUIq1mouScCVYWTmE-HuzJ0nIFilxrYl30GBib3OW6a3x4FJu8ofDRifB4mlVZSO-bl5Z~wWg1xPqK~BN3wCiSEJpIAE3DKWFpuqqF-lQpEJ8hdyR9zgybnh~koTSEPUM7~M9N85uNiFHQhQA4ZfxlbpiA2LCbxOCrVSXjpLbIz6hI9ToQeV9wPMswohAVDCEDoQ__&Key-Pair-Id=K1676C64NMVM2J"
+    },
+    "task_id": "23510474-1ec4-4947-ad86-6f5ffe1042c6",
+    "created_at": "2026-10-20T14:02:22.663392Z",
+    "completed_at": "2026-10-20T14:03:12.547278Z",
+    "credits_consumed": 15.0
+  }
+}

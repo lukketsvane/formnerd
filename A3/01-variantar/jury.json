@@ -1,0 +1,279 @@
+{
+  "framework": {
+    "criteria": [
+      {
+        "name": "1. Samsvar konseptord–formuttrykk (Uttrykk + Hovedhensyn)",
+        "what_to_look_for": "This is the main grading criterion in the brief: 'Samsvar mellom det valgte konseptordet og det endelige formuttrykket'. The brief also says 'Tenk først og fremst på hvordan kameraet uttrykker konseptordet. Estetikk og teknikk er sekundært.' Ask the framework's two main questions (Hovedhensyn). First, does the object give the right feeling (estetikk): beautiful, interesting, strange, repellent? Second, does it send the right message (semiotikk): what does it symbolise? Without a caption, would a viewer read pull, collapse, light being swallowed, and order sliding into disorder? Or does it just read as 'a dark, sleek camera'? It should express the idea through form (the Uttrykk aspect, as in 'trist' or 'rask'), not illustrate a black hole like a toy or ornament."
+      },
+      {
+        "name": "2. Proporsjoner og holdning (første inntrykk)",
+        "what_to_look_for": "This is level 1 of the framework, read by squinting or from a distance. Check how the main volumes ('massingen') relate in size and placement, and whether the form is enhetlig (one whole volume) or sammensatt (built from several). Holdning: does the form have a clear visual direction or movement around a central axis, and is it static or dynamic? Visuell vekt and balanse: where does the mass seem to collect? The framework notes that deliberate visual imbalance ('visuell ubalanse') can create movement or dynamics. Forholdet til bakken: how does the camera 'stand' or rest? For this concept, look for mass that seems pulled toward one centre (the lens or optical axis) rather than spread evenly."
+      },
+      {
+        "name": "3. Silhuett og negativt rom",
+        "what_to_look_for": "Check the outline from above, the side, the front and the back (projiserte riss). Is it a strong, recognisable silhouette that could work as an icon ('silhuetten som ikon')? Is the complexity deliberately simple or complex? Negativt rom is 'like viktig som selve objektet': look at the spaces between and inside the forms. Here the void is the concept itself, so a deep, readable dark opening or recess should carry the composition, not a flat black disc painted on."
+      },
+      {
+        "name": "4. Overganger og overflater (kontinuitet, organisk–geometrisk, spenning)",
+        "what_to_look_for": "This is level 2. Are transitions sharp, soft, or a deliberate contrast of the two? Where does the form sit on the organisk–geometrisk axis? Read the reflection lines and highlights. Smooth G2/G3 continuity gives even reflections; any break or edge should look intentional ('brudd brukt bevisst'), not like a modelling artefact. Spenning i flaten: does the curvature tighten or change in a controlled way (static vs dynamic surfaces)? Look for surfaces that flow or tighten toward the centre, and one decisive edge where the flow stops."
+      },
+      {
+        "name": "5. Sammenføyninger og materialmøter / delelinjer",
+        "what_to_look_for": "Do the part lines flow with the form and support the message? Avoid too many lines meeting at one point, 'rat holes' and other line conflicts. Narrow, even gaps signal precision. Rammer or lister (bezels) can handle the transition at the lens or between materials and create layering. Are fasteners visible or hidden, and is that a choice? In an AI or Tripo image, also check for nonsense seams and broken or inconsistent split lines."
+      },
+      {
+        "name": "6. Grafisk oppdeling (valør)",
+        "what_to_look_for": "Look at the image in greyscale. How are the dark and light areas spread over the object, and in what proportions? Does the valør bring out form features or hide them? Graphics can be the main design theme ('grafikk som bærende designtema'). For this concept, look for a valør gradient or grouping that pulls the eye toward the darkest point. Remember the final physical model is painted in one colour 'slik at formen er lett å lese'. The core effect must therefore survive as form, with real shadow in a recess, and not depend on paint alone."
+      },
+      {
+        "name": "7. CMF – farger, materialer og overflatekvaliteter",
+        "what_to_look_for": "Do the colour, material and finish (matte–gloss, texture, pattern, metallic lacquer) support the concept rather than being 'limt på til slutt'? Do they also bring in other senses, such as weight, temperature and tactility? Check whether a light-absorbing matte zone and a reflective zone are used meaningfully. The framework notes that metallic paint brings out the form. The hero shot should show the CMF 'slik det er ment å bli produsert'."
+      },
+      {
+        "name": "8. Funksjoner og detaljer + Brukssemantikk (affordance)",
+        "what_to_look_for": "Check the brief's required functions: lens at least 30 mm in diameter, a utløser (shutter button) and a USB-C port. They should be integrated aesthetically so they feel like part of the design (radii, materials, finish, placement). Ask the affordance question from the semiotics lecture: is it obvious where to hold the camera and what to press? Is there gruppering av funksjoner? Edges: are avfasinger (chamfers), radier (radii) or mikroavfasinger used on purpose? Merking and mikrografikk should be sparse and controlled. Is the detailing done well 'helt ned til den minste detaljen'?"
+      },
+      {
+        "name": "9. Beskrivende semantikk, arketype og MAYA",
+        "what_to_look_for": "Does the object still read as a handheld camera (Beskrivende: typology or category)? Is it in dialogue with the camera arketype, the iconic expected version of the product? Apply the MAYA principle (Most Advanced, Yet Acceptable): is it new and surprising while still recognisable and usable? Too literal or sculptural fails the 'Acceptable' part. Too conventional fails the concept."
+      },
+      {
+        "name": "10. Nivåer av inntrykk / stort til lite + helhetlig gestalt",
+        "what_to_look_for": "Check that there is a clear hierarchy: first impression (proportions and silhouette), then second impression, third impression, then detailing. Big gestures should dominate, and details should support them without cluttering. Does it look like one coherent final gestalt with a consistently even finish ('jevn modellfinish')? Is the design quality and execution professional?"
+      }
+    ],
+    "concept_reading": "The core image is that a camera is already a dark chamber that swallows light. The lens works as a hendingshorisont (event horizon), so the concept and the product archetype (round dark aperture) share one sign. That makes it easier to meet MAYA. Here is how the course framework would express 'Entropi: det som skjer når lys møter eit svart hol', going from stort til lite:\n\n(1) Proporsjoner og holdning: build the main volume as a dynamic holdning around the optical axis as the central axis. Concentrate visual weight toward the lens. Use deliberate visual imbalance so the mass seems pulled, stretched or spiralled inward. The whole body is 'falling' toward one point rather than sitting neutrally in balance.\n\n(2) Silhuett og negativt rom: from the front, a strong silhouette organised around the void. From the side, a form that stretches or tapers toward the lens (tidal 'spaghettification'). The black hole is the negative space itself: a deep recessed lens well whose real shadow does the work. This matters because the final model is painted in one colour.\n\n(3) Overganger og overflater: entropy can be read as a gradient on the organisk–geometrisk axis. Ordered, stringent geometry with crisp edges at the outer shell (low entropy) gradually breaks down. It can melt into continuous, flowing G2/G3 surfaces drawn into the centre, or fragment toward the edges. Spenning i flaten increases toward the lens so reflection lines bend like gravitational lensing. End the flow with one deliberate break: a single sharp edge that is the horizon.\n\n(4) Sammenføyninger and delelinjer: these can follow orbit or spiral paths toward the lens. A lens ramme or bezel should absorb them, so they don't create the line-convergence conflict the framework warns against.\n\n(5) Grafisk oppdeling (valør): light outer surfaces darken into an absolute dark core, so the valør pulls the eye inward.\n\n(6) CMF: contrast a light-absorbing deep-matte core with a gloss or metallic outer zone that catches and 'bends' light. Texture can grow more disordered toward one end as an entropy cue.\n\n(7) Funksjoner og detaljer: place the utløser (shutter button) along the inward flow, like something about to be swallowed. Hide the USB-C port in a dark or lower-order zone. Grip affordance must stay clear (Brukssemantikk). The course's kiki–bouba reference fits: a bouba-like smooth pull at the centre against kiki-like fragmented edges.\n\nMain risk: a literal illustration (an accretion disc stuck on a box) instead of an expressive form.\n\nNote: the course material never uses Peirce's ikon/indeks/symbol. Its semiotics vocabulary is the four semantiske aspekter (Beskrivende, Uttrykk, Brukssemantikk, Identitet; Sunde/Monö), plus arketype, MAYA and kiki–bouba. The semantiske virkemidler are proporsjoner, grafikk and overflater. The framework's six steps are: Proporsjoner og holdning; Overganger og overflater; Sammenføyninger og materialmøter; Grafisk oppdeling (valør); CMF; Funksjoner og detaljer. Sources: /root/.claude/uploads/b6113a1b-6fee-5055-a29d-0117c791e712/6ff28a72-03_Formanalyse_Rammeverk.pdf, /root/.claude/uploads/b6113a1b-6fee-5055-a29d-0117c791e712/e82a5523-02_Semiotikk.pdf, /root/.claude/uploads/b6113a1b-6fee-5055-a29d-0117c791e712/c6ab11aa-FormNerd_-_Prosjektoversikt.pdf."
+  },
+  "candidates": [
+    {
+      "id": "a_sketch_hero",
+      "image_path": "/home/user/formnerd/entropi/images/a_sketch_hero_generated_image_url.png",
+      "model": "banana_pro",
+      "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a palm-sized handheld camera, same 3/4 front view, proportions and composition as the sketch. Concept: light meeting a black hole. Core body: matte black, light-absorbing paint. Over it, soft inflated light-grey tubes in satin soft-touch finish: they form a rounded hand grip on the left, run up over the top, twist and cross each other in a loose braid between the two top blocks, and one tube curves down and wraps fully around the lens as a thick continuous torus, a satin light-grey photon ring. The ring is solid painted material: no LED, no glow, no emitted light. Lens: inside the ring the black body funnels inward like a smooth event-horizon cone, and at the bottom sits a real recessed camera lens about 35 mm in diameter: black anodized barrel with fine knurling, dark coated glass front element with subtle concentric reflections of inner elements and a faint purple-green coating sheen. Details: dark rectangular viewfinder block top rear left; dark cylindrical dial block top right with knurled black cap; round black domed shutter button on top of the grip; small USB-C port visible on the left outer side face of the grip in a black inset panel. Crisp continuous surfaces, clean part lines, reads as a 3D-printed and painted design model. One single camera fully in frame, centered, seamless pure white background, large softbox key light from upper left, soft contact shadow, high-end product photography, sharp focus. No text, no logos, no watermark, no glowing ring, no extra objects, no hands.",
+      "credits": 15,
+      "calls_made": 2,
+      "self_assessment": "This is the closest match yet to the sketch: same 3/4 view, the grip flows into tubes that cross over the top between the viewfinder and dial blocks, and one tube wraps the lens as a satin grey ring with no LED glow. All three requirements are clearly visible: a real knurled lens with concentric purple-green coating reflections, easily over 30 mm against the palm-sized body; a black shutter button on top of the grip; and a USB-C port in a black inset on the left side of the grip. The main weakness is that the concept now reads weaker than the calibration image. The lens sticks out instead of sitting at the bottom of a black funnel, so the black-hole pull is mostly lost. The tubes cross only once, so they show little growing disorder. The grip is one smooth blob rather than separate tubes, and the overall feel is friendly and toy-like rather than about entropy. Call log (task f84f3ba5-4159-4343-be56-74dbfef92a04): the first call was rejected by the API because the prompt was over 1800 characters, so no task was created and no credits were charged. The single allowed retry generated the image successfully for 15 credits, but its download failed on a proxy connection reset. I recovered the image through the read-only task lookup, without generating again, and saved the record to /home/user/formnerd/entropi/images/a_sketch_hero.json."
+    },
+    {
+      "id": "b_spaghettification",
+      "image_path": "/home/user/formnerd/entropi/images/b_spaghettification_generated_image_url.png",
+      "model": "banana_pro",
+      "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a compact handheld camera, same 3/4 front view and proportions as the sketch. Concept: entropy, light falling into a black hole. The form reads left to right as ORDER -> DISORDER -> ABSORPTION. Core body: deep matte black light-absorbing paint. Over it run five soft inflated light-grey tubes in satin soft-touch paint. LEFT, low entropy: on the hand grip the five tubes form a calm, tidy, perfectly parallel bundle of equal thick tubes, evenly spaced, running vertically up the grip. TOP, rising entropy: crossing the top between the dark viewfinder block and the dark dial block, the tubes stretch progressively thinner, fan apart and twist into an irregular braid. RIGHT, absorption: the thin stretched strands curve down onto the front and spiral inward around the lens in tighter and tighter coils, a narrowing vortex visibly pulled into the lens barrel and vanishing inside it. Lens: a real camera lens about 35 mm diameter at the spiral center, black anodized knurled barrel, dark coated front glass with concentric inner reflections and faint purple-green coating sheen. All solid painted material: no LED, no glow, no emitted light. Details: dark viewfinder block top rear; dark dial block top right with knurled cap; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the left outer side of the grip in a black inset. Clean surfaces, reads as a 3D-printed and painted design model. One single camera fully in frame, seamless pure white background, softbox key light from upper left, soft contact shadow, sharp focus. No text, no logos, no glowing ring, no extra objects, no hands.",
+      "credits": 15,
+      "calls_made": 2,
+      "self_assessment": "The concept reads very clearly from left to right. The grip has a tidy parallel bundle of tubes (order), the tubes braid chaotically over the top (disorder), and on the front they converge and coil tightly around the lens barrel (absorption). All the requirements are clearly visible: a real lens, well over 30 mm, with knurled barrel and coated glass; a black shutter button on top of the grip; and a USB-C port in a black inset on the left side of the grip. The main flaws: the soft, inflated tubes from the sketch became thin cords or cables, and there are more than five of them. They do not visibly thin out as they cross the top. They wrap around the outside of the protruding barrel rather than being swallowed into a void, so the effect reads more like \"tied up\" than \"sucked in\". The body has also turned into a conventional boxy mirrorless camera, losing the sketch's soft mass and photon ring. The thin strands hanging free in the air would also be fragile and hard to 3D print and paint. Calls: the first call was rejected by the API before any task was created (code 1004, prompt over 1800 characters), so it cost no credits. The one allowed retry, with a shortened prompt, succeeded and cost 15 credits."
+    },
+    {
+      "id": "c_gravity_well",
+      "image_path": "/home/user/formnerd/entropi/images/c_gravity_well_generated_image_url.png",
+      "model": "banana_pro",
+      "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a compact handheld camera, same 3/4 front view and proportions as the sketch, hand grip on the left. Concept: a gravitational well, light falling into a black hole. Core body: deep matte black light-absorbing paint. The front face of the black core is sculpted as a smooth funnel: the surface curves inward in a deep continuous hyperbolic slope like warped spacetime, gentle at the outer edges and sinking steeply toward the center, a deep vortex well. Soft inflated light-grey tubes in satin soft-touch paint form the rounded grip on the left, run over the top, twist and cross between the two top blocks, then flow onto the front and follow the funnel curvature, bending, stretching and narrowing as they slide down the slope and spiral inward, as if falling in. Deep at the bottom of the funnel sits a real camera lens about 35 mm diameter: black anodized knurled barrel, dark coated glass with concentric inner reflections and a faint purple-green sheen. All solid painted material: no LED, no glow. Details: dark viewfinder block top rear left; dark cylindrical dial block top right with knurled cap; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the left outer side of the grip in a black inset. Clean surfaces, reads as a 3D-printed and painted design model. One single camera fully in frame, seamless pure white background, softbox key light from upper left, soft contact shadow, sharp focus. No text, no logos, no glowing ring, no extra objects, no hands.",
+      "credits": 15,
+      "calls_made": 2,
+      "self_assessment": "This is a clean, believable product render that stays close to the sketch: matte black core, grey tubes from the left grip crossing over the top, a viewfinder block and a knurled dial block. All three requirements are clearly visible: a real lens of roughly 35 mm with a knurled barrel and coated glass, a black shutter button on top of the grip, and a USB-C port on the left side of the grip. The gravity-well idea came out weak. The \"funnel\" looks like a soft black rubber lens hood around the lens, not curved spacetime. The tubes do not flow onto the front or spiral inward. They stop at the top and right edge as in the sketch. So the black-hole concept reads less strongly here than in the calibration image, though this one is more convincing as a working camera. Call log: the first call was rejected before any task was created (error 1004, prompt over 1800 characters, no credits charged). The single retry with a shorter prompt succeeded and cost 15 credits."
+    },
+    {
+      "id": "d_fusion_refs",
+      "image_path": "/home/user/formnerd/entropi/images/d_fusion_refs_generated_image_url.png",
+      "model": "banana_pro",
+      "prompt": "Photorealistic industrial-design studio render of one compact handheld camera. Use image[1] (sketch) for composition, the exact 3/4 front view, proportions and concept: dark core body; light-grey tubes start at the left hand grip, run over the top, twist and cross between the two top blocks, and wrap a ring around the lens. Use image[2] and image[3] for form language and render quality: plump inflated tubes, round cross-sections, generous fillets, satin soft-touch paint, crisp part lines. But follow image[1] for colour: the core body is deep MATTE BLACK velvet paint, not grey. Concept: entropy, light meeting a black hole. The light-grey tubes are light; the black core swallows them. The tube from the top curves down and wraps the lens as a thick torus; its inner side sinks into a smooth black funnel, its paint fading in a soft airbrushed gradient from light grey outside to black at the inner edge, as if absorbed. Other tube ends dive into the black core and vanish. At the funnel centre: a real camera lens as in image[2], about 35 mm diameter, black knurled anodized barrel, dark coated glass with concentric inner reflections and faint purple-green sheen. Solid painted material only: no LED, no glow. Dark viewfinder block top rear left and dark cylindrical dial block top right with knurled cap, as in image[1]; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the outer left side of the grip, as in image[2]. Reads as a 3D-printed, painted design model. Single camera fully in frame, centred, seamless pure white background, softbox key light upper left, soft contact shadow, sharp focus. No text, no logos, no extra objects, no hands, no glowing ring.",
+      "credits": 15,
+      "calls_made": 2,
+      "self_assessment": "This is the strongest fusion so far. It keeps the sketch's composition (the tubes braid over the top between a dark viewfinder block and a black knurled dial block), it has the refs' plump inflated-tube quality, and the airbrushed grey-to-black fade on the inside of the lens torus gives a clear, paintable \"light being swallowed\" reading without any LED glow. All three requirements are clearly visible: a real lens, roughly 35-40 mm, with a knurled barrel and coated glass; a black shutter button on top of the grip; and a USB-C port on the outer left side of the grip. Weaknesses: the light-grey tubes and grip cover most of the body, so the matte-black core shows only as a backdrop and behind the lens, and the \"black hole\" reads only at the lens rather than across the whole form. The other tube ends don't visibly dive into the core, the viewfinder block is dark grey while the dial block is black, and the front of the grip is a bit lumpy and oversized. Call log: the first API call was rejected before any task was created (prompt over the 1800-character limit, 0 credits). The one real generation (task 8bc65667, 15 credits) succeeded, but tripo.py crashed while downloading it because the proxy connection dropped. I re-downloaded that same task's output and generated no extra variants."
+    },
+    {
+      "id": "e_seedream",
+      "image_path": "",
+      "model": "seedream_v5",
+      "prompt": "Turn this rough painted sketch into a photorealistic industrial-design studio render of one compact handheld camera. Keep the exact same 3/4 front view, composition and proportions: rounded hand grip on the left, lens on the front right, dark viewfinder block top rear, dark cylindrical dial block top right. Concept: entropy, light meeting a black hole. Core body: deep matte black, velvety, light-absorbing paint. Over it run two plump inflated light-grey tubes with round cross-sections in satin soft-touch paint. They form the rounded grip on the left, rise over the top, twist and cross each other in a loose braid between the viewfinder and dial blocks, then curve down onto the front and wrap the lens as one thick continuous light-grey torus ring. On the ring's inner edge the grey fades to black and the surface sinks inward into the black body, as if the light is swallowed by the lens. Lens: a real camera lens about 35 mm in diameter in the centre of the ring, black anodized knurled barrel, dark coated front glass with concentric inner reflections and a faint purple-green sheen. Solid painted material only, no LED, no glow. Clearly visible: round black shutter button on top of the grip; small USB-C port in a black inset on the outer left side of the grip; knurled black cap on the dial. Clean surfaces, generous fillets, crisp part lines, reads as a 3D-printed, painted design model. One single camera fully in frame, centred, seamless pure white background, soft key light from upper left, soft contact shadow, sharp focus. No text, no logos, no hands, no extra objects.",
+      "credits": 0,
+      "calls_made": 2,
+      "self_assessment": "No image was produced, and the API created no task on either call. Call 1 was refused at creation (code 1004, \"prompt must be at most 1800 characters\") because my first prompt ran over 2000 characters. I cut the prompt to 1589 characters and used the one allowed retry. That retry was also refused at creation (code 2000, \"You have exceeded the limit of generation\", try again later), which means the shared account hit its rate or quota limit, possibly because the other candidates were running at the same time. Following the credit rule, I stopped there. The payload in /home/user/formnerd/entropi/payloads/e_seedream.json is now valid on length and ready to run once the limit clears, but that would be a new generation and needs the orchestrator to authorise it."
+    },
+    {
+      "id": "f_light_gradient",
+      "image_path": "/home/user/formnerd/entropi/images/f_light_gradient_generated_image_url.png",
+      "model": "chat_image_2.5_flare",
+      "prompt": "Turn this rough sketch into a photorealistic industrial-design studio render of one compact handheld camera. Keep the exact same 3/4 front view, form and proportions: rounded hand grip on the left, lens on the front right, dark viewfinder block top rear left, dark cylindrical dial block top right. Concept: entropy, light losing energy as it falls into a black hole. Core body: deep matte black, velvety light-absorbing paint. Over it run two or three plump inflated round tubes in satin paint: rays of light losing energy. One continuous smooth colour gradient runs along every tube: on the grip they are bright warm ivory white; rising over the top, where they twist and cross between viewfinder and dial, they cool through pale grey to mid grey; curving down onto the front and wrapping a thick ring around the lens they turn charcoal, then near-black, melting seamlessly into the black core so the tube end vanishes into the darkness. Airbrushed gradient, no hard bands. Lens: a real camera lens about 35 mm diameter in the centre of the ring, black knurled anodized barrel, dark coated glass with concentric inner reflections and faint purple-green sheen. Solid painted material only: no LED, no glow. Clearly visible: round black shutter button on top of the grip; small USB-C port in a black inset on the outer left side of the grip; knurled cap on the dial. Generous fillets, crisp part lines, reads as a 3D-printed, painted design model. Single camera fully in frame, centred, seamless white studio background, soft key light upper left, soft contact shadow, sharp focus. No text, no logos, no hands, no extra objects.",
+      "credits": 10,
+      "calls_made": 2,
+      "self_assessment": "The gradient idea comes through clearly. The grip is ivory white, the tubes turn grey where they cross over the top, the lens ring is charcoal and it all fades into the matte black core, so \"light losing energy\" reads at a glance without an LED. All three requirements are clearly visible: a real lens of about 30-35 mm with a knurled black barrel and a purple-green coating sheen, a black shutter button on top of the grip, and a USB-C port on the left side of the grip. The weak points are the form. The separate tubes have merged into one solid grip, and only one crossing shows on top, so the braid and inflated-tube look from the sketch and the earlier test image are much weaker. The ring is a plain dark torus that doesn't spiral or get pulled into the lens, so the black-hole pull is less dramatic, and the camera looks somewhat chunky and toy-like. The image also has some slight posterization and vector-like edges, and it came out square (1:1). About the 2 calls: the first was rejected before any task was created (error 1004, prompt over 1800 characters) and should not have used credits. The single retry with a shorter prompt succeeded and cost 10 credits."
+    },
+    {
+      "id": "cal_banana_pro",
+      "image_path": "/home/user/formnerd/entropi/images/cal_banana_pro_generated_image_url.png",
+      "model": "banana_pro",
+      "prompt": "calibration",
+      "credits": 15,
+      "calls_made": 1,
+      "self_assessment": "calibration run"
+    }
+  ],
+  "judgements": [
+    {
+      "scores": [
+        {
+          "id": "f_light_gradient",
+          "score": 7.5,
+          "rationale": "It has the clearest story without a caption. The white grip turns to grey tube and then to a black core at the lens, so light is visibly swallowed, and the body slumps toward a nested, stepped double ring around the lens. The gradient (colour) does more of that work than the form does, and the rings are soft, static donuts with no decisive horizon edge."
+        },
+        {
+          "id": "c_gravity_well",
+          "score": 6.5,
+          "rationale": "It is the only candidate where the black hole is carried by form. A deep, flaring black funnel sinks the lens back, so real concave shadow would still read after the model is painted one colour. But the funnel reads like a rubber lens hood. Valør is a plain two-tone split, not a progression, and the tube braid on top is unchanged from the sketch, so there is no order-to-disorder narrative."
+        },
+        {
+          "id": "cal_banana_pro",
+          "score": 6,
+          "rationale": "It has a strong semiotic gesture: a real recessed void, and one tube that dives into the hole and is swallowed, plus a more tangled braid. But the LED ring is exactly the literal accretion-disc gimmick doing the work the form should do. The void-as-lens also breaks the camera sign the concept is meant to share."
+        },
+        {
+          "id": "b_spaghettification",
+          "score": 6,
+          "rationale": "It has the most literal entropy read. Ordered parallel cords on the grip unravel into a tangle and spiral tightly around the optical axis. But it is cords applied to a static, conventional box (the 'disc stuck on a box' risk), and the lens protrudes outward instead of reading as an inward void."
+        },
+        {
+          "id": "d_fusion_refs",
+          "score": 5.5,
+          "rationale": "The torus's inner face darkens as it rolls into the lens, a hint of light falling over a horizon. That effect is mostly airbrushed valør on a shape identical to A, and it would largely vanish once painted one colour."
+        },
+        {
+          "id": "a_sketch_hero",
+          "score": 4.5,
+          "rationale": "Faithful to the sketch, but it reads as a friendly inflated camera with a soft bumper ring around a proud, outward-pointing lens. There is no pull, no void and no progression, so 'entropy' and 'black hole' do not come through."
+        },
+        {
+          "id": "e_seedream",
+          "score": 1,
+          "rationale": "No image was produced. Only a payload file exists, so there is nothing to judge on concept or form."
+        }
+      ],
+      "winner_edits": "Edits to f_light_gradient, aimed at moving the meaning from paint into form:\n1) Make the void a real form. Sink the lens 15-25 mm into a funnel that tightens as it goes in. The stepped rings should increase in curvature tension toward the axis, so the shadow goes black even with single-colour paint. End the funnel at ONE crisp knife-edge lip (the event horizon), where the soft G2/G3 flow breaks sharply into the recess. Right now every ring is a soft pillow and there is no decisive break.\n2) Change the concentric donuts into an inward spiral. Let the grip tube enter the lens ring and coil about 1.5 turns down into the recess, thicker where it enters and thinner as it descends. That way the ring reads as being pulled in rather than as a static bumper. Push the inner ring's radius much tighter than the outer one so the two stop reading as stacked donuts.\n3) Add a form gradient along the organic-geometric axis (entropy from order to disorder). Start the grip and the viewfinder and dial blocks as crisp, ordered geometry (tight radii, chamfers, flat planes). Let the shell soften, inflate and flow as it nears the lens. Today the grip is already fully bouba, so the form itself has no order-to-disorder progression.\n4) Add spaghettification to the tube. As the grip band crosses the top, it should stretch thinner and faster (higher tension), then compress and coil at the lens. Avoid the uniform thickness or fattening it has now.\n5) Use deliberate visual imbalance in the holdning. Lower and lean the top line toward the optical axis. Shear or lean the upright viewfinder block and dial block toward the lens, so the ordered elements are visibly being deformed by the pull rather than standing untouched.\n6) Make the CMF follow the form instead of a flat left-to-right fade. Run the light-to-dark gradient along the tube's path. Use a satin or pearl metallic on the grip so reflection lines catch and bend toward the lens (gravitational lensing). Reserve a deep, light-absorbing velvet matte only for the funnel. Check the result as a single-colour greyscale render to confirm the read survives the one-colour painted model.\n7) Put the details on the narrative. Tilt the shutter toward the lens and place it where the grip band starts to stretch, so it sits on the inward flow. Move USB-C into the dark, low-order zone under the well. Fix the posterised banding so the gradient reads as a material, not as a filter."
+    },
+    {
+      "scores": [
+        {
+          "id": "d_fusion_refs",
+          "score": 8.5,
+          "rationale": "It keeps the sketch's main gesture: the grip tube runs over the top, the tubes cross between the viewfinder and dial blocks, and the torus wraps the lens. The torus's inner face rolls into a dark throat, so the lens sits in a real recess that would still cast shadow on a model painted in one colour. The lens is credible (well over 30 mm), with the shutter on top of the grip and USB-C on the side of the grip. It loses points for the leather-like micro-wrinkles on the surface and the deep V-crease between the grip block and the front tube, which would be hard to fill, sand and paint."
+        },
+        {
+          "id": "a_sketch_hero",
+          "score": 8,
+          "rationale": "This is the most faithful to the sketch and the cleanest execution: even matte surfaces, controlled tube sweeps and clean junctions. The grip is clean and easy to hold, with the shutter on top and USB-C in a dark inset panel. It would be easy to print as separate tube and core parts. But the lens ring is a uniform light donut and the lens sits proud of it, so there is no void or depth. At the crit it risks reading as 'a camera with pool noodles' rather than light being swallowed."
+        },
+        {
+          "id": "c_gravity_well",
+          "score": 7.5,
+          "rationale": "The deep matte-black cowl around the lens creates real negative space that will survive single-colour paint, and it shows a viewfinder eyepiece. The body has the same clean grip, shutter and USB-C as a. However, it drops the sketch's key gesture of the light tube wrapping the lens. The right tube ends ambiguously behind the cowl, which reads more like a rubber lens hood or eyecup than an event horizon."
+        },
+        {
+          "id": "f_light_gradient",
+          "score": 7,
+          "rationale": "It has the strongest valør idea: white grip to black lens, with stacked dark tori forming a stepped well around a credible knurled lens. It stays close to the sketch. But the surfaces are lumpy with an orange-peel texture, the render shows posterisation and banding artefacts, and the proportions are upright and toy-like. The full white-to-black fade across the tubes would also need careful airbrushing."
+        },
+        {
+          "id": "b_spaghettification",
+          "score": 4.5,
+          "rationale": "It is a credible camera, with a real lens, shutter and USB-C, but it replaces the sketch's fat inflated tubes with about ten thin cords that cross at random. That creates line conflicts and reads as cable wrapping stuck onto a box. Thin braided cords with gaps between them would be very hard to print on a P1S without support scarring, and hard to paint in between."
+        },
+        {
+          "id": "cal_banana_pro",
+          "score": 3.5,
+          "rationale": "There is no real lens glass, only a black hole with a glowing LED ring, so the 30 mm lens requirement is not credibly met. The LED ring reads as a gimmick. The wrapping tube also passes directly in front of the aperture and would block the optical path. The grip and top-tube gesture are faithful to the sketch."
+        },
+        {
+          "id": "e_seedream",
+          "score": 1,
+          "rationale": "No image was produced. Only a payload JSON exists, at /home/user/formnerd/entropi/payloads/e_seedream.json, so there is nothing to evaluate."
+        }
+      ],
+      "winner_edits": "Edits for d_fusion_refs:\n1) Make the event horizon real geometry, not only paint: deepen the torus throat so the front lens glass sits about 12-15 mm behind the inner lip. Finish the inner lip with ONE crisp edge (R0.5-1 mm) as the single intended break where the soft G2 flow stops. Keep every other transition soft.\n2) Lens: show a clearly visible front element of 36-40 mm clear aperture inside a knurled ring of about 50 mm. Keep the barrel short so it stays inside the well and does not protrude past the torus.\n3) Grip: merge the grip block and the front wrapping tube into one volume, or open the crease between them to a fillet of at least 3 mm radius. Reshape the front tube as a deliberate finger rail and add a subtle thumb rest at the rear. Remove the leather-like micro-wrinkles and specify an even satin or soft-touch finish ('jevn modellfinish').\n4) Shutter: move it onto the start of the tube's sweep toward the lens, tilted slightly forward along the flow. Give it a thin metallic bezel so it reads as the first thing being pulled in.\n5) USB-C: move it into the dark lower-order zone, on the underside or right flank of the black core below the ring, with a recessed dark bezel. Or keep it on the grip side but set it in a matching dark inset panel, as in candidate a.\n6) Tubes: taper them slightly from the grip (about 22 mm) to the crossing (about 16 mm), then let the feeder tube swell into the ring (spaghettification). Show that one tube visibly feeds and spirals into the torus with no seam. Leave a 1-2 mm gap, or a merged fillet, where tubes touch, so there are no knife-edge contacts that cannot be sanded or painted.\n7) Details: add a visible eyepiece on the viewfinder block, as candidate c shows. Keep the dial block's knurl but reduce it to one controlled texture zone.\n8) Valør/CMF: keep the light-grey outer tubes, darken them into a deep-matte black throat, and give the lens bezel a small metallic accent. Keep it to an airbrushable fade from grey to black inside the torus only.\n9) Feasibility for the Bambu P1S: split the model into a black core (horizontal split line hidden at the tube junction) plus tube and ring parts, each printed in halves along the neutral axis with locating pins. At roughly 130 x 90 x 80 mm all parts fit the 256 mm bed. Plan for 0.12 mm layers, then filler primer and sanding, then paint.\n10) Render: add true front, side and top orthographic views to check the silhouette and that the well is deep, and show the hero at a slightly lower 3/4 angle so the throat's real shadow reads."
+    },
+    {
+      "scores": [
+        {
+          "id": "a_sketch_hero",
+          "score": 8,
+          "rationale": "This is the cleanest input for image-to-model. It shows one matte object fully in frame under soft, even studio light, with a clear torus around a solid, recessed lens and a plausible block structure for the back. The only risks are the over/under tube crossing on top and the dark, low-shading core, where depth may flatten."
+        },
+        {
+          "id": "d_fusion_refs",
+          "score": 7,
+          "rationale": "It is close to A and also clean, fully framed and evenly lit. Two things make it harder to read than A. The vertical tube lobe on the grip front adds overlap, and the ring's darkening toward the lens looks like painted shading, so Tripo may not read it as real depth. The slight leathery surface texture may also bake in as noise."
+        },
+        {
+          "id": "c_gravity_well",
+          "score": 7,
+          "rationale": "Replacing the ring tube with a funnel cuts self-occlusion, and the silhouette is strong. The drawback is that the large, nearly unshaded matte-black funnel and core merge into one dark mass, which makes the depth of the recess ambiguous for reconstruction. The eyepiece on the viewfinder also faces sideways, which is confusing."
+        },
+        {
+          "id": "f_light_gradient",
+          "score": 6,
+          "rationale": "The square frame holds a compact, strong silhouette with few thin parts. However, on the right side the ring, tubes and body go dark grey against black, so their edges merge. The image also has visible posterization/banding artefacts that may bake into the texture or add surface noise."
+        },
+        {
+          "id": "b_spaghettification",
+          "score": 4,
+          "rationale": "Lighting and framing are good, but there are a dozen-plus thin interwoven cables with air gaps beneath them. That is the worst case for Tripo, which will likely fuse them into a lumpy shell or produce broken, non-manifold strands. The long protruding lens barrel also hides much of the body."
+        },
+        {
+          "id": "cal_banana_pro",
+          "score": 3,
+          "rationale": "The emissive glow ring is the main feature, and it will bake into the texture as a flat white band with no defined geometry. A tube threads into the black void through-hole, which creates topological ambiguity. The 'lens' is an undefined dark hole rather than a solid, readable surface."
+        },
+        {
+          "id": "e_seedream",
+          "score": 1,
+          "rationale": "No image exists. The candidate path is empty, and only a payload file (payloads/e_seedream.json) is present, so there is nothing to reconstruct."
+        }
+      ],
+      "winner_edits": "For a_sketch_hero (/home/user/formnerd/entropi/images/a_sketch_hero_generated_image_url.png), Tripo-suitability edits:\n1. Top braid: replace the over/under crossing (which has air gaps) with tubes that fuse at the crossing through a visible soft blend. Fill or clearly open the slot between the two parallel tubes and the viewfinder block. Every tube should sit on the body with a filleted contact patch, not float.\n2. Right side of the lens ring: make the torus clearly continuous where the descending tube joins it, with one visible blend. Right now it disappears behind the ring and its geometry is ambiguous.\n3. Lens: keep a solid, stepped, recessed barrel of at least 30 mm. Render the front element as dark, near-matte glass with a single soft highlight, and remove the purple/green coating reflections so they don't bake in or read as a transparent hole.\n4. Black core: add a soft rim/kicker light so the edges of the matte-black body, the walls of the lens recess and the bases of the two top blocks show gradients. Large unshaded black areas flatten in reconstruction.\n5. Camera: raise the elevation slightly (to about 25-30 degrees) and use a longer focal length with less perspective, so the top braid, the depth of the lens recess and the side thickness all read. Crop square with about 10% margin. Keep the plain light background and a soft, small contact shadow.\n6. Unseen back: also generate matching rear and side views (a rear LCD plane, the viewfinder eyepiece on the back of the block, a flat base) for Tripo multiview, or at least describe them in the prompt, so the back is not invented.\n7. Keep everything matte or satin, with no emissive light, glow ring, transparency or chrome reflections. Keep USB-C and the shutter button as simple, shallow details."
+    }
+  ],
+  "ranking": [
+    [
+      "c_gravity_well",
+      21
+    ],
+    [
+      "d_fusion_refs",
+      21
+    ],
+    [
+      "f_light_gradient",
+      20.5
+    ],
+    [
+      "a_sketch_hero",
+      20.5
+    ],
+    [
+      "b_spaghettification",
+      14.5
+    ],
+    [
+      "cal_banana_pro",
+      12.5
+    ],
+    [
+      "e_seedream",
+      3
+    ]
+  ],
+  "winner": "c_gravity_well",
+  "runnerUp": "d_fusion_refs",
+  "refined": {
+    "hero_path": "/home/user/formnerd/entropi/images/g_hero_generated_image_url.png",
+    "hero_prompt": "Edit this render into the final CMF hero. Keep the camera identity, 3/4 front view, framing and proportions: grip left, two dark top blocks, grey tubes braiding over the top. Concept: entropy, order pulled into a black hole. FORM: 1) The black front funnel becomes a deep well, curving ever steeper toward the axis and ending at ONE crisp knife-edge lip that breaks sharply into a dark throat; lens glass sits 15 mm deep behind the lip, real shadow. Other transitions soft. 2) The right tube coming down the front enters the funnel rim and coils 1.5 turns inward down the wall, thinning as it descends, fused with soft fillets; inner coil much tighter than outer. 3) Tubes full at the grip, stretched thin and taut over the top, compressed into the coil; fused at the crossing, no gaps. 4) Grip rear, viewfinder and dial blocks are crisp geometry with flat planes and small chamfers, both blocks leaning slightly toward the lens; the shell softens and inflates toward the lens. Grip and tube merge into one volume. DETAILS: shutter button moved forward where the grip tube starts stretching, tilted along the flow, thin titanium bezel, clearly visible. USB-C clearly visible on the left side of the grip in a recessed black inset. Eyepiece on the viewfinder; one knurled dial cap. Real lens: 50 mm knurled black ring, thin titanium accent, 38 mm dark coated front element, barrel inside the well. CMF: tubes satin pearl light grey, reflections bending toward the lens, fading along their path to graphite as they spiral in, deep velvet matte black in the throat; core matte black. Airbrushed, no banding, no LED, no glow. Premium studio product photo, white background, softbox upper left, subtle rim light, soft contact shadow, sharp. One camera in frame. No text, logos, hands.",
+    "to3d_path": "/home/user/formnerd/entropi/images/g_to3d_generated_image_url.png",
+    "to3d_prompt": "Edit this render into a clean 3D-reconstruction reference of the same camera. Keep identity: grip left, matte black core with front funnel, two dark top blocks, grey tubes braiding over the top. Edits: the funnel is a deep well, ever steeper toward the axis, ending at one crisp lip into a dark throat; lens 15 mm deep as a solid stepped barrel, 50 mm knurled ring, 38 mm front element of dark near-matte glass with one soft highlight, no purple or green reflections. The right tube coming down the front enters the funnel rim and coils 1.5 turns inward down the wall, thinning, fused with one continuous soft blend. Tubes full at the grip, thinner over the top, fused at the crossing, no air gaps; every tube sits on the body with a filleted contact patch, no floating parts or open slots. Viewfinder and dial blocks crisp with flat planes and small chamfers, leaning slightly toward the lens; eyepiece on the viewfinder; one knurled dial cap. Shutter button forward on the grip tube, tilted along the flow. Small shallow USB-C port on the left side of the grip in a black inset. Colours: matte light-grey tubes fading to graphite as they spiral in, matte black core, all matte or satin. VIEW: 3/4 front from slightly above, 25-30 degrees elevation, so top braid, funnel depth and grip side read; long lens, low perspective. Single object centered, 10% margin. Plain white background, even neutral soft light, soft rim light so black edges and recesses show gentle shading, small soft contact shadow only. Crisp silhouette, sharp. No glow, LED, transparency, chrome or strong reflections. No text, logos, hands, extra objects.",
+    "credits": 30,
+    "calls_made": 4,
+    "notes": "CALLS AND CREDITS. I sent 4 API requests and 2 were billed. The first two attempts (g_hero 2178 characters, g_to3d 1884) were rejected at task creation with error code 1004, \"prompt must be at most 1800 characters\". No task was created and no credits were spent. As the rule allows after an API error, I shortened each prompt and retried once (1779 and 1627 characters). Both retries succeeded at 15 credits each: task 1c1bb81a-4931-4733-8138-15768cbbba41 for g_hero and task 23510474-1ec4-4947-ad86-6f5ffe1042c6 for g_to3d. That makes 30 credits from this step. The shared balance read 305 before and 245 after, a drop of 60. The other 30 is not from these tasks and is probably other agents using the same account at the same time. Payloads are at /home/user/formnerd/entropi/payloads/g_hero.json and g_to3d.json. Result records are at /home/user/formnerd/entropi/images/g_hero.json and g_to3d.json. g_hero is 2400x1792 (4:3); g_to3d is 2048x2048 (1:1). Both used banana_pro with input = c_gravity_well.\n\nWHAT I ASKED FOR (both prompts). From the judges' notes, I asked for:\n- A deep funnel that steepens toward the axis and ends at one crisp knife-edge lip (the event horizon), with the lens glass about 15 mm deep behind it.\n- The right front tube to coil about 1.5 turns down into the well, getting thinner as it goes.\n- Spaghettification: tubes full at the grip, thin over the top, compressed into the coil.\n- Tubes fused at the crossing with no air gaps.\n- An order-to-disorder gradient: crisp chamfered blocks leaning slightly toward the lens, the shell softening toward the lens.\n- The shutter moved forward onto the flow with a thin titanium bezel.\n- USB-C kept on the left side of the grip in a recessed black inset. The design notes allow this option, and it keeps the port visible from the 3/4 view.\n- A visible eyepiece and one knurled dial cap.\n- A 50 mm knurled ring with a 38 mm front element.\n- CMF for g_hero: pearl light-grey tubes fading along their path to graphite, a velvet black throat, matte black core, no banding, no LED or glow.\n- For g_to3d: dark near-matte glass with no purple or green reflections, filleted contact patches with no floating parts, matte or satin finishes only, 25-30 degree elevation, a long lens, centred with a 10% margin, even light, a rim light on the black surfaces, and only a small contact shadow.\n\nWHAT ACTUALLY CHANGED (honest assessment from side-by-side crops). banana_pro in edit mode held very closely to the input. Both outputs are close re-renders of c_gravity_well, and the big form edits did not come through.\n- g_hero: the shutter and the dial cap are now spun brushed titanium. The whole shutter button became metallic rather than getting a thin bezel, and it stayed in the same spot on top of the grip. The tube paint is a slightly cooler, smoother satin grey. Everything else matches the winner. The lens and well are essentially unchanged: a thick soft black bezel, with no crisp lip, no deeper throat and no spiral coil. There is no grey-to-graphite gradient along the tubes, the blocks do not lean, and the tubes still have even thickness. The requirements are still met: a real lens of about 35-38 mm, a visible shutter, a visible USB-C port on the left side of the grip in a black inset, and an eyepiece. There is no glow. The image reads as a clean, premium studio render.\n- g_to3d: the view is square and a little more frontal and higher. The object is centred with about 8-10% margin, the light is even and neutral, all surfaces are matte, and the contact shadow is small. The lens coating reflections are toned down, but some purple sheen remains. The shutter and USB-C are simple and visible. The form edits are again missing: the over/under tube crossing and the shallow bezel well are still there, with no spiral. It is usable as a single-view Tripo input. The rear is still not shown or described.\n\nRECOMMENDATION if the orchestrator gets more budget. To get the real form changes (crisp lip, coil, gradient), don't run a single-input banana_pro edit of the winner. Either pass the sketch as input with a fresh full description, or use \"inputs\" = [winner, d_fusion_refs] and refer to them as image[1] and image[2]. Also keep every prompt under 1800 characters, because that is the hard API limit."
+  },
+  "logs": [
+    "7 candidates; credits spent in this phase: 70",
+    "Ranking: c_gravity_well=21, d_fusion_refs=21, f_light_gradient=20.5, a_sketch_hero=20.5, b_spaghettification=14.5, cal_banana_pro=12.5, e_seedream=3"
+  ]
+}
