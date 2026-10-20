@@ -65,10 +65,10 @@ def skjer(inner, lo, s, w):
 
 def lommar(occ, inner, mm, linser):
     v = int(np.ceil(VEGG / mm))
-    hz, hy, d = int(np.ceil(MODUL[0] / 2 / mm)), int(np.ceil(MODUL[1] / 2 / mm)), int(np.ceil(MODUL[2] / mm))
+    hz, hy, d = (int(np.ceil(x / mm)) for x in (MODUL[0] / 2 + KLARING, MODUL[1] / 2 + KLARING, MODUL[2] + KLARING))
     sentrum = [(int(round(yf * N)) + KANT, int(round(zf * N)) + KANT) for yf, zf in linser]
     (y1, z1), (y2, z2) = sentrum
-    if abs(z1 - z2) < 2 * hz + 1 + v and abs(y1 - y2) < 2 * hy + 1 + v:
+    if abs(z1 - z2) < 2 * hz + v and abs(y1 - y2) < 2 * hy + v:
         raise ValueError("linsene står for tett til at kvar modul får eiga lomme")
     inner = inner.copy()
     for yi, zi in sentrum:
@@ -94,7 +94,7 @@ def grovt(occ, k):
 
 
 def mellomvegg(mm, k):
-    return int(np.ceil((VEGG / mm + k - 1) / k))
+    return int(np.ceil(VEGG / (mm * k) - 1e-9))
 
 
 def to_boksar(inner, mm, k, b, c):
@@ -145,7 +145,7 @@ def analyse(m, linser=None, k=2):
 
     def plassering(breidd):
         mm = breidd / N
-        inner = avstand >= VEGG / mm + 0.5
+        inner = avstand >= VEGG / mm + 1
         sentrum = None
         if linser:
             try:
@@ -156,9 +156,14 @@ def analyse(m, linser=None, k=2):
             if inner is None:
                 return None
         r = tre_boksar(grovt(inner, k), mm, k, CAM_MB, CAM, BATTERI)
-        return r and {"boksar": [{"mål_mm": list(pb), "nedre_hjørne_mm": [round(float(x * mm * k - KANT * mm), 1) for x in p]} for pb, p in r], "linsesentrum_yz_mm": sentrum and [[round((y - KANT) * mm, 1), round((z - KANT) * mm, 1)] for y, z in sentrum]}
+        return r and {"boksar": [{"mål_mm": list(pb), "nedre_hjørne_mm": [round(float(x * mm * k - KANT * mm + KLARING), 1) for x in p]} for pb, p in r], "linsesentrum_yz_mm": sentrum and [[round((y - KANT) * mm, 1), round((z - KANT) * mm, 1)] for y, z in sentrum]}
 
-    lo, hi = 40, next((b for b in range(250, 40, -10) if plassering(b)), None)
+    lo, hi = 40, None
+    for b in range(250, 40, -10):
+        if not plassering(b):
+            lo = b
+            break
+        hi = b
     if hi is None:
         return {"minste_breidd_mm": None, "grunn": grunn[-1] if grunn else None, **kontroll}
     while hi - lo > 1:

@@ -1,0 +1,110 @@
+{
+  "uavh": {
+    "breidd_utan_lommar_mm": 95,
+    "breidd_med_lommar_mm": 97,
+    "linseavstand_mm": 42.88,
+    "plassering": "Alle koordinatar er i mm frå minimumshjørnet til meshen (x = djupn med front mot +X, y = høgd, z = breidd). Kvar boks er oppgjeven med mål inkludert klaring (0,5 mm på kvar side), i rekkjefølgja x × y × z. Plasseringane under er éi av fleire moglege løysingar.\n\n(a) Utan lommer: B = 95 mm, djupn 62,75 mm og høgd 64,32 mm.\n- Kort+USB, 21 × 28 × 43: x 26,42–47,42, y 11,93–39,93, z 42,72–85,72.\n- Kort, 8 × 43 × 28 (står på høgkant): x 32,17–40,17, y 6,93–49,93, z 12,72–40,72.\n- LiPo, 7 × 35 × 51: x 17,42–24,42, y 12,68–47,68, z 16,22–67,22. Han ligg bak, langs breidda.\n- Gap mellom boksane: 2,0, 2,0 og 7,75 mm.\n- Minste kontinuerlege vegg er 2,017 mm. Eg målte han eksakt mot trekantane, med boksoverflata sampla kvar 0,2 mm.\n\n(b) Med lommer (P1): B = 97 mm, djupn 64,07 mm og høgd 65,67 mm.\n- Kort+USB, 21 × 43 × 28 (ståande): x 23,17–44,17, y 9,43–52,43, z 61,47–89,47. Han står bak den høgre linselomma.\n- Kort, 8 × 28 × 43: x 17,17–25,17, y 16,43–44,43, z 16,47–59,47. Han ligg bakarst.\n- LiPo, 7 × 35 × 51: x 28,92–35,92, y 11,93–46,93, z 8,47–59,47. Han ligg framfor kortet, langs breidda.\n- Gap mellom boksane: kort+USB/kort 2,0 mm, kort+USB/LiPo 2,0 mm og kort/LiPo 3,75 mm.\n- Minste vegg er 2,011 mm.\n- Linse 1 har senter y 28,32, z 61,59. Linseflata ligg på x 52,66, altså 11,4 mm bak det fremste punktet på x 64,07. Lomma dekkjer x > 44,66.\n- Linse 2 har senter y 29,00, z 18,72. Linseflata ligg på x 51,57, og lomma dekkjer x > 43,57.\n- Kort+USB ligg 0,49 mm bak lomme 1. Det er tillate i P1, men ikkje i P3.\n\nLinseavstanden ved 97 mm er 42,88 mm. Δz = 42,87 mm og Δy = 0,68 mm. Ved 95 mm ville avstanden vore 42,00 mm.",
+    "metode": "Eg skreiv all koden sjølv. Eg importerte ikkje innmat.py, og eg las han ikkje. Skripta ligg i /tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/kontroll2/: kontroll.py, kjor.py, kontinuerleg.py og test_search.py. Resultata ligg i undermappene res_h0.5/, res_h0.5_s0.5/ og res_h0.25/ i same mappa.\n\nMesh: Fila model.glb gjev 91 opne flater når ho blir lasta rått. Når eg slår saman like hjørnepunkt, blir det eitt vasstett 2-manifold-skal med 95 184 trekantar. Meshen er skalert uniformt slik at z-utstrekninga er W.\n\nGitter: Eg nytta eit nodegitter med fast steg h = 0,5 mm. Som kontroll køyrde eg òg med h = 0,25 mm og med eit gitter forskyvd ein halv nodeavstand. Alle boksmåla går opp i steget.\n\nInne eller ute: Eg kasta strålar langs +Y frå kvar (x,z)-kolonne og talde kryssingar (paritet). Ingen kolonnar fekk eit odde tal kryssingar. Testen var lik vindingstalet i 3000 av 3000 tilfeldige punkt. Nodevolumet var 169 097 mm³ mot 169 091 mm³ i meshen.\n\nVegg: Ein node er innvendig når han er inne og den eksakte euklidske avstanden frå noden til trekantflata er minst 2,000 mm. Eg rekna avstanden fyrst grovt frå tett overflatesampling, som gjev ei øvre grense. I tvilsbandet nytta eg ein eigen eksakt punkt–trekant-rutine. I ein stikkprøve på 4000 nodar var det 0 feil.\n\nSøk: Ein boks er ei lukka nodeblokk og er lovleg når alle nodane er innvendige. Det testa eg med ein 3D summert volumtabell. Eg prøvde alle 6 × 6 × 6 orienteringar. To boksar må ha minst 2 mm gap langs minst éin akse. Søket går gjennom alle posisjonar for boks A. For B og C nyttar eg ein eksakt reduksjon: når A står fast, finst det eit gyldig par (B, C) berre dersom ekstremkoordinatane til dei lovlege mengdene (minus konfliktboksen rundt A) tillèt separasjon langs ein akse. Desse ekstremkoordinatane fann eg med prefiks- og suffiks-min/maks over projeksjonar. Søket er altså uttømmande og eksakt på gitteret, ikkje sampla. Det stemde med rein brute force i 700 av 700 tilfeldige småtilfelle. Kvar løysing blei verifisert direkte på gitteret og deretter kontinuerleg (veggane er 2,011–2,48 mm).\n\nSkann: Ved h = 0,5 skanna eg W = 90–100. Utan lommer var 96 minste breidd, med P1 97 og med P2/P3 99. Ved h = 0,25 skanna eg W = 94–98. Utan lommer var 95 minste breidd (94 er umogleg), med P1 97 (96 er umogleg) og med P2/P3 98. Med forskyvd gitter (h = 0,5) fekk eg 95, 98 og 99. Alle resultata var monotone i W.\n\nTid: Med h = 0,5 tok kvar W 40 s åleine og 90–135 s med tre prosessar parallelt på 4 kjernar. Mesteparten gjekk med til den eksakte avstanden. Sjølve søket tok 0,2–1,8 s per lommevariant. Heile skannet på 11 breidder tok om lag 9 minutt veggklokketid. Med h = 0,25 tok kvar W 250–530 s, der søket tok 3–9 s. Den kontinuerlege etterkontrollen tok om lag 10 s per plassering. Alt i alt, med utvikling og kontrollar, tok arbeidet om lag 50 minutt.",
+    "avvik_i_foresetnader": "1) Mesh: Eg slo saman like hjørnepunkt slik at meshen blei eitt vasstett skal. Eg veit ikkje korleis verktøyet handsamar dei 91 opne flatene i rålastinga.\n\n2) Gitter: Eg nytta fast steg på 0,5 mm (og 0,25 mm), uavhengig av W. Steget er langs alle aksar, og gitteret har eigen origo. Verktøyet nyttar h = W/200, som gjev 0,475–0,49 mm i dette området. Det har voksel-senter og ein tom kant (KANT = 1). Mine boksmål går eksakt opp i gitteret. Verktøyet må truleg runde opp til heile voksel, og det gjev litt større boksar.\n\n3) Inne eller ute: Eg nytta eiga strålekasting langs +Y. Verktøyet voksel-fyller meshen.\n\n4) Vegg: Eg kravde at den eksakte avstanden frå node til trekant var minst 2,000 mm i alle nodar i boksen, også på flatene. Verktøyet nyttar EDT på voksel med terskelen VEGG/h + 0,5. Mellom nodane er veggen ikkje kontrollert under søket, men han er etterkontrollert kontinuerleg for plasseringane eg rapporterer.\n\n5) Lommer: Hovudtolkinga mi er P1. Der er fotavtrykket 10 × 10 mm sentrert på linsa (y,z), og alt med x > x_front − 8 mm er sperra. Det gjeld òg det som ligg framfor lomma. x_front er det eksakte skjeringspunktet mellom overflata og linja gjennom linsesenteret, altså botnen av linsesøkket. Verktøyet nyttar største x per kolonne i fyllinga, med voksel-oppløysing. Eg har ikkje kravd vegg mellom lomme og boks. Eg prøvde to variantar:\n- P2: modulen står bak ein 2 mm framvegg, slik at x > x_front − 10 er sperra.\n- P3: P1 med 2 mm vegg rundt og bak lomma, som gjev 14 × 14 mm og x > x_front − 10.\nBegge variantane gjev 98 mm ved h = 0,25 og 99 mm ved h = 0,5. Ved P2 eller P3 aukar svaret i (b) altså med 1–2 mm.\n\n6) Linseposisjonar: Begge brøkane er gongde med breidda (z-utstrekninga) frå minimumshjørnet, slik oppgåva skildrar.\n\n7) Søk: Søket mitt er uttømmande og eksakt på kvart gitter. Verktøyet samplar om lag 80 A-posisjonar på eit dobbelt så grovt gitter, så det gjev berre ei øvre grense. Med elles like føresetnader skal svaret mitt difor vere lik eller lågare enn svaret frå verktøyet.\n\n8) Gittersensitivitet: Svaret flyttar seg ±1 mm med steg og forskyving. Utan lommer fekk eg 95 (h = 0,25), 96 (h = 0,5) og 95 (h = 0,5 forskyvd). Med P1 fekk eg 97, 97 og 98. Eg rapporterer tala frå det finaste gitteret: 95 og 97. Spennet er 95–96 og 97–98.\n\n9) Breidder: Eg testa berre heile mm-verdiar, W = 90–100 ved h = 0,5 og W = 94–98 ved h = 0,25. Eg har ikkje testa monotonien under 90.\n\n10) Delt mappe: I scratch-mappa kontroll2/ låg det filer frå ein annan prosess, mellom anna innmat_kopi.py og t*_*.py. Eg verken las eller brukte dei."
+  },
+  "revisjon": {
+    "retta": [
+      {
+        "tidlegare_feil": "Dobbeltalt kameradjupn i linsemodus",
+        "retta": true,
+        "prov": "CAM er no 27x42x7 (berre kort) og CAM_MB 27x42x20. I HEAD var dei 12 og 25 mm. Kameradjupna (8 mm) ligg no berre i lomma i lommar(), der d=ceil(8/mm) og lommedjupna er 8,00 mm ved 100 mm (/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/kontroll2/t4_lomme.py). Ingen av boksane i tre_boksar inneheld kameraet."
+      },
+      {
+        "tidlegare_feil": "Null klaring på korta",
+        "retta": true,
+        "prov": "storleik() legg til 2*KLARING, altså (x+1)/mm. I .../kontroll2/t6_toboksar.py spenner kortet på 7 mm [2,10] mm (8 mm), og batteriet på 6 mm spenner 7 mm. Kameralommene har framleis ingen klaring, sjå eige nytt funn."
+      },
+      {
+        "tidlegare_feil": "Paritetsskeivheit i minimum_filter for partals storleik",
+        "retta": true,
+        "prov": "hjorne() trekkjer frå s//2. Det svarar til scipy-vindauget [i-s//2, i-s//2+s-1] både for partal og oddetal. .../kontroll2/t1_einingar.py [1]: 0 avvik av 400 tilfeldige rutenett med s i 1..5, partal inkludert, samanlikna med brute force."
+      },
+      {
+        "tidlegare_feil": "Dobbel vegg mellom boksar",
+        "retta": true,
+        "prov": "skjer(rest, p, sa, w-1) i tre_boksar og skiljekravet sb[k]-1+w i to_boksar gjev begge nøyaktig w grovceller mellom siste celle i éin boks og første celle i neste. .../kontroll2/t12_skjer.py: avstanden er w for w=1..4 i begge retningar. .../kontroll2/t6_toboksar.py: fysisk vegg 2,00 mm med w=2. Feilen som står att, ligg i sjølve w (mellomvegg), sjå nytt funn."
+      },
+      {
+        "tidlegare_feil": "ceil-sampling som tillét vegg under 2 mm",
+        "retta": false,
+        "prov": "Sjølve samplingsfeilen er retta: storleik bruker ceil(...)+1, så s voksel spenner heile målet. Utfallet står likevel att, fordi den nye EDT-terskelen avstand >= VEGG/mm + 0,5 framleis gjev veggar under 2 mm. .../kontroll2/t7_tynnvegg.py (boks 0,6x0,7x1,0, kalla med same kode som plassering()): ved 75 mm har den rapporterte plasseringa -x-vegg 1,875 mm, og ved 77 mm 1,925 mm. .../kontroll2/t8_terskel.py: 30 av 201 breidder (50–250) har boksflate under 2 mm frå kroppen, verst 1,725 mm ved 115 mm."
+      },
+      {
+        "tidlegare_feil": "Berre 6 heuristiske A-kandidatar",
+        "retta": true,
+        "prov": "tre_boksar prøver dei 6 ytterpunkta og PA[::max(1, len(PA)//80)], altså om lag 86 posisjonar per orientering av A. Søket er framleis ei heuristisk øvre grense, slik det er dokumentert."
+      },
+      {
+        "tidlegare_feil": "Stille None når linsene står for tett",
+        "retta": false,
+        "prov": "Den stille None-en er borte, men er bytt ut med ValueError, og kravet avheng av breidda (hz, hy og v i voksel veks når breidda minkar). Bisekeringa treffer difor unntaket, og heile køyringa krasjar. .../kontroll2/t2_krasj.py (boks 55x65x100 med 02-brøkane): lommar er ok ved 67 mm og kastar ved 66 mm, og analyse() krasjar etter 2 s. Den ekte køyringa krasja på same måte på 3d-r2/02, med traceback i /tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/innmat-alle.log. innmat-alle.json er tom, så resultata for 01a og 04 gjekk òg tapt. Sjå nytt funn 1."
+      },
+      {
+        "tidlegare_feil": "Ingen vegg på min-x/y/z-sidene (manglande tom kant før avstandstransformen)",
+        "retta": true,
+        "prov": "Med KANT=1 er det eit tomt lag på alle seks sider før distance_transform_edt. .../kontroll2/t1_einingar.py [2]: alle seks sjekkane er True, og første fylte indeks er x=1, y=2, z=2. Ei skeivheit står att: x har ingen jitter, så -x-flata ligg eksakt på eit samplingsplan, og EDT-feilen blir størst der. Det er dekt av funnet om +0,5-terskelen."
+      }
+    ],
+    "nye_funn": [
+      {
+        "tittel": "lommar() kastar ValueError ved små breidder, så heile analysen krasjar og alle resultata går tapt",
+        "alvor": "hoeg",
+        "prov": "Kravet om at linsene ikkje står for tett, og sjekkane for nær kanten og utanfor kroppen, er rekna i voksel som veks når breidda minkar. Bisekeringa går alltid over [40, 250] og prøver 145, 92, 66 og så vidare. For 02-brøkane er Δz = 37 voksel, og kravet 2hz+1+v blir 40 ved 66 mm. Prov: .../kontroll2/t2_krasj.py gjev ValueError ved 66 mm og krasjar analyse(). Den ekte køyringa av innmat.py på 3d-linser.json krasja i plassering(mid) for 3d-r2/02 (innmat-alle.log), og JSON-utdata vart tom. Med unntaket gjort om til «ikkje plass ved denne breidda» gjev same kropp 75 mm og monoton=True (.../kontroll2/t11_krasjfiks.py). Pre-sjekken er i tillegg éin voksel for streng: vegg på v voksel mellom ytste sentra krev berre |Δz| >= 2hz+v, men koden krev 2hz+1+v.",
+        "fiks": "I plassering(): try: inner, sentrum = lommar(occ, inner, mm, linser) / except ValueError: return None. Alternativt kan lommar returnere (None, None) med ein grunn som blir rapportert, og berre kaste viss lommane òg feilar ved 250 mm. Endre pre-sjekken til abs(z1-z2) < 2*hz + v and abs(y1-y2) < 2*hy + v."
+      },
+      {
+        "tittel": "mellomvegg() tel éi grovcelle for mykje i om lag halvparten av breiddene, så kravet blir ikkje-monotont",
+        "alvor": "middels",
+        "prov": "ceil((VEGG/mm + k-1)/k) blandar heiltals-takdeling med flyttal. Øvre flate på A ligg på eller før fint indeks (p+S-1)k, og B startar på qk, så w = ceil(VEGG/(mm*k)) er nok. .../kontroll2/t1_einingar.py [3]: 110 av 210 breidder (41–250) får éi celle for mykje, mellom anna 67–79 og 100–110 mm. Ved 75 mm blir kravet 3,00 mm i staden for 2,25 mm, og ved 100 mm 3,00 i staden for 2,00 mm. Kravet hoppar frå 3,16 mm ved 79 mm til 2,40 mm ved 80 mm. .../kontroll2/t6_toboksar.py: i ei plate på 18 grovceller får kort og batteri plass med nøyaktig 2,00 mm vegg, men originalen gjev None. Ekte modell (.../kontroll2/t10_ekte.py, utdata t10_02_orig.out og t10_02_retta.out): 3d-r2/02 utan lommar gjev 80 mm med originalen og 78 mm med rettinga. 80 ligg nett på hoppet i kravet.",
+        "fiks": "def mellomvegg(mm, k): return int(np.ceil(VEGG / (mm * k) - 1e-9))"
+      },
+      {
+        "tittel": "Terskelen VEGG/mm + 0,5 i inner lèt boksar få vegg under 2 mm",
+        "alvor": "middels",
+        "prov": "EDT måler avstanden til næraste ytre vokselsentrum. Den sanne flata ligg mellom 0 og 1 voksel nærare, så +0,5 er berre eit middel og ikkje ein garanti. På grovrutenettet ligg nedre boksflate på første fine voksel i cella, så det er ingen slakk på min-sidene. Øvre flate har derimot alltid minst éin fin voksel slakk. På -x ligg flata i tillegg eksakt på eit samplingsplan, sidan x-jitter er 0. .../kontroll2/t7_tynnvegg.py: rapporterte plasseringar har -x-vegg 1,875 mm ved 75 mm og 1,925 mm ved 77 mm, rekna analytisk mot boksen. .../kontroll2/t8_terskel.py: 30 av 201 breidder har boksflate under 2 mm, verst 1,725 mm ved 115 mm. Med +1,0 er talet 0.",
+        "fiks": "I plassering(): inner = avstand >= VEGG / mm + 1. Det kostar i snitt om lag ein halv fin voksel ekstra vegg."
+      },
+      {
+        "tittel": "nedre_hjørne_mm er hjørnet til klaringsboksen, ikkje til kortet",
+        "alvor": "laag",
+        "prov": "x*mm*k - KANT*mm er nedre flate på boksen med 2*KLARING, medan mål_mm er nominelle mål. I t3_ende.py og t7_tynnvegg.py spenner boksen mål+1 mm frå hjørnet. Den som set kortet i det rapporterte hjørnet, får 0 mm klaring nede og 1 mm oppe. Sjølve omrekninga frå grovindeks til mm er elles rett: .../kontroll2/t3_ende.py gjev -x-vegg 2,2 mm ved 89 mm, som er (2·3−1)·0,445 og stemmer med den analytiske kroppen. Jitteren (≤0,0137 voksel) er utelaten, og det er ufarleg.",
+        "fiks": "Rapporter round(float(x * mm * k - KANT * mm + KLARING), 1), eller kall feltet nedre_hjørne_med_klaring_mm."
+      },
+      {
+        "tittel": "Kameralommene har ingen klaring, i motsetnad til korta",
+        "alvor": "laag",
+        "prov": "lommar() bruker MODUL rått. I .../kontroll2/t4_lomme.py blir fotavtrykket 10,00 mm og djupna 8,00 mm ved 100 mm, medan korta får 0,5 mm per side. Dette er berre ein feil viss MODUL er nominelle mål.",
+        "fiks": "hz = int(np.ceil((MODUL[0] / 2 + KLARING) / mm)), hy tilsvarande, d = int(np.ceil((MODUL[2] + KLARING) / mm)). Alternativt: dokumenter at MODUL alt inneheld klaring."
+      },
+      {
+        "tittel": "Startsøket gjev 250 og ikkje ei tett øvre grense, så bisekeringa går langt under svaret",
+        "alvor": "laag",
+        "prov": "next(b for b in range(250, 40, -10) if plassering(b)) returnerer 250 så snart 250 går. Bisekeringa går difor alltid over [40, 250] og prøver 145, 92, 66 og 53. Det er desse breiddene som utløyser krasjet i funn 1 (t2_krasj.py), og dei gjer søket ekstra sårbart for hoppet i funn 2. Mønsteret fanst alt før ombygginga.",
+        "fiks": "Steg ned til første breidd som ikkje går: hi = 250; lo = 40; for b in range(240, 40, -10): if not plassering(b): lo = b; break; hi = b. Bisekér så i [lo, hi]."
+      },
+      {
+        "tittel": "AVKREFTA (ingen feil): skjer-marginen på grovrutenettet og omrekninga grovindeks til mm",
+        "alvor": "laag",
+        "prov": "Med w-1 i skjer blir avstanden nøyaktig w celler frå siste og første A-celle (.../kontroll2/t12_skjer.py, w=1..4), og det stemmer med kravet sb[k]-1+w i to_boksar. Omrekninga x*mm*k - KANT*mm gjev veggar som stemmer med den analytiske kroppen i t3_ende.py og t7_tynnvegg.py. Den einaste feilen i veggaritmetikken er w sjølv (funn 2).",
+        "fiks": "Inga endring trengst."
+      },
+      {
+        "tittel": "AVKREFTA (ingen feil): KANT-forskyvinga i linsekoordinatane",
+        "alvor": "laag",
+        "prov": "I .../kontroll2/t4_lomme.py er kroppen ein samansett boks med to 4x4 mm søkk med sentrum i (30, 30) og (30, 70) mm. Sentroiden til søkket er indeks 61,5, og (61,5 − KANT)/N = 0,3025, mot sann verdi 0,30. Avviket er ein halv voksel og kjem frå samplinga. lommar() set sentrum til (30,00, 30,00) og (30,00, 70,00) mm ved 100 mm, og til (22,50, 22,50) og (22,50, 52,50) ved 75 mm. Brøkane i 3d-linser.json vart målte med den gamle fyll() utan KANT (scratchpad/linsetest.py: indeks/N), så det er rett å leggje til KANT.",
+        "fiks": "Inga endring trengst."
+      },
+      {
+        "tittel": "AVKREFTA (ingen feil): lommefronten frå djupaste flate over oppblåst fotavtrykk",
+        "alvor": "laag",
+        "prov": "Metoden er trygg. Lomma kan aldri liggje framfor flata, og inner-sjekken etterpå handhevar veggane. Frontveggen blir mellom v og v+1 voksel, altså 2,50 mm ved 100 mm (t4_lomme.py). Han er konservativ med høgst éin voksel-ring: eit søkk innanfor v voksel sidevegs skuvar lomma bakover. På dei fem ekte modellane ved 100 mm (.../kontroll2/t5_lommefront.py) er skilnaden mot fremste gyldige lommeposisjon 0 mm for 9 av 10 linser og 0,5 mm for 01a (0,204, 0,221).",
+        "fiks": "Inga endring trengst. Vil ein vere eksakt, kan ein skanne frontposisjonen bakover frå min front over sjølve fotavtrykket til lomma ligg i inner."
+      }
+    ]
+  }
+}
