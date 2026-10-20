@@ -1,0 +1,8 @@
+{
+  "name": "a2-verktoy",
+  "private": true,
+  "description": "Strekteikningar for monteringsrettleiinga (three.js i hovudlaus Chromium via Playwright)",
+  "dependencies": {
+    "three": "0.169.0"
+  }
+}

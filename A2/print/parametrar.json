@@ -1,0 +1,165 @@
+{
+  "_merknad": "Alle mål i mm. 'kjelde' seier kvar talet kjem frå. 'målt': false betyr at talet ikkje er kontrollert på dykkar eigne delar. Mål delane, endra her, og køyr A2/verktoy/bygg_hus.py på nytt. Kjeldelister for ESP32-CAM og ESP32-CAM-MB ligg i A2/print/delmaal.json.",
+  "kropp": {
+    "breidd": {
+      "verdi": 115.0,
+      "kjelde": "minste breidd der begge stablane får USB ut gjennom endeveggane",
+      "målt": false
+    },
+    "vegg": {
+      "verdi": 2.4,
+      "kjelde": "6 liner med 0,4 mm dyse",
+      "målt": false
+    },
+    "lepp_ytre": {
+      "verdi": 1.2,
+      "kjelde": "halv vegg",
+      "målt": false
+    },
+    "lepp_klaring": {
+      "verdi": 0.2,
+      "kjelde": "vanleg FDM-pasning, prøv med testbiten",
+      "målt": false
+    },
+    "lepp_lengd": {
+      "verdi": 5.0,
+      "kjelde": "vald",
+      "målt": false
+    }
+  },
+  "ramme": {
+    "plate": {
+      "verdi": 2.5,
+      "kjelde": "vald",
+      "målt": false
+    },
+    "klaring": {
+      "verdi": 0.3,
+      "kjelde": "vald",
+      "målt": false
+    },
+    "styrevegg": {
+      "verdi": 2.0,
+      "kjelde": "5 liner",
+      "målt": false
+    },
+    "styrehogd": {
+      "verdi": 9.0,
+      "kjelde": "vald",
+      "målt": false
+    },
+    "loddeklaring": {
+      "verdi": 2.5,
+      "kjelde": "1–2 mm loddespissar under MB (delmaal.json)",
+      "målt": false
+    },
+    "knast_r": {
+      "verdi": 1.0,
+      "kjelde": "klikk-knast på bakre innerlepp",
+      "målt": false
+    },
+    "knast_ut": {
+      "verdi": 0.35,
+      "kjelde": "kor langt knasten stikk ut over leppa",
+      "målt": false
+    }
+  },
+  "stabel": {
+    "_merknad": "Éin stabel = ESP32-CAM sett på ESP32-CAM-MB, kamera mot fronten, liggjande med lang side langs breidda.",
+    "lengd": {
+      "verdi": 40.5,
+      "kjelde": "Ai-Thinker-datablad 27 x 40,5 (teikning 40,0; målt 40,1–40,35)",
+      "målt": false
+    },
+    "breidd": {
+      "verdi": 27.0,
+      "kjelde": "Ai-Thinker-datablad; målt 27,2–27,25",
+      "målt": false
+    },
+    "djupn": {
+      "verdi": 22.0,
+      "kjelde": "linsetopp til underside MB: 18–22 mm etter kabinett-CAD",
+      "målt": false
+    },
+    "linse_frå_sd_ende": {
+      "verdi": 9.5,
+      "kjelde": "CAD-kjelder 8,0–10,6, typisk 9,5; handmontert ±1,5",
+      "målt": false
+    },
+    "linsetopp_over_pcb": {
+      "verdi": 9.0,
+      "kjelde": "6,6–9,0 mm; konstruer for 9,0",
+      "målt": false
+    },
+    "kamerakropp": {
+      "verdi": 8.6,
+      "kjelde": "8,05–8,65 mm",
+      "målt": false
+    },
+    "linseløp": {
+      "verdi": 7.9,
+      "kjelde": "7,1–7,92 mm",
+      "målt": false
+    },
+    "sd_sokkel": {
+      "verdi": 16.0,
+      "kjelde": "14,5–16 mm kvadrat, høgd 1,8–2,3",
+      "målt": false
+    },
+    "usb_over_mb_underside": {
+      "verdi": 3.1,
+      "kjelde": "PCB 1,6 + halv kontakthøgd 1,5 (generisk micro-B)",
+      "målt": false
+    }
+  },
+  "linser": {
+    "_merknad": "Linse 1 står i søkket i designet. Linse 2 er flytt innover på visiret så USB-enden når ut gjennom endeveggen; det gamle søkket blir fylt.",
+    "y": {
+      "verdi": 33.93,
+      "kjelde": "målt på meshen (32,45 ved breidd 110)",
+      "målt": true
+    },
+    "z": {
+      "verdi": [
+        72.87,
+        42.6
+      ],
+      "kjelde": "linse 1 målt på meshen; linse 2 vald",
+      "målt": true
+    },
+    "fyll_søkk_z": {
+      "verdi": [
+        21.12
+      ],
+      "kjelde": "gamle søkket for linse 2",
+      "målt": true
+    },
+    "hol": {
+      "verdi": 9.5,
+      "kjelde": "linseløp 7,9 + klaring",
+      "målt": false
+    },
+    "fas_ytre": {
+      "verdi": 14.0,
+      "kjelde": "kjegle ut mot ytterflata mot vignettering (OV2640 ca. 66° diagonalt)",
+      "målt": false
+    },
+    "inn_i_hol": {
+      "verdi": 1.0,
+      "kjelde": "linsetopp 1 mm inn i holet",
+      "målt": false
+    }
+  },
+  "usb_plugg": {
+    "breidd": {
+      "verdi": 12.5,
+      "kjelde": "micro-USB-plugghus maks 10,6 etter spesifikasjonen + klaring",
+      "målt": false
+    },
+    "hogd": {
+      "verdi": 9.5,
+      "kjelde": "micro-USB-plugghus maks 8,5 etter spesifikasjonen + klaring",
+      "målt": false
+    }
+  }
+}
