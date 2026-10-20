@@ -1,0 +1,135 @@
+{
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "LES-MEG.txt",
+      "size_bytes": 2932,
+      "sha256": "d5ffb1da0ee51cbafb9ab44205048e9120e47866e7de00282a6f63be5fdd34d7"
+    },
+    {
+      "path": "mesh/01-ultra-original.glb",
+      "size_bytes": 54596864,
+      "sha256": "c8b0c37746cbd33b5b70f1c53d8b94e60d1e39ccac33f72f4bbd477fd0cd7a2a"
+    },
+    {
+      "path": "mesh/02-smart-segmented.glb",
+      "size_bytes": 43411852,
+      "sha256": "d2f2a8de737fd0af37d3a2fdfa7067c5eded123fbacbd266b97d434d63dbafbc"
+    },
+    {
+      "path": "mesh/03-quick-capped.glb",
+      "size_bytes": 58398888,
+      "sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f"
+    },
+    {
+      "path": "mesh/04-smart-retopology-preview.glb",
+      "size_bytes": 352992,
+      "sha256": "cf8b4f1d02e05d7d44b7e1954758f23c4b44103f8d480f83f6aec510cdb54839"
+    },
+    {
+      "path": "parts-map.json",
+      "size_bytes": 1881,
+      "sha256": "c0d0df7d54a7f14af171b4cc95cd1dcbba97d75daf1ff2cfdd75bd11f36db6ac"
+    },
+    {
+      "path": "print/Entropi-140mm.3mf",
+      "size_bytes": 50116982,
+      "sha256": "b31696e2058c31abc33bcf633eecd8b139027d3636940012948efdd1dc5c770f"
+    },
+    {
+      "path": "print/generic-PLA-0.4mm-0.2mm.ini",
+      "size_bytes": 8410,
+      "sha256": "e1a76513ed9ba02072915cb3fd7ccbcf0babddc91a164554a4212405ac1f9b5b"
+    },
+    {
+      "path": "print/poses.json",
+      "size_bytes": 2784,
+      "sha256": "7fbb80a0ec272c7e8c6f9ca3240a98622605e87219e7553c53c077574f858598"
+    },
+    {
+      "path": "provenance.json",
+      "size_bytes": 776,
+      "sha256": "f0b4f7985ada56203738c63f8afb0a2976298899e1c555ba80af7d407062d364"
+    },
+    {
+      "path": "reference/selected-version.png",
+      "size_bytes": 645436,
+      "sha256": "41b373f118ec147d46a8cf4775c717bed824d2c57cd98b843de6dc57e0a37814"
+    },
+    {
+      "path": "release-info.json",
+      "size_bytes": 1577,
+      "sha256": "32454995351d16d733c5fa26091f6f69c4a2885b6cb65758531ed8bcbf430233"
+    },
+    {
+      "path": "review/assembled.png",
+      "size_bytes": 485595,
+      "sha256": "d88266fdbbd20acf1fe195806f63c29fc479ceee78e02b84345bc6c666e4307a"
+    },
+    {
+      "path": "review/render_metadata.json",
+      "size_bytes": 1070,
+      "sha256": "66dc6aaf65526aae483be92d69405a7bb0dca4cb4c6bda3f5552be3d0e783ecc"
+    },
+    {
+      "path": "review/selected-assembled-colour.glb",
+      "size_bytes": 58399400,
+      "sha256": "92e7397f8be6fb7bf1c91815510c2cd18d42c1364ec71f044b51b251fba0496e"
+    },
+    {
+      "path": "segmentation-result.json",
+      "size_bytes": 517,
+      "sha256": "951e2b067b624c2c4e9ba97bebef39f38ba3ebc9dbd82f73b3eda57276866026"
+    },
+    {
+      "path": "tools/audit_assembled_thin_samples.py",
+      "size_bytes": 9625,
+      "sha256": "8624040e8ab4b6b2e3c71d7211d36fc34cc82a1a8d1fb6664069a53ee4e404ad"
+    },
+    {
+      "path": "tools/mesh_print_audit.py",
+      "size_bytes": 15298,
+      "sha256": "f6d3eb2545313125b73a73c08bec671d81bcfb869c031ed4986e2af931943b6e"
+    },
+    {
+      "path": "tools/prepare_print.py",
+      "size_bytes": 23918,
+      "sha256": "2438f4b04540449932b7b89a976ec4564bcc6a3308083d1bd552f2bb46da14e6"
+    },
+    {
+      "path": "tripo-receipts.json",
+      "size_bytes": 2076,
+      "sha256": "ceb2c41a98bf4d93d4797aa7cc0558f8b531ad17df552c341d1a62c9b590aeba"
+    },
+    {
+      "path": "verification/assembled-thin-samples.json",
+      "size_bytes": 24951,
+      "sha256": "c92c4e536aef3e958866f4035db22db9059a42f933486fb8f21e2a1bcf362e87"
+    },
+    {
+      "path": "verification/mesh-audit-microscopic-weld-diagnostic.json",
+      "size_bytes": 25747,
+      "sha256": "128ca05b62ffccc017ba8ca8718c53a27d2ff80f26684b23dd553c6888ccf15e"
+    },
+    {
+      "path": "verification/mesh-audit.json",
+      "size_bytes": 29298,
+      "sha256": "b6c636d9791fcaee81387b1982540a12ea98f659e34c5c093a75ca6599a5f278"
+    },
+    {
+      "path": "verification/mesh-topology-details.json",
+      "size_bytes": 3139,
+      "sha256": "b50edeb990abb49f2df3a77153dc9bb9d9a590c64b1b01bcc10c867aa866a64b"
+    },
+    {
+      "path": "verification/print-export.json",
+      "size_bytes": 11665,
+      "sha256": "77b736c0eddccefe8a32e7cf1327cea7b7ad26271aece5e4173f7aabff9c9a63"
+    },
+    {
+      "path": "verification/slicer-checks.json",
+      "size_bytes": 1889,
+      "sha256": "d21e2d47adc503f18a6668b1b25a7e950f598670bccb00417aebeda1c5ed36f2"
+    }
+  ]
+}

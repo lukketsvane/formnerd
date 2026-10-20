@@ -1,0 +1,38 @@
+{
+  "source": "tripo-out/entropi-selected-capped-parts-5c7047f6/model.glb",
+  "display": "review/selected-assembled-colour.glb",
+  "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+  "display_sha256": "92e7397f8be6fb7bf1c91815510c2cd18d42c1364ec71f044b51b251fba0496e",
+  "only_material_definitions_and_primitive_bindings_changed": true,
+  "all_non_JSON_chunks_byte_identical": true,
+  "vertices_normals_indices_accessors_and_scene_transforms_unchanged": true,
+  "colours_by_native_mesh": {
+    "tripo_part_0": "#B3B8B5",
+    "tripo_part_4": "#B3B8B5",
+    "tripo_part_1": "#383D40",
+    "tripo_part_8": "#B3B8B5",
+    "tripo_part_5": "#383D40",
+    "tripo_part_9": "#383D40",
+    "tripo_part_10": "#383D40",
+    "tripo_part_2": "#383D40",
+    "tripo_part_6": "#B3B8B5",
+    "tripo_part_3": "#B3B8B5",
+    "tripo_part_7": "#383D40"
+  },
+  "camera_direction": [
+    1,
+    0.35,
+    0.6
+  ],
+  "camera_up": [
+    0,
+    1,
+    0
+  ],
+  "background_rgb": [
+    255,
+    255,
+    255
+  ],
+  "geometry_smoothing_or_reconstruction": false
+}

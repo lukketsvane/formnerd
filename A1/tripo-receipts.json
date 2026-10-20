@@ -1,0 +1,53 @@
+{
+  "tasks": [
+    {
+      "task_id": "8b601eb6-f627-4edb-aa2e-b9816c7271a2",
+      "type": "image_to_model",
+      "model": "v3.1-20260211",
+      "status": "success",
+      "credits_consumed": 40,
+      "artifact": "mesh/01-ultra-original.glb",
+      "sha256": "c8b0c37746cbd33b5b70f1c53d8b94e60d1e39ccac33f72f4bbd477fd0cd7a2a"
+    },
+    {
+      "task_id": "0e8af52b-a059-45a7-99bf-ce9f5cdefd01",
+      "type": "smartsegment_model",
+      "status": "success",
+      "credits_consumed": 55,
+      "artifact": "mesh/02-smart-segmented.glb",
+      "inner_segment_task_id": "10d1c148-313f-4010-8623-f829ac497be7",
+      "granularity": "fine",
+      "sha256": "d2f2a8de737fd0af37d3a2fdfa7067c5eded123fbacbd266b97d434d63dbafbc"
+    },
+    {
+      "task_id": "5c7047f6-d379-401d-9470-153ebb23fa36",
+      "type": "mesh_completion",
+      "completion_mode": "quick_cap",
+      "status": "success",
+      "credits_consumed": 30,
+      "artifact": "mesh/03-quick-capped.glb",
+      "sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f"
+    },
+    {
+      "task_id": "4b23cc6d-7b12-4bf6-b415-3db38289b36f",
+      "type": "highpoly_to_lowpoly",
+      "model": "v3.0",
+      "face_limit_target": 20000,
+      "status": "success",
+      "credits_consumed": 35,
+      "artifact": "mesh/04-smart-retopology-preview.glb",
+      "purpose": "Separate lighter copy, detailed master preserved",
+      "sha256": "cf8b4f1d02e05d7d44b7e1954758f23c4b44103f8d480f83f6aec510cdb54839"
+    }
+  ],
+  "credits_consumed_total": 160,
+  "retopology_copy_is_print_master": false,
+  "remaining_balance_observed": 150,
+  "frozen_balance_observed": 0,
+  "balance_snapshot_note": "The four tasks submitted for this model report160 credits in total. The account also records8 other tasks consuming160 credits during the same interval; those are separate from this model. Starting balance470, observed balance150, frozen0.",
+  "separate_account_usage_during_interval": {
+    "tasks": 8,
+    "credits": 160,
+    "source": "Tripo usage ledger; tasks not submitted as part of this model"
+  }
+}
