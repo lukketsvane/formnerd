@@ -25,12 +25,22 @@
       "verdi": 5.0,
       "kjelde": "vald",
       "målt": false
+    },
+    "lepp_inn_tillegg": {
+      "verdi": 0.8,
+      "kjelde": "bakre innerlepp er så mykje tjukkare innover enn veggen, så ho står på ein heil ring etter sveiptrimminga (kontroll: lag 1)",
+      "målt": false
     }
   },
   "ramme": {
     "plate": {
       "verdi": 2.5,
       "kjelde": "vald",
+      "målt": false
+    },
+    "plate_klaring": {
+      "verdi": 0.25,
+      "kjelde": "aksial luft mellom 45°-kanten på plata og 45°-skuldra i fremre skal (0,18 mm normalt på flata)",
       "målt": false
     },
     "klaring": {
@@ -48,6 +58,11 @@
       "kjelde": "vald",
       "målt": false
     },
+    "hylle": {
+      "verdi": 3.0,
+      "kjelde": "hjørnehylle under MB; første stift sit 4,58 mm inn, pad r ≈ 0,9 (delmaal.json)",
+      "målt": false
+    },
     "loddeklaring": {
       "verdi": 2.5,
       "kjelde": "1–2 mm loddespissar under MB (delmaal.json)",
@@ -59,16 +74,21 @@
       "målt": false
     },
     "knast_ut": {
-      "verdi": 0.35,
-      "kjelde": "kor langt knasten stikk ut over leppa",
+      "verdi": 0.5,
+      "kjelde": "kor langt knasten stikk ut over leppa; 0,3 mm interferens mot fremre lepp",
       "målt": false
     }
   },
   "stabel": {
     "_merknad": "Éin stabel = ESP32-CAM sett på ESP32-CAM-MB, kamera mot fronten, liggjande med lang side langs breidda.",
-    "lengd": {
+    "lengd_cam": {
       "verdi": 40.5,
       "kjelde": "Ai-Thinker-datablad 27 x 40,5 (teikning 40,0; målt 40,1–40,35)",
+      "målt": false
+    },
+    "lengd_mb": {
+      "verdi": 40.0,
+      "kjelde": "ESP32-CAM-MB 39–40 x 27 (delmaal.json); lomma i ramma følgjer MB",
       "målt": false
     },
     "breidd": {
@@ -86,9 +106,19 @@
       "kjelde": "CAD-kjelder 8,0–10,6, typisk 9,5; handmontert ±1,5",
       "målt": false
     },
+    "linse_tverr": {
+      "verdi": 0.0,
+      "kjelde": "linsesenteret sitt avvik på tvers frå kortsenteret (0–0,75 mm, delmaal.json); flyttar lomma",
+      "målt": false
+    },
     "linsetopp_over_pcb": {
       "verdi": 9.0,
       "kjelde": "6,6–9,0 mm; konstruer for 9,0",
+      "målt": false
+    },
+    "kamerakropp_topp_over_pcb": {
+      "verdi": 4.5,
+      "kjelde": "anslått: SD-sokkel 2,3 + kamerakropp 2,2 over CAM-kortet",
       "målt": false
     },
     "kamerakropp": {
@@ -106,9 +136,19 @@
       "kjelde": "14,5–16 mm kvadrat, høgd 1,8–2,3",
       "målt": false
     },
+    "sd_hogd": {
+      "verdi": 2.3,
+      "kjelde": "anslått høgd på microSD-sokkelen over CAM-kortet",
+      "målt": false
+    },
     "usb_over_mb_underside": {
       "verdi": 3.1,
       "kjelde": "PCB 1,6 + halv kontakthøgd 1,5 (generisk micro-B)",
+      "målt": false
+    },
+    "frigang": {
+      "verdi": 0.5,
+      "kjelde": "minste eksakte avstand frå stabelen (utan linseløp) til fremre skal; stabelen blir flytt bakover til dette held",
       "målt": false
     }
   },
@@ -135,8 +175,23 @@
       "målt": true
     },
     "hol": {
-      "verdi": 9.5,
-      "kjelde": "linseløp 7,9 + klaring",
+      "verdi": 11.0,
+      "kjelde": "±1,5 mm for linseløp Ø7,92 (linsa er handmontert ±1,5 mm)",
+      "målt": false
+    },
+    "fas_inne": {
+      "verdi": 0.8,
+      "kjelde": "45°-fas på innsida av linseholet, styrer linseløpet inn",
+      "målt": false
+    },
+    "fres_inne": {
+      "verdi": 1.25,
+      "kjelde": "holet blir opna med r + dette frå innsida opp til 1,6 mm under ytterflata (fjernar tynne flak bak søkket)",
+      "målt": false
+    },
+    "synsfelt_halvvinkel": {
+      "verdi": 35.0,
+      "kjelde": "OV2640 standardobjektiv ca. 66° diagonalt (33°) + 2°; kjegle frå holkanten i linsetopp-planet",
       "målt": false
     },
     "fas_ytre": {
@@ -157,8 +212,13 @@
       "målt": false
     },
     "hogd": {
-      "verdi": 9.5,
-      "kjelde": "micro-USB-plugghus maks 8,5 etter spesifikasjonen + klaring",
+      "verdi": 10.5,
+      "kjelde": "micro-B-kappe maks 8,5 mm + ±1 mm for usikker kontakthøgd",
+      "målt": false
+    },
+    "vegg_under": {
+      "verdi": 1.6,
+      "kjelde": "minste vegg mellom USB-tunnelen og skøyten; skøyten blir senka om naudsynt",
       "målt": false
     }
   }
