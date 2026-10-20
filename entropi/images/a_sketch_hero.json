@@ -1,0 +1,31 @@
+{
+  "task_id": "f84f3ba5-4159-4343-be56-74dbfef92a04",
+  "status": "success",
+  "credits": 15.0,
+  "files": {
+    "generated_image_url": "images/a_sketch_hero_generated_image_url.png"
+  },
+  "payload": {
+    "input": "input/skisse.jpg",
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a palm-sized handheld camera, same 3/4 front view, proportions and composition as the sketch. Concept: light meeting a black hole. Core body: matte black, light-absorbing paint. Over it, soft inflated light-grey tubes in satin soft-touch finish: they form a rounded hand grip on the left, run up over the top, twist and cross each other in a loose braid between the two top blocks, and one tube curves down and wraps fully around the lens as a thick continuous torus, a satin light-grey photon ring. The ring is solid painted material: no LED, no glow, no emitted light. Lens: inside the ring the black body funnels inward like a smooth event-horizon cone, and at the bottom sits a real recessed camera lens about 35 mm in diameter: black anodized barrel with fine knurling, dark coated glass front element with subtle concentric reflections of inner elements and a faint purple-green coating sheen. Details: dark rectangular viewfinder block top rear left; dark cylindrical dial block top right with knurled black cap; round black domed shutter button on top of the grip; small USB-C port visible on the left outer side face of the grip in a black inset panel. Crisp continuous surfaces, clean part lines, reads as a 3D-printed and painted design model. One single camera fully in frame, centered, seamless pure white background, large softbox key light from upper left, soft contact shadow, high-end product photography, sharp focus. No text, no logos, no watermark, no glowing ring, no extra objects, no hands."
+  },
+  "raw": {
+    "type": "image_to_image",
+    "status": "success",
+    "progress": 100,
+    "input": {
+      "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a palm-sized handheld camera, same 3/4 front view, proportions and composition as the sketch. Concept: light meeting a black hole. Core body: matte black, light-absorbing paint. Over it, soft inflated light-grey tubes in satin soft-touch finish: they form a rounded hand grip on the left, run up over the top, twist and cross each other in a loose braid between the two top blocks, and one tube curves down and wraps fully around the lens as a thick continuous torus, a satin light-grey photon ring. The ring is solid painted material: no LED, no glow, no emitted light. Lens: inside the ring the black body funnels inward like a smooth event-horizon cone, and at the bottom sits a real recessed camera lens about 35 mm in diameter: black anodized barrel with fine knurling, dark coated glass front element with subtle concentric reflections of inner elements and a faint purple-green coating sheen. Details: dark rectangular viewfinder block top rear left; dark cylindrical dial block top right with knurled black cap; round black domed shutter button on top of the grip; small USB-C port visible on the left outer side face of the grip in a black inset panel. Crisp continuous surfaces, clean part lines, reads as a 3D-printed and painted design model. One single camera fully in frame, centered, seamless pure white background, large softbox key light from upper left, soft contact shadow, high-end product photography, sharp focus. No text, no logos, no watermark, no glowing ring, no extra objects, no hands.",
+      "model_version": "banana_pro"
+    },
+    "output": {
+      "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_a49067a3d010421cbef4ad1993d1ec39/20261020/f84f3ba5-4159-4343-be56-74dbfef92a04/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTQ5MDY3YTNkMDEwNDIxY2JlZjRhZDE5OTNkMWVjMzkvMjAyNjEwMjAvZjg0ZjNiYTUtNDE1OS00MzQzLWJlNTYtNzRkYmZlZjkyYTA0L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI1OTA2ODR9fX1dfQ__&Signature=TRl3ZnaMbg7VfdtnmUKxffq-VBZjRlaGzv3JLmSwLf6waY7t14svzczcOw9tn6Ev48p1se0ntX4TQkSx5kGgTuwopgILCONzDGxQ5iIEeCt3bREmTQrwQerSnZKaaRCI2dYZ3nGUopvBjVxJCrtoYjMaHdT5KoH-ePVRhZzALR0INJmS9mCx2vKmz1z~~SSWF~hFBZBXDjNh1Qz3IYLKtMd3vKIKvlDw4KDjPsr8hgN5BQccMzSZpSaYKHuyS-eX-5-V1kUKqyPzQTW~75zjusGHkFQkuTQH4lptSII2fhP1SHwGQE1XvsL5fCdUyBpP6OsLo6dY5lmMq-G~hfpyfQ__&Key-Pair-Id=K1676C64NMVM2J"
+    },
+    "task_id": "f84f3ba5-4159-4343-be56-74dbfef92a04",
+    "created_at": "2026-10-20T13:50:48.642398Z",
+    "completed_at": "2026-10-20T13:51:23.775741Z",
+    "credits_consumed": 15.0
+  },
+  "note": "generation succeeded but tripo.py download failed (proxy reset); recovered via GET /v3/tasks/{id}, no re-generation"
+}
