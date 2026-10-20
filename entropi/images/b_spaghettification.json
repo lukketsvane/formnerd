@@ -1,0 +1,30 @@
+{
+  "task_id": "3391a6be-ddc7-4205-8c91-18f4afad4d47",
+  "status": "success",
+  "credits": 15.0,
+  "files": {
+    "generated_image_url": "images/b_spaghettification_generated_image_url.png"
+  },
+  "payload": {
+    "input": "file_9b116e75-b7bc-49e0-b06b-653cdc28f398",
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a compact handheld camera, same 3/4 front view and proportions as the sketch. Concept: entropy, light falling into a black hole. The form reads left to right as ORDER -> DISORDER -> ABSORPTION. Core body: deep matte black light-absorbing paint. Over it run five soft inflated light-grey tubes in satin soft-touch paint. LEFT, low entropy: on the hand grip the five tubes form a calm, tidy, perfectly parallel bundle of equal thick tubes, evenly spaced, running vertically up the grip. TOP, rising entropy: crossing the top between the dark viewfinder block and the dark dial block, the tubes stretch progressively thinner, fan apart and twist into an irregular braid. RIGHT, absorption: the thin stretched strands curve down onto the front and spiral inward around the lens in tighter and tighter coils, a narrowing vortex visibly pulled into the lens barrel and vanishing inside it. Lens: a real camera lens about 35 mm diameter at the spiral center, black anodized knurled barrel, dark coated front glass with concentric inner reflections and faint purple-green coating sheen. All solid painted material: no LED, no glow, no emitted light. Details: dark viewfinder block top rear; dark dial block top right with knurled cap; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the left outer side of the grip in a black inset. Clean surfaces, reads as a 3D-printed and painted design model. One single camera fully in frame, seamless pure white background, softbox key light from upper left, soft contact shadow, sharp focus. No text, no logos, no glowing ring, no extra objects, no hands."
+  },
+  "raw": {
+    "type": "image_to_image",
+    "status": "success",
+    "progress": 100,
+    "input": {
+      "prompt": "Turn this sketch into a photorealistic industrial-design studio render of a compact handheld camera, same 3/4 front view and proportions as the sketch. Concept: entropy, light falling into a black hole. The form reads left to right as ORDER -> DISORDER -> ABSORPTION. Core body: deep matte black light-absorbing paint. Over it run five soft inflated light-grey tubes in satin soft-touch paint. LEFT, low entropy: on the hand grip the five tubes form a calm, tidy, perfectly parallel bundle of equal thick tubes, evenly spaced, running vertically up the grip. TOP, rising entropy: crossing the top between the dark viewfinder block and the dark dial block, the tubes stretch progressively thinner, fan apart and twist into an irregular braid. RIGHT, absorption: the thin stretched strands curve down onto the front and spiral inward around the lens in tighter and tighter coils, a narrowing vortex visibly pulled into the lens barrel and vanishing inside it. Lens: a real camera lens about 35 mm diameter at the spiral center, black anodized knurled barrel, dark coated front glass with concentric inner reflections and faint purple-green coating sheen. All solid painted material: no LED, no glow, no emitted light. Details: dark viewfinder block top rear; dark dial block top right with knurled cap; round black shutter button on top of the grip, clearly visible; small USB-C port clearly visible on the left outer side of the grip in a black inset. Clean surfaces, reads as a 3D-printed and painted design model. One single camera fully in frame, seamless pure white background, softbox key light from upper left, soft contact shadow, sharp focus. No text, no logos, no glowing ring, no extra objects, no hands.",
+      "model_version": "banana_pro"
+    },
+    "output": {
+      "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_a49067a3d010421cbef4ad1993d1ec39/20261020/3391a6be-ddc7-4205-8c91-18f4afad4d47/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYTQ5MDY3YTNkMDEwNDIxY2JlZjRhZDE5OTNkMWVjMzkvMjAyNjEwMjAvMzM5MWE2YmUtZGRjNy00MjA1LThjOTEtMThmNGFmYWQ0ZDQ3L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI1OTA3Nzd9fX1dfQ__&Signature=o669t~Pzv-SKo7lGvS2Ywg5Vj7fwg6G8o1UuHqEz6L5C0igeZMSQon8Nlk~Q3tWN5UFjlGHYQjdGU-zltCeFw1eaC3Q3AO8Suiuhl-2KUflZne5IK1ieL7ez~~w8f2D0O3jYEraJSU3DxC625z4zDHpnS3yy3yx~2hcnKwl1cBnxpSTI23H1xzpgPYTM1ZdQnCLngjNAsXvkmZStZ-7S0NqMdFuwNMjC75dBMGUarEBwDTtFPFuSZfPNPqG~oLGCAcb6CSZKaRCs0beEHfHKt8XOf7cqDWBjgN-FDH6m7dhE23WlSpNZqzCwZG6qRIxolOBIW72r6GHVeIZcA-FB6Q__&Key-Pair-Id=K1676C64NMVM2J"
+    },
+    "task_id": "3391a6be-ddc7-4205-8c91-18f4afad4d47",
+    "created_at": "2026-10-20T13:52:11.557222Z",
+    "completed_at": "2026-10-20T13:52:52.756704Z",
+    "credits_consumed": 15.0
+  }
+}
