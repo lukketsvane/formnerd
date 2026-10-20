@@ -1,0 +1,258 @@
+{
+ "kjelde_stl": "../../arkiv/entropi-a3/03-3d/a3-entropi-print-120mm.stl",
+ "ut_mappe": "../print",
+ "akse": {
+  "y": 65.0,
+  "z": 32.0
+ },
+ "stabel": {
+  "cam_lengd": 40.5,
+  "cam_breidd": 27.0,
+  "cam_pcb": 1.25,
+  "linse_over_cam": 8.2,
+  "header_gap": 11.0,
+  "mb_pcb": 1.6,
+  "mb_tappar": 2.0,
+  "mb_lengd": 38.0,
+  "mb_ekstra_antenne": 2.0,
+  "linse_fraa_sd": 9.8,
+  "usb_akse_over_mb": 1.25,
+  "knapp_utstikk": 1.25,
+  "knapp_fraa_usb": [
+   5.3,
+   8.6
+  ],
+  "linse_over_cam_min": 7.6,
+  "cam_front_x": 60.4,
+  "mb_innrykk_sd": 2.4
+ },
+ "rom": {
+  "bak_x": 27.0,
+  "deling_x": 52.5,
+  "front_x": 64.4,
+  "y": [
+   53.0,
+   99.6
+  ],
+  "golv_front_z": 18.3,
+  "tak_z": 46.0,
+  "smal": {
+   "y_fraa": 72.0,
+   "x_maks": 50.0,
+   "z_under": 16.6
+  },
+  "kabelgap": {
+   "y_fraa": 51.2,
+   "z_fraa": 34.0,
+   "x": [
+    41.0,
+    64.4
+   ]
+  },
+  "frontstopp": {
+   "y": [
+    89.5,
+    95.0
+   ],
+   "z": [
+    [
+     18.29,
+     20.6
+    ],
+    [
+     43.4,
+     46.01
+    ]
+   ],
+   "klaring": 0.1
+  },
+  "knappespor": {
+   "y": [
+    85.5,
+    93.5
+   ],
+   "z_topp": 48.3
+  }
+ },
+ "golv_z": 7.0,
+ "kamerasete": {
+  "side": 13.0
+ },
+ "linsekonus": {
+  "bak_r": 6.0,
+  "front_x": 86.0,
+  "front_r": 16.6,
+  "fram_til_x": 96.0
+ },
+ "luke": {
+  "polygon": [
+   [
+    18.0,
+    51.0
+   ],
+   [
+    53.5,
+    51.0
+   ],
+   [
+    62.0,
+    53.0
+   ],
+   [
+    62.0,
+    80.0
+   ],
+   [
+    52.0,
+    82.0
+   ],
+   [
+    52.0,
+    101.5
+   ],
+   [
+    18.0,
+    101.5
+   ]
+  ],
+  "klaring": 0.2,
+  "negl_hakk": {
+   "x": [
+    16.0,
+    18.4
+   ],
+   "y": [
+    72.0,
+    82.0
+   ],
+   "z": [
+    -1.0,
+    1.5
+   ]
+  }
+ },
+ "magnetar": {
+  "d": 6.0,
+  "h": 3.0,
+  "klaring_d": 0.25,
+  "klaring_h": 0.2,
+  "pos": [
+   [
+    22.6,
+    58.0
+   ],
+   [
+    22.6,
+    77.0
+   ],
+   [
+    22.6,
+    96.0
+   ],
+   [
+    57.5,
+    66.0
+   ]
+  ]
+ },
+ "haldar": {
+  "klaring": 0.25,
+  "vogge_y": [
+   58.0,
+   85.0
+  ],
+  "kabelspor": {
+   "x": [
+    38.5,
+    44.5
+   ],
+   "y": [
+    53.0,
+    60.0
+   ]
+  },
+  "d_variantar": [
+   14.0,
+   14.5,
+   15.0,
+   15.5,
+   16.0,
+   16.5,
+   17.0,
+   17.5,
+   18.0
+  ]
+ },
+ "usb_tunnel": {
+  "b_x": 12.0,
+  "h_z": 13.0,
+  "r": 3.0,
+  "lokk_klaring": 0.1,
+  "lokk_lengd": 8.0
+ },
+ "utloysar": {
+  "senter": [
+   45.5,
+   13.5
+  ],
+  "kapp_r": 5.6,
+  "brunn_r": 5.9,
+  "kapp_z": 58.3,
+  "vandring": 0.9
+ },
+ "brytar": {
+  "side_x": 7.8,
+  "side_y": 6.4,
+  "hogd_med_bein": 8.4,
+  "senter": [
+   45.2,
+   13.4
+  ]
+ },
+ "kabeltunnel": {
+  "r": 3.0,
+  "slutt": [
+   45.5,
+   53.6,
+   40.5
+  ]
+ },
+ "usbc_grep": {
+  "x": 27.25,
+  "z": 27.0,
+  "lengd_z": 9.0,
+  "breidd_x": 3.3,
+  "djupn": 4.0
+ },
+ "usbc_hjul_fyll": {
+  "x": [
+   25.2,
+   29.4
+  ],
+  "z": [
+   22.6,
+   31.4
+  ]
+ },
+ "sokar": {
+  "okular": {
+   "y": 65.0,
+   "z": 73.5,
+   "ytre": [
+    14.0,
+    11.0,
+    0.8
+   ],
+   "indre": [
+    11.0,
+    8.0,
+    3.0
+   ]
+  }
+ },
+ "sd_kort": {
+  "utstikk": 3.0,
+  "spor_y_fraa": 51.2,
+  "klaring": 0.6
+ }
+}

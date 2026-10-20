@@ -1,0 +1,22 @@
+{
+  "programvare": "02.08.02.61",
+  "skrivar": "Bambu Lab P1S 0.4 nozzle",
+  "prosess": "0.20mm Standard @BBL X1C + trestotte fraa plata",
+  "filament": "Bambu PLA Basic @BBL P1S 0.4 nozzle",
+  "plate": "Textured PEI Plate",
+  "stotte": "tree(auto), berre fraa plata=1",
+  "veggar": "3",
+  "fyll": "15%",
+  "lag_mm": "0.2",
+  "tid": "5h 35m 8s",
+  "vekt_g": 191.05,
+  "lag": 424,
+  "miniatyr": false,
+  "objekt": [
+    "kropp.stl",
+    "stabelhaldar.stl",
+    "luke.stl",
+    "usb-lokk.stl",
+    "utloysar.stl"
+  ]
+}
