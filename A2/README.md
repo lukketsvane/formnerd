@@ -2,31 +2,72 @@
 
 Kamerahus for to ESP32-CAM i stilen frå referansane: feite, mjuke tubar rundt ein mørk kjerne, og elektronikken skjult. Bileta og 3D-modellane er laga med Tripo (skripta ligg i `verktoy/`). Meshane er formreferansar for CAD, ikkje produksjonsfiler.
 
-## Tilråding
+## Printpakke (`print/`) og monteringsrettleiing (`rettleiing/`)
 
-Ta **runde 3, variant 04 – tett visir med brei basis** (`runde-3/3d/04-brei-basis-eitt-bilete/`) vidare til CAD.
+**Status: klar for prøveprint, ikkje 100 % klar for sluttprint og montering.** Sjå «Kva som manglar» under.
 
-- Elektronikken er heilt skjult. Visiret er eit tett, mørkt panel med berre to små linsehol, og kort, sensor og lysdiodar syner ikkje.
-- Stereobasisen er om lag 0,44 av breidda, det vil seie 43–48 mm. Dei andre variantane har 26–32 mm, og 02 berre 16 mm.
-- Kroppen må vere om lag 97–108 mm brei for å gøyme begge korta, USB-kortet, batteriet og kameramodulane med 2 mm vegg. 97–98 mm er frå eit uttømmande søk på denne meshen. 108 mm er den konservative øvre grensa frå `innmat.py`.
-- Alternativet er variant 01 (tett visir, `runde-3/3d/01-eitt-bilete/`). Han er om lag 100 mm brei, men har berre om lag 26 mm stereobasis.
+Huset er bygd rundt delane som er valde for prosjektet: to ESP32-CAM, kvar sett på eit ESP32-CAM-MB med micro-USB. Det krev inga skrue, inga lodding og ingen flatkabelforlenging.
 
-Neste steg i CAD:
+| Del | Printretning | Mål (mm) | Masse (massiv) | Støtte |
+| --- | --- | --- | --- | --- |
+| `fremre_skal.stl` | skøytesida ned | 115 × 78 × 43 | ca. 56 g | tre-støtte |
+| `bakre_skal.stl` | skøytesida ned | 113 × 77 × 35 | ca. 39 g | tre-støtte |
+| `innmatsramme.stl` | plata ned | 110 × 74 × 16 | ca. 23 g | ingen |
 
-- Teikn opp att forma med eigne kroppar for grep, band og visir. Meshen er eitt samansmelta skal.
-- Lag visiret som eit eige, tett og mørkt innlegg med fals og berre to linsehol.
-- Plasser kameramodulane bak hola, og før dei med FPC-forlenging til korta. Mål kort, USB-kort og batteri, og køyr `innmat.py` på nytt med dei målte verdiane.
-- Bruk den flate baksida som servicelok.
+`A2-hus-alle-delar.3mf` har alle tre på éi 256 mm-plate. `provebitar/` har fire små utdrag av dei same delane, til å prøve skøyten, styrebena, linsehol og USB-tunnel før sluttprint. `renderar/` har samla, eksplodert og snitt.
+
+Konstruksjon (`verktoy/bygg_hus.py`, mål i `print/parametrar.json`):
+
+- **Kropp:** Formen er runde 3, variant 04, skalert til 115 mm breidd, med 2,4 mm vegg.
+- **Skøyt:** Fremre og bakre skal møtest i ein halv overlappskøyt med 0,2 mm klaring og seks klikk-knastar.
+- **Montering:** Delane under skøyten er trimma mot sveipet av fremre skal, så det kan skyvast rett på utan kollisjon (kontrollert).
+- **Innmatsramme:** Ramma blir klemd i skøyten. Ho har styreben og hyller for kvar stabel, med klaring for loddespissar.
+- **Stablar:** Kvar stabel (ESP32-CAM på MB) ligg med den lange sida langs breidda. Linsa sit 9,5 mm frå SD-enden (publisert typisk mål) bak eit 9,5 mm hol med fasa kant ut mot ytterflata.
+- **USB:** Kvar micro-USB-port når ut gjennom kvar sin endevegg via ein tunnel på 12,5 × 9,5 mm. Den eine kjem ut på grepssida.
+- **Linse 2 er flytt:** Linse 1 står i det opphavlege søkket. Linse 2 er flytt frå z = 21 til z = 42,6 mm, og det gamle søkket er fylt. Grunnen er at USB-kontakten sit 31 mm frå linsa på kortet. Med linsa nær høgre enden ville porten peike inn mot den andre stabelen. **Stereobasisen blir difor 30 mm, ikkje 48 mm.** Brei basis krev ein vinkla micro-USB-kabel eller flatkabelforlenging, og ingen av dei er stadfesta.
+- **Utløysar:** Ingen fysisk utløysar. Alle 16 stifter på ESP32-CAM sit i MB-headeren, så ein knapp krev lodding. Utløysaren må gå via WiFi. Knappane på toppen er pynt.
+
+Kontrollar som er gjorde (`print/kontroll.json`):
+
+- ingen kollisjonar mellom delar og elektronikk i montert stilling
+- minst 0,48 mm frå elektronikken til innerveggen
+- monteringssveip utan kollisjon
+- plata klemd på om lag 240–300 mm²
+- alle delar tette og i eitt stykke, og innanfor P1S-plata
+
+### Kva som manglar før sluttprint og montering
+
+1. **Delane er ikkje mottekne og målte.** Utstyrslista seier «to sett avtalt henting», utan stadfesta variant. Alle mål på kort, MB, kamera og USB i `parametrar.json` er publiserte eller anslåtte (`"målt": false`). Kjeldene ligg i `print/delmaal.json`. Mål dette med skyvelære og køyr `bygg_hus.py` på nytt:
+   - stabeldjupna frå linsetopp til underside MB
+   - kvar linsa sit på kortet
+   - kortlengda
+   - høgda til USB-kontakten
+2. **Prøvebitane er ikkje printa.** Skøyten, klikk-knastane, styrebena og USB-tunnelen er ikkje prøvde fysisk.
+3. **Ikkje slica.** Støtte, tid og første lag er ikkje kontrollerte i Bambu Studio med P1S-profilen.
+4. **Krava i prosjektoversikta er ikkje oppfylte:**
+   - Linsa er under 30 mm (holet er 9,5 mm).
+   - Utløysaren finst berre i programvaren.
+   - Det er micro-USB, ikkje USB-C. Biletoverføring skjer via WiFi eller SD-kort.
+5. **Delar som ikkje står på utstyrslista:** to micro-USB-kablar, to USB-ladarar (5 V, 1–2 A), tape til å feste kameramodulen på SD-sokkelen, og eventuelt microSD-kort.
+
+Visiret er printa i same farge som skalet. Det mørke visiret på renderen er valfri måling.
+
+## Formrundane
+
+Runde 3, variant 04 (`runde-3/3d/04-brei-basis-eitt-bilete/`) er forma printpakken byggjer på. Variant 01 (tett visir, `runde-3/3d/01-eitt-bilete/`) er alternativet. Innmatsanalysen under er gjort før printpakken og reknar med flatkabelforlenging til kameraa. Det er ein del som ikkje er stadfesta, og grunnen til at printpakken har kortare stereobasis.
 
 ## Mapper
 
 | Mappe | Innhald |
 | --- | --- |
+| `print/` | STL og 3MF i printretning, prøvebitar, parametrar, publiserte delmål, kontrollrapport og renderar |
+| `rettleiing/` | Monteringsrettleiing i IKEA-stil, 13 sider (PNG og PDF) |
 | `referansar/` | Stilreferansar. ref-7 er hovudreferansen, og ref-6 er ESP32-CAM-annonsen |
 | `runde-1/` | Ti første konsept i rør- og kubestil, forkasta |
 | `runde-2/konsept/`, `runde-2/3d/` | Sju konsept etter ref-7 med skjult elektronikk, og tre 3D-modellar |
 | `runde-3/konsept/`, `runde-3/3d/` | Tett visir etter kritikken, og to 3D-modellar |
 | `analyse/` | Linsesentrum, innmatsanalyse og verifiseringa av kritikken og verktøyet |
+| `verktoy/` | Skript for Tripo, mesh-QA, innmatsanalyse, husbygging, renderar og rettleiing |
 
 Kvar konseptmappe har `promptar.json` og `generering.json` med oppgåve-ID-ar, og kvar 3D-mappe har `model.glb`, Tripo-førehandsvising, `visningar.png` (front, 3/4, topp og bak) og `mesh-qa.json`.
 
@@ -102,6 +143,8 @@ Krev `TRIPO_API_KEY` i miljøet og Python-pakkane `requests`, `trimesh` og `scip
 - `kjor.py jobbar.json ut.json [parallelle]` – køyrer ei liste med Tripo-oppgåver og lastar ned resultata. Biletgenerering tillèt berre éi oppgåve om gongen, så bruk `1` der.
 - `mesh_qa.py fil.glb …` – topologisjekk (rå og sveisa analysekopi)
 - `innmat.py A2/analyse/linser.json [prosessar] > A2/analyse/innmat.json` – innmatsanalysen over
+- `bygg_hus.py` – byggjer printdelane, prøvebitane, 3MF og `print/kontroll.json` frå `print/parametrar.json` (krev òg `manifold3d` og `scikit-image`)
+- `renderar.py` og `rettleiing.py` – fargerenderar og IKEA-rettleiinga. Dei krev Node med Playwright og `npm install` i `verktoy/` for three.js.
 
 ## Kredittar
 

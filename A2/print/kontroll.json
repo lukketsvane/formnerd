@@ -5,6 +5,10 @@
       "visirplan_x": 64.5
     }
   ],
+  "sveip_trimma_mm3": {
+    "bakre_skal": 171.1,
+    "innmatsramme": 509.3
+  },
   "knastar": [
     [
       35.0,
@@ -91,8 +95,8 @@
       "overheng_over_45_mm2": 5418.0
     },
     "bakre_skal": {
-      "volum_cm3": 31.2,
-      "masse_g_massiv": 38.7,
+      "volum_cm3": 31.0,
+      "masse_g_massiv": 38.5,
       "mål_mm": [
         112.7,
         77.1,
@@ -101,24 +105,24 @@
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 120058,
-      "flate_på_seng_mm2": 405.0,
-      "overheng_over_45_mm2": 5328.0
+      "trekantar": 125398,
+      "flate_på_seng_mm2": 261.0,
+      "overheng_over_45_mm2": 5322.0
     },
     "innmatsramme": {
-      "volum_cm3": 19.5,
-      "masse_g_massiv": 24.2,
+      "volum_cm3": 18.4,
+      "masse_g_massiv": 22.8,
       "mål_mm": [
-        111.2,
-        74.5,
+        109.8,
+        74.1,
         16.1
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 10646,
-      "flate_på_seng_mm2": 6686.0,
-      "overheng_over_45_mm2": 22.0
+      "trekantar": 10482,
+      "flate_på_seng_mm2": 6512.0,
+      "overheng_over_45_mm2": 0.0
     },
     "prove_skoyt_framme": {
       "volum_cm3": 2.7,
@@ -137,7 +141,7 @@
     },
     "prove_skoyt_bak": {
       "volum_cm3": 2.7,
-      "masse_g_massiv": 3.4,
+      "masse_g_massiv": 3.3,
       "mål_mm": [
         36.4,
         65.3,
@@ -146,13 +150,13 @@
       "får_plass_på_P1S": true,
       "vasstett": true,
       "komponentar": 1,
-      "trekantar": 16684,
-      "flate_på_seng_mm2": 151.0,
-      "overheng_over_45_mm2": 227.0
+      "trekantar": 18532,
+      "flate_på_seng_mm2": 88.0,
+      "overheng_over_45_mm2": 224.0
     },
     "prove_holdar": {
-      "volum_cm3": 6.4,
-      "masse_g_massiv": 7.9,
+      "volum_cm3": 6.2,
+      "masse_g_massiv": 7.7,
       "mål_mm": [
         52.5,
         39.0,
@@ -167,7 +171,7 @@
     },
     "prove_linse_usb": {
       "volum_cm3": 8.5,
-      "masse_g_massiv": 10.6,
+      "masse_g_massiv": 10.5,
       "mål_mm": [
         55.6,
         39.0,
@@ -175,10 +179,10 @@
       ],
       "får_plass_på_P1S": true,
       "vasstett": true,
-      "komponentar": 2,
-      "trekantar": 35668,
+      "komponentar": 1,
+      "trekantar": 34970,
       "flate_på_seng_mm2": 97.0,
-      "overheng_over_45_mm2": 1662.0
+      "overheng_over_45_mm2": 1658.0
     }
   }
 }
