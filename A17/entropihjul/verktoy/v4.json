@@ -1,0 +1,12 @@
+{
+ "CAP_MODE": "dish_offset", "DISH_DEPTH": 0.75,
+ "FIN_CAP_TOP": "blast",
+ "FIN_CAP_DISH": "blast",
+ "FIN_CAP_SIDE": "polish",
+ "FIN_RING_TOP": "blast",
+ "DEPTH_FLUTE": 0.45,
+ "REC": 0.5,
+ "Z_HI": 6.4,
+ "DEPTH_DIMPLE": 0.45,
+ "W_FLUTE": 1.42
+}
