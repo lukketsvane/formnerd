@@ -1,0 +1,94 @@
+{
+  "dato": "2026-10-20",
+  "konsept": [
+    {
+      "konsept": "01-visir-tett-sunburst",
+      "task_id": "713db5c0-7088-4932-8bb4-a99f1b915d75",
+      "type": "image_to_image",
+      "model": "chat_image_2.5_sunburst",
+      "credits": 10.0,
+      "inputs": [
+        "file_106666bc-ea63-4d95-87bf-65586abc1efa",
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04"
+      ],
+      "prompt": "Edit image[1] and keep its overall design, camera angle, lighting, white background and render quality. Changes: (1) the diagonal band over the top must be a fat, round, pillowy tube exactly like the big sweeping tube in image[2], not a flat strap; (2) the ribbed grip on the left must have three fat round ribs like image[2]; (3) the dark front visor becomes an OPAQUE matte dark graphite panel, not glass, with only two small round lens openings side by side at the same height, about 35 mm apart; (4) each opening shows only a small deep dark glass lens about 10 mm across inside stepped black rings. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs. Keep the dark recessed USB-C pocket on the grip side and the two dark puck buttons."
+    },
+    {
+      "konsept": "02-visir-tett",
+      "task_id": "118d81c4-e3ac-46f2-b4eb-0363bab5a0a1",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_106666bc-ea63-4d95-87bf-65586abc1efa",
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04"
+      ],
+      "prompt": "New product design render of a stereoscopic camera based on image[1], with the fat round pillowy tubes, three-rib grip and sweeping diagonal tube of image[2]. The front has an OPAQUE matte dark graphite visor panel framed by the tubes, with only two small round lens openings side by side at the same height, about 35 mm apart; each opening shows a small deep dark glass lens about 10 mm across inside stepped black rings. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs. Dark recessed USB-C pocket on the grip side, dark puck buttons on top. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[2]. Single object, centered, no text, no logos."
+    },
+    {
+      "konsept": "03-visir-brei",
+      "task_id": "1e648f1f-5dfc-48a0-b6dd-777dc0f5ae0e",
+      "type": "image_to_image",
+      "model": "banana_pro",
+      "credits": 15.0,
+      "inputs": [
+        "file_106666bc-ea63-4d95-87bf-65586abc1efa",
+        "file_e8d96ef9-df67-4657-946b-d896b6aefb04"
+      ],
+      "prompt": "New product design render of a stereoscopic camera based on image[1], with the fat round pillowy tubes, three-rib grip and sweeping diagonal tube of image[2], but wider and lower, landscape proportions about 1.7 times as wide as tall, so the two lenses can sit about 60 mm apart like human eyes. The front has a long OPAQUE matte dark graphite visor panel framed by the tubes, with only two small round lens openings near its two ends at the same height; each opening shows a small deep dark glass lens about 10 mm across inside stepped black rings. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs. Dark recessed USB-C pocket on the grip side, dark puck buttons on top. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[2]. Single object, centered, no text, no logos."
+    },
+    {
+      "konsept": "04-visir-tett-brei-basis",
+      "task_id": "88a4016a-70d9-42d5-a711-a03172860e91",
+      "type": "image_to_image",
+      "model": "chat_image_2.5_sunburst",
+      "credits": 10.0,
+      "inputs": [
+        "file_84ba1a06-f723-4573-9089-ad8a35bab62c"
+      ],
+      "prompt": "Edit image[1] and keep everything exactly as it is (same tubes, grip, band, buttons, USB-C pocket, camera angle, lighting, white background, render quality). Only change: move the two small lens openings apart so that they sit near the two far ends of the dark opaque visor panel, at the same height, as far apart as the panel allows. Keep the lenses the same small size. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs."
+    }
+  ],
+  "modellar": [
+    {
+      "namn": "01-eitt-bilete",
+      "task_id": "e5a21370-bdf2-427d-a64a-21c460dcb135",
+      "type": "image_to_model",
+      "input": "713db5c0-7088-4932-8bb4-a99f1b915d75",
+      "parameters": {
+        "model": "v3.1-20260211",
+        "texture": false,
+        "pbr": false,
+        "face_limit": 100000,
+        "geometry_quality": "standard"
+      },
+      "credits": 20.0,
+      "status": "success"
+    },
+    {
+      "namn": "04-brei-basis-eitt-bilete",
+      "task_id": "790075a0-fda6-47c6-9781-36bedd258841",
+      "type": "image_to_model",
+      "input": "88a4016a-70d9-42d5-a711-a03172860e91",
+      "parameters": {
+        "model": "v3.1-20260211",
+        "texture": false,
+        "pbr": false,
+        "face_limit": 100000,
+        "geometry_quality": "standard"
+      },
+      "credits": 20.0,
+      "status": "success"
+    }
+  ],
+  "forkasta": [
+    {
+      "namn": "01-fleir-vinklar",
+      "grunn": "image-to-multiview laga motstridande vinklar (spegla visir bak, stort enkeltobjektiv på sida); meshen fekk djupn lik breidd",
+      "multiview_task_id": "9d6189e2-73f1-4855-b9da-92a5a5d3c68f",
+      "multiview_credits": 10.0,
+      "task_id": "c70a206a-56d2-4569-bbf8-aa92de91b18e",
+      "credits": 20.0
+    }
+  ]
+}

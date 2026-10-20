@@ -76,12 +76,114 @@ def delt_passar(occ, breidd_mm, a, b):
 
 
 def minste_breidd(test, lo=40, hi=250):
-    if not test(hi):
+    hi = next((b for b in range(hi, lo, -10) if test(b)), None)
+    if hi is None:
         return None
     while hi - lo > 1:
         mid = (lo + hi) // 2
         lo, hi = (lo, mid) if test(mid) else (mid, hi)
     return hi
+
+
+CAM_MB = (27, 42, 25)
+CAM = (27, 42, 12)
+BATTERI = (34, 50, 6)
+MODUL = (12, 12, 8)
+
+
+def lommar(occ, breidd_mm, linser, modul=MODUL):
+    mm = breidd_mm / N
+    occ = occ.copy()
+    v = VEGG / mm
+    for yf, zf in linser:
+        yi, zi = int(round(yf * N)), int(round(zf * N))
+        hy, hz, d = modul[1] / 2 / mm, modul[0] / 2 / mm, modul[2] / mm
+        y0, y1 = int(np.floor(yi - hy - v)), int(np.ceil(yi + hy + v)) + 1
+        z0, z1 = int(np.floor(zi - hz - v)), int(np.ceil(zi + hz + v)) + 1
+        flate = occ[:, y0:y1, z0:z1]
+        if min(y0, z0) < 0 or not flate.any(axis=0).all():
+            return None
+        xf = int((flate.shape[0] - 1 - np.argmax(flate[::-1], axis=0)).min())
+        x0, x1 = int(np.floor(xf - 2 * v - d)), xf + 1
+        if x0 < 0 or not occ[x0:x1, y0:y1, z0:z1].all():
+            return None
+        occ[int(np.floor(xf - v - d)):int(np.ceil(xf - v)) + 1, int(np.floor(yi - hy)):int(np.ceil(yi + hy)) + 1, int(np.floor(zi - hz)):int(np.ceil(zi + hz)) + 1] = False
+    return occ
+
+
+def grovt(occ, k=2):
+    s = [n // k * k for n in occ.shape]
+    o = occ[: s[0], : s[1], : s[2]]
+    return o.reshape(s[0] // k, k, s[1] // k, k, s[2] // k, k).all(axis=(1, 3, 5))
+
+
+def fit(occ, mm, boks):
+    s = [int(np.ceil((x + 2 * VEGG) / mm)) for x in boks]
+    return s, np.argwhere(ndimage.minimum_filter(occ, size=s, mode="constant", cval=0))
+
+
+def to_passar(occ, mm, a, b):
+    v = VEGG / mm
+    kart = {}
+    for pb in set(itertools.permutations(b)):
+        kart[pb] = fit(occ, mm, pb)
+    for pa in set(itertools.permutations(a)):
+        sa, PA = fit(occ, mm, pa)
+        if not len(PA):
+            continue
+        for sb, PB in kart.values():
+            if not len(PB):
+                continue
+            for k in range(3):
+                gap = (sa[k] + sb[k]) / 2 - v
+                if PB[:, k].max() - PA[:, k].min() >= gap or PA[:, k].max() - PB[:, k].min() >= gap:
+                    return True
+    return False
+
+
+def tre_passar(occ, mm, a, b, c):
+    for pa in set(itertools.permutations(a)):
+        sa, PA = fit(occ, mm, pa)
+        if not len(PA):
+            continue
+        kandidatar = {tuple(PA[f(PA[:, k])]) for k in range(3) for f in (np.argmin, np.argmax)}
+        for p in kandidatar:
+            core = [int(np.ceil(x / mm)) for x in pa]
+            lo = [p[k] - sa[k] // 2 + (sa[k] - core[k]) // 2 for k in range(3)]
+            rest = occ.copy()
+            rest[lo[0]:lo[0] + core[0], lo[1]:lo[1] + core[1], lo[2]:lo[2] + core[2]] = False
+            if to_passar(rest, mm, b, c):
+                return True
+    return False
+
+
+def pakking(occ, linser=None, k=2):
+    def test(breidd):
+        o = lommar(occ, breidd, linser) if linser else occ
+        if o is None:
+            return False
+        return tre_passar(grovt(o, k), breidd / N * k, CAM_MB, CAM, BATTERI)
+    return test
+
+
+if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "--linser":
+    linser = json.loads(sys.argv[2])
+    res = {}
+    for p in sys.argv[3:]:
+        m = trimesh.load(p, force="mesh")
+        m.merge_vertices()
+        occ = fyll(m)
+        e = m.extents / m.extents[2]
+        b0 = minste_breidd(pakking(occ))
+        b1 = minste_breidd(pakking(occ, linser.get(p)))
+        res[p] = {
+            "linser_brøkdel_av_breidd": linser.get(p),
+            "linseavstand_brøkdel_av_breidd": round(float(np.hypot(*np.subtract(*linser[p]))), 3) if p in linser else None,
+            "cam_mb_cam_batteri": {"minste_breidd_mm": b0, "hogd_mm": round(b0 * e[1]) if b0 else None, "djupn_mm": round(b0 * e[0]) if b0 else None},
+            "cam_mb_cam_batteri_og_kameramodular_ved_linsene": {"minste_breidd_mm": b1, "hogd_mm": round(b1 * e[1]) if b1 else None, "djupn_mm": round(b1 * e[0]) if b1 else None},
+        }
+    print(json.dumps(res, indent=2, ensure_ascii=False))
+    sys.exit()
 
 
 if __name__ == "__main__":

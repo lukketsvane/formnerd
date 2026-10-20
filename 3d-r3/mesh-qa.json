@@ -1,0 +1,56 @@
+{
+  "01-eitt-bilete/model.glb": {
+    "sha256": "4bfb8ea988c30ae7247c268756fbb35d37086b3ed624e7fa0d9f97a161f8d7c4",
+    "file_size_bytes": 2797928,
+    "extents_xyz_model_units": [
+      0.6588945984840393,
+      0.6738312244415283,
+      1.0
+    ],
+    "raw_indexed_topology": {
+      "vertices": 51853,
+      "faces": 94764,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 8774,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 84
+    },
+    "exact_position_welded_analysis_only": {
+      "vertices": 47384,
+      "faces": 94764,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 2,
+      "nonmanifold_edges_more_than_two_faces": 2,
+      "connected_components": 1
+    }
+  },
+  "04-brei-basis-eitt-bilete/model.glb": {
+    "sha256": "400d9e0e5effea0096d3a3198303e8bc8747a2f0c9ce6f7fa62b799f67407a4c",
+    "file_size_bytes": 2810116,
+    "extents_xyz_model_units": [
+      0.6604951620101929,
+      0.677010715007782,
+      1.0
+    ],
+    "raw_indexed_topology": {
+      "vertices": 52077,
+      "faces": 95184,
+      "watertight_trimesh": false,
+      "winding_consistent": true,
+      "boundary_edges": 8788,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 91
+    },
+    "exact_position_welded_analysis_only": {
+      "vertices": 47594,
+      "faces": 95184,
+      "watertight_trimesh": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges_more_than_two_faces": 0,
+      "connected_components": 1
+    }
+  }
+}

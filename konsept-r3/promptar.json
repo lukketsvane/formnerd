@@ -1,0 +1,33 @@
+{
+  "grunnlag": {
+    "image[1]": "konsept-r2/04-visir/bilete.png (file_106666bc-ea63-4d95-87bf-65586abc1efa)",
+    "image[2]": "referansar/ref-7-hovudreferanse.png (file_e8d96ef9-df67-4657-946b-d896b6aefb04)"
+  },
+  "konsept": [
+    {
+      "id": "01",
+      "namn": "visir-tett-sunburst",
+      "model": "chat_image_2.5_sunburst",
+      "tekst": "Edit image[1] and keep its overall design, camera angle, lighting, white background and render quality. Changes: (1) the diagonal band over the top must be a fat, round, pillowy tube exactly like the big sweeping tube in image[2], not a flat strap; (2) the ribbed grip on the left must have three fat round ribs like image[2]; (3) the dark front visor becomes an OPAQUE matte dark graphite panel, not glass, with only two small round lens openings side by side at the same height, about 35 mm apart; (4) each opening shows only a small deep dark glass lens about 10 mm across inside stepped black rings. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs. Keep the dark recessed USB-C pocket on the grip side and the two dark puck buttons."
+    },
+    {
+      "id": "02",
+      "namn": "visir-tett",
+      "model": "banana_pro",
+      "tekst": "New product design render of a stereoscopic camera based on image[1], with the fat round pillowy tubes, three-rib grip and sweeping diagonal tube of image[2]. The front has an OPAQUE matte dark graphite visor panel framed by the tubes, with only two small round lens openings side by side at the same height, about 35 mm apart; each opening shows a small deep dark glass lens about 10 mm across inside stepped black rings. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs. Dark recessed USB-C pocket on the grip side, dark puck buttons on top. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[2]. Single object, centered, no text, no logos."
+    },
+    {
+      "id": "03",
+      "namn": "visir-brei",
+      "model": "banana_pro",
+      "tekst": "New product design render of a stereoscopic camera based on image[1], with the fat round pillowy tubes, three-rib grip and sweeping diagonal tube of image[2], but wider and lower, landscape proportions about 1.7 times as wide as tall, so the two lenses can sit about 60 mm apart like human eyes. The front has a long OPAQUE matte dark graphite visor panel framed by the tubes, with only two small round lens openings near its two ends at the same height; each opening shows a small deep dark glass lens about 10 mm across inside stepped black rings. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs. Dark recessed USB-C pocket on the grip side, dark puck buttons on top. Same three-quarter front camera angle, soft studio lighting, pure white background and photoreal render quality as image[2]. Single object, centered, no text, no logos."
+    },
+    {
+      "id": "04",
+      "namn": "visir-tett-brei-basis",
+      "model": "chat_image_2.5_sunburst",
+      "grunnlag": "konsept-r3/01-visir-tett-sunburst/bilete.png (file_84ba1a06-f723-4573-9089-ad8a35bab62c)",
+      "tekst": "Edit image[1] and keep everything exactly as it is (same tubes, grip, band, buttons, USB-C pocket, camera angle, lighting, white background, render quality). Only change: move the two small lens openings apart so that they sit near the two far ends of the dark opaque visor panel, at the same height, as far apart as the panel allows. Keep the lenses the same small size. Nothing behind the panel is visible: no sensor, no chip, no circuit board, no LEDs."
+    }
+  ]
+}
