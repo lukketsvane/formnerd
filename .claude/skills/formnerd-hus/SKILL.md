@@ -52,9 +52,11 @@ python3 verktoy/mesh_qa.py P/runde-N/3d/*/model.glb
 node verktoy/visningar.mjs model.glb visningar.png
 ```
 
-- Bilete: `generation/image-to-image` (t.d. `chat_image_2.5_sunburst` 10 kr, `banana_pro` 15 kr, `seedream_v5`). Inndata må vere `file_token`. Task-ID frå eit tidlegare bilete blir avvist, så last ned og last opp på nytt.
-- 3D: `generation/image-to-model` med `"model": "v3.1-20260211", "texture": false` (20 kr). Her går task-ID-en til biletet fint som `input`.
+- Bilete: `generation/image-to-image` (t.d. `chat_image_2.5_sunburst` 10 kredittar, `banana_pro` 15 kredittar, `seedream_v5`). Inndata må vere `file_token`. Task-ID frå eit tidlegare bilete blir avvist, så last ned og last opp på nytt.
+- 3D: `generation/image-to-model` med `"model": "v3.1-20260211", "texture": false, "pbr": false` (20 kredittar for standardgeometri; sjekk gjeldande pris før køyring). Her går task-ID-en til biletet fint som `input`.
 - Lagre promptane i `promptar.json` og task-ID-ar og kredittar i `generering.json`, slik at runden kan gjenskapast. Sjekk saldoen med `python3 verktoy/tripo.py balance`.
+
+Sjå den portable [skisse-til-CAD-skillen](../../../.agents/skills/skisse-til-cad/SKILL.md) og den dokumentasjonskontrollerte [Tripo-oppskrifta](../../../.agents/skills/skisse-til-cad/references/tripo-bruk.md) for modellval, segmentering, Smart Low Poly og parametergrenser. CLI-dry-run kan gi `valid=true` for parameter som API-et kombinerer annleis; kontroller også endepunktdokumentasjonen.
 - Lat brukaren velje konsept. Meshen er ein formreferanse, ikkje ei produksjonsfil.
 
 ### 3. Innmat
