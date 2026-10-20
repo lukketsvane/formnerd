@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1300" viewBox="0 0 1800 1300"><rect width="1800" height="1300" fill="white"/>
+<rect x="170" y="270" width="485" height="740" rx="24" fill="#f4f5f5" stroke="#17191b" stroke-width="5"/>
+<text x="412" y="347.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="40" text-anchor="middle">ESP32-CAM</text>
+<text x="410" y="450.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="38" text-anchor="middle">3,3 V</text>
+<polyline points="410.00,475.00 410.00,510.00" fill="none" stroke="#17191b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="410.00,510.00 390.00,530.00 430.00,550.00 390.00,570.00 430.00,590.00 390.00,610.00 410.00,630.00" fill="none" stroke="#17191b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="410.00,630.00 410.00,710.00 670.00,710.00" fill="none" stroke="#17191b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="410.0" cy="710.0" rx="9.0" ry="9.0" fill="#17191b" stroke="#17191b" stroke-width="1"/>
+<polyline points="300.00,710.00 410.00,710.00" fill="none" stroke="#17191b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="185" y="765.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="35" text-anchor="start">GPIO13</text>
+<text x="412" y="907.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="29" text-anchor="middle">INPUT_PULLUP</text>
+<polyline points="670.00,710.00 1000.00,710.00" fill="none" stroke="#b95c24" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1000.0" cy="710.0" rx="12.0" ry="12.0" fill="white" stroke="#17191b" stroke-width="5"/>
+<ellipse cx="1250.0" cy="710.0" rx="12.0" ry="12.0" fill="white" stroke="#17191b" stroke-width="5"/>
+<polyline points="1012.00,703.00 1230.00,590.00" fill="none" stroke="#17191b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1110.00,550.00 1110.00,630.00" fill="none" stroke="#17191b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1075.00,550.00 1145.00,550.00" fill="none" stroke="#17191b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1115" y="487.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="40" text-anchor="middle">E3  NO</text>
+<polyline points="1262.00,710.00 1520.00,710.00 1520.00,865.00" fill="none" stroke="#17191b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1455.00,865.00 1585.00,865.00" fill="none" stroke="#17191b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1477.00,890.00 1563.00,890.00" fill="none" stroke="#17191b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1498.00,915.00 1542.00,915.00" fill="none" stroke="#17191b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1520" y="995.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="38" text-anchor="middle">GND</text>
+<text x="1090" y="1092.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="35" text-anchor="middle">Ingen microSD</text>
+</svg>

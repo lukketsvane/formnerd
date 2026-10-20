@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1300" viewBox="0 0 1800 1300"><rect width="1800" height="1300" fill="white"/>
+<rect x="1000" y="230" width="510" height="670" rx="40" fill="#e7eaec" stroke="#17191b" stroke-width="6"/>
+<rect x="1050" y="295" width="410" height="175" rx="14" fill="white" stroke="#17191b" stroke-width="4"/>
+<text x="1255" y="389.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="88" text-anchor="middle">Ω</text>
+<text x="1255" y="446.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="400" font-size="27" text-anchor="middle">kontinuitet</text>
+<ellipse cx="1255.0" cy="645.0" rx="105.0" ry="105.0" fill="#c6cdd1" stroke="#17191b" stroke-width="5"/>
+<polyline points="1255.00,645.00 1325.00,580.00" fill="none" stroke="#17191b" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1095.0" cy="835.0" rx="25.0" ry="25.0" fill="#17191b" stroke="#17191b" stroke-width="3"/>
+<ellipse cx="1395.0" cy="835.0" rx="25.0" ry="25.0" fill="#b95c24" stroke="#17191b" stroke-width="3"/>
+<text x="1095" y="892.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="24" text-anchor="middle">COM</text>
+<text x="1395" y="892.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="24" text-anchor="middle">Ω</text>
+<polygon points="356.08,715.00 408.04,745.00 408.04,724.00 356.08,694.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="408.04,745.00 387.25,757.00 387.25,736.00 408.04,724.00" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="356.08,694.00 408.04,724.00 387.25,736.00 335.29,706.00" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="335.29,727.00 387.25,757.00 387.25,736.00 335.29,706.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="252.15,775.00 304.12,805.00 304.12,784.00 252.15,754.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="304.12,805.00 283.33,817.00 283.33,796.00 304.12,784.00" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="252.15,754.00 304.12,784.00 283.33,796.00 231.37,766.00" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="231.37,787.00 283.33,817.00 283.33,796.00 231.37,766.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="615.88,865.00 667.85,895.00 667.85,874.00 615.88,844.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="667.85,895.00 647.06,907.00 647.06,886.00 667.85,874.00" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="615.88,844.00 667.85,874.00 647.06,886.00 595.10,856.00" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="595.10,877.00 647.06,907.00 647.06,886.00 595.10,856.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="511.96,925.00 563.92,955.00 563.92,934.00 511.96,904.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="563.92,955.00 543.14,967.00 543.14,946.00 563.92,934.00" fill="#aeb4b7" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="511.96,904.00 563.92,934.00 543.14,946.00 491.18,916.00" fill="#9da6ab" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="491.18,937.00 543.14,967.00 543.14,946.00 491.18,916.00" fill="#aab1b6" stroke="#17191b" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="460.00,745.00 615.88,835.00 615.88,730.00 460.00,640.00" fill="#aab1b6" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="615.88,835.00 460.00,925.00 460.00,820.00 615.88,730.00" fill="#aeb4b7" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="460.00,640.00 615.88,730.00 460.00,820.00 304.12,730.00" fill="#d7dcdf" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="304.12,835.00 460.00,925.00 460.00,820.00 304.12,730.00" fill="#aab1b6" stroke="#17191b" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="460.0" cy="709.0" rx="32.0" ry="20.0" fill="#5d666b" stroke="#17191b" stroke-width="3"/>
+<polyline points="1095.00,835.00 1040.00,1060.00 770.00,1100.00 640.00,1020.00 267.74,775.00" fill="none" stroke="white" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1095.00,835.00 1040.00,1060.00 770.00,1100.00 640.00,1020.00 267.74,775.00" fill="none" stroke="#17191b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1395.00,835.00 1430.00,1100.00 1050.00,1170.00 780.00,1020.00 631.47,865.00" fill="none" stroke="white" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1395.00,835.00 1430.00,1100.00 1050.00,1170.00 780.00,1020.00 631.47,865.00" fill="none" stroke="#b95c24" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="296.6654092" y="713.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="36" text-anchor="start">1</text>
+<text x="187.7423612" y="836.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="36" text-anchor="start">2</text>
+<text x="686.4730291999999" y="868.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="36" text-anchor="start">3</text>
+<text x="587.5499811999999" y="990.5" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="36" text-anchor="start">4</text>
+<text x="455" y="629.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="42" text-anchor="middle">E3</text>
+<text x="1255" y="180.0" fill="#17191b" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="43" text-anchor="middle">Mål før kopling</text>
+</svg>

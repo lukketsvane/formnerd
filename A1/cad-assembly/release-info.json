@@ -44,5 +44,17 @@
   "generic_print_estimates": [
     "22h 35m 4s",
     "53m 27s"
-  ]
+  ],
+  "documentation": {
+    "revision": "A1-Byggjesteg-R02",
+    "guide": "review/A1-Byggjesteg-R02.pdf",
+    "pages": 28,
+    "steps": 24,
+    "mechanical_geometry_changed": false,
+    "electronics_figures_are_schematic": true,
+    "firmware": "firmware/A1_Bench_Camera/A1_Bench_Camera.ino",
+    "firmware_compile_passed": true,
+    "arduino_esp32_version": "3.3.12",
+    "hardware_function_tested": false
+  }
 }

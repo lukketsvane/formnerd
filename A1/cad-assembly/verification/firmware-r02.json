@@ -1,0 +1,113 @@
+{
+  "revision": "A1-Bench-Camera-R02",
+  "source": "firmware/A1_Bench_Camera/A1_Bench_Camera.ino",
+  "source_sha256": "7a796b7ad8a8fa6dbbff339d8addad35a682a112dc84cd9ea38ba384efd3567e",
+  "target": "AI Thinker ESP32-CAM with OV2640 and ESP32-CAM-MB",
+  "firmware_type": "bench prototype; no SD, RAM-only last JPEG, Wi-Fi AP",
+  "compile": {
+    "passed": true,
+    "exit_code": 0,
+    "fqbn": "esp32:esp32:esp32cam",
+    "arduino_esp32_version": "3.3.12",
+    "arduino_cli_version": "1.5.2-rc.1 (fef6e48df, 2026-07-23)",
+    "warnings": "all",
+    "warning_lines": [],
+    "flash_bytes": 1029593,
+    "flash_capacity_bytes": 3145728,
+    "global_data_bytes": 59344,
+    "global_data_capacity_bytes": 327680,
+    "remaining_before_runtime_heap_allocations_bytes": 268336,
+    "runtime_heap_peak_measured": false,
+    "psram_profile_define": "BOARD_HAS_PSRAM",
+    "default_partition": "huge_app",
+    "log": "verification/firmware-compile-r02.log",
+    "application_binary_bytes": 1029744,
+    "application_binary_sha256": "ab89eb8c61c865b493855c3541e97b5199fba41b0e03dc41da0c85d4f2bb31c8",
+    "binary_published": false,
+    "command": "arduino-cli compile --fqbn esp32:esp32:esp32cam --warnings all --build-path <temporary-build> A1_Bench_Camera",
+    "installed_camera_pin_map_checked": true
+  },
+  "host_simulations": {
+    "passed": true,
+    "report": "verification/firmware-host-r02.json",
+    "logic_cases": 10,
+    "ui_cases": 4,
+    "source_functions_extracted": [
+      "captureImage",
+      "loop"
+    ],
+    "scope": "Simulated GPIO/camera and browser DOM; no physical camera or network driver execution"
+  },
+  "independent_review": {
+    "passed": true,
+    "reviewer": "esp32_mechanical_research agent",
+    "checked": [
+      "AI Thinker pin map against primary Espressif source",
+      "copy before returning camera framebuffer",
+      "bounded JPEG size and null guards",
+      "synchronous access to latest image",
+      "button debounce and rollover",
+      "UI hidden state and reset handling"
+    ],
+    "fixed": [
+      "CSS hidden element override",
+      "stale image remaining visible after camera reset",
+      "null frame data guard"
+    ]
+  },
+  "electrical": {
+    "shutter_signal_gpio": 13,
+    "shutter_return": "GND",
+    "mode": "INPUT_PULLUP; normally open switch; LOW when pressed",
+    "debounce_ms": 40,
+    "sd_initialised": false,
+    "sd_card_required_absent": true,
+    "logic_voltage": "3.3V; do not apply 5V to GPIO",
+    "physical_pin_access_verified": false
+  },
+  "network": {
+    "ssid": "A1-Camera",
+    "password": "A1camera2026",
+    "password_is_public_test_value": true,
+    "default_url": "http://192.168.4.1/",
+    "routes": {
+      "GET /": "browser camera page",
+      "POST /capture": "capture one JPEG",
+      "GET /status": "camera/count/status JSON",
+      "GET /last.jpg": "last JPEG",
+      "GET /download": "download last JPEG"
+    },
+    "internet_required": false,
+    "max_wifi_clients": 1
+  },
+  "storage": {
+    "psram_resolution": "VGA 640x480",
+    "psram_last_photo_limit_bytes": 262144,
+    "no_psram_resolution": "QVGA 320x240",
+    "no_psram_last_photo_limit_bytes": 49152,
+    "only_latest_image": true,
+    "lost_on_poweroff": true,
+    "sd_supported": false,
+    "oversize_policy": "reject new image and preserve last valid image"
+  },
+  "hardware_flashed": false,
+  "hardware_function_tested": false,
+  "physical_button_function_tested": false,
+  "usb_file_transfer_implemented": false,
+  "battery_charging_implemented": false,
+  "limitations": [
+    "Actual camera board revision, pin access, button and mechanical fit remain unmeasured",
+    "Compilation and host simulation do not verify physical camera, power integrity, Wi-Fi operation or temperature",
+    "Very short button presses during synchronous network transfers can be missed",
+    "Exact exposure time after button press is not guaranteed",
+    "Public test AP credentials should be changed before other use"
+  ],
+  "primary_sources": [
+    "https://github.com/espressif/arduino-esp32/releases/tag/3.3.12",
+    "https://github.com/espressif/arduino-esp32/blob/3.3.12/libraries/ESP32/examples/Camera/CameraWebServer/camera_pins.h",
+    "https://github.com/espressif/arduino-esp32/blob/3.3.12/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino",
+    "https://github.com/espressif/arduino-esp32/blob/3.3.12/libraries/WebServer/src/WebServer.h",
+    "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html",
+    "https://www.olimex.com/Products/IoT/ESP32/ESP32-CAM/resources/ESP32-CAM-MB-S001.jpg"
+  ]
+}
