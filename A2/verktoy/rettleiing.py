@@ -131,10 +131,8 @@ def sider():
     for n, (namn, retn) in enumerate((("fremre_skal", (1, 0.9, 0.7)), ("bakre_skal", (1, 0.9, 0.7)), ("innmatsramme", (1, 0.9, 0.7)))):
         t, _ = teikn(f"print_{n}", [[{"fil": f"/tmp/a2-print/{namn}.glb"}], [{"fil": f"/tmp/a2-print/seng_{namn}.glb"}]], retn, grå_grupper=(1,), zoom=0.95, opp=(0, 0, 1))
         lim(im, t, 90 + (n % 2) * 760, 330 + (n // 2) * 700, 720, 660)
-    dr.text((900, 1100), "PLA · 0,4 mm dyse", font=font(36), fill=(60, 60, 60))
-    dr.text((900, 1160), "skal: tre-støtte", font=font(36), fill=(60, 60, 60))
-    dr.text((900, 1220), "ramme: utan støtte", font=font(36), fill=(60, 60, 60))
-    dr.text((900, 1280), "flat side ned på plata", font=font(36), fill=(60, 60, 60))
+    for n, linje in enumerate(("print/bambu/A2-hus-P1S.gcode.3mf", "P1S · PLA · 0,4 mm dyse · 0,20 mm lag", "plate 1: skala, 6 t 15 min, 118 g", "plate 2: ramma, 37 min, 19 g", "tre-støtte frå plata")):
+        dr.text((900, 1100 + n * 60), linje, font=font(36), fill=(60, 60, 60))
     sidene.append(im)
 
     im, dr = side(2, "Print prøvebitane først")
