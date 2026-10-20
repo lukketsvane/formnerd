@@ -1,6 +1,7 @@
 import itertools
 import json
 import sys
+from multiprocessing import Pool
 
 import numpy as np
 import trimesh
@@ -140,12 +141,18 @@ def analyse(m, linser=None, k=2):
     occ, kontroll = fyll(m)
     avstand = ndimage.distance_transform_edt(occ)
 
+    grunn = []
+
     def plassering(breidd):
         mm = breidd / N
         inner = avstand >= VEGG / mm + 0.5
         sentrum = None
         if linser:
-            inner, sentrum = lommar(occ, inner, mm, linser)
+            try:
+                inner, sentrum = lommar(occ, inner, mm, linser)
+            except ValueError as e:
+                grunn.append(str(e))
+                return None
             if inner is None:
                 return None
         r = tre_boksar(grovt(inner, k), mm, k, CAM_MB, CAM, BATTERI)
@@ -153,7 +160,7 @@ def analyse(m, linser=None, k=2):
 
     lo, hi = 40, next((b for b in range(250, 40, -10) if plassering(b)), None)
     if hi is None:
-        return {"minste_breidd_mm": None, **kontroll}
+        return {"minste_breidd_mm": None, "grunn": grunn[-1] if grunn else None, **kontroll}
     while hi - lo > 1:
         mid = (lo + hi) // 2
         lo, hi = (lo, mid) if plassering(mid) else (mid, hi)
@@ -165,13 +172,18 @@ def analyse(m, linser=None, k=2):
     return res
 
 
+def kjor(jobb):
+    p, l = jobb
+    m = trimesh.load(p, force="mesh")
+    return p, analyse(m, l)
+
+
 if __name__ == "__main__":
-    linser = json.load(open(sys.argv[1]))
-    res = {}
-    for p, l in linser.items():
-        if p.startswith("_"):
-            continue
-        m = trimesh.load(p, force="mesh")
-        res[p] = {"nedre_grense_utan_lommar": analyse(m), "med_kameralommar_ved_linsene": analyse(m, l["linser"])}
-        print(p, res[p]["nedre_grense_utan_lommar"]["minste_breidd_mm"], res[p]["med_kameralommar_ved_linsene"]["minste_breidd_mm"], file=sys.stderr, flush=True)
+    linser = {p: l["linser"] for p, l in json.load(open(sys.argv[1])).items() if not p.startswith("_")}
+    jobbar = [(p, l) for p in linser for l in (None, linser[p])]
+    with Pool(int(sys.argv[2]) if len(sys.argv) > 2 else 3) as pool:
+        ut = pool.map(kjor, jobbar)
+    res = {p: {} for p in linser}
+    for (p, l), (_, r) in zip(jobbar, ut):
+        res[p]["med_kameralommar_ved_linsene" if l else "nedre_grense_utan_lommar"] = r
     print(json.dumps({"føresetnader": {"N": N, "vegg_mm": VEGG, "klaring_per_side_mm": KLARING, "kort_og_usb_kort": CAM_MB, "kort": CAM, "batteri": BATTERI, "kameramodul_breidd_hogd_djupn": MODUL}, "resultat": res}, indent=2, ensure_ascii=False))
