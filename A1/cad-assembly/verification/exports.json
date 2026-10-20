@@ -1,0 +1,1524 @@
+{
+  "physical_print_fit_verified": false,
+  "source_npz": {
+    "01_outer_shell": "b83a1976a46795869c0a6e70b789023adb544f6277ac27c40016b66f67884028",
+    "02_native_rear_cover": "270b4af4eb81ecee5f362e91892883e91b54f5db2f76b862181282303c4718bb",
+    "03_esp32_carrier": "ddd9f06419573a6ed33e0f6cb3d19b758744cbaf735d9be5cda4c80abc0003ab",
+    "04_optical_bezel": "f9a6bf9135de39c57a7af8c20e14835608cf93a238595ef997fd217ca5715b8f",
+    "05_lock_1": "33b0dd58b9ad5092067a490700688b9ff0045dec0fe82291e7ac69689a75af50",
+    "05_lock_2": "a1d4dfb0859c2471774a012e961b6085637e3e7ab7c567a26d5c416e77dabe68",
+    "05_lock_3": "62661398022896968564b17abc3d34f171bcc6689eee23980c9471f3b5994d79",
+    "05_lock_4": "15663e8e14c68eb0117f6c00bff37879bc538beb84712d3d225a3c47047c889d",
+    "06_lock_tool": "023124259e74bca4471f4efffa73b5d73c78414c3ba4faaf59e2fe4affe816f3",
+    "07_shutter": "87352c30c0a671d618b2d2f8c9f87f91a05e261e7d4665605ab260979b4f414d",
+    "08_shutter_retainer": "7c2301a252669215054cc661f9daba8faaa22888600d517c54dd201a920a4cbe",
+    "09_camera_keeper": "f7de06d2ef5143864b83243bd2e479b8f38522150f5b929dc97b2ddd494d02cd",
+    "test_lock_socket": "db0c12b5d8506349e8ae2a5a0d68cbdbd1de40541ae4a42597f4fe1ff99c8a3a"
+  },
+  "part_roles": {
+    "01_outer_shell": "product_part",
+    "02_native_rear_cover": "product_part",
+    "03_esp32_carrier": "product_part",
+    "04_optical_bezel": "product_part",
+    "05_lock_1": "product_part",
+    "05_lock_2": "product_part",
+    "05_lock_3": "product_part",
+    "05_lock_4": "product_part",
+    "06_lock_tool": "assembly_tool",
+    "07_shutter": "product_part",
+    "08_shutter_retainer": "product_part",
+    "09_camera_keeper": "product_part",
+    "test_lock_socket": "test_coupon"
+  },
+  "assembled_3mf": {
+    "path": "review/A1-assembled.3mf",
+    "bytes": 48309856,
+    "sha256": "9621ebed9eb1d1e3aa88e31ca3be047805af289a5dfd705db33fb1777c67d68d",
+    "objects": 11,
+    "build_items": 11,
+    "parts": [
+      {
+        "name": "01_outer_shell",
+        "role": "product_part",
+        "vertices": 1121315,
+        "triangles": 2257178
+      },
+      {
+        "name": "02_native_rear_cover",
+        "role": "product_part",
+        "vertices": 120143,
+        "triangles": 240958
+      },
+      {
+        "name": "03_esp32_carrier",
+        "role": "product_part",
+        "vertices": 2791,
+        "triangles": 5598
+      },
+      {
+        "name": "04_optical_bezel",
+        "role": "product_part",
+        "vertices": 1132,
+        "triangles": 2264
+      },
+      {
+        "name": "05_lock_1",
+        "role": "product_part",
+        "vertices": 848,
+        "triangles": 1692
+      },
+      {
+        "name": "05_lock_2",
+        "role": "product_part",
+        "vertices": 848,
+        "triangles": 1692
+      },
+      {
+        "name": "05_lock_3",
+        "role": "product_part",
+        "vertices": 848,
+        "triangles": 1692
+      },
+      {
+        "name": "05_lock_4",
+        "role": "product_part",
+        "vertices": 848,
+        "triangles": 1692
+      },
+      {
+        "name": "07_shutter",
+        "role": "product_part",
+        "vertices": 11009,
+        "triangles": 22014
+      },
+      {
+        "name": "08_shutter_retainer",
+        "role": "product_part",
+        "vertices": 308,
+        "triangles": 620
+      },
+      {
+        "name": "09_camera_keeper",
+        "role": "product_part",
+        "vertices": 1148,
+        "triangles": 2296
+      }
+    ],
+    "exact_float64_coordinates_and_indices_roundtrip": true,
+    "coordinate_significant_digits": 17,
+    "purpose": "Assembly inspection pose. Separate mechanical objects in their designed positions. Do not print this assembled pose as one solid."
+  },
+  "parts_3mf": [
+    {
+      "path": "print/01_outer_shell.3mf",
+      "bytes": 42036803,
+      "sha256": "9bb66124333dc9998f85afae8fbdebef1c9446dac1480185efe7489ae5ae9557",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "01_outer_shell",
+          "role": "product_part",
+          "vertices": 1121315,
+          "triangles": 2257178
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/02_native_rear_cover.3mf",
+      "bytes": 4656693,
+      "sha256": "8f7b1d582c14d4ac880d6e83784c0d7879db9daf6244b9c620ca9e5529695e65",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "02_native_rear_cover",
+          "role": "product_part",
+          "vertices": 120143,
+          "triangles": 240958
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/03_esp32_carrier.3mf",
+      "bytes": 76841,
+      "sha256": "2707e04d9a6ec374bd37bb9bd57e1d784fb59de9415351f4c1d5a0f21e1a1a1c",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "03_esp32_carrier",
+          "role": "product_part",
+          "vertices": 2791,
+          "triangles": 5598
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/04_optical_bezel.3mf",
+      "bytes": 26562,
+      "sha256": "40f64e0926c519599a3eec4989c7a18a03273a2551e80b89bcc897291e422208",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "04_optical_bezel",
+          "role": "product_part",
+          "vertices": 1132,
+          "triangles": 2264
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/05_lock_1.3mf",
+      "bytes": 19165,
+      "sha256": "d07ae0d7ae4270e65bcbd5e11304fa39996e64d53014cf77b5cb00df8fbac208",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "05_lock_1",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/05_lock_2.3mf",
+      "bytes": 19199,
+      "sha256": "548cb20799daacc428fbadf66e83da6a305d83c171654cef717006ff259399fd",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "05_lock_2",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/05_lock_3.3mf",
+      "bytes": 19146,
+      "sha256": "21983aa2f915115516cd1e9dd879f38fb24a85769075f585258b664d8e758d08",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "05_lock_3",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/05_lock_4.3mf",
+      "bytes": 19118,
+      "sha256": "593249850215b2770ac8a8d56398b75084e2ef1029d4da778ba037f61dc57645",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "05_lock_4",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/06_lock_tool.3mf",
+      "bytes": 1529,
+      "sha256": "3c455606293bad3678527e98670dcd7e96afeecc845421d0e60c26706953b27e",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "06_lock_tool",
+          "role": "assembly_tool",
+          "vertices": 16,
+          "triangles": 28
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Separate printed assembly tool, excluded from the product assembly."
+    },
+    {
+      "path": "print/07_shutter.3mf",
+      "bytes": 410419,
+      "sha256": "8f002eab0f1548479a996137ac1d460052edfdf109b9d6d653f66b6ac7d8b227",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "07_shutter",
+          "role": "product_part",
+          "vertices": 11009,
+          "triangles": 22014
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/08_shutter_retainer.3mf",
+      "bytes": 7606,
+      "sha256": "c28c32e15fe452b5aa00a1a3fc28860a5516f5f118e573786d3a65e64db7c0fd",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "08_shutter_retainer",
+          "role": "product_part",
+          "vertices": 308,
+          "triangles": 620
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/09_camera_keeper.3mf",
+      "bytes": 26170,
+      "sha256": "bc541a45508b5654f1dd1d34b53e79b659b88f9f38eb4c8b08f92e109332ed35",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "09_camera_keeper",
+          "role": "product_part",
+          "vertices": 1148,
+          "triangles": 2296
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Individual print part. Starting orientation only; inspect supports and actual P1S profile before printing."
+    },
+    {
+      "path": "print/test_lock_socket.3mf",
+      "bytes": 27620,
+      "sha256": "eb2ec8c9cd28744ece873737ae77978ff66e7a55052d55b9620ac6438e7c40ae",
+      "objects": 1,
+      "build_items": 1,
+      "parts": [
+        {
+          "name": "test_lock_socket",
+          "role": "test_coupon",
+          "vertices": 1164,
+          "triangles": 2324
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Fit-test coupon only, excluded from the product assembly. Print and physically check this coupon before final parts."
+    }
+  ],
+  "print_poses": {
+    "01_outer_shell": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          128.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.849999999999994
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          58.0,
+          75.96693742275238,
+          0.0
+        ],
+        [
+          198.0,
+          180.03306257724762,
+          64.95584139823913
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "02_native_rear_cover": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          126.65261446669045
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          132.4822072846267
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -25.799999999999997
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          64.9153278221568,
+          88.76459608239782,
+          0.0
+        ],
+        [
+          191.08467217784323,
+          167.23540391760218,
+          10.305845570564273
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "03_esp32_carrier": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          96.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          132.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          110.19999999999999,
+          102.2,
+          0.0
+        ],
+        [
+          145.8,
+          153.8,
+          48.400000000000006
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "04_optical_bezel": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          159.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          136.4
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          29.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          109.00289379202856,
+          109.00289379202857,
+          0.0
+        ],
+        [
+          146.99710620797143,
+          146.99710620797146,
+          5.800000000000001
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "05_lock_1": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          96.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          98.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          33.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          124.0,
+          123.5,
+          0.0
+        ],
+        [
+          132.0,
+          132.5,
+          15.0
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "05_lock_2": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          96.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          166.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          33.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          124.0,
+          123.5,
+          0.0
+        ],
+        [
+          132.0,
+          132.5,
+          15.0
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "05_lock_3": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          148.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          101.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          33.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          124.0,
+          123.5,
+          0.0
+        ],
+        [
+          132.0,
+          132.5,
+          15.0
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "05_lock_4": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          170.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          150.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          33.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          124.0,
+          123.5,
+          0.0
+        ],
+        [
+          132.0,
+          132.5,
+          15.0
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "06_lock_tool": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.75
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          121.0,
+          123.875,
+          0.0
+        ],
+        [
+          135.0,
+          132.125,
+          3.5
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "07_shutter": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          83.03250300884247
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          119.61828305572271
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -30.3
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          120.94541597366333,
+          121.12157858163118,
+          0.0
+        ],
+        [
+          135.05458402633667,
+          134.87842141836882,
+          10.140878868103027
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "08_shutter_retainer": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          83.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          132.45
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          118.7,
+          106.74999999999999,
+          0.0
+        ],
+        [
+          137.3,
+          149.25,
+          11.200000000000003
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "09_camera_keeper": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          96.3
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          136.4
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -21.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          120.0,
+          120.0,
+          0.0
+        ],
+        [
+          136.0,
+          136.0,
+          3.1999999999999993
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    },
+    "test_lock_socket": {
+      "rotation_determinant": 1.0,
+      "assembly_to_print_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          128.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          35.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_mm": [
+        [
+          119.0,
+          119.0,
+          0.0
+        ],
+        [
+          137.0,
+          137.0,
+          20.0
+        ]
+      ],
+      "orientation_is_a_starting_point": true,
+      "supports_and_actual_printer_profile_verified": false
+    }
+  },
+  "plates": [
+    {
+      "path": "print/A1-plate-01.3mf",
+      "bytes": 47752272,
+      "sha256": "1abd0aa613944e3bd9a400a615fbcf5015895fc81ba069e98df1bde54ca1b906",
+      "objects": 10,
+      "build_items": 10,
+      "parts": [
+        {
+          "name": "01_outer_shell",
+          "role": "product_part",
+          "vertices": 1121315,
+          "triangles": 2257178
+        },
+        {
+          "name": "02_native_rear_cover",
+          "role": "product_part",
+          "vertices": 120143,
+          "triangles": 240958
+        },
+        {
+          "name": "03_esp32_carrier",
+          "role": "product_part",
+          "vertices": 2791,
+          "triangles": 5598
+        },
+        {
+          "name": "04_optical_bezel",
+          "role": "product_part",
+          "vertices": 1132,
+          "triangles": 2264
+        },
+        {
+          "name": "05_lock_1",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        },
+        {
+          "name": "05_lock_2",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        },
+        {
+          "name": "05_lock_3",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        },
+        {
+          "name": "05_lock_4",
+          "role": "product_part",
+          "vertices": 848,
+          "triangles": 1692
+        },
+        {
+          "name": "06_lock_tool",
+          "role": "assembly_tool",
+          "vertices": 16,
+          "triangles": 28
+        },
+        {
+          "name": "07_shutter",
+          "role": "product_part",
+          "vertices": 11009,
+          "triangles": 22014
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Separate print parts arranged on a 256 mm plate. Supports and actual P1S profile must be checked.",
+      "nonoverlapping_xy_bounding_rectangles": true,
+      "bounds": [
+        {
+          "name": "01_outer_shell",
+          "role": "product_part",
+          "min": [
+            10.0,
+            10.0,
+            0.0
+          ],
+          "max": [
+            150.0,
+            114.06612515449524,
+            64.95584139823913
+          ]
+        },
+        {
+          "name": "02_native_rear_cover",
+          "role": "product_part",
+          "min": [
+            10.0,
+            124.06612515449524,
+            0.0
+          ],
+          "max": [
+            136.16934435568643,
+            202.5369329896996,
+            10.305845570564273
+          ]
+        },
+        {
+          "name": "03_esp32_carrier",
+          "role": "product_part",
+          "min": [
+            146.16934435568643,
+            124.06612515449524,
+            0.0
+          ],
+          "max": [
+            181.76934435568646,
+            175.66612515449526,
+            48.400000000000006
+          ]
+        },
+        {
+          "name": "04_optical_bezel",
+          "role": "product_part",
+          "min": [
+            191.76934435568646,
+            124.06612515449524,
+            0.0
+          ],
+          "max": [
+            229.76355677162934,
+            162.06033757043812,
+            5.800000000000001
+          ]
+        },
+        {
+          "name": "05_lock_1",
+          "role": "product_part",
+          "min": [
+            10.0,
+            212.5369329896996,
+            0.0
+          ],
+          "max": [
+            18.0,
+            221.5369329896996,
+            15.0
+          ]
+        },
+        {
+          "name": "05_lock_2",
+          "role": "product_part",
+          "min": [
+            28.0,
+            212.5369329896996,
+            0.0
+          ],
+          "max": [
+            36.0,
+            221.5369329896996,
+            15.0
+          ]
+        },
+        {
+          "name": "05_lock_3",
+          "role": "product_part",
+          "min": [
+            46.0,
+            212.5369329896996,
+            0.0
+          ],
+          "max": [
+            54.0,
+            221.5369329896996,
+            15.0
+          ]
+        },
+        {
+          "name": "05_lock_4",
+          "role": "product_part",
+          "min": [
+            64.0,
+            212.5369329896996,
+            0.0
+          ],
+          "max": [
+            72.0,
+            221.5369329896996,
+            15.0
+          ]
+        },
+        {
+          "name": "06_lock_tool",
+          "role": "assembly_tool",
+          "min": [
+            82.0,
+            212.5369329896996,
+            0.0
+          ],
+          "max": [
+            96.0,
+            220.7869329896996,
+            3.5
+          ]
+        },
+        {
+          "name": "07_shutter",
+          "role": "product_part",
+          "min": [
+            106.0,
+            212.5369329896996,
+            0.0
+          ],
+          "max": [
+            120.10916805267334,
+            226.29377582643724,
+            10.140878868103027
+          ]
+        }
+      ]
+    },
+    {
+      "path": "print/A1-plate-02.3mf",
+      "bytes": 60395,
+      "sha256": "3857b0608f5b08c6df0eb31fc8773f574c79042c9f96558b05fb0153a08fabe7",
+      "objects": 3,
+      "build_items": 3,
+      "parts": [
+        {
+          "name": "08_shutter_retainer",
+          "role": "product_part",
+          "vertices": 308,
+          "triangles": 620
+        },
+        {
+          "name": "09_camera_keeper",
+          "role": "product_part",
+          "vertices": 1148,
+          "triangles": 2296
+        },
+        {
+          "name": "test_lock_socket",
+          "role": "test_coupon",
+          "vertices": 1164,
+          "triangles": 2324
+        }
+      ],
+      "exact_float64_coordinates_and_indices_roundtrip": true,
+      "coordinate_significant_digits": 17,
+      "purpose": "Separate print parts arranged on a 256 mm plate. Supports and actual P1S profile must be checked.",
+      "nonoverlapping_xy_bounding_rectangles": true,
+      "bounds": [
+        {
+          "name": "08_shutter_retainer",
+          "role": "product_part",
+          "min": [
+            10.0,
+            10.0,
+            0.0
+          ],
+          "max": [
+            28.60000000000001,
+            52.500000000000014,
+            11.200000000000003
+          ]
+        },
+        {
+          "name": "09_camera_keeper",
+          "role": "product_part",
+          "min": [
+            38.60000000000001,
+            10.0,
+            0.0
+          ],
+          "max": [
+            54.60000000000001,
+            26.0,
+            3.1999999999999993
+          ]
+        },
+        {
+          "name": "test_lock_socket",
+          "role": "test_coupon",
+          "min": [
+            64.60000000000001,
+            10.0,
+            0.0
+          ],
+          "max": [
+            82.60000000000001,
+            28.0,
+            20.0
+          ]
+        }
+      ]
+    }
+  ],
+  "glb": {
+    "path": "review/A1-assembled.glb",
+    "bytes": 52165720,
+    "sha256": "1155b924ce5a645f50ed857ad975adc7a3ce7e7ecb26df355c5b7496d222437b",
+    "triangles": 2537696,
+    "parts": 11,
+    "coordinates": "GLB float32 in meters, source mm divided by 1000; preview only. High-precision 3MF is the manufacturing export.",
+    "appearance_mapping": {
+      "method": "nearest_native_triangle_centroid_per_main_shell_face",
+      "source_path": "/workspace/scratch/787c4061d948/output/Entropi-Tripo-Selected/mesh/03-quick-capped.glb",
+      "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+      "native_triangles": 2490708,
+      "native_to_assembly_axes": [
+        "source_Z",
+        "source_X",
+        "source_Y"
+      ],
+      "native_to_assembly_scale": 140.0,
+      "grey_native_ids": [
+        0,
+        3,
+        4,
+        6,
+        8
+      ],
+      "dark_native_ids": [
+        1,
+        2,
+        5,
+        7,
+        9,
+        10
+      ],
+      "grey_rgb": [
+        179,
+        184,
+        181
+      ],
+      "dark_rgb": [
+        56,
+        61,
+        64
+      ],
+      "geometry_changed": false,
+      "new_cut_faces_receive_nearest_source_region_colour": true
+    },
+    "preview_vertices_split_only_at_colour_boundaries": {
+      "01_outer_shell": {
+        "source_vertices": 1121315,
+        "preview_vertices": 1217290,
+        "triangle_positions_unchanged_before_float32_export": true
+      }
+    },
+    "triangle_count_roundtrip": true
+  },
+  "renders": [
+    {
+      "path": "review/A1-assembled.png",
+      "camera_direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "part_translation_offsets_mm": {
+        "01_outer_shell": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "02_native_rear_cover": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "03_esp32_carrier": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "04_optical_bezel": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "05_lock_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "05_lock_2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "05_lock_3": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "05_lock_4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "07_shutter": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "08_shutter_retainer": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "09_camera_keeper": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "offsets_are_illustration_only_not_insertion_path_certification": true,
+      "geometry_simplified": false,
+      "ground_or_environment": false,
+      "appearance_mapping": {
+        "method": "nearest_native_triangle_centroid_per_main_shell_face",
+        "source_path": "/workspace/scratch/787c4061d948/output/Entropi-Tripo-Selected/mesh/03-quick-capped.glb",
+        "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+        "native_triangles": 2490708,
+        "native_to_assembly_axes": [
+          "source_Z",
+          "source_X",
+          "source_Y"
+        ],
+        "native_to_assembly_scale": 140.0,
+        "grey_native_ids": [
+          0,
+          3,
+          4,
+          6,
+          8
+        ],
+        "dark_native_ids": [
+          1,
+          2,
+          5,
+          7,
+          9,
+          10
+        ],
+        "grey_rgb": [
+          179,
+          184,
+          181
+        ],
+        "dark_rgb": [
+          56,
+          61,
+          64
+        ],
+        "geometry_changed": false,
+        "new_cut_faces_receive_nearest_source_region_colour": true
+      },
+      "sha256": "2d5d3ee1f0020657d33a572d22ddeb1eb63a47a68145e6865530f350d2b9a3b6"
+    },
+    {
+      "path": "review/A1-exploded.png",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "part_translation_offsets_mm": {
+        "01_outer_shell": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "02_native_rear_cover": [
+          0.0,
+          -105.0,
+          0.0
+        ],
+        "03_esp32_carrier": [
+          0.0,
+          -54.0,
+          0.0
+        ],
+        "04_optical_bezel": [
+          0.0,
+          48.0,
+          0.0
+        ],
+        "05_lock_1": [
+          0.0,
+          -155.0,
+          0.0
+        ],
+        "05_lock_2": [
+          0.0,
+          -155.0,
+          0.0
+        ],
+        "05_lock_3": [
+          0.0,
+          -155.0,
+          0.0
+        ],
+        "05_lock_4": [
+          0.0,
+          -155.0,
+          0.0
+        ],
+        "07_shutter": [
+          0.0,
+          0.0,
+          33.0
+        ],
+        "08_shutter_retainer": [
+          0.0,
+          -55.0,
+          0.0
+        ],
+        "09_camera_keeper": [
+          0.0,
+          -112.0,
+          0.0
+        ]
+      },
+      "offsets_are_illustration_only_not_insertion_path_certification": true,
+      "geometry_simplified": false,
+      "ground_or_environment": false,
+      "appearance_mapping": {
+        "method": "nearest_native_triangle_centroid_per_main_shell_face",
+        "source_path": "/workspace/scratch/787c4061d948/output/Entropi-Tripo-Selected/mesh/03-quick-capped.glb",
+        "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+        "native_triangles": 2490708,
+        "native_to_assembly_axes": [
+          "source_Z",
+          "source_X",
+          "source_Y"
+        ],
+        "native_to_assembly_scale": 140.0,
+        "grey_native_ids": [
+          0,
+          3,
+          4,
+          6,
+          8
+        ],
+        "dark_native_ids": [
+          1,
+          2,
+          5,
+          7,
+          9,
+          10
+        ],
+        "grey_rgb": [
+          179,
+          184,
+          181
+        ],
+        "dark_rgb": [
+          56,
+          61,
+          64
+        ],
+        "geometry_changed": false,
+        "new_cut_faces_receive_nearest_source_region_colour": true
+      },
+      "sha256": "26c53bd8f96f07f5e3bc9c11b7fa3fb7fa909b0af95f62f7ed68d30df70d5d8f"
+    }
+  ],
+  "appearance_mapping": {
+    "method": "nearest_native_triangle_centroid_per_main_shell_face",
+    "source_path": "/workspace/scratch/787c4061d948/output/Entropi-Tripo-Selected/mesh/03-quick-capped.glb",
+    "source_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f",
+    "native_triangles": 2490708,
+    "native_to_assembly_axes": [
+      "source_Z",
+      "source_X",
+      "source_Y"
+    ],
+    "native_to_assembly_scale": 140.0,
+    "grey_native_ids": [
+      0,
+      3,
+      4,
+      6,
+      8
+    ],
+    "dark_native_ids": [
+      1,
+      2,
+      5,
+      7,
+      9,
+      10
+    ],
+    "grey_rgb": [
+      179,
+      184,
+      181
+    ],
+    "dark_rgb": [
+      56,
+      61,
+      64
+    ],
+    "geometry_changed": false,
+    "new_cut_faces_receive_nearest_source_region_colour": true
+  }
+}
