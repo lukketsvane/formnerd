@@ -18,6 +18,7 @@ Alt samla arbeid med dette ribba kameradesignet høyrer til her. Siste redigerba
 | Kritikk og grunngjeving | [design_review.md](Entropi-CAD-v05/cad/design_review.md) |
 | Kontrollresultat og filkontrollsummar | [release_summary.json](Entropi-CAD-v05/release_summary.json) |
 | Samla nedlastingspakke | [Entropi-CAD-v05.zip](leveransar/Entropi-CAD-v05.zip) |
+| Prentklar A3-versjon for Bambu P1S (lim og magnetar), med IKEA-rettleiing | [Entropi-A3-print](Entropi-A3-print/README.md) |
 | Markeringar, vald form og oppgåvedokument | [referansar](referansar/) |
 | Tidlegare material- og fargestudiar | [rendringar/materialstudiar](rendringar/materialstudiar/) |
 | Eldre CAD og heile Tripo-historikken | [arkiv](arkiv/) |
