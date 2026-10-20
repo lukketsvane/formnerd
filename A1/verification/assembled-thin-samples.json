@@ -1,0 +1,913 @@
+{
+  "scope": "Only the ten pre-existing flagged samples from capped nodes6 and7; no new broad sampling.",
+  "input": "/workspace/scratch/787c4061d948/output/Entropi-Tripo-Selected/tripo-out/entropi-selected-capped-parts-5c7047f6/model.glb",
+  "input_modified": false,
+  "physical_scale_basis": "Assumed handheld form-model width of 140 mm across GLB scene Z, not measured from the original design.",
+  "millimetres_per_unit": 140.0,
+  "normal_offset_mm": 0.01,
+  "method": "One node at a time: exact-coordinate welding, normal-offset containment, all ray-surface hits, interval midpoint containment, and interval union across all eleven closed volumes.",
+  "complete": true,
+  "processed_nodes": [
+    "tripo_part_0",
+    "tripo_part_1",
+    "tripo_part_10",
+    "tripo_part_2",
+    "tripo_part_3",
+    "tripo_part_4",
+    "tripo_part_5",
+    "tripo_part_6",
+    "tripo_part_7",
+    "tripo_part_8",
+    "tripo_part_9"
+  ],
+  "samples": [
+    {
+      "source_node": "tripo_part_6",
+      "face": 35844,
+      "position_mm": [
+        2.38401859998703,
+        35.08239368597666,
+        23.528397878011067
+      ],
+      "outward_normal": [
+        0.36831390719292534,
+        0.9296751557758438,
+        0.006997892642910265
+      ],
+      "original_segment_chord_mm": 0.28423973196586483,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [],
+      "inside_minus_normal_nodes": [
+        "tripo_part_6"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_2": [
+          [
+            9.888575883732145,
+            84.9541567458675
+          ]
+        ],
+        "tripo_part_4": [
+          [
+            0.28423996211081715,
+            9.8885764425202
+          ]
+        ],
+        "tripo_part_6": [
+          [
+            6.217248937900877e-14,
+            0.28423973196591845
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "exposed_assembled_outer_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          6.217248937900877e-14,
+          0.28423973196591845
+        ],
+        [
+          0.28423996211081715,
+          84.9541567458675
+        ]
+      ],
+      "assembled_union_chord_mm": 0.2842397319658563,
+      "assembled_inward_depth_from_face_mm": 0.28423973196591845,
+      "assembled_chord_below_1_2_mm": true,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          6.217248937900877e-14,
+          84.9541567458675
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [
+        2.3014489869410681e-07
+      ],
+      "source_precision_contact_chord_mm": 84.95415674586744,
+      "source_precision_contact_inward_depth_mm": 84.9541567458675,
+      "source_precision_contact_chord_below_1_2_mm": false
+    },
+    {
+      "source_node": "tripo_part_6",
+      "face": 74324,
+      "position_mm": [
+        7.506583438565333,
+        32.94987728198369,
+        -3.088529954353968
+      ],
+      "outward_normal": [
+        0.42711272208745915,
+        -0.9031719980980436,
+        -0.043070459512620625
+      ],
+      "original_segment_chord_mm": 0.5245015104632611,
+      "recorded_centroid_error_mm": 3.885780586188048e-15,
+      "inside_plus_normal_nodes": [
+        "tripo_part_8"
+      ],
+      "inside_minus_normal_nodes": [
+        "tripo_part_6"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -57.30248160407428,
+            -23.543465857959667
+          ],
+          [
+            -20.48146200099535,
+            -4.931005786981046
+          ]
+        ],
+        "tripo_part_2": [
+          [
+            -4.930539224035,
+            -2.030878963446172
+          ]
+        ],
+        "tripo_part_5": [
+          [
+            -22.134596514111262,
+            -20.481462530982686
+          ]
+        ],
+        "tripo_part_6": [
+          [
+            -6.217248937900877e-14,
+            0.5245015104631623
+          ],
+          [
+            6.072254673290987,
+            11.695249457597043
+          ]
+        ],
+        "tripo_part_8": [
+          [
+            -0.3233593613844832,
+            7.657263267901726e-08
+          ],
+          [
+            11.695249444021307,
+            17.5780783394098
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [
+        "tripo_part_8"
+      ],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "buried_or_internal_assembled_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -57.30248160407428,
+          -23.543465857959667
+        ],
+        [
+          -22.134596514111262,
+          -20.481462530982686
+        ],
+        [
+          -20.48146200099535,
+          -4.931005786981046
+        ],
+        [
+          -4.930539224035,
+          -2.030878963446172
+        ],
+        [
+          -0.3233593613844832,
+          0.5245015104631623
+        ],
+        [
+          6.072254673290987,
+          17.5780783394098
+        ]
+      ],
+      "assembled_union_chord_mm": 0.8478608718476455,
+      "assembled_inward_depth_from_face_mm": 0.5245015104631623,
+      "assembled_chord_below_1_2_mm": true,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -57.30248160407428,
+          -23.543465857959667
+        ],
+        [
+          -22.134596514111262,
+          -4.931005786981046
+        ],
+        [
+          -4.930539224035,
+          -2.030878963446172
+        ],
+        [
+          -0.3233593613844832,
+          0.5245015104631623
+        ],
+        [
+          6.072254673290987,
+          17.5780783394098
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [
+        5.299873357955676e-07
+      ],
+      "source_precision_contact_chord_mm": 0.8478608718476455,
+      "source_precision_contact_inward_depth_mm": 0.5245015104631623,
+      "source_precision_contact_chord_below_1_2_mm": true
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 76896,
+      "position_mm": [
+        35.064797600110374,
+        -18.664167026678722,
+        -50.30072430769602
+      ],
+      "outward_normal": [
+        0.7047269221485698,
+        -0.37759869011225594,
+        -0.6006489777103696
+      ],
+      "original_segment_chord_mm": 1.0539647296224335,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [
+        "tripo_part_0"
+      ],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -1.3281368116245407,
+            0.0
+          ]
+        ],
+        "tripo_part_1": [
+          [
+            35.1175505549015,
+            76.86849623775319
+          ]
+        ],
+        "tripo_part_2": [
+          [
+            76.86849620635999,
+            100.97538689914313
+          ]
+        ],
+        "tripo_part_5": [
+          [
+            8.300542797136607,
+            35.11755240033344
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            0.0,
+            1.053964729622363
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [
+        "tripo_part_0"
+      ],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "buried_or_internal_assembled_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -1.3281368116245407,
+          1.053964729622363
+        ],
+        [
+          8.300542797136607,
+          100.97538689914313
+        ]
+      ],
+      "assembled_union_chord_mm": 2.3821015412469038,
+      "assembled_inward_depth_from_face_mm": 1.053964729622363,
+      "assembled_chord_below_1_2_mm": false,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -1.3281368116245407,
+          1.053964729622363
+        ],
+        [
+          8.300542797136607,
+          100.97538689914313
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [],
+      "source_precision_contact_chord_mm": 2.3821015412469038,
+      "source_precision_contact_inward_depth_mm": 1.053964729622363,
+      "source_precision_contact_chord_below_1_2_mm": false
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 51873,
+      "position_mm": [
+        35.17784188191096,
+        11.122538795073828,
+        -39.04386202494303
+      ],
+      "outward_normal": [
+        -0.019929476958049232,
+        -0.9348266779236354,
+        0.35454463497624406
+      ],
+      "original_segment_chord_mm": 0.6806885583198251,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -49.28722083636261,
+            -42.92343438618193
+          ],
+          [
+            0.6806880291012174,
+            7.2132122421532685
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            -42.92343631546086,
+            -41.562974814362946
+          ],
+          [
+            0.0,
+            0.6806885583197264
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "exposed_assembled_outer_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -49.28722083636261,
+          -41.562974814362946
+        ],
+        [
+          0.0,
+          7.2132122421532685
+        ]
+      ],
+      "assembled_union_chord_mm": 7.2132122421532685,
+      "assembled_inward_depth_from_face_mm": 7.2132122421532685,
+      "assembled_chord_below_1_2_mm": false,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -49.28722083636261,
+          -41.562974814362946
+        ],
+        [
+          0.0,
+          7.2132122421532685
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [],
+      "source_precision_contact_chord_mm": 7.2132122421532685,
+      "source_precision_contact_inward_depth_mm": 7.2132122421532685,
+      "source_precision_contact_chord_below_1_2_mm": false
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 87227,
+      "position_mm": [
+        35.8082906405131,
+        10.438680797815323,
+        -41.181372006734215
+      ],
+      "outward_normal": [
+        0.5651800866991353,
+        0.6983694711005882,
+        -0.4391486666647669
+      ],
+      "original_segment_chord_mm": 0.3180547266191901,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [
+        "tripo_part_0"
+      ],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -0.4518284899732006,
+            0.0
+          ]
+        ],
+        "tripo_part_1": [
+          [
+            43.0218978046706,
+            82.62889591810068
+          ]
+        ],
+        "tripo_part_5": [
+          [
+            11.490509254624683,
+            43.021897439900755
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            0.0,
+            0.31805472661921463
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [
+        "tripo_part_0"
+      ],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "buried_or_internal_assembled_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -0.4518284899732006,
+          0.31805472661921463
+        ],
+        [
+          11.490509254624683,
+          43.021897439900755
+        ],
+        [
+          43.0218978046706,
+          82.62889591810068
+        ]
+      ],
+      "assembled_union_chord_mm": 0.7698832165924152,
+      "assembled_inward_depth_from_face_mm": 0.31805472661921463,
+      "assembled_chord_below_1_2_mm": true,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -0.4518284899732006,
+          0.31805472661921463
+        ],
+        [
+          11.490509254624683,
+          82.62889591810068
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [
+        3.6476984632827225e-07
+      ],
+      "source_precision_contact_chord_mm": 0.7698832165924152,
+      "source_precision_contact_inward_depth_mm": 0.31805472661921463,
+      "source_precision_contact_chord_below_1_2_mm": true
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 76020,
+      "position_mm": [
+        35.22053172190984,
+        -24.368812640508015,
+        -45.558996399243675
+      ],
+      "outward_normal": [
+        0.539587976492152,
+        -0.6789715953593481,
+        -0.49783771283450023
+      ],
+      "original_segment_chord_mm": 0.6498551400946964,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [
+        "tripo_part_0"
+      ],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -1.4369435250381635,
+            -2.360736051087997e-07
+          ]
+        ],
+        "tripo_part_1": [
+          [
+            44.91305811219969,
+            76.47837999604037
+          ]
+        ],
+        "tripo_part_5": [
+          [
+            11.063983108640585,
+            44.88411453244836
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            -6.217248937900877e-14,
+            0.6498551400946173
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [
+        "tripo_part_0"
+      ],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "buried_or_internal_assembled_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -1.4369435250381635,
+          -2.360736051087997e-07
+        ],
+        [
+          -6.217248937900877e-14,
+          0.6498551400946173
+        ],
+        [
+          11.063983108640585,
+          44.88411453244836
+        ],
+        [
+          44.91305811219969,
+          76.47837999604037
+        ]
+      ],
+      "assembled_union_chord_mm": 0.6498551400946795,
+      "assembled_inward_depth_from_face_mm": 0.6498551400946173,
+      "assembled_chord_below_1_2_mm": true,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -1.4369435250381635,
+          0.6498551400946173
+        ],
+        [
+          11.063983108640585,
+          44.88411453244836
+        ],
+        [
+          44.91305811219969,
+          76.47837999604037
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [
+        2.3607354293631033e-07
+      ],
+      "source_precision_contact_chord_mm": 2.086798665132781,
+      "source_precision_contact_inward_depth_mm": 0.6498551400946173,
+      "source_precision_contact_chord_below_1_2_mm": false
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 17987,
+      "position_mm": [
+        35.0162665049235,
+        -22.481374442577362,
+        -46.67782485485077
+      ],
+      "outward_normal": [
+        -0.007561807861991948,
+        0.6890674582185493,
+        0.7246577516911594
+      ],
+      "original_segment_chord_mm": 0.7084544505013796,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -48.39524772421403,
+            -42.2910986461099
+          ],
+          [
+            0.7084545198338787,
+            7.350943019150922
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            -42.29109814450549,
+            -41.28476775066561
+          ],
+          [
+            0.0,
+            0.7084544505013568
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "exposed_assembled_outer_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -48.39524772421403,
+          -42.2910986461099
+        ],
+        [
+          -42.29109814450549,
+          -41.28476775066561
+        ],
+        [
+          0.0,
+          7.350943019150922
+        ]
+      ],
+      "assembled_union_chord_mm": 7.350943019150922,
+      "assembled_inward_depth_from_face_mm": 7.350943019150922,
+      "assembled_chord_below_1_2_mm": false,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -48.39524772421403,
+          -41.28476775066561
+        ],
+        [
+          0.0,
+          7.350943019150922
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [
+        5.01604411340395e-07,
+        6.933252194585293e-08
+      ],
+      "source_precision_contact_chord_mm": 7.350943019150922,
+      "source_precision_contact_inward_depth_mm": 7.350943019150922,
+      "source_precision_contact_chord_below_1_2_mm": false
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 85231,
+      "position_mm": [
+        35.0818199912707,
+        3.371172994375229,
+        -49.53696350256602
+      ],
+      "outward_normal": [
+        0.6705239631862664,
+        0.4008867887459243,
+        -0.624249467282082
+      ],
+      "original_segment_chord_mm": 0.9819647125030446,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [
+        "tripo_part_0"
+      ],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -1.42538631449729,
+            -6.217248937900877e-14
+          ]
+        ],
+        "tripo_part_1": [
+          [
+            37.57736637253753,
+            75.38610030442464
+          ]
+        ],
+        "tripo_part_2": [
+          [
+            75.38609970693383,
+            103.18152400644516
+          ]
+        ],
+        "tripo_part_5": [
+          [
+            8.737163211328864,
+            37.57736694773912
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            -6.217248937900877e-14,
+            0.9819647125030162
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [
+        "tripo_part_0"
+      ],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "buried_or_internal_assembled_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -1.42538631449729,
+          0.9819647125030162
+        ],
+        [
+          8.737163211328864,
+          103.18152400644516
+        ]
+      ],
+      "assembled_union_chord_mm": 2.4073510270003062,
+      "assembled_inward_depth_from_face_mm": 0.9819647125030162,
+      "assembled_chord_below_1_2_mm": false,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -1.42538631449729,
+          0.9819647125030162
+        ],
+        [
+          8.737163211328864,
+          103.18152400644516
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [],
+      "source_precision_contact_chord_mm": 2.4073510270003062,
+      "source_precision_contact_inward_depth_mm": 0.9819647125030162,
+      "source_precision_contact_chord_below_1_2_mm": false
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 91250,
+      "position_mm": [
+        35.804567535718284,
+        10.911097874244055,
+        -23.129899104436237
+      ],
+      "outward_normal": [
+        0.6827858775404233,
+        0.6867688280396509,
+        0.24930307311462974
+      ],
+      "original_segment_chord_mm": 0.36298577700123563,
+      "recorded_centroid_error_mm": 0.0,
+      "inside_plus_normal_nodes": [
+        "tripo_part_0"
+      ],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            -0.3456110058872319,
+            -4.775679052215764e-07
+          ]
+        ],
+        "tripo_part_1": [
+          [
+            35.94103860884051,
+            84.31065543969675
+          ]
+        ],
+        "tripo_part_5": [
+          [
+            9.598942253863427,
+            35.94103977340037
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            0.0,
+            0.36298577700115686
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [
+        "tripo_part_0"
+      ],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "buried_or_internal_assembled_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -0.3456110058872319,
+          -4.775679052215764e-07
+        ],
+        [
+          0.0,
+          0.36298577700115686
+        ],
+        [
+          9.598942253863427,
+          84.31065543969675
+        ]
+      ],
+      "assembled_union_chord_mm": 0.36298577700115686,
+      "assembled_inward_depth_from_face_mm": 0.36298577700115686,
+      "assembled_chord_below_1_2_mm": true,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -0.3456110058872319,
+          0.36298577700115686
+        ],
+        [
+          9.598942253863427,
+          84.31065543969675
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [
+        4.775679052215764e-07
+      ],
+      "source_precision_contact_chord_mm": 0.7085967828883888,
+      "source_precision_contact_inward_depth_mm": 0.36298577700115686,
+      "source_precision_contact_chord_below_1_2_mm": true
+    },
+    {
+      "source_node": "tripo_part_7",
+      "face": 55248,
+      "position_mm": [
+        29.56392765045166,
+        2.0574792226155596,
+        -14.60412472486496
+      ],
+      "outward_normal": [
+        0.7486178109324136,
+        -0.37041195204130856,
+        -0.5498784947056106
+      ],
+      "original_segment_chord_mm": 0.45235885750598376,
+      "recorded_centroid_error_mm": 2.42861286636753e-16,
+      "inside_plus_normal_nodes": [],
+      "inside_minus_normal_nodes": [
+        "tripo_part_7"
+      ],
+      "per_node_ray_intervals_relative_to_face_mm": {
+        "tripo_part_0": [
+          [
+            2.8796841589751754,
+            19.04984971733608
+          ]
+        ],
+        "tripo_part_2": [
+          [
+            31.339479913360158,
+            82.16235470896278
+          ]
+        ],
+        "tripo_part_5": [
+          [
+            0.45235878055353673,
+            2.879684027749567
+          ],
+          [
+            19.049849799515304,
+            31.33947964070277
+          ]
+        ],
+        "tripo_part_7": [
+          [
+            -1.2434497875801753e-13,
+            0.45235885750598115
+          ]
+        ]
+      },
+      "other_nodes_at_plus_normal": [],
+      "other_nodes_at_minus_normal": [],
+      "exposure_at_offset": "exposed_assembled_outer_face",
+      "assembled_union_intervals_relative_to_face_mm": [
+        [
+          -1.2434497875801753e-13,
+          31.33947964070277
+        ],
+        [
+          31.339479913360158,
+          82.16235470896278
+        ]
+      ],
+      "assembled_union_chord_mm": 31.339479640702894,
+      "assembled_inward_depth_from_face_mm": 31.33947964070277,
+      "assembled_chord_below_1_2_mm": false,
+      "source_precision_contact_intervals_relative_to_face_mm": [
+        [
+          -1.2434497875801753e-13,
+          82.16235470896278
+        ]
+      ],
+      "source_precision_contact_bridged_gaps_mm": [
+        1.3122560815759243e-07,
+        8.217922342623751e-08,
+        2.726573882227967e-07
+      ],
+      "source_precision_contact_chord_mm": 82.16235470896291,
+      "source_precision_contact_inward_depth_mm": 82.16235470896278,
+      "source_precision_contact_chord_below_1_2_mm": false
+    }
+  ],
+  "limitations": [
+    "This is a directional chord check at ten fixed points, not a global minimum-wall or print-strength certification.",
+    "No boolean union, remesh, smoothing, or mechanical modification is performed.",
+    "Float32-contact chords are a separate print-scale seam diagnostic, not a claim that distinct exact surfaces have been boolean fused."
+  ],
+  "elapsed_seconds": 32.81448836100026,
+  "summary": {
+    "sample_count": 10,
+    "exposed_at_offset": 4,
+    "buried_or_internal_at_offset": 6,
+    "ambiguous": 0,
+    "exposed_samples_below_1_2_mm_assembled_chord": 1,
+    "exposed_samples_below_1_2_mm_source_precision_contact_chord": 0,
+    "minimum_exposed_source_precision_contact_chord_mm": 7.2132122421532685,
+    "maximum_recorded_sample_centroid_error_mm": 3.885780586188048e-15
+  },
+  "source_precision_contact_diagnostic": {
+    "authoritative_for_exact_boolean_topology": false,
+    "position_component_type": "IEEE754 float32, GLB accessor5126",
+    "maximum_position_quantum_mm": 8.344650268554688e-06,
+    "contact_tolerance_mm": 1.6689300537109375e-05,
+    "method": "Merge only ray-interval gaps no larger than two float32 position quanta. Strict intervals and strict chords remain unchanged. This tests microscopic segment seams without modifying geometry."
+  }
+}

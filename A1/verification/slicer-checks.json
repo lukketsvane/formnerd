@@ -1,0 +1,66 @@
+{
+  "xy_extrusion_moves": 2302344,
+  "model_xy_extrusion_moves": 2239131,
+  "support_xy_extrusion_moves": 63213,
+  "perimeter_xy_extrusion_moves": 424090,
+  "layers": 370,
+  "extrusion_xy_bounds_mm": [
+    [
+      52.345,
+      72.694
+    ],
+    [
+      200.748,
+      180.399
+    ]
+  ],
+  "extrusion_within_256mm_bed": true,
+  "support_filament_mm": 7757.966459999873,
+  "statistics": {
+    "filament used [mm]": "73224.32",
+    "filament used [g]": "218.40",
+    "estimated printing time (normal mode)": "16h 20m 41s"
+  },
+  "valid": true,
+  "slicer": "PrusaSlicer 2.7.2",
+  "embedded_generic_profile_reloaded_correctly": true,
+  "profile_keys_verified": [
+    "bed_shape",
+    "max_print_height",
+    "nozzle_diameter",
+    "filament_type",
+    "layer_height",
+    "perimeters",
+    "fill_density",
+    "fill_pattern",
+    "support_material",
+    "support_material_auto",
+    "support_material_buildplate_only",
+    "dont_support_bridges"
+  ],
+  "reloaded_profile_values": {
+    "bed_shape": "0x0,256x0,256x256,0x256",
+    "max_print_height": "256",
+    "nozzle_diameter": "0.4",
+    "filament_type": "PLA",
+    "layer_height": "0.2",
+    "perimeters": "3",
+    "fill_density": "15%",
+    "fill_pattern": "gyroid",
+    "support_material": "1",
+    "support_material_auto": "1",
+    "support_material_buildplate_only": "0",
+    "dont_support_bridges": "0"
+  },
+  "slicer_object_count": 1,
+  "slicer_volume_count": 11,
+  "slicer_build_items": 1,
+  "warnings": [],
+  "physical_print_tested": false,
+  "actual_Bambu_P1S_profile_verified": false,
+  "gcode_delivered": false,
+  "scale_is_assumed": true,
+  "profile_portability": "Standard 3MF geometry is portable; generic Prusa settings are verified only in PrusaSlicer. Select the actual P1S printer and PLA profile in Bambu Studio.",
+  "triangles_after_slicer_import_export": 2490708,
+  "native_triangle_count_preserved_by_slicer": true
+}

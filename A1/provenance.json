@@ -1,0 +1,19 @@
+{
+  "source": "selected user image",
+  "sha256": "41b373f118ec147d46a8cf4775c717bed824d2c57cd98b843de6dc57e0a37814",
+  "pipeline": "Tripo image-to-model Ultra, Smart Segment fine, Quick Cap",
+  "preserve_detailed_master": true,
+  "generation_model": "v3.1-20260211",
+  "image_autofix": false,
+  "texture": false,
+  "pbr": false,
+  "unrelated_cad_geometry_used": false,
+  "physical_print_tested": false,
+  "printer": "Bambu Lab P1S",
+  "filament": "PLA",
+  "dimension_source": "No measured dimensions supplied for this shape.",
+  "print_width_mm": 140,
+  "physical_dimension_assumption": "140 mm width along original scene Z, chosen as handheld form-model size; no measured original supplied.",
+  "raw_tripo_files_preserved": true,
+  "smart_retopology_used_for_print": false
+}

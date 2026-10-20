@@ -1,0 +1,31 @@
+ENTROPI: VALD FORM BEHANDLA MED TRIPO
+
+Modellen er generert direkte frå det valde referansebiletet med Tripo v3.1 Ultra. Smart Segment deler overflata i 11 område. Quick Cap lukkar snitta. Den lukka modellen har 2 490 708 trekantar. Ingen A02-CAD-geometri er brukt.
+
+UTSKRIFT
+print/Entropi-140mm.3mf er den samla modellen for utskrift. Segmenta står saman i eitt objekt. Dette er ein heil formmodell, ikkje eit monteringssett med verifiserte klaringar eller kamerafeste.
+
+Breidda er sett til 140 mm. Dette er ei vald modellstorleik; biletet inneheld ikkje mål. Modellen er om lag 140 x 104,07 x 72,21 mm i utskriftsretninga. Berre ein lik skaleringsfaktor og ei stiv rotering/flytting er brukte i printversjonen.
+
+Opne 3MF i Bambu Studio og vel Bambu Lab P1S, 0,4 mm dyse og det faktiske PLA-filamentet. Kontroller den importerte profilen. Utgangspunkt: 0,20 mm lag, 3 veggar, 15 prosent gyroid, 5 topp- og botnlag og automatisk støtte overalt, også under bruer. Behald den leverte retninga med fronten opp. Fjern støtte varsamt frå rillene og opninga under brua.
+
+3MF er hovudformatet fordi det bevarer den detaljerte geometrien gjennom eksport og innlesing. Binær STL er ikkje med i leveransen.
+
+Maskinspesifikk G-code er ikkje levert. Generisk slicing er dokumentert i verification/slicer-checks.json. Vel den faktiske P1S-profilen før du lagar maskinkode.
+
+MESH OG RENDERING
+mesh/01-ultra-original.glb: detaljert Tripo-generering frå biletet.
+mesh/02-smart-segmented.glb: Smart Segment-resultat.
+mesh/03-quick-capped.glb: lukka, detaljert modell som printversjonen kjem frå.
+mesh/04-smart-retopology-preview.glb: lettare Tripo-retopologi for førehandsvising. Denne er ikkje printgrunnlaget.
+review/selected-assembled-colour.glb: same lukka geometri med lys grå front og mørk kropp, skive og knappar.
+review/assembled.png: rendering av den faktiske lukka Tripo-meshen.
+reference/selected-version.png: det valde referansebiletet.
+
+KONTROLLAR
+Alle 11 lukka segment passerer eksakt kontroll av opne kantar, manifoldstruktur, duplikatflater og viklingsretning. Område 4 og 7 inneheld to lukka komponentar kvar. Den separate mikrosveisediagnosen er ikkje grunnlag for godkjenninga; avrunding av svært små trekantar gav falske feil der.
+
+Sjølvkontakt og tjukkleik er undersøkte med avgrensa prøver. Dei ti tynne snitta er også kontrollerte på tvers av den samla modellen; resultatet står i verification/assembled-thin-samples.json. Dette er ikkje ei uttømmande verifisering av minste veggtjukkleik. Segmentgrenser er ikkje automatisk mekaniske delingslinjer. Fysisk utskrift, passform, rørsle og kameraelektronikk er ikkje testa.
+
+TRIPO
+tripo-receipts.json inneheld dei fire oppgåve-ID-ane, faktiske oppgitte kostnader og kontrollsummar. Oppgåvene oppgir 40 + 55 + 30 + 35 = 160 kreditt. Ingen ny generering vart starta då retopologioppgåva fekk eit nettverksavbrot; den same oppgåva vart henta inn att.
