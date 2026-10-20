@@ -1,0 +1,1039 @@
+{
+  "research": [
+    {
+      "topic": "esp32cam",
+      "items": [
+        {
+          "name": "Coordinate frame used in all items below (read first)",
+          "value_mm": "X across the 27 mm width: X=0 is the long edge with the 5V/GND/IO12/IO13/IO15/IO14/IO2/IO4 header row, X=27 is the 3V3/IO16/IO0/GND/VCC/U0R/U0T/GND edge. Y along the length: Y=0 is the 'pin end' short edge (5V/3V3 pins and microSD opening), Y=40 (to 40.5) is the 'antenna end'. Z: 0 is the camera/SD-side PCB face, +Z points toward the lens, and the ESP32-S shield side is at -t_pcb and below.",
+          "confidence": "high",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/"
+          ],
+          "notes": "The X/Y handedness holds in both views because the official renders flip the board about its short axis. Seen from the camera side with the SD slot at the top, the 5V row is on the left. Seen from the shield side with the antenna at the top, the 5V row is also on the left and the 5V pad is the square pad at the bottom left."
+        },
+        {
+          "name": "PCB outline W x L",
+          "value_mm": "27.0 x 40.0 on the official drawing, 27 x 40.5 (±0.2) in the spec table. Ai-Thinker states 27*40.5*4.5 (±0.2). Design the pocket for 27.0 x 40.0–40.7.",
+          "confidence": "high",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://wiki.dfrobot.com/dfr0602/",
+            "https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/with-wi-fi/esp32-cam-wifi-and-bluetooth-board-with-ov2640-camera"
+          ],
+          "notes": "The official mechanical drawing on page 1 of the Ai-Thinker V1.0 datasheet dimensions 40 mm x 27 mm. The spec table on the same document says 27*40.5*4.5 (±0.2). The official render's aspect ratio matches 40.0 (621 px / 419 px = 1.482). Some clones differ, for example the 'ESP32-Cam-CH340' HW-818 at 27 x 48.5, which is a different board. The 4.5 mm in the spec is probably PCB plus ESP32-S module, and probably excludes the SD socket, camera and headers. That reading is my inference."
+        },
+        {
+          "name": "PCB corner radius",
+          "value_mm": "≈2.3–2.6 (estimate R2.5)",
+          "confidence": "low",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf"
+          ],
+          "notes": "Measured in pixels from the official outline drawing at 17.3 px/mm. The radius is not dimensioned on the drawing. Use R≥3 in the pocket so the corners never bind."
+        },
+        {
+          "name": "PCB thickness",
+          "value_mm": "Two production variants: about 1.0 (thin) and about 1.6 (thick)",
+          "confidence": "medium",
+          "sources": [
+            "https://www.printables.com/model/1118515-ai-thinker-esp32-cam-holder",
+            "https://printables.com/model/525641-esp32-cam-3d-object-with-exact-dimensions"
+          ],
+          "notes": "The Printables holder author shows two ESP32-CAM boards side by side, one with a thicker PCB and one with a thinner one. The author's STLs have PCB slots 2.0 mm tall (thick) and 1.4 mm tall (thin), which suggests about 1.6 and 1.0 plus 0.4 clearance. My pixel estimate from the side-view photo gives about 0.9 and 1.7 mm. A mock-up STL uses 1.5. Ai-Thinker publishes no thickness. Do not rely on PCB thickness for retention."
+        },
+        {
+          "name": "Which short end has what",
+          "value_mm": "Antenna end (Y≈33.8–40): ESP32-S PCB antenna on the shield side, with a 6.218 mm antenna band from the edge per the drawing. Pin end (Y=0): header pins start 4.58 from this edge, the microSD slot opens here on the camera side, and the RST button sits here on the shield side. The camera FPC connector is not at either end: it is mid-board on the camera side at Y≈23–28, closer to the antenna end.",
+          "confidence": "high",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+            "https://www.printables.com/model/1118515-ai-thinker-esp32-cam-holder"
+          ],
+          "notes": "Sources are the official drawing (ANT band 6.218 mm), the official two-side render and the RNT pinout photo, which shows the SD slot at the 5V/3V3 end and the FPC connector, flash LED and 'ESP32-CAM' text toward the other end. IMPORTANT CORRECTION: the camera is not stuck onto the ESP32-S shield. The ESP32-S module is on one face and the microSD socket, FPC connector, flash LED and camera are on the opposite face. The camera module lies on top of the microSD socket and its FPC runs flat, with no 180° fold, from the connector toward the pin end. The Printables lens-hack author also says to 'glue the camera to the SD-card Holder'."
+        },
+        {
+          "name": "Pin headers: count, pitch, row spacing, positions",
+          "value_mm": "2 rows x 8 = 16 pins (DIP-16), pitch 2.54, row spacing 22.86 c-c. Row centres X=2.07 and X=24.93, i.e. 2.07 from each long edge. Pin n (n=0..7) sits at Y = 4.58 + 2.54·n, so Y = 4.58, 7.12, 9.66, 12.20, 14.74, 17.28, 19.82, 22.36. Row X=2.07 from n=0: 5V, GND, IO12, IO13, IO15, IO14, IO2, IO4. Row X=24.93 from n=0: 3V3, IO16, IO0, GND, VCC(out), U0R(GPIO3), U0T(GPIO1), GND.",
+          "confidence": "high",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://atta.szlcsc.com/upload/public/pdf/source/231023/C17416982-30bc871038898b12774324a310c0150b.pdf"
+          ],
+          "notes": "The official drawing dimensions 22.86, 2.54 and 4.58 (pin-end edge to the 5V/3V3 pin centres). I checked these by pixel measurement: 22.83 and 4.59. The last pin is therefore 17.6–18.1 from the antenna edge. Pin assignment comes from the Ai-Thinker schematic v1.6, headers P1 and P2. 'VCC' is an output selected by 0R jumpers R1/R2 (3V3 or 5V). Some clones label one GND pin 'GND/R' (RNT reader report)."
+        },
+        {
+          "name": "Header pin length below PCB (shield side)",
+          "value_mm": "Estimated pin tips ≈8.5 below the shield-side PCB face: plastic carrier ≈2.5 plus ≈6 exposed pin. Short solder tails stick out ≈1–2 on the camera side.",
+          "confidence": "low",
+          "sources": [
+            "https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/with-wi-fi/esp32-cam-wifi-and-bluetooth-board-with-ov2640-camera",
+            "https://printables.com/model/525641-esp32-cam-3d-object-with-exact-dimensions",
+            "https://printables.com/model/973251-esp32-cam-case-enclosure-for-thicker-esp32-board"
+          ],
+          "notes": "Pins and the black plastic carrier are on the ESP32-S (shield) side, confirmed in photos. No source gives pin length directly. The figure is derived from the vendor total of '40x27x12mm (including headers, without camera)': 1.0–1.6 PCB + ~1.9 SD + ~8.5 header is about 12. The mock-up STL models 2.5 plastic and pins to about 8.2 below the PCB. A Printables remix exists because 'the leads on the ESP32cam boards I have were too long', so lengths vary between batches."
+        },
+        {
+          "name": "ESP32-S module / shield-side height",
+          "value_mm": "ESP32-S module ≈18 x 25.5 x 3.0–3.2 (incl. module PCB). On the ESP32-CAM it occupies roughly X 4.5–22.5 and Y 14.5–40, flush with the antenna end, and protrudes about 3.0–3.2 below the shield-side PCB face. The RST tact switch is centred at about X 5.4, Y 3.0. The red LED (GPIO33) is at about X 10, Y 11. A SOT-223 AMS1117 and SOP-8 PSRAM sit at the pin end, both lower than the module.",
+          "confidence": "medium",
+          "sources": [
+            "https://lcsc.com/product-detail/Modules_Ai-Thinker-ESP32-S_C277944.html",
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf"
+          ],
+          "notes": "The 25.5 x 18 x 3 (LCSC) and 3.2 (reseller) figures come from distributor listings for the stand-alone ESP32-S module. Placement on the ESP32-CAM is my pixel estimate from the official render (15.5 px/mm) and has about ±1 mm uncertainty. The RST button and red LED face the MB board when the CAM is plugged in, so they cannot be reached."
+        },
+        {
+          "name": "microSD slot",
+          "value_mm": "On the camera side at the pin end. Footprint about X 6.0–20.9 (≈14.5–15.0 wide, centred at X 13.5) by Y 0.3–15.3 (≈14.4–15.3 deep). The card enters from the Y=0 edge. Socket height is estimated at ≈1.8–2.0.",
+          "confidence": "medium",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+            "https://printables.com/model/525641-esp32-cam-3d-object-with-exact-dimensions",
+            "https://www.printables.com/model/674155-esp32-cam-module-lens-hack"
+          ],
+          "notes": "X/Y come from pixel measurement of the official render and the RNT pinout image, which agree to about 0.5 mm. Height is NOT published: the mock-up STL uses 14.8 x 15 x 2.0. The lens-hack 'placeholder' that replaces the camera on top of the socket is 14 x 14 x 2. I could not confirm the socket type (push-push vs hinged); the render suggests a spring latch. The camera module covers the top of the socket. The spec says TF up to 4 GB, but users report 16 GB FAT32 works."
+        },
+        {
+          "name": "Camera FPC connector (24-pin, 0.5 mm pitch)",
+          "value_mm": "On the camera side, about X 5.3–22.4 (≈17 incl. ears, centred) by Y 23.0–28.0. Height ≈2–2.7 incl. the flip-lock actuator (photo estimate). The cable enters from the SD-socket side (toward Y=0).",
+          "confidence": "medium",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+            "https://www.printables.com/model/1118515-ai-thinker-esp32-cam-holder"
+          ],
+          "notes": "Position comes from the official render and RNT image. Height is a rough estimate from a side photo (Printables 1118515) and has no datasheet. Leave headroom over the actuator so the lid never presses on it."
+        },
+        {
+          "name": "OV2640 lens centre position (stock 21 mm module, as shipped)",
+          "value_mm": "X ≈ 13.5, the board centreline, so ≈13.5 from both long edges. Y ≈ 9.3–10.4 from the pin/SD end, which is ≈29.6–31.2 from the antenna end. Allow ±1.5–2 for hand assembly.",
+          "confidence": "low",
+          "sources": [
+            "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+            "https://printables.com/model/525641-esp32-cam-3d-object-with-exact-dimensions",
+            "https://www.printables.com/model/674155-esp32-cam-module-lens-hack"
+          ],
+          "notes": "The lens sits over the centre region of the microSD socket. RNT's pinout image puts the lens centre at Y≈10.4, X≈13.4. The 'exact dimensions' mock-up STL puts it at Y=9.26, X=13.6. A geometric check also lands near Y≈9.5: a 21 mm module whose fingers are in the connector at Y≈23–27 with an 8 mm holder. The module is only taped or glued, so position varies between units. Case designers ship 'camera adjust' parts for this, and a MakerWorld builder reportedly needed a 2–3 mm off-centre variant. I did not open that page, so treat that report as unconfirmed. The lens axis is normal to the PCB and points out of the camera/SD face."
+        },
+        {
+          "name": "Front-side stack: lens tip height",
+          "value_mm": "Lens tip ≈7.0–8.5 above the camera-side PCB face. From the shield-side (back) PCB face to the lens tip: ≈8.0–10.0, nominal ≈9.",
+          "confidence": "low",
+          "sources": [
+            "https://welectron.com/Arducam-M0031-OV2640-Camera-Module",
+            "https://printables.com/model/525641-esp32-cam-3d-object-with-exact-dimensions",
+            "https://www.printables.com/model/1118515-ai-thinker-esp32-cam-holder"
+          ],
+          "notes": "Built up from: SD socket ≈1.8–2.0, adhesive ≈0.1–0.5 (unknown), and camera module ≈4.7–5.9. Arducam's comparable 24-pin 21 mm OV2640 module (M0031) is '21 x 12.5 x 5.85mm' overall. My side-photo estimate is about 6.5–7.3 above the PCB top. The mock-up STL gives 8.0 above the PCB top (9.5 from the back face with a 1.5 PCB). Add t_pcb (1.0 or 1.6) for the back-face figure. Lens height also changes when the lens is refocused (it is a threaded barrel locked with a glue dot) and with wide-angle replacement lenses."
+        },
+        {
+          "name": "OV2640 camera module dimensions",
+          "value_mm": "Overall ≈21 long (standard). FPC finger end ≈12.5 wide, 24 pins at 0.5 pitch, contacts face down. Square lens holder ≈8 x 8. Overall height ≈5.85 (Arducam M0031). Visible lens barrel steps ≈6.6 then ≈4.8 diameter (photo estimate). 1/4\" sensor, 1600x1200, 2.2 µm pixels.",
+          "confidence": "medium",
+          "sources": [
+            "https://welectron.com/Arducam-M0031-OV2640-Camera-Module",
+            "https://www.printables.com/model/674155-esp32-cam-module-lens-hack",
+            "https://www.makerworld.com/en/models/175379",
+            "https://docs.sunfounder.com/projects/esp-cam-kit/en/latest/component_camera.html",
+            "https://probots.co.in/ov2640-160-degree-wide-angle-lens-2mp-camera-module-24pin-21mm.html"
+          ],
+          "notes": "The 8x8 holder comes from MakerWorld 175379, whose lens holder fits the 'stock 8x8mm lens' (search result; I did not open the page). The Printables lens-hack clamp has an 8.5 x 8.5 pocket (8 + clearance). 21 x 12.5 x 5.85 is the Arducam M0031, which is the same 24-pin goldfinger format but not necessarily identical to the generic Chinese module. Barrel diameters are rough estimates from a side photo, so measure your own. The lens unscrews after the glue dot is broken (Printables 674155, Probots FAQ)."
+        },
+        {
+          "name": "Camera FPC cable length / longer versions",
+          "value_mm": "Standard: 21 (overall module length). Longer drop-in versions are sold at 40 and 75 total length, same 24-pin 0.5 pitch.",
+          "confidence": "medium",
+          "sources": [
+            "https://docs.sunfounder.com/projects/esp-cam-kit/en/latest/component_camera.html",
+            "https://probots.co.in/ov2640-160-degree-wide-angle-lens-2mp-camera-module-24pin-21mm.html",
+            "https://probots.co.in/ov2640-120-degree-wide-angle-lens-2mp-camera-module-24pin-75mm.html",
+            "https://kunkune.co.uk/shop/kunkune-accessories/ov2640-camera-upgrade-2mp-length-75mm/",
+            "https://mikroelectron.com/product/me-13581",
+            "https://www.tindie.com/products/mmm999/ov2640-21mm-66120-wide-angle-lens-camera-module/"
+          ],
+          "notes": "SunFounder gives 'measuring just 21mm in length'. Probots sells 21 mm and 75 mm modules (66°, 68°, 100°, 120°, 160°, 200° lenses). Kunkune sells a 75 mm 66–68° module. Mikroelectron lists a 40 mm 160° night-vision version; I saw only its title, not the page. Probots warns that FPCs are fragile and should not be sharply creased or repeatedly folded."
+        },
+        {
+          "name": "Stock lens field of view",
+          "value_mm": "≈65–68° (vendor-stated, axis not specified, probably diagonal). f/2.4 per one listing. Arducam's own M0031 variant: 52° diagonal, EFL 4.22, f/2.0.",
+          "confidence": "medium",
+          "sources": [
+            "https://docs.sunfounder.com/projects/esp-cam-kit/en/latest/component_camera.html",
+            "https://www.tindie.com/products/mmm999/ov2640-21mm-66120-wide-angle-lens-camera-module/",
+            "https://kunkune.co.uk/shop/kunkune-accessories/ov2640-camera-upgrade-2mp-length-75mm/",
+            "https://probots.co.in/ov2640-160-degree-wide-angle-lens-2mp-camera-module-24pin-21mm.html",
+            "https://welectron.com/Arducam-M0031-OV2640-Camera-Module"
+          ],
+          "notes": "SunFounder says 68°. Tindie and Probots ('standard 66° ESP32-CAM lens') say 66°, and Tindie gives aperture 2.4. Kunkune says both 66 and 68 on the same page. A Little Bird listing says 65° (search snippet; the page returned 404). Wide-angle 120°/160° replacements protrude further and need a much larger opening."
+        },
+        {
+          "name": "Flash LED position",
+          "value_mm": "On the camera side near the antenna end and next to the X=27 edge. Centre about X 24.5–25.0 (≈2.0–2.5 from the 3V3/GND edge), Y 29.6–30.8 from the pin end (≈9–10.5 from the antenna end). Package ≈3.5–3.9 square (render estimate).",
+          "confidence": "medium",
+          "sources": [
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+            "https://atta.szlcsc.com/upload/public/pdf/source/231023/C17416982-30bc871038898b12774324a310c0150b.pdf"
+          ],
+          "notes": "Position from pixel measurement of the official render and the RNT image, which agree within about 1 mm. Height is not known (low SMD part, probably ≤1). The LED is driven by GPIO4 through an S8050 transistor, and GPIO4 is also SD DATA1. It draws 310 mA at 5 V at full brightness, against 180 mA with the flash off. It is lateral to the camera, about 11 mm in X and 20 mm in Y from the lens centre."
+        },
+        {
+          "name": "Free GPIO for a shutter button (camera active)",
+          "value_mm": "Best: GPIO13, header row X=2.07, Y=12.20 (pin n=3 from the 5V end), switched to GND (pin n=1 at Y=7.12, same row). Run the SD card in 1-bit mode. Second choice: GPIO12 (X=2.07, Y=9.66), button to GND only. Avoid GPIO0, 1, 3, 2, 4, 14, 15 and 16.",
+          "confidence": "high",
+          "sources": [
+            "https://atta.szlcsc.com/upload/public/pdf/source/231023/C17416982-30bc871038898b12774324a310c0150b.pdf",
+            "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+            "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+            "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html"
+          ],
+          "notes": "The camera uses GPIO0 (XCLK), 5, 18, 19, 21, 34, 35, 36, 39, 22, 25, 23, 26, 27 and 32 (PWDN); none of these except IO0 is on the header. SD in 4-bit mode takes 14/15/2/4/12/13. In 1-bit mode (SD_MMC.begin(\"/sdcard\", true)) it takes 14 (CLK), 15 (CMD) and 2 (D0), which frees 4, 12 and 13; a reader comment marks this as untested. Schematic v1.6 shows R8 47k pull-up on GPIO13, 47k on 15, 2 and 4, and R7 NC (no pull-up) on GPIO12. GPIO13 is not a strapping pin and is RTC-capable (ext0 deep-sleep wake), so active-low to GND with INPUT_PULLUP works. GPIO12 is the MTDI strap: high at reset selects 1.8 V flash and causes a brownout or no boot, so never add a pull-up; a button to GND is safe. GPIO2 and GPIO15 are strapping pins and SD lines. GPIO0 is the boot strap and XCLK. GPIO16 is PSRAM CS# (R5 10k pull-up), so using it breaks PSRAM frame buffers. GPIO1/3 are UART0, driven by the MB's CH340. GPIO4 is the flash LED. One RNT reader saw an INPUT_PULLUP read on GPIO13 toggle while running the camera example, so verify on hardware, debounce, and consider an external 10k pull-up (safe on 13). When the CAM is plugged into the MB, every header pin is inside the MB sockets. Wire the button by soldering to the IO13 and GND pin tails on the camera side, or to the MB's socket solder joints."
+        },
+        {
+          "name": "Overall envelope (CAM board alone, no camera)",
+          "value_mm": "40 x 27 x ≈12 including headers",
+          "confidence": "medium",
+          "sources": [
+            "https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/with-wi-fi/esp32-cam-wifi-and-bluetooth-board-with-ov2640-camera",
+            "https://zbotic.in/product/esp32-cam-mb-micro-usb-download-module-for-esp32-cam-development-board/"
+          ],
+          "notes": "Vendor figure: '40x27x12mm (including headers, without camera)'. With the camera module the camera-side envelope grows to the lens tip, ≈7–8.5 above the PCB. I did not research the ESP32-CAM-MB dimensions here; one vendor lists it at ≈48 x 27 (unverified)."
+        }
+      ],
+      "design_advice": "I could not confirm the camera-related heights from any datasheet: lens tip height, SD socket height and PCB thickness. Measure your own board and camera with calipers before printing the final housing. The official drawing does pin down the outline and the header positions.\n\n1. Orientation (the task assumed it was otherwise): the OV2640 sits on the microSD-socket face, the face opposite the ESP32-S shield. The header pins point out of the shield face into the ESP32-CAM-MB. So the lens faces forward, away from the MB. The stack from front to back is lens, then camera module, then microSD socket, then the CAM PCB, then the ESP32-S module, then the headers, then the MB.\n\n2. Fit on a Bambu P1S with a 0.4 nozzle:\n   - Make the CAM pocket 27.4–27.6 x 40.6–41.0 with R≥3 corners, because the spec allows 40.5 ±0.2.\n   - Do not clamp on PCB thickness, since it comes in about 1.0 and about 1.6.\n   - Instead, locate the board in X/Y with the pocket walls. Locate it in Z by trapping it between the MB below and two or three standoffs that touch the camera-side PCB face. Good standoff areas are bare edge strips at Y≈33–40 near the X edges and around Y≈16–22 beside the header rows. Keep them clear of the FPC connector at X 5.3–22.4, Y 23–28.\n   - Add crush ribs or a TPU/foam pad to take up the about 0.6 mm thickness spread.\n\n3. Lens opening:\n   - The lens centre is nominally at X 13.5, Y≈9.8 from the pin/SD end, but it varies by ±1.5–2 because the camera is taped onto the SD socket by hand.\n   - Best option: a front pocket of 8.4–8.6 square that captures the 8x8 lens holder and lets the module self-centre, backed by a foam pad.\n   - Alternative: a separate printed lens-bezel insert you can swap or slot-adjust.\n   - The lens tip is about 7–8.5 above the PCB camera face, so set the inner front-wall depth at 8.5 above that face and shim with foam rather than pressing on the lens.\n   - Chamfer the opening outward at ≥35–40° half-angle so the 65–68° stock FOV is not vignetted. Example: lens about Ø5–6.6 behind a 1.6 wall needs an opening of at least about Ø8–9 at the outer face.\n   - A 120° or 160° replacement lens has to protrude through the wall.\n   - The FPC must not be creased. Keep 1 mm or more of clearance above it and above the connector actuator.\n\n4. microSD access:\n   - Cut a slot in the pin-end wall (Y=0), centred at X 13.5, at least 13 wide and spanning Z≈0 to 2.5 above the PCB camera face. The card is 11 wide and the socket is about 15 wide and about 1.8–2.0 tall.\n   - The card goes in directly under the camera module, so keep the lens bezel from overhanging the slot.\n   - Or decide that the SD card is only swapped with the shell open.\n\n5. Flash LED: centred at about X 24.5–25, Y≈30 on the camera face.\n   - Give it its own window or a light pipe (Ø4–5), separated from the lens opening by an opaque wall so it does not cause flare.\n   - Its GPIO4 is also SD DATA1, so use SD 1-bit mode or the LED flickers whenever the card is accessed.\n   - The LED draws up to 310 mA, so vent nearby if you use it as a torch.\n\n6. Wi-Fi antenna:\n   - It is the 6.2 mm band at the antenna end (Y 33.8–40), on the shield side.\n   - Keep screws, heat-set inserts, magnets, metal and batteries away from that end, and put fasteners at the pin end or along the long sides.\n   - Ordinary PLA/PETG walls are fine. Avoid carbon-filled filament there.\n\n7. Shutter button:\n   - Use GPIO13 to GND, active-low, with INPUT_PULLUP plus the on-board 47k. It is also an ext0 deep-sleep wake source. Run SD_MMC in 1-bit mode.\n   - All header pins disappear into the MB sockets, so solder two wires to the IO13 and GND pin tails on the camera side: X=2.07, Y=12.20 and Y=7.12, both on the 5V-side row. Then route them along the X=0 edge to a printed button plunger driving a 6x6 tact switch.\n   - GPIO12 is the fallback. Never pull it high at boot.\n   - Do not use GPIO16 (PSRAM), 0, 1, 3 (MB UART/boot), 2, 4, 14 or 15.\n\n8. Buttons you cannot reach once assembled: the CAM's RST button and red LED face the MB. Use the MB's own RST/IO0 buttons and plan pinholes for them; the MB layout needs its own measurement. If you want the status LED visible, also leave a pinhole for the MB power LED.\n\n9. Total thickness: CAM plus camera is about 8–10 from the CAM back face to the lens tip, plus about 3.2 of ESP32-S below the board, inside the MB socket height. Leave 0.5–1 of Z slack and use compliant pads instead of a hard stack.\n\n10. Variants: buy or measure the exact camera module you will ship. A 21 mm FPC is standard, and 40 mm and 75 mm FPC versions let you move the lens to any position in a handheld layout. Lens height and diameter differ between 66°, 120° and 160° lenses."
+    },
+    {
+      "topic": "mb",
+      "items": [
+        {
+          "name": "ESP32-CAM-MB PCB outline (W x L), standard micro-USB board",
+          "value_mm": "W = 27. L is about 38 by photo measurement (37.5–38.7). Vendor listings give 39–40. Design range: 37.5–40.5",
+          "confidence": "medium",
+          "sources": [
+            "https://www.tinytronics.nl/en/development-boards/accessories/adapter-boards/esp32-cam-mb-programmer-shield",
+            "https://abra-electronics.com/wireless/wireless-wifi-en/esp32-cam-mb.html",
+            "https://www.universal-solder.ca/product/esp32-cam-with-esp32-cam-mb-usb-programming-adapter/",
+            "https://probots.co.in/esp32-cam-mb-micro-usb-programmer-ch340g-serial-chip-ov2640-camera.html",
+            "https://thinkrobotics.com/products/esp32-cam-mb-online",
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://github.com/yellobyte/ESP32-DevBoards-Getting-Started/tree/main/boards/ESP32-CAM/doc"
+          ],
+          "notes": "The 27 mm width is consistent across every source, so it has high confidence. Length is the uncertain number. Vendors: Tinytronics 40 x 27, Abra 39 x 27, Probots 39.8 x 27, Universal-Solder 27 x 40, ThinkRobotics 40 x 27 x 12. My own measurement comes from two independent photos. (1) RNT stack side view (ESP32-CAM-MB-Micro-USB-Programmer-CH340G-Serial-Chip.jpg): I used the ESP32-CAM 2.54 mm header pitch as the ruler (about 17.8 px/mm). The MB/CAM length ratio is 676/721 px = 0.938, which gives about 38.0 mm for a 40.5 mm CAM. (2) yellobyte near-top view of the bare MB: aspect ratio about 1.39 against 27 mm width, which gives about 37.5 mm. Vendor '40 x 27' and Cirkit Designer '27 x 40.5' may simply copy the ESP32-CAM size; this is not confirmed. Discard these outliers: an unsourced OpenSCAD file (heyfinal/McBlink) says 27 x 24, and another (Silexperience210) says about 52.5 x 26. Both contradict the photos. Corners are rounded (radius about 1 mm, from photos). Check with calipers before final CAD."
+        },
+        {
+          "name": "ESP32-CAM-MB PCB thickness",
+          "value_mm": "1.6 nominal (photo edge band reads about 1.4 ± 0.3)",
+          "confidence": "low",
+          "sources": [
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/"
+          ],
+          "notes": "No datasheet exists. The VaTTeRGeR FreeCAD model (esp32-cam-shell.FCStd, body 'pcb-main', Pad004) models the MB as 40 x 27 x 1.6. 1.6 mm is standard FR4. For comparison, the ESP32-CAM PCB was caliper-measured at 1.25 mm (rcland12 MEASUREMENTS.md)."
+        },
+        {
+          "name": "MB height on its own (PCB + female headers + solder tails)",
+          "value_mm": "10–12",
+          "confidence": "medium",
+          "sources": [
+            "https://thinkrobotics.com/products/esp32-cam-mb-online",
+            "https://www.flyrobo.in/esp32-cam-mb-micro-usb-download-module-for-esp32-cam-development-board"
+          ],
+          "notes": "ThinkRobotics gives 40 x 27 x 12 mm. Flyrobo and Zbotic give 40 x 25 x 10 mm. 12 mm matches 1.6 PCB + 8.5 female header + about 1.6–2 mm of THT tails below."
+        },
+        {
+          "name": "USB connector type",
+          "value_mm": "Micro-USB B receptacle (plug interface 6.85 x 1.8). USB-C MB variants also exist; one is listed at about 48 x 27",
+          "confidence": "high",
+          "sources": [
+            "https://www.tinytronics.nl/en/development-boards/accessories/adapter-boards/esp32-cam-mb-programmer-shield",
+            "https://www.waveshare.com/esp32-cam.htm",
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://circuit.rocks/products/esp32-cam-usb-programmer-esp32-cam-mb-ov2640-2mp-wi-fi-ble-usb-c-ch340-8mb-psram",
+            "https://www.tokopedia.com/tokosemirsepatu/esp32-cam-mb-development-board-test-backboard-serial-port-burner-module-with-expansion-interface-ch340c-type-c-interface-1730953883287979494"
+          ],
+          "notes": "The common board (RNT, Waveshare, Tinytronics, yellobyte photos) uses micro-B, labelled CN1, with a CH340C chip (marking visible in photos; some listings say CH340G). USB-C versions are sold: circuit.rocks lists an 'ESP32-CAM-MB USB-C programmer (CH340)' at '~48×27 mm', and a Tokopedia title reads 'CH340C Type-C interface ... with expansion interface'. Their layout and dimensions are not verified, so all USB-related numbers below apply only to the micro-USB board. The ESP32-CAM-CH340 (HW-818, about 27 x 48.5 mm) is a different single-board product, not an MB."
+        },
+        {
+          "name": "USB position: edge, face, centring",
+          "value_mm": "Short end of the MB, at the ESP32-CAM's antenna / flash-LED end (opposite the SD slot and lens end). Centred across the 27 mm width (photo offset ≤0.5 toward the IO0 side). On the MB component face, the same face as the female headers, facing the ESP32-CAM.",
+          "confidence": "high",
+          "sources": [
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://www.waveshare.com/img/devkit/accBoard/ESP32-CAM/ESP32-CAM-MB-details-5.jpg",
+            "https://github.com/yellobyte/ESP32-DevBoards-Getting-Started/tree/main/boards/ESP32-CAM/doc",
+            "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf",
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure"
+          ],
+          "notes": "In the stacked photos (RNT, yellobyte) the SD slot and lens sit at one end and the cable leaves the other end, next to the flash LED and 'ESP32-CAM' silkscreen. The DFRobot dimension drawing puts the antenna (ANT zone 6.218 mm) at the end opposite pin 1 (5V, 4.58 mm from the SD end). So the USB is about 40 mm from the SD end and about 30 mm from the lens centre (lens is about 9.5–10.5 mm from the SD end). The receptacle is a top-mount SMD micro-B. In my zoom of the RNT USB-port photo, its flared front lip sits in a notch about 1 mm deep in the PCB end edge. The VaTTeRGeR model also centres it (8 mm wide body, y = 9.5–17.5 on a 27 mm board)."
+        },
+        {
+          "name": "USB receptacle overhang beyond the MB PCB edge",
+          "value_mm": "0 to +0.5 (best estimate about 0.2–0.4). Budget up to 1.0",
+          "confidence": "medium",
+          "sources": [
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+            "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad"
+          ],
+          "notes": "Measured on the RNT side-view photo, zoomed 3x at about 55 px/mm: the receptacle mouth stands about 10–20 px past both PCB end edges. The VaTTeRGeR model has it flush (0). The SporePrint OpenSCAD file assumes ≤1 mm; it is secondary and partly derived from the same photos."
+        },
+        {
+          "name": "USB receptacle body and plug axis height",
+          "value_mm": "Body about 7.5–8 W x about 2.6–3 H x about 6 D. Plug centreline about 1.0–1.5 above the MB top (component) face",
+          "confidence": "low",
+          "sources": [
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf"
+          ],
+          "notes": "The VaTTeRGeR model gives the USB body as 8 x 6 x 3 mm on the MB top face. Width about 7.8 mm is from the yellobyte photo (108 px at 13.9 px/mm). The axis height is an estimate for a top-mount micro-B with its lip dropping into the edge notch. The micro-B plug shell itself is 6.85 x 1.8 (USB-IF Micro-USB 1.01, Fig. 4-7)."
+        },
+        {
+          "name": "Female header height on the MB",
+          "value_mm": "8.5 (insulator). Photo estimate 7.7–8.5. Tails 3.0–3.2 below the insulator",
+          "confidence": "medium",
+          "sources": [
+            "https://lioncircuits.com/parts/PPTC081LFBN-RC",
+            "https://www.datasheets.com/sullins-connector-solutions/pptc101lfbnrc",
+            "https://thinkrobotics.com/products/esp32-cam-mb-online",
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/"
+          ],
+          "notes": "Two single-row female headers, 8 positions each, 2.54 pitch, rows 22.86 mm centre-to-centre to match the ESP32-CAM (DFRobot drawing). The standard 2.54 mm female socket is 8.5 mm tall (Sullins PPTC: 0.335\" = 8.51 mm, 3.2 mm tail). The MB part is generic and unbranded. The RNT side photo, corrected for a viewing elevation of about 31–36°, reads about 7.7–8.1 mm, so a shorter socket cannot be ruled out. The header bases start about 1 mm from the MB's far (non-USB) end."
+        },
+        {
+          "name": "Gap: MB top face to ESP32-CAM PCB underside (stacked)",
+          "value_mm": "11.0 nominal (8.5 female + 2.5 male spacer). Photo estimate 9.6–10.1 ± 0.7. Design range 10–11.5",
+          "confidence": "medium",
+          "sources": [
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+            "https://dirtypcbs.com/parts_library/browse_by_type/pin-header/11x1p-2-54mm",
+            "https://protosupplies.com/?p=3467",
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad"
+          ],
+          "notes": "The ESP32-CAM male header sits with its plastic spacer on the module (ESP32-S) side and its pins pointing into the MB. Standard male header: 2.5 spacer + 6 mating + 3 tail (about 11.5–11.6 total), so the spacer rests on the female top and the pin tips do not bottom out. The VaTTeRGeR FreeCAD model (Pad003) uses exactly 11.0 mm. SporePrint quotes '12.5 mm apart bottom-to-bottom = 11 mm header gap'. My photo measurement reads a little lower, but it depends on the viewing-angle estimate. The ESP32-S module (about 3.1 mm), tantalum cap, PSRAM, AMS1117 and the CAM's own RST button face down into this gap. MB-side parts in the gap: CH340C SOP-16, AMS1117 SOT-223, switches about 3 mm tall, USB about 3 mm tall. All of them clear even a 10 mm gap."
+        },
+        {
+          "name": "THT solder tails below the MB",
+          "value_mm": "About 1.4–1.6 + solder fillet (allow 2.5–3 clearance)",
+          "confidence": "low",
+          "sources": [
+            "https://lioncircuits.com/parts/PPTC081LFBN-RC",
+            "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad"
+          ],
+          "notes": "A 3.0–3.2 mm female-header tail through a 1.6 mm PCB leaves about 1.4–1.6 mm protruding, plus USB shell legs. SporePrint assumes 3 mm of stubs. I found no photo of the MB underside; my assumption that it has no SMD parts is unverified. The tails sit in two rows about 2.07 mm in from each long edge, at 3.3–23.6 mm from the ESP32-CAM SD end."
+        },
+        {
+          "name": "ESP32-CAM layers in the stack (PCB thickness, lens height)",
+          "value_mm": "CAM PCB 1.0–1.25 (caliper 1.25). Lens tip above the CAM top face 8.3–9.0 (caliper 8.9). CAM PCB 40.35–40.5 x 27–27.25",
+          "confidence": "medium",
+          "sources": [
+            "https://github.com/rcland12/ESP32-Security/blob/main/MEASUREMENTS.md",
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+            "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf"
+          ],
+          "notes": "rcland12 caliper values: PCB 40.35 x 27.25 x 1.25, barrel height above PCB face 8.9, camera body 8.12 x 8.12, barrel diameter 7.92. The VaTTeRGeR model uses PCB 1.0 and lens top at 9.3 above PCB bottom. DFRobot: 27 x 40.5 x 4.5 (±0.2). Lens height assumes the stock lens is taped flat on the SD socket; long aftermarket lenses or a re-routed FPC change it."
+        },
+        {
+          "name": "Total stack height: MB bottom to lens tip",
+          "value_mm": "About 22.8 nominal (1.6 + 11.0 + 1.25 + 8.9), range 21.5–23.5. Including MB solder tails: about 24.5, range 23–26",
+          "confidence": "medium",
+          "sources": [
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+            "https://github.com/rcland12/ESP32-Security/blob/main/MEASUREMENTS.md",
+            "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad"
+          ],
+          "notes": "Computed from the items above. The VaTTeRGeR model gives 21.9 from MB bottom to camera top (no tails modelled). SporePrint says '~26 mm from lens top to MB stubs'. The housing depth must also cover the USB plug overmold, which hangs about 1–1.5 mm below the MB bottom face (see the overmold item)."
+        },
+        {
+          "name": "Alignment of MB footprint with ESP32-CAM outline",
+          "value_mm": "Width: flush on both long edges (both 27, header rows centred). Length: MB far (header) end about 2.4 inset from the CAM SD end. MB USB end flush (±0.5) with the CAM antenna end. If the MB is really 40 long it would overhang the antenna end by about 2. Design range for the MB end: 0 to +2 beyond the CAM antenna end, plus 0–0.5 for the receptacle",
+          "confidence": "low",
+          "sources": [
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf",
+            "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad",
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure"
+          ],
+          "notes": "RNT side photo: CAM SD-end edge at x≈267 px, MB edge at ≈309 px, giving an inset of 2.4 mm at 17.8 px/mm. At the USB end the CAM is at ≈988 px and the MB at ≈985 px, so they are flush. The geometry agrees: CAM pin 1 is 4.58 from the SD end (DFRobot), so the header's outer end is at 3.31 and the MB extends about 1 mm past it. The VaTTeRGeR model simplifies both boards to a flush 40 x 27. SporePrint claims 0–3.5 mm overhang at the antenna end, citing product photos. Nothing sticks out at the SD/lens end; the CAM overhangs the MB there."
+        },
+        {
+          "name": "IO0 and RST button positions",
+          "value_mm": "Side-actuated SMD tact switches on the MB component face near the USB end. Centres about 6.5–7.5 from the USB-end edge (modelled zone 6.0–8.5). Plungers protrude about 1.1–1.25 past each long edge, so the envelope is about 29.5 wide there. Switch height about 3",
+          "confidence": "medium",
+          "sources": [
+            "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/",
+            "https://www.waveshare.com/img/devkit/accBoard/ESP32-CAM/ESP32-CAM-MB-details-5.jpg",
+            "https://github.com/yellobyte/ESP32-DevBoards-Getting-Started/tree/main/boards/ESP32-CAM/doc",
+            "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure"
+          ],
+          "notes": "IO0 ('Download button') is on one long edge, on the same side as the ESP32-CAM's 5V/GND/IO12/IO13/IO15/IO14/IO2/IO4 header row. RST is on the opposite long edge (3V3/IO16/IO0/GND/VCC/U0R/U0T/GND row). This is from the RNT side view and the Waveshare/yellobyte top views. An RNT reader comment describes 'the RST side-facing button on the ESP32-CAM-MB'. Measured on the yellobyte photo: IO0 about 7.4 mm and RST about 6.5 mm from the USB end, plungers about 1.1 mm proud. The VaTTeRGeR model (Pad005) represents them as a 2.5 x 29.5 x 3 bar at 6.0–8.5 mm from the USB end, 1.25 mm proud on both sides. The plunger centre sits about 1.5 above the MB top face. Function note: Tinytronics says 'The RST button on this shield does not work' with some CAM boards (it depends on the CAM's GND/R pin)."
+        },
+        {
+          "name": "Micro-USB plug overmold (cable end) for the access hole",
+          "value_mm": "USB-IF limit for a straight Micro-B: 10.6 W x 8.5 H max. Real examples: 10.8 x 6.4 x 25.6 L (Molex); 10.8 x 8 x 30 L (Goobay). Recommended hole ≥12.5 x 10 (13 x 10 for cheap cables), centred on the plug axis",
+          "confidence": "high",
+          "sources": [
+            "https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf",
+            "https://static.chipdip.ru/lib/086/DOC034086452.pdf",
+            "https://www.skroutz.mt/s/67034730/goobay-micro-usb-plug-solder-version-10-pcs-80172.html"
+          ],
+          "notes": "The 10.6 MAX / 8.5 MAX limits are in Figure 4-5 'Micro-B Plug Overmold, Straight' of the Micro-USB spec Rev 1.01. Note 3 of that figure says maximum dimensions are mandatory and shape is reference only. Non-compliant cheap cables can be slightly larger, which the 13 x 10 option covers. The overmold front face sits at the receptacle mouth. The plug metal beyond the overmold is only about 6 mm (typical; I did not verify it in the spec), so a plug-only slot cannot reach through a wall thicker than about 0.5 mm. The hole must pass the overmold. A straight plug plus strain relief reaches about 25–30 mm past the board end, so leave that space or a cable channel. USB-C variant: the Type-C spec reference overmold is about 12.35 x 6.5. This comes from memory and I did not verify it here."
+        }
+      ],
+      "design_advice": "These recommendations are for the common micro-USB ESP32-CAM-MB. Every number marked low or medium confidence above should be checked with calipers on your own board before you lock the CAD; make them parameters. If your MB is the USB-C variant (one listing says about 48 x 27), the USB numbers do not apply.\n\n1) Locate the stack by the ESP32-CAM, not the MB. The CAM is the well-documented part (27 x 40.5 ±0.2, header rows 22.86 c-c, pin 1 at 4.58 mm from the SD end). In CAM coordinates (x from the SD/lens end, z = 0 at the MB bottom face):\n- MB spans x ≈ 2.4 → 40.5. Allow the MB end anywhere up to x = 42.5.\n- USB mouth is at x ≈ 40.5–41 (cavity must allow up to 43).\n- Board stack: MB 0–1.6, CAM PCB 12.6–13.85, lens tip about 22.8. MB solder tails go down to about −2 (allow −3).\n- Width: PCB pocket 27.8–28.0 (0.4–0.5 clearance per side).\n\n2) Button zone. The IO0 and RST plungers stick out about 1.25 mm past both long edges at about 6–9 mm from the USB end (x ≈ 31.5–35), centred about 1.5 mm above the MB top face (z ≈ 3). There are two ways to handle this:\n- widen the pocket locally to ≥30.5 mm, or\n- cut slots open to the parting line.\nEither way, do NOT let a wall or rib touch the plungers. A housing that presses IO0 at power-up puts the ESP32 into download mode, so the camera will not boot. For access, use Ø2–2.5 mm pin-holes or printed flexure buttons in the side walls at that spot: IO0 on the CAM 5V-row side, RST on the 3V3-row side. On some boards the MB RST does nothing, so a power-cycle may be the real reset.\n\n3) USB opening. Make it centred across the width and centred about 1.0–1.5 mm above the MB top face (z ≈ 2.6–3.1). Size it at least 12.5 x 10 mm (13 x 10 safer) through the full wall. The overmold must reach within about 0.5 mm of the board end, because only about 6 mm of plug metal sticks out of the overmold. Keep the inner wall face ≤0.5 mm from the USB end of the board, or locally thin the wall. The opening's lower edge will sit about 2–3 mm below the MB bottom face, so the floor under the USB end must be cut away or be lower. For drop-in assembly on a split housing, make the opening a notch open to the parting line. Leave about 30 mm of free space, or a channel, behind the port for the plug body and strain relief.\n\n4) Z support and clamping:\n- Do not rely on the 11 mm header gap. It is 11.0 by parts math and about 10 by photo, so give 10–11.5 mm of take-up with a compliant element (1 mm foam pads, TPU tabs, or crush ribs).\n- Support the MB from below on its edges, away from the two tail rows (2.07 mm in from each long edge, x 3.3–23.6) and the USB legs. Good places are the USB-end corners outside the button zone, or a ledge between x ≈ 24–31.\n- Clamp the CAM from the lens side on its component-free areas: the corners at the SD end and across the antenna end.\n- The camera module is hand-taped (±1.5 mm), so make the lens window ≥13 mm with a 45° chamfer.\n\n5) RF. The ESP32-S module and its PCB antenna face down into the MB, at the USB/flash-LED end (antenna zone about 6.2 mm long), right next to the USB port. Keep heat-set inserts, screws, magnets, metal paint and thick walls away from about the last 10 mm of that end. Expect some Wi-Fi loss from the cable itself.\n\n6) The microSD slot and lens are at the opposite end from the USB. If you want card access, add a slot about 12.5 mm wide at the SD-end wall at CAM-face height. The CAM overhangs the MB there by about 2.4 mm, which can also serve as a positive end-stop.\n\n7) Print and fit (P1S, 0.4 mm nozzle). Use 0.4 mm clearance per side on the board pocket, 0.5 mm on openings, and 1.2–1.6 mm minimum walls. Print a 2-hour fit-test coupon first. It only needs three features: the pocket footprint, the USB-end wall with its opening, and the button slots. Then confirm with calipers MB length (38 vs 40), board gap (10 vs 11) and USB axis height, and update the parameters."
+    },
+    {
+      "topic": "parts",
+      "items": [
+        {
+          "name": "6x6 mm tactile switch: body footprint and case height",
+          "value_mm": "6.0 ±0.2 x 6.0 ±0.2 square; case height 3.5 (top of metal frame/case, without the plunger)",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+            "https://www.adafruit.com/product/367"
+          ],
+          "notes": "From the Omron B3F-1000 drawing (page 4). Adafruit's 6 mm kit button (6.0 x 6.0 x 5.0) uses the B3F-10XX footprint, so generic 6x6 kit buttons are B3F clones. Omron applies ±0.4 to undimensioned features, so model the pocket at 6.3-6.4 square."
+        },
+        {
+          "name": "6x6 mm tactile switch: total height incl. plunger (above PCB/body bottom)",
+          "value_mm": "4.3 ±0.2 (B3F-1000 flat) | 5.0 ±0.2 (B3F-1020) | 7.0 | 9.5 | 7.3 (projected square stem). C&K PTS645 also offers 13.0. The generic hobby part is 6x6x5.",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+            "https://www.mouser.com/datasheet/2/240/pts645-3050651.pdf",
+            "https://www.adafruit.com/product/367"
+          ],
+          "notes": "Kit buttons come in several heights. Plunger height above the case = total minus 3.5 mm, so 0.8 mm on a 4.3 part and 1.5 mm on a 5.0 part. Measure the actual part before fixing the actuator gap."
+        },
+        {
+          "name": "6x6 mm tactile switch: plunger diameter",
+          "value_mm": "Ø3.5 round (flat-plunger types). Projected type B3F-1050: 2.4 x 2.4 ±0.1 square stem on a Ø3.5 collar, 7.3 ±0.2 total",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+          ],
+          "notes": "Some Chinese 6x6 parts have a slightly different plunger diameter (about 3.3-3.5). Make the printed actuator contact pad Ø3.0-3.4 so it lands on the plunger and not on the metal frame."
+        },
+        {
+          "name": "6x6 mm tactile switch: leg spacing / footprint",
+          "value_mm": "Hole pitch 6.5 ±0.1 (across the leg sides) x 4.5 ±0.1; PCB holes Ø1.0; bent-leg outer span 7.7 ±0.5 (6.5 ±0.5 at the shoulder); legs about 3.4 below the body, about 0.7 wide",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+          ],
+          "notes": "The legs flare out to about 7.7 mm, so a leg-clearance pocket needs about 8.3 x 6.4. There are four legs but only two electrical nodes (pairs along the 4.5 mm side are joined internally)."
+        },
+        {
+          "name": "6x6 mm tactile switch: travel and actuation force",
+          "value_mm": "Pretravel 0.25 (+0.2/-0.1). Force options 0.98 N (100 gf), 1.47 N (150 gf), 2.55 N (260 gf), 4.9 N (500 gf). Release force ≥0.2-0.7 N. Generic 6x6: 100/160/260 gf, 0.25 travel.",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+            "https://www.farnell.com/datasheets/2630667.pdf",
+            "https://www.mouser.com/datasheet/2/240/pts645-3050651.pdf"
+          ],
+          "notes": "The stroke is very short. A printed actuator with more than about 0.3 mm of slop before it touches the plunger feels dead, and any preload can actuate the switch on its own. The force grade of an unbranded kit part is unknown; 160-260 gf is typical."
+        },
+        {
+          "name": "12x12 mm tactile switch: body and heights",
+          "value_mm": "12.0 ±0.2 square; case height 3.5; round collar Ø7.1 reaching 4.3 ±0.2 (flat type, total 4.3); projected type total 7.3 ±0.2 with a 3.8 ±0.1 square stem (top portion of stem about 1.8 ±0.2)",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+            "https://uk.rs-online.com/web/p/tactile-switches/3786757",
+            "https://uk.rs-online.com/web/p/tactile-switches/3786763"
+          ],
+          "notes": "Omron B3F-4050 drawing on page 6. The generic '12x12x7.3' kit switch is this projected type. Resellers describe the cap mount as a '3.4 x 3.8 mm square shaft with locking notch'. Adafruit's '12 mm square, 6 mm tall' part has a different height again, so measure."
+        },
+        {
+          "name": "12x12 mm tactile switch: leg spacing / footprint",
+          "value_mm": "Hole pitch 12.5 ±0.1 x 5.0 ±0.1; PCB holes Ø1.2; outer leg span 13.8 ±0.5; legs 3.5 below the body; two Ø1.6 positioning bosses on the underside (Ø1.8 holes at 9.0 pitch)",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+          ],
+          "notes": "A bare switch with no PCB sits flat on its case bottom, but the bosses protrude, so leave about 1 mm relief or Ø2 holes under them."
+        },
+        {
+          "name": "12x12 mm tactile switch: travel and force",
+          "value_mm": "Pretravel 0.3 (+0.2/-0.1). Force 1.27 N (130 gf) or 2.55 N (260 gf) for Omron; APEM 12x12x7.3 parts 1.57 N and 2.55 N",
+          "confidence": "high",
+          "sources": [
+            "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+            "https://uk.rs-online.com/web/p/tactile-switches/3786757",
+            "https://uk.rs-online.com/web/p/tactile-switches/3786763"
+          ],
+          "notes": "Generic kit parts are probably about 160-260 gf, but no source confirms this."
+        },
+        {
+          "name": "12x12 mm switch round cap (A24-style)",
+          "value_mm": "Cap about Ø13 x 8 tall (reseller spec); switch with round cap assembled about 12 x 12 x 12",
+          "confidence": "low",
+          "sources": [
+            "https://zbotic.in/?p=454259",
+            "https://stg.robu.in/?p=890235",
+            "https://www.adafruit.com/product/1009"
+          ],
+          "notes": "I found no manufacturer drawing. The Ø13 and 8 mm figures come from Indian reseller listings. Adafruit gives only the assembled 12x12x12 size. Measure the actual cap; the skirt diameter may be 11.5-13."
+        },
+        {
+          "name": "Which button each kit includes",
+          "value_mm": "Official Arduino Starter Kit (K000007): 10 pushbuttons, size not stated. Elegoo UNO Super/Basic Starter: 5 x 'Button (small)', which the Elegoo lesson photo shows as a 6x6 tactile switch with a tall round black plunger. 12x12x7.3 switches with colored caps come in separate assortment packs.",
+          "confidence": "medium",
+          "sources": [
+            "https://rapidonline.com/arduino-k000007-starter-kit-including-uno-board-563530",
+            "https://fabacademy.org/2018/labs/fablabbrighton/students/james-moore/materials/Programming/Digital_inputs.pdf",
+            "https://the-diy-life.com/elegoo-uno-project-super-starter-kit-unboxing-review/",
+            "https://dbtechreviews.com/2019/09/16/elegoo-basic-starter-kit-unboxing-project/",
+            "https://thingbits.in/products/25-pcs-tactile-button-switch-assortment-pack"
+          ],
+          "notes": "The Elegoo size is inferred from the tutorial photo and breadboard diagram (the switch straddles the centre trench, which fits 6x6, not 12x12). Plunger height is not stated, and the photo suggests a 6x6x7 to 6x6x9 type. The official Arduino kit size is unconfirmed: store pages were rate-limited and no listing gives dimensions. Caliper-measure the user's own buttons before printing."
+        },
+        {
+          "name": "Jumper wires in the kits",
+          "value_mm": "Official Arduino kit: 70 solid-core + 2 stranded jumper wires, without Dupont housings. Elegoo Super Starter: 65 breadboard jumpers + 10 female-to-male Dupont wires.",
+          "confidence": "medium",
+          "sources": [
+            "https://rapidonline.com/arduino-k000007-starter-kit-including-uno-board-563530",
+            "https://the-diy-life.com/elegoo-uno-project-super-starter-kit-unboxing-review/"
+          ],
+          "notes": "This affects the wire channel. Solid-core jumpers have bare ends; Dupont F-M wires have a 14 mm rigid housing at each end."
+        },
+        {
+          "name": "Dupont 2.54 mm 1-pin housing",
+          "value_mm": "About 2.54 x 2.54 cross-section x 14 long; latch side slightly wider than 2.54; female crimp contact about 12 long",
+          "confidence": "medium",
+          "sources": [
+            "https://protosupplies.com/product/2-54mm-housing-1p/",
+            "https://protosupplies.com/product/2-54mm-female-pins/",
+            "https://www.berrybase.de/en/dupont-housing-1x2-pin"
+          ],
+          "notes": "No manufacturer drawing was found. Exposed male pin length was not found in a reliable source, so it is not given. Channel sizing is in design_advice."
+        },
+        {
+          "name": "Neodymium disc pull force (magnet on thick steel, vendor figures)",
+          "value_mm": "6x3 N45: about 0.99 kg (9.7 N), shear about 0.20 kg. 6x3 N35: about 1.0 kg. 6.35x3.17 N52: 1.29 kg. 6x2 N45: about 0.74 kg (shear 0.15 kg). 8x3 N45: about 1.5 kg (shear 0.29 kg). 10x3 N42: about 1.8 kg (shear 0.36 kg).",
+          "confidence": "high",
+          "sources": [
+            "https://www.supermagnete.de/eng/disc-magnets-neodymium/disc-magnet-6mm-3mm_S-06-03-N",
+            "https://uk.rs-online.com/web/p/neodymium-magnets/6950175",
+            "https://www.kjmagnetics.com/proddetail.asp?prod=D42-N52",
+            "https://www.supermagnete.de/eng/disc-magnets-neodymium/disc-magnet-6mm-2mm_S-06-02-N",
+            "https://www.supermagnete.de/eng/disc-magnets-neodymium/disc-magnet-8mm-3mm_S-08-03-N",
+            "https://www.supermagnete.de/eng/disc-magnets-neodymium/disc-magnet-10mm-3mm_S-10-03-N"
+          ],
+          "notes": "These are ideal contact values. Shear (sliding) resistance is only about 20% of pull, so a lid needs a locating lip or pins and should not rely on magnets for lateral hold. Supermagnete gives ±0.1 mm diameter/height tolerance and 80 °C maximum."
+        },
+        {
+          "name": "Magnet-to-magnet pull through a printed skin (model estimate)",
+          "value_mm": "Pair of 6x3 N35, axial, coaxial: about 990 g at 0 gap, 670 g at 0.4, 500 g at 0.8, 390 g at 1.2, 250 g at 2.0. 6x3 N52: 1450/980/735/570/365 g. 6x2 N35: 760/480/350/270/165 g. 8x3 N35: 1470/1040/810/650/445 g.",
+          "confidence": "low",
+          "sources": [
+            "https://magpylib.readthedocs.io/",
+            "/tmp/claude-0/-home-user-formnerd/b6113a1b-6fee-5055-a29d-0117c791e712/scratchpad/magforce.py"
+          ],
+          "notes": "Computed by me with magpylib 6.0 getFT, assuming Br = 1.18 T (N35) and 1.43 T (N52) and ideal rigid magnetisation. Real pairs will be somewhat lower; derate by about 30%. The gap is the total plastic between the magnet faces, for example 2 x 0.4 mm skins = 0.8 mm. A 30 g lid weighs 0.29 N, so one 6x3 N35 pair at 0.8 mm (about 4.9 N modelled, about 3.4 N derated) holds it with about 10x margin."
+        },
+        {
+          "name": "Magnet pocket: press fit (PLA, Bambu)",
+          "value_mm": "Diameter = magnet + 0.10 to 0.15 (6x3: Ø6.10-6.15; one P1S user reports 6.15 x 3.1). Depth = thickness + 0.1.",
+          "confidence": "medium",
+          "sources": [
+            "https://forum.bambulab.com/t/is-vision-encoder-worth-is-there-any-big-difference-if-you-use-it/163418/110",
+            "https://makerworld.com/models/738388",
+            "https://forum.bambulab.com/t/cant-figure-out-hole-size-for-magnets/220680"
+          ],
+          "notes": "Results vary with wall count, filament and part size: the same 4.15 hole fit on a small test piece but would not accept the magnet on a full-size box. Magnets can run 0.05-0.10 over nominal. Print a test coupon at Ø6.05/6.10/6.15/6.20/6.25."
+        },
+        {
+          "name": "Magnet pocket: glue fit / flush",
+          "value_mm": "Diameter = magnet + 0.2 (6x3: Ø6.2, PLA; +0.3 for PETG). Depth = thickness, rounded up to a layer multiple (3.0-3.2 at 0.2 mm layers). Add a 0.3-0.5 chamfer on the pocket mouth.",
+          "confidence": "medium",
+          "sources": [
+            "https://forum.bambulab.com/t/perfect-flush-magnet-fit/205491",
+            "https://makerworld.com/models/2932423"
+          ],
+          "notes": "Use CA glue or epoxy. For a pocket printed opening downward, add about one extra layer of depth."
+        },
+        {
+          "name": "Magnet pocket: embedded at a print pause (P1S)",
+          "value_mm": "Diameter = magnet + 0.3; depth = thickness + 0.4; 0.4 mm skin printed over the top (2 layers at 0.2)",
+          "confidence": "medium",
+          "sources": [
+            "https://forum.bambulab.com/t/perfect-flush-magnet-fit/205491"
+          ],
+          "notes": "The article recommends a looser, glued pocket on the P1S because there is little room to press a magnet in during a pause. Use Bambu Studio 'Add pause' at the layer where the pocket top closes. Steel nozzle and hotend parts attract magnets, so glue them before resuming."
+        },
+        {
+          "name": "Bambu Studio defaults for P1S 0.4 nozzle, '0.20mm Standard'",
+          "value_mm": "wall_loops 2; outer wall line 0.42, inner wall 0.45 (2 walls ≈ 0.87); top shell 5 layers / 1.0; bottom shell 3 layers; sparse infill 15%; elephant foot compensation 0.15; X-Y hole compensation 0; X-Y contour compensation 0",
+          "confidence": "high",
+          "sources": [
+            "https://github.com/bambulab/BambuStudio/blob/master/resources/profiles/BBL/process/0.20mm%20Standard%20%40BBL%20X1C.json",
+            "https://github.com/bambulab/BambuStudio/blob/master/resources/profiles/BBL/process/fdm_process_single_0.20.json",
+            "https://github.com/bambulab/BambuStudio/blob/master/resources/profiles/BBL/process/fdm_process_common.json"
+          ],
+          "notes": "The X1C 0.20 profile lists the P1S 0.4 nozzle as compatible. With hole compensation 0, vertical holes print slightly small. The Bambu wiki gives the correction as half the measured diameter error."
+        },
+        {
+          "name": "Minimum / recommended wall thickness (PLA enclosure, 0.4 nozzle)",
+          "value_mm": "Absolute minimum about 0.9 (2 perimeters; walls thinner than about 1.0 trigger single-wall thin-wall handling). Structural 1.2-1.6 (3-4 perimeters). Print service minimum 1.6 for a 50x50 mm part, 2.0 for 100x100. Recommended for a handheld shell: 2.0 with 4 wall loops.",
+          "confidence": "medium",
+          "sources": [
+            "https://forum.bambulab.com/t/help-understanding-thin-walls/110183",
+            "https://jlc3dp.com/help/article/3d-printing-design-guideline",
+            "https://homemodelenginemachinist.com/threads/what-fillament-wall-thickness-and-fill-percentage-for-patterns.35802/post-406190"
+          ],
+          "notes": "Bambu publishes no official minimum wall for the P1S. These are community values and a print-service rule. Use top/bottom skins of at least 1.0 (5 layers). Ribs and bosses ≥1.2."
+        },
+        {
+          "name": "Fit clearances on Bambu printers, PLA (per side unless noted)",
+          "value_mm": "Press/interference: 0 to 0.05 per side (0-0.10 diametric). Snug locating fit: about 0.10 per side. Sliding fit between separately printed parts: 0.15-0.20 per side (0.30-0.40 diametric). Print-in-place: about 0.20 per side (0.1 can work on a P1S but is marginal). Print-service conservative value: 0.5.",
+          "confidence": "medium",
+          "sources": [
+            "https://wiki.cci.arts.ac.uk/books/digital-fabrication-lab/page/design-the-clearance-and-tolerance-yC5",
+            "https://forum.bambulab.com/t/how-do-you-use-tolerance-value-in-your-design-with-bl/123711",
+            "https://www.val.town/embed/x/dcm31/stl-creator/PRESS-FIT-NOTES.md",
+            "https://fabacademy.org/2026/labs/kochi/students/mishael-sharaf/assignments/week05.html",
+            "https://jlc3dp.com/help/article/3d-printing-design-guideline"
+          ],
+          "notes": "No official Bambu figure exists. The values come from an H2D lab guide, P1S forum users, an A1 Mini PLA ladder (slide 0.15 / tight 0.05 radial) and an A1 print-in-place test. Sources mix per-side and diametric conventions, so check which one your CAD uses. Fits are tighter on the first layers because of elephant foot."
+        },
+        {
+          "name": "Printed pins / posts",
+          "value_mm": "Minimum Ø2.0 for posts 2-4 tall and Ø3.0 for 3-6 tall (print-service rule). Pin-to-hole: about 0.2 diametric for a slip fit, 0-0.1 diametric for a press fit.",
+          "confidence": "medium",
+          "sources": [
+            "https://jlc3dp.com/help/article/3d-printing-design-guideline",
+            "https://wiki.cci.arts.ac.uk/books/digital-fabrication-lab/page/design-the-clearance-and-tolerance-yC5"
+          ],
+          "notes": "Vertical printed pins shear easily between layers. For hinge or alignment pins under load, use Ø≥3 printed horizontally, or a steel pin or M2/M3 screw in a printed hole."
+        }
+      ],
+      "design_advice": "Housing design advice (P1S, 0.4 nozzle, PLA). Everything below rests on the cited sources, except values marked as my estimate.\n\n1) Shutter button with a kit tactile switch.\n- Measure the actual button first. Elegoo kits appear to ship 6x6 switches with a tall round plunger. The official Arduino kit size is unconfirmed.\n- 6x6 pocket: about 6.3-6.4 square, 3.5 deep for the case. Add a relief under it about 8.3 x 6.4 x 3.6 for the flared legs.\n- Back the switch with a solid printed floor or rib so finger force goes into the housing, not into the solder joints or wires.\n- Do not let fingers press the bare plunger through a hole. Use a captive printed button: a Ø6-8 cap with a flange inside the shell, in a bore 0.15-0.20 mm per side larger (for example a Ø6.0 cap in a Ø6.35-6.4 bore). Give the cap a Ø3.0-3.4 contact nub that rests about 0.1-0.2 above the plunger.\n- Total pretravel is only 0.25 mm (0.3 mm for 12x12), so too much slop feels dead and preload causes false triggers.\n- Limit overtravel with the flange or a hard stop so the cap cannot push the plunger more than about 0.3-0.5 past actuation.\n- Print the cap upright with its top face up, and chamfer its bed-side edge 0.3-0.5 to cancel elephant foot.\n- 12x12x7.3 variant: pocket 12.4-12.5 square, 3.5 deep, with relief for the 13.8 leg span and the Ø1.6 bosses. The cap can grip the 3.8 square stem.\n\n2) Wiring.\n- An ESP32-CAM plugged into an ESP32-CAM-MB has its header pins buried in the MB's female sockets, so a Dupont female cannot clip onto them. Plan to solder thin wires to the button, and either to the ESP32-CAM pins at their shoulder or via a stacking header. This is from general knowledge; I did not research it here.\n- If Dupont-ended wires must pass through the shell: the channel needs at least 3.2 x 3.2 per housing (2.54 nominal, latch side wider, plus about 0.3 per side). A straight run of at least 15 mm is needed past any connector, because the housing is 14 mm and rigid.\n- For bare 22-26 AWG wire, a 2 x 2 to 2.5 x 3 slot is enough. This is my estimate; wire outer diameter was not sourced.\n- Add 0.5-1 mm strain-relief ribs or a zip-tie anchor near the button.\n\n3) Lid magnets.\n- A 30 g lid needs only 0.29 N. One 6x3 N35 pair through two 0.4 mm skins (0.8 mm gap) gives about 3-5 N (model estimate, low confidence), roughly 10x margin.\n- Use two pairs (6x3 or 6x2) at diagonal corners for even seating, or four for a positive snap feel.\n- Magnets resist sliding with only about 20% of their pull, so add a 1.5-2 mm locating lip or two Ø3 pins with 0.15-0.2 per-side clearance for lateral location.\n- Pocket for glue: Ø6.2 x 3.1-3.2 deep (6x3), with a 0.3-0.5 chamfer.\n- Pocket for press fit: Ø6.10-6.15. Print a test coupon at 6.05-6.25 first, because results vary with part size.\n- Hidden magnets: embed at a pause with a Ø6.3 pocket, 3.4 deep, a 0.4 skin over the top, and CA glue.\n- Mark polarity (dot or chamfer) on both halves. Keep magnets about 10 mm or more away from the ESP32 PCB antenna area, and keep the 80 °C maximum in mind for a car dashboard.\n\n4) Shell and fits.\n- Bambu defaults are 2 walls (≈0.87 mm), 5 top layers / 1.0, 3 bottom layers, 15% infill, elephant foot 0.15, hole compensation 0.\n- For a sturdy handheld shell, model walls at 2.0, set wall_loops = 4, bump bottom shell layers to 5, and use 20-25% gyroid infill.\n- Clearances, per side:\n  - lid lip or sliding parts: 0.15-0.20\n  - board pockets: 0.2-0.3, since PCB outlines vary ±0.1-0.2\n  - press fits: 0-0.05\n  - print-in-place: 0.2 or more\n- Vertical holes print slightly undersize, so add 0.1-0.2 to holes that must slip, or set X-Y hole compensation.\n- Make printed pins and bosses Ø3 or larger. Use M2/M2.5 screws into Ø1.8/2.2 pilot holes for anything that is opened repeatedly.\n- Print a fit-test coupon first: magnet holes, a button cap in its bore, and a lid lip at 0.10/0.15/0.20 per side.\n- Then caliper-measure the actual kit buttons and magnets and update the parameters."
+    }
+  ],
+  "crosscheck": {
+    "items": [
+      {
+        "name": "ESP32-CAM PCB outline W x L",
+        "value_mm": "CONFIRMED. 27.0 x 40.0 on the official drawing; 27 x 40.5 x 4.5 (±0.2) in the spec table. One caliper-measured board: 27.25 x 40.35. Design the pocket for 27.0–27.3 x 40.0–40.6, e.g. 27.7 x 41.0 at 0.2–0.3 mm per side.",
+        "confidence": "high",
+        "sources": [
+          "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+          "https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png",
+          "https://wiki.dfrobot.com/dfr0602/",
+          "https://www.handsontec.com/dataspecs/module/ESP32-CAM.pdf",
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf",
+          "https://www.lextronic.fr/lextronic_doc/joy-it/SBC-ESP32-CAM.pdf"
+        ],
+        "notes": "I extracted the Ai-Thinker V1.0 drawing image myself. It labels 40 (mm), 27 (mm), 6.218 (ANT zone) and 33.782. Its pixel aspect is 692/466.5 px, which is 40.0/27.0 at 17.3 px/mm. The DFRobot dimension PNG is the same drawing and gives the same 40.0/27.0 at 16.05 px/mm. The spec-table text 'Size 27*40.5*4.5 ±0.2 mm' is confirmed in the Ai-Thinker PDF. Handsontec ('40.5mm x 27mm x 4.5mm' plus a photo labelled 40.0 / 27.0) and Joy-IT ('27 x 40,5 x 4,5 mm') agree. rcland12 caliper values: 40.35 x 27.25 (antenna end overhangs 'negligible ... might be 0.05'). From the DFRobot ruler photo I estimate about 40.0 x 27.3 (±0.3). The 4.5 mm is consistent with PCB 1.25 + ESP32-S module about 3.25 (my inference)."
+      },
+      {
+        "name": "ESP32-CAM PCB corner radius",
+        "value_mm": "CORRECTED: about 2.8–2.9 on the drawing (previously 2.3–2.6). Not dimensioned. The previous pocket advice is also corrected: use a pocket corner radius of 2.5 or less (or a sharp/FDM-natural corner), not R3 or more.",
+        "confidence": "low",
+        "sources": [
+          "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+          "https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png"
+        ],
+        "notes": "Least-squares circle fits to the outline-arc pixels: Ai-Thinker drawing TL/TR/BL/BR = 2.93/2.76/2.84/2.81 mm at 17.29 px/mm. DFRobot PNG TL/TR = 2.81/2.82 mm at 16.05 px/mm. The bottom corners are obscured by dimension lines; visually about 47 px, about 2.9 mm. The drawing may not be to scale for radii, so measure the real board. Geometry check: a pocket corner fillet Rp does not touch a board corner of radius rb if Rp ≤ rb + c/(1−1/√2) ≈ rb + 3.41·c, where c is the clearance per side. With rb ≈ 2.3–2.9 and c = 0.2, Rp ≤ 3.0–3.6. A LARGER pocket radius is what binds, so 'R≥3 so corners never bind' was backwards. FDM inner corners (about 0.2–0.4 radius from the nozzle) are always safe."
+      },
+      {
+        "name": "ESP32-CAM PCB thickness",
+        "value_mm": "PARTLY CONFIRMED. One caliper measurement gives 1.25. CAD models use 1.0 (VaTTeRGeR) and 1.5 (mock-up). Thick and thin variants exist, but I could not verify their mm values (1.0 / 1.6 came from STL slot inference). Design the slot or clamp for 1.0–1.7.",
+        "confidence": "medium",
+        "sources": [
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://www.printables.com/model/1118515-ai-thinker-esp32-cam-holder",
+          "https://printables.com/model/973251-esp32-cam-case-enclosure-for-thicker-esp32-board"
+        ],
+        "notes": "rcland12: 'PCB thickness (bare) ... 1.25mm'. I downloaded the VaTTeRGeR FCStd: the CAM body 'Pad' has Length 1.0. Printables pages return 403 to me. Search snippets confirm 1118515 says there are 'two versions ... one with a thicker PCB and one with a thinner PCB', with no mm values, and 973251 is titled 'for thicker ESP32 board'. Do not use PCB thickness for retention; clamp on the faces with a compliant rib."
+      },
+      {
+        "name": "ESP32-CAM pin headers: count, pitch, row spacing, positions",
+        "value_mm": "CONFIRMED. DIP-16, 2 x 8, pitch 2.54, rows 22.86 c-c, each row 2.07 from its long edge. Pin 1 (5V / 3V3) is 4.58 from the SD end. Pins at Y = 4.58 + 2.54·n (n = 0..7, last at 22.36). 5V row: 5V, GND, IO12, IO13, IO15, IO14, IO2, IO4. Other row: 3V3, IO16, IO0, GND, VCC, U0R, U0T, GND (labelled GND/R on some clones).",
+        "confidence": "high",
+        "sources": [
+          "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+          "https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png",
+          "https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2020/03/ESP32-CAM-AI-Thinker-schematic-diagram.png",
+          "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+          "https://www.waveshare.com/img/devkit/accBoard/ESP32-CAM/ESP32-CAM-MB-details-1.jpg"
+        ],
+        "notes": "My pixel check of the drawing: pitch 2.541, row spacing 22.87, pin-1 centre 4.60 from the end, rows 2.05 from both long edges. The drawing is the ESP32-S (module) side view, with ANT at the top and 5V bottom-left. On the camera side the SD socket sits at the pin-1 end, and the 5V row is on the same physical long edge (RNT and Waveshare camera-side images). Schematic v1.6: VCC selected by R1/R2 0R (3V3 or 5V). Waveshare's camera-side photo shows the 'GND/R' label. RNT readers say GND/R 'connects directly to a resistor' and 'if you connect the Gnd/R pin to 0V, the board sits in a RESET state'. The VaTTeRGeR CAD header blocks start 3.30 from the SD end, which matches 4.58 − 1.27."
+      },
+      {
+        "name": "ESP32-CAM header pin length below PCB (module side)",
+        "value_mm": "CONFIRMED, upgraded. Pin tips about 8.5 (range 7.5–8.7) below the PCB back (module-side) face, which is about 5.3 beyond the ESP32-S shield top. Camera-side solder tails about 1.5–2.3.",
+        "confidence": "medium",
+        "sources": [
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/with-wi-fi/esp32-cam-wifi-and-bluetooth-board-with-ov2640-camera",
+          "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad",
+          "https://printables.com/model/973251-esp32-cam-case-enclosure-for-thicker-esp32-board"
+        ],
+        "notes": "Independent derivation from rcland12 caliper values. 'Full ESP32 height w/ camera' (no pins) is 12.35 and 'w/ pins and camera' is 17.61, so pins protrude 5.26 beyond the module face. Board + SD socket + module without pins is 6.70, and 6.70 + 5.26 = 11.96, which matches Tinytronics' '40x27x12mm (including headers, without camera)'. The module face sits about 3.25–3.45 above the PCB back face (4.5 spec − 1.25 PCB, or 6.70 − 1.25 − about 2.0 SD), so tips are about 8.5–8.7 below. The 7.5 lower bound covers the alternative reading of rcland12's 8.9 lens figure. This is the standard 2.5 spacer + 6 mating length. Printables 973251: 'the leads on the ESP32cam boards I have were too long' (search snippet), so leave +1 mm. SporePrint states tails stick out about 2.3 on the camera face (secondary source)."
+      },
+      {
+        "name": "ESP32-CAM camera FPC connector (24-pin, 0.5 mm pitch)",
+        "value_mm": "POSITION CONFIRMED: X about 5.1–22.3 (including ears), Y about 22.6–28.7 from the SD end including the latch; white body about 23.3–28.1. HEIGHT UNVERIFIABLE (about 2–2.7 remains a photo estimate).",
+        "confidence": "medium",
+        "sources": [
+          "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf",
+          "https://www.waveshare.com/img/devkit/accBoard/ESP32-CAM/ESP32-CAM-MB-details-1.jpg",
+          "https://welectron.com/Arducam-M0031-OV2640-Camera-Module"
+        ],
+        "notes": "Measured on DFRobot's top-down ruler photo (page 5 of DFR0602_Web.pdf, cm rulers on both axes, about 13.4 px/mm at 2x). The Waveshare camera-side image gives a similar X 5.2–23.1, Y 23.5–29.9 (±1). The FPC enters from the SD side. Arducam names the mating connector 'F32R-1A7H1-11024', but I found no height for it. Leave at least 1 mm of air above the flip-lock actuator."
+      },
+      {
+        "name": "OV2640 lens centre position (stock 21 mm module)",
+        "value_mm": "CONFIRMED as a range. X about 13.5 (board centreline). Y about 9.5–10.5 from the SD/pin-1 end (about 29.9–31 from the antenna end). Allow ±2 in both axes.",
+        "confidence": "low",
+        "sources": [
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+          "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf",
+          "https://printables.com/model/786784-esp32-camera-prusaconnect-on-articulating-mount"
+        ],
+        "notes": "VaTTeRGeR FCStd (Sketch002): the camera block runs X 5.01–14.01 from the SD end and Y 9–18 of 27, so its centre is (9.5, 13.5). I measured the RNT pinout illustration holder centre at 13.55 / 10.47 mm (the image is a drawing, not a photo). My geometric check: fingers about 3.5 mm deep in a connector whose entry is at Y about 23, plus a 21 mm module, puts the holder at about Y 5.5–13.6, centre about 9.6 (my inference). The module is taped by hand. Attribution correction: the '2–3 mm off-centred camera-adjust part' report comes from Printables 786784 (PrusaConnect articulating mount, search snippet), not MakerWorld. The lens axis is normal to the PCB on the SD-socket face."
+      },
+      {
+        "name": "Front-side stack: lens tip height",
+        "value_mm": "CORRECTED / narrowed: the lens tip is about 7.6–8.9 above the camera-side PCB face, nominal about 8.0–8.3. The previous lower bound of 7.0 is not supported. From the PCB back face: add 1.0–1.6, giving about 8.7–10.5.",
+        "confidence": "medium",
+        "sources": [
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://welectron.com/Arducam-M0031-OV2640-Camera-Module"
+        ],
+        "notes": "rcland12 gives 'Barrel height above PCB face 8.9mm' and says the camera 'lays flat on the micro SD card slot ... base ... goes up 2.20mm, then ... cylinder ... up ~4.5mm'. Its own totals (6.70 without camera, 12.35 with camera) put the camera top 5.65 above the SD socket top. That implies about 7.65–7.85 above the front face unless the 8.9 was taken from the PCB underside, so the dataset is about 1 mm self-inconsistent. VaTTeRGeR FCStd: camera top at 9.3 above PCB bottom with a 1.0 PCB, i.e. 8.3 above the top face. Arducam module 5.85 tall + SD about 2.0 + tape gives about 7.9–8.2. The earlier agent's two items disagreed (7.0–8.5 vs 8.3–9.0); 7.6–8.9 reconciles them. Refocusing or swapping the lens changes it."
+      },
+      {
+        "name": "OV2640 camera module dimensions",
+        "value_mm": "PARTLY CORRECTED. Overall 21 long, finger end 12.5 wide, 24 pins at 0.5 pitch, overall height 5.85 (Arducam M0031). Square holder 8.1–8.6 (caliper 8.12 x 8.12 / 8.15 x 8.25; Handsontec label 8.6). Barrel base Ø7.92 (caliper), narrowing toward the tip. Profile: square base about 2.2 high, then cylinder about 4.5.",
+        "confidence": "medium",
+        "sources": [
+          "https://welectron.com/Arducam-M0031-OV2640-Camera-Module",
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://www.handsontec.com/dataspecs/module/ESP32-CAM.pdf",
+          "https://kunkune.co.uk/shop/kunkune-accessories/ov2640-camera-upgrade-2mp-length-75mm/",
+          "https://docs.sunfounder.com/projects/esp-cam-kit/en/latest/component_camera.html",
+          "https://probots.co.in/ov2640-160-degree-wide-angle-lens-2mp-camera-module-24pin-21mm.html"
+        ],
+        "notes": "Arducam M0031 verbatim: 'Overall Dimension: 21 x 12.5 x 5.85mm', '24 pin goldenfinger', 'EFL: 4.22mm', 'F.NO: 2.0', '52 degree (diagonal)'. The earlier '6.6 then 4.8' barrel estimate is replaced by the caliper Ø7.92 at the barrel base; the tip may be smaller. Size a through-hole for the barrel at Ø8.5 or more, or a pocket for the square holder at 9.0 or more. Kunkune: '24PIN 0.5mm pitch'. SunFounder: '1/4-inch lens', 1600x1200. I did not find the 2.2 µm pixel size on these pages, so it is unverified. Probots FAQ: lens 'sealed with a tiny dot of glue'. A wide-angle replacement holder is cited as 9 x 9 (Printables search snippet)."
+      },
+      {
+        "name": "Camera FPC cable length / longer versions",
+        "value_mm": "PARTLY CONFIRMED. 21 (standard) and 75 confirmed. The 40 mm version is unverifiable (page 403, not found in search).",
+        "confidence": "medium",
+        "sources": [
+          "https://docs.sunfounder.com/projects/esp-cam-kit/en/latest/component_camera.html",
+          "https://probots.co.in/ov2640-160-degree-wide-angle-lens-2mp-camera-module-24pin-21mm.html",
+          "https://probots.co.in/ov2640-120-degree-wide-angle-lens-2mp-camera-module-24pin-75mm.html",
+          "https://kunkune.co.uk/shop/kunkune-accessories/ov2640-camera-upgrade-2mp-length-75mm/",
+          "https://www.tindie.com/products/mmm999/ov2640-21mm-66120-wide-angle-lens-camera-module/"
+        ],
+        "notes": "SunFounder: 'measuring just 21mm in length'. Probots: 'Cable Length: 21mm (Short version)'. Tindie: 'Length: 21mm'. Kunkune: 'Length 75mm', '24PIN 0.5mm pitch'. Probots FAQ #18: FPCs 'are highly susceptible to damage if creased sharply or folded repeatedly.' mikroelectron.com/product/me-13581 returns 403."
+      },
+      {
+        "name": "Stock lens field of view",
+        "value_mm": "CONFIRMED. 66–68° (axis unstated, probably diagonal), aperture f/2.4. Arducam M0031 variant: 52° diagonal, EFL 4.22, f/2.0.",
+        "confidence": "medium",
+        "sources": [
+          "https://docs.sunfounder.com/projects/esp-cam-kit/en/latest/component_camera.html",
+          "https://www.tindie.com/products/mmm999/ov2640-21mm-66120-wide-angle-lens-camera-module/",
+          "https://probots.co.in/ov2640-160-degree-wide-angle-lens-2mp-camera-module-24pin-21mm.html",
+          "https://kunkune.co.uk/shop/kunkune-accessories/ov2640-camera-upgrade-2mp-length-75mm/",
+          "https://welectron.com/Arducam-M0031-OV2640-Camera-Module"
+        ],
+        "notes": "SunFounder: 'aperture of f/2.4, offering a broad field of view of 68 degrees'. Tindie: 'Field of view: 66°/120°(optional)', 'Aperture: 2.4'. Probots: 'standard 66° or 120° lenses'. Kunkune states both 68 and 66. For the window, a 45° chamfered or flared opening that clears ±40° from the lens's front principal point is enough for 68° diagonal. 120°/160° lenses need far more."
+      },
+      {
+        "name": "Free GPIO for a shutter button (camera active)",
+        "value_mm": "CONFIRMED with one new caveat. Best: GPIO13 (5V row, pin n=3, Y=12.20), switched to GND (pin n=1, Y=7.12), with the SD card in 1-bit mode. Alternative: GPIO12 (n=2, Y=9.66), switched to GND only. Caveat: do not hold the button during SD_MMC.begin().",
+        "confidence": "high",
+        "sources": [
+          "https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2020/03/ESP32-CAM-AI-Thinker-schematic-diagram.png",
+          "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+          "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html",
+          "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/sd_pullup_requirements.html",
+          "https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf"
+        ],
+        "notes": "Checked against schematic v1.6: R8 47K on HS2_DATA3 (GPIO13); R7 'NC' on HS2_DATA2 (GPIO12); 47K on CMD/DATA0/DATA1; R5 10K on IO16 (PSRAM CS#); R19 10K on IO0. Espressif: 'GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO) are strapping pins'. GPIO13 is not a strapping pin and is RTC_GPIO14. GPIO16-17 are 'usually connected to the SPI flash and PSRAM'. GPIO12 must be low at reset with 3.3 V flash. RNT: 1-bit mode will 'free up GPIOs 12 and 13'. New caveat: Espressif's SD pull-up page asks for DAT3 to be pulled up, or tied to VDD, in 1-bit mode. GPIO13 is DAT3, so pressing the button while the card initialises can make the mount fail. Read the button only after mount; an external 10k pull-up is fine on 13. The RNT reader report (Leo Shmuylovich, 9 May 2023) of an INPUT_PULLUP read on GPIO13 'toggled between 1 and 0' is confirmed. All header pins sit inside the MB sockets, so solder to the camera-side tails."
+      },
+      {
+        "name": "Overall envelope (CAM board alone)",
+        "value_mm": "CONFIRMED. 40 x 27 x about 12 including headers, without camera. Caliper: 6.70 (PCB + SD + module), 12.35 with camera and no pins, 17.61 with camera and pins.",
+        "confidence": "high",
+        "sources": [
+          "https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/with-wi-fi/esp32-cam-wifi-and-bluetooth-board-with-ov2640-camera",
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://wiki.dfrobot.com/dfr0602/"
+        ],
+        "notes": "Tinytronics verbatim: '40x27x12mm (including headers, without camera)'. The rcland12 caliper values fit together as 6.70 + 5.26 (pins) = 11.96."
+      },
+      {
+        "name": "ESP32-CAM-MB PCB outline (W x L), micro-USB board",
+        "value_mm": "PARTLY CONFIRMED. W = 27 (high). L: my own photo measurement gives about 37.3–38.0; vendors give 39–40. Keep the design range 37.5–40.5 and caliper-check.",
+        "confidence": "medium",
+        "sources": [
+          "https://www.tinytronics.nl/en/development-boards/accessories/adapter-boards/esp32-cam-mb-programmer-shield",
+          "https://probots.co.in/esp32-cam-mb-micro-usb-programmer-ch340g-serial-chip-ov2640-camera.html",
+          "https://abra-electronics.com/wireless/wireless-wifi-en/esp32-cam-mb.html",
+          "https://randomnerdtutorials.com/wp-content/uploads/2021/01/ESP32-CAM-MB-Micro-USB-Programmer-CH340G-Serial-Chip.jpg",
+          "https://github.com/yellobyte/ESP32-DevBoards-Getting-Started/tree/main/boards/ESP32-CAM/doc"
+        ],
+        "notes": "Vendors: Tinytronics 'Dimension X 40, Y 27'; Probots '39.8 x 27 mm'; Abra 39 x 27 (search). My measurement on the RNT 1280x720 side photo uses the CAM header-tail pitch as the ruler (45.4 px per 2.54, about 17.9 px/mm). CAM edge band 269→989 px (about 40.2 mm, consistent); MB band 312→about 976–985 px, about 37.3–38.0 mm. The yellobyte top photo is too oblique: I get 36.3–38.7 depending on the perspective correction. Corners are rounded. The earlier discard of the 27 x 24 and 52.5 x 26 OpenSCAD outliers stands (not rechecked)."
+      },
+      {
+        "name": "ESP32-CAM-MB PCB thickness",
+        "value_mm": "UNVERIFIABLE. 1.6 is a CAD assumption only (VaTTeRGeR Pad004 = 1.6, which I verified in the FCStd); no datasheet.",
+        "confidence": "low",
+        "sources": [
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure"
+        ],
+        "notes": "Cults3D's '12.5 mm bottom-to-bottom' combined with the 11 mm header gap implies about 1.5–1.6. Budget 1.2–1.7."
+      },
+      {
+        "name": "MB height on its own (PCB + female headers + tails)",
+        "value_mm": "CONFIRMED (vendor values): 10–12. Arithmetic: 1.6 + 8.51 + about 1.6 tail protrusion (3.20 tail − 1.6 PCB) ≈ 11.7.",
+        "confidence": "medium",
+        "sources": [
+          "https://thinkrobotics.com/products/esp32-cam-mb-online",
+          "https://zbotic.in/product/esp32-cam-mb-micro-usb-download-module-for-esp32-cam-development-board/",
+          "https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC081LFBN-RC/810147"
+        ],
+        "notes": "Search results report ThinkRobotics 40 x 27 x 12 and Zbotic/Flyrobo 40 x 25 x 10 (L x W x H)."
+      },
+      {
+        "name": "USB connector type",
+        "value_mm": "CONFIRMED. Micro-USB B receptacle (plug interface 6.85 +0.02/−0.06 x 1.8 +0.02/−0.08), CH340C. USB-C MB variants exist in at least two sizes: about 40 x 27 (Zaitronics) and about 48 x 27 (circuit.rocks).",
+        "confidence": "high",
+        "sources": [
+          "https://www.tinytronics.nl/en/development-boards/accessories/adapter-boards/esp32-cam-mb-programmer-shield",
+          "https://www.waveshare.com/img/devkit/accBoard/ESP32-CAM/ESP32-CAM-MB-details-5.jpg",
+          "https://randomnerdtutorials.com/wp-content/uploads/2021/01/ESP32-CAM-MB-CH340G-Serial-Chip-USB-Converter.jpg",
+          "https://zaitronics.com.au/products/esp32-mb-motherboard-usb-board-usb-c-version",
+          "https://circuit.rocks/products/esp32-cam-usb-programmer-esp32-cam-mb-ov2640-2mp-wi-fi-ble-usb-c-ch340-8mb-psram",
+          "https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf"
+        ],
+        "notes": "Tinytronics: 'Micro USB female', 'CH340C'. The RNT close-up shows 'CH340C' and 'CN1'. Zaitronics: 'Interface: USB Type-C', 'Approximately 40mm x 27mm'. circuit.rocks: 'ESP32-CAM-MB ~48×27 mm', USB-C. 6.85 x 1.8 comes from Micro-USB spec Fig. 4-7."
+      },
+      {
+        "name": "USB position: edge, face, centring",
+        "value_mm": "CONFIRMED. USB is on the MB short end under the CAM antenna / flash-LED end (opposite the SD/lens end), centred across the 27 mm width, top-mounted on the MB component face facing the CAM. It is about 40 from the CAM SD end and about 30 from the lens centre.",
+        "confidence": "high",
+        "sources": [
+          "https://randomnerdtutorials.com/wp-content/uploads/2021/01/ESP32-CAM-MB-Micro-USB-Programmer-CH340G-Serial-Chip.jpg",
+          "https://www.waveshare.com/img/devkit/accBoard/ESP32-CAM/ESP32-CAM-MB-details-5.jpg",
+          "https://github.com/yellobyte/ESP32-DevBoards-Getting-Started/tree/main/boards/ESP32-CAM/doc",
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure"
+        ],
+        "notes": "In the RNT side photo the SD socket and lens are at the left end and the USB cable leaves the right end beside the 'ESP32-CAM' silkscreen. Waveshare's camera-side photo places the flash LED and 'ESP32-CAM' at the antenna end. VaTTeRGeR FCStd Sketch005: USB block 6 deep x 8 wide at y 9.5–17.5 of 27, i.e. centred."
+      },
+      {
+        "name": "USB receptacle overhang beyond MB PCB edge",
+        "value_mm": "UNVERIFIABLE beyond photos. 0 to +0.5 is plausible; budget 1.0.",
+        "confidence": "low",
+        "sources": [
+          "https://github.com/yellobyte/ESP32-DevBoards-Getting-Started/tree/main/boards/ESP32-CAM/doc",
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/"
+        ],
+        "notes": "In the yellobyte top photo the receptacle front looks roughly flush with the end edge, and there is an apparent edge step or notch around it, but the perspective prevents sub-mm reading. The VaTTeRGeR CAD block ends exactly at the board edge (x 34–40 of 40)."
+      },
+      {
+        "name": "USB receptacle body and plug-axis height",
+        "value_mm": "UNVERIFIABLE. Body about 7.5–8 W x about 2.6–3 H x about 6 D (CAD 8 x 6 x 3). Plug axis about 1.0–1.5 above the MB top face is an estimate.",
+        "confidence": "low",
+        "sources": [
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf"
+        ],
+        "notes": "VaTTeRGeR Sketch005 USB block: 6.0 (depth) x 8.0 (width), extruded 3.0. Only the plug shell 6.85 x 1.8 is spec-backed. Spec Fig. 4-8: contacts sit at least 5.4 from the overmold face ('5.4 MIN')."
+      },
+      {
+        "name": "Female header height on the MB",
+        "value_mm": "CONFIRMED (for the standard part): insulator 8.51 (0.335\"), tail 3.20. The MB part is unbranded.",
+        "confidence": "medium",
+        "sources": [
+          "https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC081LFBN-RC/810147",
+          "https://lioncircuits.com/parts/PPTC081LFBN-RC",
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure"
+        ],
+        "notes": "DigiKey and Zenode (via search) give an insulation height of 0.335\" (8.51 mm) and a post length of 0.126\" (3.20 mm). VaTTeRGeR CAD header blocks are 2.74 wide, inset 0.84 from each long edge, and start 3.30 from the SD end."
+      },
+      {
+        "name": "Gap: MB top face to ESP32-CAM PCB underside (stacked)",
+        "value_mm": "CONFIRMED. 11.0 nominal (8.5 female + 2.5 male spacer); design range 10.5–11.5.",
+        "confidence": "medium",
+        "sources": [
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://cults3d.com/en/3d-model/various/enclosure-for-esp32-cam-mb-with-additional-stands-and-extention-thebestdaddy",
+          "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad"
+        ],
+        "notes": "VaTTeRGeR FCStd checked: Pad003 = 11.0, the MB sketch sits at z = −11, MB pad 1.6. The Cults3D designer (search snippet; the page returns 403 to me) says 'the distance between the two PCBs plugged together (bottom edge-bottom edge) must be 12.5 mm', so 12.5 − 1.6 = 10.9. SporePrint quotes the same."
+      },
+      {
+        "name": "ESP32-CAM layers in the stack (PCB thickness, lens height)",
+        "value_mm": "PARTLY CORRECTED. CAM PCB 1.0–1.25 (caliper 1.25). Lens tip above the CAM top face 7.6–8.9: the caliper 8.9 is self-inconsistent with the same author's totals. CAM PCB 40.35–40.5 x 27–27.25.",
+        "confidence": "medium",
+        "sources": [
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://wiki.dfrobot.com/dfr0602/"
+        ],
+        "notes": "All rcland12 numbers quoted by the previous agent are confirmed verbatim: 40.35 x 27.25 x 1.25, 8.9, 8.12 x 8.12, 7.92. See the lens-tip item for why 8.9 may include the PCB. VaTTeRGeR: CAM PCB 1.0; components and SD 2.3 (Pad001); camera block from z 3.3 to 9.3."
+      },
+      {
+        "name": "Total stack height: MB bottom to lens tip",
+        "value_mm": "CONFIRMED with a small correction: about 21.5–22.8 (nominal about 22.2 = 1.6 + 11.0 + 1.25 + about 8.3). Including MB solder tails (+1.6 to 3): about 23–26.",
+        "confidence": "medium",
+        "sources": [
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://raw.githubusercontent.com/rcland12/ESP32-Security/master/MEASUREMENTS.md",
+          "https://github.com/59psi/SporePrint/blob/main/models/cam_mount.scad"
+        ],
+        "notes": "VaTTeRGeR: 1.6 + 11 + 9.3 = 21.9 from MB bottom to camera top. SporePrint: 'Whole stack: ~26 mm from lens top to MB stubs' and 'THT stubs 3 mm under the MB'. With 3.20 tails on a 1.6 PCB the stubs are about 1.6, unless longer tails are left untrimmed."
+      },
+      {
+        "name": "Alignment of MB footprint with ESP32-CAM outline",
+        "value_mm": "CONFIRMED. Both long edges are flush (27 / 27). The MB far (header) end is about 2.4 inset from the CAM SD end. The MB USB end is flush (±0.5) with the CAM antenna end. Design 0 to +2 overhang at the USB end.",
+        "confidence": "low",
+        "sources": [
+          "https://randomnerdtutorials.com/wp-content/uploads/2021/01/ESP32-CAM-MB-Micro-USB-Programmer-CH340G-Serial-Chip.jpg",
+          "https://dfimg.dfrobot.com/wiki/17577/DFR0602_esp32-qr_dimension_v1.png"
+        ],
+        "notes": "My own edge-band measurement on the RNT photo: CAM left end 269 px vs MB 312 px, so 43 px ≈ 2.4 mm at 17.9 px/mm. Right end: CAM 989 vs MB about 976–985, i.e. flush within about 0.5. This agrees with the earlier agent's numbers."
+      },
+      {
+        "name": "IO0 and RST button positions (MB)",
+        "value_mm": "CONFIRMED. Side-actuated SMD switches on the MB component face. Centres about 6–7.5 from the USB end (CAD zone 6.0–8.5). Plungers about 1.0–1.25 proud of each long edge (envelope about 29.5). About 3 tall. IO0 is on the CAM 5V/IO12/IO13 row side; RST is on the 3V3/U0R/U0T side.",
+        "confidence": "medium",
+        "sources": [
+          "https://randomnerdtutorials.com/wp-content/uploads/2021/01/ESP32-CAM-MB-Micro-USB-Programmer-CH340G-Serial-Chip.jpg",
+          "https://www.waveshare.com/img/devkit/accBoard/ESP32-CAM/ESP32-CAM-MB-details-5.jpg",
+          "https://github.com/yellobyte/ESP32-DevBoards-Getting-Started/tree/main/boards/ESP32-CAM/doc",
+          "https://github.com/VaTTeRGeR/ESP32-CAM-Enclosure",
+          "https://www.tinytronics.nl/en/development-boards/accessories/adapter-boards/esp32-cam-mb-programmer-shield"
+        ],
+        "notes": "The RNT side photo shows the MB 'IO0' button on the same long edge as the CAM's '5V GND IO12 IO13 IO15 IO14 IO2 IO4' tails. VaTTeRGeR Sketch005: bar x 31.5–34 of 40 (6.0–8.5 from the USB end), y +1.25 to −28.25 (29.5 wide, 1.25 proud), 3.0 tall. My yellobyte-photo estimate is IO0 about 6.4–7.0 and RST about 6.0–6.7 from the USB end, with RST about 1.0 proud. Tinytronics verbatim: 'The RST button on this shield does not work.' Use 2.5 wide x 4 tall wall slots at 5.5–9 from the USB end, or flexure pushers with at least 0.3 air."
+      },
+      {
+        "name": "Micro-USB plug overmold (access hole)",
+        "value_mm": "CONFIRMED. USB-IF straight Micro-B overmold is 10.6 W x 8.5 H MAX (mandatory). Hole 12.5 x 10 or larger (13 x 10 for cheap cables), centred on the plug axis. Contacts sit at least 5.4 from the overmold face.",
+        "confidence": "high",
+        "sources": [
+          "https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf",
+          "https://static.chipdip.ru/lib/086/DOC034086452.pdf"
+        ],
+        "notes": "I rendered Fig. 4-5 'Micro-B Plug Overmold, Straight': '8.5 MAX', '10.6 MAX'. Note 3: '...maximum dimensions are mandatory. Overmolding outer configuration, color and final shape are reference'. Fig. 4-8 gives '5.4 MIN' from the overmold face to the contact point, so the overmold must almost reach the receptacle mouth. The wall at the hole must be very thin or recessed (counterbore) so the overmold reaches the receptacle. I did not re-check the Molex/Goobay real-world sizes."
+      },
+      {
+        "name": "6x6 tactile switch: body footprint and case height",
+        "value_mm": "CONFIRMED. 6.0 ±0.2 square; case 3.5; general tolerance ±0.4. Pocket 6.3–6.4.",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+          "https://www.adafruit.com/product/367"
+        ],
+        "notes": "Omron B3F page 4 rendered: '6±0.2', '3.5', note 'tolerance of ±0.4 mm applies to all dimensions' where unspecified. Adafruit 367: '6.0mm x 6.0mm x 5.0mm', EAGLE package 'switch-omron:B3F-10XX'."
+      },
+      {
+        "name": "6x6 tactile switch: total height incl. plunger",
+        "value_mm": "CONFIRMED. 4.3 ±0.2 (B3F-1000), 5.0 ±0.2 (B3F-1020), 7.0 (B3F-1060), 9.5 (B3F-1070), 7.3 (B3F-1050 projected). C&K PTS645 also 13.0 (SMT only).",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+          "https://www.ckswitches.com/media/1471/pts645.pdf",
+          "https://www.adafruit.com/product/367"
+        ],
+        "notes": "Omron model table: heights 4.3 / 5.0 / 7.0 / 9.5 / 7.3 mm. C&K PTS645 heights 4.3 / 5.0 / 7.0 / 9.5 / 13.0 ('13.0 mm ... only in SMT', via search summary)."
+      },
+      {
+        "name": "6x6 tactile switch: plunger diameter",
+        "value_mm": "CONFIRMED. Ø3.5 round. Projected type: 2.4 x 2.4 ±0.1 square stem on a Ø3.5 collar, 7.3 ±0.2 total.",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+        ],
+        "notes": "Drawing text '3.5 dia.', '2.4 × 2.4±0.1', '7.3±0.2'."
+      },
+      {
+        "name": "6x6 tactile switch: leg spacing / footprint",
+        "value_mm": "CONFIRMED. Holes 6.5 ±0.1 x 4.5 ±0.1, Ø1 ±0.1. Leg span 6.5 ±0.5 / 7.7 ±0.5. Legs 3.4 below the body, 0.7 wide.",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+        ],
+        "notes": "Rendered page 4: '6.5±0.1', '4.5±0.1', 'Four, 1±0.1 dia.', '6.5±0.5', '7.7±0.5', '3.4', '0.7'. Leg-clearance pocket 8.3 x 6.4."
+      },
+      {
+        "name": "6x6 tactile switch: travel and force",
+        "value_mm": "CONFIRMED. Pretravel 0.25 +0.2/−0.1. OF 0.98±0.29 N (100 gf), 1.47±0.49 N (150 gf), 2.55±0.69 N (260 gf), 4.9±1.47 N (500 gf). RF ≥ 0.2–0.7 N.",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+          "https://www.ckswitches.com/media/1471/pts645.pdf"
+        ],
+        "notes": "From the B3F characteristics table. C&K PTS645 force codes L 130, M 160, H 200, K 260 gf (via search summary)."
+      },
+      {
+        "name": "12x12 tactile switch: body and heights",
+        "value_mm": "CONFIRMED. 12 ±0.2 square; case 3.5; collar Ø7.1; flat type 4.3 ±0.2. Projected 7.3 ±0.2 with a 3.8 ±0.1 square stem whose top part is 1.8 ±0.2.",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+        ],
+        "notes": "Text from the B3F-4000/4050 drawing: '12±0.2', '7.1 dia.', '4.3±0.2', '@3.8±0.1', '1.8±0.2', '7.3±0.2'."
+      },
+      {
+        "name": "12x12 tactile switch: leg spacing / footprint",
+        "value_mm": "CONFIRMED. Holes 12.5 ±0.1 x 5 ±0.1, Ø1.2 ±0.05. Outer span 12.5 ±0.5 / 13.8 ±0.5. Positioning bosses Ø1.6 (holes Ø1.8 ±0.05 at 9 ±0.1).",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+        ],
+        "notes": "Leave Ø2 reliefs under the bosses if the switch sits on a printed floor."
+      },
+      {
+        "name": "12x12 tactile switch: travel and force",
+        "value_mm": "CONFIRMED (Omron). Pretravel 0.3 +0.2/−0.1. OF 1.27±0.49 N (130 gf) or 2.55±0.69 N (260 gf). RF ≥ 0.29 / 0.49 N.",
+        "confidence": "high",
+        "sources": [
+          "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+        ],
+        "notes": "I did not re-check the APEM/RS values."
+      },
+      {
+        "name": "12x12 switch round cap (A24-style)",
+        "value_mm": "UNVERIFIABLE. About Ø13 x 8 (reseller) and about 12 x 12 x 12 assembled.",
+        "confidence": "low",
+        "sources": [
+          "https://www.adafruit.com/product/1009"
+        ],
+        "notes": "Not re-checked; no manufacturer drawing exists. Measure the cap."
+      },
+      {
+        "name": "Which button each kit includes",
+        "value_mm": "PARTLY CONFIRMED. Arduino K000007 has '10 Pushbuttons' (no size). Elegoo Super Starter has 5 x 'Button (small)' (no size); 6x6 is plausible but unconfirmed.",
+        "confidence": "low",
+        "sources": [
+          "https://rapidonline.com/arduino-k000007-starter-kit-including-uno-board-563530",
+          "https://courses.ideate.cmu.edu/16-223/f2021/text/resources/Elegoo-kit.html"
+        ],
+        "notes": "No kit listing states the switch dimensions. Caliper the user's own buttons, especially the plunger height above the case."
+      }
+    ],
+    "design_advice": "I re-checked the 37 dimensions. Most are confirmed. The corrections:\n\n1. **CAM corner radius.** The official drawing shows about R2.8–2.9, not 2.3–2.6. The old pocket advice was also backwards: a LARGER pocket corner radius is what binds. Keep pocket corner R ≤ 2.5, or leave the corners sharp (FDM gives about R0.3 anyway).\n\n2. **Lens tip height.** Use about 7.6–8.9 above the camera-side PCB face, nominal about 8.2. The single caliper figure of 8.9 is about 1 mm out of line with the same author's other measurements.\n\n3. **Header pin length.** It is now better supported: tips about 8.5 (7.5–8.7) below the PCB back face, which matches the 12 mm vendor envelope.\n\n4. **Lens centre.** Use X 13.5 / Y 9.5–10.5 from the SD end, ±2. The \"off-centre adjust part\" report comes from Printables 786784.\n\n5. **40 mm camera module.** I could not confirm a 40 mm module; 21 and 75 are confirmed.\n\nPrint-ready parameters:\n\n- **CAM pocket:** 27.7 x 41.0 (board 27.0–27.25 x 40.0–40.5).\n  - Clamp on the board faces, not the PCB thickness (1.0–1.7 varies).\n  - Header rows 22.86 c-c, 2.07 from each edge, pin 1 at 4.58 from the SD end.\n- **Stack, MB bottom up:**\n  - MB PCB about 1.6\n  - Header gap 11.0 (allow 10.5–11.5)\n  - CAM PCB 1.0–1.6\n  - Lens tip 7.6–8.9 above that\n  - Total about 21.5–23, plus 1.6–3 of MB solder stubs below. Leave at least 1 mm air at both ends and use a compliant pad or foam to take up the stack tolerance.\n- **Front window:**\n  - Lens opening Ø8.5 or more if the barrel passes through (barrel base Ø7.92), or a 9 x 9 pocket for the 8.1–8.6 square holder.\n  - Add a 45° outward flare or chamfer so the 66–68° diagonal FOV is not vignetted.\n  - Make the window position adjustable, or oversize it by ±2, because the module is hand-taped.\n  - FPC connector: X 5.1–22.3, Y 22.6–28.7 from the SD end; keep at least 1 mm clear over it.\n  - Flash LED: about X 24.9, Y 29.4 from the SD end (ruler-photo estimate).\n- **MB:**\n  - 27 wide. Length unresolved, 37.5–40.5 (my photo estimate is about 38). Make the cavity 41–42 long, register on the CAM SD end, and leave the USB end open or adjustable.\n  - USB is centred at the antenna end, flush ±0.5. The access hole must pass the plug overmold: at least 12.5 x 10, ideally 13 x 10.\n  - Keep the wall at the receptacle very thin or counterbored, because the spec has contacts only 5.4 mm or more from the overmold face.\n  - IO0 (5V-row side) and RST (3V3 side) side-actuated plungers stand about 1.0–1.25 proud at 6–8.5 from the USB end. Cut 2.5 x 4 slots or flexure pushers with at least 0.3 air. Note that RST does not work with some CAM boards.\n- **Shutter button:**\n  - GPIO13 to GND (pins at Y 12.20 and 7.12 on the 5V row) with SD in 1-bit mode. Read it only after the SD mount: GPIO13 is SD DAT3, and Espressif wants DAT3 high during init.\n  - GPIO12 to GND is the fallback.\n  - Mount a 6x6 switch in a 6.3–6.4 square pocket with an 8.3 x 6.4 leg relief. The actuator contact pad should be Ø3.0–3.4, at 0.1–0.2 gap and never preloaded (pretravel is only 0.25).\n\nBefore the final print, caliper five things: MB length, CAM PCB thickness, lens Y position, lens tip height, and the shutter switch's plunger height."
+  }
+}
