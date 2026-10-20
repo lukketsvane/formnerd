@@ -8,20 +8,20 @@ Les først `tripo-bruk.md` for det dokumentasjonskontrollerte valet av Tripo-kje
 | --- | --- | --- |
 | Skisse til første form | image-to-model eller konsistent multiview-to-model | Lagre vald original og geometritask før behandling |
 | Dele vald form | ordinær segmentering av vald task/mesh | Bevar master, global skala og deltransformasjonar; kontroller resultat |
-| Auto-modellert delingsvariant | Smart Segment model med GLB og transform, eller image | Bevar som eiga grein; ingen lovnad om identisk form |
-| Ny modell med delar frå eit bilete | Smart Segment image | Rekn som ny geometri; samanlikn med vald form |
-| Lett modell ved generering | Smart Low Poly på støtta modellserie | Lag separat variant og kontroller kompatibilitet |
+| Delingsvariant via Smart Segment | Smart Segment `model` med GLB og transform (55 kreditt) | Bevar som eiga grein. Om model-modus genererer geometrien på nytt eller berre importerer, er udokumentert; samanlikn med master |
+| Ny modell med delar frå eit bilete | H3.0/H3.1 med `generate_parts=true`, `texture=false`, `pbr=false` (+20), eller Smart Segment `image` (85) | Rekn som ny geometri; samanlikn med vald form |
+| Lett modell ved generering | `smart_low_poly` på H3.0/H3.1 (ikkje v2.5, P1 eller P2), eller P1/P2 | Lag separat variant og kontroller kompatibilitet |
 | Færre polygon i eksisterande mesh | decimate | Bevar detaljert master og dokumenter avvik |
-| Lukke hol etter segmentering | complete, til dømes quick_cap når støtta | Kontroller snitt, volum, veggar og passflater |
+| Lukke hol etter segmentering | complete, til dømes `quick_cap` | Kontroller snitt, volum, veggar og passflater, og at delane framleis er separate (kjeldene er usamde om completion slår dei saman) |
 | Eksakte mekaniske grensesnitt | deterministisk CAD/meshmodellering | Dimensjoner mot mål framfor generert utsjånad |
 
-Les gjeldande Tripo-skill og dry-run før køyring. I grunnlaget kontrollert 20. oktober 2026 undertrykkjer `smart_low_poly=true` automatisk `generate_parts`; v3.x-parts krev `texture=false` og `pbr=false`. P-serien og H/v3-serien har ulik funksjonsstøtte. Eit lågt `face_limit` kan påverke automatisk modellval. Set eksplisitt modell når bestemte funksjonar er nødvendige, og kontroller faktisk payload. Ikkje frys modellnamn, prisar eller flagg frå dette dømet som framtidig API-sanning.
+Les gjeldande Tripo-skill og dry-run før køyring. I grunnlaget kontrollert 20. oktober 2026 undertrykkjer `smart_low_poly=true` automatisk `generate_parts`; v3.x-parts krev `texture=false` og `pbr=false`. P-serien og H/v3-serien har ulik funksjonsstøtte. I CLI-en kan eit `face_limit` på 20 000 eller lågare velje P1 når `--model` manglar; API-et byter aldri til P-serien av seg sjølv. Set eksplisitt modell når bestemte funksjonar er nødvendige, og kontroller faktisk payload. Ikkje frys modellnamn, prisar eller flagg frå dette dømet som framtidig API-sanning.
 
-Smart Segment model tek eksisterande GLB som fil/URL; ordinær segmentering kan referere til vald generering. Smart Segment image genererer modellen på nytt. Løys `@last` til konkret task-ID før ei viktig grein. Hald ulike delings- og polygonvariantar separate.
+Smart Segment model tek eksisterande GLB som fil/URL; ordinær segmentering kan referere til ein generation-task (text-, image- eller multiview_to_model); resultat frå import, decimate eller convert og eigne STL-ar går som `file_token`/URL (≤ 150 MB). Smart Segment image genererer modellen på nytt. Løys `@last` til konkret task-ID før ei viktig grein. Hald ulike delings- og polygonvariantar separate.
 
 ## Bevar opphav og form
 
-Lagre råresultat før reparasjon. Registrer kjeldefil, SHA-256, task-/foreldre-ID, faktisk modellversjon, prompt, seed, parameter, kostnad og varig fil. Hald API-nøklar og mellombelse nedlastingsadresser ute av repoet.
+Lagre råresultat før reparasjon. Registrer kjeldefil, SHA-256, task-/foreldre-ID, faktisk modellversjon, prompt, seed, parameter, kostnad og varig fil. Seed finst berre for generering; segment, Smart Segment, completion og decimate har ingen seed, så lagra output og låst modellversjon er det som sikrar sporbarheit. Hald API-nøklar og mellombelse nedlastingsadresser ute av repoet.
 
 Bruk same globale transformasjon for alle delar. Dokumenter einingar, rotasjon og skalafaktor. Ikkje sentrer eller skaler kvar del uavhengig. Opprett stabile del-ID-ar før BOM, printlayout og manual.
 
