@@ -1,6 +1,11 @@
 {
-  "_merknad": "Alle mål i mm. 'kjelde' seier kvar talet kjem frå. 'målt': false betyr at talet ikkje er kontrollert på dykkar eigne delar. Mål delane, endra her, og køyr A2/verktoy/bygg_hus.py på nytt. Kjeldelister for ESP32-CAM og ESP32-CAM-MB ligg i A2/print/delmaal.json.",
+  "_merknad": "Alle mål i mm. 'kjelde' seier kvar talet kjem frå. 'målt': false betyr at talet ikkje er kontrollert på dykkar eigne delar. Mål delane, endra her, og køyr python3 verktoy/bygg_hus.py A2 på nytt. Kjeldelister for ESP32-CAM og ESP32-CAM-MB ligg i A2/print/delmaal.json.",
+  "_tittel": "Stereokamera for to ESP32-CAM",
   "kropp": {
+    "kjelde_mesh": {
+      "verdi": "A2/runde-3/3d/04-brei-basis-eitt-bilete/model.glb",
+      "kjelde": "formmodellen huset blir bygd rundt (Tripo-GLB), sti frå rota av repoet"
+    },
     "breidd": {
       "verdi": 115.0,
       "kjelde": "minste breidd der begge stablane får USB ut gjennom endeveggane",

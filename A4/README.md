@@ -9,6 +9,8 @@ Alt samla arbeid med dette ribba kameradesignet høyrer til her. Siste redigerba
 | Føremål | Plassering |
 |---|---|
 | Start, mål og monteringsrekkjefølgje | [Entropi-CAD-v05/README.md](Entropi-CAD-v05/README.md) |
+| Stegvis monteringsrettleiing, 19 sider | [Entropi-v05-Montering-R01.pdf](montering/v05-r01/Entropi-v05-Montering-R01.pdf) |
+| Monteringssteg som enkeltbilete | [montering/v05-r01](montering/v05-r01/README.md) |
 | Native CAD-samanstilling | [Entropi-assembly-v05.step](Entropi-CAD-v05/Entropi-assembly-v05.step) |
 | Farga 3D-visning | [Entropi-assembly-v05.glb](Entropi-CAD-v05/Entropi-assembly-v05.glb) |
 | Separate STEP- og STL-delar | [Entropi-CAD-v05/parts](Entropi-CAD-v05/parts/) |
@@ -21,6 +23,7 @@ Alt samla arbeid med dette ribba kameradesignet høyrer til her. Siste redigerba
 | Prentklar A3-versjon for Bambu P1S (lim og magnetar), med IKEA-rettleiing | [Entropi-A3-print](Entropi-A3-print/README.md) |
 | Markeringar, vald form og oppgåvedokument | [referansar](referansar/) |
 | Tidlegare material- og fargestudiar | [rendringar/materialstudiar](rendringar/materialstudiar/) |
+| A1: byggjerettleiing R03, 29 sider og P1S-instruks | [A1 CAD-assembly](arkiv/tripo-a1/cad-assembly/README.md) |
 | Eldre CAD og heile Tripo-historikken | [arkiv](arkiv/) |
 | Opphav og flytting av filer | [organisering.json](organisering.json) |
 

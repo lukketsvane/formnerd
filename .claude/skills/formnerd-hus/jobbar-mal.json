@@ -1,0 +1,25 @@
+[
+  {
+    "name": "01-visir",
+    "dir": "P/runde-1/konsept/01-visir",
+    "endpoint": "generation/image-to-image",
+    "body": {
+      "model": "chat_image_2.5_sunburst",
+      "inputs": ["file_<token-for-referanse-1>", "file_<token-for-referanse-2>"],
+      "prompt": "Edit image[1] and keep its camera angle, lighting, white background and render quality. Changes: ..."
+    }
+  },
+  {
+    "name": "01-visir-3d",
+    "dir": "P/runde-1/3d/01-visir",
+    "endpoint": "generation/image-to-model",
+    "body": {
+      "input": "<task_id frå biletjobben over>",
+      "model": "v3.1-20260211",
+      "texture": false,
+      "pbr": false,
+      "face_limit": 100000,
+      "geometry_quality": "standard"
+    }
+  }
+]
