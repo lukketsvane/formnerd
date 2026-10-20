@@ -1,0 +1,112 @@
+{
+  "tripo_part_0": {
+    "exact_coordinate_weld": {
+      "faces": 796918,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0
+    },
+    "candidate_drop_exact_zero_area_and_duplicate_faces_then_fix_normals": {
+      "faces": 796918,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_positive": true
+    },
+    "input_modified": false
+  },
+  "tripo_part_1": {
+    "exact_coordinate_weld": {
+      "faces": 452300,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0
+    },
+    "candidate_drop_exact_zero_area_and_duplicate_faces_then_fix_normals": {
+      "faces": 452300,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_positive": true
+    },
+    "input_modified": false
+  },
+  "tripo_part_6": {
+    "exact_coordinate_weld": {
+      "faces": 82504,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0
+    },
+    "candidate_drop_exact_zero_area_and_duplicate_faces_then_fix_normals": {
+      "faces": 82504,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_positive": true
+    },
+    "input_modified": false
+  },
+  "tripo_part_7": {
+    "exact_coordinate_weld": {
+      "faces": 92630,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0
+    },
+    "candidate_drop_exact_zero_area_and_duplicate_faces_then_fix_normals": {
+      "faces": 92630,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_positive": true
+    },
+    "input_modified": false
+  },
+  "tripo_part_8": {
+    "exact_coordinate_weld": {
+      "faces": 142070,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0
+    },
+    "candidate_drop_exact_zero_area_and_duplicate_faces_then_fix_normals": {
+      "faces": 142070,
+      "zero_area_faces_exact": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_positive": true
+    },
+    "input_modified": false
+  }
+}

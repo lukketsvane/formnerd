@@ -1,0 +1,960 @@
+{
+  "input": "/workspace/scratch/787c4061d948/output/Entropi-Tripo-Selected/tripo-out/entropi-selected-capped-parts-5c7047f6/model.glb",
+  "input_modified": false,
+  "trimesh_version": "5.1.1",
+  "node_count": 11,
+  "source_units_metadata": "meters",
+  "source_bounds": [
+    [
+      -0.25789889693260193,
+      -0.37166473269462585,
+      -0.5
+    ],
+    [
+      0.25789886713027954,
+      0.37166473269462585,
+      0.5
+    ]
+  ],
+  "source_extents": [
+    0.5157977640628815,
+    0.7433294653892517,
+    1.0
+  ],
+  "millimetres_per_unit": 140.0,
+  "target_width_mm": 140.0,
+  "target_width_axis": "z",
+  "print_extents_mm": [
+    72.2116869688034,
+    104.06612515449524,
+    140.0
+  ],
+  "weld_tolerance_source_units": 0.0,
+  "geometric_query_tolerance_source_units": 1.3485496014341254e-07,
+  "welding_method": "read-only exact-coordinate welding for geometric topology and UV seam duplicates",
+  "parts": {
+    "tripo_part_0": {
+      "vertices": 398459,
+      "faces": 796918,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 2,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 796918,
+          "vertices": 398459,
+          "bounds": [
+            [
+              -0.16510841250419617,
+              -0.37159209698438644,
+              -0.5
+            ],
+            [
+              0.2578915059566498,
+              0.2966640368103981,
+              0.45316851139068604
+            ]
+          ],
+          "signed_volume": 0.041518825391591976
+        }
+      ],
+      "signed_volume": 0.041518825391591976,
+      "bounds": [
+        [
+          -0.16510841250419617,
+          -0.37159209698438644,
+          -0.5
+        ],
+        [
+          0.2578915059566498,
+          0.2966640368103981,
+          0.45316851139068604
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 398459,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 5.00760951623239,
+        "fifth_percentile_chord_mm": 5.724228626347599,
+        "median_chord_mm": 17.59290795565203,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_1": {
+      "vertices": 226152,
+      "faces": 452300,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 2,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 452300,
+          "vertices": 226152,
+          "bounds": [
+            [
+              -0.25787604600191116,
+              -0.34638156183063984,
+              -0.49123311042785645
+            ],
+            [
+              0.15221749991178513,
+              0.27084787003695965,
+              0.012072980403900146
+            ]
+          ],
+          "signed_volume": 0.08136828989988792
+        }
+      ],
+      "signed_volume": 0.08136828989988792,
+      "bounds": [
+        [
+          -0.25787604600191116,
+          -0.34638156183063984,
+          -0.49123311042785645
+        ],
+        [
+          0.15221749991178513,
+          0.27084787003695965,
+          0.012072980403900146
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 226152,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 1.6155157562223301,
+        "fifth_percentile_chord_mm": 22.62915959610706,
+        "median_chord_mm": 51.98437082260493,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_10": {
+      "vertices": 11571,
+      "faces": 23138,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 23138,
+          "vertices": 11571,
+          "bounds": [
+            [
+              0.010737825185060501,
+              0.2392728626728058,
+              0.27080652117729187
+            ],
+            [
+              0.10900098830461502,
+              0.2888634204864502,
+              0.37158629298210144
+            ]
+          ],
+          "signed_volume": 0.00027850983865268677
+        }
+      ],
+      "signed_volume": 0.00027850983865268677,
+      "bounds": [
+        [
+          0.010737825185060501,
+          0.2392728626728058,
+          0.27080652117729187
+        ],
+        [
+          0.10900098830461502,
+          0.2888634204864502,
+          0.37158629298210144
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 11571,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 3.804142292330264,
+        "fifth_percentile_chord_mm": 4.646665829435422,
+        "median_chord_mm": 6.3700834058199876,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_2": {
+      "vertices": 177488,
+      "faces": 354972,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 354972,
+          "vertices": 177488,
+          "bounds": [
+            [
+              -0.25789889693260193,
+              -0.3386612464673817,
+              -0.05701233446598053
+            ],
+            [
+              0.12112776935100555,
+              0.27536869747564197,
+              0.47890661656856537
+            ]
+          ],
+          "signed_volume": 0.0584279569834982
+        }
+      ],
+      "signed_volume": 0.0584279569834982,
+      "bounds": [
+        [
+          -0.25789889693260193,
+          -0.3386612464673817,
+          -0.05701233446598053
+        ],
+        [
+          0.12112776935100555,
+          0.27536869747564197,
+          0.47890661656856537
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 177488,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 10.467465534457398,
+        "fifth_percentile_chord_mm": 13.668850762413829,
+        "median_chord_mm": 36.30132985420279,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_3": {
+      "vertices": 100223,
+      "faces": 200442,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 200442,
+          "vertices": 100223,
+          "bounds": [
+            [
+              -0.16008127480745316,
+              -0.37166473269462585,
+              0.279820054769516
+            ],
+            [
+              0.17080536484718323,
+              0.2278960943222046,
+              0.4841981828212738
+            ]
+          ],
+          "signed_volume": 0.011665884952949632
+        }
+      ],
+      "signed_volume": 0.011665884952949632,
+      "bounds": [
+        [
+          -0.16008127480745316,
+          -0.37166473269462585,
+          0.279820054769516
+        ],
+        [
+          0.17080536484718323,
+          0.2278960943222046,
+          0.4841981828212738
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 100223,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 5.3900752820734645,
+        "fifth_percentile_chord_mm": 7.648315434615807,
+        "median_chord_mm": 18.472686192729608,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_4": {
+      "vertices": 82837,
+      "faces": 165666,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 2,
+      "single_connected_print_part": false,
+      "components": [
+        {
+          "faces": 147538,
+          "vertices": 73771,
+          "bounds": [
+            [
+              -0.1661134660243988,
+              -0.36967521719634533,
+              0.291766881942749
+            ],
+            [
+              0.05207667499780655,
+              0.2513116616755724,
+              0.5
+            ]
+          ],
+          "signed_volume": 0.012457143279895264
+        },
+        {
+          "faces": 18128,
+          "vertices": 9066,
+          "bounds": [
+            [
+              -0.08092964440584183,
+              0.18001793511211872,
+              0.10617083311080933
+            ],
+            [
+              0.06629952043294907,
+              0.2645925600081682,
+              0.21329337358474731
+            ]
+          ],
+          "signed_volume": 0.0003486877623776502
+        }
+      ],
+      "signed_volume": 0.012805831042272913,
+      "bounds": [
+        [
+          -0.1661134660243988,
+          -0.36967521719634533,
+          0.10617083311080933
+        ],
+        [
+          0.06629952043294907,
+          0.2645925600081682,
+          0.5
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 82837,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 2.5131736427832188,
+        "fifth_percentile_chord_mm": 4.702056445803284,
+        "median_chord_mm": 21.33702298776286,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_5": {
+      "vertices": 73573,
+      "faces": 147142,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 147142,
+          "vertices": 73573,
+          "bounds": [
+            [
+              -0.025720849633216858,
+              -0.22804003581404686,
+              -0.3827263005077839
+            ],
+            [
+              0.21388359367847443,
+              0.11994535103440285,
+              0.24216173216700554
+            ]
+          ],
+          "signed_volume": 0.01751657552508119
+        }
+      ],
+      "signed_volume": 0.01751657552508119,
+      "bounds": [
+        [
+          -0.025720849633216858,
+          -0.22804003581404686,
+          -0.3827263005077839
+        ],
+        [
+          0.21388359367847443,
+          0.11994535103440285,
+          0.24216173216700554
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 73573,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 6.488474942081018,
+        "fifth_percentile_chord_mm": 10.488671764508064,
+        "median_chord_mm": 17.260360316776946,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_6": {
+      "vertices": 41254,
+      "faces": 82504,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 82504,
+          "vertices": 41254,
+          "bounds": [
+            [
+              -0.10074156802147627,
+              0.1833220273256302,
+              -0.08304055780172348
+            ],
+            [
+              0.10249738115817308,
+              0.3511892259120941,
+              0.29493526369333267
+            ]
+          ],
+          "signed_volume": 0.001757711016421003
+        }
+      ],
+      "signed_volume": 0.001757711016421003,
+      "bounds": [
+        [
+          -0.10074156802147627,
+          0.1833220273256302,
+          -0.08304055780172348
+        ],
+        [
+          0.10249738115817308,
+          0.3511892259120941,
+          0.29493526369333267
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 41254,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 0.28423973196586483,
+        "fifth_percentile_chord_mm": 2.2260153249376784,
+        "median_chord_mm": 5.7323451699594905,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 2,
+        "thin_samples": [
+          {
+            "face": 35844,
+            "position_mm": [
+              2.38401859998703,
+              35.08239368597666,
+              23.528397878011067
+            ],
+            "chord_mm": 0.28423973196586483
+          },
+          {
+            "face": 74324,
+            "position_mm": [
+              7.506583438565333,
+              32.94987728198369,
+              -3.088529954353968
+            ],
+            "chord_mm": 0.5245015104632611
+          }
+        ],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_7": {
+      "vertices": 46317,
+      "faces": 92630,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 2,
+      "single_connected_print_part": false,
+      "components": [
+        {
+          "faces": 76094,
+          "vertices": 38047,
+          "bounds": [
+            [
+              0.19858841598033905,
+              -0.22378427535295486,
+              -0.39128246903419495
+            ],
+            [
+              0.25789886713027954,
+              0.10741003602743149,
+              -0.06191009283065796
+            ]
+          ],
+          "signed_volume": 0.0006907506656541402
+        },
+        {
+          "faces": 16536,
+          "vertices": 8270,
+          "bounds": [
+            [
+              0.0643126517534256,
+              -0.14841385185718536,
+              -0.4355413019657135
+            ],
+            [
+              0.11510718613862991,
+              0.10321568697690964,
+              -0.36775973439216614
+            ]
+          ],
+          "signed_volume": 0.0002714109301887831
+        }
+      ],
+      "signed_volume": 0.0009621615958429231,
+      "bounds": [
+        [
+          0.0643126517534256,
+          -0.22378427535295486,
+          -0.4355413019657135
+        ],
+        [
+          0.25789886713027954,
+          0.10741003602743149,
+          -0.06191009283065796
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 46317,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 0.3180547266191901,
+        "fifth_percentile_chord_mm": 0.6544801528284657,
+        "median_chord_mm": 2.4042316358665,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 8,
+        "thin_samples": [
+          {
+            "face": 76896,
+            "position_mm": [
+              35.064797600110374,
+              -18.664167026678722,
+              -50.30072430769602
+            ],
+            "chord_mm": 1.0539647296224335
+          },
+          {
+            "face": 51873,
+            "position_mm": [
+              35.17784188191096,
+              11.122538795073828,
+              -39.04386202494303
+            ],
+            "chord_mm": 0.6806885583198251
+          },
+          {
+            "face": 87227,
+            "position_mm": [
+              35.8082906405131,
+              10.438680797815323,
+              -41.181372006734215
+            ],
+            "chord_mm": 0.3180547266191901
+          },
+          {
+            "face": 76020,
+            "position_mm": [
+              35.22053172190984,
+              -24.368812640508015,
+              -45.558996399243675
+            ],
+            "chord_mm": 0.6498551400946964
+          },
+          {
+            "face": 17987,
+            "position_mm": [
+              35.0162665049235,
+              -22.481374442577362,
+              -46.67782485485077
+            ],
+            "chord_mm": 0.7084544505013796
+          },
+          {
+            "face": 85231,
+            "position_mm": [
+              35.0818199912707,
+              3.371172994375229,
+              -49.53696350256602
+            ],
+            "chord_mm": 0.9819647125030446
+          },
+          {
+            "face": 91250,
+            "position_mm": [
+              35.804567535718284,
+              10.911097874244055,
+              -23.129899104436237
+            ],
+            "chord_mm": 0.36298577700123563
+          },
+          {
+            "face": 55248,
+            "position_mm": [
+              29.56392765045166,
+              2.0574792226155596,
+              -14.60412472486496
+            ],
+            "chord_mm": 0.45235885750598376
+          }
+        ],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 5000,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_8": {
+      "vertices": 71037,
+      "faces": 142070,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 142070,
+          "vertices": 71037,
+          "bounds": [
+            [
+              -0.11817411368247122,
+              0.20448704063892365,
+              -0.2642030492424965
+            ],
+            [
+              0.16413100028876215,
+              0.37166473269462585,
+              0.4044369086623192
+            ]
+          ],
+          "signed_volume": 0.005352281331799741
+        }
+      ],
+      "signed_volume": 0.005352281331799741,
+      "bounds": [
+        [
+          -0.11817411368247122,
+          0.20448704063892365,
+          -0.2642030492424965
+        ],
+        [
+          0.16413100028876215,
+          0.37166473269462585,
+          0.4044369086623192
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 71037,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 1.8856453226655552,
+        "fifth_percentile_chord_mm": 4.584122465712254,
+        "median_chord_mm": 12.873620751311108,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 2673,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    },
+    "tripo_part_9": {
+      "vertices": 16465,
+      "faces": 32926,
+      "collapsed_faces": 0,
+      "zero_area_faces": 0,
+      "near_zero_area_faces": 0,
+      "duplicate_faces": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "same_direction_paired_edges": 0,
+      "connected_surface_components": 1,
+      "single_connected_print_part": true,
+      "components": [
+        {
+          "faces": 32926,
+          "vertices": 16465,
+          "bounds": [
+            [
+              -0.16394729912281036,
+              0.23729278147220612,
+              -0.4421311616897583
+            ],
+            [
+              -0.012644313275814056,
+              0.28028643131256104,
+              -0.29378870129585266
+            ]
+          ],
+          "signed_volume": 0.0005011546070812304
+        }
+      ],
+      "signed_volume": 0.0005011546070812304,
+      "bounds": [
+        [
+          -0.16394729912281036,
+          0.23729278147220612,
+          -0.4421311616897583
+        ],
+        [
+          -0.012644313275814056,
+          0.28028643131256104,
+          -0.29378870129585266
+        ]
+      ],
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "all_closed_components_outward": true,
+      "topology_passed": true,
+      "original_vertex_count": 16465,
+      "sampled_wall_chords": {
+        "checked": true,
+        "method": "sampled inward surface-normal chords",
+        "samples": 64,
+        "rays_with_opposite_hits": 64,
+        "minimum_chord_mm": 2.292973794678153,
+        "fifth_percentile_chord_mm": 3.6144125664140194,
+        "median_chord_mm": 4.928328049937093,
+        "threshold_mm": 1.2,
+        "below_threshold_samples": 0,
+        "thin_samples": [],
+        "limitations": "Sampled chords are a local thickness indicator, not an exhaustive minimum-wall certification."
+      },
+      "self_contacts": {
+        "checked": true,
+        "complete_within_nonadjacent_face_method": false,
+        "candidate_pairs_checked": 0,
+        "nonadjacent_contacts_found": 0,
+        "face_pairs": [],
+        "limitations": "Faces sharing a welded vertex are excluded; this does not certify absence of folded intersections between adjacent faces."
+      }
+    }
+  },
+  "supports_and_mechanical_fit_verified": false,
+  "part_intersections": {
+    "checked": true,
+    "complete": false,
+    "aabb_overlap_candidate_count": 33,
+    "pairs": []
+  },
+  "all_part_topology_checks_passed": true,
+  "all_nodes_single_component": false,
+  "elapsed_seconds": 90.01268644999982,
+  "authoritative_for_print_topology": true,
+  "physical_scale_basis": "Assumed handheld form-model width of 140 mm across GLB scene Z, not measured from the original design.",
+  "group_union_checks": {
+    "performed": false,
+    "reason": "Deferred by instruction; native capped geometry preserved. Semantic patches are not manufactured assembly boundaries."
+  }
+}

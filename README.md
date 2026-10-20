@@ -1,15 +1,11 @@
 # formnerd
 
-Formutvikling med AI-genererte bilete og 3D-modellar frå Tripo-API-et.
+Formutvikling for FormNerd med AI-genererte bilete og 3D-modellar frå Tripo-API-et. Kvar designmappe er sjølvstendig, med eigen README, referansar, resultat og skript.
 
-| Mappe | Innhald |
+| Mappe | Design |
 | --- | --- |
-| [`A2/`](A2/) | Stereoskopisk kamerahus for to ESP32-CAM: referansar, tre designrundar, 3D-modellar og innmatsanalyse |
-| [`verktoy/`](verktoy/) | Felles skript: Tripo-oppgåver, mesh-QA og innmatsanalyse |
+| [`A1/`](A1/README.md) | Entropi – Tripo-form med segmentering og utskriftsklar 3MF på 140 mm |
+| [`A2/`](A2/README.md) | Stereoskopisk kamerahus for to ESP32-CAM med skjult elektronikk: tre designrundar, 3D-modellar og innmatsanalyse |
+| [`A3/`](A3/README.md) | Entropi – handhalde kamera frå skisse til utskriftsklar STL |
 
-Krev `TRIPO_API_KEY` i miljøet og Python-pakkane `requests`, `trimesh` og `scipy`.
-
-- `verktoy/tripo.py` – opplasting, oppgåver, polling og nedlasting
-- `verktoy/kjor.py jobbar.json ut.json [parallelle]` – køyrer ei liste med Tripo-oppgåver og lastar ned resultata. Biletgenerering tillèt berre éi oppgåve om gongen, så bruk `1` der.
-- `verktoy/mesh_qa.py fil.glb …` – topologisjekk (rå og sveisa analysekopi)
-- `verktoy/innmat.py linser.json [prosessar]` – minste kroppsstorleik som gøymer elektronikken, sjå `A2/README.md`
+Skripta krev `TRIPO_API_KEY` i miljøet.

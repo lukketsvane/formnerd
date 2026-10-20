@@ -1,6 +1,6 @@
 # A2 – stereoskopisk kamerahus
 
-Kamerahus for to ESP32-CAM i stilen frå referansane: feite, mjuke tubar rundt ein mørk kjerne, og elektronikken skjult. Bileta og 3D-modellane er laga med Tripo (skripta ligg i `../verktoy/`). Meshane er formreferansar for CAD, ikkje produksjonsfiler.
+Kamerahus for to ESP32-CAM i stilen frå referansane: feite, mjuke tubar rundt ein mørk kjerne, og elektronikken skjult. Bileta og 3D-modellane er laga med Tripo (skripta ligg i `verktoy/`). Meshane er formreferansar for CAD, ikkje produksjonsfiler.
 
 ## Tilråding
 
@@ -93,6 +93,15 @@ Revisjonane av sjølve analyseverktøyet fann feil i begge versjonane. Alle er r
 **Runde 2** (`runde-2/`): Sju konsept etter ref-7 med linser som djupt, mørkt glas, og 3D av 01a, 04 og 02. 01a er ref-7 redigert direkte og ligg nærast referansen.
 
 **Runde 1** (`runde-1/`): Ti konsept etter ref-1 til ref-5. Dei er forkasta fordi sensoren var synleg i linsene og forma låg for langt frå ønskt uttrykk.
+
+## Verktøy (`verktoy/`)
+
+Krev `TRIPO_API_KEY` i miljøet og Python-pakkane `requests`, `trimesh` og `scipy`. Køyr frå rota av repoet.
+
+- `tripo.py` – opplasting, oppgåver, polling og nedlasting
+- `kjor.py jobbar.json ut.json [parallelle]` – køyrer ei liste med Tripo-oppgåver og lastar ned resultata. Biletgenerering tillèt berre éi oppgåve om gongen, så bruk `1` der.
+- `mesh_qa.py fil.glb …` – topologisjekk (rå og sveisa analysekopi)
+- `innmat.py A2/analyse/linser.json [prosessar] > A2/analyse/innmat.json` – innmatsanalysen over
 
 ## Kredittar
 

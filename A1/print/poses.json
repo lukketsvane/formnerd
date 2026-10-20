@@ -1,0 +1,138 @@
+{
+  "assumed_width_mm": 140.0,
+  "dimensional_accuracy_verified": false,
+  "scale_basis": "original world scene Z extent; 140 mm is an assumed display/form size",
+  "source_world_bounds": [
+    [
+      -0.25789889693260193,
+      -0.37166473269462585,
+      -0.5
+    ],
+    [
+      0.25789886713027954,
+      0.37166473269462585,
+      0.5
+    ]
+  ],
+  "scale_mm_per_source_unit": 140.0,
+  "world_to_printer_matrix": [
+    [
+      0.0,
+      0.0,
+      -140.0,
+      128.0
+    ],
+    [
+      0.0,
+      140.0,
+      0.0,
+      128.0
+    ],
+    [
+      140.0,
+      0.0,
+      0.0,
+      36.10584557056427
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "axis_mapping": {
+    "printer_X": "-source_Z",
+    "printer_Y": "+source_Y",
+    "printer_Z": "+source_X"
+  },
+  "rotation_determinant": 1.0,
+  "print_bounds_mm": [
+    [
+      58.0,
+      75.96693742275238,
+      0.0
+    ],
+    [
+      198.0,
+      180.03306257724762,
+      72.2116869688034
+    ]
+  ],
+  "print_dimensions_mm": [
+    140.0,
+    104.06612515449524,
+    72.2116869688034
+  ],
+  "bed_mm": [
+    256,
+    256
+  ],
+  "fits_256mm_build_volume": true,
+  "bed_min_z_mm": 0.0,
+  "build_objects": 1,
+  "volumes": [
+    {
+      "name": "tripo_part_0",
+      "first_triangle": 0,
+      "last_triangle": 796917
+    },
+    {
+      "name": "tripo_part_1",
+      "first_triangle": 796918,
+      "last_triangle": 1249217
+    },
+    {
+      "name": "tripo_part_10",
+      "first_triangle": 1249218,
+      "last_triangle": 1272355
+    },
+    {
+      "name": "tripo_part_2",
+      "first_triangle": 1272356,
+      "last_triangle": 1627327
+    },
+    {
+      "name": "tripo_part_3",
+      "first_triangle": 1627328,
+      "last_triangle": 1827769
+    },
+    {
+      "name": "tripo_part_4",
+      "first_triangle": 1827770,
+      "last_triangle": 1993435
+    },
+    {
+      "name": "tripo_part_5",
+      "first_triangle": 1993436,
+      "last_triangle": 2140577
+    },
+    {
+      "name": "tripo_part_6",
+      "first_triangle": 2140578,
+      "last_triangle": 2223081
+    },
+    {
+      "name": "tripo_part_7",
+      "first_triangle": 2223082,
+      "last_triangle": 2315711
+    },
+    {
+      "name": "tripo_part_8",
+      "first_triangle": 2315712,
+      "last_triangle": 2457781
+    },
+    {
+      "name": "tripo_part_9",
+      "first_triangle": 2457782,
+      "last_triangle": 2490707
+    }
+  ],
+  "geometry_modified": false,
+  "mesh_simplified": false,
+  "topology_modified": false,
+  "logical_part_separation_verified": false,
+  "purpose": "assembled form, not a screw-fit kit",
+  "input_file": "/workspace/scratch/787c4061d948/output/Entropi-Tripo-Selected/tripo-out/entropi-selected-capped-parts-5c7047f6/model.glb",
+  "input_sha256": "46ec2cdf2eb2f50b6a7a32fbf176a618bc490985a15613eadc3f460fe06e7d6f"
+}
