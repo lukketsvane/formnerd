@@ -303,9 +303,9 @@ img, a2 = render(ob, (0, -1, 0.12), span=30, target=(52, 75, 30), anchors=[[sx["
 A = plasser(s, img, a2, (127, 260))
 maal(d, A[0], A[1], A[2], A[3], "D")
 dn = R["stabel_d_nominell"]
-for i, (t, b_) in enumerate([(f"D = {dn - 0.25:.1f} – {dn + 0.25:.1f} mm:  stabelhaldar på plata".replace(".", ","), True),
-                             ("Anna D:  byt til stabelhaldar-D14.0 … D18.0 (næraste)", False),
-                             ("print/printretning/haldar-variantar/", False)]):
+for i, (t, b_) in enumerate([(f"D = {dn - 0.25:.1f} – {dn + 0.25:.1f} mm:  A3-Entropi-P1S.gcode.3mf".replace(".", ",", 2), True),
+                             ("Anna D:  A3-Entropi-P1S-utan-haldar.gcode.3mf", True),
+                             ("+ haldar-p1s/stabelhaldar-D14.0 … D18.0.gcode.3mf (næraste D)", False)]):
     tekst(d, (180, 1020 + i * 58), t, 38 if i < 2 else 32, b_)
 tekst(d, (180, 1185), "D: frå tappane bak på MB til framsida av kamerakortet (ikkje linsa)", 30)
 SIDER.append(("02-maal-stabel", s))

@@ -8,15 +8,19 @@ Prentklar versjon av A3-designet: Tripo-forma frå `arkiv/entropi-a3`, skoren op
 
 ## Kort sagt
 
-1. Set kameraet på MB-kortet og mål **D** (steg 1 i rettleiinga). Ligg D mellom 15,7 og 16,2 mm, kan du prente plata som ho er. Elles byter du stabelhaldaren med den næraste fila i `print/printretning/haldar-variantar/`.
-2. Opne `print/A3-Entropi-P1S.gcode.3mf` i Bambu Studio og send til P1S-en. Plata tek om lag 5 t 35 min og brukar 191 g PLA.
+1. Set kameraet på MB-kortet og mål **D** (steg 1 i rettleiinga).
+   - D mellom 15,7 og 16,2 mm: prent `print/A3-Entropi-P1S.gcode.3mf`. Det tek om lag 5 t 35 min og brukar 191 g PLA.
+   - Anna D, eller du har ikkje målt enno: prent `print/A3-Entropi-P1S-utan-haldar.gcode.3mf` (5 t 15 min, 177 g). Prent deretter `print/haldar-p1s/stabelhaldar-D<næraste>.gcode.3mf` (28 min, 14 g).
+2. Send fila til P1S-en (sjå *Slik prentar du*).
 3. Følg `montering/Entropi-A3-montering.pdf`, 13 steg i IKEA-stil.
 
 ## Filer
 
 | Fil | Bruk |
 | --- | --- |
-| `print/A3-Entropi-P1S.gcode.3mf` | Ferdig slica plate for P1S. Kan sendast rett til skrivaren. |
+| `print/A3-Entropi-P1S.gcode.3mf` | Ferdig slica plate for P1S med alle fem delane. Kan sendast rett til skrivaren. |
+| `print/A3-Entropi-P1S-utan-haldar.gcode.3mf` | Same plate utan stabelhaldaren |
+| `print/haldar-p1s/` | Kvar haldarvariant (D14,0–D18,0) ferdig slica for P1S |
 | `print/A3-Entropi-P1S.3mf` | Same plate som Bambu Studio-prosjekt, for å endre innstillingar eller byte haldar |
 | `print/A3-Entropi-alle-delar.3mf` | Alle delane plasserte på éi 256 mm-plate, utan slicarinnstillingar |
 | `print/printretning/` | Delane i prentretning. `haldar-variantar/` har stabelhaldaren for D = 14,0–18,0 mm i steg på 0,5 mm. |
@@ -42,6 +46,14 @@ Innstillingar: Bambu PLA Basic, 0,4 mm dyse, 0,20 mm Standard, Textured PEI-plat
 - maskin: «Bambu Lab P1S 0.4 nozzle», med P1S-startkoden (AMS-lasting, dysereins og 220 °C)
 - prosess: «0.20mm Standard @BBL X1C», som er standardprosessen for P1S
 - filament: «Bambu PLA Basic @BBL P1S 0.4 nozzle»
+
+## Slik prentar du
+
+Alle `.gcode.3mf`-filene har P1S-startkoden og printar-ID C12. Dei bruker filament nummer 1 (PLA Basic) på Textured PEI-plata.
+
+- **Bambu Studio:** Fil → Opne → vel `.gcode.3mf`. Fila opnar seg i førehandsvisinga. Trykk *Print plate* og vel P1S-en. Knyt filament 1 til PLA-sporet i AMS-en, eller til ekstern spole. La *Bed leveling* stå på, og trykk *Send*.
+- **Utan nettverk:** kopier fila til microSD-kortet i P1S-en, og start ho frå skjermen (*Print files*).
+- Fila har ikkje miniatyrbilete, så skjermen viser ikkje noko bilete av plata. Det påverkar ikkje prentinga.
 
 ## Innkjøp
 
