@@ -1,0 +1,8 @@
+{
+  "_kjelde": "Linsesentrum som brøkdel av breidda (y, z) frå minimumshjørnet av meshen, front +X. Målt på framdjupnekart (største x per kolonne i fyllinga): grey_closing minus djupn, sirkelforma søkk. Runde 2 kryssjekka mot ei uavhengig måling med tre metodar (avvik ≤ 0,003). 3d-r3/04: venstre linse ligg inntil ein bandsprekk og er sett manuelt frå djupnekartet. Sjå *-linser.png.",
+  "3d-r2/01a-tvillingloep-sunburst/model.glb": {"linser": [[0.203, 0.530], [0.204, 0.221]]},
+  "3d-r2/04-visir/model.glb": {"linser": [[0.285, 0.267], [0.285, 0.571]]},
+  "3d-r2/02-eitt-vindauge/model.glb": {"linser": [[0.351, 0.524], [0.351, 0.340]]},
+  "3d-r3/01-eitt-bilete/model.glb": {"linser": [[0.289, 0.552], [0.289, 0.290]]},
+  "3d-r3/04-brei-basis-eitt-bilete/model.glb": {"linser": [[0.292, 0.635], [0.299, 0.193]]}
+}
