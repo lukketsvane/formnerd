@@ -2,8 +2,8 @@
   "revision": "A1-Assembly-R01",
   "files": {
     "README.md": {
-      "bytes": 6037,
-      "sha256": "0edc264df09a056a57bd9a7d29aeaeaccec81428622692d848744fbab56ff6ed"
+      "bytes": 6046,
+      "sha256": "7e9cbef6b6deb111884a5971d1046632e7582d283a7a46c970e143b34db48f07"
     },
     "bill-of-materials.json": {
       "bytes": 4143,
@@ -524,6 +524,142 @@
     "review/pages-r02/page-28.png": {
       "bytes": 181595,
       "sha256": "38b389589175c6f090b479ca3283b9b1caf9af478bf26c16b2a7a01a90d1d7b4"
+    },
+    "PRINT-P1S.md": {
+      "bytes": 2028,
+      "sha256": "9ddf3fb1f787efb06488e4c2bbf53d1864be62e7e3abce9e36423e64e21e6042"
+    },
+    "review/A1-Byggjerettleiing-R03.pdf": {
+      "bytes": 804922,
+      "sha256": "382c4ddc98cca2cd954bd0160677c65c96ed2ee69c30813bd4979634cd50bb67"
+    },
+    "review/A1-R03-bilete-og-kjelde.zip": {
+      "bytes": 3391942,
+      "sha256": "02059883024421357eac1a92fd3852bdb3529ecc07897019da7f74b2eadcada1"
+    },
+    "review/Byggjesteg-R03-bilete.md": {
+      "bytes": 2700,
+      "sha256": "23f13802eb29194226f65bc3a2c895ba56ed0cad0e6a72dee98ecb4c389cbe22"
+    },
+    "review/pages-r03/page-01.png": {
+      "bytes": 86080,
+      "sha256": "dfd663661605c552895729b792ad579570c027b8fe36a8ae1919520729db25c8"
+    },
+    "review/pages-r03/page-02.png": {
+      "bytes": 90291,
+      "sha256": "fd9851b30df37b27bbfcdb223df01efb228831d2567d74a4e1e2c0979025e9f8"
+    },
+    "review/pages-r03/page-03.png": {
+      "bytes": 79244,
+      "sha256": "24e8722f38e4f0261702f728c4eec520d9faf11203614b6fa8cde510fc543c1a"
+    },
+    "review/pages-r03/page-04.png": {
+      "bytes": 107093,
+      "sha256": "2aec42ac7ddb0b42463f63c41fed079f63821d5d7579f6a1c2cd66df55b5803c"
+    },
+    "review/pages-r03/page-05.png": {
+      "bytes": 67215,
+      "sha256": "9d8b04ff6fa8bbed10f594f8a69d54c5721e1b71d3fd74f3c6218b6f469bcd4f"
+    },
+    "review/pages-r03/page-06.png": {
+      "bytes": 64382,
+      "sha256": "9f20d74c69137f79823f96a9e8ac509e33294e350099a0e9b5e95f95ff50a9bb"
+    },
+    "review/pages-r03/page-07.png": {
+      "bytes": 46206,
+      "sha256": "ab9f54674c7e19760e4c1ac9655344f929017e557b3cd99dbda355f4f0bc585a"
+    },
+    "review/pages-r03/page-08.png": {
+      "bytes": 45163,
+      "sha256": "c86bb84c828abdedca5cf750dfc851b9c5d43ae1b4b9c6bd7e5dd0f7118b7d64"
+    },
+    "review/pages-r03/page-09.png": {
+      "bytes": 56515,
+      "sha256": "5ebda75eb1080af27d9647414733b91e22797580d086d399c19d13c308c0825c"
+    },
+    "review/pages-r03/page-10.png": {
+      "bytes": 73748,
+      "sha256": "56d80968378f222b942700d26e83fa8d531d449b5d1171c73487e0052bffac26"
+    },
+    "review/pages-r03/page-11.png": {
+      "bytes": 48208,
+      "sha256": "83fa4875eb79a333f61c353f37434619b86dd401ac5af9506fdcaf0dca176f26"
+    },
+    "review/pages-r03/page-12.png": {
+      "bytes": 73004,
+      "sha256": "f141ac3573d18a89480b0d333cc2c0d5299d5afc988c961ff7354bf7a1560d8b"
+    },
+    "review/pages-r03/page-13.png": {
+      "bytes": 72515,
+      "sha256": "a3ace4bc7d5e036949de51978be27f3db3f8a993577cb26c85942f14fab5e077"
+    },
+    "review/pages-r03/page-14.png": {
+      "bytes": 92150,
+      "sha256": "ec101f9688575a2c6528c7b8740b9e2ee5a1482b371923360e2bbc67f8881612"
+    },
+    "review/pages-r03/page-15.png": {
+      "bytes": 99341,
+      "sha256": "f0db4ba6cd428fb1302b8e3ff7fd4b52bf1b6093f8dbd26f848051ec1421125b"
+    },
+    "review/pages-r03/page-16.png": {
+      "bytes": 81704,
+      "sha256": "42c5536d4e4d3e8aa91a85eefbce49ff8d1a035ad2695df9537f7077d8d9aa2b"
+    },
+    "review/pages-r03/page-17.png": {
+      "bytes": 80047,
+      "sha256": "9b10b04934df9cd2fa4e7fe3686037471490eef1cae4bbd06477878293cfd1d2"
+    },
+    "review/pages-r03/page-18.png": {
+      "bytes": 107739,
+      "sha256": "4b44de7ac9d0c9ce0070e1d143fad235bfd31e70a72001407d417bb0148172a2"
+    },
+    "review/pages-r03/page-19.png": {
+      "bytes": 96794,
+      "sha256": "0a8fef5485e066924c0bc2c5744891a5dc53bddbc8561f57895be4ee50260023"
+    },
+    "review/pages-r03/page-20.png": {
+      "bytes": 104373,
+      "sha256": "60ac9aedd58384109911c023a990e960560014088a13407f564e53f14cea3075"
+    },
+    "review/pages-r03/page-21.png": {
+      "bytes": 96798,
+      "sha256": "9d0fd2a6d688eea32cf5b130907fa5a883c2a1d7735bddc95e738d1512cfbeb7"
+    },
+    "review/pages-r03/page-22.png": {
+      "bytes": 102542,
+      "sha256": "f95c2585ca2768a16977c42598d24a827c1b76555dc79a5d96e63a4d6db3aa96"
+    },
+    "review/pages-r03/page-23.png": {
+      "bytes": 83791,
+      "sha256": "3bba8686581d1f0228aa1eb30b097c7109e9fb42cd5627a100c207e3567f7fc6"
+    },
+    "review/pages-r03/page-24.png": {
+      "bytes": 108119,
+      "sha256": "27876f464ac55a79614245cc453fc519a186c17861d61734b1316f990fd47d7b"
+    },
+    "review/pages-r03/page-25.png": {
+      "bytes": 88211,
+      "sha256": "353d6616c37d905da9e3cb2b871a3a839ca3fef49fd5ffee345a59f0b3e302d7"
+    },
+    "review/pages-r03/page-26.png": {
+      "bytes": 107497,
+      "sha256": "11aaed7158e5733d99a8db631339eb154ffdafa72851f71c4edda412d4b85d4e"
+    },
+    "review/pages-r03/page-27.png": {
+      "bytes": 86865,
+      "sha256": "81d91bfeb3a652402e3516515b11cf15da3ee69d8d1ca0b3dc5b84c9fbf5e4d8"
+    },
+    "review/pages-r03/page-28.png": {
+      "bytes": 68234,
+      "sha256": "a153fb54ccc34fdd40330befaed99c16adc224b6837ea9fee2ca643996128d20"
+    },
+    "review/pages-r03/page-29.png": {
+      "bytes": 79990,
+      "sha256": "e704abfa030e179db005af2428c07fd2e96d7701add462793e2055ef3e7ae64e"
+    },
+    "verification/guide-r03.json": {
+      "bytes": 10844,
+      "sha256": "de6101cdebce5dc8ee8bbfb1c9060d44822d6f1f2d8231461491e08c8630ca82"
     }
   },
   "excluded_intermediates": [
@@ -533,5 +669,5 @@
   ],
   "full_mechanical_assembly": "review/A1-assembled.3mf",
   "hardware_release_blocked": true,
-  "documentation_revision": "A1-Byggjesteg-R02"
+  "documentation_revision": "A1-Byggjerettleiing-R03"
 }
