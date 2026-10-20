@@ -1,0 +1,47 @@
+[
+  {
+    "id": "P01",
+    "input_triangles": 1582948,
+    "output_triangles": 1579076,
+    "float32_normalization_passes": 1,
+    "per_pass_simplification_tolerance_mm": 0.0001,
+    "final_watertight": true,
+    "final_winding_consistent": true
+  },
+  {
+    "id": "P02",
+    "input_triangles": 232578,
+    "output_triangles": 232578,
+    "float32_normalization_passes": 0,
+    "per_pass_simplification_tolerance_mm": 0.0001,
+    "final_watertight": true,
+    "final_winding_consistent": true
+  },
+  {
+    "id": "P03",
+    "input_triangles": 2028,
+    "output_triangles": 2028,
+    "float32_normalization_passes": 0,
+    "per_pass_simplification_tolerance_mm": 0.0001,
+    "final_watertight": true,
+    "final_winding_consistent": true
+  },
+  {
+    "id": "P04",
+    "input_triangles": 668,
+    "output_triangles": 668,
+    "float32_normalization_passes": 0,
+    "per_pass_simplification_tolerance_mm": 0.0001,
+    "final_watertight": true,
+    "final_winding_consistent": true
+  },
+  {
+    "id": "P05",
+    "input_triangles": 708,
+    "output_triangles": 708,
+    "float32_normalization_passes": 0,
+    "per_pass_simplification_tolerance_mm": 0.0001,
+    "final_watertight": true,
+    "final_winding_consistent": true
+  }
+]

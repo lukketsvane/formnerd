@@ -1,0 +1,131 @@
+{
+  "document_revision": "M03",
+  "geometry_revision": "R01",
+  "page_count": 15,
+  "a4": true,
+  "visual_review": "All latest15 pages inspected; no clipping, collision, placeholder or action ambiguity remains in the reviewed diagrams. Pages5/6/9/13 passed independent reading.",
+  "pdf_sha256": "1130d65cec9ab2b9fdc2080208a6fc0aa85728a97515d3d09e83264ce103f8fa",
+  "raster_images_in_pdf": 0,
+  "all_15_page_pngs_valid": true,
+  "main_panel_freeze_comparison": [
+    {
+      "page": 5,
+      "whole_page_identical": false,
+      "main_panels_identical": true
+    },
+    {
+      "page": 6,
+      "whole_page_identical": false,
+      "main_panels_identical": true
+    },
+    {
+      "page": 7,
+      "whole_page_identical": false,
+      "main_panels_identical": true
+    },
+    {
+      "page": 8,
+      "whole_page_identical": true,
+      "main_panels_identical": true
+    },
+    {
+      "page": 9,
+      "whole_page_identical": false,
+      "main_panels_identical": true
+    },
+    {
+      "page": 11,
+      "whole_page_identical": false,
+      "main_panels_identical": true
+    }
+  ],
+  "cad_integrity_report": "manual-m03-cad-integrity.json",
+  "readtest": "manual-v3-readtest.json",
+  "portable_rebuild": {
+    "archive_sha256_tested": "25250b80b658c77d132c8a613186e2dfe9504f7058d25e2c6464730aac4bf241",
+    "method": "Fresh unzip without original CAD directory; cached layout rebuild with CAD and renderer imports forbidden;15page extracted text and160dpi pixel equality.",
+    "result": "pass",
+    "page_count": 15,
+    "pages": [
+      {
+        "page": 1,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 2,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 3,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 4,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 5,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 6,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 7,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 8,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 9,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 10,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 11,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 12,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 13,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 14,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      },
+      {
+        "page": 15,
+        "text_identical": true,
+        "pixels_identical_at_160dpi": true
+      }
+    ],
+    "rebuild_payload_sha256": "ccc00e04064e98e40e7e26d9b1b44bbaad854f762e864412c57c494b4939576d",
+    "tested_payload_files": 90,
+    "final_archive_note": "The final archive embeds this completed report after testing; rendering source, vector caches, fonts and fixtures remain identical to the tested archive."
+  },
+  "physical_validation": "not performed; T01, actual hardware, slicing and spring return still require physical verification"
+}
