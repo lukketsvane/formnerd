@@ -4,46 +4,45 @@ Kamerahus for to ESP32-CAM i stilen frå referansane: feite, mjuke tubar rundt e
 
 ## Printpakke (`print/`) og monteringsrettleiing (`rettleiing/`)
 
-**Status: klar for prøveprint, ikkje 100 % klar for sluttprint og montering.** Sjå «Kva som manglar» under.
+**Status: konseptet er lagt bort (oktober 2026).** Pakken er klar for prøveprint av prøvebitane, men ikkje 100 % klar for sluttprint og montering. Sjå «Kva som manglar» under. Ein uavhengig kontroll av siste revisjon vart starta, men avbroten då konseptet vart lagt bort.
 
 Huset er bygd rundt delane som er valde for prosjektet: to ESP32-CAM, kvar sett på eit ESP32-CAM-MB med micro-USB. Det krev inga skrue, inga lodding og ingen flatkabelforlenging.
 
 | Del | Printretning | Mål (mm) | Masse (massiv) | Støtte |
 | --- | --- | --- | --- | --- |
-| `fremre_skal.stl` | skøytesida ned | 115 × 78 × 43 | ca. 56 g | tre-støtte |
-| `bakre_skal.stl` | skøytesida ned | 113 × 77 × 35 | ca. 39 g | tre-støtte |
+| `fremre_skal.stl` | skøytesida ned | 115 × 78 × 44 | ca. 55 g | tre-støtte |
+| `bakre_skal.stl` | skøytesida ned | 112 × 77 × 35 | ca. 38 g | tre-støtte |
 | `innmatsramme.stl` | plata ned | 110 × 74 × 16 | ca. 23 g | tre-støtte (slicaren legg til litt) |
 
-`A2-hus-alle-delar.3mf` har alle tre på éi 256 mm-plate. `provebitar/` har fire små utdrag av dei same delane, til å prøve skøyten, styrebena, linsehol og USB-tunnel før sluttprint. `renderar/` har samla, eksplodert og snitt.
+`A2-hus-alle-delar.3mf` har alle tre på éi 256 mm-plate. `provebitar/` har sju små utdrag (skøyt framme, bak og plate, og holdar og linse/USB for kvar stabel) av dei same delane, til å prøve skøyten, styrebena, linsehol og USB-tunnel før sluttprint. `renderar/` har samla, eksplodert og snitt.
 
 `bambu/` har ferdig slica filer for Bambu Lab P1S (Bambu Studio 2.8.2, 0,4 mm dyse, 0,20 mm Standard, Bambu PLA Basic, tre-støtte berre frå plata, 3 veggar, 15 % fyll, Textured PEI). Profilane ligg i `bambu/profil/`, og `verktoy/bambu_slice.sh` slicar på nytt.
 
 | Fil | Plate | Innhald | Tid | Filament |
 | --- | --- | --- | --- | --- |
-| `A2-hus-P1S.gcode.3mf` | 1 | fremre og bakre skal | 6 t 15 min | 117,6 g |
-| `A2-hus-P1S.gcode.3mf` | 2 | innmatsramme | 37 min | 18,6 g |
-| `A2-provebitar-P1S.gcode.3mf` | 1 | fire prøvebitar | 1 t 32 min | 29,0 g |
+| `A2-hus-P1S.gcode.3mf` | 1 | alle tre delane | 6 t 35 min | 133,1 g |
+| `A2-provebitar-P1S.gcode.3mf` | 1 | sju prøvebitar | 2 t 52 min | 55,4 g |
 
 Slicaren gav inga åtvaring. Byt skrivar, plate eller filament i Bambu Studio om oppsettet ditt er eit anna.
 
 Konstruksjon (`verktoy/bygg_hus.py`, mål i `print/parametrar.json`):
 
 - **Kropp:** Formen er runde 3, variant 04, skalert til 115 mm breidd, med 2,4 mm vegg.
-- **Skøyt:** Fremre og bakre skal møtest i ein halv overlappskøyt med 0,2 mm klaring og seks klikk-knastar.
+- **Skøyt:** Fremre og bakre skal møtest i ein halv overlappskøyt med 0,2 mm klaring og seks klikk-knastar (heile kalottar midt på bakre lepp, 0,3 mm interferens). Bakre innerlepp er 0,8 mm tjukkare innover, så ho står på ein heil ring. Steget på bakre skal har ei 45°-fuge, og skuldra i fremre skal er 45°, så skøyten treng inga støtte.
 - **Montering:** Delane under skøyten er trimma mot sveipet av fremre skal, så det kan skyvast rett på utan kollisjon (kontrollert).
-- **Innmatsramme:** Ramma blir klemd i skøyten. Ho har styreben og hyller for kvar stabel, med klaring for loddespissar.
-- **Stablar:** Kvar stabel (ESP32-CAM på MB) ligg med den lange sida langs breidda. Linsa sit 9,5 mm frå SD-enden (publisert typisk mål) bak eit 9,5 mm hol med fasa kant ut mot ytterflata.
-- **USB:** Kvar micro-USB-port når ut gjennom kvar sin endevegg via ein tunnel på 12,5 × 9,5 mm. Den eine kjem ut på grepssida.
+- **Innmatsramme:** Ramma blir klemd i skøyten med ein 45°-kant mot skuldra i fremre skal (0,25 mm aksial luft). Kanten er trimma kolonnevis mot fremre skal, så påskyvinga er fri. Ho har styreben og hyller for kvar stabel, med klaring for loddespissar.
+- **Stablar:** Kvar stabel (ESP32-CAM på MB) ligg med den lange sida langs breidda. Linsa sit 9,5 mm frå SD-enden (publisert typisk mål) bak eit 11 mm hol med indre fas, fresing innanfrå og ei synsfeltkjegle på 35°. Stablane er plasserte med eksakt avstandsmåling, så alt utanom linseløpet har minst 0,5 mm til fremre skal.
+- **USB:** Kvar micro-USB-port når ut gjennom kvar sin endevegg via ein tunnel på 12,5 × 10,5 mm, med minst 1,6 mm vegg ned til skøyten. Den eine kjem ut på grepssida.
 - **Linse 2 er flytt:** Linse 1 står i det opphavlege søkket. Linse 2 er flytt frå z = 21 til z = 42,6 mm, og det gamle søkket er fylt. Grunnen er at USB-kontakten sit 31 mm frå linsa på kortet. Med linsa nær høgre enden ville porten peike inn mot den andre stabelen. **Stereobasisen blir difor 30 mm, ikkje 48 mm.** Brei basis krev ein vinkla micro-USB-kabel eller flatkabelforlenging, og ingen av dei er stadfesta.
 - **Utløysar:** Ingen fysisk utløysar. Alle 16 stifter på ESP32-CAM sit i MB-headeren, så ein knapp krev lodding. Utløysaren må gå via WiFi. Knappane på toppen er pynt.
 
 Kontrollar som er gjorde (`print/kontroll.json`):
 
 - ingen kollisjonar mellom delar og elektronikk i montert stilling
-- minst 0,48 mm frå elektronikken til innerveggen
-- monteringssveip utan kollisjon
-- plata klemd på om lag 240–300 mm²
-- alle delar tette og i eitt stykke, og innanfor P1S-plata
+- minst 0,5 mm (eksakt `min_gap`) frå elektronikken til fremre skal, og 1,55 / 1,83 mm frå linseløpet til holkanten
+- eksakt påskyvingskontroll: fremre skal forskyvd 0–30 mm gir 0,0 mm³ overlapp med resten
+- alle STL-ar er vasstette etter innlesing, utan kantar delte av fleire enn to flater
+- første lag er eitt samanhengande stykke på alle tre delane
 
 ### Kva som manglar før sluttprint og montering
 
@@ -53,9 +52,9 @@ Kontrollar som er gjorde (`print/kontroll.json`):
    - kortlengda
    - høgda til USB-kontakten
 2. **Prøvebitane er ikkje printa.** Skøyten, klikk-knastane, styrebena og USB-tunnelen er ikkje prøvde fysisk.
-3. **Slica, men ikkje printa.** Bambu Studio gav inga åtvaring, men tre-støtta under visiret og første lag må sjåast etter på den første printen.
+3. **Slica, men ikkje printa.** Bambu Studio gav inga åtvaring, men tre-støtta under visiret og første lag må sjåast etter på den første printen. Byggeskriptet er ikkje køyrt på nytt for ytterpunkta i toleransane (låg linsetopp, kort/lang stabel) etter siste revisjon.
 4. **Krava i prosjektoversikta er ikkje oppfylte:**
-   - Linsa er under 30 mm (holet er 9,5 mm).
+   - Linsa er under 30 mm (holet er 11 mm).
    - Utløysaren finst berre i programvaren.
    - Det er micro-USB, ikkje USB-C. Biletoverføring skjer via WiFi eller SD-kort.
 5. **Delar som ikkje står på utstyrslista:** to micro-USB-kablar, to USB-ladarar (5 V, 1–2 A), tape til å feste kameramodulen på SD-sokkelen, og eventuelt microSD-kort.
