@@ -1,0 +1,2190 @@
+{
+  "source_npz_sha256": {
+    "01_outer_shell": "b83a1976a46795869c0a6e70b789023adb544f6277ac27c40016b66f67884028",
+    "02_native_rear_cover": "270b4af4eb81ecee5f362e91892883e91b54f5db2f76b862181282303c4718bb",
+    "03_esp32_carrier": "ddd9f06419573a6ed33e0f6cb3d19b758744cbaf735d9be5cda4c80abc0003ab",
+    "04_optical_bezel": "f9a6bf9135de39c57a7af8c20e14835608cf93a238595ef997fd217ca5715b8f",
+    "05_lock_1": "33b0dd58b9ad5092067a490700688b9ff0045dec0fe82291e7ac69689a75af50",
+    "05_lock_2": "a1d4dfb0859c2471774a012e961b6085637e3e7ab7c567a26d5c416e77dabe68",
+    "05_lock_3": "62661398022896968564b17abc3d34f171bcc6689eee23980c9471f3b5994d79",
+    "05_lock_4": "15663e8e14c68eb0117f6c00bff37879bc538beb84712d3d225a3c47047c889d",
+    "06_lock_tool": "023124259e74bca4471f4efffa73b5d73c78414c3ba4faaf59e2fe4affe816f3",
+    "07_shutter": "87352c30c0a671d618b2d2f8c9f87f91a05e261e7d4665605ab260979b4f414d",
+    "08_shutter_retainer": "7c2301a252669215054cc661f9daba8faaa22888600d517c54dd201a920a4cbe",
+    "09_camera_keeper": "f7de06d2ef5143864b83243bd2e479b8f38522150f5b929dc97b2ddd494d02cd",
+    "test_lock_socket": "db0c12b5d8506349e8ae2a5a0d68cbdbd1de40541ae4a42597f4fe1ff99c8a3a"
+  },
+  "printed_part_geometry_modified": false,
+  "physical_fit_verified": false,
+  "electronics_measured": false,
+  "electronics_are_schematic_nominal_reference_only": true,
+  "illustration_offsets_are_not_path_certification": true,
+  "stages": [
+    {
+      "filename": "m01-inventory.png",
+      "sha256": "0e2e4b3e00fae06952c00aa0582954256a6ebed29ff420baadebe8497e302e1f",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -94.7,
+          -188.5,
+          -52.03306257724762
+        ],
+        [
+          81.0,
+          77.8,
+          103.44087886810303
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "02_native_rear_cover",
+          "offset": [
+            0.0,
+            -105.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            -54.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "04_optical_bezel",
+          "offset": [
+            0.0,
+            48.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_1",
+          "offset": [
+            0.0,
+            -155.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_2",
+          "offset": [
+            0.0,
+            -155.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_3",
+          "offset": [
+            0.0,
+            -155.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_4",
+          "offset": [
+            0.0,
+            -155.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            -100.0,
+            0.0,
+            63.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            -55.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "09_camera_keeper",
+          "offset": [
+            -55.0,
+            -50.0,
+            10.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "06_lock_tool",
+          "offset": [
+            74.0,
+            -132.0,
+            -8.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "test_lock_socket",
+          "offset": [
+            -65.0,
+            -152.0,
+            -29.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05 \u00d7 4",
+        "06",
+        "07",
+        "08",
+        "09",
+        "T1"
+      ]
+    },
+    {
+      "filename": "m02-lock-test.png",
+      "sha256": "3f1b8167b6524df2346b4235e84bfd6255b5a71ed63b860ccc13eb447369afaa",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -9.0,
+          -54.5,
+          -9.0
+        ],
+        [
+          9.0,
+          -15.0,
+          9.0
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "test_lock_socket",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_1",
+          "offset": [
+            31.7,
+            -21.0,
+            -30.0
+          ],
+          "moving": true,
+          "angle": -90,
+          "pivot": [
+            -31.7,
+            0.0,
+            30.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "T1",
+        "05"
+      ]
+    },
+    {
+      "filename": "m03-carrier.png",
+      "sha256": "f6eaca23e7b0353f58484c5847c6ffccb04257c24f46d835a54d228719e8e17b",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -49.5,
+          -23.6,
+          -29.8
+        ],
+        [
+          -13.899999999999999,
+          24.8,
+          21.8
+        ]
+      ],
+      "nominal_reference_electronics": true,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": {
+            "normal": [
+              -1,
+              0,
+              0
+            ],
+            "origin": [
+              -31.7,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "name": "E1",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "E2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "E0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": true,
+          "opacity": 0.35,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "03",
+        "E1 NOM.",
+        "E2 NOM."
+      ]
+    },
+    {
+      "filename": "m04-camera.png",
+      "sha256": "47597fc335d8fdc0ec1300642ea85957cdec3326f2aa4157fe7ecce694ee98ea",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -46,
+          -23,
+          -25
+        ],
+        [
+          -17,
+          31,
+          10
+        ]
+      ],
+      "nominal_reference_electronics": true,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": {
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "origin": [
+              0,
+              4,
+              0
+            ]
+          }
+        },
+        {
+          "name": "E4",
+          "offset": [
+            0.0,
+            -16.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "L3",
+          "offset": [
+            0.0,
+            -16.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "FPC",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 0.65,
+          "clip": null
+        },
+        {
+          "name": "09_camera_keeper",
+          "offset": [
+            0.0,
+            -32.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "03",
+        "E4 NOM.",
+        "FPC NOM.",
+        "09"
+      ]
+    },
+    {
+      "filename": "m05-button.png",
+      "sha256": "e23c15aab92becbe4ca3b88787b26f0a962534975a7be05c230353e3fcde5bb1",
+      "camera_direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          27,
+          -9,
+          23
+        ],
+        [
+          64,
+          27,
+          66
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            0.0,
+            0.0,
+            22.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "01",
+        "07"
+      ]
+    },
+    {
+      "filename": "m06-switch-seat.png",
+      "sha256": "cbff511babccaae84e7b03ce75e70c6f9cca11f9b6474d33b5b547dd6aedb1cb",
+      "camera_direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          35.7,
+          -25.7,
+          24.0
+        ],
+        [
+          54.3,
+          16.8,
+          49.3
+        ]
+      ],
+      "nominal_reference_electronics": true,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": {
+            "normal": [
+              0,
+              0,
+              -1
+            ],
+            "origin": [
+              0,
+              0,
+              32.8
+            ]
+          }
+        },
+        {
+          "name": "SW",
+          "offset": [
+            0.0,
+            0.0,
+            18.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "SW-A",
+          "offset": [
+            0.0,
+            0.0,
+            18.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "08",
+        "SW NOM."
+      ]
+    },
+    {
+      "filename": "m07-cassette.png",
+      "sha256": "c1cc53476dd84df0f647a40eded1321fa2b8b2b44becfedefad5c2fcdab1315c",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          27,
+          -82,
+          19
+        ],
+        [
+          62,
+          21,
+          46
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            -48.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "01",
+        "07",
+        "08"
+      ]
+    },
+    {
+      "filename": "m08-carrier-insert.png",
+      "sha256": "a64e1049b62993b0456afce53c65ea7d61249600307f58118aebc5c71b003a23",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -62,
+          -95,
+          -40
+        ],
+        [
+          1,
+          37,
+          33
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            -64.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "09_camera_keeper",
+          "offset": [
+            0.0,
+            -64.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "01",
+        "03 + 09"
+      ]
+    },
+    {
+      "filename": "m09-bezel.png",
+      "sha256": "3d6c9d3004fa2f92352fe2bc14d7d8b2d55b29322822e41e9c8ce2e77f0a4f19",
+      "camera_direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -59,
+          11,
+          -38
+        ],
+        [
+          -3,
+          63,
+          18
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "09_camera_keeper",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "04_optical_bezel",
+          "offset": [
+            0.0,
+            23.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": -45,
+          "pivot": [
+            -31.7,
+            0.0,
+            -8.4
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "01",
+        "04"
+      ]
+    },
+    {
+      "filename": "m10-cover.png",
+      "sha256": "7fcccfa301b540fe5fe08fa27a528c285cf18527d522ad345373bd3ee515fba9",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -70.0,
+          -94.10584557056427,
+          -52.03306257724762
+        ],
+        [
+          70.0,
+          36.105841398239136,
+          52.03306257724762
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "04_optical_bezel",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "09_camera_keeper",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "02_native_rear_cover",
+          "offset": [
+            0.0,
+            -58.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "01",
+        "02"
+      ]
+    },
+    {
+      "filename": "m11-locks.png",
+      "sha256": "7e144ddb2918e19b5ec5143f6665446942b0d3cda080edece38156c9ce802ce5",
+      "camera_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -70.0,
+          -70.25,
+          -52.03306257724762
+        ],
+        [
+          70.0,
+          36.105841398239136,
+          52.03306257724762
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "02_native_rear_cover",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "04_optical_bezel",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "09_camera_keeper",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_1",
+          "offset": [
+            0.0,
+            -27.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": -90,
+          "pivot": [
+            -31.7,
+            0.0,
+            30.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_2",
+          "offset": [
+            0.0,
+            -27.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": -90,
+          "pivot": [
+            -31.7,
+            0.0,
+            -38.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_3",
+          "offset": [
+            0.0,
+            -27.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": -90,
+          "pivot": [
+            20.0,
+            0.0,
+            27.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_4",
+          "offset": [
+            0.0,
+            -27.0,
+            0.0
+          ],
+          "moving": true,
+          "angle": -90,
+          "pivot": [
+            42.0,
+            0.0,
+            -22.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "06_lock_tool",
+          "offset": [
+            20.0,
+            -64.5,
+            27.0
+          ],
+          "moving": false,
+          "angle": 90,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": [
+        "05 \u00d7 4",
+        "06",
+        "02"
+      ]
+    },
+    {
+      "filename": "m12-finished.png",
+      "sha256": "fdcbcca5f98483b823775380a1613971c80e17953c6b2c9ccf9f8ba5cacef425",
+      "camera_direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "camera_up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "orthographic": true,
+      "focus_bounds_mm": [
+        [
+          -70.0,
+          -36.10584557056427,
+          -52.03306257724762
+        ],
+        [
+          70.0,
+          36.105841398239136,
+          52.03306257724762
+        ]
+      ],
+      "nominal_reference_electronics": false,
+      "physical_fit_verified": false,
+      "illustrative_offsets_only": true,
+      "printed_part_geometry_modified": false,
+      "instances": [
+        {
+          "name": "01_outer_shell",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "02_native_rear_cover",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "03_esp32_carrier",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "04_optical_bezel",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_1",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_3",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "05_lock_4",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "07_shutter",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "08_shutter_retainer",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        },
+        {
+          "name": "09_camera_keeper",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moving": false,
+          "angle": 0,
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "wire": false,
+          "opacity": 1,
+          "clip": null
+        }
+      ],
+      "labels": []
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "source": "firmware/A1_Bench_Camera/A1_Bench_Camera.ino",
+  "source_sha256": "7a796b7ad8a8fa6dbbff339d8addad35a682a112dc84cd9ea38ba384efd3567e",
+  "passed": true,
+  "logic": {
+    "actual_source_functions_extracted": [
+      "captureImage",
+      "loop"
+    ],
+    "camera_and_gpio_simulated": true,
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "leak_sanitizer": "disabled because sandbox /proc task access prevents leak-sanitizer execution",
+    "cases": [
+      "JPEG survives returned framebuffer mutation",
+      "oversized frame preserves previous image",
+      "null buffer rejected",
+      "null frame rejected",
+      "camera-not-ready rejected",
+      "contact bounce ignored until 40ms stable",
+      "held button captures once",
+      "release and second press capture again",
+      "millis wraparound",
+      "button held at boot waits for release"
+    ],
+    "raw_result": {
+      "passed": true,
+      "cases": 10
+    }
+  },
+  "ui": {
+    "passed": true,
+    "cases": [
+      "empty-image-hidden",
+      "capture-updates-image",
+      "reset-clears-stale-image",
+      "camera-error-disables-button"
+    ]
+  },
+  "hardware_flashed": false,
+  "hardware_function_tested": false,
+  "scope": "Host-side simulations verify application logic only; not camera driver, Wi-Fi, physical electronics or exposure timing."
+}

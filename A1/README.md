@@ -4,9 +4,9 @@
 
 ![Mekanisk assembly R01](cad-assembly/review/A1-assembled.png)
 
-Ny CAD-versjon med 11 mekaniske produktdelar, separate printmodellar og seks sider med monteringssteg. Begge printplatene er digitalt slicer-verifiserte. Faktiske ESP32-CAM/MB-mål, brytar, straum/USB og fysisk prøvepass står att før frigjeving.
+Ny CAD-versjon med 11 mekaniske produktdelar, separate printmodellar og ein ny byggjeguide R02 på 28 sider, frå Arduino IDE og ESP32-CAM til utløysar og mekanisk montering. Begge printplatene er digitalt slicer-verifiserte. Faktiske ESP32-CAM/MB-mål, brytar, straum/USB og fysisk prøvepass står att før frigjeving.
 
-[Monteringssteg](cad-assembly/review/A1-Montering-R01.pdf) | [Eksplodert isometrisk teikning](cad-assembly/review/A1-exploded-lines.png) | [CAD- og printfiler](cad-assembly/)
+[Ny byggjeguide R02](cad-assembly/review/A1-Byggjesteg-R02.pdf) | [Alle sidene som bilete](cad-assembly/review/Byggjesteg-R02-bilete.md) | [ESP32-testprogram](cad-assembly/firmware/README.md) | [Eksplodert isometrisk teikning](cad-assembly/review/A1-exploded-lines.png) | [CAD- og printfiler](cad-assembly/)
 
 ## Opphavleg Tripo-formgrunnlag
 
@@ -22,9 +22,9 @@ Opne 3MF i Bambu Studio, vel den faktiske **Bambu Lab P1S- og PLA-profilen**, og
 
 Sjå [LES-MEG.txt](LES-MEG.txt), [slicingkontrollen](verification/slicer-checks.json) og [filmanifestet](manifest.json) for detaljar.
 
-## Print og monteringskontroll
+## Opphavleg formmodell: print og monteringskontroll
 
-**A1 er ein formmodell, ikkje eit monteringsklart kamerahus.** Kamerafeste, komponentmål, kabelvegar og mekaniske klaringar er ikkje verifiserte.
+**Det opphavlege formgrunnlaget nedanfor er ein formmodell.** Den nye mekaniske assemblyen og byggjeguiden ligg i `cad-assembly/`. Kamerafeste, komponentmål, kabelvegar og mekaniske klaringar er ikkje verifiserte.
 
 [Isometrisk rettleiing med printsteg og monteringsstatus](review/print-og-montering/A1-Print-og-Monteringskontroll.pdf)
 

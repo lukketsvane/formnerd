@@ -2,16 +2,16 @@
   "revision": "A1-Assembly-R01",
   "files": {
     "README.md": {
-      "bytes": 4128,
-      "sha256": "0ac7968df2965c006822aa20e11ffdde25b7e082e767110a928ccb353724960b"
+      "bytes": 6037,
+      "sha256": "0edc264df09a056a57bd9a7d29aeaeaccec81428622692d848744fbab56ff6ed"
     },
     "bill-of-materials.json": {
       "bytes": 4143,
       "sha256": "acb7f6386a55d1b52b5c41ff4ff9d3aa925d5cba44ba6927b20878db43cee7d1"
     },
     "release-info.json": {
-      "bytes": 1902,
-      "sha256": "8820961953dce137b7e13ed06c95dd31de1b0a552ba8d127655643f15fa8557e"
+      "bytes": 2311,
+      "sha256": "96d19714cb81e06cc7b8567a837a1c8e02ff4c66d600140b47c8ab2d00fcb0f7"
     },
     "A1_Analytic_Mechanism.step": {
       "bytes": 803338,
@@ -236,6 +236,294 @@
     "verification/A1-plate-02-slicer.log": {
       "bytes": 876,
       "sha256": "09c49ed7f35fa8b6bbc728b4bc4f775bba14e347c41f7c607802c32e2cebe7e8"
+    },
+    "cad/build_guide_r02.py": {
+      "bytes": 31113,
+      "sha256": "4a1b23b58d2704ac45cb111ca3d6028f93f2970435e80b1ec6c962aa617965f4"
+    },
+    "cad/electronics_figures_r02.py": {
+      "bytes": 14718,
+      "sha256": "f41ec260d1919b5e19bf57c1134005dbb51e0d1e50e394d1d95f049c7538555e"
+    },
+    "cad/mechanical_steps_r02.py": {
+      "bytes": 20122,
+      "sha256": "80cae19ee2a9f430a6c821bda6f0fa52f04863dedd0fc396b6f53c5a596a3a4c"
+    },
+    "cad/verify_firmware_r02.py": {
+      "bytes": 7049,
+      "sha256": "9bedf9c95473754169b598735fc154e17fffd80acd6c877c20b3b0b458ff41db"
+    },
+    "cad/requirements-manual.txt": {
+      "bytes": 32,
+      "sha256": "06487d210056269e0ca57674223537695bb18eaeac8d1d422a3d18fe0335ec01"
+    },
+    "firmware/README.md": {
+      "bytes": 8268,
+      "sha256": "832a8b0d8c14b140e9a073f8dde2ae82047b1ca7bd588197188f77bfa3d760c1"
+    },
+    "firmware/A1_Bench_Camera/A1_Bench_Camera.ino": {
+      "bytes": 8446,
+      "sha256": "7a796b7ad8a8fa6dbbff339d8addad35a682a112dc84cd9ea38ba384efd3567e"
+    },
+    "review/A1-Byggjesteg-R02.pdf": {
+      "bytes": 4398527,
+      "sha256": "dc111bce40b270e1285a2ffc23dac8b7b094545ff136b5d7adcbe1c9fd909c08"
+    },
+    "review/A1-Byggjesteg-R02-sider.zip": {
+      "bytes": 4572990,
+      "sha256": "1bac86bdffc97b76c2daae780db5f65c5b4a7995bb66bb017d11745a5ece3ae0"
+    },
+    "review/Byggjesteg-R02-bilete.md": {
+      "bytes": 3026,
+      "sha256": "37fe86442b079a59710e3b889600c1c6cc6499b437931b3be916901e4333bbc3"
+    },
+    "review/steps-r02/metadata.json": {
+      "bytes": 42635,
+      "sha256": "40a2704e4f387e4eac052ee88969563e94d5b21fa0c73d8ab4e5bea6fafc3c3f"
+    },
+    "verification/guide-r02.json": {
+      "bytes": 13428,
+      "sha256": "bd82a8d708bea6b0d2e136fa6ba7eaed24a71b8ddb903d10ebbf0c8c0b8f29bd"
+    },
+    "verification/guide-r02-qa.json": {
+      "bytes": 6789,
+      "sha256": "e754e41064a13c7d2547833e3a87e025ae10c5d91ebdfe2ab5889f8993983026"
+    },
+    "verification/firmware-r02.json": {
+      "bytes": 4580,
+      "sha256": "355b1808db4c570b4c70b60588915e975e21fd99317caa237080a53240dfe3f2"
+    },
+    "verification/firmware-host-r02.json": {
+      "bytes": 1351,
+      "sha256": "101f046053028bf5f109a376ed6e684b263a7af3678ee9c801bd1742a49a9c42"
+    },
+    "verification/firmware-compile-r02.log": {
+      "bytes": 209,
+      "sha256": "9dab34ac8d8a75e75a7523c3e31d06302e829dd9b293a81941089d4abf587d1c"
+    },
+    "review/steps-r02/e01-stack.png": {
+      "bytes": 230687,
+      "sha256": "fb49ae6cf6aceb2d53c74b18f41bec85647be8dcfee16ca3df6bd478e2a9f670"
+    },
+    "review/steps-r02/e02-usb.png": {
+      "bytes": 204745,
+      "sha256": "26fba83708e6851cc9f780dc9d5095661d896e5b8d819c496af4301a350c4aba"
+    },
+    "review/steps-r02/e03-switch-test.png": {
+      "bytes": 137704,
+      "sha256": "497f59791e3c8477c585a2a4cafb891dc199a2f6f51f1b70950d8f5313df1319"
+    },
+    "review/steps-r02/e04-schematic.png": {
+      "bytes": 70578,
+      "sha256": "711fcf9df0fc451e5ba27a95fbb18d92df205a223eea912c69527cefc4404ffa"
+    },
+    "review/steps-r02/e05-wiring.png": {
+      "bytes": 116132,
+      "sha256": "e893a8889972e91036c37f0c3cd94aae0d2acee53942fc4c6f18ab8c5de55f36"
+    },
+    "review/steps-r02/e06-bench.png": {
+      "bytes": 210492,
+      "sha256": "f03b62a3ad2f037bf5c6d82c83f15549191b216b73216fc23fb0ccf55d87bc4a"
+    },
+    "review/steps-r02/e07-flex.png": {
+      "bytes": 138450,
+      "sha256": "9d11746c7ece14294f29b2a5e2b43661488bae80d956b93be47cde62afcdb684"
+    },
+    "review/steps-r02/e08-disconnect.png": {
+      "bytes": 196748,
+      "sha256": "8ea21248a1dd91f7de9b93cb89c9608bed2d43b531d05716c0e695f441ee21e7"
+    },
+    "review/steps-r02/e01-stack.svg": {
+      "bytes": 21735,
+      "sha256": "13450a0d2a3272da91be5a74f71ece928b568aa034a38af6447b9ac3be1c06c3"
+    },
+    "review/steps-r02/e02-usb.svg": {
+      "bytes": 22779,
+      "sha256": "96cd412433988a8297b28bb19bec729e29ac3e0ed9088f5296109b166012ccee"
+    },
+    "review/steps-r02/e03-switch-test.svg": {
+      "bytes": 6128,
+      "sha256": "36545a319bc02da26fec80a0c70523e830040e3eaf1a273083d49c9365836c5f"
+    },
+    "review/steps-r02/e04-schematic.svg": {
+      "bytes": 3402,
+      "sha256": "dc6558b7b57f3a8472f6ff22fb057b52dbc0cde9eaef7d532380ea21a2682eb5"
+    },
+    "review/steps-r02/e05-wiring.svg": {
+      "bytes": 5716,
+      "sha256": "276fd2f5df82027f7a2426d3e618520142ed26bde7e97890e84a5199e74ecc49"
+    },
+    "review/steps-r02/e06-bench.svg": {
+      "bytes": 23349,
+      "sha256": "a536859d72c5531bd0cc3c0754cd02600434560d89b36ec8cefb7b8ebe9ff2ec"
+    },
+    "review/steps-r02/e07-flex.svg": {
+      "bytes": 4505,
+      "sha256": "8405c0299efebc8b4e3f8db6117265ae1b207479fba9b4b5860729f6b5279013"
+    },
+    "review/steps-r02/e08-disconnect.svg": {
+      "bytes": 21567,
+      "sha256": "e503ea33fae2cef37a83e17b1759c3a97d7d51ae8ff02e6012eea933e03879f5"
+    },
+    "review/steps-r02/m01-inventory.png": {
+      "bytes": 190739,
+      "sha256": "0e2e4b3e00fae06952c00aa0582954256a6ebed29ff420baadebe8497e302e1f"
+    },
+    "review/steps-r02/m02-lock-test.png": {
+      "bytes": 66740,
+      "sha256": "3f1b8167b6524df2346b4235e84bfd6255b5a71ed63b860ccc13eb447369afaa"
+    },
+    "review/steps-r02/m03-carrier.png": {
+      "bytes": 60214,
+      "sha256": "f6eaca23e7b0353f58484c5847c6ffccb04257c24f46d835a54d228719e8e17b"
+    },
+    "review/steps-r02/m04-camera.png": {
+      "bytes": 82115,
+      "sha256": "47597fc335d8fdc0ec1300642ea85957cdec3326f2aa4157fe7ecce694ee98ea"
+    },
+    "review/steps-r02/m05-button.png": {
+      "bytes": 389011,
+      "sha256": "e23c15aab92becbe4ca3b88787b26f0a962534975a7be05c230353e3fcde5bb1"
+    },
+    "review/steps-r02/m06-switch-seat.png": {
+      "bytes": 66228,
+      "sha256": "cbff511babccaae84e7b03ce75e70c6f9cca11f9b6474d33b5b547dd6aedb1cb"
+    },
+    "review/steps-r02/m07-cassette.png": {
+      "bytes": 579665,
+      "sha256": "c1cc53476dd84df0f647a40eded1321fa2b8b2b44becfedefad5c2fcdab1315c"
+    },
+    "review/steps-r02/m08-carrier-insert.png": {
+      "bytes": 341942,
+      "sha256": "a64e1049b62993b0456afce53c65ea7d61249600307f58118aebc5c71b003a23"
+    },
+    "review/steps-r02/m09-bezel.png": {
+      "bytes": 370266,
+      "sha256": "3d6c9d3004fa2f92352fe2bc14d7d8b2d55b29322822e41e9c8ce2e77f0a4f19"
+    },
+    "review/steps-r02/m10-cover.png": {
+      "bytes": 275135,
+      "sha256": "7fcccfa301b540fe5fe08fa27a528c285cf18527d522ad345373bd3ee515fba9"
+    },
+    "review/steps-r02/m11-locks.png": {
+      "bytes": 197900,
+      "sha256": "7e144ddb2918e19b5ec5143f6665446942b0d3cda080edece38156c9ce802ce5"
+    },
+    "review/steps-r02/m12-finished.png": {
+      "bytes": 220948,
+      "sha256": "fdcbcca5f98483b823775380a1613971c80e17953c6b2c9ccf9f8ba5cacef425"
+    },
+    "review/pages-r02/page-01.png": {
+      "bytes": 174906,
+      "sha256": "0bdc00d3bef034b8afcbf6f4b351dedf54b3135dc8e6ab6c83a951f657205935"
+    },
+    "review/pages-r02/page-02.png": {
+      "bytes": 156221,
+      "sha256": "db26c022b4201659305b493d17f743662fb28a567ecd624ef8092aed627197d0"
+    },
+    "review/pages-r02/page-03.png": {
+      "bytes": 218566,
+      "sha256": "685684088f6cc4bf341a0b18a71e4177f1b43d988cbc66d865adf6afe53a2baa"
+    },
+    "review/pages-r02/page-04.png": {
+      "bytes": 209270,
+      "sha256": "6b2fbc1db54c8f609c924f0ba841f6988368408646193bd2af752ace398146e1"
+    },
+    "review/pages-r02/page-05.png": {
+      "bytes": 194085,
+      "sha256": "f38c3da8ac2167459f1ed9dabde3a4e9af7c5b21da09f98e6637fefb57861a7a"
+    },
+    "review/pages-r02/page-06.png": {
+      "bytes": 143152,
+      "sha256": "8cc6e692c6fb300f209f7a3049bc0001a9dff3fb359bea7b62a6d71afb1f227c"
+    },
+    "review/pages-r02/page-07.png": {
+      "bytes": 134653,
+      "sha256": "9547944535423795ca18050de03086a0a4b1cfa99247e9cca4bf5c73b2a5d06e"
+    },
+    "review/pages-r02/page-08.png": {
+      "bytes": 143675,
+      "sha256": "723122f8249807806aa1b9a817e9cf4fb53f8d988f3b74cead28cc9d0951f816"
+    },
+    "review/pages-r02/page-09.png": {
+      "bytes": 120566,
+      "sha256": "2b2ec467b0b478418766aee3b933237014bd8267e277c8a3616b96a4d7cea5fd"
+    },
+    "review/pages-r02/page-10.png": {
+      "bytes": 174996,
+      "sha256": "5904240d0240fda2fb460871a8cb7e9e336b7d2b4630d57d474b45a4c97caed6"
+    },
+    "review/pages-r02/page-11.png": {
+      "bytes": 159224,
+      "sha256": "21fcb1fef1eb43cf8c080451df2c508ef5873a7f80adcd4354e63572a1f528d3"
+    },
+    "review/pages-r02/page-12.png": {
+      "bytes": 137421,
+      "sha256": "991d13c850adfdf13e61b490a77f9575383e2518d2617dc50373bf98e27b6c69"
+    },
+    "review/pages-r02/page-13.png": {
+      "bytes": 147608,
+      "sha256": "2b3a4a2f0d1c35b1a645b29ee93be8823fe7cd2f2c01585402811118bde60d7e"
+    },
+    "review/pages-r02/page-14.png": {
+      "bytes": 137269,
+      "sha256": "5891136ce9898e44b38cae004cb9e2bbd5ac77dd08e40e4a92e8ff43d5592f1d"
+    },
+    "review/pages-r02/page-15.png": {
+      "bytes": 179469,
+      "sha256": "a7fe3edb4d67bc08fa5feb4443381e8cf5693bf5957939b1008d5f78c29ad00d"
+    },
+    "review/pages-r02/page-16.png": {
+      "bytes": 140803,
+      "sha256": "b68925d1a9cdb7227c0d621b0ee635c823b839d2b5febc0e7a8d1bfdb606d328"
+    },
+    "review/pages-r02/page-17.png": {
+      "bytes": 155097,
+      "sha256": "2346e468a45150e40bae3ea8658e572ca8c1eba124d5961c3137788e486440a0"
+    },
+    "review/pages-r02/page-18.png": {
+      "bytes": 193130,
+      "sha256": "237dd1acf07704dc9f710349b79a56d8bd4fbb5f76216396a33c1298421850b1"
+    },
+    "review/pages-r02/page-19.png": {
+      "bytes": 143119,
+      "sha256": "731839fe3e3cdbcc63af6b5bcdc3b9550fe43653173a582515b07de302f279e0"
+    },
+    "review/pages-r02/page-20.png": {
+      "bytes": 226815,
+      "sha256": "6cc7bb35ea355e02554a748b9a4ef47e7bdb0e1ff26e19f129ab85cf556a4f8f"
+    },
+    "review/pages-r02/page-21.png": {
+      "bytes": 212047,
+      "sha256": "bf6f6eb39334b062bfd95c7f5fad4ef42d8790015b931cef1569fec7a67e2e87"
+    },
+    "review/pages-r02/page-22.png": {
+      "bytes": 183355,
+      "sha256": "0d36199dbe4f43e428ad26a269d3c3f5d4cc834bff8a5fec864de96e654ba51b"
+    },
+    "review/pages-r02/page-23.png": {
+      "bytes": 187087,
+      "sha256": "433425b48e62a7691bbfeb9cb5232bc7d2f66b7b1d213d72cc5402958b9f9bb7"
+    },
+    "review/pages-r02/page-24.png": {
+      "bytes": 210642,
+      "sha256": "18dc84dc7a16d2885c30829957380609090b11e30979ffbf38b633f9e28370a5"
+    },
+    "review/pages-r02/page-25.png": {
+      "bytes": 187901,
+      "sha256": "8b75f2faf0f17cb05a9b68ecb99fb13f99a5f9c33ca9962203600e94b9f92de6"
+    },
+    "review/pages-r02/page-26.png": {
+      "bytes": 185951,
+      "sha256": "1af05a90d36796567181fc523c63bdf7ef959efed223fc804ae94558dc1ffd96"
+    },
+    "review/pages-r02/page-27.png": {
+      "bytes": 140769,
+      "sha256": "8636226cb96a36076aa204483b64b333021f12fc9eaa80bd25b64495c4ce822a"
+    },
+    "review/pages-r02/page-28.png": {
+      "bytes": 181595,
+      "sha256": "38b389589175c6f090b479ca3283b9b1caf9af478bf26c16b2a7a01a90d1d7b4"
     }
   },
   "excluded_intermediates": [
@@ -244,5 +532,6 @@
     "Python bytecode"
   ],
   "full_mechanical_assembly": "review/A1-assembled.3mf",
-  "hardware_release_blocked": true
+  "hardware_release_blocked": true,
+  "documentation_revision": "A1-Byggjesteg-R02"
 }

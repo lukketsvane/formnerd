@@ -1,0 +1,561 @@
+{
+  "revision": "A1-Byggjesteg-R02",
+  "pages": 28,
+  "pdf": "review/A1-Byggjesteg-R02.pdf",
+  "pdf_sha256": "dc111bce40b270e1285a2ffc23dac8b7b094545ff136b5d7adcbe1c9fd909c08",
+  "layout": [
+    {
+      "page": 1,
+      "step": "A1",
+      "title": "Bygg kameraet, steg for steg",
+      "figure": {
+        "path": "review/steps-r02/m12-finished.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          435,
+          313,
+          1768,
+          1600
+        ],
+        "sha256": "fdcbcca5f98483b823775380a1613971c80e17953c6b2c9ccf9f8ba5cacef425"
+      },
+      "actions_bottom": 241.89999999999998,
+      "checkpoint_bottom": 73
+    },
+    {
+      "page": 2,
+      "step": "00",
+      "title": "Finn delane på bordet",
+      "figure": {
+        "path": "review/steps-r02/m01-inventory.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          385,
+          208,
+          1647,
+          1299
+        ],
+        "sha256": "0e2e4b3e00fae06952c00aa0582954256a6ebed29ff420baadebe8497e302e1f"
+      },
+      "actions_bottom": 257.19999999999993,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 3,
+      "step": "01",
+      "title": "Finn CAM-kortet og MB-kortet",
+      "figure": {
+        "path": "review/steps-r02/e01-stack.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          80,
+          238,
+          1606,
+          1231
+        ],
+        "sha256": "fb49ae6cf6aceb2d53c74b18f41bec85647be8dcfee16ca3df6bd478e2a9f670"
+      },
+      "actions_bottom": 156.3,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 4,
+      "step": "02",
+      "title": "Set CAM rett ned i MB",
+      "figure": {
+        "path": "review/steps-r02/e01-stack.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          80,
+          238,
+          1606,
+          1231
+        ],
+        "sha256": "fb49ae6cf6aceb2d53c74b18f41bec85647be8dcfee16ca3df6bd478e2a9f670"
+      },
+      "actions_bottom": 171.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 5,
+      "step": "03",
+      "title": "Kople USB til PC-en",
+      "figure": {
+        "path": "review/steps-r02/e02-usb.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          33,
+          308,
+          1681,
+          1169
+        ],
+        "sha256": "26fba83708e6851cc9f780dc9d5095661d896e5b8d819c496af4301a350c4aba"
+      },
+      "actions_bottom": 141.70000000000005,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 6,
+      "step": "04",
+      "title": "Installer Arduino IDE og ESP32",
+      "figure": {
+        "vector_diagram": "ui-install"
+      },
+      "actions_bottom": 226.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 7,
+      "step": "05",
+      "title": "Opne A1-programmet",
+      "figure": {
+        "vector_diagram": "ui-board"
+      },
+      "actions_bottom": 196.00000000000006,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 8,
+      "step": "06",
+      "title": "Last programmet inn på ESP32",
+      "figure": {
+        "vector_diagram": "ui-upload"
+      },
+      "actions_bottom": 141.00000000000003,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 9,
+      "step": "07",
+      "title": "Ta det første testbiletet",
+      "figure": {
+        "vector_diagram": "ui-photo"
+      },
+      "actions_bottom": 172.30000000000004,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 10,
+      "step": "08",
+      "title": "Kople frå før du legg til knappen",
+      "figure": {
+        "path": "review/steps-r02/e08-disconnect.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          225,
+          115,
+          1496,
+          1182
+        ],
+        "sha256": "8ea21248a1dd91f7de9b93cb89c9608bed2d43b531d05716c0e695f441ee21e7"
+      },
+      "actions_bottom": 187.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 11,
+      "step": "09",
+      "title": "Finn to kontaktar som sluttar ved trykk",
+      "figure": {
+        "path": "review/steps-r02/e03-switch-test.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          155,
+          107,
+          1546,
+          1210
+        ],
+        "sha256": "497f59791e3c8477c585a2a4cafb891dc199a2f6f51f1b70950d8f5313df1319"
+      },
+      "actions_bottom": 140.3,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 12,
+      "step": "10",
+      "title": "Kople GPIO13 til knappen og GND",
+      "figure": {
+        "path": "review/steps-r02/e04-schematic.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          135,
+          235,
+          1621,
+          1135
+        ],
+        "sha256": "711fcf9df0fc451e5ba27a95fbb18d92df205a223eea912c69527cefc4404ffa"
+      },
+      "actions_bottom": 187.6,
+      "checkpoint_bottom": 73
+    },
+    {
+      "page": 13,
+      "step": "11",
+      "title": "Prøv den elektriske utløysaren",
+      "figure": {
+        "path": "review/steps-r02/e05-wiring.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          125,
+          185,
+          1602,
+          1219
+        ],
+        "sha256": "e893a8889972e91036c37f0c3cd94aae0d2acee53942fc4c6f18ab8c5de55f36"
+      },
+      "actions_bottom": 186.9,
+      "checkpoint_bottom": 73
+    },
+    {
+      "page": 14,
+      "step": "12",
+      "title": "Prøveprint éin lås først",
+      "figure": {
+        "path": "review/steps-r02/m02-lock-test.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          471,
+          156,
+          1784,
+          1209
+        ],
+        "sha256": "3f1b8167b6524df2346b4235e84bfd6255b5a71ed63b860ccc13eb447369afaa"
+      },
+      "actions_bottom": 226.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 15,
+      "step": "13",
+      "title": "Kontroller innmaten før du pressar noko inn",
+      "figure": {
+        "path": "review/steps-r02/e07-flex.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          158,
+          279,
+          1674,
+          1099
+        ],
+        "sha256": "9d11746c7ece14294f29b2a5e2b43661488bae80d956b93be47cde62afcdb684"
+      },
+      "actions_bottom": 141.0,
+      "checkpoint_bottom": 73
+    },
+    {
+      "page": 16,
+      "step": "14",
+      "title": "Legg CAM/MB i haldaren",
+      "figure": {
+        "path": "review/steps-r02/m03-carrier.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          500,
+          294,
+          1699,
+          1594
+        ],
+        "sha256": "f6eaca23e7b0353f58484c5847c6ffccb04257c24f46d835a54d228719e8e17b"
+      },
+      "actions_bottom": 157.0,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 17,
+      "step": "15",
+      "title": "Før kameraet fram og set på klemma",
+      "figure": {
+        "path": "review/steps-r02/m04-camera.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          656,
+          421,
+          1692,
+          1154
+        ],
+        "sha256": "47597fc335d8fdc0ec1300642ea85957cdec3326f2aa4157fe7ecce694ee98ea"
+      },
+      "actions_bottom": 156.30000000000004,
+      "checkpoint_bottom": 73
+    },
+    {
+      "page": 18,
+      "step": "16",
+      "title": "Før utløysaren ned ovanfrå",
+      "figure": {
+        "path": "review/steps-r02/m05-button.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          309,
+          0,
+          2200,
+          1600
+        ],
+        "sha256": "e23c15aab92becbe4ca3b88787b26f0a962534975a7be05c230353e3fcde5bb1"
+      },
+      "actions_bottom": 187.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 19,
+      "step": "17",
+      "title": "Set brytaren i kassetten",
+      "figure": {
+        "path": "review/steps-r02/m06-switch-seat.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          488,
+          590,
+          1712,
+          1594
+        ],
+        "sha256": "cbff511babccaae84e7b03ce75e70c6f9cca11f9b6474d33b5b547dd6aedb1cb"
+      },
+      "actions_bottom": 172.3,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 20,
+      "step": "18",
+      "title": "Skyv kassetten inn bakfrå",
+      "figure": {
+        "path": "review/steps-r02/m07-cassette.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          0,
+          0,
+          1911,
+          1600
+        ],
+        "sha256": "c1cc53476dd84df0f647a40eded1321fa2b8b2b44becfedefad5c2fcdab1315c"
+      },
+      "actions_bottom": 187.59999999999997,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 21,
+      "step": "19",
+      "title": "Skyv kamerahaldaren inn bakfrå",
+      "figure": {
+        "path": "review/steps-r02/m08-carrier-insert.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          461,
+          268,
+          2025,
+          1594
+        ],
+        "sha256": "a64e1049b62993b0456afce53c65ea7d61249600307f58118aebc5c71b003a23"
+      },
+      "actions_bottom": 171.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 22,
+      "step": "20",
+      "title": "Prøv kameraet med huset ope",
+      "figure": {
+        "path": "review/steps-r02/e06-bench.png",
+        "source_pixels": [
+          1800,
+          1300
+        ],
+        "crop_px": [
+          43,
+          32,
+          1623,
+          1148
+        ],
+        "sha256": "f03b62a3ad2f037bf5c6d82c83f15549191b216b73216fc23fb0ccf55d87bc4a"
+      },
+      "actions_bottom": 171.6,
+      "checkpoint_bottom": 73
+    },
+    {
+      "page": 23,
+      "step": "21",
+      "title": "Set inn frontringen og drei 45°",
+      "figure": {
+        "path": "review/steps-r02/m09-bezel.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          0,
+          0,
+          1476,
+          1580
+        ],
+        "sha256": "3d6c9d3004fa2f92352fe2bc14d7d8b2d55b29322822e41e9c8ce2e77f0a4f19"
+      },
+      "actions_bottom": 187.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 24,
+      "step": "22",
+      "title": "Legg på baklokket",
+      "figure": {
+        "path": "review/steps-r02/m10-cover.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          534,
+          351,
+          1636,
+          1334
+        ],
+        "sha256": "7fcccfa301b540fe5fe08fa27a528c285cf18527d522ad345373bd3ee515fba9"
+      },
+      "actions_bottom": 187.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 25,
+      "step": "23",
+      "title": "Set inn fire låsar og drei 90°",
+      "figure": {
+        "path": "review/steps-r02/m11-locks.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          425,
+          361,
+          1607,
+          1280
+        ],
+        "sha256": "7e144ddb2918e19b5ec5143f6665446942b0d3cda080edece38156c9ce802ce5"
+      },
+      "actions_bottom": 187.6,
+      "checkpoint_bottom": 87
+    },
+    {
+      "page": 26,
+      "step": "24",
+      "title": "Ta foto med det samla kameraet",
+      "figure": {
+        "path": "review/steps-r02/m12-finished.png",
+        "source_pixels": [
+          2200,
+          1600
+        ],
+        "crop_px": [
+          435,
+          313,
+          1768,
+          1600
+        ],
+        "sha256": "fdcbcca5f98483b823775380a1613971c80e17953c6b2c9ccf9f8ba5cacef425"
+      },
+      "actions_bottom": 156.3,
+      "checkpoint_bottom": 73
+    },
+    {
+      "page": 27,
+      "step": "?",
+      "title": "Finn feilen før du byggjer vidare",
+      "figure": {
+        "vector_diagram": "ui-trouble"
+      },
+      "actions_bottom": 180.00000000000003,
+      "checkpoint_bottom": 87
+    }
+  ],
+  "mechanical_geometry_changed": false,
+  "electronics_drawings_are_schematic": true,
+  "physical_build_verified": false,
+  "hardware_test_performed": false,
+  "primary_sources": [
+    {
+      "id": "S1",
+      "title": "ESP32 i Arduino IDE",
+      "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html"
+    },
+    {
+      "id": "S2",
+      "title": "ESP32: oppstartsmodus",
+      "url": "https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html"
+    },
+    {
+      "id": "S3",
+      "title": "GPIO og INPUT_PULLUP",
+      "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/gpio.html"
+    },
+    {
+      "id": "S4",
+      "title": "SD_MMC og GPIO13",
+      "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/sdmmc.html"
+    },
+    {
+      "id": "S5",
+      "title": "AI Thinker kamerakart",
+      "url": "https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/Camera/CameraWebServer/camera_pins.h"
+    },
+    {
+      "id": "S6",
+      "title": "ESP32-CAM-MB-skjema",
+      "url": "https://www.olimex.com/Products/IoT/ESP32/ESP32-CAM/resources/ESP32-CAM-MB-S001.jpg"
+    },
+    {
+      "id": "S7",
+      "title": "Arduino IDE",
+      "url": "https://www.arduino.cc/en/software"
+    }
+  ]
+}
