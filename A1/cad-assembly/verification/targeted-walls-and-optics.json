@@ -1,0 +1,6880 @@
+{
+  "revision": "A1-Assembly-R01",
+  "method": "Independent Manifold64 finite ray casts on exported part meshes; 36 radial directions per station and 73 ideal optical rays",
+  "source_part_npz_sha256": {
+    "01_outer_shell": "b83a1976a46795869c0a6e70b789023adb544f6277ac27c40016b66f67884028",
+    "04_optical_bezel": "f9a6bf9135de39c57a7af8c20e14835608cf93a238595ef997fd217ca5715b8f",
+    "02_native_rear_cover": "270b4af4eb81ecee5f362e91892883e91b54f5db2f76b862181282303c4718bb"
+  },
+  "optical_axis_xz_mm": [
+    -31.7,
+    -8.4
+  ],
+  "source_seam_contact_diagnostic": {
+    "merge_gap_tolerance_mm": 1e-05,
+    "strict_intervals_preserved": true,
+    "interpretation": "Contact-merged chords treat micron source seams as backing material. They do not alter the delivered mesh or replace the strict measurements."
+  },
+  "radial_stations": [
+    {
+      "y_mm": 18.0,
+      "probes": [
+        {
+          "azimuth_deg": 0,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.2,
+              33.38255746640175
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.2,
+              33.38255746640175
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.18255746640175,
+          "native_first_contact_merged_chord_mm": 12.18255746640175,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 10,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              33.72206464264768
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              33.72206464264768
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.523103626803817,
+          "native_first_contact_merged_chord_mm": 12.523103626803817,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 20,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199273237465185,
+              34.041512063494196
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199273237465185,
+              34.041512063494196
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.84223882602901,
+          "native_first_contact_merged_chord_mm": 12.84223882602901,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 30,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198953938851986,
+              34.22444964810614
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198953938851986,
+              34.22444964810614
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 13.025495709254152,
+          "native_first_contact_merged_chord_mm": 13.025495709254152,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 40,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198750646568605,
+              34.54183039174652
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198750646568605,
+              34.54183039174652
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 13.343079745177917,
+          "native_first_contact_merged_chord_mm": 13.343079745177917,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 50,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19869839923706,
+              54.38259070359576
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19869839923706,
+              54.38259070359576
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 33.1838923043587,
+          "native_first_contact_merged_chord_mm": 33.1838923043587,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 60,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198797197949226,
+              46.87730371552142
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198797197949226,
+              46.87730371552142
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 25.678506517572195,
+          "native_first_contact_merged_chord_mm": 25.678506517572195,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 70,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19904705171189,
+              42.41120611250218
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19904705171189,
+              42.41120611250218
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 21.212159060790288,
+          "native_first_contact_merged_chord_mm": 21.212159060790288,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 80,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19944797744818,
+              42.004187693415076
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19944797744818,
+              42.004187693415076
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 20.804739715966896,
+          "native_first_contact_merged_chord_mm": 20.804739715966896,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 90,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.2,
+              48.03367603850483
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.2,
+              48.03367603850483
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 26.83367603850483,
+          "native_first_contact_merged_chord_mm": 26.83367603850483,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 100,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199447977448184,
+              45.692186577179804
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199447977448184,
+              45.692186577179804
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 24.49273859973162,
+          "native_first_contact_merged_chord_mm": 24.49273859973162,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 110,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19904705171189,
+              43.46918552919122
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19904705171189,
+              43.46918552919122
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 22.270138477479332,
+          "native_first_contact_merged_chord_mm": 22.270138477479332,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 120,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198797197949226,
+              41.352355702995304
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198797197949226,
+              41.352355702995304
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 20.153558505046078,
+          "native_first_contact_merged_chord_mm": 20.153558505046078,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 130,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198698399237067,
+              39.47440928827684
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198698399237067,
+              39.47440928827684
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 18.27571088903977,
+          "native_first_contact_merged_chord_mm": 18.27571088903977,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 140,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198750646568595,
+              37.90996650694548
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198750646568595,
+              37.90996650694548
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 16.711215860376885,
+          "native_first_contact_merged_chord_mm": 16.711215860376885,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 150,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19895393885199,
+              36.89686982404472
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19895393885199,
+              36.89686982404472
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 15.697915885192732,
+          "native_first_contact_merged_chord_mm": 15.697915885192732,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 160,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19927323746518,
+              36.491855172947254
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19927323746518,
+              36.491855172947254
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 15.292581935482072,
+          "native_first_contact_merged_chord_mm": 15.292581935482072,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 170,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              36.605625183477976
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              36.605625183477976
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 15.406664167634112,
+          "native_first_contact_merged_chord_mm": 15.406664167634112,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 180,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.2,
+              36.972424949141555
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.2,
+              36.972424949141555
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 15.772424949141556,
+          "native_first_contact_merged_chord_mm": 15.772424949141556,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 190,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              37.510827209363505
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              37.510827209363505
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 16.31186619351964,
+          "native_first_contact_merged_chord_mm": 16.31186619351964,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 200,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199273237465185,
+              38.08653846278523
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199273237465185,
+              38.08653846278523
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 16.887265225320043,
+          "native_first_contact_merged_chord_mm": 16.887265225320043,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 210,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.1991948984985,
+              38.343411104545574
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.1991948984985,
+              38.343411104545574
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 17.144216206047073,
+          "native_first_contact_merged_chord_mm": 17.144216206047073,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 220,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19909854788845,
+              38.249222768210444
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19909854788845,
+              38.249222768210444
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 17.050124220321994,
+          "native_first_contact_merged_chord_mm": 17.050124220321994,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 230,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199019716114574,
+              37.60121960756025
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199019716114574,
+              37.60121960756025
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 16.40219989144568,
+          "native_first_contact_merged_chord_mm": 16.40219989144568,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 240,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.1989584028508,
+              36.67003347252172
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.1989584028508,
+              36.67003347252172
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 15.471075069670924,
+          "native_first_contact_merged_chord_mm": 15.471075069670924,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 250,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198914607843527,
+              35.55165572140822
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198914607843527,
+              35.55165572140822
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 14.35274111356469,
+          "native_first_contact_merged_chord_mm": 14.35274111356469,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 260,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19888833091162,
+              34.52452815895464
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19888833091162,
+              34.52452815895464
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 13.32563982804302,
+          "native_first_contact_merged_chord_mm": 13.32563982804302,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 270,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.1988795719464,
+              33.822162923264166
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.1988795719464,
+              33.822162923264166
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.623283351317767,
+          "native_first_contact_merged_chord_mm": 12.623283351317767,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 280,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198888330911622,
+              33.54075089902335
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198888330911622,
+              33.54075089902335
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.341862568111729,
+          "native_first_contact_merged_chord_mm": 12.341862568111729,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 290,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198914607843527,
+              33.429354919874136
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198914607843527,
+              33.429354919874136
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.230440312030609,
+          "native_first_contact_merged_chord_mm": 12.230440312030609,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 300,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198958402850796,
+              33.28729168376308
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198958402850796,
+              33.28729168376308
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.088333280912284,
+          "native_first_contact_merged_chord_mm": 12.088333280912284,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 310,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199019716114567,
+              33.17579856419759
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199019716114567,
+              33.17579856419759
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 11.976778848083026,
+          "native_first_contact_merged_chord_mm": 11.976778848083026,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 320,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199098547888443,
+              33.189031271140834
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199098547888443,
+              33.189031271140834
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 11.989932723252391,
+          "native_first_contact_merged_chord_mm": 11.989932723252391,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 330,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199194898498494,
+              33.23551473733868
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199194898498494,
+              33.23551473733868
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 12.036319838840189,
+          "native_first_contact_merged_chord_mm": 12.036319838840189,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 340,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199273237465178,
+              33.185749242310095
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199273237465178,
+              33.185749242310095
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 11.986476004844917,
+          "native_first_contact_merged_chord_mm": 11.986476004844917,
+          "bezel_first_chord_mm": null
+        },
+        {
+          "azimuth_deg": 350,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              33.1805460804767
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198961015843864,
+              33.1805460804767
+            ]
+          ],
+          "bezel_radial_intervals_mm": [],
+          "native_first_chord_mm": 11.981585064632839,
+          "native_first_contact_merged_chord_mm": 11.981585064632839,
+          "bezel_first_chord_mm": null
+        }
+      ],
+      "native_min_first_radial_chord_mm_excluding_entry_slots": 11.976778848083026,
+      "native_min_first_contact_merged_radial_chord_mm_excluding_entry_slots": 11.976778848083026,
+      "native_zero_material_azimuths_deg_excluding_entry_slots": [],
+      "bezel_min_first_radial_chord_mm_when_present": null
+    },
+    {
+      "y_mm": 24.7,
+      "probes": [
+        {
+          "azimuth_deg": 0,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.2,
+              33.79935173338124
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.2,
+              33.79935173338124
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 12.599351733381244,
+          "native_first_contact_merged_chord_mm": 12.599351733381244,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 10,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.1981248783161,
+              34.2729438829838
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.1981248783161,
+              34.2729438829838
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 13.074819004667702,
+          "native_first_contact_merged_chord_mm": 13.074819004667702,
+          "bezel_first_chord_mm": 1.9996953903127785
+        },
+        {
+          "azimuth_deg": 20,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198346226586395,
+              34.79559841599528
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198346226586395,
+              34.79559841599528
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 13.597252189408884,
+          "native_first_contact_merged_chord_mm": 13.597252189408884,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 30,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198559149152008,
+              35.23794522344186
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198559149152008,
+              35.23794522344186
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 14.039386074289855,
+          "native_first_contact_merged_chord_mm": 14.039386074289855,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 40,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198780361183434,
+              21.594470719456048
+            ],
+            [
+              21.594471039849616,
+              35.435874745955445
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198780361183434,
+              35.435874745955445
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 0.39569035827261345,
+          "native_first_contact_merged_chord_mm": 14.23709438477201,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 50,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19900986334301,
+              50.609086636731845
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19900986334301,
+              50.609086636731845
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 29.410076773388834,
+          "native_first_contact_merged_chord_mm": 29.410076773388834,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 60,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19924765636504,
+              21.538122908874833
+            ],
+            [
+              21.538123622886005,
+              44.80948191488039
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19924765636504,
+              44.80948191488039
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 0.3388752525097942,
+          "native_first_contact_merged_chord_mm": 23.610234258515348,
+          "bezel_first_chord_mm": 1.9996953903127839
+        },
+        {
+          "azimuth_deg": 70,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19948940016763,
+              40.897185546872116
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19948940016763,
+              40.897185546872116
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 19.697696146704487,
+          "native_first_contact_merged_chord_mm": 19.697696146704487,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 80,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199687645092826,
+              21.56409138520814
+            ],
+            [
+              21.564091863098913,
+              38.32748946392266
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199687645092826,
+              38.32748946392266
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 0.3644037401153142,
+          "native_first_contact_merged_chord_mm": 17.127801818829834,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 90,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.2,
+              43.02900908821144
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.2,
+              43.02900908821144
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 21.82900908821144,
+          "native_first_contact_merged_chord_mm": 21.82900908821144,
+          "bezel_first_chord_mm": 1.9996953903127839
+        },
+        {
+          "azimuth_deg": 100,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199687645092826,
+              21.45139670768495
+            ],
+            [
+              21.451396876854414,
+              43.059932918162374
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199687645092826,
+              43.059932918162374
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 0.25170906259212344,
+          "native_first_contact_merged_chord_mm": 21.86024527306955,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 110,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19948940016763,
+              42.244670061976365
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19948940016763,
+              42.244670061976365
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 21.045180661808736,
+          "native_first_contact_merged_chord_mm": 21.045180661808736,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 120,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199247656365035,
+              21.395289324289372
+            ],
+            [
+              21.395289468571146,
+              41.10172231729701
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199247656365035,
+              41.10172231729701
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 0.1960416679243373,
+          "native_first_contact_merged_chord_mm": 19.902474660931976,
+          "bezel_first_chord_mm": 1.9996953903127839
+        },
+        {
+          "azimuth_deg": 130,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19900986334302,
+              21.417216191496433
+            ],
+            [
+              21.417216834722865,
+              39.94180668030625
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19900986334302,
+              39.94180668030625
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              20.477924685884282
+            ]
+          ],
+          "native_first_chord_mm": 0.21820632815341412,
+          "native_first_contact_merged_chord_mm": 18.74279681696323,
+          "bezel_first_chord_mm": 5.480209258538416
+        },
+        {
+          "azimuth_deg": 140,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198780361183438,
+              21.465286311808256
+            ],
+            [
+              21.46528784091149,
+              38.93039753814109
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198780361183438,
+              38.93039753814109
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              20.47792468588429
+            ]
+          ],
+          "native_first_chord_mm": 0.2665059506248184,
+          "native_first_contact_merged_chord_mm": 17.73161717695765,
+          "bezel_first_chord_mm": 5.480209258538425
+        },
+        {
+          "azimuth_deg": 150,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19855914915201,
+              21.467938258533362
+            ],
+            [
+              21.46793950014666,
+              38.25898189804149
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19855914915201,
+              38.25898189804149
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 0.2693791093813509,
+          "native_first_contact_merged_chord_mm": 17.06042274888948,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 160,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.1983462265864,
+              21.424034755191247
+            ],
+            [
+              21.424036235559768,
+              38.00249752190066
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.1983462265864,
+              38.00249752190066
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345872,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 0.22568852860484867,
+          "native_first_contact_merged_chord_mm": 16.80415129531426,
+          "bezel_first_chord_mm": 1.9996953903127785
+        },
+        {
+          "azimuth_deg": 170,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198124878316097,
+              21.353102177990063
+            ],
+            [
+              21.35310372446162,
+              38.06870563131502
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198124878316097,
+              38.06870563131502
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658658
+            ]
+          ],
+          "native_first_chord_mm": 0.15497729967396623,
+          "native_first_contact_merged_chord_mm": 16.870580752998922,
+          "bezel_first_chord_mm": 1.9996953903127892
+        },
+        {
+          "azimuth_deg": 180,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.2,
+              21.246144466711964
+            ],
+            [
+              21.24614603133389,
+              38.105755381236406
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.2,
+              38.105755381236406
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 0.04614446671196504,
+          "native_first_contact_merged_chord_mm": 16.905755381236407,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 190,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198124878316108,
+              38.016110838130125
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198124878316108,
+              38.016110838130125
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345861,
+              16.997410817658658
+            ]
+          ],
+          "native_first_chord_mm": 16.817985959814017,
+          "native_first_contact_merged_chord_mm": 16.817985959814017,
+          "bezel_first_chord_mm": 1.9996953903127963
+        },
+        {
+          "azimuth_deg": 200,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198346226586395,
+              37.76193201481487
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198346226586395,
+              37.76193201481487
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 16.563585788228472,
+          "native_first_contact_merged_chord_mm": 16.563585788228472,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 210,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198562118205245,
+              37.13952160106733
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198562118205245,
+              37.13952160106733
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 15.940959482862084,
+          "native_first_contact_merged_chord_mm": 15.940959482862084,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 220,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198794022837085,
+              35.947792927178256
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198794022837085,
+              35.947792927178256
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345863,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 14.748998904341171,
+          "native_first_contact_merged_chord_mm": 14.748998904341171,
+          "bezel_first_chord_mm": 1.9996953903127874
+        },
+        {
+          "azimuth_deg": 230,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19904194135771,
+              34.05717699543705
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19904194135771,
+              34.05717699543705
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 12.858135054079337,
+          "native_first_contact_merged_chord_mm": 12.858135054079337,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 240,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199305874703473,
+              31.63280863715831
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199305874703473,
+              31.63280863715831
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 10.433502762454836,
+          "native_first_contact_merged_chord_mm": 10.433502762454836,
+          "bezel_first_chord_mm": 1.9996953903127785
+        },
+        {
+          "azimuth_deg": 250,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19958582387121,
+              29.345545840434102
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19958582387121,
+              29.345545840434102
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 8.145960016562892,
+          "native_first_contact_merged_chord_mm": 8.145960016562892,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 260,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199815100055407,
+              28.720390793634152
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199815100055407,
+              28.720390793634152
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 7.520575693578746,
+          "native_first_contact_merged_chord_mm": 7.520575693578746,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 270,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199806345768515,
+              28.676722130420806
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199806345768515,
+              28.676722130420806
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 7.476915784652292,
+          "native_first_contact_merged_chord_mm": 7.476915784652292,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 280,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199815100055407,
+              28.66030117264071
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199815100055407,
+              28.66030117264071
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 7.460486072585304,
+          "native_first_contact_merged_chord_mm": 7.460486072585304,
+          "bezel_first_chord_mm": 1.9996953903127874
+        },
+        {
+          "azimuth_deg": 290,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199585823871196,
+              28.882884660729253
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199585823871196,
+              28.882884660729253
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 7.683298836858057,
+          "native_first_contact_merged_chord_mm": 7.683298836858057,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 300,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19930587470347,
+              29.94791980817958
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19930587470347,
+              29.94791980817958
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 8.748613933476111,
+          "native_first_contact_merged_chord_mm": 8.748613933476111,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 310,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.199041941357716,
+              30.76841035639857
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.199041941357716,
+              30.76841035639857
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              20.477924685884286
+            ]
+          ],
+          "native_first_chord_mm": 9.569368415040852,
+          "native_first_contact_merged_chord_mm": 9.569368415040852,
+          "bezel_first_chord_mm": 5.480209258538416
+        },
+        {
+          "azimuth_deg": 320,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198794022837077,
+              31.726221352513022
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198794022837077,
+              31.726221352513022
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              20.477924685884286
+            ]
+          ],
+          "native_first_chord_mm": 10.527427329675945,
+          "native_first_contact_merged_chord_mm": 10.527427329675945,
+          "bezel_first_chord_mm": 5.480209258538418
+        },
+        {
+          "azimuth_deg": 330,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.198562118205245,
+              32.489229927436966
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.198562118205245,
+              32.489229927436966
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 11.29066780923172,
+          "native_first_contact_merged_chord_mm": 11.29066780923172,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 340,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.19834622658639,
+              33.09362930897457
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.19834622658639,
+              33.09362930897457
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 11.895283082388179,
+          "native_first_contact_merged_chord_mm": 11.895283082388179,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 350,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              21.1981248783161,
+              33.50477284997138
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.1981248783161,
+              33.50477284997138
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 12.30664797165528,
+          "native_first_contact_merged_chord_mm": 12.30664797165528,
+          "bezel_first_chord_mm": 1.999695390312782
+        }
+      ],
+      "native_min_first_radial_chord_mm_excluding_entry_slots": 0.04614446671196504,
+      "native_min_first_contact_merged_radial_chord_mm_excluding_entry_slots": 7.460486072585304,
+      "native_zero_material_azimuths_deg_excluding_entry_slots": [],
+      "bezel_min_first_radial_chord_mm_when_present": 1.9996953903127785
+    },
+    {
+      "y_mm": 26.8,
+      "probes": [
+        {
+          "azimuth_deg": 0,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              21.15,
+              32.96653024658201
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.15,
+              32.96653024658201
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 11.816530246582012,
+          "native_first_contact_merged_chord_mm": 11.816530246582012,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 10,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              17.852188497745253,
+              33.48956636177875
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.852188497745253,
+              33.48956636177875
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 15.637377864033496,
+          "native_first_contact_merged_chord_mm": 15.637377864033496,
+          "bezel_first_chord_mm": 1.9996953903127785
+        },
+        {
+          "azimuth_deg": 20,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.298728254417192,
+              34.06063807531201
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.298728254417192,
+              34.06063807531201
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 16.76190982089482,
+          "native_first_contact_merged_chord_mm": 16.76190982089482,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 30,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.29888421051758,
+              34.544716818535505
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.29888421051758,
+              34.544716818535505
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 17.245832608017924,
+          "native_first_contact_merged_chord_mm": 17.245832608017924,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 40,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299048739849802,
+              21.88451425640252
+            ],
+            [
+              21.88451460099683,
+              34.675808554784744
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299048739849802,
+              34.675808554784744
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345872,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 4.58546551655272,
+          "native_first_contact_merged_chord_mm": 17.376759814934942,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 50,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.29922184282151,
+              46.82367314783024
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.29922184282151,
+              46.82367314783024
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 29.524451305008732,
+          "native_first_contact_merged_chord_mm": 29.524451305008732,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 60,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.2994035198616,
+              21.894388392634156
+            ],
+            [
+              21.894389106469717,
+              42.52081587615854
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.2994035198616,
+              42.52081587615854
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 4.594984872772557,
+          "native_first_contact_merged_chord_mm": 25.221412356296938,
+          "bezel_first_chord_mm": 1.9996953903127839
+        },
+        {
+          "azimuth_deg": 70,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299593771420223,
+              21.948342410360347
+            ],
+            [
+              21.94834308106615,
+              39.14803985553748
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299593771420223,
+              39.14803985553748
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 4.648748638940123,
+          "native_first_contact_merged_chord_mm": 21.84844608411726,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 80,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.2997925979688,
+              21.991644148094682
+            ],
+            [
+              21.99164449883846,
+              37.02720902027993
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.2997925979688,
+              37.02720902027993
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 4.691851550125882,
+          "native_first_contact_merged_chord_mm": 19.727416422311133,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 90,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.3,
+              38.51894005733252
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.3,
+              38.51894005733252
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 21.21894005733252,
+          "native_first_contact_merged_chord_mm": 21.21894005733252,
+          "bezel_first_chord_mm": 1.9996953903127839
+        },
+        {
+          "azimuth_deg": 100,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299792597968796,
+              21.892143868931942
+            ],
+            [
+              21.892144281295675,
+              41.07366980246471
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299792597968796,
+              41.07366980246471
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 4.592351270963146,
+          "native_first_contact_merged_chord_mm": 23.77387720449591,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 110,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.29959377142022,
+              40.81523516656923
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.29959377142022,
+              40.81523516656923
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 23.51564139514901,
+          "native_first_contact_merged_chord_mm": 23.51564139514901,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 120,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.2994035198616,
+              21.868720485067588
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.2994035198616,
+              21.868720485067588
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 4.569316965205989,
+          "native_first_contact_merged_chord_mm": 4.569316965205989,
+          "bezel_first_chord_mm": 1.9996953903127839
+        },
+        {
+          "azimuth_deg": 130,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.29922184282151,
+              21.910923149276336
+            ],
+            [
+              21.910923719871743,
+              39.14669884807746
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.29922184282151,
+              39.14669884807746
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              16.998092454401284
+            ]
+          ],
+          "native_first_chord_mm": 4.611701306454826,
+          "native_first_contact_merged_chord_mm": 21.847477005255953,
+          "bezel_first_chord_mm": 2.0003770270554178
+        },
+        {
+          "azimuth_deg": 140,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299048739849805,
+              21.979340951892233
+            ],
+            [
+              21.979342475503074,
+              38.29801604448445
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299048739849805,
+              38.29801604448445
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.998092454401288
+            ]
+          ],
+          "native_first_chord_mm": 4.680292212042428,
+          "native_first_contact_merged_chord_mm": 20.998967304634643,
+          "bezel_first_chord_mm": 2.000377027055423
+        },
+        {
+          "azimuth_deg": 150,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.29888421051758,
+              21.98184348132766
+            ],
+            [
+              21.981844848817435,
+              37.70461968104155
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.29888421051758,
+              37.70461968104155
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345863,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 4.6829592708100805,
+          "native_first_contact_merged_chord_mm": 20.405735470523968,
+          "bezel_first_chord_mm": 1.999695390312791
+        },
+        {
+          "azimuth_deg": 160,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.298728254417192,
+              21.93155254223578
+            ],
+            [
+              21.931554032604822,
+              37.41653427880375
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.298728254417192,
+              37.41653427880375
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345872,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 4.63282428781859,
+          "native_first_contact_merged_chord_mm": 20.11780602438656,
+          "bezel_first_chord_mm": 1.9996953903127785
+        },
+        {
+          "azimuth_deg": 170,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              17.852188497745242,
+              21.88528499260955
+            ],
+            [
+              21.885286537980026,
+              37.40331428529406
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.852188497745242,
+              37.40331428529406
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 4.033096494864306,
+          "native_first_contact_merged_chord_mm": 19.551125787548816,
+          "bezel_first_chord_mm": 1.9996953903127785
+        },
+        {
+          "azimuth_deg": 180,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              21.150000000000002,
+              21.804066840155702
+            ],
+            [
+              21.804068404777627,
+              37.30366016692392
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.150000000000002,
+              37.30366016692392
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 0.6540668401556999,
+          "native_first_contact_merged_chord_mm": 16.153660166923917,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 190,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              17.85218849774526,
+              21.70616419784407
+            ],
+            [
+              21.70616573036747,
+              37.05839448548286
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.85218849774526,
+              37.05839448548286
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345861,
+              16.997410817658658
+            ]
+          ],
+          "native_first_chord_mm": 3.853975700098811,
+          "native_first_contact_merged_chord_mm": 19.206205987737597,
+          "bezel_first_chord_mm": 1.9996953903127963
+        },
+        {
+          "azimuth_deg": 200,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.298728254417192,
+              21.572479073623665
+            ],
+            [
+              21.572480528704748,
+              36.50336903999147
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.298728254417192,
+              36.50336903999147
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765864
+            ]
+          ],
+          "native_first_chord_mm": 4.273750819206473,
+          "native_first_contact_merged_chord_mm": 19.204640785574277,
+          "bezel_first_chord_mm": 1.9996953903127714
+        },
+        {
+          "azimuth_deg": 210,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.298884210517574,
+              21.402305378511155
+            ],
+            [
+              21.402306979046724,
+              35.30918067246638
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.298884210517574,
+              35.30918067246638
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 4.103421167993581,
+          "native_first_contact_merged_chord_mm": 18.01029646194881,
+          "bezel_first_chord_mm": 1.9996953903127803
+        },
+        {
+          "azimuth_deg": 220,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299048739849802,
+              21.233016762060885
+            ],
+            [
+              21.233017819303853,
+              33.392646390599076
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299048739849802,
+              33.392646390599076
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345872,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 3.933968022211083,
+          "native_first_contact_merged_chord_mm": 16.093597650749274,
+          "bezel_first_chord_mm": 1.9996953903127785
+        },
+        {
+          "azimuth_deg": 230,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.29922184282151,
+              21.114624916571927
+            ],
+            [
+              21.114627060802565,
+              29.972402708031574
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.29922184282151,
+              29.972402708031574
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 3.815403073750417,
+          "native_first_contact_merged_chord_mm": 12.673180865210064,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 240,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299403519861592,
+              21.038858812758917
+            ],
+            [
+              21.038859349030627,
+              28.521156693635163
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299403519861592,
+              28.521156693635163
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 3.7394552928973255,
+          "native_first_contact_merged_chord_mm": 11.221753173773571,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 250,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.29959377142022,
+              20.99450963234079
+            ],
+            [
+              20.994510684039525,
+              28.606137082184013
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.29959377142022,
+              28.606137082184013
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 3.6949158609205703,
+          "native_first_contact_merged_chord_mm": 11.306543310763793,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 260,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.2997925979688,
+              28.631195571315168
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.2997925979688,
+              28.631195571315168
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.997410817658643
+            ]
+          ],
+          "native_first_chord_mm": 11.331402973346368,
+          "native_first_contact_merged_chord_mm": 11.331402973346368,
+          "bezel_first_chord_mm": 1.999695390312775
+        },
+        {
+          "azimuth_deg": 270,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.300000000000004,
+              21.005774259327637
+            ],
+            [
+              21.005775084406423,
+              28.66811956829224
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.300000000000004,
+              28.66811956829224
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 3.705774259327633,
+          "native_first_contact_merged_chord_mm": 11.368119568292236,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 280,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.2997925979688,
+              28.65675222651517
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.2997925979688,
+              28.65675222651517
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              16.997410817658654
+            ]
+          ],
+          "native_first_chord_mm": 11.35695962854637,
+          "native_first_contact_merged_chord_mm": 11.35695962854637,
+          "bezel_first_chord_mm": 1.9996953903127874
+        },
+        {
+          "azimuth_deg": 290,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299593771420223,
+              28.588999334731763
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299593771420223,
+              28.588999334731763
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 11.28940556331154,
+          "native_first_contact_merged_chord_mm": 11.28940556331154,
+          "bezel_first_chord_mm": 1.999695390312782
+        },
+        {
+          "azimuth_deg": 300,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.2994035198616,
+              28.450735878359527
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.2994035198616,
+              28.450735878359527
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 11.151332358497928,
+          "native_first_contact_merged_chord_mm": 11.151332358497928,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 310,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299221842821517,
+              21.367151628435376
+            ],
+            [
+              21.367152268276048,
+              28.754800470681573
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299221842821517,
+              28.754800470681573
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              16.998092454401288
+            ]
+          ],
+          "native_first_chord_mm": 4.06792978561386,
+          "native_first_contact_merged_chord_mm": 11.455578627860056,
+          "bezel_first_chord_mm": 2.0003770270554178
+        },
+        {
+          "azimuth_deg": 320,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.299048739849805,
+              30.309481146554013
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.299048739849805,
+              30.309481146554013
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              16.998092454401284
+            ]
+          ],
+          "native_first_chord_mm": 13.010432406704208,
+          "native_first_contact_merged_chord_mm": 13.010432406704208,
+          "bezel_first_chord_mm": 2.000377027055416
+        },
+        {
+          "azimuth_deg": 330,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.298884210517578,
+              21.600884095212024
+            ],
+            [
+              21.600884365040653,
+              31.236737527534746
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.298884210517578,
+              31.236737527534746
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345863,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 4.301999884694446,
+          "native_first_contact_merged_chord_mm": 13.937853317017169,
+          "bezel_first_chord_mm": 1.9996953903127839
+        },
+        {
+          "azimuth_deg": 340,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              17.298728254417195,
+              32.02533666368525
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.298728254417195,
+              32.02533666368525
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.99741081765865
+            ]
+          ],
+          "native_first_chord_mm": 14.726608409268056,
+          "native_first_contact_merged_chord_mm": 14.726608409268056,
+          "bezel_first_chord_mm": 1.9996953903127856
+        },
+        {
+          "azimuth_deg": 350,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              17.852188497745253,
+              32.58192988182056
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              17.852188497745253,
+              32.58192988182056
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              16.997410817658647
+            ]
+          ],
+          "native_first_chord_mm": 14.729741384075304,
+          "native_first_contact_merged_chord_mm": 14.729741384075304,
+          "bezel_first_chord_mm": 1.999695390312782
+        }
+      ],
+      "native_min_first_radial_chord_mm_excluding_entry_slots": 3.6949158609205703,
+      "native_min_first_contact_merged_radial_chord_mm_excluding_entry_slots": 4.569316965205989,
+      "native_zero_material_azimuths_deg_excluding_entry_slots": [],
+      "bezel_min_first_radial_chord_mm_when_present": 1.9996953903127714
+    },
+    {
+      "y_mm": 28.7,
+      "probes": [
+        {
+          "azimuth_deg": 0,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              21.15,
+              31.664816038232903
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.15,
+              31.664816038232903
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 10.514816038232905,
+          "native_first_contact_merged_chord_mm": 10.514816038232905,
+          "bezel_first_chord_mm": 3.999390780625564
+        },
+        {
+          "azimuth_deg": 10,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              19.297301513788366,
+              21.048046007979295
+            ],
+            [
+              21.048046352890527,
+              32.23324556034912
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297301513788366,
+              32.23324556034912
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 1.7507444941909291,
+          "native_first_contact_merged_chord_mm": 12.935944046560753,
+          "bezel_first_chord_mm": 3.9993907806255624
+        },
+        {
+          "azimuth_deg": 20,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297166040618873,
+              22.26994287570701
+            ],
+            [
+              22.28499800235019,
+              32.82175062558341
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297166040618873,
+              22.26994287570701
+            ],
+            [
+              22.28499800235019,
+              32.82175062558341
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 2.972776835088137,
+          "native_first_contact_merged_chord_mm": 2.972776835088137,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 30,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297165636786104,
+              21.05760100117552
+            ],
+            [
+              21.05760127165131,
+              33.29014440831877
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297165636786104,
+              33.29014440831877
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.997106207971438
+            ]
+          ],
+          "native_first_chord_mm": 1.7604353643894157,
+          "native_first_contact_merged_chord_mm": 13.992978771532663,
+          "bezel_first_chord_mm": 3.9993907806255677
+        },
+        {
+          "azimuth_deg": 40,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297300302275925,
+              33.46648511052451
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297300302275925,
+              33.46648511052451
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345872,
+              18.997106207971438
+            ]
+          ],
+          "native_first_chord_mm": 14.169184808248584,
+          "native_first_contact_merged_chord_mm": 14.169184808248584,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 50,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297570041801297,
+              22.31765089796687
+            ],
+            [
+              22.317651225406344,
+              33.020311772969315
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297570041801297,
+              33.020311772969315
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 3.020080856165574,
+          "native_first_contact_merged_chord_mm": 13.722741731168018,
+          "bezel_first_chord_mm": 3.9993907806255624
+        },
+        {
+          "azimuth_deg": 60,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29797486480269,
+              20.98421131489594
+            ],
+            [
+              20.984211794308536,
+              39.438246760469326
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29797486480269,
+              39.438246760469326
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.6862364500932507,
+          "native_first_contact_merged_chord_mm": 20.140271895666636,
+          "bezel_first_chord_mm": 3.999390780625564
+        },
+        {
+          "azimuth_deg": 70,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.298514785448884,
+              36.66969136597392
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.298514785448884,
+              36.66969136597392
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 17.371176580525034,
+          "native_first_contact_merged_chord_mm": 17.371176580525034,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 80,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29918982263818,
+              34.971012305794865
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29918982263818,
+              34.971012305794865
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971438
+            ]
+          ],
+          "native_first_chord_mm": 15.671822483156685,
+          "native_first_contact_merged_chord_mm": 15.671822483156685,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 90,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.3,
+              21.249147487833564
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.3,
+              21.249147487833564
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.9491474878335637,
+          "native_first_contact_merged_chord_mm": 1.9491474878335637,
+          "bezel_first_chord_mm": 3.999390780625564
+        },
+        {
+          "azimuth_deg": 100,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.299189822638187,
+              22.586354345297234
+            ],
+            [
+              22.5863558349689,
+              38.00037648395634
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.299189822638187,
+              38.00037648395634
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971438
+            ]
+          ],
+          "native_first_chord_mm": 3.2871645226590473,
+          "native_first_contact_merged_chord_mm": 18.70118666131815,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 110,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.298514785448887,
+              38.84207846580739
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.298514785448887,
+              38.84207846580739
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 19.543563680358503,
+          "native_first_contact_merged_chord_mm": 19.543563680358503,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 120,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29797486480269,
+              20.967559081477322
+            ],
+            [
+              20.967559311014693,
+              22.671107474708005
+            ],
+            [
+              22.67110784334209,
+              38.48619775036412
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29797486480269,
+              38.48619775036412
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.997106207971438
+            ]
+          ],
+          "native_first_chord_mm": 1.6695842166746324,
+          "native_first_contact_merged_chord_mm": 19.18822288556143,
+          "bezel_first_chord_mm": 3.9993907806255677
+        },
+        {
+          "azimuth_deg": 130,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297570041801293,
+              20.98897510103955
+            ],
+            [
+              20.98897578893096,
+              37.854212153663326
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297570041801293,
+              37.854212153663326
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.6914050592382566,
+          "native_first_contact_merged_chord_mm": 18.556642111862033,
+          "bezel_first_chord_mm": 3.9993907806255677
+        },
+        {
+          "azimuth_deg": 140,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29730030227592,
+              21.09675562767774
+            ],
+            [
+              21.09675673534394,
+              37.154075985038105
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29730030227592,
+              37.154075985038105
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.7994553254018193,
+          "native_first_contact_merged_chord_mm": 17.856775682762184,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 150,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297165636786108,
+              20.982480026327078
+            ],
+            [
+              20.982481152503876,
+              36.64112969531358
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297165636786108,
+              36.64112969531358
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.6853143895409701,
+          "native_first_contact_merged_chord_mm": 17.343964058527472,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 160,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29716604061888,
+              20.939555298519615
+            ],
+            [
+              20.93955674390859,
+              36.32551504151867
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29716604061888,
+              36.32551504151867
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345863,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.642389257900735,
+          "native_first_contact_merged_chord_mm": 17.02834900089979,
+          "bezel_first_chord_mm": 3.9993907806255713
+        },
+        {
+          "azimuth_deg": 170,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              19.29730151378837,
+              20.881606268872737
+            ],
+            [
+              20.881607822030176,
+              36.272310921785426
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29730151378837,
+              36.272310921785426
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971438
+            ]
+          ],
+          "native_first_chord_mm": 1.5843047550843679,
+          "native_first_contact_merged_chord_mm": 16.975009407997057,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 180,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              21.150000000000002,
+              35.99409474274668
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              21.150000000000002,
+              35.99409474274668
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 14.84409474274668,
+          "native_first_contact_merged_chord_mm": 14.84409474274668,
+          "bezel_first_chord_mm": 3.9993907806255606
+        },
+        {
+          "azimuth_deg": 190,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              19.297247402088743,
+              20.796644969629156
+            ],
+            [
+              20.79664652373359,
+              35.43002876851189
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297247402088743,
+              35.43002876851189
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345861,
+              18.997106207971427
+            ]
+          ],
+          "native_first_chord_mm": 1.499397567540413,
+          "native_first_contact_merged_chord_mm": 16.132781366423146,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 200,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297207727690157,
+              20.773893871312417
+            ],
+            [
+              20.773895319784277,
+              34.20498154900716
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297207727690157,
+              34.20498154900716
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 1.4766861436222598,
+          "native_first_contact_merged_chord_mm": 14.907773821317,
+          "bezel_first_chord_mm": 3.9993907806255624
+        },
+        {
+          "azimuth_deg": 210,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29717334332135,
+              20.707862908150364
+            ],
+            [
+              20.70786452154346,
+              32.2170982456626
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29717334332135,
+              32.2170982456626
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.997106207971427
+            ]
+          ],
+          "native_first_chord_mm": 1.4106895648290134,
+          "native_first_contact_merged_chord_mm": 12.919924902341247,
+          "bezel_first_chord_mm": 3.999390780625557
+        },
+        {
+          "azimuth_deg": 220,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29714424893519,
+              20.75176987259003
+            ],
+            [
+              20.751771391490614,
+              28.318159024973667
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29714424893519,
+              28.318159024973667
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345863,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 1.4546256236548416,
+          "native_first_contact_merged_chord_mm": 9.021014776038477,
+          "bezel_first_chord_mm": 3.9993907806255677
+        },
+        {
+          "azimuth_deg": 230,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.2971204444918,
+              20.71221919730055
+            ],
+            [
+              20.712220559209225,
+              28.36801082297131
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.2971204444918,
+              28.36801082297131
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 1.415098752808749,
+          "native_first_contact_merged_chord_mm": 9.070890378479511,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 240,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297101929958558,
+              20.586911319157178
+            ],
+            [
+              20.586912618222268,
+              22.041849789383974
+            ],
+            [
+              22.041851386142955,
+              28.488630245390784
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297101929958558,
+              28.488630245390784
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971427
+            ]
+          ],
+          "native_first_chord_mm": 1.28980938919862,
+          "native_first_contact_merged_chord_mm": 9.191528315432226,
+          "bezel_first_chord_mm": 3.999390780625559
+        },
+        {
+          "azimuth_deg": 250,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29708870531008,
+              28.610638848431755
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29708870531008,
+              28.610638848431755
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 9.313550143121674,
+          "native_first_contact_merged_chord_mm": 9.313550143121674,
+          "bezel_first_chord_mm": 3.999390780625566
+        },
+        {
+          "azimuth_deg": 260,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297080770528243,
+              22.016660459614826
+            ],
+            [
+              22.016662521299114,
+              28.64073413570239
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297080770528243,
+              28.64073413570239
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 2.719579689086583,
+          "native_first_contact_merged_chord_mm": 9.343653365174148,
+          "bezel_first_chord_mm": 3.9993907806255624
+        },
+        {
+          "azimuth_deg": 270,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297078125602177,
+              20.810248994537105
+            ],
+            [
+              20.810250279239945,
+              21.881926228344867
+            ],
+            [
+              21.88235281217211,
+              28.68181336426548
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297078125602177,
+              21.881926228344867
+            ],
+            [
+              21.88235281217211,
+              28.68181336426548
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.5131708689349281,
+          "native_first_contact_merged_chord_mm": 2.58484810274269,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 280,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297080770528247,
+              21.99336917704211
+            ],
+            [
+              21.993370965034128,
+              28.66805136311051
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297080770528247,
+              28.66805136311051
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 2.6962884065138617,
+          "native_first_contact_merged_chord_mm": 9.370970592582264,
+          "bezel_first_chord_mm": 3.999390780625564
+        },
+        {
+          "azimuth_deg": 290,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29708870531008,
+              20.756700409798512
+            ],
+            [
+              20.75670183552846,
+              28.60075840454377
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29708870531008,
+              28.60075840454377
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 1.459611704488431,
+          "native_first_contact_merged_chord_mm": 9.30366969923369,
+          "bezel_first_chord_mm": 3.9993907806255624
+        },
+        {
+          "azimuth_deg": 300,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29710192995856,
+              20.82555530840394
+            ],
+            [
+              20.825555662976004,
+              21.98192354402859
+            ],
+            [
+              21.981925324386477,
+              28.46796911581487
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29710192995856,
+              28.46796911581487
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.528453378445377,
+          "native_first_contact_merged_chord_mm": 9.17086718585631,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 310,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297120444491803,
+              20.979794067043272
+            ],
+            [
+              20.97979480833768,
+              28.317896528765097
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297120444491803,
+              28.317896528765097
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.99771542734587,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 1.6826736225514694,
+          "native_first_contact_merged_chord_mm": 9.020776084273294,
+          "bezel_first_chord_mm": 3.999390780625564
+        },
+        {
+          "azimuth_deg": 320,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.29714424893519,
+              21.10447751543459
+            ],
+            [
+              28.256068803908256,
+              55.0
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.29714424893519,
+              21.10447751543459
+            ],
+            [
+              28.256068803908256,
+              55.0
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345868,
+              18.997106207971438
+            ]
+          ],
+          "native_first_chord_mm": 1.8073332664993984,
+          "native_first_contact_merged_chord_mm": 1.8073332664993984,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 330,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297173343321344,
+              20.897192514697085
+            ],
+            [
+              20.897193651420338,
+              29.178412337077894
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297173343321344,
+              29.178412337077894
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345867,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 1.6000191713757417,
+          "native_first_contact_merged_chord_mm": 9.88123899375655,
+          "bezel_first_chord_mm": 3.999390780625564
+        },
+        {
+          "azimuth_deg": 340,
+          "excluded_native_wall_entry_slot_sector": false,
+          "native_radial_intervals_mm": [
+            [
+              19.297207727690154,
+              22.136237245032813
+            ],
+            [
+              22.1362381075157,
+              30.383650550611613
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297207727690154,
+              30.383650550611613
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              18.997106207971434
+            ]
+          ],
+          "native_first_chord_mm": 2.8390295173426594,
+          "native_first_contact_merged_chord_mm": 11.086442822921459,
+          "bezel_first_chord_mm": 3.9993907806255695
+        },
+        {
+          "azimuth_deg": 350,
+          "excluded_native_wall_entry_slot_sector": true,
+          "native_radial_intervals_mm": [
+            [
+              19.297247402088747,
+              31.15382454419435
+            ]
+          ],
+          "native_contact_merged_radial_intervals_mm": [
+            [
+              19.297247402088747,
+              31.15382454419435
+            ]
+          ],
+          "bezel_radial_intervals_mm": [
+            [
+              14.997715427345865,
+              18.99710620797143
+            ]
+          ],
+          "native_first_chord_mm": 11.856577142105603,
+          "native_first_contact_merged_chord_mm": 11.856577142105603,
+          "bezel_first_chord_mm": 3.999390780625566
+        }
+      ],
+      "native_min_first_radial_chord_mm_excluding_entry_slots": 1.28980938919862,
+      "native_min_first_contact_merged_radial_chord_mm_excluding_entry_slots": 1.8073332664993984,
+      "native_zero_material_azimuths_deg_excluding_entry_slots": [],
+      "bezel_min_first_radial_chord_mm_when_present": 3.999390780625557
+    }
+  ],
+  "optics_assumptions": {
+    "lens_tip_y_mm": 28.0,
+    "front_test_plane_y_mm": 40.0,
+    "point_lens_model": true,
+    "actual_camera_module_measured": false,
+    "actual_optical_field_of_view_verified": false,
+    "scope": "Only body and bezel occlusion, for the assumed nominal lens tip. Not an actual optical certificate."
+  },
+  "optical_cones": [
+    {
+      "half_angle_deg": 0,
+      "rays": 1,
+      "blocked_rays": 0,
+      "samples": [
+        {
+          "azimuth_deg": 0,
+          "blocked": false,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "half_angle_deg": 35,
+      "rays": 36,
+      "blocked_rays": 0,
+      "samples": [
+        {
+          "azimuth_deg": 0,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 10,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 20,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 30,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 40,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 50,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 60,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 70,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 80,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 90,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 100,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 110,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 120,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 130,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 140,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 150,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 160,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 170,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 180,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 190,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 200,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 210,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 220,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 230,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 240,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 250,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 260,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 270,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 280,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 290,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 300,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 310,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 320,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 330,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 340,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 350,
+          "blocked": false,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "half_angle_deg": 40,
+      "rays": 36,
+      "blocked_rays": 0,
+      "samples": [
+        {
+          "azimuth_deg": 0,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 10,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 20,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 30,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 40,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 50,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 60,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 70,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 80,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 90,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 100,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 110,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 120,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 130,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 140,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 150,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 160,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 170,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 180,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 190,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 200,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 210,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 220,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 230,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 240,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 250,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 260,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 270,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 280,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 290,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 300,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 310,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 320,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 330,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 340,
+          "blocked": false,
+          "hits": []
+        },
+        {
+          "azimuth_deg": 350,
+          "blocked": false,
+          "hits": []
+        }
+      ]
+    }
+  ],
+  "rear_cover": {
+    "grid_shape_before_exclusion": [
+      14,
+      19
+    ],
+    "grid_extent_xz_mm": [
+      [
+        -51.0,
+        -31.0
+      ],
+      [
+        -12.0,
+        23.0
+      ]
+    ],
+    "ray_y_start_end_mm": [
+      -50.0,
+      -29.0
+    ],
+    "usb_rectangle_excluded_xz_mm": [
+      [
+        -39.2,
+        -23.0
+      ],
+      [
+        -24.2,
+        -11.0
+      ]
+    ],
+    "excluded_usb_samples": 20,
+    "sample_count": 246,
+    "minimum_positive_total_material_chord_mm": 3.683928472687299,
+    "zero_material_samples": [],
+    "samples": [
+      {
+        "x_mm": -51.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -35.978214668539515,
+            -29.15
+          ]
+        ],
+        "total_material_chord_mm": 6.828214668539516
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0071293695786,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0071293695786
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.02434224999792,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.024342249997922
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.038185151624006,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.038185151624006
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.04992770319269,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.049927703192687
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.05287847800221,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.052878478002205
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.05153855827678,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.051538558276782
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.05301337442225,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.053013374422248
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.05948122279619,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0594812227961885
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.06003158077471,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.060031580774712
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.06166029018274,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.061660290182743
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0644657186989,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.064465718698898
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.06643622922131,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.06643622922131
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.06895642690115,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.068956426901153
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.06451969505603,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.064519695056029
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.05502815676128,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.055028156761281
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.04734052204331,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0473405220433065
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.03596508909112,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.035965089091121
+      },
+      {
+        "x_mm": -51.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.01875742893052,
+            -29.15
+          ]
+        ],
+        "total_material_chord_mm": 6.868757428930522
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.07451270766169,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.07451270766169
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09476962523707,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694769625237072
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09779323065033,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6977932306503334
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09762881956085,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6976288195608547
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0978684061602,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697868406160204
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09719596689318,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697195966893183
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09761632286659,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697616322866594
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0976874249931,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6976874249930987
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.097468933233046,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697468933233047
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09740303059986,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697403030599858
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.097940173954676,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6979401739546773
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09797782919187,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6979778291918706
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.097968109902325,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6979681099023285
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09825297069439,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6982529706943907
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09879730054688,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.698797300546879
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09748128043345,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6974812804334505
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09824902042184,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.698249020421839
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09929534257749,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6992953425774946
+      },
+      {
+        "x_mm": -48.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09930038807982,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0993003880798184
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.06911803403281,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.069118034032812
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09213276544912,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6921327654491236
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09565361796077,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6956536179607724
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.095393718937395,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.695393718937396
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.095053634606735,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6950536346067366
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09518590562842,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6951859056284206
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09523676441671,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6952367644167126
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09504303632467,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6950430363246713
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09513007872664,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.695130078726642
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.095549096965556,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.695549096965559
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09551177577451,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.695511775774513
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.095790064221376,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6957900642213772
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0953685670071,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.695368567007101
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.094930023249184,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694930023249185
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.096104822552405,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.696104822552405
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09667256945839,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.696672569458391
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09727306702323,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6972730670232323
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09892798748447,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.698927987484474
+      },
+      {
+        "x_mm": -45.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09859052258626,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.098590522586257
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.06246490383317,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.062464903833167
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09041617849913,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6904161784991345
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09497424387836,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694974243878363
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09443847079248,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694438470792484
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09401758718689,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6940175871868917
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09421192802032,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694211928020323
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09348557876574,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6934855787657384
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.094142519930564,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6941425199305655
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09363851182122,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.69363851182122
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09366220219752,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6936622021975225
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09422824968503,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6942282496850325
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09482004145208,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6948200414520826
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09431348919712,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694313489197121
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.094248603455405,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6942486034554065
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09478457289755,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6947845728975537
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09514868808002,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6951486880800246
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09632677831714,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.696326778317143
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09779751310103,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6977975131010297
+      },
+      {
+        "x_mm": -42.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.098612821792464,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0986128217924644
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.05632665835079,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.056326658350791
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.08903896794285,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6890389679428495
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09406566370481,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694065663704812
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09347820193429,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693478201934292
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092980072487194,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6929800724871953
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09342180225848,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6934218022584844
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09350138379554,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6935013837955424
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09377872264094,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6937787226409426
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093914833728206,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6939148337282077
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0936186766922,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6936186766922017
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093918440019586,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693918440019587
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.094816621815546,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694816621815548
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09559748519473,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6955974851947317
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09746240731685,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6974624073168485
+      },
+      {
+        "x_mm": -39.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09864835280863,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.098648352808631
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.05086729627209,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.050867296272088
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.08806851847973,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6880685184797315
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09402024719733,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6940202471973294
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09294358793006,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.69294358793006
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093110282222355,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6931102822223565
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09326836469233,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6932683646923277
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09317174806646,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6931717480664616
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093000148861265,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693000148861266
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09364517730831,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693645177308312
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0933161433028,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693316143302802
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09360392384162,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6936039238416214
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.094233051499025,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694233051499026
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09543490465604,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6954349046560395
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09699321614471,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.696993216144712
+      },
+      {
+        "x_mm": -36.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.097223018810766,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.097223018810764
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.04561161181688,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.045611611816883
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.087149918607295,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6871499186072967
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093741156127216,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6937411561272153
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09281442629118,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6928144262911786
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09295548866927,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.69295548866927
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093314650655905,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693314650655907
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093423863511134,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6934238635111356
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093362988516134,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693362988516137
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093447885911026,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693447885911027
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093566621890815,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6935666218908167
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09403883857609,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.694038838576091
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.094095568453454,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6940955684534558
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09501745246919,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6950174524691963
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09718351240867,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697183512408671
+      },
+      {
+        "x_mm": -33.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.098017641120315,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.098017641120315
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.04301286180266,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.043012861802659
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0860126230434,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6860126230434016
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093129105333084,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6931291053330852
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09256858130078,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692568581300783
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09263419263879,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692634192638792
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09346431918625,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693464319186255
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09305409976126,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6930540997612624
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093383168385174,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693383168385173
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09364656049007,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6936465604900732
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09349594892786,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693495948927861
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09367681959386,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693676819593861
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09414742766615,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6941474276661523
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.095555875785834,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6955558757858356
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09761054408817,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697610544088173
+      },
+      {
+        "x_mm": -30.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09817309855332,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.098173098553318
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0392584996407,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.039258499640702
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.08526575957348,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6852657595734826
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09289057172965,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6928905717296487
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0924476114495,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692447611449502
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09300788949341,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6930078894934084
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09250938341568,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6925093834156826
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09283203938429,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6928320393842924
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09253929791069,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6925392979106917
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09313472226252,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6931347222625206
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09301903603137,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693019036031375
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09389067614995,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693890676149948
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093959753767145,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693959753767146
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09488175244333,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6948817524433295
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09707977115151,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.697079771151513
+      },
+      {
+        "x_mm": -27.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.097484031389406,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0974840313894045
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.03369266603877,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0336926660387675
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.08499851044588,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6849985104458796
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09267786906197,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692677869061974
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09267901221366,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6926790122136595
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0923323459906,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6923323459906
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09200032088938,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6920003208893846
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09221585523347,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6922158552334725
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09219991410933,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692199914109331
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092281036318255,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6922810363182563
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092661496670196,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6926614966701976
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09264853574028,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6926485357402825
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09291382892376,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692913828923764
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092661578029904,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692661578029906
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09314155533531,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6931415553353073
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093060689677976,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693060689677978
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093903967425575,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6939039674255767
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.095282924587266,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.695282924587268
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09710248591214,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.69710248591214
+      },
+      {
+        "x_mm": -24.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09812169927898,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.098121699278977
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.03141842936516,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.031418429365161
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0839284726873,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.683928472687299
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0936577685208,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6936577685208007
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09256051612188,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6925605161218797
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092056964313585,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6920569643135863
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.091912026936136,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.691912026936137
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092201674117106,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6922016741171078
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.091438369964784,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6914383699647857
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0922306897282,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6922306897281985
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09220715549068,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692207155490678
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09282286184414,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6928228618441423
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09293462917953,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692934629179531
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09282441558655,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.69282441558655
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09342314371526,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6934231437152647
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09355122498642,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6935512249864217
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09350699376081,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6935069937608134
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.095192244915786,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6951922449157877
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09665353254557,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.696653532545568
+      },
+      {
+        "x_mm": -21.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09790252060903,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.097902520609033
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.02627983309625,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.026279833096249
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.084569644141816,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.684569644141817
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093134710077116,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6931347100771177
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092433398335366,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692433398335366
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09138468034244,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.691384680342445
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09168024433546,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6916802443354584
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.091109528657306,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.691109528657309
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09178203849873,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.691782038498731
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.091879486957545,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6918794869575464
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09213107768639,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6921310776863905
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09236990239345,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6923699023934518
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092245155858684,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6922451558586857
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09225672447612,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692256724476122
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092739690717295,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6927396907172962
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093539064683505,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693539064683506
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0939763173903,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6939763173903035
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09513170310065,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6951317031006496
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09715410355547,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6971541035554694
+      },
+      {
+        "x_mm": -18.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09766191094041,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.09766191094041
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.02479818288685,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0247981828868475
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.0841184520906,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.684118452090601
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093072633329115,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693072633329116
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09137817068859,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.691378170688594
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09143506774035,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6914350677403505
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09117332884808,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6911733288480804
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09110954389639,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.69110954389639
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09137564597283,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6913756459728315
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09196404139909,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.691964041399089
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09167326063834,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.691673260638339
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09198379770904,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6919837977090424
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09265335570603,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.692653355706028
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092214001764894,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6922140017648957
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092722929389815,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6927229293898147
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09306242095242,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6930624209524243
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09347874698016,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.693478746980162
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09516561591356,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6951656159135595
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.096429432872114,
+            -32.4
+          ]
+        ],
+        "total_material_chord_mm": 3.6964294328721152
+      },
+      {
+        "x_mm": -15.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09702769488419,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.09702769488419
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -31.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.02155344016882,
+            -29.15
+          ]
+        ],
+        "total_material_chord_mm": 6.8715534401688245
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -28.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.082115993712485,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.082115993712485
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -25.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09267409072539,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.092674090725389
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -22.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.091278714153944,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.091278714153944
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -19.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09098079492862,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.090980794928619
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -16.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.090932618612925,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.090932618612923
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -13.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09150732973666,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.0915073297366575
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -10.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09063061046626,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.090630610466263
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -7.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09070847376682,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.090708473766817
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -4.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09112758814681,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.091127588146811
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": -1.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.091759608802285,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.091759608802285
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 2.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09203722433328,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.092037224333284
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 5.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09202667163086,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.092026671630862
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 8.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09265214590033,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.092652145900331
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 11.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.092919758480576,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.092919758480576
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 14.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.093492886894545,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.093492886894545
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 17.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.09493524971563,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.094935249715633
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 20.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.096655415102276,
+            -29.0
+          ]
+        ],
+        "total_material_chord_mm": 7.096655415102276
+      },
+      {
+        "x_mm": -12.0,
+        "z_mm": 23.0,
+        "occupied_y_intervals_mm": [
+          [
+            -36.096341850178476,
+            -29.15
+          ]
+        ],
+        "total_material_chord_mm": 6.946341850178477
+      }
+    ]
+  },
+  "global_minimum_wall_certificate": false,
+  "physical_print_verified": false
+}

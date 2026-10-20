@@ -1,0 +1,158 @@
+{
+  "units": "mm",
+  "button_centre_xy": [
+    45.0,
+    8.4
+  ],
+  "root_native_cap_attachment": {
+    "stem_top_z_mm": 37.0,
+    "native_cap_cut_z_mm": 36.6,
+    "nominal_overlap_mm": 0.4,
+    "native_cap_not_included": true,
+    "native_cap_swept_clearance_must_be_cut_by_root": true
+  },
+  "stem": {
+    "diameter_mm": 4.5,
+    "flange_diameter_mm": 7.6,
+    "flange_z_mm": [
+      31.6,
+      32.8
+    ],
+    "tip_z_mm_at_rest": 30.3,
+    "maximum_downward_travel_mm": 1.2,
+    "tip_z_mm_at_full_travel": 29.1,
+    "capture_fork_bottom_z_mm": 33.2,
+    "upward_flange_gap_mm": 0.4,
+    "hard_stop_top_z_mm": 30.4,
+    "hard_stop_contacts_flange_at_full_travel": true
+  },
+  "retainer": {
+    "insertion_axis": "+Y from rear -Y",
+    "fork_open_direction": "+Y",
+    "bounds_mm": [
+      35.7,
+      -25.7,
+      24.0,
+      54.3,
+      16.8,
+      35.2
+    ],
+    "central_channel_mm": [
+      37.5,
+      -42.0,
+      23.7,
+      52.5,
+      17.1,
+      35.5
+    ],
+    "side_rail_grooves_mm": [
+      [
+        35.4,
+        -42.0,
+        25.7,
+        37.5,
+        17.1,
+        27.8
+      ],
+      [
+        52.5,
+        -42.0,
+        25.7,
+        54.6,
+        17.1,
+        27.8
+      ]
+    ],
+    "nominal_clearance_each_side_mm": 0.3,
+    "retention": "Root rear cover needs an internal stop near Y=-26.0; the module is not independently latched.",
+    "body_cut_application": "Subtract from the main body after the native rear cap is split. Do not subtract this entry channel from the removable rear cap.",
+    "lead_slot_width_mm": 1.4,
+    "upper_channel_front_y_mm": 13.1,
+    "root_roof_clearance_top_z_mm": 35.7
+  },
+  "switch_interface": {
+    "status": "UNCONFIRMED nominal 6x6 tactile switch only",
+    "nominal_switch_body_xy_mm": [
+      6.0,
+      6.0
+    ],
+    "pocket_xy_mm": [
+      6.4,
+      6.6
+    ],
+    "pocket_xy_bounds_mm": [
+      41.8,
+      5.1,
+      48.2,
+      11.7
+    ],
+    "support_floor_z_mm": 25.8,
+    "actual_switch_height_pinout_and_travel_verified": false,
+    "actuation_and_overtravel_verified": false,
+    "return_mechanism_verified": false,
+    "return_note": "A measured return mechanism or verified switch-return interface remains required. No spring is assumed owned."
+  },
+  "verification": {
+    "stem_valid": true,
+    "stem_solids": 1,
+    "retainer_valid": true,
+    "retainer_solids": 1,
+    "body_cut_valid": true,
+    "body_cut_solids": 1,
+    "movement_checks": [
+      {
+        "travel_mm": 0.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.3,
+        "overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.6,
+        "overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 0.9,
+        "overlap_mm3": 0.0
+      },
+      {
+        "travel_mm": 1.2,
+        "overlap_mm3": 0.0
+      }
+    ],
+    "rear_insertion_checks": [
+      {
+        "retainer_y_offset_mm": -45.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "retainer_y_offset_mm": -40.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "retainer_y_offset_mm": -30.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "retainer_y_offset_mm": -20.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "retainer_y_offset_mm": -10.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "retainer_y_offset_mm": -5.0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "retainer_y_offset_mm": 0.0,
+        "overlap_mm3": 0.0
+      }
+    ],
+    "cassette_outside_cut_mm3": 0.0,
+    "cassette_inside_cut_mm3": 2405.5448336617346,
+    "physical_print_tested": false
+  }
+}
