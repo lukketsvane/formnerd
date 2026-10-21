@@ -1,0 +1,70 @@
+{
+ "document_revision": "M05",
+ "geometry_revision": "R01",
+ "page_count": 16,
+ "a4": true,
+ "pdf": "manual/Kamera-boge-M05.pdf",
+ "pdf_sha256": "ee91d6b12b674a3759783acffe948baebb53f85d418b95eb6da7fa6a217e6862",
+ "raster_images_in_pdf": 0,
+ "changes_from_m04": [
+  "form lines on the organic parts in every figure: occluding contours and valleys measured from id/depth/normal buffers at the same orthographic camera as the vector figure (source/organic_figure.py)",
+  "figures with organic lines: cover, exploded, finished-rear, inventory-P01, inventory-P02, lens-insert, lid-fasten, lid-insert, nuts-insert, plate-01, plate-02"
+ ],
+ "organic_line_paths_per_figure": {
+  "cover": {
+   "organic-contour": 12,
+   "organic-valley": 17
+  },
+  "exploded": {
+   "organic-contour": 18,
+   "organic-valley": 22
+  },
+  "finished-rear": {
+   "organic-contour": 3,
+   "organic-valley": 8
+  },
+  "inventory-P01": {
+   "organic-contour": 18,
+   "organic-valley": 17
+  },
+  "inventory-P02": {
+   "organic-contour": 0,
+   "organic-valley": 3
+  },
+  "lens-insert": {
+   "organic-contour": 17,
+   "organic-valley": 16
+  },
+  "lid-fasten": {
+   "organic-contour": 4,
+   "organic-valley": 12
+  },
+  "lid-insert": {
+   "organic-contour": 8,
+   "organic-valley": 12
+  },
+  "nuts-insert": {
+   "organic-contour": 11,
+   "organic-valley": 14
+  },
+  "plate-01": {
+   "organic-contour": 18,
+   "organic-valley": 21
+  },
+  "plate-02": {
+   "organic-contour": 0,
+   "organic-valley": 5
+  }
+ },
+ "organic_line_method": "three.js buffers at 2x supersample; contour = depth jump > 0.8 mm not explained by surface slope; valley = Hessian ridge of depth smoothed with sigma 1.8 mm, hysteresis 0.14/0.06 per mm, min length 12 mm, cleared 1.2 mm from silhouettes and 2.0 mm from contours; skeletonised, Gaussian smoothed 0.5 mm, simplified 0.08 mm",
+ "changes_from_m03_kept": [
+  "page 3 Prent for P1S with the sliced plates",
+  "page 4 text updated",
+  "page 16 Feilsoking",
+  "footers and cover M05, 16 pages"
+ ],
+ "source_package": "manual/Kamera-boge-M05-kjelder.zip",
+ "rebuild_check": "fresh extraction, python source/manual_v5.py --layout-only: identical text on all 16 pages and identical 60 dpi rasters",
+ "visual_review": "all 16 pages rasterized and inspected; cover, parts, overview, step pages checked at full size; no clipping or overlap",
+ "geometry_modified": false
+}
