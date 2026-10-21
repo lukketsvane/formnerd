@@ -1,6 +1,6 @@
 # Entropi · A3-print (delt skal)
 
-A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1S. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Linsa sit i ei glatt trakt med éin skarp kant, hendingshorisonten, i staden for den tynne ringen og sporet. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
+A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1S. Modellen skal målast i to gråtonar, så renderane viser berre dei. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Linsa sit i ei glatt trakt med éin skarp kant, hendingshorisonten, i staden for den tynne ringen og sporet. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
 
 ![CMF](bilete/cmf.png)
 
@@ -44,7 +44,7 @@ Detaljane er skorne eller lagde til i `verktoy/detalj.py`, og måla ligg under `
 | Gravert «ENTROPI» og tre små knappar | Toppen av søkarblokka | Hasselblad X2D |
 | Knurla okularring som stikk 1,2 mm ut | Baksida | Leica |
 | 0,4 mm fas på begge sider av delinga | Rundt heile kroppen | |
-| Oransje utløysar | CMF | Hasselblad |
+| To gråtonar: lys på tubar, grep og linsering, mørk på kjerne, trakt, hjul og utløysar | CMF, etter kursregelen om form | |
 
 ## Innkjøp
 
