@@ -1,0 +1,68 @@
+[
+  {
+    "file": "P01.stl",
+    "closed": true,
+    "winding": true,
+    "volume": 397900.92590855184,
+    "extents": [
+      145.0,
+      76.6955337524414,
+      107.3148422241211
+    ]
+  },
+  {
+    "file": "P02.stl",
+    "closed": true,
+    "winding": true,
+    "volume": 58769.77524628362,
+    "extents": [
+      132.58349609375,
+      85.9002456665039,
+      10.013885498046875
+    ]
+  },
+  {
+    "file": "P03.stl",
+    "closed": true,
+    "winding": true,
+    "volume": 4020.816672572981,
+    "extents": [
+      49.400001525878906,
+      49.39999771118164,
+      8.0
+    ]
+  },
+  {
+    "file": "P04.stl",
+    "closed": true,
+    "winding": true,
+    "volume": 5475.085007810699,
+    "extents": [
+      19.0,
+      19.0,
+      26.599998474121094
+    ]
+  },
+  {
+    "file": "P05.stl",
+    "closed": true,
+    "winding": true,
+    "volume": 1476.7266685724026,
+    "extents": [
+      25.0,
+      38.0,
+      6.0
+    ]
+  },
+  {
+    "file": "T01.stl",
+    "closed": true,
+    "winding": true,
+    "volume": 6899.279128820704,
+    "extents": [
+      70.0,
+      35.0,
+      4.0
+    ]
+  }
+]

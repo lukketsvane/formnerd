@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Iver Finne"
+  },
+  "description": "Frå vald skisse via Tripo og mekanisk CAD til printfiler og IKEA-liknande montering.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./assets/icon.png",
+        "defaultPrompt": "Bruk $skisse-til-cad på skissa: Tripo, segmentering, mekanisk CAD og IKEA-liknande monteringsrettleiing. Lagre bileta i Space.",
+        "developerName": "Iver Finne",
+        "displayName": "Skisse til CAD",
+        "logo": "./assets/icon.png",
+        "longDescription": "A reusable workflow for turning a selected sketch or product reference into a Tripo 3D form, segmented parts, mechanical CAD, print files and a clear isometric assembly guide. Preserves the approved form, separates measured dimensions from assumptions, checks geometry and builds final technical drawings from actual CAD. Includes documented Tripo API and CLI recipes. This is a skills-only plugin: it does not provide its own model-generation server. Requires a compatible agent environment and your own tools and accounts. Tripo generation may consume credits billed by Tripo. Image generation is used for concepts and layout drafts; final technical figures come from model geometry. The workflow is not a certification of physical fit, structural performance or print readiness.",
+        "shortDescription": "Sketch to CAD and assembly",
+        "websiteURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/README.md",
+        "supportURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/TERMS.md"
+      },
+      "review": {
+        "prompts": [
+          "Use $skisse-til-cad to take this sketch through Tripo, mechanical CAD and an isometric assembly guide.",
+          "Use $skisse-til-cad to segment this approved model and prepare a small fit test before the full print.",
+          "Use $skisse-til-cad to create a CAD-based assembly manual and save each page separately."
+        ]
+      },
+      "publication": {
+        "release_notes": "Version 0.1.2 includes the repository's Apache-2.0 licence and versioned plugin and standalone-skill downloads, together with the Tripo, dimension lookup, form comparison, assembly-layout and portable-delivery improvements from 0.1.1."
+      }
+    }
+  },
+  "keywords": [
+    "Tripo",
+    "CAD",
+    "segmentering",
+    "Smart Low Poly",
+    "3D-print",
+    "montering"
+  ],
+  "name": "skisse-til-cad",
+  "version": "0.1.2",
+  "homepage": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/README.md",
+  "repository": "https://github.com/lukketsvane/formnerd",
+  "license": "Apache-2.0"
+}

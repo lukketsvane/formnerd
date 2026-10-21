@@ -1,0 +1,33 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./assets/icon.png",
+    "defaultPrompt": "Bruk $skisse-til-cad på skissa: Tripo, segmentering, mekanisk CAD og IKEA-liknande monteringsrettleiing. Lagre bileta i Space.",
+    "developerName": "Iver Finne",
+    "displayName": "Skisse til CAD",
+    "logo": "./assets/icon.png",
+    "longDescription": "A reusable workflow for turning a selected sketch or product reference into a Tripo 3D form, segmented parts, mechanical CAD, print files and a clear isometric assembly guide. Preserves the approved form, separates measured dimensions from assumptions, checks geometry and builds final technical drawings from actual CAD. Includes documented Tripo API and CLI recipes. This is a skills-only plugin: it does not provide its own model-generation server. Requires a compatible agent environment and your own tools and accounts. Tripo generation may consume credits billed by Tripo. Image generation is used for concepts and layout drafts; final technical figures come from model geometry. The workflow is not a certification of physical fit, structural performance or print readiness.",
+    "shortDescription": "Sketch to CAD and assembly",
+    "websiteURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/README.md",
+    "supportURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/SUPPORT.md",
+    "privacyPolicyURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/TERMS.md"
+  },
+  "name": "skisse-til-cad",
+  "version": "0.1.2",
+  "description": "Frå vald skisse via Tripo og mekanisk CAD til printfiler og IKEA-liknande montering.",
+  "author": {
+    "name": "Iver Finne"
+  },
+  "keywords": [
+    "Tripo",
+    "CAD",
+    "segmentering",
+    "Smart Low Poly",
+    "3D-print",
+    "montering"
+  ],
+  "skills": "./skills",
+  "license": "Apache-2.0"
+}

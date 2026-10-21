@@ -4,8 +4,8 @@ Felles verktøy for formnerd-prosjekt. Køyr alt frå rota av repoet med prosjek
 
 | Skript | Bruk | Gjer |
 | --- | --- | --- |
-| `tripo.py` | `upload fil` · `balance` · `task <id>` | Tripo v3-klient: opplasting, oppgåver, polling og nedlasting (krev `TRIPO_API_KEY`) |
-| `kjor.py` | `jobbar.json ut.json [parallelle]` | køyrer Tripo-jobbar og lastar ned bilete og GLB (biletgenerering: `1`) |
+| `tripo.py` | `upload fil` · `balance` · `task <id>` · `valider jobbar.json` | Tripo v3-klient: opplasting, oppgåver, polling og nedlasting (krev `TRIPO_API_KEY`) |
+| `kjor.py` | `jobbar.json ut.json [parallelle]` | validerer alle jobbar før kostnad, køyrer dei med parallellitet avgrensa av Tripo-poolen (bilete 1, H 10, P 5, mesh 10, processing 5), spør tasken på nytt før nedlasting, lastar ned alle `*_url` og skriv `task.json` med kreditt og SHA-256 |
 | `mesh_qa.py` | `model.glb …` | topologisjekk av meshar |
 | `visningar.mjs` | `node verktoy/visningar.mjs model.glb visningar.png` | fire visningar (front, 3/4, topp og bak) av ein GLB |
 | `innmat.py` | `P/analyse/linser.json [prosessar]` | om elektronikken får plass i forma, og minste breidd |

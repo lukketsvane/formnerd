@@ -1,0 +1,106 @@
+{
+  "document_revision": "M03",
+  "geometry_revision": "R01",
+  "scope": "Independent illustration-first read test of pages 5, 6, 9 and 13. This is a visual assessment, not an automated test or a novice participant study. Reviewer had prior knowledge of the R01 mechanism.",
+  "reviewer": "project_requirements",
+  "passed": true,
+  "pages": [
+    {
+      "page": 5,
+      "image": "review/manual-v3/final-pages-ready/side-05.png",
+      "sha256": "817a417433dc8ed91cb6593dc604abf393b5ce6a953bf9e40888a4713b5742ce",
+      "action_read_from_illustration": "Før P04 horisontalt inn frå den opne baksida til den låge mellomstillinga.",
+      "result": "pass",
+      "reason": "Start og mellomstilling er synlege i same tekniske utsnitt.",
+      "remaining_understanding_blockers": []
+    },
+    {
+      "page": 6,
+      "image": "review/manual-v3/final-pages-ready/side-06.png",
+      "sha256": "f529f64b1184da87523de5404d614ba92c8d0acbdb27530377ed9e7fa4d5f5f9",
+      "action_read_from_illustration": "Løft P04 rett opp gjennom toppholet; den breie foten blir inne.",
+      "result": "pass",
+      "reason": "Mellomstilling og sluttstilling er synlege utan å antyde innføring ovanfrå.",
+      "remaining_understanding_blockers": []
+    },
+    {
+      "page": 9,
+      "image": "review/manual-v3/final-pages-ready/side-09.png",
+      "sha256": "f05acf4940d41b4cf6ce4d1fa0843c8afaa8af04cdd15d577a35a8f8ece0f9e6",
+      "action_read_from_illustration": "Trykk knappen ned, slepp og sjå at han kjem tilbake medan huset er ope.",
+      "result": "pass",
+      "reason": "Ned- og returpil er tydelege, tungekanten ligg under foten, den tidlegare tome ringen er fjerna.",
+      "remaining_understanding_blockers": []
+    },
+    {
+      "page": 13,
+      "image": "review/manual-v3/final-pages-ready/side-13.png",
+      "sha256": "581ed09742a81fe9b8d91bffd1ce203c80e2807e0d3de8b3f0e9ea870fc2682d",
+      "action_read_from_illustration": "Rett dei to hola i P02 mot pinnane og skyv bakdekselet rett på.",
+      "result": "pass",
+      "reason": "Leiarane endar ved dei to synlege holmynningane; før/etter-detalj og 2× viser paringa.",
+      "remaining_understanding_blockers": []
+    }
+  ],
+  "corrected_before_final_review": [
+    "Removed unexplained empty callout ring from page 9.",
+    "Moved page 13 locator endpoints from projected hidden pin positions to visible P02 hole mouths."
+  ],
+  "not_assessed": [
+    "Physical assembly or spring performance",
+    "P1S slicing",
+    "Manufacturer internal approval criteria"
+  ],
+  "recheck": "Compare the page image hashes before reusing this assessment; changed critical figures need a new visual read.",
+  "final_render_validation": {
+    "scope": "Hash reconciliation after the final limited locator cleanup; this is not a new blind reading test.",
+    "comparisons": [
+      {
+        "page": 5,
+        "readtest_sha256": "817a417433dc8ed91cb6593dc604abf393b5ce6a953bf9e40888a4713b5742ce",
+        "final_sha256": "74f5991279acf25503da1ccc80a1250f714a8768fd4330bb5bea5ace1919482a",
+        "whole_page_identical": false,
+        "main_assembly_panel_pixels_identical": true,
+        "change_after_readtest": "Only three nonfunctional surface indications were removed from the small front locator; the read-tested mechanical figures and action overlays are unchanged."
+      },
+      {
+        "page": 6,
+        "readtest_sha256": "f529f64b1184da87523de5404d614ba92c8d0acbdb27530377ed9e7fa4d5f5f9",
+        "final_sha256": "ffb73f0e2023669236a9d6e7289d8e67e158ddfbf1b84118b59494a5e9118e89",
+        "whole_page_identical": false,
+        "main_assembly_panel_pixels_identical": true,
+        "change_after_readtest": "Only three nonfunctional surface indications were removed from the small front locator; the read-tested mechanical figures and action overlays are unchanged."
+      },
+      {
+        "page": 9,
+        "readtest_sha256": "f05acf4940d41b4cf6ce4d1fa0843c8afaa8af04cdd15d577a35a8f8ece0f9e6",
+        "final_sha256": "53f9f9430599c19d4108f61000cb8392cea92f4a6e3fd9c7698ab5e92bcc5256",
+        "whole_page_identical": false,
+        "main_assembly_panel_pixels_identical": true,
+        "change_after_readtest": "Only three nonfunctional surface indications were removed from the small front locator; the read-tested mechanical figures and action overlays are unchanged."
+      },
+      {
+        "page": 13,
+        "readtest_sha256": "581ed09742a81fe9b8d91bffd1ce203c80e2807e0d3de8b3f0e9ea870fc2682d",
+        "final_sha256": "581ed09742a81fe9b8d91bffd1ce203c80e2807e0d3de8b3f0e9ea870fc2682d",
+        "whole_page_identical": true,
+        "main_assembly_panel_pixels_identical": true,
+        "change_after_readtest": "none"
+      }
+    ],
+    "final_visual_qa": {
+      "reviewers": [
+        "manual_layout_r2",
+        "root"
+      ],
+      "pages": [
+        10,
+        12,
+        13,
+        14
+      ],
+      "result": "pass"
+    },
+    "original_report": "manual-v3-readtest-before-final-locator-cleanup.json"
+  }
+}
