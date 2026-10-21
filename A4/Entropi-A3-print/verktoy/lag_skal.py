@@ -46,6 +46,11 @@ def rboks_y(y0, y1, xc, zc, bx, hz, r):
                                 for sx in (-1, 1) for sz in (-1, 1)])
 
 
+def tak_boks(x, y, z):
+    xm, w = (x[0] + x[1]) / 2, x[1] - x[0]
+    return Manifold.batch_hull([boks(x, y, z), boks([xm - 0.05, xm + 0.05], y, [z[1] - 0.01, z[1] + w / 2])])
+
+
 def rboks_y_tak(y0, y1, xc, zc, bx, hz, r):
     topp = zc + hz / 2 - r + (bx / 2 - r) + r * np.sqrt(2)
     return Manifold.batch_hull([rboks_y(y0, y1, xc, zc, bx, hz, r), Manifold.cylinder(y1 - y0, 0.2, 0.2, 12).rotate([-90, 0, 0]).translate([xc, y0, topp - 0.2])])
@@ -119,7 +124,7 @@ hx, hy = hjul[:, 0].mean(), hjul[:, 1].mean()
 hr = float(np.hypot(hjul[:, 0] - hx, hjul[:, 1] - hy).max())
 KROPP0 -= vsyl(hx, hy, hr + ec["lomme_r_ekstra"], ec["kapp_z"], 120)
 pw, pd = ec["pipe"]
-ec_hol = vsyl(hx, hy, ec["hol_d"] / 2, ec["hol_botn_z"] - 0.01, ec["kapp_z"] + 5)
+ec_hol = vsyl(hx, hy, ec["hol_d"] / 2, ec["hol_botn_z"] - 0.01, ec["kapp_z"] + 5) + vsyl(hx, hy, ec["mutter_d"] / 2, ec["mutter_botn_z"], ec["kapp_z"] + 5)
 ec_pipe = boks([hx - pw / 2, hx + pw / 2], [hy - pd / 2, hy + pd / 2], [S["tak_z"] - 10.0, ec["tak_botn_z"]])
 ec_pipe += Manifold.batch_hull([boks([hx - pw / 2, hx + pw / 2], [hy - pd / 2, hy + pd / 2], [ec["tak_botn_z"] - 0.01, ec["tak_botn_z"]]),
                                 vsyl(hx, hy, ec["hol_d"] / 2, ec["hol_botn_z"] - 0.01, ec["hol_botn_z"])])
@@ -202,14 +207,14 @@ def stolpe(y0, y1):
 
 
 STOLPAR = stolpe(y_sd - kl - sp["ende"], y_sd + sp["inn"]) + stolpe(y_ant - sp["inn"], y_ant + kl + sp["ende"])
-spor = boks([x_cam_bak - kl, x_cam_front + kl], [y_sd - kl, y_ant + kl], [z_lag - kl, z_hog + kl])
-spor += boks([x_mb_botn - kl, x_mb_topp + kl], [y_usb - st["mb_lengd"] - kl, y_usb + kl], [z_lag - kl, z_hog + kl])
-spor += boks([x_cam_front - 0.01, x1 + 1.0], [y_sd - 10, y_sd + 16], [az - 7.5 - kl, z_hog + kl])
-spor += boks([x_kort - 0.4, x_kort + 1.2], [y_sd - 10, y_sd + 13], [az - 5.5 - 0.4, z_hog + kl])
+spor = tak_boks([x_cam_bak - kl, x_cam_front + kl], [y_sd - kl, y_ant + kl], [z_lag - kl, z_hog + kl])
+spor += tak_boks([x_mb_botn - kl, x_mb_topp + kl], [y_usb - st["mb_lengd"] - kl, y_usb + kl], [z_lag - kl, z_hog + kl])
+spor += tak_boks([x_cam_front - 0.01, x1 + 1.0], [y_sd - 10, y_sd + 16], [az - 7.5 - kl, z_hog + kl])
+spor += tak_boks([x_kort - 0.4, x_kort + 1.2], [y_sd - 10, y_sd + 13], [az - 5.5 - 0.4, z_hog + kl])
 spor += boks([x_cam_front - 0.01, x1 + 1], [y_sd - 10, y_sd + 13], [-10, sp["leidning_z"]])
-spor += boks([x_cam_bak - 3.2 - kl, x_cam_bak + 0.01], [y_sd + 14.5 - kl, y_ant + kl], [az - 9.0 - kl, z_hog + kl])
-spor += boks([x_mb_topp - 0.01, x_mb_topp + 3.0 + kl], [y_usb - 6.5, y_usb + 1.0], [az - 4.0 - kl, z_hog + kl])
-spor += rboks_y(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
+spor += tak_boks([x_cam_bak - 3.2 - kl, x_cam_bak + 0.01], [y_sd + 14.5 - kl, y_ant + kl], [az - 9.0 - kl, z_hog + kl])
+spor += tak_boks([x_mb_topp - 0.01, x_mb_topp + 3.0 + kl], [y_usb - 6.5, y_usb + 1.0], [az - 4.0 - kl, z_hog + kl])
+spor += rboks_y_tak(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
 STOLPAR -= spor
 
 # --- samanstilling ----------------------------------------------------------
@@ -227,7 +232,7 @@ pinnehol = sum((vsyl(x, y, pn["d"] / 2 + pn["klaring"], dz - 1, dz + pn["h"] + 0
 OPP, NED = boks([-50, 200], [-50, 200], [dz, 200]), boks([-50, 200], [-50, 200], [-50, dz])
 BOTN = ((KROPP ^ NED) - mag_lommer) + pinnar
 TOPP = (KROPP ^ OPP) - mag_lommer - pinnehol
-AKSEL = vsyl(hx, hy, ec["hol_d"] / 2 - 0.15, ec["hol_botn_z"], ec["kapp_z"]) + (vsyl(hx, hy, 3.0, ec["kapp_z"], ec["kapp_z"] + 5.5, 48) - boks([hx - 5, hx + 5], [hy + 1.5, hy + 5], [ec["kapp_z"] + 0.5, ec["kapp_z"] + 6]))
+AKSEL = vsyl(hx, hy, ec["hol_d"] / 2 - 0.15, ec["hol_botn_z"], ec["mutter_botn_z"] + 0.01) + vsyl(hx, hy, ec["mutter_d"] / 2 - 0.15, ec["mutter_botn_z"], ec["kapp_z"]) + (vsyl(hx, hy, 3.0, ec["kapp_z"], ec["kapp_z"] + 5.5, 48) - boks([hx - 5, hx + 5], [hy + 1.5, hy + 5], [ec["kapp_z"] + 0.5, ec["kapp_z"] + 6]))
 
 # --- proxyar ---------------------------------------------------------------
 zb = [z_lag, z_hog]

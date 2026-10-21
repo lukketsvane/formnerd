@@ -58,7 +58,7 @@ def leidningar(fn, namn, **kw):
 
 
 def l_kort(y, dx):
-    return [[x_pin, y, z_pin], [x_pin + 3, y, z_pin], [x_pin + 6, y - 5, z_pin - 3], [x_pin + 8, y - 16 + dx * 2, z_pin - 5]]
+    return [[x_pin, y, z_pin], [x_pin + 2.5, y, z_pin], [x_pin + 3.5, y, z_pin - 6], [x_pin + 5, y + dx * 2.5, z_pin - 13]]
 
 
 def l_heng(y, dx):  # med stabelen, laus ende opp
@@ -96,7 +96,7 @@ def magnetsett(z0, namn, merke=None):
 
 
 MAG_B, _ = magnetsett(dz - 3.0, "mag_b")
-MAG_T, MERKE = magnetsett(dz, "mag_t", merke=dz + 3.0 - 0.45)
+MAG_T, MERKE = magnetsett(dz, "mag_t", merke=dz + 3.0 - 0.3)
 EIN_MAG = lagre(trimesh.creation.cylinder(3.0, 3.0, sections=40), "ein_magnet")
 KABEL = lagre(rør([[x_usb, 121, az], [x_usb, 150, az], [x_usb, 168, az + 12]], r=1.8), "usb_kabel")
 
@@ -305,8 +305,9 @@ def lim_inn(side, img, boks):
     x0, y0, x1, y1 = boks
     s_ = min((x1 - x0) / img.width, (y1 - y0) / img.height)
     im = img.resize((int(img.width * s_), int(img.height * s_)), Image.LANCZOS)
-    side.paste(im, (x0 + (x1 - x0 - im.width) // 2, y0 + (y1 - y0 - im.height) // 2))
-    return im
+    ox, oy = x0 + (x1 - x0 - im.width) // 2, y0 + (y1 - y0 - im.height) // 2
+    side.paste(im, (ox, oy))
+    return lambda a: (ox + a[0] * s_, oy + a[1] * s_)
 
 
 THUMB = {}
@@ -386,13 +387,12 @@ SIDER.append(("00-framside", s))
 # 1 Delar
 s, d = ny_side()
 tekst(d, (60, 40), "Delar", 90, True)
-rad = [("botn", "1x"), ("topp", "1x"), ("knapp", "1x"), ("lokk", "1x"), ("aksel", "1x"), ("hjul", "1x")]
-rad2 = [("cam", "1x"), ("mb", "1x"), ("sd", "1x"), ("brytar", "1x"), ("ec11", "(1x)"), ("magnet", "12x"), ("leidning", "2x"), ("kabel", "1x")]
-for yy, rk, hh, mx in ((200, rad, 300, 330), (720, rad2, 190, 170)):
+rad = [("botn", "1x", 300), ("topp", "1x", 300), ("knapp", "1x", 90), ("lokk", "1x", 120), ("aksel", "1x", 130), ("hjul", "1x", 110)]
+rad2 = [("cam", "1x", 190), ("mb", "1x", 190), ("sd", "1x", 110), ("brytar", "1x", 110), ("ec11", "(1x)", 190), ("magnet", "12x", 70), ("leidning", "2x", 150), ("kabel", "1x", 110)]
+for yy, rk, hh, mx in ((200, rad, 300, 340), (720, rad2, 190, 170)):
     xx = 70
-    for k, n in rk:
+    for k, n, th in rk:
         im = T[k]()
-        th = hh
         tw = int(im.width * th / im.height)
         if tw > mx:
             tw, th = mx, int(im.height * mx / im.width)
@@ -434,7 +434,7 @@ for i, m in enumerate(MAG_B):
     lyft = 14 + 3 * (i % 3)
     ob.append(o(m, pos=[0, 0, lyft], outline=0.25))
     x, y = S["magnetar"][i]
-    ank += [[x, y, dz + lyft + 0.5], [x, y, dz + 1.5]]
+    ank += [[x, y, dz + lyft - 3.6], [x, y, dz + 0.6]]
 img, a2 = render(ob, VEKT, span=66, target=(48, 60, 22), anchors=ank)
 A = plasser(s, img, a2)
 for i in range(len(MAG_B)):
@@ -452,7 +452,7 @@ for i, (m, mk) in enumerate(zip(MAG_T, MERKE)):
     lyft = 14
     ob += [o(m, pos=[0, 0, lyft], outline=0.25), o(mk, pos=[0, 0, lyft], color=SVART, outline=0.1)]
     x, y = S["magnetar"][i]
-    ank += [[x, y, dz + lyft - 1], [x, y, dz + 3.2]]
+    ank += [[x, y, dz + lyft - 0.6], [x, y, dz + 3.4]]
 img, a2 = render(ob, VEKT, span=66, target=(48, 60, 22), anchors=ank)
 A = plasser(s, img, a2)
 for i in range(len(MAG_T)):
@@ -474,7 +474,7 @@ for i, (m, mk) in enumerate(zip(MAG_T, MERKE)):
     lyft = -16
     ob += [o(m, pos=[0, 0, lyft], outline=0.25), o(mk, pos=[0, 0, lyft], color=SVART, outline=0.1)]
     x, y = S["magnetar"][i]
-    ank += [[x, y, dz + lyft - 0.5], [x, y, dz - 0.3]]
+    ank += [[x, y, dz + lyft + 3.6], [x, y, dz - 0.4]]
 img, a2 = render(ob, UNDER, OPP_NED, span=68, target=(46, 60, 46), anchors=ank)
 A = plasser(s, img, a2)
 for i in range(len(MAG_T)):
@@ -493,8 +493,8 @@ img, a2 = render(ob, (1, -0.3, 0.25), span=26, target=(61, 72, 28), anchors=[[x_
 A = plasser(s, img, a2)
 for (px, py), t, dx in zip(A, ("GND (2)", "IO13 (4)"), (-1, 1)):
     d.ellipse([px - 26, py - 26, px + 26, py + 26], outline=(0, 0, 0), width=5)
-    d.line([(px + dx * 22, py + 22), (px + dx * 110, py + 150)], fill=(0, 0, 0), width=4)
-    tekst(d, (px + dx * 118, py + 200), t, 48, True, "rs" if dx < 0 else "ls", 6)
+    d.line([(px + dx * 26, py), (px + dx * 230, py - 90)], fill=(0, 0, 0), width=4)
+    tekst(d, (px + dx * 240, py - 90), t, 48, True, "rm" if dx < 0 else "lm", 6)
 tekst(d, (W - 60, 300), "5V-rekkja: 5V · GND · IO12 · IO13 · …", 36, True, "rs")
 SIDER.append(("06-lodd-cam", s))
 
@@ -502,21 +502,26 @@ SIDER.append(("06-lodd-cam", s))
 s, d = ny_side()
 stegnummer(d, 6)
 xe = delboks(s, d, [(T["mb"](), "1x"), (T["sd"](), "1x"), (T["kabel"](), "1x")])
-CX = 22
+CX = 24
 ob = [o(PX[n], pos=[CX, 0, 0], crease=30, outline=0.25) for n in CAM] + [o(LEID_KORT, pos=[CX, 0, 0], color=SVART, outline=0.15)]
-ob += [o(PX["sd_kort"], pos=[CX, -24, 0], outline=0.25)]
-ob += [o(PX[n], crease=30, outline=0.25) for n in MB] + [o(PX["usb_plugg"], pos=[0, 24, 0]), o(KABEL, pos=[0, 24, 0], color=SVART, outline=0.2)]
-img, a2 = render(ob, (0.75, -1, 0.55), span=64, target=(62, 88, 32),
-                 anchors=[[59.15 + CX - 2, 82, 48], [59.15 + 4, 82, 48], [61.4 + CX, 52.2 - 24 + 15, 39], [61.4 + CX, 52.2 + 2, 39],
-                          [x_usb, 96 + 24 + 4, az + 6], [x_usb, 96 + 2, az + 6], [x_usb, 175, az + 14]])
-A = plasser(s, img, a2)
+ob += [o(PX[n], crease=30, outline=0.25) for n in MB]
+img, a2 = render(ob, (0.45, -1, 0.5), span=33, target=(58 + CX / 2, 76, 27), size=(1050, 820), anchors=[[57 + CX, 76, 50], [61, 76, 50]])
+A = plasser(s, img, a2, (40, 300))
 pil(d, A[0], A[1])
-pil(d, A[2], A[3])
-pil(d, A[4], A[5])
-px_, py_ = min(A[6][0] + 20, W - 290), max(min(A[6][1] - 220, 900), 300)
-ikon_pc(d, px_, py_, 1.0)
-ikon_ok(d, px_ + 40, py_ + 200, 0.9)
-tekst(d, (px_ + 160, py_ + 255), "test", 40, True, "lm")
+# SD-kortet inn
+ui, ua = render([o(PX[n], crease=30, outline=0.25) for n in CAM] + [o(PX["sd_kort"], pos=[0, -16, 0], outline=0.25)], (1, -0.25, 0.3), span=15,
+                target=(61, 60, 32), size=(800, 800), anchors=[[62.5, 50.5, 39.5], [62.5, 60, 39.5]])
+tu = utsnitt(s, d, ui, (1450, 420), 175)
+pil(d, tu(ua[0]), tu(ua[1]), w=9, hovud=28)
+# USB og firmware
+UP6 = 22
+ui2, ub = render(stabel() + [o(PX["usb_plugg"], pos=[0, UP6, 0]), o(KABEL, pos=[0, UP6, 0], color=SVART, outline=0.2)], (0.8, 0.6, 0.5), span=50,
+                 target=(55, 118, 40), size=(720, 480), anchors=[[x_usb, 121.6 + UP6, az + 7.5], [x_usb, 98, az + 7.5]])
+B = plasser(s, ui2, ub, (990, 690))
+pil(d, B[0], B[1])
+ikon_pc(d, 1490, 640, 0.85)
+ikon_ok(d, 1000, 1060, 0.8)
+tekst(d, (1110, 1108), "test", 40, True, "lm")
 SIDER.append(("07-cam-mb-sd-firmware", s))
 
 # 8 Stabelen ned i botnskalet
@@ -538,9 +543,9 @@ ikon_snu(d)
 xe = delboks(s, d, [(T["brytar"](), "1x")])
 ikon_lodde(d, xe + 50, 90, 0.8)
 ikon_lim(d, xe + 220, 70, 0.9)
-ob = [botn()] + stabel() + [o(LEID_FULL, color=SVART, outline=0.15), topp(pos=[0, 0, T_OPP], opacity=0.22, noOutline=True),
+ob = [botn()] + stabel() + [o(LEID_FULL, color=SVART, outline=0.15), topp(pos=[0, 0, T_OPP], opacity=0.4, noOutline=True),
                              o(PX["brytar6x6"], pos=[0, 0, T_OPP + B_OPP], outline=0.15)]
-img, a2 = render(ob, VEKT, span=74, target=(48, 50, 58),
+img, a2 = render(ob, VEKT, span=90, target=(46, 48, 70),
                  anchors=[[bx - 6, by, 30], [bx - 6, by, 30 + T_OPP + 22], [bx + 7, by, lomme_botn + T_OPP + B_OPP + 4], [bx + 7, by, lomme_botn + T_OPP + 5]])
 A = plasser(s, img, a2)
 pil(d, A[0], A[1], w=9)
@@ -555,24 +560,26 @@ SIDER.append(("09-leidning-brytar", s))
 s, d = ny_side()
 stegnummer(d, 9)
 xe = delboks(s, d, [(T["ec11"](), "1x")])
-ikon_lim(d, xe + 50, 70)
-EL = -34
-ob = [topp(opacity=0.25, noOutline=True), o(PX["brytar6x6"], outline=0.15), o(PX["ec11"], pos=[0, 0, EL], outline=0.2)]
-img, a2 = render(ob, VEKT, span=62, target=(40, 70, 52), anchors=[[hx, hy, 90 + EL], [hx, hy, 60]])
-A = plasser(s, img, a2, (40, 250))
+tekst(d, (xe + 40, 95), "+ M7-mutter i forsenkinga", 40, True)
+EL = -32
+ob = [topp(), o(PX["brytar6x6"], outline=0.15), o(PX["ec11"], pos=[0, 0, EL], outline=0.2)]
+img, a2 = render(ob, (0.9, -0.8, -0.45), span=62, target=(44, 66, 40), anchors=[[hx + 10, hy - 8, 34], [hx + 10, hy - 8, 58]])
+A = plasser(s, img, a2, (20, 250))
 pil(d, A[0], A[1])
-ui, ua = render([topp(), o(PX["ec11"], outline=0.2)], (0, -1, 0.02), span=12, target=(hx, hy, 80), size=(800, 800),
+ui, ua = render([topp(), o(PX["ec11"], outline=0.2)], (0, -1, 0.15), span=12, target=(hx, hy, 80), size=(800, 800),
                 anchors=[[hx + 3, hy, ec_kapp], [hx + 3, hy, ec_kapp + 5.5]])
-tu = utsnitt(s, d, ui, (1360, 560), 210)
+tu = utsnitt(s, d, ui, (1320, 540), 200)
 lo, hi = tu(ua[0]), tu(ua[1])
-vmaal(d, lo, hi, 1440, "5,5 mm", 40)
+vmaal(d, lo, hi, hi[0] + 60, "", 40)
+tekst(d, (1540, (lo[1] + hi[1]) / 2), "5,5 mm", 44, True, "lm")
 # alternativ: hjulaksel
-d.rounded_rectangle([1150, 820, 1700, 1180], 18, outline=(0, 0, 0), width=4)
-tekst(d, (1180, 850), "eller", 44, True)
-ai, _ = render([topp(), o(DEL["hjulaksel"], pos=[0, 0, 22])], (0.95, -0.85, 0.55), span=14, target=(hx, hy, 86), size=(800, 800),
-               anchors=[[hx, hy, 101], [hx, hy, 87]])
-lim_inn(s, beskjer(ai), (1300, 840, 1690, 1170))
-ikon_lim(d, 1200, 960, 0.9)
+d.rounded_rectangle([1150, 810, 1700, 1150], 18, outline=(0, 0, 0), width=4)
+tekst(d, (1180, 830), "eller", 44, True)
+ai, aa = render([topp(), o(DEL["hjulaksel"], pos=[0, 0, 20])], (0.95, -0.85, 0.55), span=20, target=(hx, hy, 88), size=(800, 700),
+                anchors=[[hx + 6, hy - 6, 104], [hx + 6, hy - 6, 88]])
+ta = lim_inn(s, ai, (1320, 822, 1690, 1140))
+pil(d, ta(aa[0]), ta(aa[1]), w=8, hovud=26)
+ikon_lim(d, 1200, 950, 0.9)
 SIDER.append(("10-ec11", s))
 
 # 11 Toppskalet på
@@ -583,7 +590,7 @@ ob = [botn()] + [o(m, outline=0.2) for m in MAG_B] + stabel() + [topp(pos=[0, 0,
 ank = []
 for x, y in S["pinnar"][:2]:
     ank += [[x, y, dz + TL - 2], [x, y, dz + 6]]
-img, a2 = render(ob, VEKT, span=76, target=(48, 60, 50), anchors=ank)
+img, a2 = render(ob, VEKT, span=92, target=(48, 60, 56), anchors=ank)
 A = plasser(s, img, a2)
 for i in range(2):
     pil(d, A[2 * i], A[2 * i + 1], w=10)
@@ -597,7 +604,7 @@ xe = delboks(s, d, [(T["knapp"](), "1x"), (T["hjul"](), "1x")])
 ikon_lim(d, xe + 50, 70)
 UL, HL = 22, 26
 ob = [botn(), topp(), o(DEL["utloysar"], pos=[0, 0, UL]), hjul(HL)]
-img, a2 = render(ob, VEKT, span=62, target=(48, 60, 55),
+img, a2 = render(ob, VEKT, span=76, target=(48, 62, 64),
                  anchors=[[ux, uy, kapp_z + UL - 1], [ux, uy, kapp_z + 9], [hx, hy, 80.5 + HL - 1], [hx, hy, 87]])
 A = plasser(s, img, a2)
 pil(d, A[0], A[1])
@@ -608,9 +615,9 @@ SIDER.append(("12-utloysar-hjul", s))
 s, d = ny_side()
 stegnummer(d, 12)
 xe = delboks(s, d, [(T["kabel"](), "1x"), (T["lokk"](), "1x")])
-UP = 34
+UP = 46
 ob = ferdig(med_lokk=False) + [o(PX["usb_plugg"], pos=[0, UP, 0]), o(KABEL, pos=[0, UP, 0], color=SVART, outline=0.2)]
-img, a2 = render(ob, (0.55, 1.0, 0.45), span=70, target=(48, 100, 42), anchors=[[x_usb, 98 + UP, az + 9], [x_usb, 121, az + 9]])
+img, a2 = render(ob, (0.55, 1.0, 0.45), span=70, target=(48, 100, 42), anchors=[[x_usb, 121 + UP, az + 9], [x_usb, 122, az + 9]])
 A = plasser(s, img, a2, (40, 250))
 pil(d, A[0], A[1])
 li, la = render(ferdig(med_lokk=False) + [o(DEL["usb-lokk"], pos=[0, 18, 0])], (0.55, 1.0, 0.45), span=18, target=(x_usb, 118, az + 2), size=(800, 800),
@@ -626,8 +633,8 @@ ob = ferdig(med_lokk=False) + [o(PX["usb_plugg"]), o(KABEL, color=SVART, outline
 img, a2 = render(ob, VEKT, span=80, target=(52, 75, 45), anchors=[[ux, uy, kapp_z + 22], [ux, uy, 66]])
 A = plasser(s, img, a2, (60, 220))
 pil(d, A[0], A[1], w=12)
-ikon_bilete(d, 1420, 820)
-ikon_ok(d, 1590, 990, 0.9)
+ikon_bilete(d, 1380, 520)
+ikon_ok(d, 1395, 700, 1.0)
 tekst(d, (90, 70), "Test: USB inn, trykk på knappen, biletet blir lagra på SD-kortet.", 36, True)
 SIDER.append(("14-ferdig", s))
 
