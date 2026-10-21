@@ -1,0 +1,425 @@
+{
+  "verified_on": "2026-10-20",
+  "client": "tripo-cli",
+  "version": "0.7.2",
+  "node": "v24.19.0",
+  "npm_tarball": "https://registry.npmjs.org/tripo-cli/-/tripo-cli-0.7.2.tgz",
+  "tarball_sha256": "902464130322b77c6ec911ccad9a3df3b48257f5e1af6b17c27426602b250a3c",
+  "npm_integrity": "sha512-Av0W5mQrTWlSXkhDUWGK/d0cnhXEuROnqpRzlLjhi81s3IpaAjgzqyHLMAFlQCvrSVIhZ0UshXTmDEiqYNvRXA==",
+  "npm_integrity_verified": true,
+  "network_sockets_blocked": true,
+  "isolated_empty_tripo_home": true,
+  "tripo_jobs_created": 0,
+  "live_generation_or_model_results_tested": false,
+  "scope": "Five actual CLI make --dry-run calls and seven calls to the published request builder. API semantics and physical geometry are not runtime-tested.",
+  "passed": true,
+  "cli_plans": [
+    {
+      "case": "master_h31",
+      "exit_code": 0,
+      "arguments": [
+        "make",
+        "FIXTURE/reference.png",
+        "--dry-run",
+        "--json",
+        "--model",
+        "tripo-v3.1",
+        "-p",
+        "texture=false",
+        "-p",
+        "pbr=false",
+        "-p",
+        "geometry_quality=detailed",
+        "-p",
+        "auto_size=false",
+        "-p",
+        "enable_image_autofix=false",
+        "-p",
+        "export_uv=false",
+        "--seed",
+        "12345"
+      ],
+      "plan": {
+        "dry_run": true,
+        "valid": true,
+        "input": "fixture.png",
+        "model": "v3.1-20260211",
+        "model_reason": "explicit --model",
+        "steps": [
+          {
+            "name": "image-to-model",
+            "endpoint": "/v3/generation/image-to-model",
+            "task_type": "image_to_model",
+            "payload": {
+              "input": "<upload:fixture.png>",
+              "model": "v3.1-20260211",
+              "texture": false,
+              "pbr": false,
+              "geometry_quality": "detailed",
+              "auto_size": false,
+              "enable_image_autofix": false,
+              "export_uv": false,
+              "model_seed": 12345
+            }
+          }
+        ],
+        "pending_uploads": [
+          "fixture.png"
+        ],
+        "deliverables": [],
+        "candidates": 1,
+        "warnings": [],
+        "errors": [],
+        "cost_notes": [
+          "bare geometry: no texture credits",
+          "geometry detailed (Ultra): extra HD credit"
+        ]
+      }
+    },
+    {
+      "case": "initial_parts",
+      "exit_code": 0,
+      "arguments": [
+        "make",
+        "FIXTURE/reference.png",
+        "--dry-run",
+        "--json",
+        "--model",
+        "tripo-v3.1",
+        "-p",
+        "texture=false",
+        "-p",
+        "pbr=false",
+        "-p",
+        "generate_parts=true"
+      ],
+      "plan": {
+        "dry_run": true,
+        "valid": true,
+        "input": "fixture.png",
+        "model": "v3.1-20260211",
+        "model_reason": "explicit --model",
+        "steps": [
+          {
+            "name": "image-to-model",
+            "endpoint": "/v3/generation/image-to-model",
+            "task_type": "image_to_model",
+            "payload": {
+              "input": "<upload:fixture.png>",
+              "model": "v3.1-20260211",
+              "texture": false,
+              "pbr": false,
+              "generate_parts": true
+            }
+          }
+        ],
+        "pending_uploads": [
+          "fixture.png"
+        ],
+        "deliverables": [],
+        "candidates": 1,
+        "warnings": [],
+        "errors": [],
+        "cost_notes": [
+          "bare geometry: no texture credits",
+          "part generation: higher price tier, bare geometry"
+        ]
+      }
+    },
+    {
+      "case": "parts_and_low_poly",
+      "exit_code": 0,
+      "arguments": [
+        "make",
+        "FIXTURE/reference.png",
+        "--dry-run",
+        "--json",
+        "--model",
+        "tripo-v3.1",
+        "-p",
+        "texture=false",
+        "-p",
+        "pbr=false",
+        "-p",
+        "generate_parts=true",
+        "-p",
+        "smart_low_poly=true",
+        "-p",
+        "face_limit=10000"
+      ],
+      "plan": {
+        "dry_run": true,
+        "valid": true,
+        "input": "fixture.png",
+        "model": "v3.1-20260211",
+        "model_reason": "explicit --model",
+        "steps": [
+          {
+            "name": "image-to-model",
+            "endpoint": "/v3/generation/image-to-model",
+            "task_type": "image_to_model",
+            "payload": {
+              "input": "<upload:fixture.png>",
+              "model": "v3.1-20260211",
+              "texture": false,
+              "pbr": false,
+              "generate_parts": true,
+              "smart_low_poly": true,
+              "face_limit": 10000
+            }
+          }
+        ],
+        "pending_uploads": [
+          "fixture.png"
+        ],
+        "deliverables": [],
+        "candidates": 1,
+        "warnings": [],
+        "errors": [],
+        "cost_notes": [
+          "bare geometry: no texture credits",
+          "part generation: higher price tier, bare geometry"
+        ]
+      }
+    },
+    {
+      "case": "automatic_low_poly",
+      "exit_code": 0,
+      "arguments": [
+        "make",
+        "FIXTURE/reference.png",
+        "--dry-run",
+        "--json",
+        "-p",
+        "face_limit=10000",
+        "-p",
+        "texture=false",
+        "-p",
+        "pbr=false"
+      ],
+      "plan": {
+        "dry_run": true,
+        "valid": true,
+        "input": "fixture.png",
+        "model": "P1-20260311",
+        "model_reason": "face budget 10000 ≤ 20000 → P1",
+        "steps": [
+          {
+            "name": "image-to-model",
+            "endpoint": "/v3/generation/image-to-model",
+            "task_type": "image_to_model",
+            "payload": {
+              "input": "<upload:fixture.png>",
+              "model": "P1-20260311",
+              "face_limit": 10000,
+              "texture": false,
+              "pbr": false
+            }
+          }
+        ],
+        "pending_uploads": [
+          "fixture.png"
+        ],
+        "deliverables": [],
+        "candidates": 1,
+        "warnings": [],
+        "errors": [],
+        "cost_notes": [
+          "bare geometry: no texture credits"
+        ]
+      }
+    },
+    {
+      "case": "print_preset",
+      "exit_code": 0,
+      "arguments": [
+        "make",
+        "FIXTURE/reference.png",
+        "--dry-run",
+        "--json",
+        "--for",
+        "print"
+      ],
+      "plan": {
+        "dry_run": true,
+        "valid": true,
+        "input": "fixture.png",
+        "scenario": "print",
+        "model": "v3.1-20260211",
+        "model_reason": "explicit --model",
+        "steps": [
+          {
+            "name": "image-to-model",
+            "endpoint": "/v3/generation/image-to-model",
+            "task_type": "image_to_model",
+            "payload": {
+              "input": "<upload:fixture.png>",
+              "model": "v3.1-20260211",
+              "texture": false,
+              "pbr": false
+            }
+          },
+          {
+            "name": "convert",
+            "endpoint": "/v3/models/convert",
+            "task_type": "convert_model",
+            "payload": {
+              "input": "<upstream>",
+              "format": "STL",
+              "flatten_bottom": true
+            }
+          }
+        ],
+        "pending_uploads": [
+          "fixture.png"
+        ],
+        "deliverables": [
+          "STL",
+          "3MF (colored)"
+        ],
+        "candidates": 1,
+        "warnings": [
+          "non-default convert options use the \"complex convert\" price tier"
+        ],
+        "errors": [],
+        "cost_notes": [
+          "bare geometry: no texture credits",
+          "non-default convert options bill as complex convert"
+        ]
+      }
+    }
+  ],
+  "request_builder_checks": [
+    {
+      "case": "segment_v2",
+      "expected_error": false,
+      "pass": true,
+      "value": {
+        "request": {
+          "endpoint": "/v3/mesh/segment",
+          "payload": {
+            "input": "task_master_fixture",
+            "model": "v2.0-20260430",
+            "segmentation_granularity": "balanced",
+            "split_by_connectivity": true
+          }
+        },
+        "taskType": "mesh_segmentation",
+        "warnings": []
+      }
+    },
+    {
+      "case": "selected_quick_cap",
+      "expected_error": false,
+      "pass": true,
+      "value": {
+        "request": {
+          "endpoint": "/v3/mesh/complete",
+          "payload": {
+            "input": "task_segment_fixture",
+            "completion_mode": "quick_cap",
+            "part_names": [
+              "housing",
+              "cover"
+            ]
+          }
+        },
+        "taskType": "mesh_completion",
+        "warnings": []
+      }
+    },
+    {
+      "case": "basic_decimation",
+      "expected_error": false,
+      "pass": true,
+      "value": {
+        "request": {
+          "endpoint": "/v3/mesh/decimate",
+          "payload": {
+            "input": "task_master_fixture",
+            "model": "v1.0",
+            "face_limit": 50000
+          }
+        },
+        "taskType": "highpoly_to_lowpoly",
+        "warnings": []
+      }
+    },
+    {
+      "case": "segmented_retopology",
+      "expected_error": false,
+      "pass": true,
+      "value": {
+        "request": {
+          "endpoint": "/v3/mesh/decimate",
+          "payload": {
+            "input": "task_segment_fixture",
+            "model": "v3.0",
+            "face_limit": 10000,
+            "bake": false,
+            "part_names": [
+              "housing"
+            ]
+          }
+        },
+        "taskType": "highpoly_to_lowpoly",
+        "warnings": []
+      }
+    },
+    {
+      "case": "smartsegment_default_transform",
+      "expected_error": false,
+      "pass": true,
+      "value": {
+        "request": {
+          "endpoint": "/v3/mesh/smartsegment",
+          "payload": {
+            "input": "file_fixture",
+            "seg_type": "model",
+            "transform": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "taskType": "smartsegment_model",
+        "warnings": [
+          "smartsegment(model) requires a transform matrix; defaulted to identity"
+        ]
+      }
+    },
+    {
+      "case": "invalid_v3_face_budget",
+      "expected_error": true,
+      "pass": true,
+      "error": "decimate face_limit must be within 500–20000"
+    },
+    {
+      "case": "texture_v35_client_support",
+      "expected_error": true,
+      "pass": true,
+      "error": "texture model must be one of v3.0-20250812/v2.5-20250123 (got \"v3.5-20260815\")"
+    }
+  ],
+  "findings": [
+    "CLI valid=true does not detect the documented generate_parts/smart_low_poly interaction. Inspect API constraints independently.",
+    "Small face_limit without explicit model chooses P1; pin H for detailed reference.",
+    "Print preset adds flatten_bottom=true and STL conversion.",
+    "Smart Segment model defaults to identity transform with a warning; verify scene coordinates.",
+    "This CLI version rejects texture v3.5 even though the reviewed API supports it."
+  ]
+}

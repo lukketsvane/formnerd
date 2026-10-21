@@ -1,0 +1,10 @@
+interface:
+  display_name: Skisse til CAD og montering
+  short_description: Tripo, mekanisk CAD og IKEA-liknande byggjesteg
+  default_prompt: Bruk $skisse-til-cad på denne skissa, frå Tripo image-to-3D via
+    segmentering og mekanisk CAD til ei IKEA-liknande monteringsrettleiing. Lagre
+    bileta i Space.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

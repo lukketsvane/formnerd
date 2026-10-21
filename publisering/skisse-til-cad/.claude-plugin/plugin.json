@@ -1,0 +1,17 @@
+{
+  "name": "skisse-til-cad",
+  "description": "Sketch or product image to mechanical CAD via Tripo (image-to-3D, segmentation, low poly), print files and IKEA-style assembly instructions. Verified Tripo API recipe. Norwegian Nynorsk.",
+  "author": {
+    "name": "lukketsvane"
+  },
+  "homepage": "https://github.com/lukketsvane/skisse-til-cad",
+  "repository": "https://github.com/lukketsvane/skisse-til-cad",
+  "keywords": [
+    "tripo",
+    "cad",
+    "3d-printing",
+    "assembly-instructions",
+    "skill"
+  ],
+  "license": "Apache-2.0"
+}
