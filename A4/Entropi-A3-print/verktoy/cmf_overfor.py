@@ -40,11 +40,20 @@ for namn in sys.argv[1:] or ["botn", "topp", "utloysar", "usb-lokk"]:
     f = m.faces.reshape(-1)
     hjorne = c[f].reshape(-1, 3, 3)
     hjorne[ny] = [14, 14, 16]
-    if namn == "utloysar":
-        hjorne[:] = [240, 138, 30]
+    # kurset tillet to graatonar: lys paa tubane og grepet, moerk paa kjernen
+    LYS, MOERK = np.array([150, 154, 154]), np.array([62, 67, 69])
+    lys = hjorne.mean(2) > 110
+    hjorne[lys] = LYS
+    hjorne[~lys] = MOERK
+    rr = np.hypot(tc[:, 1] - 65.0, tc[:, 2] - 32.0)
+    hjorne[(tc[:, 0] > 70.0) & (rr > 26.9) & (rr < 33.0)] = LYS
+    hjorne[(tc[:, 0] > 66.0) & (rr <= 26.9)] = MOERK
+    hjorne[(tc[:, 0] < 17.5) & (tc[:, 1] > 44.0) & (tc[:, 1] < 86.0) & (tc[:, 2] > 60.0)] = MOERK
+    if namn in ("utloysar", "usb-lokk"):
+        hjorne[:] = MOERK
     if namn == "botn":
         skinne = (tc[:, 2] < 6.2) & (tc[:, 0] > 17.5) & (tc[:, 0] < 56.5) & (tc[:, 1] > 17.5) & (tc[:, 1] < 104.5)
-        hjorne[skinne] = [60, 60, 62]
+        hjorne[skinne] = MOERK
     m = trimesh.Trimesh(m.vertices[f], np.arange(len(f)).reshape(-1, 3), process=False)
     m.visual = trimesh.visual.ColorVisuals(m, vertex_colors=np.c_[hjorne.reshape(-1, 3), np.full(len(f), 255)].astype(np.uint8))
     m.export(UT / f"{namn}.ply")
