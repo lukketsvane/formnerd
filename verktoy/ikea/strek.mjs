@@ -6,7 +6,8 @@ try { ({ chromium } = await import('playwright')); } catch { ({ chromium } = awa
 
 const [scenefil, utmappe] = process.argv.slice(2);
 const scene = JSON.parse(fs.readFileSync(scenefil, 'utf8'));
-const three = process.env.THREE_DIR || path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'node_modules', 'three');
+const three = path.resolve(process.env.THREE_DIR || path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'node_modules', 'three'));
+const lovlege = new Set(scene.objekt.map(o => o.fil));
 
 const page_html = `<!doctype html><html><body style="margin:0;background:#fff">
 <script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
@@ -32,7 +33,8 @@ for (const [i, o] of sc.objekt.entries()) {
   objekt.push(grp);
 }
 const box = new THREE.Box3();
-for (const o of objekt) box.expandByObject(o);
+if (sc.boks) box.set(new THREE.Vector3(...sc.boks[0]), new THREE.Vector3(...sc.boks[1]));
+else for (const o of objekt) box.expandByObject(o);
 const c = sc.senter ? new THREE.Vector3(...sc.senter) : box.getCenter(new THREE.Vector3());
 const r = sc.span || box.getSize(new THREE.Vector3()).length() / 2 * (sc.zoom || 1.08);
 const d = new THREE.Vector3(...sc.retning).normalize();
@@ -83,10 +85,11 @@ const server = http.createServer((req, res) => {
   const u = decodeURIComponent(req.url);
   if (u === '/') return res.end(page_html);
   if (u === '/scene.json') return res.end(JSON.stringify(scene));
-  if (u.startsWith('/fil/')) return res.end(fs.readFileSync(u.slice(5)));
-  if (u.startsWith('/three/')) { res.setHeader('Content-Type', 'text/javascript'); return res.end(fs.readFileSync(path.join(three, u.slice(7)))); }
+  if (u.startsWith('/fil/') && lovlege.has(u.slice(5))) return res.end(fs.readFileSync(u.slice(5)));
+  const f = path.join(three, u.slice(7));
+  if (u.startsWith('/three/') && f.startsWith(three + path.sep) && fs.existsSync(f)) { res.setHeader('Content-Type', 'text/javascript'); return res.end(fs.readFileSync(f)); }
   res.statusCode = 404; res.end();
-}).listen(0);
+}).listen(0, '127.0.0.1');
 const browser = await chromium.launch({ args: ['--use-gl=swiftshader', '--enable-unsafe-swiftshader'] });
 const page = await browser.newPage({ viewport: { width: scene.storleik || 1600, height: scene.storleik || 1600 } });
 page.on('pageerror', e => console.error(e));

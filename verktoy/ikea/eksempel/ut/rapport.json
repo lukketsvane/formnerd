@@ -1,6 +1,6 @@
 {
- "pdf": "eksempel/ut/rettleiing.pdf",
- "sha256": "a7ca5f7c08ede531b08de2eea6fe8747c66922bbe0c7b6010c823dc01eb6f8da",
+ "pdf": "verktoy/ikea/eksempel/ut/rettleiing.pdf",
+ "sha256": "0495b18a3f91c5a71d78959091a136bc06292bbf0efaea96aa963754bfd09a7e",
  "sider": 10,
  "beslag": {
   "magnet": {
@@ -20,8 +20,9 @@
   {
    "side": 4,
    "type": "exploded",
-   "mappe": "eksempel/ut/_arbeid/r/9d2c1236d13e99d6",
-   "mørk_del": 0.0247
+   "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/cb47372da9e73891",
+   "mørk_del": 0.0187,
+   "strek_px": 2.6
   },
   {
    "side": 5,
@@ -29,23 +30,25 @@
    "nye_delar": 2,
    "figurar": [
     {
-     "mappe": "eksempel/ut/_arbeid/r/832848649d12eb5b",
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/bf16ec4fe41d2287",
      "mørk_del": 0.0201,
+     "strek_px": 4.2,
      "figur_pt": [
-      79.7,
-      436.9,
-      327.9,
-      302.9
+      78.6,
+      434.9,
+      330.0,
+      304.9
      ]
     },
     {
-     "mappe": "eksempel/ut/_arbeid/r/a085c95899ced5d7",
-     "mørk_del": 0.0156,
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/2dda3525f6571239",
+     "mørk_del": 0.0172,
+     "strek_px": 4.8,
      "figur_pt": [
-      56.0,
-      104.0,
-      375.3,
-      302.9
+      54.7,
+      100.0,
+      377.8,
+      304.9
      ]
     }
    ]
@@ -56,23 +59,25 @@
    "nye_delar": 2,
    "figurar": [
     {
-     "mappe": "eksempel/ut/_arbeid/r/50c0bd813cd86390",
-     "mørk_del": 0.0116,
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/ccb242fb295ea999",
+     "mørk_del": 0.0182,
+     "strek_px": 3.8,
      "figur_pt": [
-      59.8,
-      425.9,
-      367.6,
-      313.9
+      57.4,
+      415.9,
+      372.4,
+      323.9
      ]
     },
     {
-     "mappe": "eksempel/ut/_arbeid/r/df36075ed63ff1ed",
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/99767acdc70d0ac7",
      "mørk_del": 0.0232,
+     "strek_px": 4.5,
      "figur_pt": [
-      89.0,
-      82.0,
-      309.3,
-      313.9
+      84.1,
+      62.0,
+      319.1,
+      323.9
      ]
     }
    ]
@@ -83,23 +88,25 @@
    "nye_delar": 2,
    "figurar": [
     {
-     "mappe": "eksempel/ut/_arbeid/r/440953a1141a0a94",
-     "mørk_del": 0.0231,
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/290278fb33140025",
+     "mørk_del": 0.0197,
+     "strek_px": 3.8,
      "figur_pt": [
-      72.2,
-      425.9,
-      342.8,
-      313.9
+      67.0,
+      415.9,
+      353.3,
+      323.9
      ]
     },
     {
-     "mappe": "eksempel/ut/_arbeid/r/86779563ada34510",
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/2f31819e65c41bc9",
      "mørk_del": 0.0213,
+     "strek_px": 4.3,
      "figur_pt": [
-      96.6,
-      82.0,
-      294.0,
-      313.9
+      91.9,
+      62.0,
+      303.4,
+      323.9
      ]
     }
    ]
@@ -110,13 +117,14 @@
    "nye_delar": 1,
    "figurar": [
     {
-     "mappe": "eksempel/ut/_arbeid/r/b67d68e6d9a5ea19",
-     "mørk_del": 0.0209,
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/a7c2aa6c4f3db64a",
+     "mørk_del": 0.0157,
+     "strek_px": 2.4,
      "figur_pt": [
       36.0,
-      123.0,
+      113.1,
       521.3,
-      597.8
+      598.7
      ]
     }
    ]
@@ -127,17 +135,20 @@
    "nye_delar": 1,
    "figurar": [
     {
-     "mappe": "eksempel/ut/_arbeid/r/415a1413369bd57f",
-     "mørk_del": 0.018,
+     "mappe": "verktoy/ikea/eksempel/ut/_arbeid/r/1f5d8b406e9e8515",
+     "mørk_del": 0.0136,
+     "strek_px": 2.2,
      "figur_pt": [
       36.0,
-      121.5,
+      111.4,
       521.3,
-      578.9
+      579.0
      ]
     }
    ]
   }
  ],
- "åtvaringar": []
+ "åtvaringar": [
+  "side 6: tekst overlappar geometri"
+ ]
 }

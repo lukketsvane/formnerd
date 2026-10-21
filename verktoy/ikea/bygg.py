@@ -2,14 +2,16 @@ import hashlib
 import json
 import math
 import os
+import shutil
 import subprocess
 import sys
 
+import manifold3d
 import numpy as np
 import trimesh
 from PIL import Image
 from reportlab.lib.pagesizes import A4, landscape
-from reportlab.lib.utils import ImageReader
+from reportlab.lib.utils import ImageReader, simpleSplit
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
@@ -19,7 +21,28 @@ HER = os.path.dirname(os.path.abspath(__file__))
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONTB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 PX = 2400
-STIL = {"line": 3, "crease": 38.0, "depth_eps": 0.004, "min_px": 30, "new_fill": [236, 236, 236], "margin": 22}
+SK = 2
+STIL = {"line_pt": 0.9, "ghost_line": 0.7, "crease": 38.0, "depth_eps": 0.004, "min_px": 30, "new_fill": [236, 236, 236], "ghost_grey": 150, "margin": 22}
+TYPAR = ("cover", "inventory", "hardware", "exploded", "step", "warnings")
+ROLLER = ("context", "new", "ghost", "exploded")
+_SHA = {}
+BRUKT = set()
+
+
+def innhald(f):
+    if f not in _SHA:
+        _SHA[f] = hashlib.sha256(open(f, "rb").read()).hexdigest()
+    return _SHA[f]
+
+
+def kutt(m, cut):
+    n = np.asarray(cut[:3], float)
+    n /= np.linalg.norm(n)
+    mf = manifold3d.Manifold(manifold3d.Mesh(vert_properties=np.asarray(m.vertices, np.float32), tri_verts=np.asarray(m.faces, np.uint32)))
+    if mf.status() == manifold3d.Error.NoError:
+        r = mf.trim_by_plane(n, float(cut[3])).to_mesh()
+        return trimesh.Trimesh(r.vert_properties[:, :3], r.tri_verts)
+    return m.slice_plane(n * float(cut[3]), n)
 
 
 class Delar:
@@ -44,21 +67,26 @@ class Delar:
         filer = p["mesh"] if isinstance(p["mesh"], list) else [p["mesh"]]
         return trimesh.util.concatenate([trimesh.load(os.path.join(self.rot, f), force="mesh") for f in filer])
 
-    def get(self, namn):
-        if namn not in self.glb:
+    def get(self, namn, cut=None):
+        nøkkel = namn if cut is None else f"{namn}@{hashlib.sha256(json.dumps(cut).encode()).hexdigest()[:8]}"
+        if nøkkel not in self.glb:
             m = self.mesh(namn)
-            sti = f"{self.work}/{namn}.glb"
-            m.export(sti)
-            self.glb[namn], self.senter[namn], self.storleik[namn], self.grenser[namn] = sti, m.bounds.mean(0), float(np.linalg.norm(m.extents)), m.bounds.copy()
-        return self.glb[namn]
+            if namn not in self.senter:
+                self.senter[namn], self.storleik[namn], self.grenser[namn] = m.bounds.mean(0), float(np.linalg.norm(m.extents)), m.bounds.copy()
+            data = (kutt(m, cut) if cut is not None else m).export(file_type="glb")
+            sti = f"{self.work}/{nøkkel}.glb"
+            if not (os.path.exists(sti) and open(sti, "rb").read() == data):
+                open(sti, "wb").write(data)
+            self.glb[nøkkel] = sti
+        return self.glb[nøkkel]
 
 
-def render(objekt, view, work, senter=None, span=None, zoom=1.05):
-    sc = {"storleik": PX, "retning": list(map(float, view["dir"])), "opp": list(map(float, view["up"])), "zoom": zoom, "flat": True,
+def render(objekt, view, work, senter, span, boks):
+    sc = {"storleik": PX, "retning": list(map(float, view["dir"])), "opp": list(map(float, view["up"])), "flat": True,
+          "senter": [float(v) for v in senter], "span": float(span), "boks": [[float(v) for v in b] for b in boks],
           "objekt": [{"fil": f, "flytt": [float(v) for v in t]} for f, t in objekt]}
-    if senter is not None:
-        sc["senter"], sc["span"] = [float(v) for v in senter], float(span)
-    nøkkel = hashlib.sha256((json.dumps(sc, sort_keys=True) + "".join(str(os.path.getmtime(f)) for f, _ in objekt)).encode()).hexdigest()[:16]
+    nøkkel = hashlib.sha256(json.dumps({**sc, "objekt": [[innhald(o["fil"]), o["flytt"]] for o in sc["objekt"]]}, sort_keys=True).encode()).hexdigest()[:16]
+    BRUKT.add(nøkkel)
     mappe = f"{work}/r/{nøkkel}"
     if not os.path.exists(f"{mappe}/kamera.json"):
         os.makedirs(mappe, exist_ok=True)
@@ -69,14 +97,14 @@ def render(objekt, view, work, senter=None, span=None, zoom=1.05):
     return mappe, json.load(open(f"{mappe}/kamera.json"))
 
 
-def linjer(mappe, fyll, stil, crease=None, min_px=None, skala=2):
+def kantar(mappe, stil, crease=None, min_px=None):
     rd = lambda n: np.asarray(Image.open(f"{mappe}/{n}.png").convert("RGBA")).astype(np.float32)
     n, dj, idb = rd("normal"), rd("djupn"), rd("id")[..., 0].round().astype(int)
     fg = idb > 0
     z = dj[..., 0] / 255 + dj[..., 1] / 255 / 255
     nv = n[..., :3] / 127.5 - 1
     nv /= np.linalg.norm(nv, axis=-1, keepdims=True) + 1e-9
-    ant = idb.max() + 1
+    ant = max([idb.max(), *(crease or {}), *(min_px or {})]) + 1
     cr = np.full(ant, stil["crease"])
     mp = np.full(ant, stil["min_px"])
     for i, v in (crease or {}).items():
@@ -99,13 +127,11 @@ def linjer(mappe, fyll, stil, crease=None, min_px=None, skala=2):
         eigar = np.zeros(k + 1, int)
         np.maximum.at(eigar, lab.ravel(), idb.ravel())
         inne &= storleik[lab] >= mp[eigar[lab]]
-    kant = ndimage.binary_dilation(sil | inne, iterations=max(0, stil["line"] - 1))
-    ut = np.full(fg.shape + (3,), 255, np.uint8)
-    for i, rgb in fyll.items():
-        ut[idb == i] = rgb
-    ut[kant] = 0
-    im = Image.fromarray(ut)
-    return im.resize((im.width // skala, im.height // skala), Image.LANCZOS), skala
+    return sil | inne, z, idb
+
+
+def tjukk(kant, px):
+    return kant if px <= 1.5 else ndimage.distance_transform_edt(~kant) <= px / 2
 
 
 def projektor(cam, skala):
@@ -130,14 +156,49 @@ class Dok:
         self.c = canvas.Canvas(sti, pagesize=(self.W, self.H), pageCompression=1)
         self.c.setTitle(meta.get("title", ""))
         self.meta, self.stil, self.n = meta, stil, 0
-        self.boksar, self.konfliktar = [], []
+        self.boksar, self.figurar, self.konfliktar = [], [], []
 
-    def reg(self, kind, x0, y0, x1, y1):
-        b = (kind, min(x0, x1), min(y0, y1), max(x0, x1), max(y0, y1))
-        for k, a0, b0, a1, b1 in self.boksar:
-            if "tekst" in (k, kind) and min(a1, b[3]) - max(a0, b[1]) > 1 and min(b1, b[4]) - max(b0, b[2]) > 1:
-                self.konfliktar.append({"side": self.n + 1, "a": k, "b": kind})
-        self.boksar.append(b)
+    def utanfor(self, x0, y0, x1, y1):
+        m = self.stil["margin"]
+        return x0 < m or y0 < m + 14 or x1 > self.W - m or y1 > self.H - m
+
+    def kollisjonar(self, x0, y0, x1, y1):
+        return [k for k, a0, b0, a1, b1 in self.boksar if min(a1, x1) - max(a0, x0) > 1 and min(b1, y1) - max(b0, y0) > 1]
+
+    def dekning(self, x0, y0, x1, y1):
+        treff = 0.0
+        for dx, dy, dw, dh, mk in self.figurar:
+            h, w = mk.shape
+            ax0, ax1 = (int(np.clip((v - dx) / dw * w, 0, w)) for v in (x0, x1))
+            ay0, ay1 = (int(np.clip((dy + dh - v) / dh * h, 0, h)) for v in (y1, y0))
+            if ax1 > ax0 and ay1 > ay0:
+                treff += mk[ay0:ay1, ax0:ax1].sum() * dw / w * dh / h
+        return treff / max((x1 - x0) * (y1 - y0), 1e-6)
+
+    def reg(self, kind, x0, y0, x1, y1, geometri=True):
+        b = (min(x0, x1), min(y0, y1), max(x0, x1), max(y0, y1))
+        kva = self.kollisjonar(*b)
+        if self.utanfor(*b):
+            kva.append("utanfor ramma")
+        if geometri and self.dekning(*b) > 0.2:
+            kva.append("geometri")
+        self.konfliktar += [{"side": self.n + 1, "a": kind, "b": k} for k in kva]
+        self.boksar.append((kind, *b))
+
+    def plasser(self, mål, w, h, foretrekk=(1.0, 0.6), avstand=(30, 42, 56, 72)):
+        mål = np.asarray(mål, float)
+        f = np.asarray(foretrekk, float) / (np.linalg.norm(foretrekk) + 1e-9)
+        beste = None
+        for L in avstand:
+            for a in range(0, 360, 20):
+                v = np.array([math.cos(math.radians(a)), math.sin(math.radians(a))])
+                p = mål + v * L
+                b = (p[0] - w / 2, p[1] - h / 2, p[0] + w / 2, p[1] + h / 2)
+                linje = np.mean([self.dekning(*(q - 2), *(q + 2)) for q in (mål + v * (L - max(w, h) / 2) * t for t in (0.5, 0.7, 0.9))])
+                s = 6 * self.dekning(*b) + 3 * len(self.kollisjonar(*b)) + 50 * self.utanfor(*b) + 2 * linje + 0.25 * (1 - v @ f) + L / 300
+                if beste is None or s < beste[0]:
+                    beste = (s, p)
+        return beste[1]
 
     def tekst(self, s, x, y, size=11, feit=False, juster="l", reg=True):
         c = self.c
@@ -151,7 +212,13 @@ class Dok:
             self.reg("tekst", x0, y - size * 0.22, x0 + w, y + size * 0.78)
         return w
 
-    def bilete(self, im, boks, crop=True, reg=True):
+    def avsnitt(self, s, x, y, breidd, size=11, feit=False):
+        for linje in simpleSplit(s, "MB" if feit else "M", size, breidd):
+            self.tekst(linje, x, y, size, feit)
+            y -= size * 1.35
+        return y
+
+    def bilete(self, im, boks, crop=True, reg=True, maske=None):
         cb = beskjer(im) if crop else (0, 0, im.width, im.height)
         sub = im.crop(cb)
         x, y, w, h = boks
@@ -160,10 +227,15 @@ class Dok:
         dx, dy = x + (w - dw) / 2, y + (h - dh) / 2
         self.c.drawImage(ImageReader(sub), dx, dy, dw, dh)
         if reg:
-            self.reg("figur", dx, dy, dx + dw, dy + dh)
+            mk = np.asarray(sub.convert("L")) < 250
+            if maske is not None:
+                mk |= maske[cb[1]:cb[3], cb[0]:cb[2]]
+            f = max(1, max(mk.shape) // 300)
+            mk = mk[:mk.shape[0] // f * f, :mk.shape[1] // f * f].reshape(mk.shape[0] // f, f, mk.shape[1] // f, f).any((1, 3))
+            self.figurar.append((dx, dy, dw, dh, mk))
         return (lambda px: np.array([dx + (px[0] - cb[0]) * s, dy + dh - (px[1] - cb[1]) * s])), (dx, dy, dw, dh)
 
-    def pil(self, a, b, breidd=2.4, hovud=11):
+    def pil(self, a, b, breidd=1.8, hovud=9):
         a, b = np.asarray(a, float), np.asarray(b, float)
         d = b - a
         L = np.linalg.norm(d)
@@ -225,8 +297,9 @@ class Dok:
         self.sirkel(ident, x + 13, y + 5, 13, 13 if len(ident) < 3 else 10)
         return 30 + (self.tekst(f"x{mengd}", x + 30, y, size) if mengd is not None else 0)
 
-    def leiar(self, ident, mål, ved):
-        a, p = np.asarray(ved, float), np.asarray(mål, float)
+    def leiar(self, ident, mål, ved=None, foretrekk=(1.0, 0.6)):
+        p = np.asarray(mål, float)
+        a = self.plasser(p, 28, 28, foretrekk) if ved is None else np.asarray(ved, float)
         d = p - a
         L = np.linalg.norm(d)
         c = self.c
@@ -253,9 +326,9 @@ class Dok:
         elif kind == "snu":
             cx, cy, r = x + 18 * s, y + 18 * s, 15 * s
             p = c.beginPath()
-            p.arc(cx - r, cy - r, cx + r, cy + r, 40, 280)
+            p.arc(cx - r, cy - r, cx + r, cy + r, 40, 245)
             c.drawPath(p, stroke=1, fill=0)
-            self.pil((cx + r * math.cos(math.radians(305)), cy + r * math.sin(math.radians(305))), (cx + r * math.cos(math.radians(330)), cy + r * math.sin(math.radians(330))), 1.6 * s, 8 * s)
+            self.pil((cx + r * math.cos(math.radians(285)), cy + r * math.sin(math.radians(285))), (cx + r * math.cos(math.radians(330)), cy + r * math.sin(math.radians(330))), 1.6 * s, 8 * s)
         elif kind == "atvaring":
             p = c.beginPath()
             p.moveTo(x, y); p.lineTo(x + 30 * s, y); p.lineTo(x + 15 * s, y + 26 * s); p.close()
@@ -283,17 +356,67 @@ class Dok:
         c.bookmarkPage(f"p{self.n}")
         c.addOutlineEntry(tittel, f"p{self.n}", 0)
         c.showPage()
-        self.boksar = []
+        self.boksar, self.figurar = [], []
+
+
+def valider(spec):
+    feil = []
+    views, parts = spec.get("views") or {}, spec.get("parts") or {}
+    if not views:
+        feil.append("views manglar")
+    sjå = lambda v, kvar: isinstance(v, str) and v not in views and feil.append(f"{kvar}: ukjend view «{v}»")
+
+    def scene(sc, kvar):
+        if not sc:
+            feil.append(f"{kvar}: scene manglar")
+        for s in sc or []:
+            if s.get("part") not in parts:
+                feil.append(f"{kvar}: ukjend del «{s.get('part')}»")
+            if s.get("role", "context") not in ROLLER:
+                feil.append(f"{kvar}: ukjend rolle «{s.get('role')}»")
+    for namn, p in parts.items():
+        if "mesh" not in p and "primitive" not in p:
+            feil.append(f"del {namn}: manglar mesh eller primitive")
+        sjå(p.get("thumb_view"), f"del {namn}")
+    for i, s in enumerate(spec.get("pages", []), 1):
+        t, kvar = s.get("type"), f"side {i} ({s.get('type')})"
+        if t not in TYPAR:
+            feil.append(f"{kvar}: ukjend type, bruk {', '.join(TYPAR)}")
+            continue
+        sjå(s.get("view"), kvar)
+        if t in ("cover", "exploded"):
+            scene(s.get("scene"), kvar)
+        if t == "exploded" and s.get("inset"):
+            scene(s["inset"].get("scene"), kvar + " inset")
+            sjå(s["inset"].get("view"), kvar + " inset")
+        if t == "step":
+            if not s.get("figures"):
+                feil.append(f"{kvar}: figures manglar")
+            for j, f in enumerate(s.get("figures") or [], 1):
+                scene(f.get("scene"), f"{kvar} figur {j}")
+                sjå(f.get("view"), f"{kvar} figur {j}")
+                if f.get("detail"):
+                    scene(f["detail"].get("scene", f.get("scene")), f"{kvar} figur {j} detail")
+                    if not {"centre", "span"} <= set(f["detail"]):
+                        feil.append(f"{kvar} figur {j}: detail krev centre og span")
+        if t == "warnings" and not s.get("items"):
+            feil.append(f"{kvar}: items manglar")
+        if t == "hardware" and not (s.get("parts") or any(p.get("kind") == "hardware" for p in parts.values())):
+            feil.append(f"{kvar}: ingen beslag (kind: hardware)")
+    if feil:
+        raise SystemExit("Feil i spesifikasjonen:\n- " + "\n- ".join(feil))
 
 
 class Byggjar:
     def __init__(self, spec, rot, ut):
+        valider(spec)
         self.spec, self.rot, self.ut = spec, rot, ut
         self.stil = {**STIL, **spec.get("style", {})}
+        self.std = "iso" if "iso" in spec["views"] else next(iter(spec["views"]))
         self.work = f"{ut}/_arbeid"
         self.delar = Delar(spec["parts"], rot, f"{self.work}/glb")
         self.dok = Dok(f"{ut}/rettleiing.pdf", spec.get("meta", {}), self.stil)
-        self.miniar, self.steg, self.rapport, self.brukt = {}, 0, [], {}
+        self.miniar, self.steg, self.rapport, self.brukt, self.vist, self.opp = {}, 0, [], {}, set(), None
 
     def view(self, v):
         return self.spec["views"][v] if isinstance(v, str) else v
@@ -308,104 +431,157 @@ class Byggjar:
     def objekt(self, scene):
         obj, roller, delnamn, bevegelse = [], [], [], []
         for item in scene:
-            glb = self.delar.get(item["part"])
+            glb = self.delar.get(item["part"], item.get("cut"))
             ex = np.array(item.get("explode", [0, 0, 0]), float)
             for at in item.get("at") or [[0, 0, 0]]:
                 at = np.array(at, float)
                 flytt = at + (ex if item.get("role") in ("new", "exploded") else 0)
+                if item.get("role") == "new" and np.linalg.norm(ex) > 0:
+                    c = self.delar.senter[item["part"]] + at
+                    bevegelse.append((item["part"], c + ex, c, item.get("line"), flytt, len(obj)))
                 obj.append((glb, flytt))
                 roller.append(item.get("role", "context"))
                 delnamn.append(item["part"])
-                if item.get("role") == "new" and np.linalg.norm(ex) > 0:
-                    c = self.delar.senter[item["part"]] + at
-                    bevegelse.append((item["part"], c + ex, c, item.get("line"), flytt))
         return obj, roller, delnamn, bevegelse
 
-    def figur(self, scene, view, senter=None, span=None, zoom=1.05):
+    def figur(self, scene, view, mål, senter=None, span=None, zoom=1.05, crop=True):
         obj, roller, delnamn, bev = self.objekt(scene)
+        hjørne = np.array([self.delar.grenser[n] + t for (_, t), n in zip(obj, delnamn)]).reshape(-1, 3)
+        lo, hi = hjørne.min(0), hjørne.max(0)
         if senter is None:
-            hjørne = np.array([self.delar.grenser[n] + t for (_, t), n in zip(obj, delnamn)]).reshape(-1, 3)
-            lo, hi = hjørne.min(0), hjørne.max(0)
             senter, span = (lo + hi) / 2, float(np.linalg.norm(hi - lo)) / 2 * zoom
-        synleg = [i for i, r in enumerate(roller) if r != "ghost"]
-        spøkje = [i for i, r in enumerate(roller) if r == "ghost"]
-        def pass_(idx, stil):
-            mappe, cam = render([obj[i] for i in idx], self.view(view), self.work, senter, span)
-            fyll = {k + 1: tuple(self.stil["new_fill"]) for k, i in enumerate(idx) if roller[i] == "new"}
+        v = self.view(view)
+
+        def pass_(idx):
+            mappe, cam = render([obj[i] for i in idx], v, self.work, senter, span, (lo, hi))
             crease = {k + 1: self.del_(delnamn[i])["crease"] for k, i in enumerate(idx) if "crease" in self.del_(delnamn[i])}
             min_px = {k + 1: self.del_(delnamn[i])["min_px"] for k, i in enumerate(idx) if "min_px" in self.del_(delnamn[i])}
-            im, sk = linjer(mappe, fyll, stil, crease, min_px)
-            return im, sk, cam, mappe
-        im, sk, cam, mappe = pass_(synleg, self.stil)
+            return (*kantar(mappe, self.stil, crease, min_px), cam, mappe)
+        synleg = [i for i, r in enumerate(roller) if r != "ghost"]
+        spøkje = [i for i, r in enumerate(roller) if r == "ghost"]
+        kant, z, idb, cam, mappe = pass_(synleg)
+        fg = idb > 0
+        bw = bh = PX
+        if crop and fg.any():
+            ys, xs = np.nonzero(fg)
+            bw, bh = xs.max() - xs.min() + 32 * SK, ys.max() - ys.min() + 32 * SK
+        px = self.stil["line_pt"] * max(bw / mål[0], bh / mål[1])
+        ut = np.full(fg.shape + (3,), 255, np.uint8)
+        for k, i in enumerate(synleg):
+            if roller[i] == "new":
+                ut[idb == k + 1] = self.stil["new_fill"]
         if spøkje:
-            gim, _, _, _ = pass_(spøkje, {**self.stil, "line": max(1, self.stil["line"] - 1)})
-            a, g = np.asarray(im).copy(), np.asarray(gim.convert("L"))
-            kvit = (a == 255).all(-1) & (g < 128)
-            a[kvit] = self.stil.get("ghost_grey", 150)
-            im = Image.fromarray(a)
+            gk, gz, gidb, _, _ = pass_(spøkje)
+            g = gk & (~fg | ((gidb > 0) & (gz <= z + self.stil["depth_eps"])))
+            ut[tjukk(g, px * self.stil["ghost_line"])] = self.stil["ghost_grey"]
+        ut[tjukk(kant, px)] = 0
+        im = Image.fromarray(ut).resize((PX // SK, PX // SK), Image.LANCZOS)
         mørk = float((np.asarray(im.convert("L")) < 200).mean())
-        return im, projektor(cam, sk), bev, roller, delnamn, {"mappe": mappe, "mørk_del": round(mørk, 4)}
+        return {"im": im, "P3": projektor(cam, SK), "bev": bev, "flytt": [t for _, t in obj], "roller": roller, "delnamn": delnamn, "cam": cam, "idb": idb,
+                "id_av": {i: k + 1 for k, i in enumerate(synleg)}, "maske": fg[::SK, ::SK],
+                "info": {"mappe": mappe, "mørk_del": round(mørk, 4), "strek_px": round(float(px), 1)}}
 
-    def mini(self, namn):
-        if namn not in self.miniar:
-            p = self.del_(namn)
-            self.delar.get(namn)
-            mappe, cam = render([(self.delar.glb[namn], (0, 0, 0))], self.view(p.get("thumb_view", "iso")), self.work)
-            im, _ = linjer(mappe, {}, {**self.stil, "line": 6}, {1: p["crease"]} if "crease" in p else None, {1: p["min_px"]} if "min_px" in p else None)
-            self.miniar[namn] = im.crop(beskjer(im, 10))
-        return self.miniar[namn]
+    def mini(self, namn, mål):
+        k = (namn, round(mål[0]), round(mål[1]))
+        if k not in self.miniar:
+            self.miniar[k] = self.figur([{"part": namn}], self.del_(namn).get("thumb_view", self.std), mål, zoom=1.0)["im"]
+        return self.miniar[k]
+
+    def punkt(self, F, i, retning=(1.0, 0.6)):
+        k = F["id_av"].get(i)
+        mk = F["idb"] == k if k else None
+        if mk is None or not mk.any():
+            return None
+        ys, xs = np.nonzero(mk)
+        y0, x0 = ys.min(), xs.min()
+        sub = ndimage.binary_erosion(mk[y0:ys.max() + 1, x0:xs.max() + 1], iterations=6)
+        if sub.any():
+            ys, xs = np.nonzero(sub)
+            ys, xs = ys + y0, xs + x0
+        j = np.argmax(xs * retning[0] - ys * retning[1])
+        return np.array([xs[j], ys[j]], float) / SK
+
+    def spor(self, F, i, a, b):
+        k = F["id_av"].get(i)
+        t = np.linspace(0, 1, int(np.linalg.norm(b - a)) + 2)
+        q = a + (b - a) * t[:, None]
+        ids = F["idb"][np.clip(q[:, 1].round().astype(int), 0, PX - 1), np.clip(q[:, 0].round().astype(int), 0, PX - 1)]
+        start = int(np.argmax(ids != k)) if k and ids[0] == k else 0
+        andre = np.nonzero((ids[start:] != 0) & (ids[start:] != k))[0]
+        return q[start], q[start + andre[0]] if len(andre) else q[-1], bool(len(andre))
 
     def scenefigur(self, fig, boks, side):
         d = self.dok
-        im, P3, bev, roller, delnamn, info = self.figur(fig["scene"], fig.get("view", side.get("view", "iso")), zoom=fig.get("zoom", 1.05))
-        tilpdf, ramme = d.bilete(im, boks)
-        P = lambda w: tilpdf(P3(w))
-        grupper = {}
-        for namn, frå, til, stil, flytt in bev:
-            a, b = P(frå), P(til)
-            hw = self.del_(namn).get("kind") == "hardware"
-            if (stil or ("dashed" if hw else "arrow")) == "dashed":
-                d.stipla(a, b)
+        F = self.figur(fig["scene"], fig.get("view", side.get("view", self.std)), boks[2:], zoom=fig.get("zoom", 1.05))
+        tilpdf, ramme = d.bilete(F["im"], boks, maske=F["maske"])
+        P = lambda w: tilpdf(F["P3"](w))
+        R = lambda q: tilpdf(np.asarray(q) / SK)
+        for namn, frå, til, line, flytt, i in F["bev"]:
+            s, e, traff = self.spor(F, i, F["P3"](frå) * SK, F["P3"](til) * SK)
+            a, b = R(s), R(e)
+            if (line or ("dashed" if self.del_(namn).get("kind") == "hardware" else "arrow")) == "dashed":
+                d.stipla(a, R(F["P3"](til) * SK))
             else:
-                d.pil(a + (b - a) * 0.15, b - (b - a) * 0.15)
-            lo, hi = self.delar.grenser[namn]
-            hjørne = np.array([P(np.array([x, y, z]) + flytt) for x in (lo[0], hi[0]) for y in (lo[1], hi[1]) for z in (lo[2], hi[2])])
-            grupper.setdefault(namn, []).append(hjørne)
-        for namn, hjørnelister in grupper.items():
-            if fig.get("labels", True) is False:
-                continue
-            h = max(hjørnelister, key=lambda q: q[:, 1].max())
-            høgre, midt = h[:, 0].max(), (h[:, 1].min() + h[:, 1].max()) / 2
-            if self.del_(namn).get("kind") == "hardware":
-                d.tekst(f"{self.ident(namn)}x{len(hjørnelister)}", høgre + 8, midt - 4, 13, reg=False)
-            else:
-                d.leiar(self.ident(namn), np.array([høgre - 4, midt]), np.array([høgre + 30, midt + 16]))
+                heil = R(F["P3"](til) * SK) - R(F["P3"](frå) * SK)
+                u = heil / (np.linalg.norm(heil) + 1e-9)
+                L = float((b - a) @ u) - (6 if traff else 0)
+                if L < 20:
+                    L = min(40.0, 0.6 * float(np.linalg.norm(heil)))
+                d.pil(a + u * 4, a + u * L)
+        if fig.get("detail"):
+            self.boble(fig, fig["detail"], P, F, ramme, side)
         for co in fig.get("callouts", []):
             t = P(co["point"])
-            d.leiar(self.ident(co["part"]), t, t + np.array(co.get("offset", [40, 30])))
+            d.leiar(self.ident(co["part"]), t, t + np.array(co["offset"]) if "offset" in co else None)
+        if fig.get("labels", True) is not False:
+            grupper = {}
+            for namn, frå, til, line, flytt, i in F["bev"]:
+                grupper.setdefault(namn, []).append((flytt, i))
+            for namn, inst in grupper.items():
+                if self.del_(namn).get("kind") == "hardware":
+                    fl, i = max(inst, key=lambda q: P(self.delar.senter[namn] + q[0]) @ (0.3, 1))
+                    q = self.punkt(F, i, (1, 0.3))
+                    s = f"{self.ident(namn)}x{len(inst)}"
+                    w = pdfmetrics.stringWidth(s, "M", 13)
+                    p = d.plasser(tilpdf(q) if q is not None else P(self.delar.senter[namn] + fl), w + 4, 16, (1, 0.3), (w / 2 + 8, w / 2 + 18, w / 2 + 32))
+                    d.tekst(s, p[0], p[1] - 4.5, 13, juster="c")
+                else:
+                    q = self.punkt(F, inst[0][1])
+                    if q is not None:
+                        d.leiar(self.ident(namn), tilpdf(q))
+                self.vist.add(namn)
+            for i, (namn, rolle) in enumerate(zip(F["delnamn"], F["roller"])):
+                if namn in self.vist or rolle == "ghost":
+                    continue
+                q = self.punkt(F, i)
+                if q is not None:
+                    d.leiar(self.ident(namn), tilpdf(q))
+                    self.vist.add(namn)
         for a, b in fig.get("arrows", []):
             d.pil(P(a), P(b))
-        if fig.get("detail"):
-            self.boble(fig, fig["detail"], P, boks, side)
         if fig.get("multiplier"):
-            d.tekst(fig["multiplier"], ramme[0] + ramme[2] - 4, ramme[1] + 6, 40, juster="r", reg=False)
-        info["figur_pt"] = [round(v, 1) for v in ramme]
-        return ramme, info
+            d.tekst(fig["multiplier"], ramme[0] + ramme[2] - 4, ramme[1] + 6, 40, juster="r")
+        F["info"]["figur_pt"] = [round(v, 1) for v in ramme]
+        return ramme, F["info"]
 
-    def boble(self, fig, det, P, boks, side):
+    def boble(self, fig, det, P, F, ramme, side):
         d = self.dok
-        im, _, _, _, _, _ = self.figur(det.get("scene", fig["scene"]), fig.get("view", side.get("view", "iso")), det["centre"], det["span"])
         r = det.get("r", 62)
-        x, y, w, h = boks
-        cx, cy = {"right": (x + w - r - 4, y + r + 4), "left": (x + r + 4, y + r + 4), "topright": (x + w - r - 4, y + h - r - 4)}[det.get("pos", "right")]
         src = P(det["centre"])
+        rk = max(6.0, float(np.linalg.norm(P(np.array(det["centre"], float) + np.array(F["cam"]["hogre"]) * det["span"]) - src)))
+        x, y, w, h = ramme
+        kandidatar = {"right": (x + w - r, y + r), "left": (x + r, y + r), "topright": (x + w - r, y + h - r), "topleft": (x + r, y + h - r)}
+        pos = det.get("pos", "auto")
+        cx, cy = kandidatar[pos] if pos in kandidatar else min(kandidatar.values(), key=lambda q: d.dekning(q[0] - r, q[1] - r, q[0] + r, q[1] + r) + np.linalg.norm(np.array(q) - src) / 2000)
+        im = self.figur(det.get("scene", fig["scene"]), fig.get("view", side.get("view", self.std)), (2 * r, 2 * r), det["centre"], det["span"], crop=False)["im"]
         c = d.c
         c.setStrokeGray(0)
         c.setLineWidth(.9)
-        c.circle(*src, 12, stroke=1, fill=0)
+        c.circle(*src, rk, stroke=1, fill=0)
         v = np.array([cx, cy]) - src
-        v /= np.linalg.norm(v) + 1e-9
-        c.line(*(src + v * 12), *(np.array([cx, cy]) - v * r))
+        if np.linalg.norm(v) > r + rk:
+            v /= np.linalg.norm(v)
+            c.line(*(src + v * rk), *(np.array([cx, cy]) - v * r))
         c.saveState()
         p = c.beginPath()
         p.circle(cx, cy, r)
@@ -416,6 +592,7 @@ class Byggjar:
         c.restoreState()
         c.setLineWidth(1.6)
         c.circle(cx, cy, r, stroke=1, fill=0)
+        d.reg("boble", cx - r, cy - r, cx + r, cy + r, geometri=False)
         if det.get("label"):
             d.tekst(det["label"], cx, cy - r - 16, 12, True, "c")
 
@@ -425,15 +602,16 @@ class Byggjar:
         d.tekst(side.get("title", "MONTERINGSRETTLEIING"), m + 30, d.H - m - 70, 30)
         if self.spec.get("meta", {}).get("subtitle"):
             d.tekst(self.spec["meta"]["subtitle"], m + 32, d.H - m - 96, 12)
-        im, *_ = self.figur(side["scene"], side.get("view", "iso"), zoom=1.0)
-        d.bilete(im, (m + 40, m + 60, d.W - 2 * m - 80, d.H - 2 * m - 220))
+        boks = (m + 40, m + 60, d.W - 2 * m - 80, d.H - 2 * m - 220)
+        v = side.get("view", self.std)
+        d.bilete(self.figur(side["scene"], v, boks[2:], zoom=1.0)["im"], boks)
+        self.opp = np.asarray(self.view(v)["up"], float)
         d.ny_side("Framside")
 
     def inventory(self, side):
         d = self.dok
-        m = self.stil["margin"]
         namn = side.get("parts") or [k for k, p in self.spec["parts"].items() if p.get("kind") != "hardware"]
-        self.rutenett(namn, side.get("cols"), lambda k, x, y, cw: d.merke(self.ident(k), self.del_(k).get("qty", 1), x, y))
+        self.rutenett(namn, side.get("cols"), lambda k, x, y, cw: d.merke(self.ident(k), self.del_(k).get("qty", 1), x, y), proporsjonal=side.get("proportional", True))
         d.ny_side(side.get("title", "Delar"))
 
     def hardware(self, side):
@@ -460,69 +638,61 @@ class Byggjar:
             f = min(1.0, max(0.3, math.sqrt(self.delar.storleik[k] / størst))) if side.get("proportional", True) else 1.0
             iw, ih = (cw - 20) * f, (rh - 80) * f
             base = y - rh + 22
-            d.bilete(self.mini(k), (x + 8, base + 24, iw, ih))
+            d.bilete(self.mini(k, (iw, ih)), (x + 8, base + 24, iw, ih))
             d.tekst(f"x{self.del_(k).get('qty', 1)}", x + 8, base, 18)
         d.ny_side(side.get("title", "Beslag"))
 
-    def rutenett(self, namn, cols, topp, under=None, linjer=False, proporsjonal=False):
+    def rutenett(self, namn, cols, topp, proporsjonal=False):
         d = self.dok
         m = self.stil["margin"]
         cols = cols or (2 if len(namn) <= 4 else 3 if len(namn) <= 9 else 4)
         x0, x1 = m + 24, d.W - m - 24
         cw = (x1 - x0) / cols
         rader = math.ceil(len(namn) / cols)
-        ch = min(cw * 1.05 + (40 if under else 20), (d.H - 2 * m - 90) / rader)
+        ch = min(cw * 1.05 + 20, (d.H - 2 * m - 90) / rader)
+        for n_ in namn:
+            self.delar.get(n_)
+        størst = max(self.delar.storleik[n_] for n_ in namn)
         y = d.H - m - 40
         for i, k in enumerate(namn):
             if i and i % cols == 0:
                 y -= ch
-                if linjer:
-                    d.c.setStrokeGray(0)
-                    d.c.setLineWidth(1)
-                    d.c.line(x0, y + 4, x1, y + 4)
             x = x0 + (i % cols) * cw
             topp(k, x + 4, y - 26, cw)
-            bx, by, bw, bh = x + 8, y - ch + (34 if under else 12), cw - 16, ch - (70 if under else 46)
-            if proporsjonal:
-                for n_ in namn:
-                    self.delar.get(n_)
-                f = min(1.0, max(0.3, math.sqrt(self.delar.storleik[k] / max(self.delar.storleik[n_] for n_ in namn))))
-                bx, by, bw, bh = bx, by, bw * f, bh * f
-            d.bilete(self.mini(k), (bx, by, bw, bh))
-            if under:
-                under(k, x + 4, y - ch + 12, cw)
-        if linjer:
-            d.c.line(x0, y - ch + 4, x1, y - ch + 4)
+            f = min(1.0, max(0.3, math.sqrt(self.delar.storleik[k] / størst))) if proporsjonal else 1.0
+            bw, bh = (cw - 16) * f, (ch - 46) * f
+            d.bilete(self.mini(k, (bw, bh)), (x + 8, y - ch + 12, bw, bh))
 
     def exploded(self, side):
         d = self.dok
         m = self.stil["margin"]
         boks = (m + 30, m + 40, d.W - 2 * m - 60, d.H - 2 * m - 100)
         scene = [{**s, "role": "exploded"} if "explode" in s else s for s in side["scene"]]
-        im, P3, bev, roller, delnamn, info = self.figur(scene, side.get("view", "iso"), zoom=side.get("zoom", 1.0))
-        tilpdf, ramme = d.bilete(im, boks)
+        v = side.get("view", self.std)
+        F = self.figur(scene, v, boks[2:], zoom=side.get("zoom", 1.0))
+        tilpdf, ramme = d.bilete(F["im"], boks, maske=F["maske"])
         midt = np.array([ramme[0] + ramme[2] / 2, ramme[1] + ramme[3] / 2])
-        sett = set()
-        for s in side["scene"]:
-            for at in s.get("at") or [[0, 0, 0]]:
-                if s["part"] in sett and not side.get("all_instances"):
-                    continue
-                sett.add(s["part"])
-                p = tilpdf(P3(self.delar.senter[s["part"]] + np.array(at, float) + np.array(s.get("explode", [0, 0, 0]), float)))
-                v = p - midt
-                v = v / (np.linalg.norm(v) + 1e-9)
-                d.leiar(self.ident(s["part"]), p, p + v * 34)
         if side.get("inset"):
             ins = side["inset"]
             bw, bh = 170, 150
             bx, by = ramme[0] + ramme[2] - bw, m + 40
             d.c.setLineWidth(1.1)
             d.c.rect(bx, by, bw, bh, fill=0, stroke=1)
-            im2, *_ = self.figur(ins["scene"], ins.get("view", side.get("view", "iso")))
-            d.bilete(im2, (bx + 8, by + 26, bw - 16, bh - 34))
+            d.reg("inset", bx, by, bx + bw, by + bh, geometri=False)
+            d.bilete(self.figur(ins["scene"], ins.get("view", v), (bw - 16, bh - 34))["im"], (bx + 8, by + 26, bw - 16, bh - 34), reg=False)
             if ins.get("multiplier"):
-                d.tekst(ins["multiplier"], bx + bw / 2, by + 8, 16, True, "c")
-        self.rapport.append({"side": d.n + 1, "type": "exploded", **info})
+                d.tekst(ins["multiplier"], bx + bw / 2, by + 8, 16, True, "c", reg=False)
+        sett = set()
+        for i, namn in enumerate(F["delnamn"]):
+            if namn in sett and not side.get("all_instances"):
+                continue
+            sett.add(namn)
+            c = tilpdf(F["P3"](self.delar.senter[namn] + F["flytt"][i]))
+            q = self.punkt(F, i, c - midt)
+            if q is not None:
+                d.leiar(self.ident(namn), tilpdf(q), foretrekk=c - midt)
+        self.opp = np.asarray(self.view(v)["up"], float)
+        self.rapport.append({"side": d.n + 1, "type": "exploded", **F["info"]})
         d.ny_side(side.get("title", "Oversikt"))
 
     def step(self, side):
@@ -530,15 +700,21 @@ class Byggjar:
         m = self.stil["margin"]
         self.steg += 1
         nr = side.get("n", self.steg)
+        figs = side["figures"]
+        opp = [np.asarray(self.view(f.get("view", side.get("view", self.std)))["up"], float) for f in figs]
+        ikon = list(side.get("icons", []))
+        if self.opp is not None and opp[0] @ self.opp < 0 and "snu" not in ikon:
+            ikon.append("snu")
+        self.opp = opp[-1]
         d.tekst(str(nr), m + 16, d.H - m - 56, 44, True)
         tx = m + 16 + 44 * 0.62 * len(str(nr)) + 20
-        for k in side.get("icons", []):
+        for k in ikon:
             d.ikon(k, tx, d.H - m - 60, 0.9)
             tx += 44
         beslag = side.get("hardware")
         if beslag is None:
             tel = {}
-            for fig in side["figures"]:
+            for fig in figs:
                 for s in fig["scene"]:
                     if s.get("role") == "new" and self.del_(s["part"]).get("kind") == "hardware":
                         tel[s["part"]] = tel.get(s["part"], 0) + len(s.get("at") or [0]) * int(str(fig.get("multiplier", "x1")).lstrip("x") or 1)
@@ -550,17 +726,18 @@ class Byggjar:
             sb = 108
             høgre = d.W - m - sb - 8
             y = d.H - m - 8
+            bh = min(96, (d.H - 2 * m - 30) / len(beslag))
             for k, v in beslag:
-                bh = 96
                 d.c.setStrokeGray(0)
                 d.c.setLineWidth(1)
                 d.c.rect(d.W - m - sb, y - bh, sb, bh, fill=0, stroke=1)
                 d.tekst(self.ident(k), d.W - m - sb + 6, y - 18, 15)
-                d.bilete(self.mini(k), (d.W - m - sb + 14, y - bh + 22, sb - 28, bh - 44))
+                mål = (sb - 28, bh - 44)
+                d.bilete(self.mini(k, mål), (d.W - m - sb + 14, y - bh + 22, *mål))
                 d.tekst(f"x{v}", d.W - m - 8, y - bh + 8, 13, juster="r")
                 y -= bh
-        figs = side["figures"]
-        botn = m + 60 + 22 * sum(1 for k in ("note", "warning") if side.get(k))
+        tekstar = [(feit, simpleSplit(side[k], "MB" if feit else "M", 11, høgre - m - 50)) for k, feit in (("warning", True), ("note", False)) if side.get(k)]
+        botn = m + 40 + sum(15 * len(ls) + 8 for _, ls in tekstar)
         topp = d.H - m - 80
         flyt = side.get("flow", "down")
         n = len(figs)
@@ -576,17 +753,19 @@ class Byggjar:
             ramme, info = self.scenefigur(fig, boks, side)
             info_figs.append(info)
             if i < n - 1:
-                if flyt == "down":
-                    d.hol_pil(boks[0] + boks[2] / 2, boks[1] - gap / 2, "ned")
-                else:
-                    d.hol_pil(boks[0] + boks[2] + gap / 2, boks[1] + boks[3] / 2, "hogre")
-        y = m + 46
-        if side.get("warning"):
-            d.ikon("atvaring", m + 16, y - 6, 0.75)
-            d.tekst(side["warning"], m + 46, y, 11, True)
-            y += 22
-        if side.get("note"):
-            d.tekst(side["note"], m + 16, y, 11)
+                px, py = (boks[0] + boks[2] / 2, boks[1] - gap / 2) if flyt == "down" else (boks[0] + boks[2] + gap / 2, boks[1] + boks[3] / 2)
+                if side.get("connector", True):
+                    d.hol_pil(px, py, "ned" if flyt == "down" else "hogre")
+                if opp[i + 1] @ opp[i] < 0:
+                    d.ikon("snu", px + 22 if flyt == "down" else px - 18, py - 18 if flyt == "down" else py + 20, 0.9)
+        y = botn - 22
+        for feit, ls in tekstar:
+            if feit:
+                d.ikon("atvaring", m + 16, y - 6, 0.75)
+            for linje in ls:
+                d.tekst(linje, m + 46, y, 11, feit)
+                y -= 15
+            y -= 8
         nye = sum(1 for f in figs for s in f["scene"] if s.get("role") == "new")
         self.rapport.append({"side": d.n + 1, "steg": nr, "nye_delar": nye, "figurar": info_figs})
         d.ny_side(f"{nr} {side.get('title', '')}")
@@ -597,8 +776,7 @@ class Byggjar:
         y = d.H - m - 50
         for t in side["items"]:
             d.ikon("atvaring", m + 16, y - 6, 0.7)
-            d.tekst(t, m + 46, y, 11)
-            y -= 30
+            y = d.avsnitt(t, m + 46, y, d.W - 2 * m - 70) - 14
         x = m + 16
         for k in side.get("icons", []):
             d.ikon(k, x, y - 60, 1.4)
@@ -610,8 +788,12 @@ class Byggjar:
             getattr(self, side["type"])(side)
         self.dok.c.save()
         pdf = f"{self.ut}/rettleiing.pdf"
-        os.makedirs(f"{self.ut}/sider", exist_ok=True)
+        shutil.rmtree(f"{self.ut}/sider", ignore_errors=True)
+        os.makedirs(f"{self.ut}/sider")
         subprocess.run(["pdftoppm", "-r", "110", "-png", pdf, f"{self.ut}/sider/side"], check=True)
+        if os.path.isdir(f"{self.work}/r"):
+            for k in set(os.listdir(f"{self.work}/r")) - BRUKT:
+                shutil.rmtree(f"{self.work}/r/{k}")
         bom = {k: {"i_steg": self.brukt.get(k, 0), "i_delliste": p.get("qty", 1)} for k, p in self.spec["parts"].items() if p.get("kind") == "hardware"}
         åtvaringar = [f"{k}: {v['i_steg']} brukt i steg, {v['i_delliste']} i dellista" for k, v in bom.items() if v["i_steg"] != v["i_delliste"]]
         åtvaringar += [f"side {r['side']}: steget har ingen ny del" for r in self.rapport if r.get("nye_delar") == 0]

@@ -303,7 +303,8 @@
           ]
         }
       ],
-      "note": "Same pol ut på alle åtte. Merk sida med tusj."
+      "note": "Merk same pol på alle åtte med tusj. Kroppen: merka side synleg. Luka: merka side ned i holet.",
+      "connector": false
     },
     {
       "type": "step",
@@ -314,7 +315,12 @@
           "scene": [
             {
               "part": "kropp",
-              "role": "ghost"
+              "cut": [
+                0,
+                1,
+                0,
+                13.4
+              ]
             },
             {
               "part": "brytar",
@@ -508,45 +514,7 @@
                 -45
               ]
             }
-          ],
-          "detail": {
-            "centre": [
-              22.6,
-              77.0,
-              5.0
-            ],
-            "span": 9,
-            "pos": "right",
-            "label": "N – S",
-            "scene": [
-              {
-                "part": "magnet",
-                "at": [
-                  [
-                    22.6,
-                    77.0,
-                    8.5
-                  ]
-                ]
-              },
-              {
-                "part": "magnet",
-                "at": [
-                  [
-                    22.6,
-                    77.0,
-                    5.5
-                  ]
-                ],
-                "role": "new",
-                "explode": [
-                  0,
-                  0,
-                  -5
-                ]
-              }
-            ]
-          }
+          ]
         }
       ],
       "warning": "Ikkje lim luka fast. Ho skal kunne takast av."
@@ -584,7 +552,7 @@
       "type": "warnings",
       "items": [
         "Bruk berre lim på magnetane, ikkje på luka.",
-        "Same pol ut på alle magnetane, elles held ikkje luka.",
+        "Kroppen: merka magnetside synleg. Luka: merka side ned i holet. Elles held ikkje luka.",
         "Kople frå USB før du opnar luka."
       ],
       "icons": [
