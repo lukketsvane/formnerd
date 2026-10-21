@@ -1,0 +1,14 @@
+{
+  "name": "formnerd",
+  "owner": {
+    "name": "lukketsvane"
+  },
+  "description": "Skills from FormNerd (product form development with Tripo, CAD and IKEA-style assembly)",
+  "plugins": [
+    {
+      "name": "skisse-til-cad",
+      "source": ".",
+      "description": "Sketch or product image to mechanical CAD via Tripo (image-to-3D, segmentation, low poly), print files and IKEA-style assembly instructions. Verified Tripo API recipe. Norwegian Nynorsk."
+    }
+  ]
+}
