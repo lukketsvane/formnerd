@@ -59,3 +59,22 @@ Ein figur i `step` har `view`, `scene`, `zoom`, `callouts [{part, point, offset}
 - Det er ingen kutt- eller snittvisingar. Bruk `ghost` når ein del skjuler innmaten.
 - ID-bufferen tek opptil 255 objekt per figur.
 - Strekane blir rendra som raster (2400 px), medan tekst, piler, ringar og ramme er vektor i PDF-en.
+
+## Henting av ekte IKEA-rettleiingar (`hent_manualar.py`)
+
+`hent_manualar.py` hentar monteringsrettleiingane til heile IKEA-sortimentet som PDF, til bruk som stilreferanse. Han går frå `sitemap.xml` på ikea.com via produktsidene (JSON-blokka `assemblyAndDocuments`) til dokumentlenkjene, og lastar ned kvart unike dokument (nøkkel: `AA-nummer-revisjon`) éin gong, sjølv om fleire produkt deler det.
+
+```bash
+python3 verktoy/ikea/hent_manualar.py                          # heile no/no-sortimentet
+python3 verktoy/ikea/hent_manualar.py --marknad no/no us/en de/de --tradar 16
+python3 verktoy/ikea/hent_manualar.py --maks 50 --berre-indeks # rask test utan PDF-ar
+python3 verktoy/ikea/hent_manualar.py --sider 3 --dpi 50       # render òg dei tre første sidene som JPG
+```
+
+Utdata ligg i `referansar/ikea-manualar/`:
+
+- `indeks.jsonl` og `indeks.csv`: éi rad per dokument med `aa`, `slag` (`assembly`, `manual`, `other`, …), `url`, `fil`, `bytes`, `sider` og produkta som peikar på det (artikkelnummer, namn, type, tittel, kategori, marknad). Desse er sjekka inn, slik at korpuset kan hentast på nytt eller lenkjast direkte.
+- `oppsummering.json`: tal på produkt, dokument og nedlasta byte per slag.
+- `pdf/<slag>/<AA>.pdf`, `sider/<AA>/s-NN.jpg` og `_arbeid/` (sitemap- og produktcache): ikkje sjekka inn. Køyringa kan avbrytast og startast om att; alt som alt er henta blir hoppa over.
+
+Berre `assembly` blir lasta ned om ikkje `--slag` seier noko anna; dei andre slaga blir likevel indekserte. Marknad skrivast slik han står i URL-en (`no/no`, `us/en`, `de/de`), og første marknad som nemner eit produkt vinn.
