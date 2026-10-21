@@ -33,7 +33,7 @@ npx skills add lukketsvane/skisse-til-cad
 
 **Codex:** kopier `skills/skisse-til-cad` til `.agents/skills/` i prosjektet ditt.
 
-**claude.ai:** last ned `skisse-til-cad.skill` frå [Releases](https://github.com/lukketsvane/skisse-til-cad/releases) eller pakk mappa sjølv, og last ho opp under Settings → Capabilities → Skills.
+**claude.ai:** last ned [`dist/skisse-til-cad.skill`](dist/skisse-til-cad.skill) og last han opp under Settings → Capabilities → Skills.
 
 ## Krav
 

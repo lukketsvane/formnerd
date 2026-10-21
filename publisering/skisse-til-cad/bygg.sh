@@ -25,4 +25,5 @@ for fil, gammal, ny in (
     assert s.count(gammal) == 1, (fil, gammal[:40])
     open(p, "w").write(s.replace(gammal, ny))
 PY
+mkdir -p "$UT/dist" && cp "$ROT/dist/skisse-til-cad.skill" "$UT/dist/"
 claude plugin validate "$UT" | tail -1
