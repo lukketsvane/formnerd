@@ -3,6 +3,7 @@ import numpy as np, trimesh
 from manifold3d import Manifold, Mesh, CrossSection, JoinType, FillRule
 from scipy import ndimage
 from skimage import measure
+import detalj as dt
 
 HER = pathlib.Path(__file__).resolve().parent
 K = json.loads((HER / "delar_konfig.json").read_text())
@@ -130,6 +131,21 @@ ec_pipe += Manifold.batch_hull([boks([hx - pw / 2, hx + pw / 2], [hy - pd / 2, h
                                 vsyl(hx, hy, ec["hol_d"] / 2, ec["hol_botn_z"] - 0.01, ec["hol_botn_z"])])
 EC11 = ec_hol + ec_pipe
 
+# --- detaljar som legg til materiale ----------------------------------------
+D = K["detalj"]
+sk_ = D["skinne"]
+KROPP0 += dt.dovetail_skinne(sk_["x"][0], sk_["x"][1], sk_["y"][0], sk_["y"][1], sk_["z_botn"], sk_["dovetail"], sk_["z_topp"])
+ok_r = D["okularring"]
+oc = ok_r["senter"]
+okularring = Manifold.batch_hull([Manifold.cylinder(0.01, ok_r["r_ytre"], ok_r["r_ytre"], 96).rotate([0, 90, 0]).translate([ok_r["x"][1], oc[0], oc[1]]),
+                                  Manifold.cylinder(0.01, ok_r["r_front"], ok_r["r_front"], 96).rotate([0, 90, 0]).translate([ok_r["x"][0], oc[0], oc[1]])])
+okularring -= Manifold.cylinder(5, ok_r["r_indre"], ok_r["r_indre"], 96).rotate([0, 90, 0]).translate([ok_r["x"][0] - 1, oc[0], oc[1]])
+KROPP0 += okularring
+lr = D["linsering"]
+KROPP0 -= Manifold.cylinder(20, lr["r_ytre"], lr["r_ytre"], SEG).rotate([0, 90, 0]).translate([lr["x_flate"], ay, az])
+kp = D["knapp"]
+KROPP0 += sum((vsyl(x, y, kp["r"], kp["z"] - 0.5, kp["z"] + kp["hogd"], 32) for x, y in D["knappar"]), Manifold())
+
 # --- stabelen ----------------------------------------------------------------
 x_cam_front = st["cam_front_x"]
 x_tupp = x_cam_front + st["linse_over_cam"]
@@ -190,6 +206,9 @@ uh = S["usb_hylse"]
 vern += rboks_y(y_hjul_usb - uh["djupn"], y_hjul_usb + 5, x_usb, az + 2.0, ut_t["b_x"] + 2 * uh["vegg"], ut_t["h_z"] + 4 + 2 * uh["vegg"], ut_t["r"] + uh["vegg"])
 vern += Manifold.batch_hull([usbc.translate([0, -1.0, 0]), usbc.translate([0, v + 1.0, 0])]).translate([0, 0, 0]) + boks([ug["x"] - r_s - v, ug["x"] + r_s + v], [y_grep - 3, y_grep + ug["djupn"] + v], [ug["z"] - ug["lengd_z"] / 2 - v, ug["z"] + ug["lengd_z"] / 2 + v])
 vern += boks([hx - pw / 2 - v, hx + pw / 2 + v], [hy - pd / 2 - v, hy + pd / 2 + v], [S["tak_z"] - 6, 90])
+stv = D["stativ"]
+vern += vsyl(stv["senter"][0], stv["senter"][1], stv["boss_r"], sk_["z_botn"] - 1, stv["boss_z_topp"])
+stativ_hol = dt.sekskant(stv["senter"][0], stv["senter"][1], stv["mutter_af"], sk_["z_botn"] - 1, sk_["z_botn"] + stv["mutter_djupn"]) + vsyl(stv["senter"][0], stv["senter"][1], stv["hol_d"] / 2, sk_["z_botn"] - 1, stv["hol_z_topp"])
 
 # --- søyler for magnetar og pinnar -------------------------------------------
 dz = S["deling_z"]
@@ -218,8 +237,33 @@ spor += rboks_y_tak(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
 STOLPAR -= spor
 
 # --- samanstilling ----------------------------------------------------------
-HOLROM = (KJERNE - vern - SOYLER - STOLPAR) + sete + konus + trakt + brunn + brytarlomme + brytarhol + usb_tunnel + usbc + okular + EC11
+HOLROM = (KJERNE - vern - SOYLER - STOLPAR) + sete + konus + trakt + brunn + brytarlomme + brytarhol + usb_tunnel + usbc + okular + EC11 + stativ_hol
 KROPP = KROPP0 - HOLROM
+
+# --- detaljar som er skorne i overflata ------------------------------------
+ri = D["riller"]
+rille_region = CrossSection.square([ri["x"][1] - ri["x"][0], ri["y_maks"] + 10]).translate([ri["x"][0], -10])
+RILLER = sum((dt.band_z(KROPP0, z, ri["djupn"], ri["breidd"], rille_region) for z in np.arange(ri["z"][0], ri["z"][1] + 0.01, ri["deling"]) if abs(z - dz) > ri["unngaa_deling"]), Manifold())
+kn = D["knurl_linse"]
+linse_region = CrossSection.circle(34.0, 96).translate([ay, az])
+xm = (kn["x"][0] + kn["x"][1]) / 2
+KNURL = dt.band_x(KROPP0, xm, kn["djupn"], kn["x"][1] - kn["x"][0], linse_region) ^ dt.radialslabar(kn["n"], kn["tjukn"], 40.0, (ay, az), x_spenn=[kn["x"][0], kn["x"][1]])
+kn2 = D["knurl_linse2"]
+KNURL += dt.band_x(KROPP0, (kn2["x"][0] + kn2["x"][1]) / 2, kn2["djupn"], kn2["x"][1] - kn2["x"][0], linse_region) ^ dt.radialslabar(kn2["n"], kn2["tjukn"], 40.0, (ay, az), x_spenn=[kn2["x"][0], kn2["x"][1]], vinkel0=3.0)
+SKALA = Manifold()
+for i in range(lr["n"]):
+    lang = i % lr["lang_kvar"] == 0
+    r0, r1, t = lr["r"][0], (lr["r_lang"] if lang else lr["r"][1]), (lr["tjukn"] + 0.2 if lang else lr["tjukn"])
+    SKALA += boks([lr["x_flate"] - lr["djupn"], lr["x_flate"] + 3.0], [-t / 2, t / 2], [r0, r1]).rotate([360.0 * i / lr["n"], 0, 0]).translate([0, ay, az])
+pl = D["panel_linje"]
+PANEL = dt.band_x(KROPP0, pl["x"], pl["djupn"], pl["breidd"], linse_region)
+hs = D["hjulskala"]
+HJULSKALA = dt.radialslabar_z(hs["n"], hs["tjukn"], hs["r"][0], hs["r"][1], (hx, hy), hs["z"]) + dt.radialslabar_z(hs["n"] // hs["lang_kvar"], hs["tjukn"] + 0.2, hs["r"][0], hs["r_lang"], (hx, hy), hs["z"])
+nm = D["namn"]
+NAMN = dt.gravert_tekst(nm["tekst"], nm["hogd"], nm["djupn"], nm["senter"], nm["z"], nm["retning"])
+ok_ring_region = Manifold.cylinder(ok_r["x"][1] - ok_r["x"][0] + 0.5, ok_r["r_ytre"] + 1, ok_r["r_ytre"] + 1, 64).rotate([0, 90, 0]).translate([ok_r["x"][0] - 0.5, oc[0], oc[1]]) - Manifold.cylinder(5, ok_r["r_indre"] + 0.8, ok_r["r_indre"] + 0.8, 64).rotate([0, 90, 0]).translate([ok_r["x"][0] - 1, oc[0], oc[1]])
+OKULARKNURL = (ok_ring_region ^ dt.radialslabar(ok_r["n"], ok_r["tjukn"], 12.0, (oc[0], oc[1]), x_spenn=[ok_r["x"][0] - 0.5, ok_r["x"][0] + ok_r["djupn"]]))
+KROPP -= RILLER + KNURL + SKALA + PANEL + HJULSKALA + NAMN + OKULARKNURL
 KNAPP = KROPP0 ^ vsyl(ux, uy, ut_["kapp_r"], ut_["kapp_z"], 90)
 lokk_ytre = rboks_y_tak(y_hjul_usb - ut_t["lokk_lengd"], y_hjul_usb + 6, x_usb, az, ut_t["b_x"] - 2 * ut_t["lokk_klaring"], ut_t["h_z"] - 2 * ut_t["lokk_klaring"], max(ut_t["r"] - ut_t["lokk_klaring"], 0.5))
 USBLOKK = KROPP0 ^ lokk_ytre
@@ -230,8 +274,11 @@ mag_lommer = sum((vsyl(x, y, mg_d / 2, dz - mg_h, dz + mg_h, 48) + Manifold.cyli
 pinnar = sum((vsyl(x, y, pn["d"] / 2, dz - 0.5, dz + pn["h"] - pn["fas"], 48) + Manifold.cylinder(pn["fas"], pn["d"] / 2, pn["d"] / 2 - pn["fas"], 48).translate([x, y, dz + pn["h"] - pn["fas"]]) for x, y in S["pinnar"]), Manifold())
 pinnehol = sum((vsyl(x, y, pn["d"] / 2 + pn["klaring"], dz - 1, dz + pn["h"] + 0.5, 48) + Manifold.cylinder(pn["fas"], pn["d"] / 2 + pn["klaring"] + pn["fas"], pn["d"] / 2 + pn["klaring"], 48).translate([x, y, dz - 0.01]) for x, y in S["pinnar"]), Manifold())
 OPP, NED = boks([-50, 200], [-50, 200], [dz, 200]), boks([-50, 200], [-50, 200], [-50, dz])
-BOTN = ((KROPP ^ NED) - mag_lommer) + pinnar
-TOPP = (KROPP ^ OPP) - mag_lommer - pinnehol
+df_ = D["delingsfas"]
+fas_ned = dt.band_z(KROPP0, dz, df_["djupn"], 2 * df_["breidd"] + 0.2) ^ boks([-50, 200], [-50, 200], [-50, dz + 0.1])
+fas_opp = dt.band_z(KROPP0, dz, df_["djupn"], 2 * df_["breidd"] + 0.2) ^ boks([-50, 200], [-50, 200], [dz - 0.1, 200])
+BOTN = ((KROPP ^ NED) - mag_lommer) + pinnar - fas_ned
+TOPP = (KROPP ^ OPP) - mag_lommer - pinnehol - fas_opp
 AKSEL = vsyl(hx, hy, ec["hol_d"] / 2 - 0.15, ec["hol_botn_z"], ec["mutter_botn_z"] + 0.01) + vsyl(hx, hy, ec["mutter_d"] / 2 - 0.15, ec["mutter_botn_z"], ec["kapp_z"]) + (vsyl(hx, hy, 3.0, ec["kapp_z"], ec["kapp_z"] + 5.5, 48) - boks([hx - 5, hx + 5], [hy + 1.5, hy + 5], [ec["kapp_z"] + 0.5, ec["kapp_z"] + 6]))
 
 # --- proxyar ---------------------------------------------------------------
@@ -255,15 +302,21 @@ P = {
     "ec11": boks([hx - 6.2, hx + 6.2], [hy - 6.6, hy + 6.6], [ec["tak_botn_z"] - 7.0, ec["tak_botn_z"] - 0.5]) + vsyl(hx, hy, 3.5, ec["tak_botn_z"] - 0.5, ec["hol_botn_z"] + 4) + vsyl(hx, hy, 3.0, ec["hol_botn_z"] + 4, ec["kapp_z"] + 5.5),
 }
 STABEL = sum((P[k] for k in ("mb_kort", "mb_tappar", "usb_kontakt", "mb_knappar", "headerar", "pinnetappar", "esp32s", "cam_kort", "sd_og_fpc", "sd_kort", "kameramodul")), Manifold())
-DELAR = {"botn": BOTN, "topp": TOPP, "utloysar": KNAPP, "usb-lokk": USBLOKK, "hjulaksel": AKSEL}
+def rydd(m):
+    return sum((c for c in m.decompose() if c.volume() > 0.05), Manifold())
+
+
+DELAR = {"botn": rydd(BOTN), "topp": rydd(TOPP), "utloysar": KNAPP, "usb-lokk": USBLOKK, "hjulaksel": AKSEL}
 
 # --- kontroll --------------------------------------------------------------
 UTE = boks([-20, 130], [-20, 140], [-20, 110]) - KROPP0
 rap = {"hjul": {"senter": [round(hx, 2), round(hy, 2)], "r_skore": round(hr + ec["lomme_r_ekstra"], 2)}, "delar": {}, "veggar_mm": {}, "kollisjonar_mm3": {}, "sveip_mm3": {}}
 for n, m in DELAR.items():
     bb = m.bounding_box()
-    rap["delar"][n] = {"status": str(m.status()), "volum_cm3": round(m.volume() / 1000, 3), "komponentar": len(m.decompose()), "bbox": [[round(q, 2) for q in bb[:3]], [round(q, 2) for q in bb[3:]]]}
-for n, q in {"kjerne": KJERNE - vern - SOYLER - STOLPAR, "brytarlomme": brytarlomme, "brunn": brunn ^ boks([-50, 200], [-50, 200], [-50, ut_["kapp_z"] - 0.5]),
+    kv = sorted((c.volume() for c in m.decompose()), reverse=True)
+    rap["delar"][n] = {"status": str(m.status()), "volum_cm3": round(m.volume() / 1000, 3), "komponentar": len(kv), "smaa_komponentar_mm3": [round(v, 3) for v in kv[1:6]],
+                       "bbox": [[round(q, 2) for q in bb[:3]], [round(q, 2) for q in bb[3:]]]}
+for n, q in {"kjerne": KJERNE - vern - SOYLER - STOLPAR, "stativhol": stativ_hol, "brytarlomme": brytarlomme, "brunn": brunn ^ boks([-50, 200], [-50, 200], [-50, ut_["kapp_z"] - 0.5]),
              "ec11_pipe": ec_pipe, "magnetlommer": mag_lommer, "pinnehol": pinnehol,
              "usb_tunnel": usb_tunnel ^ boks([-50, 200], [y_usb, y_hjul_usb - 4.0], [-50, 200])}.items():
     rap["veggar_mm"][n] = round(q.min_gap(UTE, 15.0), 2)
