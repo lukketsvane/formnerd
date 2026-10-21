@@ -15,7 +15,7 @@
     "termsOfServiceURL": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/TERMS.md"
   },
   "name": "skisse-til-cad",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Frå vald skisse via Tripo og mekanisk CAD til printfiler og IKEA-liknande montering.",
   "author": {
     "name": "Iver Finne"
@@ -28,5 +28,6 @@
     "3D-print",
     "montering"
   ],
-  "skills": "./skills"
+  "skills": "./skills",
+  "license": "Apache-2.0"
 }

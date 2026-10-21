@@ -29,7 +29,7 @@
         ]
       },
       "publication": {
-        "release_notes": "Version 0.1.1 synchronizes the latest documented Tripo recipes, checks the selected form before segmentation, looks up manufacturer dimensions before requesting measurements, uses supplied assembly references for layout drafts, and supports durable delivery outside ChatGPT Space. Adds portable plugin and skill downloads, installation instructions, support and policy pages."
+        "release_notes": "Version 0.1.2 includes the repository's Apache-2.0 licence and versioned plugin and standalone-skill downloads, together with the Tripo, dimension lookup, form comparison, assembly-layout and portable-delivery improvements from 0.1.1."
       }
     }
   },
@@ -42,7 +42,8 @@
     "montering"
   ],
   "name": "skisse-til-cad",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/lukketsvane/formnerd/blob/claude/stereoskopisk-kamerahus-cjqyqr/plugins/skisse-til-cad/README.md",
-  "repository": "https://github.com/lukketsvane/formnerd"
+  "repository": "https://github.com/lukketsvane/formnerd",
+  "license": "Apache-2.0"
 }
