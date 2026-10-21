@@ -219,7 +219,7 @@
  },
  "usbc_grep": {
   "x": 27.25,
-  "z": 27.0,
+  "z": 26.2,
   "lengd_z": 9.0,
   "breidd_x": 3.3,
   "djupn": 4.0
@@ -254,5 +254,87 @@
   "utstikk": 3.0,
   "spor_y_fraa": 51.2,
   "klaring": 0.6
+ },
+ "skal": {
+  "vegg": 2.6,
+  "tak_z": 57.0,
+  "front_x": 64.4,
+  "voksel": 0.5,
+  "deling_z": 32.0,
+  "magnetar": [
+   [
+    14.2,
+    12.8
+   ],
+   [
+    18.5,
+    112.0
+   ],
+   [
+    69.8,
+    39.8
+   ],
+   [
+    11.8,
+    65.8
+   ],
+   [
+    11.8,
+    95.2
+   ],
+   [
+    60.8,
+    13.8
+   ]
+  ],
+  "pinnar": [
+   [
+    80.2,
+    91.8
+   ],
+   [
+    12.8,
+    39.2
+   ],
+   [
+    63.8,
+    105.8
+   ]
+  ],
+  "soyle_r_magnet": 5.0,
+  "soyle_r_pinne": 4.0,
+  "pinne": {
+   "d": 4.0,
+   "h": 3.0,
+   "fas": 0.6,
+   "klaring": 0.2
+  },
+  "stolpe": {
+   "klaring": 0.2,
+   "bak": 2.2,
+   "fram": 2.6,
+   "inn": 2.2,
+   "ende": 2.4,
+   "leidning_z": 24.4
+  },
+  "brytartrakt": {
+   "vegg": 2.6,
+   "leidning_r": 1.6
+  },
+  "usb_hylse": {
+   "vegg": 2.6,
+   "djupn": 12.0
+  },
+  "ec11": {
+   "kapp_z": 80.0,
+   "hol_d": 7.4,
+   "hol_botn_z": 72.0,
+   "pipe": [
+    13.4,
+    14.2
+   ],
+   "tak_botn_z": 69.0,
+   "lomme_r_ekstra": 0.4
+  }
  }
 }
