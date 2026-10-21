@@ -6,6 +6,7 @@ Formutvikling for FormNerd med AI-genererte bilete og 3D-modellar frå Tripo-API
 | --- | --- |
 | [`A17/entropihjul/`](A17/entropihjul/README.md) | A17 entropihjul R01: fire variantar av toppvelgaren med rifling som går frå orden til uorden. CAD (STEP, STL, GLB), rendringar, konseptbilete og generator |
 | [`A4/`](A4/README.md) | Entropi: oppdatert CAD v05, prentdelar, rendringar, referansar og heile det tidlegare A1/A3-arbeidet |
+| [`kamera-boge-r01/`](kamera-boge-r01/README.md) | Kamera med boge: den valde ribbeforma gjennom Tripo, mekanisk CAD R01, tre slica P1S-plater, rendringar og monteringsrettleiing M04 |
 | [`A2/`](A2/README.md) | Stereoskopisk kamerahus for to ESP32-CAM med skjult elektronikk: tre designrundar, 3D-modellar, innmatsanalyse, printpakke for P1S og monteringsrettleiing. Lagt bort (oktober 2026) |
 
 ## Felles verktøy
