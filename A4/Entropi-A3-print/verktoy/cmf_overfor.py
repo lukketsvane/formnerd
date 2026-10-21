@@ -33,6 +33,7 @@ for namn in sys.argv[1:] or ["botn", "topp", "utloysar", "usb-lokk"]:
     tc = m.triangles_center
     for (x0, x1), (y0, y1), (z0, z1) in (((1.5, 17.0), (44.0, 86.0), (69.0, 81.0)), ((25.0, 29.6), (114.0, 120.5), (22.4, 31.6))):
         ny &= ~((tc[:, 0] > x0) & (tc[:, 0] < x1) & (tc[:, 1] > y0) & (tc[:, 1] < y1) & (tc[:, 2] > z0) & (tc[:, 2] < z1))
+    ny |= (tc[:, 0] > 66.0) & (np.hypot(tc[:, 1] - 65.0, tc[:, 2] - 32.0) < 27.2)
     f = m.faces.reshape(-1)
     hjorne = c[f].reshape(-1, 3, 3)
     hjorne[ny] = [14, 14, 16]
