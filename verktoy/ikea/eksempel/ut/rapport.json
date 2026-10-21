@@ -1,143 +1,420 @@
 {
- "pdf": "eksempel/ut/rettleiing.pdf",
- "sha256": "a7ca5f7c08ede531b08de2eea6fe8747c66922bbe0c7b6010c823dc01eb6f8da",
- "sider": 10,
- "beslag": {
-  "magnet": {
-   "i_steg": 8,
-   "i_delliste": 8
+  "pdf": "rettleiing.pdf",
+  "sha256": "b766ae540ccc62d220af676214528d2deb65e66e6e85896b767434c738c79355",
+  "sider": 20,
+  "spec_sha256": "174fd0b8b717845e2f5bf8aadb843608de6d2cbb5bf0ad0be106e87cbf4cb73c",
+  "source_commit": "f519652ecc20c5239c7892ae46b9b63d3e8bb6a3",
+  "mesh_sha256": {
+    "../../../A4/Entropi-A3-print/print/stl/botn.stl": "96204921ef3b322b7dc6e2c75af642372a04c62feb68a98d30a87881e4264070",
+    "../../../A4/Entropi-A3-print/print/stl/topp.stl": "d97bb62eeb9f80a5f411644832ef56b2e67670353c8b79b28c3de2ef345d468e",
+    "../../../A4/Entropi-A3-print/print/stl/utloysar.stl": "37ee53aafbbd4386f42dd2ba0a712c5230e9be232ff9e93a8d978794a9365d85",
+    "../../../A4/Entropi-A3-print/print/stl/usb-lokk.stl": "36bf164b42903d069f4c4cc3f41d87391d51155db4a90f30430f0f09751b7078",
+    "../../../A4/Entropi-A3-print/print/stl/hjulaksel.stl": "2a791bc1bbce68e97f0b8e277f2a2a574fc148f8699f60b9284504da10b738a2",
+    "../../../A4/Entropi-A3-print/print/printretning/hjul-A17-V4.stl": "00094e0667fda3191c695e5969327e67cb60dff6e1407becc701a9c82272f542",
+    "../../../A4/Entropi-A3-print/print/proxy/cam_kort.stl": "edefbe30fb7b604dfdef51903ac4b24a32a04b884a6eb5def955654c58c95e75",
+    "../../../A4/Entropi-A3-print/print/proxy/esp32s.stl": "daa590a52394631ac27f42d4b7c7a9b6b5c7a6411c4f74cc667db987a0ef4d4d",
+    "../../../A4/Entropi-A3-print/print/proxy/sd_og_fpc.stl": "457269e3753ed080fee6212ccf11ef782fab78fc660caae00f6f71ddee07af22",
+    "../../../A4/Entropi-A3-print/print/proxy/kameramodul.stl": "6a8f43da23c037f39fecdba3b9698a436c00df923e2ae34f95acc562850c7d84",
+    "../../../A4/Entropi-A3-print/print/proxy/pinnetappar.stl": "0071a72d2a6edbed91374b9334d52ce9f655d1158050235930d640ce2b6bcee1",
+    "../../../A4/Entropi-A3-print/print/proxy/mb_kort.stl": "827395003892d39052e742deca7fc98904865bd97f41e79eb96fee8d88556bd6",
+    "../../../A4/Entropi-A3-print/print/proxy/mb_tappar.stl": "6005030796a0a517357afeb5cab2a2ffc2657062836c117eb22b6001f4cc41d1",
+    "../../../A4/Entropi-A3-print/print/proxy/usb_kontakt.stl": "3fc0954d5a914fffac3557d67db17ecb95536d33e152d75fdcc065d531f86472",
+    "../../../A4/Entropi-A3-print/print/proxy/mb_knappar.stl": "837ec911196e60ca8324744cfefc536dfe8faeb1ebdc30cb3f28535938e63dcd",
+    "../../../A4/Entropi-A3-print/print/proxy/headerar.stl": "c9bcc89b071a0399debfae6616a059cd6e26af98f5306a6c0189719d73b66f93",
+    "../../../A4/Entropi-A3-print/print/proxy/sd_kort.stl": "5a51ab7679c6493f34ad2d20b2fdf0b17c9d13631c0275044a8c085f95a824d5",
+    "../../../A4/Entropi-A3-print/print/proxy/brytar6x6.stl": "2083221c73a611f121d893169063d314df35e6ed4306ad564a30425f21f898a1",
+    "../../../A4/Entropi-A3-print/print/proxy/usb_plugg.stl": "871205fc01099b9c1f3d51e9c900bbd435284c3ce6d759ed52235f2a2bf73144"
   },
-  "stabel": {
-   "i_steg": 1,
-   "i_delliste": 1
+  "beslag": {
+    "cam": {
+      "i_steg": 1,
+      "i_delliste": 1
+    },
+    "mb": {
+      "i_steg": 1,
+      "i_delliste": 1
+    },
+    "sd": {
+      "i_steg": 1,
+      "i_delliste": 1
+    },
+    "brytar": {
+      "i_steg": 1,
+      "i_delliste": 1
+    },
+    "magnet": {
+      "i_steg": 12,
+      "i_delliste": 12
+    },
+    "leidning": {
+      "i_steg": 2,
+      "i_delliste": 2
+    },
+    "kabel": {
+      "i_steg": 1,
+      "i_delliste": 1
+    },
+    "stativmutter": {
+      "i_steg": 1,
+      "i_delliste": 1
+    }
   },
-  "brytar": {
-   "i_steg": 1,
-   "i_delliste": 1
+  "steg": [
+    {
+      "side": 4,
+      "type": "exploded",
+      "mappe": "_arbeid/r/4e918ec8ce623fe5",
+      "mørk_del": 0.0152,
+      "strek_px": 3.3
+    },
+    {
+      "side": 5,
+      "steg": 1,
+      "action": "inspect",
+      "nye_delar": 0,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/4bd5b54e851a0495",
+          "mørk_del": 0.0298,
+          "strek_px": 6.3,
+          "figur_pt": [
+            169.3,
+            459.2,
+            256.7,
+            234.2
+          ]
+        },
+        {
+          "mappe": "_arbeid/r/7b7a42a00e9b41cd",
+          "mørk_del": 0.0249,
+          "strek_px": 5.7,
+          "figur_pt": [
+            163.5,
+            175.0,
+            268.3,
+            234.2
+          ]
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "steg": 2,
+      "action": "assembly",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/bb706600cc07c27b",
+          "mørk_del": 0.0145,
+          "strek_px": 4.2,
+          "figur_pt": [
+            118.3,
+            329.0,
+            358.6,
+            332.4
+          ]
+        }
+      ]
+    },
+    {
+      "side": 7,
+      "steg": 3,
+      "action": "assembly",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/940b2cda7ef181c2",
+          "mørk_del": 0.0182,
+          "strek_px": 3.2,
+          "figur_pt": [
+            52.8,
+            175.0,
+            489.7,
+            486.4
+          ]
+        }
+      ]
+    },
+    {
+      "side": 8,
+      "steg": 4,
+      "action": "inspect",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/84cadeb64ca40b4a",
+          "mørk_del": 0.0251,
+          "strek_px": 5.3,
+          "figur_pt": [
+            150.2,
+            370.0,
+            294.9,
+            291.4
+          ]
+        }
+      ]
+    },
+    {
+      "side": 9,
+      "steg": 5,
+      "action": "assembly",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/d790b6c545bc456d",
+          "mørk_del": 0.0154,
+          "strek_px": 3.0,
+          "figur_pt": [
+            52.4,
+            184.8,
+            490.6,
+            466.8
+          ]
+        }
+      ]
+    },
+    {
+      "side": 10,
+      "steg": 6,
+      "action": "inspect",
+      "nye_delar": 0,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/6392ce328df10a59",
+          "mørk_del": 0.0229,
+          "strek_px": 7.4,
+          "figur_pt": [
+            152.0,
+            370.0,
+            291.4,
+            291.4
+          ]
+        }
+      ]
+    },
+    {
+      "side": 11,
+      "steg": 7,
+      "action": "assembly",
+      "nye_delar": 2,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/7ce98c79ad9de7a8",
+          "mørk_del": 0.0275,
+          "strek_px": 6.3,
+          "figur_pt": [
+            168.8,
+            456.8,
+            257.6,
+            218.8
+          ]
+        },
+        {
+          "mappe": "_arbeid/r/3583b1586f65b7f6",
+          "mørk_del": 0.0152,
+          "strek_px": 5.2,
+          "figur_pt": [
+            184.8,
+            188.0,
+            225.7,
+            218.8
+          ]
+        }
+      ]
+    },
+    {
+      "side": 12,
+      "steg": 8,
+      "action": "inspect",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/95b859260109c124",
+          "mørk_del": 0.0084,
+          "strek_px": 2.6,
+          "figur_pt": [
+            52.4,
+            236.8,
+            490.6,
+            375.8
+          ]
+        }
+      ]
+    },
+    {
+      "side": 13,
+      "steg": 9,
+      "action": "assembly",
+      "nye_delar": 3,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/371b42247a81c01e",
+          "mørk_del": 0.0237,
+          "strek_px": 4.1,
+          "figur_pt": [
+            122.3,
+            329.0,
+            350.7,
+            332.4
+          ]
+        }
+      ]
+    },
+    {
+      "side": 14,
+      "steg": 10,
+      "action": "assembly",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/39c615c0296df4e2",
+          "mørk_del": 0.0486,
+          "strek_px": 9.9,
+          "figur_pt": [
+            188.3,
+            456.8,
+            218.8,
+            218.8
+          ]
+        },
+        {
+          "mappe": "_arbeid/r/83f8243c9994f296",
+          "mørk_del": 0.0197,
+          "strek_px": 9.9,
+          "figur_pt": [
+            188.3,
+            188.0,
+            218.8,
+            218.8
+          ]
+        }
+      ]
+    },
+    {
+      "side": 15,
+      "steg": 11,
+      "action": "assembly",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/47af0b9208594594",
+          "mørk_del": 0.0375,
+          "strek_px": 10.5,
+          "figur_pt": [
+            194.8,
+            469.8,
+            205.8,
+            205.8
+          ]
+        },
+        {
+          "mappe": "_arbeid/r/e7831b4a83e98715",
+          "mørk_del": 0.0288,
+          "strek_px": 10.5,
+          "figur_pt": [
+            194.8,
+            214.0,
+            205.8,
+            205.8
+          ]
+        }
+      ]
+    },
+    {
+      "side": 16,
+      "steg": 12,
+      "action": "assembly",
+      "nye_delar": 1,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/3974d60c35ec0ae0",
+          "mørk_del": 0.0192,
+          "strek_px": 3.2,
+          "figur_pt": [
+            107.1,
+            175.0,
+            381.0,
+            486.4
+          ]
+        }
+      ]
+    },
+    {
+      "side": 17,
+      "steg": 13,
+      "action": "assembly",
+      "nye_delar": 2,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/fcf6764387b2a7cb",
+          "mørk_del": 0.0405,
+          "strek_px": 9.9,
+          "figur_pt": [
+            188.3,
+            456.8,
+            218.8,
+            218.8
+          ]
+        },
+        {
+          "mappe": "_arbeid/r/8a6c546c2f56cc55",
+          "mørk_del": 0.0594,
+          "strek_px": 9.9,
+          "figur_pt": [
+            188.3,
+            188.0,
+            218.8,
+            218.8
+          ]
+        }
+      ]
+    },
+    {
+      "side": 18,
+      "steg": 14,
+      "action": "assembly",
+      "nye_delar": 2,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/17c3c2a8d2bd4533",
+          "mørk_del": 0.0101,
+          "strek_px": 3.3,
+          "figur_pt": [
+            138.0,
+            329.0,
+            319.3,
+            346.5
+          ]
+        }
+      ]
+    },
+    {
+      "side": 19,
+      "steg": 15,
+      "action": "inspect",
+      "nye_delar": 0,
+      "figurar": [
+        {
+          "mappe": "_arbeid/r/3a2f8f37a4519373",
+          "mørk_del": 0.0166,
+          "strek_px": 2.9,
+          "figur_pt": [
+            55.3,
+            188.0,
+            484.7,
+            505.4
+          ]
+        }
+      ]
+    }
+  ],
+  "åtvaringar": [],
+  "validation": {
+    "portrait_a4_pages": 20,
+    "bookmarks": 20,
+    "source_links": 5,
+    "selectable_text": true,
+    "contour_checks_passed": 6,
+    "visual_review": "All pages rendered and reviewed; corrected detail pages reviewed again."
   }
- },
- "steg": [
-  {
-   "side": 4,
-   "type": "exploded",
-   "mappe": "eksempel/ut/_arbeid/r/9d2c1236d13e99d6",
-   "mørk_del": 0.0247
-  },
-  {
-   "side": 5,
-   "steg": 1,
-   "nye_delar": 2,
-   "figurar": [
-    {
-     "mappe": "eksempel/ut/_arbeid/r/832848649d12eb5b",
-     "mørk_del": 0.0201,
-     "figur_pt": [
-      79.7,
-      436.9,
-      327.9,
-      302.9
-     ]
-    },
-    {
-     "mappe": "eksempel/ut/_arbeid/r/a085c95899ced5d7",
-     "mørk_del": 0.0156,
-     "figur_pt": [
-      56.0,
-      104.0,
-      375.3,
-      302.9
-     ]
-    }
-   ]
-  },
-  {
-   "side": 6,
-   "steg": 2,
-   "nye_delar": 2,
-   "figurar": [
-    {
-     "mappe": "eksempel/ut/_arbeid/r/50c0bd813cd86390",
-     "mørk_del": 0.0116,
-     "figur_pt": [
-      59.8,
-      425.9,
-      367.6,
-      313.9
-     ]
-    },
-    {
-     "mappe": "eksempel/ut/_arbeid/r/df36075ed63ff1ed",
-     "mørk_del": 0.0232,
-     "figur_pt": [
-      89.0,
-      82.0,
-      309.3,
-      313.9
-     ]
-    }
-   ]
-  },
-  {
-   "side": 7,
-   "steg": 3,
-   "nye_delar": 2,
-   "figurar": [
-    {
-     "mappe": "eksempel/ut/_arbeid/r/440953a1141a0a94",
-     "mørk_del": 0.0231,
-     "figur_pt": [
-      72.2,
-      425.9,
-      342.8,
-      313.9
-     ]
-    },
-    {
-     "mappe": "eksempel/ut/_arbeid/r/86779563ada34510",
-     "mørk_del": 0.0213,
-     "figur_pt": [
-      96.6,
-      82.0,
-      294.0,
-      313.9
-     ]
-    }
-   ]
-  },
-  {
-   "side": 8,
-   "steg": 4,
-   "nye_delar": 1,
-   "figurar": [
-    {
-     "mappe": "eksempel/ut/_arbeid/r/b67d68e6d9a5ea19",
-     "mørk_del": 0.0209,
-     "figur_pt": [
-      36.0,
-      123.0,
-      521.3,
-      597.8
-     ]
-    }
-   ]
-  },
-  {
-   "side": 9,
-   "steg": 5,
-   "nye_delar": 1,
-   "figurar": [
-    {
-     "mappe": "eksempel/ut/_arbeid/r/415a1413369bd57f",
-     "mørk_del": 0.018,
-     "figur_pt": [
-      36.0,
-      121.5,
-      521.3,
-      578.9
-     ]
-    }
-   ]
-  }
- ],
- "åtvaringar": []
 }

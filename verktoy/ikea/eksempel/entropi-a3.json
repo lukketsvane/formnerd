@@ -1,15 +1,41 @@
 {
   "meta": {
     "title": "Entropi A3",
-    "subtitle": "Kamera for ESP32-CAM · test av verktoy/ikea",
-    "footer": "Entropi A3 · utkast, ikkje prøvemontert"
+    "subtitle": "Monteringsrettleiing",
+    "edition": "R02 · 21.10.2026",
+    "orientation": "portrait",
+    "footer": "ENTROPI A3 · R02",
+    "description": "Delt kamerahus for éin ESP32-CAM. Prenta aksel og A17 V4-hjul.",
+    "status": "Prototype. Fysisk passform og kameraelektronikk er ikkje verifiserte.",
+    "author": "Iver Raknes Finne · FormNerd · AHO",
+    "source_commit": "f519652ecc20c5239c7892ae46b9b63d3e8bb6a3",
+    "source_notes": [
+      "Geometri og monteringsmål: A4/Entropi-A3-print/verktoy/delar_konfig.json og lag_skal.py.",
+      "Kontrollgrunnlag: A4/Entropi-A3-print/print/kontroll.json. Proxyar har nominelle komponentmål.",
+      "Hjulet er A17 V4. Mutterillustrasjonen er nominell; prøv den faktiske mutteren i lomma.",
+      "Programvare for fotografering og EC11 er ikkje med i denne leveransen."
+    ]
+  },
+  "style": {
+    "line_pt": 0.9,
+    "crease": 55,
+    "min_px": 80,
+    "new_fill": [
+      235,
+      235,
+      235
+    ],
+    "ghost_grey": 180,
+    "margin": 45.35,
+    "feature_pt": 0.55,
+    "seam_pt": 0.65
   },
   "views": {
     "iso": {
       "dir": [
         0.95,
         -0.85,
-        0.75
+        0.65
       ],
       "up": [
         0,
@@ -17,11 +43,35 @@
         1
       ]
     },
-    "under": {
+    "oversikt": {
       "dir": [
         0.95,
         -0.85,
-        -0.75
+        0.42
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "innside_botn": {
+      "dir": [
+        0.6,
+        -0.7,
+        1.15
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "innside_topp": {
+      "dir": [
+        0.6,
+        -0.7,
+        -1.15
       ],
       "up": [
         0,
@@ -29,11 +79,95 @@
         -1
       ]
     },
-    "bak": {
+    "under": {
       "dir": [
-        0.6,
-        1.0,
+        0.5,
+        -0.65,
+        -1.0
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ]
+    },
+    "kort": {
+      "dir": [
+        1,
+        -0.35,
+        0.3
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "kort_saman": {
+      "dir": [
+        0.85,
+        -1,
+        0.55
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "usb": {
+      "dir": [
+        0.55,
+        1,
+        0.45
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "brytar": {
+      "dir": [
+        1,
+        -0.7,
+        0.45
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hjul": {
+      "dir": [
+        0.8,
+        -0.7,
         0.7
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "profil": {
+      "dir": [
+        0,
+        -1,
+        0.04
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "fram": {
+      "dir": [
+        1,
+        -0.12,
+        0.3
       ],
       "up": [
         0,
@@ -43,160 +177,320 @@
     }
   },
   "parts": {
-    "kropp": {
-      "mesh": "../../../A4/Entropi-A3-print/print/stl/kropp.stl",
-      "id": "1",
+    "botn": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/botn.stl",
+      "id": "P01",
+      "name": "Botnskal",
+      "detail": "Med skinne og tre styrepinnar",
       "qty": 1,
       "kind": "printed",
-      "crease": 55,
-      "min_px": 400
+      "crease": 58,
+      "min_px": 180,
+      "thumb_view": "innside_botn",
+      "organic": true,
+      "color": "#c7c7c5"
     },
-    "luke": {
-      "mesh": "../../../A4/Entropi-A3-print/print/stl/luke.stl",
-      "id": "2",
+    "topp": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/topp.stl",
+      "id": "P02",
+      "name": "Toppskal",
+      "detail": "Magnetfeste og brytarlomme",
       "qty": 1,
       "kind": "printed",
-      "thumb_view": "under"
-    },
-    "haldar": {
-      "mesh": "../../../A4/Entropi-A3-print/print/stl/stabelhaldar.stl",
-      "id": "3",
-      "qty": 1,
-      "kind": "printed"
+      "crease": 58,
+      "min_px": 180,
+      "thumb_view": "innside_topp",
+      "organic": true,
+      "color": "#b9bab7"
     },
     "utloysar": {
       "mesh": "../../../A4/Entropi-A3-print/print/stl/utloysar.stl",
-      "id": "4",
+      "id": "P03",
+      "name": "Utløysar",
+      "detail": "Limast på brytarstempelet",
       "qty": 1,
-      "kind": "printed"
+      "kind": "printed",
+      "crease": 45,
+      "min_px": 20
     },
     "usblokk": {
       "mesh": "../../../A4/Entropi-A3-print/print/stl/usb-lokk.stl",
-      "id": "5",
+      "id": "P04",
+      "name": "USB-lokk",
+      "detail": "Kan takast ut",
       "qty": 1,
       "kind": "printed",
-      "thumb_view": "bak"
+      "crease": 45,
+      "min_px": 20,
+      "thumb_view": "usb"
+    },
+    "hjulaksel": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/hjulaksel.stl",
+      "id": "P05",
+      "name": "Prenta aksel",
+      "detail": "Fast hjul, utan elektrisk funksjon",
+      "qty": 1,
+      "kind": "printed",
+      "crease": 45,
+      "min_px": 20
+    },
+    "hjul": {
+      "mesh": "../../../A4/Entropi-A3-print/print/printretning/hjul-A17-V4.stl",
+      "id": "P06",
+      "name": "A17 V4-hjul",
+      "detail": "Ø24 mm · D-hol",
+      "qty": 1,
+      "kind": "printed",
+      "offset": [
+        19.12,
+        91.89,
+        80.5
+      ],
+      "crease": 58,
+      "min_px": 55,
+      "thumb_view": "hjul"
+    },
+    "cam": {
+      "mesh": [
+        "../../../A4/Entropi-A3-print/print/proxy/cam_kort.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/esp32s.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/sd_og_fpc.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/kameramodul.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/pinnetappar.stl"
+      ],
+      "letter": "H01",
+      "name": "ESP32-CAM",
+      "detail": "Med kameramodul",
+      "qty": 1,
+      "kind": "hardware",
+      "crease": 35,
+      "min_px": 20,
+      "thumb_view": "kort"
+    },
+    "mb": {
+      "mesh": [
+        "../../../A4/Entropi-A3-print/print/proxy/mb_kort.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/mb_tappar.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/usb_kontakt.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/mb_knappar.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/headerar.stl"
+      ],
+      "letter": "H02",
+      "name": "ESP32-CAM-MB",
+      "detail": "Micro-USB-utgåve",
+      "qty": 1,
+      "kind": "hardware",
+      "crease": 35,
+      "min_px": 20,
+      "thumb_view": "kort_saman"
+    },
+    "sd": {
+      "mesh": "../../../A4/Entropi-A3-print/print/proxy/sd_kort.stl",
+      "letter": "H03",
+      "name": "microSD",
+      "detail": "Kort for biletfiler",
+      "qty": 1,
+      "kind": "hardware",
+      "crease": 35,
+      "min_px": 15,
+      "thumb_view": "kort"
+    },
+    "brytar": {
+      "mesh": "../../../A4/Entropi-A3-print/print/proxy/brytar6x6.stl",
+      "letter": "H04",
+      "name": "Trykknapp",
+      "detail": "6 × 6 mm · kontroller bein og høgd",
+      "qty": 1,
+      "kind": "hardware",
+      "crease": 35,
+      "min_px": 15,
+      "thumb_view": "brytar"
     },
     "magnet": {
       "primitive": {
         "cylinder": {
-          "r": 3.0,
-          "h": 3.0
+          "r": 3,
+          "h": 3
         }
       },
-      "letter": "A",
-      "qty": 8,
-      "kind": "hardware"
+      "letter": "H05",
+      "name": "Magnet",
+      "detail": "Ø6 × 3 mm · seks par",
+      "qty": 12,
+      "kind": "hardware",
+      "crease": 45,
+      "min_px": 15
     },
-    "stabel": {
-      "mesh": [
-        "../../../A4/Entropi-A3-print/print/proxy/cam_kort.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/esp32s.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/headerar.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/kameramodul.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/mb_kort.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/mb_tappar.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/mb_knappar.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/sd_kort.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/sd_og_fpc.stl",
-        "../../../A4/Entropi-A3-print/print/proxy/usb_kontakt.stl"
-      ],
-      "letter": "B",
-      "qty": 1,
-      "kind": "hardware"
+    "leidning": {
+      "primitive": {
+        "cylinder": {
+          "r": 0.4,
+          "h": 150
+        },
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "letter": "H06",
+      "name": "Leidning",
+      "detail": "26–30 AWG · om lag 150 mm",
+      "qty": 2,
+      "kind": "hardware",
+      "crease": 60,
+      "min_px": 10
     },
-    "brytar": {
-      "mesh": "../../../A4/Entropi-A3-print/print/proxy/brytar6x6.stl",
-      "letter": "C",
+    "kabel": {
+      "mesh": "../../../A4/Entropi-A3-print/print/proxy/usb_plugg.stl",
+      "letter": "H07",
+      "name": "Micro-USB-kabel",
+      "detail": "For straum og programmering",
       "qty": 1,
-      "kind": "hardware"
+      "kind": "hardware",
+      "crease": 40,
+      "min_px": 15,
+      "thumb_view": "usb"
+    },
+    "stativmutter": {
+      "primitive": {
+        "cylinder": {
+          "r": 6.408587988004846,
+          "h": 5.5,
+          "sections": 6,
+          "inner_r": 3.2
+        },
+        "rotation": [
+          0,
+          0,
+          30
+        ]
+      },
+      "letter": "H08",
+      "name": "Stativmutter",
+      "detail": "1/4″-20 · prøv mot lomma",
+      "qty": 1,
+      "kind": "hardware",
+      "crease": 35,
+      "min_px": 15,
+      "illustrative": true
     }
   },
   "pages": [
     {
       "type": "cover",
-      "title": "MONTERINGSRETTLEIING",
+      "title": "ENTROPI A3",
+      "subtitle": "Monteringsrettleiing",
+      "intro": "Delt kamerahus · ESP32-CAM",
       "view": "iso",
       "scene": [
         {
-          "part": "kropp"
+          "part": "botn"
+        },
+        {
+          "part": "topp"
         },
         {
           "part": "utloysar"
         },
         {
+          "part": "hjul"
+        },
+        {
           "part": "usblokk"
         },
         {
-          "part": "luke"
+          "part": "cam"
+        },
+        {
+          "part": "mb"
+        },
+        {
+          "part": "sd"
+        },
+        {
+          "part": "hjulaksel"
+        },
+        {
+          "part": "brytar"
         }
-      ]
+      ],
+      "note": "Prenta aksel og A17 V4-hjul",
+      "status": "Prototype · prøv passforma før liming."
     },
     {
-      "type": "inventory"
+      "type": "inventory",
+      "title": "Prenta delar",
+      "intro": "Seks delar. Tre styrepinnar er ein del av botnskalet.",
+      "parts": [
+        "botn",
+        "topp",
+        "utloysar",
+        "usblokk",
+        "hjulaksel",
+        "hjul"
+      ],
+      "cols": 2,
+      "proportional": false,
+      "note": "Bruk V4-hjulet i denne rettleiinga. Delane er viste i ulike målestokkar."
     },
     {
-      "type": "hardware"
+      "type": "hardware",
+      "title": "Dette treng du",
+      "intro": "Kontroller at dei faktiske komponentane passar før du limer.",
+      "parts": [
+        "cam",
+        "mb",
+        "sd",
+        "brytar",
+        "magnet",
+        "leidning",
+        "kabel",
+        "stativmutter"
+      ],
+      "cols": 2,
+      "proportional": false,
+      "note": "Verktøy: CA-lim, loddebolt og tinn, avbitar, tusj og multimeter. Isoler loddepunkta."
     },
     {
       "type": "exploded",
-      "view": "under",
+      "title": "Slik heng delane saman",
+      "intro": "Botn og topp møtest i seks magnetpar. Tre pinnar styrer lukkinga.",
+      "view": "oversikt",
       "scene": [
         {
-          "part": "kropp"
+          "part": "botn"
         },
         {
-          "part": "stabel",
+          "part": "topp",
           "explode": [
             0,
             0,
-            -40
+            95
           ]
         },
         {
-          "part": "haldar",
+          "part": "cam",
           "explode": [
             0,
             0,
-            -75
+            40
           ]
         },
         {
-          "part": "luke",
+          "part": "mb",
           "explode": [
             0,
             0,
-            -110
+            40
           ]
         },
         {
-          "part": "magnet",
-          "at": [
-            [
-              22.6,
-              58.0,
-              8.5
-            ],
-            [
-              22.6,
-              77.0,
-              8.5
-            ],
-            [
-              22.6,
-              96.0,
-              8.5
-            ],
-            [
-              57.5,
-              66.0,
-              8.5
-            ]
-          ],
+          "part": "sd",
           "explode": [
             0,
             0,
-            -92
+            40
           ]
         },
         {
@@ -204,116 +498,754 @@
           "explode": [
             0,
             0,
-            30
+            172
+          ]
+        },
+        {
+          "part": "hjulaksel",
+          "explode": [
+            0,
+            0,
+            116
+          ]
+        },
+        {
+          "part": "hjul",
+          "explode": [
+            0,
+            0,
+            145
           ]
         },
         {
           "part": "usblokk",
           "explode": [
             0,
-            30,
+            32,
             0
           ]
+        },
+        {
+          "part": "brytar",
+          "explode": [
+            0,
+            0,
+            100
+          ]
+        },
+        {
+          "part": "stativmutter",
+          "at": [
+            [
+              37,
+              65,
+              -1.25
+            ]
+          ],
+          "explode": [
+            0,
+            0,
+            -22
+          ]
         }
+      ],
+      "all_instances": false,
+      "note": "H05-magnetane og H06-leidningane blir viste i monteringsstega. Sjå H01–H08 i dellista.",
+      "guides": [
+        [
+          [
+            45.5,
+            13.5,
+            209
+          ],
+          [
+            45.5,
+            13.5,
+            164
+          ]
+        ],
+        [
+          [
+            31.12,
+            103.89,
+            219
+          ],
+          [
+            31.12,
+            103.89,
+            202
+          ]
+        ]
       ]
     },
     {
       "type": "step",
-      "title": "Magnetar",
+      "title": "Prøv delane",
+      "hardware": [],
+      "figures": [
+        {
+          "view": "innside_botn",
+          "scene": [
+            {
+              "part": "botn"
+            }
+          ],
+          "labels": false,
+          "caption": "Botnskal: reins spor, lomme og magnetfeste."
+        },
+        {
+          "view": "innside_topp",
+          "scene": [
+            {
+              "part": "topp"
+            }
+          ],
+          "labels": false,
+          "caption": "Toppskal: fjern støtta frå innsida."
+        }
+      ],
+      "action": "inspect",
       "icons": [
-        "lim"
+        "ok"
+      ],
+      "intro": "Fjern all støtte og laus plast.",
+      "note": "Prøv skala mot kvarandre utan lim. Prøv òg kortstabel, aksel og USB-lokk.",
+      "check": "Skala møtest utan kraft, og alle tre pinnane går lett i hola.",
+      "connector": false
+    },
+    {
+      "type": "step",
+      "title": "Set i stativmutteren",
+      "hardware": [
+        [
+          "stativmutter",
+          1
+        ]
       ],
       "figures": [
         {
           "view": "under",
           "scene": [
             {
-              "part": "kropp"
+              "part": "botn"
             },
             {
-              "part": "magnet",
+              "part": "stativmutter",
               "role": "new",
+              "at": [
+                [
+                  37,
+                  65,
+                  -1.25
+                ]
+              ],
               "explode": [
                 0,
                 0,
-                -22
+                -24
               ],
+              "line": "arrow"
+            }
+          ],
+          "labels": false,
+          "caption": "Mutteren går inn frå utsida, under skinna."
+        },
+        {
+          "view": "under",
+          "scene": [
+            {
+              "part": "botn"
+            },
+            {
+              "part": "stativmutter",
               "at": [
                 [
-                  22.6,
-                  58.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  77.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  96.0,
-                  8.5
-                ],
-                [
-                  57.5,
-                  66.0,
-                  8.5
+                  37,
+                  65,
+                  -1.25
                 ]
               ]
             }
-          ]
-        },
+          ],
+          "labels": false,
+          "centre": [
+            37,
+            65,
+            -2
+          ],
+          "span": 14,
+          "crop": false,
+          "caption": "Lim langs sidene. Hald gjengene frie."
+        }
+      ],
+      "icons": [
+        "snu",
+        "lim"
+      ],
+      "note": "Prøv mutteren i sekskantlomma før liming. La limet herde før vidare arbeid.",
+      "check": "Mutteren sit fast utan lim i gjengene.",
+      "connector": false,
+      "intro": "Snu botnskalet med undersida mot deg.",
+      "flow": "detail"
+    },
+    {
+      "type": "step",
+      "title": "Lim magnetane i botnen",
+      "hardware": [
+        [
+          "magnet",
+          6
+        ]
+      ],
+      "figures": [
         {
-          "view": "iso",
+          "view": "innside_botn",
           "scene": [
             {
-              "part": "luke"
+              "part": "botn"
             },
             {
               "part": "magnet",
               "role": "new",
+              "at": [
+                [
+                  14.2,
+                  12.8,
+                  30.5
+                ],
+                [
+                  18.5,
+                  112.0,
+                  30.5
+                ],
+                [
+                  69.8,
+                  39.8,
+                  30.5
+                ],
+                [
+                  11.8,
+                  65.8,
+                  30.5
+                ],
+                [
+                  11.8,
+                  95.2,
+                  30.5
+                ],
+                [
+                  60.8,
+                  13.8,
+                  30.5
+                ]
+              ],
               "explode": [
                 0,
                 0,
-                16
-              ],
+                18
+              ]
+            }
+          ],
+          "labels": false,
+          "caption": "Seks magnetar, éin i kvar lomme."
+        }
+      ],
+      "icons": [
+        "lim"
+      ],
+      "intro": "Same pol vender mot delingsflata på alle seks.",
+      "note": "Bruk lite lim. Magnetane skal liggje heilt nede i lommene. La limet herde.",
+      "check": "Ingen magnet stikk over delingsflata."
+    },
+    {
+      "type": "step",
+      "title": "Merk dei seks motmagnetane",
+      "hardware": [],
+      "figures": [
+        {
+          "view": "innside_botn",
+          "scene": [
+            {
+              "part": "botn"
+            },
+            {
+              "part": "magnet",
               "at": [
                 [
-                  22.6,
-                  58.0,
-                  5.5
+                  14.2,
+                  12.8,
+                  30.5
                 ],
                 [
-                  22.6,
-                  77.0,
-                  5.5
+                  18.5,
+                  112.0,
+                  30.5
                 ],
                 [
-                  22.6,
-                  96.0,
-                  5.5
+                  69.8,
+                  39.8,
+                  30.5
                 ],
                 [
-                  57.5,
-                  66.0,
-                  5.5
+                  11.8,
+                  65.8,
+                  30.5
+                ],
+                [
+                  11.8,
+                  95.2,
+                  30.5
+                ],
+                [
+                  60.8,
+                  13.8,
+                  30.5
                 ]
               ]
+            },
+            {
+              "part": "magnet",
+              "role": "new",
+              "at": [
+                [
+                  14.2,
+                  12.8,
+                  33.5
+                ],
+                [
+                  18.5,
+                  112.0,
+                  33.5
+                ],
+                [
+                  69.8,
+                  39.8,
+                  33.5
+                ],
+                [
+                  11.8,
+                  65.8,
+                  33.5
+                ],
+                [
+                  11.8,
+                  95.2,
+                  33.5
+                ],
+                [
+                  60.8,
+                  13.8,
+                  33.5
+                ]
+              ],
+              "explode": [
+                0,
+                0,
+                14
+              ]
+            }
+          ],
+          "labels": false,
+          "caption": "Legg éin laus magnet på kvar fastlimte magnet."
+        }
+      ],
+      "action": "inspect",
+      "intro": "La magnetane finne den retninga som trekkjer.",
+      "note": "Merk den frie flata på alle seks motmagnetane. Ta dei av utan å miste oversikta over merket.",
+      "diagram": {
+        "type": "magnet_pair",
+        "marked_face": "top_outer",
+        "top_label": "merk denne flata",
+        "bottom_label": "botnmagnet",
+        "note": "Merket skal inn mot botnen av lomma i toppskalet."
+      },
+      "check": "Dei to flatene som møter kvarandre, trekkjer."
+    },
+    {
+      "type": "step",
+      "title": "Lim magnetane i toppen",
+      "hardware": [
+        [
+          "magnet",
+          6
+        ]
+      ],
+      "figures": [
+        {
+          "view": "innside_topp",
+          "scene": [
+            {
+              "part": "topp"
+            },
+            {
+              "part": "magnet",
+              "role": "new",
+              "at": [
+                [
+                  14.2,
+                  12.8,
+                  33.5
+                ],
+                [
+                  18.5,
+                  112.0,
+                  33.5
+                ],
+                [
+                  69.8,
+                  39.8,
+                  33.5
+                ],
+                [
+                  11.8,
+                  65.8,
+                  33.5
+                ],
+                [
+                  11.8,
+                  95.2,
+                  33.5
+                ],
+                [
+                  60.8,
+                  13.8,
+                  33.5
+                ]
+              ],
+              "explode": [
+                0,
+                0,
+                -18
+              ]
+            }
+          ],
+          "labels": false,
+          "caption": "Snu toppskalet med innsida opp."
+        }
+      ],
+      "icons": [
+        "snu",
+        "lim"
+      ],
+      "intro": "Snu toppskalet. Den merkte flata skal inn mot botnen av lomma.",
+      "note": "Prøv polariteten før liming. Lim dei seks magnetane og la limet herde.",
+      "check": "Alle seks par trekkjer skala saman."
+    },
+    {
+      "type": "step",
+      "title": "Klargjer dei to leidningane",
+      "hardware": [
+        [
+          "cam",
+          1
+        ],
+        [
+          "leidning",
+          2
+        ]
+      ],
+      "figures": [
+        {
+          "view": "kort",
+          "scene": [
+            {
+              "part": "cam"
+            }
+          ],
+          "labels": false,
+          "centre": [
+            61,
+            73,
+            31
+          ],
+          "span": 28,
+          "crop": false,
+          "caption": "Bruk namna GND og IO13 på det faktiske kortet."
+        }
+      ],
+      "intro": "Kople frå USB før du loddar.",
+      "note": "Lodd éi leidning til GND og éi til IO13. Isoler loddepunkta. Dei andre endane skal vere frie til brytaren blir montert.",
+      "diagram": {
+        "type": "shutter_wiring",
+        "left_label": "ESP32-CAM",
+        "right_label": "trykknapp",
+        "pins": [
+          "IO13",
+          "GND"
+        ],
+        "wire_count": 2,
+        "switch_state": "normally_open",
+        "note": "To kontaktgrupper: samband berre når knappen blir trykt inn."
+      },
+      "check": "Ingen loddebru mellom nabopinnar.",
+      "action": "inspect",
+      "parts_used": [
+        [
+          "cam",
+          1
+        ],
+        [
+          "leidning",
+          2
+        ]
+      ]
+    },
+    {
+      "type": "step",
+      "title": "Set saman kamerastabelen",
+      "hardware": [
+        [
+          "mb",
+          1
+        ],
+        [
+          "sd",
+          1
+        ]
+      ],
+      "figures": [
+        {
+          "view": "kort_saman",
+          "scene": [
+            {
+              "part": "mb"
+            },
+            {
+              "part": "cam",
+              "role": "new",
+              "explode": [
+                26,
+                0,
+                0
+              ],
+              "line": "arrow"
+            }
+          ],
+          "labels": false,
+          "caption": "Rett inn begge pinnerekkjene før du pressar korta saman."
+        },
+        {
+          "view": "kort_saman",
+          "scene": [
+            {
+              "part": "mb"
+            },
+            {
+              "part": "cam"
+            },
+            {
+              "part": "sd",
+              "role": "new",
+              "explode": [
+                0,
+                -22,
+                0
+              ],
+              "line": "arrow"
+            }
+          ],
+          "labels": false,
+          "caption": "Set microSD-kortet i kortsporet."
+        }
+      ],
+      "note": "Ingen pinnar skal stå på sida av kontaktane. Følg orienteringa til kamera, SD-spor og micro-USB.",
+      "check": "Korta sit jamt og parallelt.",
+      "parts_used": [
+        [
+          "cam",
+          1
+        ],
+        [
+          "mb",
+          1
+        ],
+        [
+          "sd",
+          1
+        ]
+      ]
+    },
+    {
+      "type": "step",
+      "title": "Test før du byggjer inn",
+      "hardware": [
+        [
+          "kabel",
+          1
+        ]
+      ],
+      "figures": [
+        {
+          "view": "usb",
+          "scene": [
+            {
+              "part": "cam"
+            },
+            {
+              "part": "mb"
+            },
+            {
+              "part": "sd"
+            },
+            {
+              "part": "kabel",
+              "role": "new",
+              "explode": [
+                0,
+                30,
+                0
+              ],
+              "line": "arrow"
+            }
+          ],
+          "labels": false,
+          "caption": "Test korta før innbygging. Kabelen er vist som ein forenkla plugg.",
+          "annotations": [
+            {
+              "point": [
+                49.65,
+                96,
+                32
+              ],
+              "text": "Micro-USB på MB-kortet",
+              "width": 111
             }
           ]
         }
       ],
-      "note": "Same pol ut på alle åtte. Merk sida med tusj."
+      "action": "inspect",
+      "intro": "Last opp eigna firmware og kontroller kamera og microSD.",
+      "note": "IO13 er delt med SD-bussen. Bruk SD i 1-bit-modus og hald knappen sleppt under oppstart. Test lagring; programvare følgjer ikkje med.",
+      "check": "Eit prøvebilete kan opnast frå microSD-kortet. Kople frå USB før montering."
     },
     {
       "type": "step",
-      "title": "Brytar og utløysar",
+      "title": "Senk stabelen ned",
+      "hardware": [],
       "figures": [
         {
-          "view": "under",
+          "view": "innside_botn",
           "scene": [
             {
-              "part": "kropp",
+              "part": "botn"
+            },
+            {
+              "part": "magnet",
+              "at": [
+                [
+                  14.2,
+                  12.8,
+                  30.5
+                ],
+                [
+                  18.5,
+                  112.0,
+                  30.5
+                ],
+                [
+                  69.8,
+                  39.8,
+                  30.5
+                ],
+                [
+                  11.8,
+                  65.8,
+                  30.5
+                ],
+                [
+                  11.8,
+                  95.2,
+                  30.5
+                ],
+                [
+                  60.8,
+                  13.8,
+                  30.5
+                ]
+              ]
+            },
+            {
+              "part": "cam",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                38
+              ],
+              "line": "arrow"
+            },
+            {
+              "part": "mb",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                38
+              ],
+              "line": "none"
+            },
+            {
+              "part": "sd",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                38
+              ],
+              "line": "none"
+            }
+          ],
+          "labels": false,
+          "caption": "Begge korta skal følgje spora i dei to stolpane."
+        },
+        {
+          "view": "kort",
+          "scene": [
+            {
+              "part": "botn"
+            },
+            {
+              "part": "cam"
+            },
+            {
+              "part": "mb"
+            },
+            {
+              "part": "sd"
+            }
+          ],
+          "labels": false,
+          "centre": [
+            65,
+            65,
+            30
+          ],
+          "span": 18,
+          "crop": false,
+          "caption": "Linsa møter det halve linsesetet utan å bli pressa."
+        }
+      ],
+      "intro": "Hald dei to leidningane frie.",
+      "note": "Senk stabelen rett ned. Stopp og rett inn på nytt dersom han kilar seg.",
+      "check": "Korta er sette heilt ned, og linsa står i senter.",
+      "connector": false,
+      "flow": "detail"
+    },
+    {
+      "type": "step",
+      "title": "Monter brytaren",
+      "hardware": [
+        [
+          "brytar",
+          1
+        ]
+      ],
+      "figures": [
+        {
+          "view": "iso",
+          "scene": [
+            {
+              "part": "topp",
               "role": "ghost"
             },
             {
@@ -322,16 +1254,212 @@
               "explode": [
                 0,
                 0,
-                -35
+                24
+              ],
+              "line": "arrow"
+            }
+          ],
+          "labels": false,
+          "centre": [
+            45.2,
+            13.4,
+            61
+          ],
+          "span": 30,
+          "crop": false,
+          "caption": "Før leidningane opp gjennom holet før du loddar."
+        },
+        {
+          "view": "brytar",
+          "scene": [
+            {
+              "part": "brytar"
+            }
+          ],
+          "labels": false,
+          "centre": [
+            45.2,
+            13.4,
+            54
+          ],
+          "span": 8,
+          "crop": false,
+          "caption": "Kontroller kontaktgruppene med multimeter."
+        }
+      ],
+      "icons": [
+        "lim"
+      ],
+      "note": "USB skal vere fråkopla under lodding. Kople éi leidning til kvar kontaktgruppe. Prøv høgda før du limer brytarkroppen i lomma.",
+      "check": "Knappen returnerer fritt. Test utløysar og SD-lagring før huset blir lukka.",
+      "connector": false
+    },
+    {
+      "type": "step",
+      "title": "Monter den prenta akselen",
+      "hardware": [],
+      "figures": [
+        {
+          "view": "hjul",
+          "scene": [
+            {
+              "part": "topp"
+            },
+            {
+              "part": "hjulaksel",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                24
+              ],
+              "line": "arrow"
+            }
+          ],
+          "labels": false,
+          "centre": [
+            31.12,
+            103.89,
+            83
+          ],
+          "span": 25,
+          "crop": false,
+          "caption": "Lim foten i forsenkinga; hald D-flata fri."
+        },
+        {
+          "view": "profil",
+          "scene": [
+            {
+              "part": "topp"
+            },
+            {
+              "part": "hjulaksel"
+            }
+          ],
+          "labels": false,
+          "centre": [
+            31.12,
+            103.89,
+            81
+          ],
+          "span": 13,
+          "crop": false,
+          "caption": "Akselen står 5,5 mm over den lokale toppflata."
+        }
+      ],
+      "icons": [
+        "lim"
+      ],
+      "note": "Dette er den faste akselen P05. Hjulet har ingen elektrisk funksjon.",
+      "check": "Akselen står rett og sit fast.",
+      "alternative": "EC11 kan erstatte P05 og festast med M7-mutter. Prøv og merk 5,5 mm akselutstikk; ta han ut før kapping. Kopling og firmware må lagast separat.",
+      "connector": false
+    },
+    {
+      "type": "step",
+      "title": "Set på toppskalet",
+      "hardware": [],
+      "figures": [
+        {
+          "view": "oversikt",
+          "scene": [
+            {
+              "part": "botn"
+            },
+            {
+              "part": "cam"
+            },
+            {
+              "part": "mb"
+            },
+            {
+              "part": "sd"
+            },
+            {
+              "part": "magnet",
+              "at": [
+                [
+                  14.2,
+                  12.8,
+                  30.5
+                ],
+                [
+                  18.5,
+                  112.0,
+                  30.5
+                ],
+                [
+                  69.8,
+                  39.8,
+                  30.5
+                ],
+                [
+                  11.8,
+                  65.8,
+                  30.5
+                ],
+                [
+                  11.8,
+                  95.2,
+                  30.5
+                ],
+                [
+                  60.8,
+                  13.8,
+                  30.5
+                ]
+              ]
+            },
+            {
+              "part": "topp",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                42
+              ],
+              "line": "arrow"
+            },
+            {
+              "part": "brytar",
+              "role": "exploded",
+              "explode": [
+                0,
+                0,
+                42
+              ]
+            },
+            {
+              "part": "hjulaksel",
+              "role": "exploded",
+              "explode": [
+                0,
+                0,
+                42
               ]
             }
-          ]
-        },
+          ],
+          "labels": false,
+          "caption": "Rett inn alle tre styrepinnane."
+        }
+      ],
+      "intro": "Legg leidningane fritt frå delingsflata og linsa.",
+      "note": "Senk toppskalet rett ned. Magnetane held skala saman; delingsflata skal ikkje limast.",
+      "check": "Ingen leidning er klemd, og skala møtest jamt."
+    },
+    {
+      "type": "step",
+      "title": "Set på utløysar og hjul",
+      "hardware": [],
+      "figures": [
         {
           "view": "iso",
           "scene": [
             {
-              "part": "kropp"
+              "part": "botn"
+            },
+            {
+              "part": "topp"
             },
             {
               "part": "utloysar",
@@ -339,258 +1467,278 @@
               "explode": [
                 0,
                 0,
-                28
-              ]
+                20
+              ],
+              "line": "arrow"
+            },
+            {
+              "part": "cam"
+            },
+            {
+              "part": "mb"
+            },
+            {
+              "part": "sd"
+            },
+            {
+              "part": "brytar"
+            },
+            {
+              "part": "hjulaksel"
             }
           ],
-          "detail": {
-            "centre": [
-              45.5,
-              13.5,
-              60.0
-            ],
-            "span": 12,
-            "pos": "right",
-            "label": "klikk",
-            "scene": [
-              {
-                "part": "kropp"
-              },
-              {
-                "part": "utloysar"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "step",
-      "title": "Kamera og haldar",
-      "flow": "down",
-      "figures": [
-        {
-          "view": "under",
-          "scene": [
-            {
-              "part": "kropp"
-            },
-            {
-              "part": "magnet",
-              "at": [
-                [
-                  22.6,
-                  58.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  77.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  96.0,
-                  8.5
-                ],
-                [
-                  57.5,
-                  66.0,
-                  8.5
-                ]
-              ]
-            },
-            {
-              "part": "stabel",
-              "role": "new",
-              "explode": [
-                0,
-                0,
-                -45
-              ]
-            }
-          ]
+          "labels": false,
+          "centre": [
+            45.5,
+            13.5,
+            62
+          ],
+          "span": 23,
+          "crop": false,
+          "caption": "Ei lita limdråpe berre på brytarstempelet."
         },
         {
-          "view": "under",
+          "view": "hjul",
           "scene": [
             {
-              "part": "kropp"
+              "part": "topp"
             },
             {
-              "part": "magnet",
-              "at": [
-                [
-                  22.6,
-                  58.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  77.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  96.0,
-                  8.5
-                ],
-                [
-                  57.5,
-                  66.0,
-                  8.5
-                ]
-              ]
+              "part": "hjulaksel"
             },
             {
-              "part": "stabel"
-            },
-            {
-              "part": "haldar",
+              "part": "hjul",
               "role": "new",
               "explode": [
                 0,
                 0,
-                -45
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "step",
-      "title": "Luke",
-      "figures": [
-        {
-          "view": "under",
-          "scene": [
-            {
-              "part": "kropp"
+                22
+              ],
+              "line": "arrow"
             },
             {
-              "part": "magnet",
-              "at": [
-                [
-                  22.6,
-                  58.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  77.0,
-                  8.5
-                ],
-                [
-                  22.6,
-                  96.0,
-                  8.5
-                ],
-                [
-                  57.5,
-                  66.0,
-                  8.5
-                ]
-              ]
+              "part": "cam"
             },
             {
-              "part": "stabel"
+              "part": "mb"
             },
             {
-              "part": "haldar"
+              "part": "sd"
             },
             {
-              "part": "luke",
-              "role": "new",
-              "explode": [
-                0,
-                0,
-                -45
-              ]
+              "part": "brytar"
             }
           ],
-          "detail": {
-            "centre": [
-              22.6,
-              77.0,
-              5.0
-            ],
-            "span": 9,
-            "pos": "right",
-            "label": "N – S",
-            "scene": [
-              {
-                "part": "magnet",
-                "at": [
-                  [
-                    22.6,
-                    77.0,
-                    8.5
-                  ]
-                ]
-              },
-              {
-                "part": "magnet",
-                "at": [
-                  [
-                    22.6,
-                    77.0,
-                    5.5
-                  ]
-                ],
-                "role": "new",
-                "explode": [
-                  0,
-                  0,
-                  -5
-                ]
-              }
-            ]
-          }
+          "labels": false,
+          "centre": [
+            31.12,
+            103.89,
+            87
+          ],
+          "span": 25,
+          "crop": false,
+          "caption": "Rett inn D-holet og press V4-hjulet varsamt på."
         }
       ],
-      "warning": "Ikkje lim luka fast. Ho skal kunne takast av."
+      "icons": [
+        "lim"
+      ],
+      "note": "Utløysaren skal ha fri retur og om lag 0,5 mm slag. Limet skal ikkje binde knappen til brønnen.",
+      "check": "Knappen går fritt. Hjulet sit på akselen.",
+      "connector": false
     },
     {
       "type": "step",
-      "title": "USB-lok",
-      "icons": [
-        "ok"
-      ],
+      "title": "Kople til micro-USB",
+      "hardware": [],
       "figures": [
         {
-          "view": "bak",
+          "view": "usb",
           "scene": [
             {
-              "part": "kropp"
+              "part": "botn"
+            },
+            {
+              "part": "topp"
             },
             {
               "part": "utloysar"
+            },
+            {
+              "part": "hjul"
+            },
+            {
+              "part": "kabel",
+              "role": "new",
+              "explode": [
+                0,
+                34,
+                0
+              ],
+              "line": "arrow"
+            },
+            {
+              "part": "cam"
+            },
+            {
+              "part": "mb"
+            },
+            {
+              "part": "sd"
+            },
+            {
+              "part": "brytar"
+            },
+            {
+              "part": "hjulaksel"
+            }
+          ],
+          "labels": false,
+          "caption": "Kabelen går inn i tunnelen på hjulsida."
+        },
+        {
+          "view": "usb",
+          "scene": [
+            {
+              "part": "botn"
+            },
+            {
+              "part": "topp"
+            },
+            {
+              "part": "utloysar"
+            },
+            {
+              "part": "hjul"
             },
             {
               "part": "usblokk",
               "role": "new",
               "explode": [
                 0,
-                28,
+                22,
                 0
-              ]
+              ],
+              "line": "arrow"
+            },
+            {
+              "part": "cam"
+            },
+            {
+              "part": "mb"
+            },
+            {
+              "part": "sd"
+            },
+            {
+              "part": "brytar"
+            },
+            {
+              "part": "hjulaksel"
             }
-          ]
+          ],
+          "labels": false,
+          "centre": [
+            49.4,
+            118,
+            34
+          ],
+          "span": 22,
+          "crop": false,
+          "caption": "Utan kabel: set USB-lokket i tunnelen."
         }
-      ]
+      ],
+      "note": "Opninga på grepsida som liknar USB-C, er berre ei formdetalj i denne modellen.",
+      "check": "Pluggen går rett inn utan kraft. USB-lokket kan takast ut.",
+      "connector": false,
+      "flow": "detail"
+    },
+    {
+      "type": "step",
+      "title": "Kontroller det ferdige huset",
+      "hardware": [],
+      "figures": [
+        {
+          "view": "iso",
+          "scene": [
+            {
+              "part": "botn"
+            },
+            {
+              "part": "topp"
+            },
+            {
+              "part": "utloysar"
+            },
+            {
+              "part": "hjul"
+            },
+            {
+              "part": "usblokk"
+            },
+            {
+              "part": "cam"
+            },
+            {
+              "part": "mb"
+            },
+            {
+              "part": "sd"
+            },
+            {
+              "part": "hjulaksel"
+            },
+            {
+              "part": "brytar"
+            }
+          ],
+          "labels": false,
+          "caption": "Entropi A3 · prenta aksel · A17 V4"
+        }
+      ],
+      "action": "inspect",
+      "icons": [
+        "ok"
+      ],
+      "intro": "Kontroller samanføying og betjening.",
+      "note": "Sjå etter jamn deling, fri knapp og stødig hjul. Med testa firmware: ta eit bilete og opne fila frå microSD.",
+      "check": "Huset kan opnast igjen utan å rive i leidningane."
     },
     {
       "type": "warnings",
+      "title": "Om denne utgåva",
+      "intro": "Monteringsgrunnlag for ein fysisk prototype.",
       "items": [
-        "Bruk berre lim på magnetane, ikkje på luka.",
-        "Same pol ut på alle magnetane, elles held ikkje luka.",
-        "Kople frå USB før du opnar luka."
+        "Fysisk passform er ikkje prøvd. Prøv dei faktiske komponentane før liming.",
+        "Éin ESP32-CAM og eitt MB-kort. Straum kjem gjennom micro-USB; batteri er ikkje del av denne samanstillinga.",
+        "Utløysaren krev testa firmware: IO13 mot GND, SD i 1-bit-modus og debounce. Hald knappen sleppt under oppstart og SD-initialisering.",
+        "Prenta aksel, toppknappar og USB-C-formdetalj har ingen elektronisk funksjon. EC11 er eit valfritt mekanisk alternativ.",
+        "Stativmutteren er limt inn frå undersida. Stativfestet er ikkje lastprøvd."
       ],
-      "icons": [
-        "lim",
-        "snu"
-      ]
+      "sources": [
+        {
+          "label": "Geometri og mål",
+          "text": "A4/Entropi-A3-print · delar_konfig.json, lag_skal.py og print/kontroll.json · f519652e.",
+          "url": "https://github.com/lukketsvane/formnerd/tree/f519652ecc20c5239c7892ae46b9b63d3e8bb6a3/A4/Entropi-A3-print"
+        },
+        {
+          "label": "SD-buss og GPIO13",
+          "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/sdmmc_host.html"
+        },
+        {
+          "label": "SD-pull-up og initialisering",
+          "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/sd_pullup_requirements.html"
+        },
+        {
+          "label": "AI-Thinker kameramodell og GPIO4",
+          "url": "https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/Camera/CameraWebServer/camera_pins.h"
+        },
+        {
+          "label": "SD_MMC · 1-bit-modus",
+          "url": "https://github.com/espressif/arduino-esp32/blob/master/libraries/SD_MMC/src/SD_MMC.h"
+        }
+      ],
+      "icons": []
     }
   ]
 }

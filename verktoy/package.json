@@ -4,5 +4,8 @@
   "description": "Strekteikningar for monteringsrettleiinga (three.js i hovudlaus Chromium via Playwright)",
   "dependencies": {
     "three": "0.169.0"
+  },
+  "devDependencies": {
+    "playwright": "1.51.1"
   }
 }
