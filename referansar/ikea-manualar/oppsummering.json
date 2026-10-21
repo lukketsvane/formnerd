@@ -1,0 +1,36 @@
+{
+ "marknad": [
+  "no/no"
+ ],
+ "produkt": 14375,
+ "produkt_404": 0,
+ "produkt_med_dokument": 12825,
+ "produkt_med_monteringsrettleiing": 12064,
+ "unike_dokument": 3397,
+ "per_slag": {
+  "assembly": {
+   "dokument": 2741,
+   "lasta_ned": 2741,
+   "bytes": 5867320584,
+   "sider": 48482
+  },
+  "manual": {
+   "dokument": 547,
+   "lasta_ned": 0,
+   "bytes": 0,
+   "sider": 0
+  },
+  "customerDisassembly": {
+   "dokument": 76,
+   "lasta_ned": 0,
+   "bytes": 0,
+   "sider": 0
+  },
+  "declaration": {
+   "dokument": 33,
+   "lasta_ned": 0,
+   "bytes": 0,
+   "sider": 0
+  }
+ }
+}
