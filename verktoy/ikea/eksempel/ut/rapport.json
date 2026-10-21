@@ -1,0 +1,143 @@
+{
+ "pdf": "eksempel/ut/rettleiing.pdf",
+ "sha256": "a7ca5f7c08ede531b08de2eea6fe8747c66922bbe0c7b6010c823dc01eb6f8da",
+ "sider": 10,
+ "beslag": {
+  "magnet": {
+   "i_steg": 8,
+   "i_delliste": 8
+  },
+  "stabel": {
+   "i_steg": 1,
+   "i_delliste": 1
+  },
+  "brytar": {
+   "i_steg": 1,
+   "i_delliste": 1
+  }
+ },
+ "steg": [
+  {
+   "side": 4,
+   "type": "exploded",
+   "mappe": "eksempel/ut/_arbeid/r/9d2c1236d13e99d6",
+   "mørk_del": 0.0247
+  },
+  {
+   "side": 5,
+   "steg": 1,
+   "nye_delar": 2,
+   "figurar": [
+    {
+     "mappe": "eksempel/ut/_arbeid/r/832848649d12eb5b",
+     "mørk_del": 0.0201,
+     "figur_pt": [
+      79.7,
+      436.9,
+      327.9,
+      302.9
+     ]
+    },
+    {
+     "mappe": "eksempel/ut/_arbeid/r/a085c95899ced5d7",
+     "mørk_del": 0.0156,
+     "figur_pt": [
+      56.0,
+      104.0,
+      375.3,
+      302.9
+     ]
+    }
+   ]
+  },
+  {
+   "side": 6,
+   "steg": 2,
+   "nye_delar": 2,
+   "figurar": [
+    {
+     "mappe": "eksempel/ut/_arbeid/r/50c0bd813cd86390",
+     "mørk_del": 0.0116,
+     "figur_pt": [
+      59.8,
+      425.9,
+      367.6,
+      313.9
+     ]
+    },
+    {
+     "mappe": "eksempel/ut/_arbeid/r/df36075ed63ff1ed",
+     "mørk_del": 0.0232,
+     "figur_pt": [
+      89.0,
+      82.0,
+      309.3,
+      313.9
+     ]
+    }
+   ]
+  },
+  {
+   "side": 7,
+   "steg": 3,
+   "nye_delar": 2,
+   "figurar": [
+    {
+     "mappe": "eksempel/ut/_arbeid/r/440953a1141a0a94",
+     "mørk_del": 0.0231,
+     "figur_pt": [
+      72.2,
+      425.9,
+      342.8,
+      313.9
+     ]
+    },
+    {
+     "mappe": "eksempel/ut/_arbeid/r/86779563ada34510",
+     "mørk_del": 0.0213,
+     "figur_pt": [
+      96.6,
+      82.0,
+      294.0,
+      313.9
+     ]
+    }
+   ]
+  },
+  {
+   "side": 8,
+   "steg": 4,
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "eksempel/ut/_arbeid/r/b67d68e6d9a5ea19",
+     "mørk_del": 0.0209,
+     "figur_pt": [
+      36.0,
+      123.0,
+      521.3,
+      597.8
+     ]
+    }
+   ]
+  },
+  {
+   "side": 9,
+   "steg": 5,
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "eksempel/ut/_arbeid/r/415a1413369bd57f",
+     "mørk_del": 0.018,
+     "figur_pt": [
+      36.0,
+      121.5,
+      521.3,
+      578.9
+     ]
+    }
+   ]
+  }
+ ],
+ "åtvaringar": []
+}
