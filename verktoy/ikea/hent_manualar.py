@@ -14,6 +14,9 @@ import requests
 
 UA = "Mozilla/5.0 (X11; Linux x86_64) formnerd-hent-manualar/1.0"
 SITEMAP_INDEX = "https://www.ikea.com/sitemaps/sitemap.xml"
+SOK = "https://sik.search.blue.cdtapps.com/{cc}/{lang}/search-result-page?q={q}&size=1000"
+KATEGORI = "https://sik.search.blue.cdtapps.com/{cc}/{lang}/product-list-page?category={k}&size=1000"
+PRODUKT_ID = re.compile(r"-(s?\d{8})/?$")
 AA = re.compile(r"(AA-\d+-\d+)")
 PDOC = re.compile(r"/pdoc/\d+_(\d+)_(\d+)_\d+\.pdf")
 FELT = '"itemNo":"{}","visibleItemNo":"([^"]*)","name":"([^"]*)","type":"([^"]*)","typeName":"([^"]*)"'
@@ -66,11 +69,35 @@ def produkt_liste(marknad, arbeid):
     ut = {}
     for f in filer:
         for url in re.findall(rf'<loc>(https://www\.ikea\.com/{cc}/{lang}/p/[^<]+)</loc>', hent(f).text):
-            m = re.search(r"-(s?\d{8})/?$", url)
+            m = PRODUKT_ID.search(url)
             if m:
                 ut.setdefault(m.group(1), url)
         print(f"  {f.rsplit('/', 1)[1]}: {len(ut)} produkt så langt", file=sys.stderr)
     fil.write_text(json.dumps(ut))
+    return ut
+
+
+def sok_liste(marknad, sok, kategoriar):
+    cc, lang = marknad.split("/")
+    ut = {}
+
+    def legg_til(produkt):
+        for p in produkt:
+            for v in [p] + ((p.get("gprDescription") or {}).get("variants") or []):
+                m = PRODUKT_ID.search(v.get("pipUrl") or "")
+                if m:
+                    ut.setdefault(m.group(1), v["pipUrl"])
+
+    for q in sok:
+        d = hent(SOK.format(cc=cc, lang=lang, q=requests.utils.quote(q))).json()
+        treff = (((d.get("searchResultPage") or {}).get("products") or {}).get("main") or {}).get("items") or []
+        legg_til([t.get("product") or {} for t in treff])
+        print(f"  søk «{q}»: {len(treff)} treff, {len(ut)} produkt så langt", file=sys.stderr)
+    for k in kategoriar:
+        d = hent(KATEGORI.format(cc=cc, lang=lang, k=k)).json()
+        plp = d.get("productListPage") or {}
+        legg_til(plp.get("productWindow") or [])
+        print(f"  kategori {k}: {plp.get('productCount')} produkt i kategorien, {len(ut)} produkt så langt", file=sys.stderr)
     return ut
 
 
@@ -183,6 +210,8 @@ def main():
     ap = argparse.ArgumentParser(description="Hentar monteringsrettleiingar (PDF) frå ikea.com og lagar ein indeks.")
     ap.add_argument("--marknad", nargs="+", default=["no/no"], help="marknad/språk slik det står i URL-en, t.d. no/no us/en de/de")
     ap.add_argument("--ut", type=Path, default=rot / "referansar" / "ikea-manualar")
+    ap.add_argument("--sok", nargs="+", default=[], help="søkjeord; hentar berre produkta søket gjev (inntil 1000 per ord) i staden for heile sitemapet")
+    ap.add_argument("--kategori", nargs="+", default=[], help="kategori-ID-ar frå ikea.com/…/cat/…-<id>/, t.d. 10382 for bokhyller")
     ap.add_argument("--tradar", type=int, default=12)
     ap.add_argument("--maks", type=int, help="berre dei N første produkta (til testing)")
     ap.add_argument("--slag", nargs="+", default=["assembly"], help="dokumentslag som skal lastast ned: assembly manual other declaration customerDisassembly professionalDisassembly software")
@@ -195,8 +224,9 @@ def main():
     (arbeid / "produkt").mkdir(parents=True, exist_ok=True)
     produkt = {}
     for marknad in a.marknad:
-        print(f"sitemap {marknad}", file=sys.stderr)
-        for pid, url in produkt_liste(marknad, arbeid).items():
+        print(f"{'søk' if a.sok or a.kategori else 'sitemap'} {marknad}", file=sys.stderr)
+        liste = sok_liste(marknad, a.sok, a.kategori) if a.sok or a.kategori else produkt_liste(marknad, arbeid)
+        for pid, url in liste.items():
             produkt.setdefault(pid, (marknad, url))
     ids = sorted(produkt)[: a.maks] if a.maks else sorted(produkt)
     print(f"{len(ids)} produkt å slå opp", file=sys.stderr)

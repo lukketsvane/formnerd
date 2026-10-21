@@ -69,7 +69,11 @@ python3 verktoy/ikea/hent_manualar.py                          # heile no/no-sor
 python3 verktoy/ikea/hent_manualar.py --marknad no/no us/en de/de --tradar 16
 python3 verktoy/ikea/hent_manualar.py --maks 50 --berre-indeks # rask test utan PDF-ar
 python3 verktoy/ikea/hent_manualar.py --sider 3 --dpi 50       # render òg dei tre første sidene som JPG
+python3 verktoy/ikea/hent_manualar.py --sok bokhylle sminkebord  # berre treffa for nokre søkjeord
+python3 verktoy/ikea/hent_manualar.py --kategori 10382 20656     # berre nokre kategoriar (ID-en står sist i kategori-URL-en)
 ```
+
+`--sok` og `--kategori` brukar søke-API-et til ikea.com (inntil 1000 treff per ord/kategori, med variantane) i staden for sitemapet, og er det pip-pakken [hemnes](https://pypi.org/project/hemnes/) gjorde før søkesida han skrapa forsvann; hemnes henta aldri rettleiingane.
 
 Utdata ligg i `referansar/ikea-manualar/`:
 
