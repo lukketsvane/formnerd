@@ -25,7 +25,7 @@ def farge(punkt, k=4):
     return (tex[py, px] * w[..., None]).sum(1)
 
 
-for namn in sys.argv[1:] or ["kropp", "utloysar", "usb-lokk", "luke"]:
+for namn in sys.argv[1:] or ["botn", "topp", "utloysar", "usb-lokk"]:
     m = trimesh.load(A3 / "print/stl" / f"{namn}.stl")
     c = farge(m.vertices)
     df, _ = tre.query(m.triangles_center)

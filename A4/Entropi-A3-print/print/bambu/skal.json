@@ -1,0 +1,63 @@
+{
+  "A3-Entropi-botn-P1S.gcode.3mf": {
+    "tid": "2h 44m 20s",
+    "vekt_g": 66.26,
+    "lag": 175,
+    "objekt": [
+      "botn.stl"
+    ],
+    "kontroll": {
+      "p1s_startkode": true,
+      "ams_lasting": true,
+      "dysetemp_220": true,
+      "printer_model_id": "C12"
+    }
+  },
+  "A3-Entropi-topp-P1S.gcode.3mf": {
+    "tid": "4h 10m 18s",
+    "vekt_g": 101.46,
+    "lag": 261,
+    "objekt": [
+      "topp.stl"
+    ],
+    "kontroll": {
+      "p1s_startkode": true,
+      "ams_lasting": true,
+      "dysetemp_220": true,
+      "printer_model_id": "C12"
+    }
+  },
+  "A3-Entropi-smaadelar-P1S.gcode.3mf": {
+    "tid": "12m 9s",
+    "vekt_g": 1.78,
+    "lag": 68,
+    "objekt": [
+      "usb-lokk.stl",
+      "utloysar.stl",
+      "hjulaksel.stl"
+    ],
+    "kontroll": {
+      "p1s_startkode": true,
+      "ams_lasting": true,
+      "dysetemp_220": true,
+      "printer_model_id": "C12"
+    }
+  },
+  "A3-Entropi-hjul-A17-P1S.gcode.3mf": {
+    "tid": "38m 32s",
+    "vekt_g": 10.3,
+    "lag": 59,
+    "objekt": [
+      "hjul-A17-V4.stl",
+      "hjul-A17-V1.stl",
+      "hjul-A17-V2.stl",
+      "hjul-A17-V3.stl"
+    ],
+    "kontroll": {
+      "p1s_startkode": true,
+      "ams_lasting": true,
+      "dysetemp_220": true,
+      "printer_model_id": "C12"
+    }
+  }
+}

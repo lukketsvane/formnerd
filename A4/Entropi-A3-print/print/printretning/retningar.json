@@ -1,5 +1,18 @@
 {
-  "kropp": {
+  "botn": {
+    "botn_mot_bordet": [
+      0,
+      0,
+      -1
+    ],
+    "storleik_mm": [
+      83.8,
+      118.9,
+      35.0
+    ],
+    "volum_cm3": 74.39
+  },
+  "topp": {
     "botn_mot_bordet": [
       0,
       0,
@@ -8,24 +21,9 @@
     "storleik_mm": [
       90.2,
       120.0,
-      84.7
+      52.1
     ],
-    "vasstett": true,
-    "volum_cm3": 412.28
-  },
-  "luke": {
-    "botn_mot_bordet": [
-      0,
-      0,
-      1
-    ],
-    "storleik_mm": [
-      43.6,
-      50.1,
-      7.0
-    ],
-    "vasstett": true,
-    "volum_cm3": 12.05
+    "volum_cm3": 134.85
   },
   "utloysar": {
     "botn_mot_bordet": [
@@ -38,22 +36,7 @@
       11.2,
       5.5
     ],
-    "vasstett": true,
     "volum_cm3": 0.43
-  },
-  "stabelhaldar": {
-    "botn_mot_bordet": [
-      0,
-      0,
-      -1
-    ],
-    "storleik_mm": [
-      25.0,
-      46.1,
-      37.0
-    ],
-    "vasstett": true,
-    "volum_cm3": 30.14
   },
   "usb-lokk": {
     "botn_mot_bordet": [
@@ -66,7 +49,19 @@
       11.8,
       9.3
     ],
-    "vasstett": true,
     "volum_cm3": 1.29
+  },
+  "hjulaksel": {
+    "botn_mot_bordet": [
+      0,
+      0,
+      -1
+    ],
+    "storleik_mm": [
+      7.1,
+      7.1,
+      13.5
+    ],
+    "volum_cm3": 0.44
   }
 }

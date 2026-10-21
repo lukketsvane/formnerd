@@ -1,122 +1,85 @@
-# Entropi · A3-print
+# Entropi · A3-print (delt skal)
 
-Prentklar versjon av A3-designet: Tripo-forma frå `arkiv/entropi-a3`, skoren opp til fem delar for Bambu Lab P1S, med ESP32-CAM og ESP32-CAM-MB inni. Delane blir haldne saman med lim og magnetar. Ingen skruar.
+A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1S. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
 
 ![CMF](bilete/cmf.png)
 
+![Sprengd](bilete/sprengd.png)
+
 ![Snitt gjennom linseaksen](bilete/snitt.png)
 
-## Kort sagt
+## Prent i denne rekkjefølgja
 
-1. Set kameraet på MB-kortet og mål **D** (steg 1 i rettleiinga).
-   - D mellom 15,7 og 16,2 mm: prent `print/A3-Entropi-P1S.gcode.3mf`. Det tek om lag 5 t 35 min og brukar 191 g PLA.
-   - Anna D, eller du har ikkje målt enno: prent `print/A3-Entropi-P1S-utan-haldar.gcode.3mf` (5 t 15 min, 177 g). Prent deretter `print/haldar-p1s/stabelhaldar-D<næraste>.gcode.3mf` (28 min, 14 g).
-2. Send fila til P1S-en (sjå *Slik prentar du*).
-3. Følg `montering/Entropi-A3-montering.pdf`, 13 steg i IKEA-stil.
+| Fil i `print/` | Delar | Tid | PLA |
+| --- | --- | --- | --- |
+| `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal | 2 t 44 min | 66 g |
+| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 4 t 10 min | 101 g |
+| `A3-Entropi-smaadelar-P1S.gcode.3mf` | Utløysar, USB-lokk, hjulaksel | 12 min | 2 g |
+| `A3-Entropi-hjul-A17-P1S.gcode.3mf` | A17-hjulet V1–V4, vel eitt | 39 min | 10 g |
 
-## Filer
+Alle filene er slica med Bambu Studio 02.08.02.61:
+- maskin «Bambu Lab P1S 0.4 nozzle», med P1S-startkoden (AMS-lasting, dysereins, 220 °C) og printar-ID C12
+- prosess «0.20mm Standard @BBL X1C», som er standarden for P1S, med 3 Arachne-veggar og 15 % fyll
+- filament «Bambu PLA Basic @BBL P1S 0.4 nozzle» på Textured PEI-plata
+- trestøtte berre frå plata
 
-| Fil | Bruk |
-| --- | --- |
-| `print/A3-Entropi-P1S.gcode.3mf` | Ferdig slica plate for P1S med alle fem delane. Kan sendast rett til skrivaren. |
-| `print/A3-Entropi-P1S-utan-haldar.gcode.3mf` | Same plate utan stabelhaldaren |
-| `print/haldar-p1s/` | Kvar haldarvariant (D14,0–D18,0) ferdig slica for P1S |
-| `print/A3-Entropi-P1S.3mf` | Same plate som Bambu Studio-prosjekt, for å endre innstillingar eller byte haldar |
-| `print/A3-Entropi-alle-delar.3mf` | Alle delane plasserte på éi 256 mm-plate, utan slicarinnstillingar |
-| `print/printretning/` | Delane i prentretning. `haldar-variantar/` har stabelhaldaren for D = 14,0–18,0 mm i steg på 0,5 mm. |
-| `print/stl/` | Delane i samanstillingsposisjon |
-| `print/proxy/` | Elektronikken som volum (kort, tappar, knappar, SD-kort, brytar, USB-plugg), brukt i kontrollen |
-| `print/kontroll.json` | Veggar, kollisjonar, monteringsbaner og haldarvariantar |
-| `print/bambu/` | Profilane som vart brukte, og `slicing.json` med tid, vekt og innstillingar |
-| `montering/` | Rettleiinga som PDF og éi PNG per side |
-| `bilete/` | CMF-render og snitt gjennom linseaksen |
-| `verktoy/` | Skripta som lagar alt over |
+`print/bambu/skal.json` har kontrollen for kvar fil.
 
-## Delar og prent
+Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, vel P1S-en, knyt filament 1 til PLA-sporet og trykk *Send*. Du kan òg kopiere fila til microSD-kortet i skrivaren.
 
-| Del | Retning på plata | Merknad |
-| --- | --- | --- |
-| kropp | Ståande, luka ned | Trestøtte frå plata, gjennom luka og inn i holrommet. Ho kan takast ut gjennom luka. |
-| luke | Innsida ned, så utsida blir rein | Fire magnetlommer |
-| stabelhaldar | Som montert | Vel variant etter D |
-| utløysar | Som montert, toppen opp | Limast på brytaren |
-| usb-lokk | På sida | Tettar USB-tunnelen på hjulsida |
-
-Innstillingar: Bambu PLA Basic, 0,4 mm dyse, 0,20 mm Standard, Textured PEI-plate, 3 veggar (Arachne), 15 % fyll, trestøtte berre frå plata. Slica med Bambu Studio 02.08.02.61 og dei offisielle profilane:
-- maskin: «Bambu Lab P1S 0.4 nozzle», med P1S-startkoden (AMS-lasting, dysereins og 220 °C)
-- prosess: «0.20mm Standard @BBL X1C», som er standardprosessen for P1S
-- filament: «Bambu PLA Basic @BBL P1S 0.4 nozzle»
-
-## Slik prentar du
-
-Alle `.gcode.3mf`-filene har P1S-startkoden og printar-ID C12. Dei bruker filament nummer 1 (PLA Basic) på Textured PEI-plata.
-
-- **Bambu Studio:** Fil → Opne → vel `.gcode.3mf`. Fila opnar seg i førehandsvisinga. Trykk *Print plate* og vel P1S-en. Knyt filament 1 til PLA-sporet i AMS-en, eller til ekstern spole. La *Bed leveling* stå på, og trykk *Send*.
-- **Utan nettverk:** kopier fila til microSD-kortet i P1S-en, og start ho frå skjermen (*Print files*).
-- Fila har ikkje miniatyrbilete, så skjermen viser ikkje noko bilete av plata. Det påverkar ikkje prentinga.
+- **Botnskalet** står på botnen med delingsflata opp. Støtta står berre utanpå, under den runde botnkanten og linseløpet.
+- **Toppskalet** står på delingsflata. Støtta står under det flate taket inne i skalet og kan takast ut gjennom den opne delingsflata. Magnetlommene, EC11-pipa, brytartrakta og USB-tunnelen har tak på 45°, så dei treng inga støtte.
 
 ## Innkjøp
 
-ESP32-CAM, ESP32-CAM-MB (micro-USB), microSD, 6 × 6 mm trykknapp, 8 magnetar Ø6 × 3 mm, 2 leidningar 26–30 AWG på om lag 15 cm, CA-lim (gel), loddebolt og tinn, avbitar, skyvelære og micro-USB-kabel.
+ESP32-CAM, ESP32-CAM-MB (micro-USB), microSD, 6 × 6 mm trykknapp, 12 magnetar Ø6 × 3 mm, 2 leidningar 26–30 AWG på om lag 15 cm og CA-lim.
 
-## Monteringsrekkjefølgje
+EC11-dreieknapp med 20 mm D-aksel er valfri. Har du han ikkje, limer du hjulakselen (smådelplata) i holet, og hjulet sit på han.
 
-Rekkjefølgja er fast. Pila som går i ring viser når kroppen skal snuast.
+## Montering
 
-1. Mål D og vel haldar. 2. Prent. 3. Lim fire magnetar i kroppen med same side ut. 4. Set kvar luke-magnet på motparten sin, lim og press luka på. La limet herde før luka blir opna. 5. Lodd leidningane til GND (pinne 2) og IO13 (pinne 4) på 5V-rekkja. 6. Set kameraet på MB, set i SD-kortet, last opp firmware og test. 7. Træ leidningane forbi SD-enden av stabelen, gjennom tunnelen og ut i knappebrønnen. 8. Lodd brytaren på to diagonale bein, og lim han i lomma med beina i full lengd. 9. Senk stabelen inn gjennom luka og skyv han 17 mm fram til linsa. 10. Haldaren. 11. Luka. 12. Utløysaren. 13. USB-kabel og USB-lokk.
+1. Pinnane er prenta på botnskalet. Lim seks magnetar i lommene i botnskalet med same pol opp. Legg ein magnet på kvar av dei, og merk oversida. Lim dei merka magnetane i toppskalet med merket ned, slik at dei trekkjer mot kvarandre.
+2. Lodd leidningane til GND (pinne 2) og IO13 (pinne 4) på 5V-rekkja på ESP32-CAM. Set kameraet på MB, set i SD-kortet, last opp firmware og test.
+3. Senk stabelen rett ned i spora i dei to stolpane i botnskalet. Linsa går ned i halve linsesetet.
+4. Før leidningane opp gjennom holet i brytartrakta i toppskalet. Lodd brytaren på to diagonale bein, og lim han i lomma med beina i full lengd.
+5. EC11: før dreieknappen opp gjennom pipa i toppskalet til aksen kjem ut av holet på toppen, og lim han. Kort akselen til 5,5 mm over toppflata. Utan EC11 limer du hjulakselen i holet i staden.
+6. Set toppskalet på. Pinnane styrer det, og magnetane held det.
+7. Lim utløysaren på brytaren og trykk A17-hjulet på akselen.
+8. Skyv USB-kabelen inn i tunnelen på hjulsida, eller set i USB-lokket.
 
-## Kontroll
+Ei ny rettleiing i IKEA-stil for det delte skalet kjem. `montering/` viser framleis den gamle luke-versjonen.
 
-Kontrollen køyrer med nominelle mål for elektronikken. Dei er henta frå databladet og målingar andre har publisert, ikkje frå dine kort.
+## Kontroll (`print/kontroll.json`)
+
+Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 
 | Kontroll | Resultat |
 | --- | --- |
-| Alle fem delane | Manifold, éin lekam kvar |
-| Tynnaste vegg mot holrom | 2,39 mm (USB-tunnel). Brytarlomma 2,54, rom A 2,93, SD-spor 4,88 |
-| Voxelskanning av heile kroppen (0,25 mm) | Under 1,2 mm er det berre spreidde punkt under 5 mm² og eitt parti på 13 mm² med 0,9 mm på linseringen i skulpturen. Arachne skriv det ut. |
-| Støtte i G-koden | Ingen i magnetlommene, USB-tunnelen eller kabeltunnelen. 1,3 m i spora over MB-knappane, med 1,55 mm klaring til knappane. Ho blir fjerna gjennom luka saman med resten. |
-| Luka | Minst 2,63 mm tjukk |
-| Kollisjonar mellom delar og elektronikk | 0 mm³ |
-| Monteringsbaner: stabel opp gjennom luka, 17,55 mm fram, haldar opp bak | 0 mm³ kollisjon, med SD-kortet i |
-| Klaring stabel mot kropp og haldar | 0,10 og 0,25 mm |
-| Haldarvariantar D14,0–D18,0 | 0 mm³ mot kroppen. Haldaren styrer stabelen i y òg (±0,3 mm). |
-
-Endringar frå den arkiverte A3-versjonen:
-- Luka har 0,2 mm klaring og eit neglehakk.
-- MB-knappane har spor.
-- Haldaren har klaring mot kroppen.
-- Kamerahøgda og linsekonusen følgjer målingane.
-- USB-tunnelen og pluggen var snudde 90°. Det er retta.
-- Brytarlomma er flytta slik at veggen er over 2 mm.
-- Det er lagt til eit spor for SD-kortet, som stikk ut frå kortet.
-- Startkoden for P1S manglar ikkje lenger, og filamentprofilen er no den for P1S.
-- Magnetlommene, USB-tunnelen og kabeltunnelen har tak på 45°, så dei treng ikkje støtte.
-- Knappebrønnen er flytta til midten av knappen og gjord smalare (Ø11,8). Utløysaren er no Ø11,2 med 0,9 mm slag, og veggen held seg over 1,2 mm.
-- Linseopninga er r 16,6. Synsfeltet klarar framleis ±40°.
-- Haldaren har fingrar som held stabelen i y. Spora over MB-knappane er 1 mm djupare.
-- Dei bakre luke-magnetane er sentrerte mellom luke-kanten og holrommet.
-- I rettleiinga er leidningane flytta til 5V-rekkja (GND pinne 2, IO13 pinne 4). Før låg dei på 3V3-rekkja.
+| Delar | Botnskal 74,4 cm³ og toppskal 134,9 cm³. Alle fem delane er ein lekam kvar (manifold). |
+| Innvendig rom | 287 cm³ |
+| Kollisjon mellom elektronikk og skal | 0 mm³ for alle proxyar. Klaringa til stabelen er 0,2 mm i begge skala. |
+| Monteringsbaner | 0 mm³ for: stabel ned i botnen, toppskal ned over stabelen, USB-plugg inn, EC11 opp i pipa, brytar ned i lomma |
+| Veggar mot holrom | Holkjerna minst 1,34 mm, magnetlommer 1,59, pinnehol 1,26, brønnen 1,27, brytarlomma 2,54, USB-tunnelen 2,01, EC11-pipa 3,3 |
+| Tynne parti (strålar frå 60 000 overflatepunkt) | Linseringen i skulpturen, knivkanten i USB-opninga og ei finne i den eine kortstolpen |
+| Hjulet | Skore av ved z = 80 innanfor r = 11,0 rundt (31,1; 103,9). A17-hjulet er Ø24. |
 
 ## Kjende avgrensingar
 
-- **Fysisk passform er ikkje prøvd.** Mål D før prent. Prøv stabelen i kroppen før du limer noko.
-- **Utløysaren krev kode.** Kameraet tek bilete når IO13 blir kopla til GND. SD-kortet må då køyre i 1-bit-modus (`SD_MMC.begin("/sdcard", true)`). Ikkje hald knappen inne medan kortet startar. Firmware følgjer ikkje med. Bruk CameraWebServer-eksempelet til å teste kameraet. Les knappen med programvare-debounce (leidningane er 15 cm), og hald blitzen (GPIO4) av, elles lyser han inn i holrommet og mot linsa.
-- **SD-kortet kan ikkje takast ut** etter montering. Bilete blir henta via USB eller wifi.
-- **Ny firmware etter montering** går over USB berre om MB-en sin automatiske reset verkar. IO0- og RST-knappane er innebygde. Legg inn OTA-oppdatering (ArduinoOTA) i firmwaren før du monterer.
-- **USB-C-porten på grepet er berre form.** Straum og data går gjennom micro-USB-porten på MB, via tunnelen på hjulsida.
-- `gcode.3mf` har ikkje miniatyrbilete, fordi slicinga køyrde utan skjermkort. Det påverkar ikkje prentinga.
+- **Fysisk passform er ikkje prøvd.** Prøv stabelen i stolpane og skala mot kvarandre før du limer noko.
+- **Utløysaren krev kode:** IO13 mot GND, med SD i 1-bit-modus og debounce. Hald blitzen (GPIO4) av. Legg inn OTA-oppdatering, for MB-knappane er innebygde.
+- **USB-C-porten på grepet er berre form.**
+- Filene har ikkje miniatyrbilete.
 
 ## Regenerering
 
 ```bash
 cd verktoy
 npm install
-python3 lag_delar.py      # delar, proxyar, haldarvariantar, kontroll.json
-python3 print_plate.py    # prentretning og 3MF
-bash bambu_slice.sh       # Bambu Studio CLI (Flathub), P1S-prosjekt og gcode.3mf
-python3 cmf_overfor.py    # fargar frå PBR-teksturen til delane (print/cmf, ikkje i git)
-python3 vis.py            # bilete/
-python3 ikea.py           # montering/
+python3 lag_skal.py       # skal, delar, proxyar og kontroll.json
+python3 print_skal.py     # prentretning
+bash bambu_skal.sh A3-Entropi-botn-P1S ../print/printretning/botn.stl
+bash bambu_skal.sh A3-Entropi-topp-P1S ../print/printretning/topp.stl
+python3 cmf_overfor.py && python3 vis.py
 ```
 
-Mål og plasseringar ligg i `verktoy/delar_konfig.json`. Kjelda er `arkiv/entropi-a3/03-3d/a3-entropi-print-120mm.stl`.
+Mål og plasseringar ligg i `verktoy/delar_konfig.json` under `skal`. Luke-versjonen med stabelhaldar ligg i git-historikken (958babc).
