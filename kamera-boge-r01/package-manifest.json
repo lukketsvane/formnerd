@@ -1,7 +1,7 @@
 {
  "project": "Kamera med boge",
  "geometry_revision": "R01",
- "document_revision": "M04",
+ "document_revision": "M05",
  "units": "millimeter",
  "sliced": true,
  "physically_tested": false,
@@ -19,8 +19,8 @@
   },
   {
    "path": "Kamera-boge-Start-P1S.zip",
-   "bytes": 813662,
-   "sha256": "ad135ecc250174fe61568b5e3a0d9c568306a0471d1706bd008252775a4ce0cb"
+   "bytes": 851251,
+   "sha256": "afbc5455c6cf2db81a959a05f61e2ca0c88717acbd6c7ec044b405f6711b4527"
   },
   {
    "path": "Open-Print.ps1",
@@ -30,12 +30,12 @@
   {
    "path": "PRINT-P1S.txt",
    "bytes": 1295,
-   "sha256": "aeba9e637a4e21fe2374f80ca907c693bc8c9a6492cb7a0d672229664bcbce84"
+   "sha256": "44fb7e282af14f320885fcacce7c8626a3017e05a31d4dc618318f259261d3cc"
   },
   {
    "path": "README.md",
-   "bytes": 5449,
-   "sha256": "cceed8190dd435b15fd18f066da22ea35b96897d051f02b32fb3330bc2338a25"
+   "bytes": 5592,
+   "sha256": "d32345a0ec323dc81ac4f15891b6a6da286d939dcc292d4f471c238746d6d6d1"
   },
   {
    "path": "cad/BOM.json",
@@ -158,94 +158,94 @@
    "sha256": "1130d65cec9ab2b9fdc2080208a6fc0aa85728a97515d3d09e83264ce103f8fa"
   },
   {
-   "path": "manual/Kamera-boge-M04-kjelder.zip",
-   "bytes": 3512790,
-   "sha256": "1c1bdc711ac5633e624900f5103ce0d54bad550652c08a51bc40344e3c57d76d"
+   "path": "manual/Kamera-boge-M05-kjelder.zip",
+   "bytes": 3594511,
+   "sha256": "8e7fd0abeccf29418aebd29454bb36d75f9d91f5759b40e35a855d6531a5ea5e"
   },
   {
-   "path": "manual/Kamera-boge-M04.pdf",
-   "bytes": 503390,
-   "sha256": "20c976e0d7d47cec2438c163c374706c31d813203f1d1f896cd514d272966248"
+   "path": "manual/Kamera-boge-M05.pdf",
+   "bytes": 548858,
+   "sha256": "ee91d6b12b674a3759783acffe948baebb53f85d418b95eb6da7fa6a217e6862"
   },
   {
    "path": "manual/pages/side-01.png",
-   "bytes": 62474,
-   "sha256": "a85beb57d2958bdad28603b16dbfe9fea56d59c8634af420de980e04ae4fe11a"
+   "bytes": 87283,
+   "sha256": "cc5dcec3c57ffe104a9f6df71491eb0546cadcf2b96c0f49c138e92a8b80a592"
   },
   {
    "path": "manual/pages/side-02.png",
-   "bytes": 96760,
-   "sha256": "6869cd3ac4b315dd2e1d70f14af27074964184f6e096ef0ff0bff7052c065bff"
+   "bytes": 109480,
+   "sha256": "bdfa0ddec8300d34c662604fa25c07d17982ad5ead3b972fd13d4b110f9fbcc6"
   },
   {
    "path": "manual/pages/side-03.png",
-   "bytes": 120109,
-   "sha256": "83f8119ff91087649ab8cdb687210dd3395537ba5eeb74d7cc9fab5c62c1bf42"
+   "bytes": 122538,
+   "sha256": "15386dc49318eece6483dec10e79e4f0eed54b5e0ab20538ca600b9dab048a7f"
   },
   {
    "path": "manual/pages/side-04.png",
-   "bytes": 115121,
-   "sha256": "f62be285cbd5b2248a482ed08273c7e99c06149fb13521f2d9d7214985571afd"
+   "bytes": 115152,
+   "sha256": "0e3940231d234a595c8dbf4e079cbf2f73e8731cd20d64587cbee8cce1ebf66c"
   },
   {
    "path": "manual/pages/side-05.png",
-   "bytes": 96531,
-   "sha256": "29b4914732b616660e5bb2ff5afb25a7415f18999eee9a1501764e2063ba4b12"
+   "bytes": 110125,
+   "sha256": "f825c1bae3d3ba2a9c1bc73fd86f35fd865f41f660925c2e8ae996cf3ff25c4f"
   },
   {
    "path": "manual/pages/side-06.png",
-   "bytes": 71170,
-   "sha256": "44694f10ff1d3c60b073b44cb3a538f3263ddfcc72b057c8ff2b92af753d4440"
+   "bytes": 77468,
+   "sha256": "b68a89411e04f9f142d65bd33960094b26cf8fbeadf53fee9fa85ccb41eebfd8"
   },
   {
    "path": "manual/pages/side-07.png",
-   "bytes": 72031,
-   "sha256": "05b23e955f3345443d18b8155f309ad5fed734145fbfe6477a97127304e0971f"
+   "bytes": 78378,
+   "sha256": "febd5cf3807bbf5edff22eeb943e2dbada0cf3382181f49c96946ba23664cbe9"
   },
   {
    "path": "manual/pages/side-08.png",
-   "bytes": 64696,
-   "sha256": "a9ce2ce8d367da75afe3d770f47781dee665aac8ca46d0bcad5b45be82c54a2f"
+   "bytes": 70964,
+   "sha256": "02ca1db4fcd7cee37efa140b4742259c61044250b01c000482a4e75d3eb93d40"
   },
   {
    "path": "manual/pages/side-09.png",
-   "bytes": 80984,
-   "sha256": "60e98a2a3bcc8d344c4d8ceb0c5ff5ddfc9a75e6cc18c9420cab268b231ba5a9"
+   "bytes": 81004,
+   "sha256": "7e4475f99ef04b26421e04f037a79b104f9e9603d90df99e05a64046e79ed3bb"
   },
   {
    "path": "manual/pages/side-10.png",
-   "bytes": 52181,
-   "sha256": "7f9f2803aabb014959c3cdae5423a3e09afc908073138c9978baf9bbd60ce3cd"
+   "bytes": 58699,
+   "sha256": "2a40e4b71ef762274297c1d13296a5af3bde7c43c9f6cb47ddf628074b1644ea"
   },
   {
    "path": "manual/pages/side-11.png",
-   "bytes": 64980,
-   "sha256": "7894a8b5290efc67336d7f0292c6ae6a735eaeeb228e99537d6bca329bb694e8"
+   "bytes": 89387,
+   "sha256": "556e809dea60ac63acea34676d234926c0aa7840320ac8c40a9e11225dbe9dde"
   },
   {
    "path": "manual/pages/side-12.png",
-   "bytes": 96255,
-   "sha256": "a4d3aaf5f4c7f9bef1a93e94dcd55f8558184b0e77adf324dfdedadb50e3f280"
+   "bytes": 102435,
+   "sha256": "03c323aa79e4821f0f02a7c399bef553504922aec2df6e6ee8d66c00352b6254"
   },
   {
    "path": "manual/pages/side-13.png",
-   "bytes": 80344,
-   "sha256": "961cad050fe6360170709276d6f6a6e1a3cf601967fdb0364d9f6349ba80a491"
+   "bytes": 95038,
+   "sha256": "dff9e05d29c6d0d6f4fb8b2f77fe964f4274e5568ea2eb1da32c5fd822ee9a7d"
   },
   {
    "path": "manual/pages/side-14.png",
-   "bytes": 70347,
-   "sha256": "d7af535c39bf73cd95852092750c7ebb8c010041c0741ee05987a322c77ecbe8"
+   "bytes": 78575,
+   "sha256": "ea89ebeb75ee3e5a38bcbfa4b45375a294bfd788827de8c78b3a38c374eb69d5"
   },
   {
    "path": "manual/pages/side-15.png",
-   "bytes": 80127,
-   "sha256": "ac2f4f0e548f2ea2da2a2160119fc0eb0c9928b80dd43f25f293e6cf3e535874"
+   "bytes": 93695,
+   "sha256": "6833a73d958e6f5d63b6f05468e75df456ef94a95530d360dbe5cc15f63bc8da"
   },
   {
    "path": "manual/pages/side-16.png",
-   "bytes": 90627,
-   "sha256": "80e30cbed2a7fb7fdbaf4233a0e85ba939e20fa99db21b5c1c705d5254897b37"
+   "bytes": 107483,
+   "sha256": "9b38efafc99857d27d8adcd8729a593b0089c256450909537423505bd52d74f9"
   },
   {
    "path": "payloads/assembled.3mf.part-001",
@@ -453,9 +453,9 @@
    "sha256": "933c11153bf1b85241fafc011276f550154c82bd1dc1cbbcd54a34fa7ea3b3ec"
   },
   {
-   "path": "verification/manual-m04.json",
-   "bytes": 1083,
-   "sha256": "01bfdac4fb2af76e2b2896f0cf50359ddc04778a91d038b991e32cd86e96cc52"
+   "path": "verification/manual-m05.json",
+   "bytes": 2350,
+   "sha256": "2b353c96b938c4bed59a3b75a97e611afe7f308fc126f459a1976ca51942c6ce"
   },
   {
    "path": "verification/manual-v3-readtest.json",
