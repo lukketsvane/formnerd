@@ -372,5 +372,147 @@
     ]
    ]
   }
+ },
+ "detalj": {
+  "skinne": {
+   "x": [
+    18.0,
+    56.0
+   ],
+   "y": [
+    18.0,
+    104.0
+   ],
+   "z_botn": -4.5,
+   "dovetail": 4.5,
+   "z_topp": 6.0
+  },
+  "stativ": {
+   "senter": [
+    37.0,
+    65.0
+   ],
+   "boss_r": 9.5,
+   "boss_z_topp": 11.0,
+   "mutter_af": 11.4,
+   "mutter_djupn": 6.0,
+   "hol_d": 7.0,
+   "hol_z_topp": 8.5
+  },
+  "riller": {
+   "z": [
+    8.0,
+    50.0
+   ],
+   "deling": 2.4,
+   "breidd": 0.8,
+   "djupn": 0.5,
+   "x": [
+    12.0,
+    60.0
+   ],
+   "y_maks": 12.0,
+   "unngaa_deling": 1.6
+  },
+  "knurl_linse": {
+   "x": [
+    84.5,
+    88.2
+   ],
+   "n": 72,
+   "tjukn": 0.7,
+   "djupn": 0.5
+  },
+  "linsering": {
+   "x_flate": 88.6,
+   "r_ytre": 30.5,
+   "n": 72,
+   "lang_kvar": 3,
+   "r": [
+    27.4,
+    29.4
+   ],
+   "r_lang": 30.0,
+   "tjukn": 0.5,
+   "djupn": 0.4
+  },
+  "panel_linje": {
+   "x": 71.2,
+   "breidd": 0.6,
+   "djupn": 0.4
+  },
+  "hjulskala": {
+   "n": 36,
+   "r": [
+    12.0,
+    14.0
+   ],
+   "r_lang": 15.5,
+   "lang_kvar": 9,
+   "tjukn": 0.5,
+   "z": [
+    79.6,
+    80.6
+   ]
+  },
+  "namn": {
+   "tekst": "ENTROPI",
+   "hogd": 2.6,
+   "djupn": 0.5,
+   "senter": [
+    10.5,
+    71.5
+   ],
+   "z": 84.13,
+   "retning": -90
+  },
+  "okularring": {
+   "senter": [
+    65.0,
+    73.5
+   ],
+   "r_ytre": 8.6,
+   "r_front": 7.6,
+   "r_indre": 6.4,
+   "x": [
+    -1.2,
+    0.6
+   ],
+   "n": 24,
+   "tjukn": 0.5,
+   "djupn": 0.35
+  },
+  "delingsfas": {
+   "djupn": 0.4,
+   "breidd": 0.4
+  },
+  "knurl_linse2": {
+   "x": [
+    73.0,
+    76.5
+   ],
+   "n": 60,
+   "tjukn": 0.7,
+   "djupn": 0.5
+  },
+  "knappar": [
+   [
+    14.3,
+    66.0
+   ],
+   [
+    14.3,
+    71.5
+   ],
+   [
+    14.3,
+    77.0
+   ]
+  ],
+  "knapp": {
+   "r": 1.4,
+   "hogd": 0.6,
+   "z": 84.13
+  }
  }
 }

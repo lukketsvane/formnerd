@@ -12,8 +12,8 @@ A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1
 
 | Fil i `print/` | Delar | Tid | PLA |
 | --- | --- | --- | --- |
-| `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal | 2 t 36 min | 64 g |
-| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 3 t 58 min | 99 g |
+| `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal med skinne | 3 t 02 min | 74 g |
+| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 4 t 05 min | 98 g |
 | `A3-Entropi-smaadelar-P1S.gcode.3mf` | Utløysar, USB-lokk, hjulaksel | 12 min | 2 g |
 | `A3-Entropi-hjul-A17-P1S.gcode.3mf` | A17-hjulet V1–V4, vel eitt | 39 min | 10 g |
 
@@ -27,12 +27,28 @@ Alle filene er slica med Bambu Studio 02.08.02.61:
 
 Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, vel P1S-en, knyt filament 1 til PLA-sporet og trykk *Send*. Du kan òg kopiere fila til microSD-kortet i skrivaren.
 
-- **Botnskalet** står på botnen med delingsflata opp. Støtta står berre utanpå, under den runde botnkanten og linseløpet.
+- **Botnskalet** står på skinna med delingsflata opp. Skinna er den flate botnen, og støtta står berre utanpå, under den runde botnkanten og linseløpet.
 - **Toppskalet** står på delingsflata. Støtta står under det flate taket inne i skalet og kan takast ut gjennom den opne delingsflata. Magnetlommene, spora i kortstolpane, EC11-pipa, brytartrakta og USB-tunnelen har tak på 45°, så dei treng inga støtte.
+
+## Overflatedetaljar
+
+Detaljane er skorne eller lagde til i `verktoy/detalj.py`, og måla ligg under `detalj` i konfigurasjonen. Alle spor er minst 0,5 mm breie og 0,4–0,5 mm djupe, så ei 0,4 mm dyse får dei med.
+
+| Detalj | Kvar | Referanse |
+| --- | --- | --- |
+| Riller i grepet, 0,8 × 0,5 mm med 2,4 mm deling | Grepsida, z 8–50 | Nocs-kikkert, Hasselblad-grep |
+| Arca-Swiss-skinne, 38 mm brei med 45° svalehale, og lomme for 1/4"-20-mutter med Ø7-hol | Under botnskalet, x 18–56 | Sirui TY-70 |
+| Flat frontring med 72 skalastrek, og to knurla ringar (72 og 60 spor) | Linseløpet, x 73–77 og 84–89 | Leica Summicron |
+| Panel-linje rundt linsebasen | x 71 | Canon Colani |
+| Gradskala med 36 strek rundt hjulet | Toppen, r 12–15,5 | Sirui BH-60 |
+| Gravert «ENTROPI» og tre små knappar | Toppen av søkarblokka | Hasselblad X2D |
+| Knurla okularring som stikk 1,2 mm ut | Baksida | Leica |
+| 0,4 mm fas på begge sider av delinga | Rundt heile kroppen | |
+| Oransje utløysar | CMF | Hasselblad |
 
 ## Innkjøp
 
-ESP32-CAM, ESP32-CAM-MB (micro-USB), microSD, 6 × 6 mm trykknapp, 12 magnetar Ø6 × 3 mm, 2 leidningar 26–30 AWG på om lag 15 cm og CA-lim.
+ESP32-CAM, ESP32-CAM-MB (micro-USB), microSD, 6 × 6 mm trykknapp, 12 magnetar Ø6 × 3 mm, 2 leidningar 26–30 AWG på om lag 15 cm, ein 1/4"-20-mutter til stativfestet og CA-lim.
 
 EC11-dreieknapp med 20 mm D-aksel og M7-mutter er valfri. Har du han ikkje, limer du hjulakselen (smådelplata) i forsenkinga, og hjulet sit på han.
 
@@ -46,6 +62,7 @@ EC11-dreieknapp med 20 mm D-aksel og M7-mutter er valfri. Har du han ikkje, lime
 6. Set toppskalet på. Pinnane styrer det, og magnetane held det.
 7. Lim utløysaren på stempelet til brytaren (0,5 mm slag ned til botnen av brønnen), og trykk A17-hjulet på akselen.
 8. Skyv USB-kabelen inn i tunnelen på hjulsida, eller set i USB-lokket.
+9. Lim 1/4"-20-mutteren i sekskantlomma under skinna. Då kan kameraet stå på stativ.
 
 Rettleiinga i IKEA-stil ligg i `montering/Entropi-A3-montering.pdf` (15 sider, 12 steg).
 

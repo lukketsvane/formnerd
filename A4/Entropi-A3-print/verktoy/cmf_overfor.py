@@ -27,16 +27,24 @@ def farge(punkt, k=4):
 
 for namn in sys.argv[1:] or ["botn", "topp", "utloysar", "usb-lokk"]:
     m = trimesh.load(A3 / "print/stl" / f"{namn}.stl")
-    c = farge(m.vertices)
+    v = np.array(m.vertices, float)
+    grep = (v[:, 1] < 12.0) & (v[:, 0] > 12.0) & (v[:, 0] < 60.0) & (v[:, 2] > 7.0) & (v[:, 2] < 51.0)
+    v[grep, 1] -= 0.9
+    c = farge(v)
     df, _ = tre.query(m.triangles_center)
     ny = df > 0.6
     tc = m.triangles_center
-    for (x0, x1), (y0, y1), (z0, z1) in (((1.5, 17.0), (44.0, 86.0), (69.0, 81.0)), ((25.0, 29.6), (114.0, 120.5), (22.4, 31.6))):
+    for (x0, x1), (y0, y1), (z0, z1) in (((1.5, 17.0), (44.0, 86.0), (69.0, 81.0)), ((25.0, 29.6), (114.0, 120.5), (22.4, 31.6)), ((12.0, 60.0), (-5.0, 12.0), (7.0, 51.0)), ((4.0, 17.0), (60.0, 84.0), (83.0, 85.5))):
         ny &= ~((tc[:, 0] > x0) & (tc[:, 0] < x1) & (tc[:, 1] > y0) & (tc[:, 1] < y1) & (tc[:, 2] > z0) & (tc[:, 2] < z1))
     ny |= (tc[:, 0] > 66.0) & (np.hypot(tc[:, 1] - 65.0, tc[:, 2] - 32.0) < 27.2)
     f = m.faces.reshape(-1)
     hjorne = c[f].reshape(-1, 3, 3)
     hjorne[ny] = [14, 14, 16]
+    if namn == "utloysar":
+        hjorne[:] = [240, 138, 30]
+    if namn == "botn":
+        skinne = (tc[:, 2] < 6.2) & (tc[:, 0] > 17.5) & (tc[:, 0] < 56.5) & (tc[:, 1] > 17.5) & (tc[:, 1] < 104.5)
+        hjorne[skinne] = [60, 60, 62]
     m = trimesh.Trimesh(m.vertices[f], np.arange(len(f)).reshape(-1, 3), process=False)
     m.visual = trimesh.visual.ColorVisuals(m, vertex_colors=np.c_[hjorne.reshape(-1, 3), np.full(len(f), 255)].astype(np.uint8))
     m.export(UT / f"{namn}.ply")
