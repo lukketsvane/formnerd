@@ -198,7 +198,7 @@
   "kapp_r": 5.6,
   "brunn_r": 5.9,
   "kapp_z": 58.3,
-  "vandring": 0.9
+  "vandring": 0.5
  },
  "brytar": {
   "side_x": 7.8,
@@ -328,13 +328,15 @@
   "ec11": {
    "kapp_z": 80.0,
    "hol_d": 7.4,
-   "hol_botn_z": 72.0,
+   "hol_botn_z": 74.5,
    "pipe": [
     13.4,
     14.2
    ],
-   "tak_botn_z": 69.0,
-   "lomme_r_ekstra": 0.4
+   "tak_botn_z": 72.5,
+   "lomme_r_ekstra": 0.4,
+   "mutter_d": 12.0,
+   "mutter_botn_z": 75.5
   },
   "linsetrakt": {
    "fyll_r": 26.8,

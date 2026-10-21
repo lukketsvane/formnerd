@@ -14,8 +14,8 @@
     }
   },
   "A3-Entropi-topp-P1S.gcode.3mf": {
-    "tid": "3h 55m 52s",
-    "vekt_g": 98.18,
+    "tid": "3h 58m 28s",
+    "vekt_g": 98.79,
     "lag": 261,
     "objekt": [
       "topp.stl"
@@ -28,13 +28,13 @@
     }
   },
   "A3-Entropi-smaadelar-P1S.gcode.3mf": {
-    "tid": "12m 9s",
-    "vekt_g": 1.78,
-    "lag": 68,
+    "tid": "12m 7s",
+    "vekt_g": 1.97,
+    "lag": 55,
     "objekt": [
       "usb-lokk.stl",
-      "utloysar.stl",
-      "hjulaksel.stl"
+      "hjulaksel.stl",
+      "utloysar.stl"
     ],
     "kontroll": {
       "p1s_startkode": true,

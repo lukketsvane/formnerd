@@ -13,7 +13,7 @@ A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1
 | Fil i `print/` | Delar | Tid | PLA |
 | --- | --- | --- | --- |
 | `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal | 2 t 36 min | 64 g |
-| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 3 t 56 min | 98 g |
+| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 3 t 58 min | 99 g |
 | `A3-Entropi-smaadelar-P1S.gcode.3mf` | Utløysar, USB-lokk, hjulaksel | 12 min | 2 g |
 | `A3-Entropi-hjul-A17-P1S.gcode.3mf` | A17-hjulet V1–V4, vel eitt | 39 min | 10 g |
 
@@ -28,13 +28,13 @@ Alle filene er slica med Bambu Studio 02.08.02.61:
 Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, vel P1S-en, knyt filament 1 til PLA-sporet og trykk *Send*. Du kan òg kopiere fila til microSD-kortet i skrivaren.
 
 - **Botnskalet** står på botnen med delingsflata opp. Støtta står berre utanpå, under den runde botnkanten og linseløpet.
-- **Toppskalet** står på delingsflata. Støtta står under det flate taket inne i skalet og kan takast ut gjennom den opne delingsflata. Magnetlommene, EC11-pipa, brytartrakta og USB-tunnelen har tak på 45°, så dei treng inga støtte.
+- **Toppskalet** står på delingsflata. Støtta står under det flate taket inne i skalet og kan takast ut gjennom den opne delingsflata. Magnetlommene, spora i kortstolpane, EC11-pipa, brytartrakta og USB-tunnelen har tak på 45°, så dei treng inga støtte.
 
 ## Innkjøp
 
 ESP32-CAM, ESP32-CAM-MB (micro-USB), microSD, 6 × 6 mm trykknapp, 12 magnetar Ø6 × 3 mm, 2 leidningar 26–30 AWG på om lag 15 cm og CA-lim.
 
-EC11-dreieknapp med 20 mm D-aksel er valfri. Har du han ikkje, limer du hjulakselen (smådelplata) i holet, og hjulet sit på han.
+EC11-dreieknapp med 20 mm D-aksel og M7-mutter er valfri. Har du han ikkje, limer du hjulakselen (smådelplata) i forsenkinga, og hjulet sit på han.
 
 ## Montering
 
@@ -42,12 +42,12 @@ EC11-dreieknapp med 20 mm D-aksel er valfri. Har du han ikkje, limer du hjulakse
 2. Lodd leidningane til GND (pinne 2) og IO13 (pinne 4) på 5V-rekkja på ESP32-CAM. Set kameraet på MB, set i SD-kortet, last opp firmware og test.
 3. Senk stabelen rett ned i spora i dei to stolpane i botnskalet. Linsa går ned i halve linsesetet.
 4. Før leidningane opp gjennom holet i brytartrakta i toppskalet. Lodd brytaren på to diagonale bein, og lim han i lomma med beina i full lengd.
-5. EC11: før dreieknappen opp gjennom pipa i toppskalet til aksen kjem ut av holet på toppen, og lim han. Kort akselen til 5,5 mm over toppflata. Utan EC11 limer du hjulakselen i holet i staden.
+5. EC11: før dreieknappen opp gjennom pipa i toppskalet til gjengene kjem ut i forsenkinga på toppen. Skru på M7-mutteren der; hjulet dekkjer han. Kort akselen til 5,5 mm over toppflata. Utan EC11 limer du hjulakselen i forsenkinga i staden.
 6. Set toppskalet på. Pinnane styrer det, og magnetane held det.
-7. Lim utløysaren på brytaren og trykk A17-hjulet på akselen.
+7. Lim utløysaren på stempelet til brytaren (0,5 mm slag ned til botnen av brønnen), og trykk A17-hjulet på akselen.
 8. Skyv USB-kabelen inn i tunnelen på hjulsida, eller set i USB-lokket.
 
-Ei ny rettleiing i IKEA-stil for det delte skalet kjem. `montering/` viser framleis den gamle luke-versjonen.
+Rettleiinga i IKEA-stil ligg i `montering/Entropi-A3-montering.pdf` (15 sider, 12 steg).
 
 ## Kontroll (`print/kontroll.json`)
 
@@ -59,7 +59,7 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 | Innvendig rom | om lag 290 cm³ |
 | Kollisjon mellom elektronikk og skal | 0 mm³ for alle proxyar. Klaringa til stabelen er 0,2 mm i begge skala. |
 | Monteringsbaner | 0 mm³ for: stabel ned i botnen, toppskal ned over stabelen, USB-plugg inn, EC11 opp i pipa, brytar ned i lomma |
-| Veggar mot holrom | Holkjerna minst 1,34 mm, magnetlommer 2,20, pinnehol 1,93, brønnen 1,27, brytarlomma 2,54, USB-tunnelen 2,01, EC11-pipa 3,3 |
+| Veggar mot holrom | Holkjerna minst 1,34 mm, magnetlommer 2,20, pinnehol 1,93, brønnen 1,32, brytarlomma 2,52, USB-tunnelen 2,01, EC11-pipa 3,3 |
 | Tynne parti (strålar frå 60 000 overflatepunkt) | Linseringen i skulpturen, knivkanten i USB-opninga og ei finne i den eine kortstolpen |
 | Hjulet | Skore av ved z = 80 innanfor r = 11,0 rundt (31,1; 103,9). A17-hjulet er Ø24. |
 | Linsetrakta | Den tynne ringen og sporet (r 17–24, om lag 14 mm djupt) er fylte med det konvekse skrovet av trakta innanfor r 26,8. Ei ny trakt går frå r 26,5 ved x 87,5 til r 17 ved x 74. Der møter ho kamerakonusen i éin skarp kant, og synsfeltet er uendra. |

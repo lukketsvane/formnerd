@@ -26,7 +26,7 @@
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 132.674,
+      "volum_cm3": 131.88,
       "komponentar": 1,
       "bbox": [
         [
@@ -77,17 +77,17 @@
     },
     "hjulaksel": {
       "status": "Error.NoError",
-      "volum_cm3": 0.444,
+      "volum_cm3": 0.651,
       "komponentar": 1,
       "bbox": [
         [
-          27.57,
-          100.34,
-          72.0
+          25.27,
+          98.04,
+          74.5
         ],
         [
-          34.67,
-          107.44,
+          36.97,
+          109.74,
           85.5
         ]
       ]
@@ -95,8 +95,8 @@
   },
   "veggar_mm": {
     "kjerne": 1.34,
-    "brytarlomme": 2.54,
-    "brunn": 1.27,
+    "brytarlomme": 2.52,
+    "brunn": 1.32,
     "ec11_pipe": 3.3,
     "magnetlommer": 2.2,
     "pinnehol": 1.93,
@@ -173,5 +173,5 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "innvendig_volum_cm3": 304.0
+  "innvendig_volum_cm3": 304.8
 }
