@@ -9,7 +9,7 @@ rm -rf "${UT:?}/skills/skisse-til-cad"
 cp -r "$ROT/.agents/skills/skisse-til-cad" "$UT/skills/"
 mkdir -p "$UT/skills/skisse-til-cad/scripts"
 cp "$ROT/verktoy/tripo.py" "$ROT/verktoy/kjor.py" "$ROT/verktoy/tripo_docs.sh" "$UT/skills/skisse-til-cad/scripts/"
-cp -r "$HER/.claude-plugin" "$HER/README.md" "$UT/"
+cp -r "$HER/.claude-plugin" "$HER/README.md" "$HER/LICENSE" "$UT/"
 ln -sfn ../../skills/skisse-til-cad "$UT/.agents/skills/skisse-til-cad"
 python3 - "$UT/skills/skisse-til-cad" <<'PY'
 import sys

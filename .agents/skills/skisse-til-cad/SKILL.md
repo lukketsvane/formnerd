@@ -1,6 +1,7 @@
 ---
 name: skisse-til-cad
 description: Gå frå skisse eller produktbilete via Tripo image-to-3D, segmentering eller Smart Low Poly, til mekanisk CAD, printfiler og IKEA-liknande monteringsrettleiing. Bruk ved skisse til CAD, sketch to CAD, Tripo til CAD, Smart Segment, vidareføring av vald 3D-form eller isometrisk assembly frå ein faktisk modell.
+license: Apache-2.0
 ---
 
 # Skisse til CAD og montering

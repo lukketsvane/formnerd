@@ -39,6 +39,10 @@ npx skills add lukketsvane/skisse-til-cad
 
 Tripo-kall krev `TRIPO_API_KEY` i miljøet. Skillen tilrår den offisielle `tripo-cli@0.7.2` (Node 20+), og `scripts/` krev Python med `requests`. Skillen opprettar aldri betalte Tripo-jobbar utan at brukaren har godkjent kostnaden.
 
+## Lisens
+
+[Apache-2.0](LICENSE).
+
 ## Opphav
 
 Utvikla i [lukketsvane/formnerd](https://github.com/lukketsvane/formnerd), der dei gjennomførte prosjekta skillen viser til ligg (A1, A2, A4 og Entropi).

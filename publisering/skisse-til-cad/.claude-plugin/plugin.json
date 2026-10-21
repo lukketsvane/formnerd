@@ -12,5 +12,6 @@
     "3d-printing",
     "assembly-instructions",
     "skill"
-  ]
+  ],
+  "license": "Apache-2.0"
 }
