@@ -1,6 +1,6 @@
 # Entropi · A3-print (delt skal)
 
-A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1S. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
+A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1S. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Linsa sit i ei glatt trakt med éin skarp kant, hendingshorisonten, i staden for den tynne ringen og sporet. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
 
 ![CMF](bilete/cmf.png)
 
@@ -12,8 +12,8 @@ A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1
 
 | Fil i `print/` | Delar | Tid | PLA |
 | --- | --- | --- | --- |
-| `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal | 2 t 44 min | 66 g |
-| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 4 t 10 min | 101 g |
+| `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal | 2 t 36 min | 64 g |
+| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 3 t 56 min | 98 g |
 | `A3-Entropi-smaadelar-P1S.gcode.3mf` | Utløysar, USB-lokk, hjulaksel | 12 min | 2 g |
 | `A3-Entropi-hjul-A17-P1S.gcode.3mf` | A17-hjulet V1–V4, vel eitt | 39 min | 10 g |
 
@@ -55,13 +55,14 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 
 | Kontroll | Resultat |
 | --- | --- |
-| Delar | Botnskal 74,4 cm³ og toppskal 134,9 cm³. Alle fem delane er ein lekam kvar (manifold). |
-| Innvendig rom | 287 cm³ |
+| Delar | Botnskal 72,2 cm³ og toppskal 132,7 cm³. Alle fem delane er ein lekam kvar (manifold). |
+| Innvendig rom | om lag 290 cm³ |
 | Kollisjon mellom elektronikk og skal | 0 mm³ for alle proxyar. Klaringa til stabelen er 0,2 mm i begge skala. |
 | Monteringsbaner | 0 mm³ for: stabel ned i botnen, toppskal ned over stabelen, USB-plugg inn, EC11 opp i pipa, brytar ned i lomma |
-| Veggar mot holrom | Holkjerna minst 1,34 mm, magnetlommer 1,59, pinnehol 1,26, brønnen 1,27, brytarlomma 2,54, USB-tunnelen 2,01, EC11-pipa 3,3 |
+| Veggar mot holrom | Holkjerna minst 1,34 mm, magnetlommer 2,20, pinnehol 1,93, brønnen 1,27, brytarlomma 2,54, USB-tunnelen 2,01, EC11-pipa 3,3 |
 | Tynne parti (strålar frå 60 000 overflatepunkt) | Linseringen i skulpturen, knivkanten i USB-opninga og ei finne i den eine kortstolpen |
 | Hjulet | Skore av ved z = 80 innanfor r = 11,0 rundt (31,1; 103,9). A17-hjulet er Ø24. |
+| Linsetrakta | Den tynne ringen og sporet (r 17–24, om lag 14 mm djupt) er fylte med det konvekse skrovet av trakta innanfor r 26,8. Ei ny trakt går frå r 26,5 ved x 87,5 til r 17 ved x 74. Der møter ho kamerakonusen i éin skarp kant, og synsfeltet er uendra. |
 
 ## Kjende avgrensingar
 

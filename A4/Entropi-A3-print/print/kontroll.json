@@ -9,7 +9,7 @@
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 74.395,
+      "volum_cm3": 72.164,
       "komponentar": 1,
       "bbox": [
         [
@@ -26,7 +26,7 @@
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 134.855,
+      "volum_cm3": 132.674,
       "komponentar": 1,
       "bbox": [
         [
@@ -98,8 +98,8 @@
     "brytarlomme": 2.54,
     "brunn": 1.27,
     "ec11_pipe": 3.3,
-    "magnetlommer": 1.59,
-    "pinnehol": 1.26,
+    "magnetlommer": 2.2,
+    "pinnehol": 1.93,
     "usb_tunnel": 2.01
   },
   "kollisjonar_mm3": {
@@ -173,5 +173,5 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "innvendig_volum_cm3": 287.4
+  "innvendig_volum_cm3": 304.0
 }

@@ -101,6 +101,14 @@ hf = K["usbc_hjul_fyll"]
 y_panel = float(np.median([flate_y(x, z, False) for x, z in [(24.0, 27.0), (30.6, 27.0), (27.2, 21.5), (27.2, 32.5)]]))
 KROPP0 = ORIG + boks([2.0, 16.5], [yv, yh], [69.5, 80.5]) + boks(hf["x"], [y_panel - 3.0, y_panel], hf["z"])
 
+
+def xsyl(x0, x1, r):
+    return Manifold.cylinder(x1 - x0, r, r, SEG).rotate([0, 90, 0]).translate([x0, ay, az])
+
+
+lt = S["linsetrakt"]
+KROPP0 += (ORIG ^ xsyl(lt["fyll_x"][0], lt["fyll_x"][1], lt["slab_r"])).hull() ^ xsyl(lt["fyll_x"][0], lt["fyll_x"][1], lt["fyll_r"])
+
 # --- hjulet: skoren av, EC11 under A17-knappen ------------------------------
 ec = S["ec11"]
 gx, gy = np.meshgrid(np.arange(15, 48, 0.5), np.arange(90, 122, 0.5))
@@ -139,6 +147,7 @@ ks, lk = K["kamerasete"], K["linsekonus"]
 sete = boks([S["front_x"] - 1.0, x_konus + 0.8], [ay - ks["side"] / 2, ay + ks["side"] / 2], [az - ks["side"] / 2, az + ks["side"] / 2])
 konus = Manifold.batch_hull([xskive(x_konus, ay, az, lk["bak_r"]), xskive(lk["front_x"], ay, az, lk["front_r"])])
 konus += Manifold.cylinder(lk["fram_til_x"] - lk["front_x"], lk["front_r"], lk["front_r"], SEG).rotate([0, 90, 0]).translate([lk["front_x"], ay, az])
+trakt = sum((Manifold.batch_hull([xskive(x1, ay, az, r1), xskive(x2, ay, az, r2)]) for (r1, x1), (r2, x2) in zip(lt["profil"][:-1], lt["profil"][1:])), Manifold())
 ut_ = K["utloysar"]
 ux, uy = ut_["senter"]
 brunn_golv = ut_["kapp_z"] - ut_["vandring"]
@@ -204,7 +213,7 @@ spor += rboks_y(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
 STOLPAR -= spor
 
 # --- samanstilling ----------------------------------------------------------
-HOLROM = (KJERNE - vern - SOYLER - STOLPAR) + sete + konus + brunn + brytarlomme + brytarhol + usb_tunnel + usbc + okular + EC11
+HOLROM = (KJERNE - vern - SOYLER - STOLPAR) + sete + konus + trakt + brunn + brytarlomme + brytarhol + usb_tunnel + usbc + okular + EC11
 KROPP = KROPP0 - HOLROM
 KNAPP = KROPP0 ^ vsyl(ux, uy, ut_["kapp_r"], ut_["kapp_z"], 90)
 lokk_ytre = rboks_y_tak(y_hjul_usb - ut_t["lokk_lengd"], y_hjul_usb + 6, x_usb, az, ut_t["b_x"] - 2 * ut_t["lokk_klaring"], ut_t["h_z"] - 2 * ut_t["lokk_klaring"], max(ut_t["r"] - ut_t["lokk_klaring"], 0.5))
