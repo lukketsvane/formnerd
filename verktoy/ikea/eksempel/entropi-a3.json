@@ -1,0 +1,596 @@
+{
+  "meta": {
+    "title": "Entropi A3",
+    "subtitle": "Kamera for ESP32-CAM · test av verktoy/ikea",
+    "footer": "Entropi A3 · utkast, ikkje prøvemontert"
+  },
+  "views": {
+    "iso": {
+      "dir": [
+        0.95,
+        -0.85,
+        0.75
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    "under": {
+      "dir": [
+        0.95,
+        -0.85,
+        -0.75
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ]
+    },
+    "bak": {
+      "dir": [
+        0.6,
+        1.0,
+        0.7
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "parts": {
+    "kropp": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/kropp.stl",
+      "id": "1",
+      "qty": 1,
+      "kind": "printed",
+      "crease": 55,
+      "min_px": 400
+    },
+    "luke": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/luke.stl",
+      "id": "2",
+      "qty": 1,
+      "kind": "printed",
+      "thumb_view": "under"
+    },
+    "haldar": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/stabelhaldar.stl",
+      "id": "3",
+      "qty": 1,
+      "kind": "printed"
+    },
+    "utloysar": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/utloysar.stl",
+      "id": "4",
+      "qty": 1,
+      "kind": "printed"
+    },
+    "usblokk": {
+      "mesh": "../../../A4/Entropi-A3-print/print/stl/usb-lokk.stl",
+      "id": "5",
+      "qty": 1,
+      "kind": "printed",
+      "thumb_view": "bak"
+    },
+    "magnet": {
+      "primitive": {
+        "cylinder": {
+          "r": 3.0,
+          "h": 3.0
+        }
+      },
+      "letter": "A",
+      "qty": 8,
+      "kind": "hardware"
+    },
+    "stabel": {
+      "mesh": [
+        "../../../A4/Entropi-A3-print/print/proxy/cam_kort.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/esp32s.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/headerar.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/kameramodul.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/mb_kort.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/mb_tappar.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/mb_knappar.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/sd_kort.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/sd_og_fpc.stl",
+        "../../../A4/Entropi-A3-print/print/proxy/usb_kontakt.stl"
+      ],
+      "letter": "B",
+      "qty": 1,
+      "kind": "hardware"
+    },
+    "brytar": {
+      "mesh": "../../../A4/Entropi-A3-print/print/proxy/brytar6x6.stl",
+      "letter": "C",
+      "qty": 1,
+      "kind": "hardware"
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "title": "MONTERINGSRETTLEIING",
+      "view": "iso",
+      "scene": [
+        {
+          "part": "kropp"
+        },
+        {
+          "part": "utloysar"
+        },
+        {
+          "part": "usblokk"
+        },
+        {
+          "part": "luke"
+        }
+      ]
+    },
+    {
+      "type": "inventory"
+    },
+    {
+      "type": "hardware"
+    },
+    {
+      "type": "exploded",
+      "view": "under",
+      "scene": [
+        {
+          "part": "kropp"
+        },
+        {
+          "part": "stabel",
+          "explode": [
+            0,
+            0,
+            -40
+          ]
+        },
+        {
+          "part": "haldar",
+          "explode": [
+            0,
+            0,
+            -75
+          ]
+        },
+        {
+          "part": "luke",
+          "explode": [
+            0,
+            0,
+            -110
+          ]
+        },
+        {
+          "part": "magnet",
+          "at": [
+            [
+              22.6,
+              58.0,
+              8.5
+            ],
+            [
+              22.6,
+              77.0,
+              8.5
+            ],
+            [
+              22.6,
+              96.0,
+              8.5
+            ],
+            [
+              57.5,
+              66.0,
+              8.5
+            ]
+          ],
+          "explode": [
+            0,
+            0,
+            -92
+          ]
+        },
+        {
+          "part": "utloysar",
+          "explode": [
+            0,
+            0,
+            30
+          ]
+        },
+        {
+          "part": "usblokk",
+          "explode": [
+            0,
+            30,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "title": "Magnetar",
+      "icons": [
+        "lim"
+      ],
+      "figures": [
+        {
+          "view": "under",
+          "scene": [
+            {
+              "part": "kropp"
+            },
+            {
+              "part": "magnet",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                -22
+              ],
+              "at": [
+                [
+                  22.6,
+                  58.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  77.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  96.0,
+                  8.5
+                ],
+                [
+                  57.5,
+                  66.0,
+                  8.5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "view": "iso",
+          "scene": [
+            {
+              "part": "luke"
+            },
+            {
+              "part": "magnet",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                16
+              ],
+              "at": [
+                [
+                  22.6,
+                  58.0,
+                  5.5
+                ],
+                [
+                  22.6,
+                  77.0,
+                  5.5
+                ],
+                [
+                  22.6,
+                  96.0,
+                  5.5
+                ],
+                [
+                  57.5,
+                  66.0,
+                  5.5
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Same pol ut på alle åtte. Merk sida med tusj."
+    },
+    {
+      "type": "step",
+      "title": "Brytar og utløysar",
+      "figures": [
+        {
+          "view": "under",
+          "scene": [
+            {
+              "part": "kropp",
+              "role": "ghost"
+            },
+            {
+              "part": "brytar",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                -35
+              ]
+            }
+          ]
+        },
+        {
+          "view": "iso",
+          "scene": [
+            {
+              "part": "kropp"
+            },
+            {
+              "part": "utloysar",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                28
+              ]
+            }
+          ],
+          "detail": {
+            "centre": [
+              45.5,
+              13.5,
+              60.0
+            ],
+            "span": 12,
+            "pos": "right",
+            "label": "klikk",
+            "scene": [
+              {
+                "part": "kropp"
+              },
+              {
+                "part": "utloysar"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "title": "Kamera og haldar",
+      "flow": "down",
+      "figures": [
+        {
+          "view": "under",
+          "scene": [
+            {
+              "part": "kropp"
+            },
+            {
+              "part": "magnet",
+              "at": [
+                [
+                  22.6,
+                  58.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  77.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  96.0,
+                  8.5
+                ],
+                [
+                  57.5,
+                  66.0,
+                  8.5
+                ]
+              ]
+            },
+            {
+              "part": "stabel",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                -45
+              ]
+            }
+          ]
+        },
+        {
+          "view": "under",
+          "scene": [
+            {
+              "part": "kropp"
+            },
+            {
+              "part": "magnet",
+              "at": [
+                [
+                  22.6,
+                  58.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  77.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  96.0,
+                  8.5
+                ],
+                [
+                  57.5,
+                  66.0,
+                  8.5
+                ]
+              ]
+            },
+            {
+              "part": "stabel"
+            },
+            {
+              "part": "haldar",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                -45
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "title": "Luke",
+      "figures": [
+        {
+          "view": "under",
+          "scene": [
+            {
+              "part": "kropp"
+            },
+            {
+              "part": "magnet",
+              "at": [
+                [
+                  22.6,
+                  58.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  77.0,
+                  8.5
+                ],
+                [
+                  22.6,
+                  96.0,
+                  8.5
+                ],
+                [
+                  57.5,
+                  66.0,
+                  8.5
+                ]
+              ]
+            },
+            {
+              "part": "stabel"
+            },
+            {
+              "part": "haldar"
+            },
+            {
+              "part": "luke",
+              "role": "new",
+              "explode": [
+                0,
+                0,
+                -45
+              ]
+            }
+          ],
+          "detail": {
+            "centre": [
+              22.6,
+              77.0,
+              5.0
+            ],
+            "span": 9,
+            "pos": "right",
+            "label": "N – S",
+            "scene": [
+              {
+                "part": "magnet",
+                "at": [
+                  [
+                    22.6,
+                    77.0,
+                    8.5
+                  ]
+                ]
+              },
+              {
+                "part": "magnet",
+                "at": [
+                  [
+                    22.6,
+                    77.0,
+                    5.5
+                  ]
+                ],
+                "role": "new",
+                "explode": [
+                  0,
+                  0,
+                  -5
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "warning": "Ikkje lim luka fast. Ho skal kunne takast av."
+    },
+    {
+      "type": "step",
+      "title": "USB-lok",
+      "icons": [
+        "ok"
+      ],
+      "figures": [
+        {
+          "view": "bak",
+          "scene": [
+            {
+              "part": "kropp"
+            },
+            {
+              "part": "utloysar"
+            },
+            {
+              "part": "usblokk",
+              "role": "new",
+              "explode": [
+                0,
+                28,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "warnings",
+      "items": [
+        "Bruk berre lim på magnetane, ikkje på luka.",
+        "Same pol ut på alle magnetane, elles held ikkje luka.",
+        "Kople frå USB før du opnar luka."
+      ],
+      "icons": [
+        "lim",
+        "snu"
+      ]
+    }
+  ]
+}
