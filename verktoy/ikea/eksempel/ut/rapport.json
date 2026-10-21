@@ -1,420 +1,549 @@
 {
-  "pdf": "rettleiing.pdf",
-  "sha256": "b766ae540ccc62d220af676214528d2deb65e66e6e85896b767434c738c79355",
-  "sider": 20,
-  "spec_sha256": "174fd0b8b717845e2f5bf8aadb843608de6d2cbb5bf0ad0be106e87cbf4cb73c",
-  "source_commit": "f519652ecc20c5239c7892ae46b9b63d3e8bb6a3",
-  "mesh_sha256": {
-    "../../../A4/Entropi-A3-print/print/stl/botn.stl": "96204921ef3b322b7dc6e2c75af642372a04c62feb68a98d30a87881e4264070",
-    "../../../A4/Entropi-A3-print/print/stl/topp.stl": "d97bb62eeb9f80a5f411644832ef56b2e67670353c8b79b28c3de2ef345d468e",
-    "../../../A4/Entropi-A3-print/print/stl/utloysar.stl": "37ee53aafbbd4386f42dd2ba0a712c5230e9be232ff9e93a8d978794a9365d85",
-    "../../../A4/Entropi-A3-print/print/stl/usb-lokk.stl": "36bf164b42903d069f4c4cc3f41d87391d51155db4a90f30430f0f09751b7078",
-    "../../../A4/Entropi-A3-print/print/stl/hjulaksel.stl": "2a791bc1bbce68e97f0b8e277f2a2a574fc148f8699f60b9284504da10b738a2",
-    "../../../A4/Entropi-A3-print/print/printretning/hjul-A17-V4.stl": "00094e0667fda3191c695e5969327e67cb60dff6e1407becc701a9c82272f542",
-    "../../../A4/Entropi-A3-print/print/proxy/cam_kort.stl": "edefbe30fb7b604dfdef51903ac4b24a32a04b884a6eb5def955654c58c95e75",
-    "../../../A4/Entropi-A3-print/print/proxy/esp32s.stl": "daa590a52394631ac27f42d4b7c7a9b6b5c7a6411c4f74cc667db987a0ef4d4d",
-    "../../../A4/Entropi-A3-print/print/proxy/sd_og_fpc.stl": "457269e3753ed080fee6212ccf11ef782fab78fc660caae00f6f71ddee07af22",
-    "../../../A4/Entropi-A3-print/print/proxy/kameramodul.stl": "6a8f43da23c037f39fecdba3b9698a436c00df923e2ae34f95acc562850c7d84",
-    "../../../A4/Entropi-A3-print/print/proxy/pinnetappar.stl": "0071a72d2a6edbed91374b9334d52ce9f655d1158050235930d640ce2b6bcee1",
-    "../../../A4/Entropi-A3-print/print/proxy/mb_kort.stl": "827395003892d39052e742deca7fc98904865bd97f41e79eb96fee8d88556bd6",
-    "../../../A4/Entropi-A3-print/print/proxy/mb_tappar.stl": "6005030796a0a517357afeb5cab2a2ffc2657062836c117eb22b6001f4cc41d1",
-    "../../../A4/Entropi-A3-print/print/proxy/usb_kontakt.stl": "3fc0954d5a914fffac3557d67db17ecb95536d33e152d75fdcc065d531f86472",
-    "../../../A4/Entropi-A3-print/print/proxy/mb_knappar.stl": "837ec911196e60ca8324744cfefc536dfe8faeb1ebdc30cb3f28535938e63dcd",
-    "../../../A4/Entropi-A3-print/print/proxy/headerar.stl": "c9bcc89b071a0399debfae6616a059cd6e26af98f5306a6c0189719d73b66f93",
-    "../../../A4/Entropi-A3-print/print/proxy/sd_kort.stl": "5a51ab7679c6493f34ad2d20b2fdf0b17c9d13631c0275044a8c085f95a824d5",
-    "../../../A4/Entropi-A3-print/print/proxy/brytar6x6.stl": "2083221c73a611f121d893169063d314df35e6ed4306ad564a30425f21f898a1",
-    "../../../A4/Entropi-A3-print/print/proxy/usb_plugg.stl": "871205fc01099b9c1f3d51e9c900bbd435284c3ce6d759ed52235f2a2bf73144"
-  },
-  "beslag": {
-    "cam": {
-      "i_steg": 1,
-      "i_delliste": 1
+ "pdf": "rettleiing.pdf",
+ "sha256": "7cc45e682b27d9fcda9020ada663a9b7ff8198664a7e8e879fb26f8c37c513fb",
+ "sider": 20,
+ "spec_sha256": "976af48d1195071a85fc86cda5695e83acf10e48e50f9aafaf4dc7e47d3f0d12",
+ "source_commit": "f519652ecc20c5239c7892ae46b9b63d3e8bb6a3",
+ "mesh_sha256": {
+  "../../../A4/Entropi-A3-print/print/stl/botn.stl": "96204921ef3b322b7dc6e2c75af642372a04c62feb68a98d30a87881e4264070",
+  "../../../A4/Entropi-A3-print/print/stl/topp.stl": "d97bb62eeb9f80a5f411644832ef56b2e67670353c8b79b28c3de2ef345d468e",
+  "../../../A4/Entropi-A3-print/print/stl/utloysar.stl": "37ee53aafbbd4386f42dd2ba0a712c5230e9be232ff9e93a8d978794a9365d85",
+  "../../../A4/Entropi-A3-print/print/stl/usb-lokk.stl": "36bf164b42903d069f4c4cc3f41d87391d51155db4a90f30430f0f09751b7078",
+  "../../../A4/Entropi-A3-print/print/stl/hjulaksel.stl": "2a791bc1bbce68e97f0b8e277f2a2a574fc148f8699f60b9284504da10b738a2",
+  "../../../A4/Entropi-A3-print/print/printretning/hjul-A17-V4.stl": "00094e0667fda3191c695e5969327e67cb60dff6e1407becc701a9c82272f542",
+  "../../../A4/Entropi-A3-print/print/proxy/cam_kort.stl": "edefbe30fb7b604dfdef51903ac4b24a32a04b884a6eb5def955654c58c95e75",
+  "../../../A4/Entropi-A3-print/print/proxy/esp32s.stl": "daa590a52394631ac27f42d4b7c7a9b6b5c7a6411c4f74cc667db987a0ef4d4d",
+  "../../../A4/Entropi-A3-print/print/proxy/sd_og_fpc.stl": "457269e3753ed080fee6212ccf11ef782fab78fc660caae00f6f71ddee07af22",
+  "../../../A4/Entropi-A3-print/print/proxy/kameramodul.stl": "6a8f43da23c037f39fecdba3b9698a436c00df923e2ae34f95acc562850c7d84",
+  "../../../A4/Entropi-A3-print/print/proxy/pinnetappar.stl": "0071a72d2a6edbed91374b9334d52ce9f655d1158050235930d640ce2b6bcee1",
+  "../../../A4/Entropi-A3-print/print/proxy/mb_kort.stl": "827395003892d39052e742deca7fc98904865bd97f41e79eb96fee8d88556bd6",
+  "../../../A4/Entropi-A3-print/print/proxy/mb_tappar.stl": "6005030796a0a517357afeb5cab2a2ffc2657062836c117eb22b6001f4cc41d1",
+  "../../../A4/Entropi-A3-print/print/proxy/usb_kontakt.stl": "3fc0954d5a914fffac3557d67db17ecb95536d33e152d75fdcc065d531f86472",
+  "../../../A4/Entropi-A3-print/print/proxy/mb_knappar.stl": "837ec911196e60ca8324744cfefc536dfe8faeb1ebdc30cb3f28535938e63dcd",
+  "../../../A4/Entropi-A3-print/print/proxy/headerar.stl": "c9bcc89b071a0399debfae6616a059cd6e26af98f5306a6c0189719d73b66f93",
+  "../../../A4/Entropi-A3-print/print/proxy/sd_kort.stl": "5a51ab7679c6493f34ad2d20b2fdf0b17c9d13631c0275044a8c085f95a824d5",
+  "../../../A4/Entropi-A3-print/print/proxy/brytar6x6.stl": "2083221c73a611f121d893169063d314df35e6ed4306ad564a30425f21f898a1",
+  "../../../A4/Entropi-A3-print/print/proxy/usb_plugg.stl": "871205fc01099b9c1f3d51e9c900bbd435284c3ce6d759ed52235f2a2bf73144"
+ },
+ "code_sha256": {
+  "bygg.py": "850736557313ea1bc0d3e64dfe24514d4589c8e4f4b7328cb389021757b49f00",
+  "sider.py": "270436998ce443ed9a2263c2157e191b3c46f4b61bfacb3d4ac73769464505ad",
+  "kontur.py": "c8312e7bb57f0a16dc1ea472ec036ba7b4ecd348277fcc267ce3e4bfc5652083",
+  "strek.mjs": "fe7cc1d731f642e4f5650dc8cd17ae54b5da044ce28acebaa8f968551f6a59c5",
+  "vising.py": "e280da1843baf2ba286bf10aad15d259bc80d5f8eac1b300a179846e88a721c7"
+ },
+ "dependency_sha256": {
+  "requirements.txt": "003ae948518786a34dd21d50d4b66e2a7b9e902de6372a273f57b0c4fb3c9cde",
+  "../package-lock.json": "77aecec8d4d61e20d0dc9a2221bab4eb6b0a5821fa671c4c66a57f0c287a4b79"
+ },
+ "font_sha256": {
+  "DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+  "DejaVuSans-Bold.ttf": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+ },
+ "export": {
+  "pages": 20,
+  "png": {
+   "directory": "sider",
+   "width": 1440,
+   "height": 2037,
+   "files": [
+    {
+     "file": "sider/side-01.png",
+     "sha256": "df12a676542efdcf50ca349ab01aeb895a8938806b636f1c437f930da79da47f"
     },
-    "mb": {
-      "i_steg": 1,
-      "i_delliste": 1
+    {
+     "file": "sider/side-02.png",
+     "sha256": "a3fd3d49581efbecbada8982801292d2eb5e2a29020eed7a1ec309f5a369f969"
     },
-    "sd": {
-      "i_steg": 1,
-      "i_delliste": 1
+    {
+     "file": "sider/side-03.png",
+     "sha256": "80fea6e39c20771461e3a4f78663b884632c839f4cfea7dcf1fe4543bb5d3261"
     },
-    "brytar": {
-      "i_steg": 1,
-      "i_delliste": 1
+    {
+     "file": "sider/side-04.png",
+     "sha256": "4fca14713313cf54fcca7df814519cce88128b87e54ed7918077d2d2cf9c88b9"
     },
-    "magnet": {
-      "i_steg": 12,
-      "i_delliste": 12
+    {
+     "file": "sider/side-05.png",
+     "sha256": "fa5d018d842b681aa68baeb8261324a2f30748a8f2ebacee81bc344581b8499c"
     },
-    "leidning": {
-      "i_steg": 2,
-      "i_delliste": 2
+    {
+     "file": "sider/side-06.png",
+     "sha256": "ba26b237060664a74672d6e40ae0c60075ab279331a985036aaf99e8a831bca4"
     },
-    "kabel": {
-      "i_steg": 1,
-      "i_delliste": 1
+    {
+     "file": "sider/side-07.png",
+     "sha256": "384fbf358d6f56facdb4c6715cb70471bb68e2299b004130987848005b9cc55e"
     },
-    "stativmutter": {
-      "i_steg": 1,
-      "i_delliste": 1
+    {
+     "file": "sider/side-08.png",
+     "sha256": "1a3af636958c3f577f56be033dc19af2b53070e362b0e4160e3c6996c88404c9"
+    },
+    {
+     "file": "sider/side-09.png",
+     "sha256": "8bea6f4b703a37bb8c1598fc3f195875421782a2b43e60c6cdea0478913b73d5"
+    },
+    {
+     "file": "sider/side-10.png",
+     "sha256": "4babf25b70b3c1b6fff6216fc61240b55aa0f464d56d381cb8cc4e227f9104f8"
+    },
+    {
+     "file": "sider/side-11.png",
+     "sha256": "cea7583f19822ad647f15005865ea5bd8742504b7cba54767bda8e59a659ef81"
+    },
+    {
+     "file": "sider/side-12.png",
+     "sha256": "02c138ab84e5c3fdf800641ec065fb5faa4f76a494ddb12a944da3bb032689af"
+    },
+    {
+     "file": "sider/side-13.png",
+     "sha256": "6e4fad3dcd5472d90a003433dec0d1e22920397a0f3411d65b2e3eb7495ba0a5"
+    },
+    {
+     "file": "sider/side-14.png",
+     "sha256": "406e9afbf6b81d63c585a9d18400120abb50b1a1030a8ad09f3bdb7999961841"
+    },
+    {
+     "file": "sider/side-15.png",
+     "sha256": "2ad06043a3aef0690acf9b82823f94097e38b4d0c5aa1571408e370c83e3c38c"
+    },
+    {
+     "file": "sider/side-16.png",
+     "sha256": "78a498027439c30d700abda98c01afeea4292306ac54161223f66ddf43b5ff87"
+    },
+    {
+     "file": "sider/side-17.png",
+     "sha256": "19da680759ae5ad40b0e56cce92aa41c8c882da176fe217c522087509cc33ef6"
+    },
+    {
+     "file": "sider/side-18.png",
+     "sha256": "e954049a5188fd8d203c1d3fe1b9ca3bc1ef22593e4409e426729614cd414ccf"
+    },
+    {
+     "file": "sider/side-19.png",
+     "sha256": "06fce237affd22b5ed605e4ba536c3eeca671a4cf254ee52da3f5bb801ec98e7"
+    },
+    {
+     "file": "sider/side-20.png",
+     "sha256": "dabbd5eb26eee8c18d64be0efe647ca533a941eff9fb2ee195fbbf249a2c6518"
     }
+   ]
   },
-  "steg": [
-    {
-      "side": 4,
-      "type": "exploded",
-      "mappe": "_arbeid/r/4e918ec8ce623fe5",
-      "mørk_del": 0.0152,
-      "strek_px": 3.3
-    },
-    {
-      "side": 5,
-      "steg": 1,
-      "action": "inspect",
-      "nye_delar": 0,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/4bd5b54e851a0495",
-          "mørk_del": 0.0298,
-          "strek_px": 6.3,
-          "figur_pt": [
-            169.3,
-            459.2,
-            256.7,
-            234.2
-          ]
-        },
-        {
-          "mappe": "_arbeid/r/7b7a42a00e9b41cd",
-          "mørk_del": 0.0249,
-          "strek_px": 5.7,
-          "figur_pt": [
-            163.5,
-            175.0,
-            268.3,
-            234.2
-          ]
-        }
-      ]
-    },
-    {
-      "side": 6,
-      "steg": 2,
-      "action": "assembly",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/bb706600cc07c27b",
-          "mørk_del": 0.0145,
-          "strek_px": 4.2,
-          "figur_pt": [
-            118.3,
-            329.0,
-            358.6,
-            332.4
-          ]
-        }
-      ]
-    },
-    {
-      "side": 7,
-      "steg": 3,
-      "action": "assembly",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/940b2cda7ef181c2",
-          "mørk_del": 0.0182,
-          "strek_px": 3.2,
-          "figur_pt": [
-            52.8,
-            175.0,
-            489.7,
-            486.4
-          ]
-        }
-      ]
-    },
-    {
-      "side": 8,
-      "steg": 4,
-      "action": "inspect",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/84cadeb64ca40b4a",
-          "mørk_del": 0.0251,
-          "strek_px": 5.3,
-          "figur_pt": [
-            150.2,
-            370.0,
-            294.9,
-            291.4
-          ]
-        }
-      ]
-    },
-    {
-      "side": 9,
-      "steg": 5,
-      "action": "assembly",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/d790b6c545bc456d",
-          "mørk_del": 0.0154,
-          "strek_px": 3.0,
-          "figur_pt": [
-            52.4,
-            184.8,
-            490.6,
-            466.8
-          ]
-        }
-      ]
-    },
-    {
-      "side": 10,
-      "steg": 6,
-      "action": "inspect",
-      "nye_delar": 0,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/6392ce328df10a59",
-          "mørk_del": 0.0229,
-          "strek_px": 7.4,
-          "figur_pt": [
-            152.0,
-            370.0,
-            291.4,
-            291.4
-          ]
-        }
-      ]
-    },
-    {
-      "side": 11,
-      "steg": 7,
-      "action": "assembly",
-      "nye_delar": 2,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/7ce98c79ad9de7a8",
-          "mørk_del": 0.0275,
-          "strek_px": 6.3,
-          "figur_pt": [
-            168.8,
-            456.8,
-            257.6,
-            218.8
-          ]
-        },
-        {
-          "mappe": "_arbeid/r/3583b1586f65b7f6",
-          "mørk_del": 0.0152,
-          "strek_px": 5.2,
-          "figur_pt": [
-            184.8,
-            188.0,
-            225.7,
-            218.8
-          ]
-        }
-      ]
-    },
-    {
-      "side": 12,
-      "steg": 8,
-      "action": "inspect",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/95b859260109c124",
-          "mørk_del": 0.0084,
-          "strek_px": 2.6,
-          "figur_pt": [
-            52.4,
-            236.8,
-            490.6,
-            375.8
-          ]
-        }
-      ]
-    },
-    {
-      "side": 13,
-      "steg": 9,
-      "action": "assembly",
-      "nye_delar": 3,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/371b42247a81c01e",
-          "mørk_del": 0.0237,
-          "strek_px": 4.1,
-          "figur_pt": [
-            122.3,
-            329.0,
-            350.7,
-            332.4
-          ]
-        }
-      ]
-    },
-    {
-      "side": 14,
-      "steg": 10,
-      "action": "assembly",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/39c615c0296df4e2",
-          "mørk_del": 0.0486,
-          "strek_px": 9.9,
-          "figur_pt": [
-            188.3,
-            456.8,
-            218.8,
-            218.8
-          ]
-        },
-        {
-          "mappe": "_arbeid/r/83f8243c9994f296",
-          "mørk_del": 0.0197,
-          "strek_px": 9.9,
-          "figur_pt": [
-            188.3,
-            188.0,
-            218.8,
-            218.8
-          ]
-        }
-      ]
-    },
-    {
-      "side": 15,
-      "steg": 11,
-      "action": "assembly",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/47af0b9208594594",
-          "mørk_del": 0.0375,
-          "strek_px": 10.5,
-          "figur_pt": [
-            194.8,
-            469.8,
-            205.8,
-            205.8
-          ]
-        },
-        {
-          "mappe": "_arbeid/r/e7831b4a83e98715",
-          "mørk_del": 0.0288,
-          "strek_px": 10.5,
-          "figur_pt": [
-            194.8,
-            214.0,
-            205.8,
-            205.8
-          ]
-        }
-      ]
-    },
-    {
-      "side": 16,
-      "steg": 12,
-      "action": "assembly",
-      "nye_delar": 1,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/3974d60c35ec0ae0",
-          "mørk_del": 0.0192,
-          "strek_px": 3.2,
-          "figur_pt": [
-            107.1,
-            175.0,
-            381.0,
-            486.4
-          ]
-        }
-      ]
-    },
-    {
-      "side": 17,
-      "steg": 13,
-      "action": "assembly",
-      "nye_delar": 2,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/fcf6764387b2a7cb",
-          "mørk_del": 0.0405,
-          "strek_px": 9.9,
-          "figur_pt": [
-            188.3,
-            456.8,
-            218.8,
-            218.8
-          ]
-        },
-        {
-          "mappe": "_arbeid/r/8a6c546c2f56cc55",
-          "mørk_del": 0.0594,
-          "strek_px": 9.9,
-          "figur_pt": [
-            188.3,
-            188.0,
-            218.8,
-            218.8
-          ]
-        }
-      ]
-    },
-    {
-      "side": 18,
-      "steg": 14,
-      "action": "assembly",
-      "nye_delar": 2,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/17c3c2a8d2bd4533",
-          "mørk_del": 0.0101,
-          "strek_px": 3.3,
-          "figur_pt": [
-            138.0,
-            329.0,
-            319.3,
-            346.5
-          ]
-        }
-      ]
-    },
-    {
-      "side": 19,
-      "steg": 15,
-      "action": "inspect",
-      "nye_delar": 0,
-      "figurar": [
-        {
-          "mappe": "_arbeid/r/3a2f8f37a4519373",
-          "mørk_del": 0.0166,
-          "strek_px": 2.9,
-          "figur_pt": [
-            55.3,
-            188.0,
-            484.7,
-            505.4
-          ]
-        }
-      ]
-    }
-  ],
-  "åtvaringar": [],
+  "gif": {
+   "file": "bla-gjennom.gif",
+   "frames": 20,
+   "width": 768,
+   "height": 1086,
+   "duration_ms": [
+    1400,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    650,
+    1400
+   ],
+   "total_duration_ms": 14500,
+   "loop": 0,
+   "palette": "grayscale-256",
+   "sha256": "36ad9f4ab96fdd89dbafb139a651e213ddfd9a95c28799ab30a62e38a2a032d2"
+  },
+  "contact_sheet": {
+   "file": "kontaktark.png",
+   "width": 1356,
+   "height": 2400,
+   "sha256": "ca3d2afe4e54628e6ada22e95bc8c06bdcae3f7b55bb4ff8c16254fa1119976a"
+  },
   "validation": {
-    "portrait_a4_pages": 20,
-    "bookmarks": 20,
-    "source_links": 5,
-    "selectable_text": true,
-    "contour_checks_passed": 6,
-    "visual_review": "All pages rendered and reviewed; corrected detail pages reviewed again."
+   "complete_page_sequence": true,
+   "uniform_page_dimensions": true,
+   "gif_frame_count_and_timing": true
   }
+ },
+ "beslag": {
+  "cam": {
+   "i_steg": 1,
+   "i_delliste": 1
+  },
+  "mb": {
+   "i_steg": 1,
+   "i_delliste": 1
+  },
+  "sd": {
+   "i_steg": 1,
+   "i_delliste": 1
+  },
+  "brytar": {
+   "i_steg": 1,
+   "i_delliste": 1
+  },
+  "magnet": {
+   "i_steg": 12,
+   "i_delliste": 12
+  },
+  "leidning": {
+   "i_steg": 2,
+   "i_delliste": 2
+  },
+  "kabel": {
+   "i_steg": 1,
+   "i_delliste": 1
+  },
+  "stativmutter": {
+   "i_steg": 1,
+   "i_delliste": 1
+  }
+ },
+ "steg": [
+  {
+   "side": 4,
+   "type": "exploded",
+   "mappe": "_arbeid/r/19c4ad1211c9fc3d",
+   "mørk_del": 0.0166,
+   "strek_px": 3.0
+  },
+  {
+   "side": 5,
+   "steg": 1,
+   "action": "inspect",
+   "nye_delar": 0,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/4bd5b54e851a0495",
+     "mørk_del": 0.0345,
+     "strek_px": 6.9,
+     "figur_pt": [
+      180.0,
+      478.7,
+      235.4,
+      214.7
+     ]
+    },
+    {
+     "mappe": "_arbeid/r/7b7a42a00e9b41cd",
+     "mørk_del": 0.0253,
+     "strek_px": 6.2,
+     "figur_pt": [
+      174.7,
+      214.0,
+      246.0,
+      214.7
+     ]
+    }
+   ]
+  },
+  {
+   "side": 6,
+   "steg": 2,
+   "action": "assembly",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/bb706600cc07c27b",
+     "mørk_del": 0.0145,
+     "strek_px": 4.2,
+     "figur_pt": [
+      118.3,
+      329.0,
+      358.6,
+      332.4
+     ]
+    }
+   ]
+  },
+  {
+   "side": 7,
+   "steg": 3,
+   "action": "assembly",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/940b2cda7ef181c2",
+     "mørk_del": 0.0182,
+     "strek_px": 3.3,
+     "figur_pt": [
+      59.3,
+      188.0,
+      476.6,
+      473.4
+     ]
+    }
+   ]
+  },
+  {
+   "side": 8,
+   "steg": 4,
+   "action": "inspect",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/84cadeb64ca40b4a",
+     "mørk_del": 0.0251,
+     "strek_px": 5.3,
+     "figur_pt": [
+      150.2,
+      370.0,
+      294.9,
+      291.4
+     ]
+    }
+   ]
+  },
+  {
+   "side": 9,
+   "steg": 5,
+   "action": "assembly",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/d790b6c545bc456d",
+     "mørk_del": 0.0154,
+     "strek_px": 3.0,
+     "figur_pt": [
+      52.4,
+      191.3,
+      490.6,
+      466.8
+     ]
+    }
+   ]
+  },
+  {
+   "side": 10,
+   "steg": 6,
+   "action": "inspect",
+   "nye_delar": 0,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/6392ce328df10a59",
+     "mørk_del": 0.0229,
+     "strek_px": 7.4,
+     "figur_pt": [
+      152.0,
+      370.0,
+      291.4,
+      291.4
+     ]
+    }
+   ]
+  },
+  {
+   "side": 11,
+   "steg": 7,
+   "action": "assembly",
+   "nye_delar": 2,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/7ce98c79ad9de7a8",
+     "mørk_del": 0.0275,
+     "strek_px": 6.3,
+     "figur_pt": [
+      168.8,
+      456.8,
+      257.6,
+      218.8
+     ]
+    },
+    {
+     "mappe": "_arbeid/r/3583b1586f65b7f6",
+     "mørk_del": 0.0152,
+     "strek_px": 5.2,
+     "figur_pt": [
+      184.8,
+      188.0,
+      225.7,
+      218.8
+     ]
+    }
+   ]
+  },
+  {
+   "side": 12,
+   "steg": 8,
+   "action": "inspect",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/95b859260109c124",
+     "mørk_del": 0.0084,
+     "strek_px": 2.6,
+     "figur_pt": [
+      52.4,
+      243.3,
+      490.6,
+      375.8
+     ]
+    }
+   ]
+  },
+  {
+   "side": 13,
+   "steg": 9,
+   "action": "assembly",
+   "nye_delar": 3,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/371b42247a81c01e",
+     "mørk_del": 0.0237,
+     "strek_px": 4.1,
+     "figur_pt": [
+      122.3,
+      329.0,
+      350.7,
+      332.4
+     ]
+    }
+   ]
+  },
+  {
+   "side": 14,
+   "steg": 10,
+   "action": "assembly",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/39c615c0296df4e2",
+     "mørk_del": 0.037,
+     "strek_px": 7.6,
+     "figur_pt": [
+      155.4,
+      391.0,
+      284.5,
+      284.5
+     ]
+    }
+   ]
+  },
+  {
+   "side": 15,
+   "steg": 11,
+   "action": "assembly",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/47af0b9208594594",
+     "mørk_del": 0.0375,
+     "strek_px": 10.5,
+     "figur_pt": [
+      194.8,
+      469.8,
+      205.8,
+      205.8
+     ]
+    },
+    {
+     "mappe": "_arbeid/r/e7831b4a83e98715",
+     "mørk_del": 0.0288,
+     "strek_px": 10.5,
+     "figur_pt": [
+      194.8,
+      214.0,
+      205.8,
+      205.8
+     ]
+    }
+   ]
+  },
+  {
+   "side": 16,
+   "steg": 12,
+   "action": "assembly",
+   "nye_delar": 1,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/52eeb95b2d600d7b",
+     "mørk_del": 0.0207,
+     "strek_px": 3.3,
+     "figur_pt": [
+      105.0,
+      175.0,
+      385.2,
+      486.4
+     ]
+    }
+   ]
+  },
+  {
+   "side": 17,
+   "steg": 13,
+   "action": "assembly",
+   "nye_delar": 2,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/fcf6764387b2a7cb",
+     "mørk_del": 0.0405,
+     "strek_px": 9.9,
+     "figur_pt": [
+      188.3,
+      456.8,
+      218.8,
+      218.8
+     ]
+    },
+    {
+     "mappe": "_arbeid/r/8a6c546c2f56cc55",
+     "mørk_del": 0.0594,
+     "strek_px": 9.9,
+     "figur_pt": [
+      188.3,
+      188.0,
+      218.8,
+      218.8
+     ]
+    }
+   ]
+  },
+  {
+   "side": 18,
+   "steg": 14,
+   "action": "assembly",
+   "nye_delar": 2,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/17c3c2a8d2bd4533",
+     "mørk_del": 0.0101,
+     "strek_px": 3.3,
+     "figur_pt": [
+      138.0,
+      329.0,
+      319.3,
+      346.5
+     ]
+    }
+   ]
+  },
+  {
+   "side": 19,
+   "steg": 15,
+   "action": "inspect",
+   "nye_delar": 0,
+   "figurar": [
+    {
+     "mappe": "_arbeid/r/3a2f8f37a4519373",
+     "mørk_del": 0.0166,
+     "strek_px": 2.9,
+     "figur_pt": [
+      61.5,
+      201.0,
+      472.2,
+      492.4
+     ]
+    }
+   ]
+  }
+ ],
+ "åtvaringar": []
 }

@@ -154,7 +154,7 @@ class Dok:
         pdfmetrics.registerFont(TTFont("M", FONT))
         pdfmetrics.registerFont(TTFont("MB", FONTB))
         self.W, self.H = A4 if meta.get("orientation", "portrait") == "portrait" else landscape(A4)
-        self.c = canvas.Canvas(sti, pagesize=(self.W, self.H), pageCompression=1)
+        self.c = canvas.Canvas(sti, pagesize=(self.W, self.H), pageCompression=1, invariant=True)
         self.c.setTitle(meta.get("title", ""))
         self.c.setAuthor(meta.get("author", "FormNerd"))
         self.c.setSubject(meta.get("description", "Monteringsrettleiing"))
@@ -315,6 +315,37 @@ class Dok:
             c.circle(*p, 1.5, fill=1, stroke=0)
         self.sirkel(ident, *a, 13, 13 if len(ident) < 3 else 10)
 
+    def mål(self, a, b, offset, label, label_offset=(10, 0)):
+        """Dimension two projected source points without changing their scale."""
+        a, b, off = np.asarray(a), np.asarray(b), np.asarray(offset, float)
+        p, q = a + off, b + off
+        u = q - p
+        length = np.linalg.norm(u)
+        if length < 8:
+            raise ValueError("Mållina er for kort i dette utsnittet")
+        u /= length
+        normal = np.array([-u[1], u[0]])
+        extension = off / max(np.linalg.norm(off), 1)
+        c = self.c
+        c.saveState()
+        c.setStrokeGray(0)
+        c.setLineWidth(.6)
+        for start, end in ((a, p), (b, q)):
+            c.line(*(start + extension * 3), *(end + extension * 5))
+        c.line(*p, *q)
+        c.setFillGray(0)
+        for tip, inward in ((p, u), (q, -u)):
+            base = tip + inward * 5
+            path = c.beginPath()
+            path.moveTo(*tip)
+            path.lineTo(*(base + normal * 1.8))
+            path.lineTo(*(base - normal * 1.8))
+            path.close()
+            c.drawPath(path, fill=1, stroke=0)
+        at = (p + q) / 2 + np.asarray(label_offset, float)
+        self.tekst(label, at[0], at[1] - 3, 10)
+        c.restoreState()
+
     def ikon(self, kind, x, y, s=1.0):
         c = self.c
         c.setStrokeGray(0)
@@ -423,7 +454,24 @@ def valider(spec):
                     scene(f["detail"].get("scene", f.get("scene")), f"{kvar} figur {j} detail")
                     if not {"centre", "span"} <= set(f["detail"]):
                         feil.append(f"{kvar} figur {j}: detail krev centre og span")
-            if s.get("diagram", {}).get("type") not in (None, "magnet_pair", "shutter_wiring"):
+                for dim in f.get("dimensions", []):
+                    a = vector(dim.get("a"), f"{kvar} figur {j} målline a")
+                    b = vector(dim.get("b"), f"{kvar} figur {j} målline b")
+                    if a is not None and b is not None and np.linalg.norm(b-a) < 1e-6:
+                        feil.append(f"{kvar} figur {j}: mållina må ha lengd")
+                for route in f.get("schematic_paths", []):
+                    points = route.get("points", [])
+                    if len(points) < 4 or (len(points)-1) % 3:
+                        feil.append(f"{kvar} figur {j}: skjematisk leidning krev 1 + 3n punkt")
+                    for point in points:
+                        vector(point, f"{kvar} figur {j} skjematisk leidning")
+                for guide in f.get("guides", []):
+                    if len(guide) != 2:
+                        feil.append(f"{kvar} figur {j}: styreline krev to punkt")
+                    else:
+                        vector(guide[0], f"{kvar} figur {j} styreline start")
+                        vector(guide[1], f"{kvar} figur {j} styreline slutt")
+            if s.get("diagram", {}).get("type") not in (None, "magnet_pair", "shutter_wiring", "switch_contacts"):
                 feil.append(f"{kvar}: ukjend diagramtype")
         if t == "warnings" and not s.get("items"):
             feil.append(f"{kvar}: items manglar")
@@ -571,7 +619,45 @@ class Byggjar(Sider):
             self.boble(fig, fig["detail"], P, F, ramme, side)
         for co in fig.get("callouts", []):
             t = P(co["point"])
-            d.leiar(self.ident(co["part"]), t, t + np.array(co["offset"]) if "offset" in co else None)
+            label = co.get("label") or self.ident(co["part"])
+            d.leiar(label, t, t + np.array(co["offset"]) if "offset" in co else None)
+        # Registration guides remain in the open space between the parts.
+        # They never paint a dashed line through an opaque shell surface.
+        for start, end in fig.get("guides", []):
+            a, b = F["P3"](start) * SK, F["P3"](end) * SK
+            points = a + (b-a) * np.linspace(0, 1, max(2, int(np.linalg.norm(b-a))))[:, None]
+            ix = np.clip(points[:, 0].round().astype(int), 0, PX-1)
+            iy = np.clip(points[:, 1].round().astype(int), 0, PX-1)
+            clear = F["idb"][iy, ix] == 0
+            changes = np.diff(np.r_[False, clear, False].astype(int))
+            c = d.c
+            c.saveState()
+            c.setStrokeGray(.25)
+            c.setLineWidth(.65)
+            c.setDash(3, 3)
+            for lo, hi in zip(np.flatnonzero(changes == 1), np.flatnonzero(changes == -1)):
+                if hi-lo > 3:
+                    c.line(*R(points[lo]), *R(points[hi-1]))
+            c.restoreState()
+        for route in fig.get("schematic_paths", []):
+            points = [P(point) for point in route["points"]]
+            c = d.c
+            c.saveState()
+            c.setLineCap(1)
+            for width, grey in ((3.6, 1), (1.1, 0)):
+                c.setStrokeGray(grey)
+                c.setLineWidth(width)
+                path = c.beginPath()
+                path.moveTo(*points[0])
+                for i in range(1, len(points), 3):
+                    path.curveTo(*points[i], *points[i+1], *points[i+2])
+                c.drawPath(path, stroke=1, fill=0)
+            c.restoreState()
+        for dimension in fig.get("dimensions", []):
+            a, b = np.asarray(dimension["a"], float), np.asarray(dimension["b"], float)
+            value = f"{np.linalg.norm(b-a):.1f}".replace(".", ",") + " mm"
+            d.mål(P(a), P(b), dimension.get("offset", [40, 0]),
+                  dimension.get("label", value), dimension.get("label_offset", [10, 0]))
         for annotation in fig.get("annotations", []):
             target = P(annotation["point"])
             lines = simpleSplit(annotation["text"], "M", 9, annotation.get("width", 112))
@@ -614,6 +700,9 @@ class Byggjar(Sider):
                     self.vist.add(namn)
         for a, b in fig.get("arrows", []):
             d.pil(P(a), P(b))
+        for a, b in fig.get("arrows_in_frame", []):
+            origin, size = np.asarray(boks[:2]), np.asarray(boks[2:])
+            d.pil(origin + np.asarray(a)*size, origin + np.asarray(b)*size)
         if fig.get("multiplier"):
             d.tekst(fig["multiplier"], ramme[0] + ramme[2] - 4, ramme[1] + 6, 40, juster="r")
         F["info"]["figur_pt"] = [round(v, 1) for v in ramme]
@@ -657,9 +746,8 @@ class Byggjar(Sider):
             getattr(self, side["type"])(side)
         self.dok.c.save()
         pdf = f"{self.ut}/rettleiing.pdf"
-        shutil.rmtree(f"{self.ut}/sider", ignore_errors=True)
-        os.makedirs(f"{self.ut}/sider")
-        subprocess.run(["pdftoppm", "-r", "110", "-png", pdf, f"{self.ut}/sider/side"], check=True)
+        from vising import eksporter
+        vising = eksporter(pdf, self.ut, self.dok.n)
         if os.path.isdir(f"{self.work}/r"):
             for k in set(os.listdir(f"{self.work}/r")) - BRUKT:
                 shutil.rmtree(f"{self.work}/r/{k}")
@@ -673,20 +761,25 @@ class Byggjar(Sider):
             mesh = part.get("mesh", [])
             for file in [mesh] if isinstance(mesh, str) else mesh:
                 sources[file] = innhald(os.path.join(self.rot, file))
-        json.dump({"pdf": pdf, "sha256": hashlib.sha256(open(pdf, "rb").read()).hexdigest(), "sider": self.dok.n,
+        def relative_paths(value):
+            if isinstance(value, dict):
+                return {key: os.path.relpath(item, self.ut) if key == "mappe" else relative_paths(item)
+                        for key, item in value.items()}
+            if isinstance(value, list):
+                return [relative_paths(item) for item in value]
+            return value
+        code = {name: innhald(os.path.join(HER, name))
+                for name in ("bygg.py", "sider.py", "kontur.py", "strek.mjs", "vising.py")}
+        dependencies = {name: innhald(os.path.join(HER, name))
+                        for name in ("requirements.txt", "../package-lock.json")
+                        if os.path.isfile(os.path.join(HER, name))}
+        fonts = {os.path.basename(file): innhald(file) for file in (FONT, FONTB)}
+        json.dump({"pdf": "rettleiing.pdf", "sha256": hashlib.sha256(open(pdf, "rb").read()).hexdigest(), "sider": self.dok.n,
                    "spec_sha256": hashlib.sha256(json.dumps(self.spec, sort_keys=True).encode()).hexdigest(),
                    "source_commit": self.spec.get("meta", {}).get("source_commit"), "mesh_sha256": sources,
-                   "beslag": bom, "steg": self.rapport, "åtvaringar": åtvaringar}, open(f"{self.ut}/rapport.json", "w"), indent=1, ensure_ascii=False, default=str)
-        sider = sorted(f for f in os.listdir(f"{self.ut}/sider") if f.endswith(".png"))
-        ims = [Image.open(f"{self.ut}/sider/{f}").convert("RGB") for f in sider]
-        if ims:
-            w, h = ims[0].size
-            k = min(len(ims), 4)
-            ark = Image.new("RGB", (w * k, h * math.ceil(len(ims) / k)), "white")
-            for i, im in enumerate(ims):
-                ark.paste(im, ((i % k) * w, (i // k) * h))
-            ark.thumbnail((2400, 2400))
-            ark.save(f"{self.ut}/kontaktark.png")
+                   "code_sha256": code, "dependency_sha256": dependencies, "font_sha256": fonts,
+                   "export": vising, "beslag": bom, "steg": relative_paths(self.rapport),
+                   "åtvaringar": åtvaringar}, open(f"{self.ut}/rapport.json", "w"), indent=1, ensure_ascii=False, default=str)
         print(pdf, self.dok.n, "sider")
         for å in åtvaringar:
             print("ÅTVARING:", å)

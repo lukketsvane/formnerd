@@ -146,7 +146,11 @@ class Sider:
             centre = to_pdf(F["P3"](self.delar.senter[name] + F["flytt"][i]))
             q = self.punkt(F, i, centre - mid)
             if q is not None:
-                d.leiar(self.ident(name), to_pdf(q), foretrekk=centre - mid)
+                target = to_pdf(q)
+                offset = side.get("label_offsets", {}).get(name)
+                d.leiar(self.ident(name), target,
+                        target + np.asarray(offset) if offset is not None else None,
+                        foretrekk=centre - mid)
         self.opp = np.asarray(self.view(v)["up"], float)
         self.rapport.append({"side": d.n + 1, "type": "exploded", **F["info"]})
         d.ny_side(side.get("title", "Slik heng delane saman"))
@@ -275,6 +279,28 @@ class Sider:
             d.tekst("Magnet limt i botnskalet", mx + 121, my + 6, 10)
             c.setLineWidth(.6)
             c.line(mx + 54, my + 72, mx + 112, my + 72)
+        elif kind == "switch_contacts":
+            d.tekst("FINN KONTAKTGRUPPENE MED MULTIMETER", x, y + h - 20, 8, True)
+            for i, (title, closed, result) in enumerate((
+                    ("SLEPPT KNAPP", False, "Ingen samband mellom A og B"),
+                    ("TRYKT INN", True, "Samband mellom A og B"))):
+                left = x + i * (w/2 + 8)
+                middle = left + w/4 - 8
+                cy = y + 77
+                d.tekst(title, left, y + h - 46, 9, True)
+                c.setLineWidth(1)
+                c.setStrokeGray(0)
+                c.setFillGray(1)
+                for px, name in ((middle-52, "A"), (middle+52, "B")):
+                    c.circle(px, cy, 15, stroke=1, fill=0)
+                    d.tekst(name, px, cy-4, 12, True, "c")
+                c.line(middle-37, cy, middle-18, cy)
+                c.line(middle+18, cy, middle+37, cy)
+                c.circle(middle-18, cy, 2, stroke=1, fill=0)
+                c.circle(middle+18, cy, 2, stroke=1, fill=0)
+                c.line(middle-16, cy + (0 if closed else 2), middle+16, cy + (0 if closed else 20))
+                d.avsnitt(result, left, y+37, w/2-18, 9)
+            d.tekst("Prinsipp, ikkje beinplassering. IO13 til éi gruppe; GND til den andre.", x, y+6, 8.5)
         else:
             raise ValueError(f"Ukjent diagramtype: {kind}")
 
