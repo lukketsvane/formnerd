@@ -31,7 +31,7 @@ Vis før/etter eller eksplodering mot målposisjon når handlinga er tvitydig. T
 
 Bruk skjematisk elektronikk når målgrunnlaget ikkje finst. Merk nominelle volum og pinnenamn eintydig. Skil straumveg, signalveg og mekanisk innføring. Vis berre leidningar, skruar, fjører og låserørsler som finst i modell/BOM.
 
-Bruk imagegen til sidestil, kameravinkel og rytmeutkast. Bygg endelege tekniske figurar med CAD, deterministisk SVG/vektor eller modellavleidd raster. Ikkje baser presise byggjesteg på eit generert eksplodert bilete.
+Bruk imagegen til sidestil, kameravinkel og rytmeutkast. Når brukaren har lagt ved monteringssider som stilreferanse, legg dei ved biletkallet og lag eit eige utkast for å avklare layout, strekvekter og luft. Bygg endelege tekniske figurar med CAD, deterministisk SVG/vektor eller modellavleidd raster, og samanlikn sidene med stilutkastet. Ikkje baser presise byggjesteg på eit generert eksplodert bilete.
 
 ## Sidefølgje
 
@@ -53,4 +53,4 @@ Hald del-ID-ar unna hola/kantane dei forklarer. Skil leiarar frå produktkontur 
 
 Bygg PDF frå kjelde, rasteriser og sjå alle sider. Lever separate sidebilete, eitt bilete per motiv/side. Kontroller at modell/teikning viser same delar; at rørsle og rekkjefølgje er fysisk mogleg; at mengdene stemmer; og at tekst, nummer, piler og detaljar ikkje overlappar eller blir avkutta. Kontroller same revisjon i PDF, side-PNG og kjeldepakke.
 
-Pakk portabel PDF-byggjar med brukt figurgrunnlag og avhengigheitsliste. Prøv bygging frå ny utpakking. Lagre PDF og kvar side i rett Space med fungerande referansar og native bilete. Les tilbake og samanlikn bilettalet med eksporten. Lenke til repo og oppgi nødvendig fysisk prøvepass.
+Pakk portabel PDF-byggjar med brukt figurgrunnlag og avhengigheitsliste. Prøv bygging frå ny utpakking. Lagre PDF og kvar side på den valde varige filstaden. Når prosjektet brukar Space, bruk fungerande referansar og native bilete der. Les tilbake og samanlikn bilettalet med eksporten. Lenke til repo når det finst, og oppgi nødvendig fysisk prøvepass.

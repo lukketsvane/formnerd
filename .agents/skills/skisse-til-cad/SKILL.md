@@ -14,8 +14,8 @@ Følg kjeda: skisse / referansebilete → Tripo image-to-3D → segmentering og 
 
 1. Les oppgåvetekst, vald skisse, formanalysen og tilbakemeldingane. Registrer konsept, formgrep, funksjonar, materiale, produksjonsmåte og det som skal bevarast. Vurder silhuett, proporsjonar, negativt rom, overflater og funksjonsteikn før teknikken blir pakka inn. Bruk prosjektspesifikke krav; ikkje gjer Entropi eller kameramål til universelle standardar.
 2. Finn siste kjelde, Tripo-taskar, CAD, kontrollrapportar og filplassering før nytt arbeid. Les repo-instruksar og sjekk andre sine endringar. Oppdag flytta mapper på nytt. Hald fram frå siste verifiserte steg.
-3. Skil målte dimensjonar, databladmål og føresetnader. Set éin dokumentert hovudskala i mm. Spør berre etter eit manglande mål når det faktisk avgjer vidare konstruksjon; gjer anna uavhengig arbeid medan du ventar.
-4. Prioriter rett Tripo-bruk. Les [Tripo-oppskrifta](references/tripo-bruk.md), [Tripo og CAD](references/tripo-og-cad.md) og den kontrollerte [kjeldeoversikta](references/tripo-dokumentasjon.json). Sjekk gjeldande offisielle API-/CLI-sider for operasjonane og faktisk klientversjon før køyring; bruk ein installert Tripo-skill når han finst. Skill API-støtte frå klientstøtte. Last imagegen-skill ved biletskaping og PDF-skill ved manualarbeid. Les [assembly-standarden](references/ikea-assembly.md) før illustrasjon/layout og [A1-dømet](references/a1-dome.md) for kjelder og stil.
+3. Skil målte dimensjonar, databladmål og føresetnader. For kjøpt maskinvare: identifiser modell og revisjon frå merkinga og søk først etter produsentteikning eller datablad. Skil totalmål, kortmål og holplassering; dokumenter kjelde og revisjon. Set éin dokumentert hovudskala i mm. Spør berre etter eit manglande mål når det faktisk avgjer vidare konstruksjon; gjer anna uavhengig arbeid medan du ventar.
+4. Prioriter rett Tripo-bruk. Les [Tripo-oppskrifta](references/tripo-bruk.md), [Tripo og CAD](references/tripo-og-cad.md) og den kontrollerte [kjeldeoversikta](references/tripo-dokumentasjon.json). Sjekk gjeldande offisielle API-/CLI-sider for operasjonane og faktisk klientversjon før køyring; bruk ein installert Tripo-skill når han finst. Skill API-støtte frå klientstøtte. Last relevante bilete- og PDF-skills når dei er tilgjengelege. Les [assembly-standarden](references/ikea-assembly.md) før illustrasjon/layout; bruk [A1-dømet](references/a1-dome.md) som valfri praksisreferanse. Ikkje krev tilgang til andre sine prosjekt eller Space for å gjennomføre eit nytt prosjekt.
 
 ## 1. Klargjer biletet
 
@@ -30,6 +30,8 @@ Vel ein detaljert master før deling eller lågpoly. Dokumentasjonen kontrollert
 Før nye betalte oppgåver: følg gjeldande kostnadsreglar og autorisert omfang/budsjett. Bruk `make --dry-run` til planlegging når CLI-en er tilgjengeleg, og kontroller payload/kostnad. Ikkje finn på dry-run-flagg for kommandoar som ikkje støttar det. Å lagre denne arbeidsflyten autoriserer ingen nye betalte modelloppgåver.
 
 Lagre original mesh, preview, task-/foreldre-ID, prompt, seed, parameter, skala og faktisk kostnad. Hent eksisterande resultat med task-ID framfor ny generering. Ved tidsavbrot: følg eksisterande task.
+
+Samanlikn masteren med den valde referansen før segmentering: silhuett, proporsjonar, opningar, orientering og funksjonsteikn. Vis avvik i samanliknbare visingar. Ein modell som endrar huset eller viktige opningar, må merkast som avvist formgrunnlag; segmentering gjer ikkje denne forma rett. Bevar resultatet og vurder eit eksplisitt korrigeringssteg innan autorisert omfang og budsjett.
 
 Del normalt ein godkjend eksisterande modell med ordinær `/mesh/segment`. Vurder eksplisitt v1 geometrisk eller v2 semantisk segmentering ut frå delgrensene; ingen av dei garanterer identisk geometri. Smart Segment er ein separat auto-modelleringsgrein: image-modus genererer ny modell; model-modus krev GLB og 16-talstransformasjon og lovar heller ikkje eksakt bevaring. Bevar masteren og samanlikn resultatet.
 
@@ -63,8 +65,8 @@ Bruk imagegen til stil-/layoututkast ved behov; bygg endeleg layout og montering
 
 ## 6. Lagre og overlever
 
-Lagre alle leverte bilete og synlege bileteutkast i rett Space med native biletblokker, også dei einskilde manualsider. Merk utkast og sluttsider. Kontroller tilgang og les tilbake at alle bileta er med. Ei filnamnliste eller eit ZIP-vedlegg erstattar ikkje biletblokkene.
+Når prosjektet har ein vald Space og tilgjengelege verktøy: lagre leverte bilete og synlege bileteutkast der med native biletblokker, også dei einskilde manualsider. Merk utkast og sluttsider. Kontroller tilgang og les tilbake at alle bileta er med. Ei filnamnliste eller eit ZIP-vedlegg erstattar ikkje biletblokkene. I andre miljø: lever separate bilete og filer på brukaren sin valde varige filstad, og kontroller at dei kan opnast. Manglande Space skal ikkje stoppe CAD- eller manualarbeidet.
 
-Ta vare på referanse, rå Tripo-resultat, transformasjonar, CAD-kjelde, delmanifest/BOM, kontrollresultat, printfiler, illustrasjonsgrunnlag, PDF, side-PNG og portabel byggjekjelde. Bruk eksisterande repo for gitbaserte kjelder; lagre andre leveransar i Library og lenk frå Space. Ikkje stol på scratch eller mellombelse nedlastingslenkjer som varig lagring.
+Ta vare på referanse, rå Tripo-resultat, transformasjonar, CAD-kjelde, delmanifest/BOM, kontrollresultat, printfiler, illustrasjonsgrunnlag, PDF, side-PNG og portabel byggjekjelde. Bruk eksisterande repo for gitbaserte kjelder. Følg vertsmiljøet sine lagringsreglar; bruk Library og lenk frå Space når desse er tilgjengelege, elles den valde varige filstaden. Ikkje stol på scratch eller mellombelse nedlastingslenkjer som varig lagring.
 
 Når GitHub-synk er autorisert: lag ein avgrensa commit, bevar andres endringar, push utan force og kontroller publisert revisjon. Oppgi attståande fysisk prøvepass ved printfila. Avslutt med korte lenkjer og, når relevant, ein tett kodeblokk til lokal printagent: repo/revisjon, rett mappe, modellfiler, skrivarprofil, prøvedelar, godkjenningskrav og neste handling.

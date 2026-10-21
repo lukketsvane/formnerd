@@ -1,0 +1,547 @@
+{
+  "checked_on": "2026-10-20",
+  "scope": "All English technical documentation routes discovered from the official llms.txt, documentation navigation and site map; model/pricing pages; all Markdown bundled in the published CLI package. Language translations and marketing/blog pages excluded. Aliases tracked separately, not counted as distinct capabilities.",
+  "discovery_sources": [
+    "https://developers.tripo3d.ai/llms.txt",
+    "https://developers.tripo3d.ai/en/docs/introduction"
+  ],
+  "website_routes_reviewed": 53,
+  "unique_canonical_pages": 51,
+  "all_routes_read": true,
+  "tripo_jobs_created": 0,
+  "runtime_examples_executed": true,
+  "pages": [
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/account",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/account",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "fbabd22ac66b7f02bd753125279e77eb29934ae92aba49721b5840aad46b044f"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/animations-retarget",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/animations-retarget",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "0f8acda29129315a9f8e9fe3e0f23fba4b0a67b907f80bb135669195ea1123e0"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/animations-rig",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/animations-rig",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "69472e4798367ac43fcdcd7fba72856de17e128cd0b07614998a37377b457154"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/animations-rig-check",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/animations-rig-check",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "acb540a1e35d7ffd86560567bed45f55a39a2c6b7c69645a5275f91ef1a21d23"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/authentication",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/authentication",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "feb1a890496de8a09b038a89b13856ea49f70a03ebe1838ee55323e0c9699ff1"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/billing",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/billing",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "6d639afaeaac561d5b6dff8f3d63ccbd7e3a9e09f966a17c3274277469f136dd"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/changelog",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/changelog",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "c9dc7db777e5fbb3a839e4c5911490a3a9f3a1ce7db273733cc0869ccc80e749"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/cli",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/cli",
+      "status": 200,
+      "full_read": true,
+      "review_group": "main",
+      "source_sha256": "8ef2438fb96bcc2268a4a869c34eb967f85807c47f6ebe75c1861f4608418743"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/codex-plugin",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/codex-plugin",
+      "status": 200,
+      "full_read": true,
+      "review_group": "main",
+      "source_sha256": "ed9f02cbe6e2923a57a24b96cfbb12e88637060e24826c63235fd9b6360a62ee"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/comfyui-nodes",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/comfyui-nodes",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "9973b88e7584df6d81331cdab94bbbb17b28d4e7ef66ee36346a8196bde3bbc8"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/error-handling",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/error-handling",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "a271100304630a5b8f52f7fb1f19d750665e7a24ec97b7b97cb99f9e38c9de33"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/files",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/files",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "e2c8ddac9b0ac76b58d133ae02f3c2576e242ecd4ffd483b5f6bdbffe68b411a"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/files-presign",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/files-presign",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "c4ef54241eb5d48e553240db7ead2d4c2f43f6ef965e66f12525827f9b1b4cff"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-edit-multiview",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-edit-multiview",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "285168b1dc634090f4551121b184fe1a2a9f03c452af185df4516b7c0de1901b"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-image-to-image",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-image-to-image",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "220dd760116ef22b702978e8fb3945ba76ed9e8c68c952271a1b5bdf1f69acba"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-image-to-model",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-image-to-model/standard",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "1e8db50b3896cde781c1075b3bc94c2aadad87cc5e82293a33f03f3d404df020"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-image-to-model/p",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-image-to-model/p",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "39cf3929fde3587b77e1be253d24f095d0c91b453da33711ab74c90ef51a6a17"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-image-to-model/standard",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-image-to-model/standard",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "1e8db50b3896cde781c1075b3bc94c2aadad87cc5e82293a33f03f3d404df020"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-image-to-multiview",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-image-to-multiview",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "1e3f1de2a80efa717ef6f850639b188040ce111d91ef32d1cdd2388df624887d"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-image-to-multiview.md",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-image-to-multiview",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "1e3f1de2a80efa717ef6f850639b188040ce111d91ef32d1cdd2388df624887d"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-image-to-splat",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-image-to-splat",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "678c91c50b216bf0c0193c058ad6eca650de1380136948fe8a78c080193a860e"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/p",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/p",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "9e1471586e3633796aa7b929c4b9560da461af3043b990f51ada22f011ab6655"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/standard",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/standard",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "feab9c97b3144ec8b9c8c09d196e08ee164c54ab920f9b018a6fe858e0909c79"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-text-to-image",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-text-to-image",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "f30bc2d1da75a3ac4c976e6647b94993b3e22f2775c2cded977aa2a0fb4d170a"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-text-to-model/p",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-text-to-model/p",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "cf0406c32c30419d32463d45b402ec1b8760522a58f8d6d17d075e73cf89bbd8"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/generation-text-to-model/standard",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/generation-text-to-model/standard",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "6fb982a554e18afaa19294de0a99f83cf9a7189a2986d5b9386f02af249e46da"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/introduction",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/introduction",
+      "status": 200,
+      "full_read": true,
+      "review_group": "main",
+      "source_sha256": "64367b12f8797c35773f7852caacd6817057c30d42905364b23c67c4c141ca73"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/mesh-complete",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/mesh-complete",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "ade6b3f68b4956f0376ff4c9fcf5ec7a8bbdfbaa9b9cb0a9130372ce69f2af4e"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/mesh-decimate",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/mesh-decimate",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "0f710eb070ed804a9d285709ef37573955df2a994f449b9f6af1acc3f34c412f"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/mesh-segment",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/mesh-segment",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "1cf4e01d2e34eece06ebf998fc7cce3ccf87080f97e3bc6507ed04556e5b8a70"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/mesh-smartsegment",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/mesh-smartsegment",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "838d38e89364aa5ef5369e456975de8da329ba6dc806d8df55f2fe62f98d2e84"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/mesh-uv",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/mesh-uv",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "9977ceb64f462d8520ab1c87bf0189367595b8254568740cf544ad683198e774"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/migration-v2-to-v3",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/migration-v2-to-v3",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "61ee50209decfd9806b67db28825f17018fb954462fe6e4a7613cfeddb99a09d"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/models-and-versions",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/models-and-versions",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "ace1d3e12cf5404032a2e559d2113c146b51f7fe2d30da0344a8c470e2903ae3"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/models-convert",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/models-convert",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "607d51b3740b28aaf3c6d7fffa303c16584f086a365da959cb65693ccb099382"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/models-import",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/models-import",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "f76cea87521cda782cbceddac15b2e321c39ce98074f38e0bde74192e56ffc2c"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/models-texture",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/models-texture",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "9ecc17e0cb5dbd9d28a4f4d43a95d2f846b10cbee5099b90fe6c3ae9473d4325"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/openai-compat-images",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/openai-compat-images",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "f6d17615c72ba514fb6182f5437b03ce1203dbf55ae10c68514381c955984dd6"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/plugins",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/plugins",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "32314ddc5905182b426f2eeaa548019f1e12e9095976c495ec4918e7304ab2db"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/quick-start",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/quick-start",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "0b25e0f39d1e1978fa3d087a1ab1f23de7cc9f5baa792014f91154c608538182"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/rate-limits",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/rate-limits",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "3743bd1b3cea60f0c3917c8ee686a5efd5554f691cfdcca2ae9220e7a140a169"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/sdk",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/sdk",
+      "status": 200,
+      "full_read": true,
+      "review_group": "main",
+      "source_sha256": "2c13b3d8e95793dce30177dfe63db25defba1abad8c06407f304b4f9c090b544"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/task-batch-query",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/task-batch-query",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "364ed538cd2f28c7eb6e6c5a422f3e24fbd44cfa7a6f065c5f3628293c12407c"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/task-lifecycle",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/task-lifecycle",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "d6de9d69e3b37e2ffb347db557fe521cd0b315e30195749464bb0cb8f984882a"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/task-query",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/task-query",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "894efdb7da433419439807699e620c91f46e9b18308ddc67feef4917be0915ec"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/docs/webhooks",
+      "canonical_url": "https://developers.tripo3d.ai/en/docs/webhooks",
+      "status": 200,
+      "full_read": true,
+      "review_group": "operations",
+      "source_sha256": "659afd9acc67b4c041ec1d2c202497d113a9c8af7841f1bf812a0a8fd768c9fd"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/models",
+      "canonical_url": "https://developers.tripo3d.ai/en/models",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "b84d35181f698fb852e72a7f7519f28a56910bfbb6df5ad6324a1ab8d058e2a2"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/models/animation",
+      "canonical_url": "https://developers.tripo3d.ai/en/models/animation",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "caa14ee2315d45bae23775d544575898af33832d93d89459e2b5fb15355535bd"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/models/p1",
+      "canonical_url": "https://developers.tripo3d.ai/en/models/p2",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "42fd634b9ed4d7dd4d59dd371a21217ce1069f5e9ac9814a30fcbc9d901d0e8c"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/models/rig",
+      "canonical_url": "https://developers.tripo3d.ai/en/models/rig",
+      "status": 200,
+      "full_read": true,
+      "review_group": "integrations",
+      "source_sha256": "fa5f27e9ca301a5bbab481838f7261fd7dddff3e0f8ff378780afb70964d86a5"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/models/texture",
+      "canonical_url": "https://developers.tripo3d.ai/en/models/texture",
+      "status": 200,
+      "full_read": true,
+      "review_group": "mesh",
+      "source_sha256": "73f4bb19a7d3171273a3ddd653112056a2d4b9c5634ebcc30b658d996743ca20"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/models/v3-1",
+      "canonical_url": "https://developers.tripo3d.ai/en/models/v3-1",
+      "status": 200,
+      "full_read": true,
+      "review_group": "generation",
+      "source_sha256": "5d909da38f75de51237b9c91f073a00cbf975d403883a70d6308e668f15b13be"
+    },
+    {
+      "url": "https://developers.tripo3d.ai/en/pricing",
+      "canonical_url": "https://developers.tripo3d.ai/en/pricing",
+      "status": 200,
+      "full_read": true,
+      "review_group": "main",
+      "source_sha256": "9e14ddd58a8300e4979e645c6ac9f7ef6aa9e558ad369738e476bf9c1a6e61b4"
+    }
+  ],
+  "cli_package": {
+    "package": "tripo-cli",
+    "version": "0.7.2",
+    "registry_url": "https://registry.npmjs.org/tripo-cli/latest",
+    "tarball_url": "https://registry.npmjs.org/tripo-cli/-/tripo-cli-0.7.2.tgz",
+    "sha1": "377979efb37f31360ddb8bd13ea901215dfdd9a0",
+    "sha256": "902464130322b77c6ec911ccad9a3df3b48257f5e1af6b17c27426602b250a3c",
+    "integrity": "sha512-Av0W5mQrTWlSXkhDUWGK/d0cnhXEuROnqpRzlLjhi81s3IpaAjgzqyHLMAFlQCvrSVIhZ0UshXTmDEiqYNvRXA==",
+    "integrity_verified": true,
+    "shasum_verified": true,
+    "total_markdown_files": 16,
+    "skill_markdown_files": 15,
+    "all_bundled_markdown_read": true,
+    "documents": [
+      {
+        "package_path": "package/skill/commands/account.md",
+        "sha256": "ac8053b278b466bb0a41799371ffbb1b7983f1a3ea79ad4d4411669a361c4294",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/examples/animation.md",
+        "sha256": "bd4276e562f0d4c0852a62b3f676247fb6ad6270fb0efd813977ed63eee924bf",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/examples/ar-web.md",
+        "sha256": "f63ad1a9452587ea38491b3f6b959508dab99db2b0cfffd4ed4243d814dd03a4",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/commands/batch.md",
+        "sha256": "23d337f66444538f0d94c85500e0ff9625f5d996e3352618f89599848c3fd9b0",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/common-errors.md",
+        "sha256": "1d055c4abdf7e31c934be6b39cc8083cb4c8b88c609a229c985ffbe96f224a35",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/examples/film.md",
+        "sha256": "bc51eb2ff189fd7b1e7df0beac5706cff2dc0dd21e949ce0459ca374d6403587",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/examples/game-asset.md",
+        "sha256": "513e476310cb616bc505c36b7c350716c66e6d286cf00df9f795d922b4e341f1",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/commands/generate.md",
+        "sha256": "942e51dbc755149b85bbbd4f5c86ab62972f38c9653bafd649d4a0f7d14c8be5",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/commands/make.md",
+        "sha256": "ae3b2c0f43a6e8371c3db77eb7467c8217457cb5e07815e17d6bc6d625b9041b",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/examples/pipes.md",
+        "sha256": "d73a6df5d6196be16c6becb193213408d7ed94530e245b3325c5a24827d233a1",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/examples/print.md",
+        "sha256": "6c4197d0462fef7022145dfedbb3f8eb2a23b90b5e9182eba3f616480b6396cd",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/commands/process.md",
+        "sha256": "43c82241c48a8465dd5896358302f605b4f28bff78cf052bb491d2b4735b8d60",
+        "full_read": true
+      },
+      {
+        "package_path": "package/README.md",
+        "sha256": "5b4cdc675bf322888f8998b34b2ae1930775e3811f55c39f46bb28b4c470941b",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/SKILL.md",
+        "sha256": "7ef1278da3cd3449967bde0561936f9985f4539466ff8631bc6dbc27d74f5c10",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/commands/task.md",
+        "sha256": "83a613f5f9e19e1f111fdfabe0570c331353632782c678320c579f65046c4bd8",
+        "full_read": true
+      },
+      {
+        "package_path": "package/skill/commands/view.md",
+        "sha256": "30328a7fce7ba6cc786281c9f03388099266b6e7812e40493e664c41881d9bc8",
+        "full_read": true
+      }
+    ]
+  },
+  "additional_sources": [
+    "https://github.com/VAST-AI-Research/tripo-python-sdk/blob/master/README.md",
+    "https://github.com/VAST-AI-Research/tripo-python-sdk/blob/master/CHANGELOG.md"
+  ],
+  "cautions": [
+    "Native Markdown exports omit some image-size tabs; original HTML tabs also reviewed.",
+    "Some generic tables/examples conflict with dedicated endpoint pages or current client versions; see tripo-bruk.md.",
+    "Canonical-link verification varies; route redirects and reported destination retained.",
+    "No universal output URL lifetime or task-creation idempotency guarantee established."
+  ],
+  "runtime_scope": "Offline CLI dry-runs and request builders only; no paid or live model tasks",
+  "runtime_verification": "tripo-cli-verification.json"
+}

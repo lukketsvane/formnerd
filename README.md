@@ -13,6 +13,7 @@ Formutvikling for FormNerd med AI-genererte bilete og 3D-modellar frå Tripo-API
 
 - Skillen `formnerd-hus` (`.claude/skills/formnerd-hus/SKILL.md`) skildrar steg, krav og fallgruver, og blir lasta automatisk i Claude Code i dette repoet.
 - Den portable skillen [`skisse-til-cad`](.agents/skills/skisse-til-cad/SKILL.md) bevarer heile kjeda frå skisse via Tripo og mekanisk CAD til IKEA-liknande montering, med offisielle kjelder og 12 offlinekontrollar av CLI 0.7.2.
+- [Skisse til CAD som plugin](plugins/skisse-til-cad/README.md) har installasjonsrettleiing, støtte og offentlege nedlastingar av plugin og skill, versjon 0.1.1.
 - Workflowen `kontroller-hus` (`.claude/workflows/kontroller-hus.js`) er ein uavhengig, målande kontroll av ei printpakke, med `args: {"prosjekt": "A2"}`.
 
 Tripo-skripta krev `TRIPO_API_KEY` i miljøet.
