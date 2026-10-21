@@ -8,7 +8,6 @@ Bruk kjeldene som sporbar metode- og stilreferanse, ikkje som universelle mål e
 - Dokumentert R03-revisjon: `d4047d83d9a537a9a991a38238d35ab3a224c60d` på `claude/stereoskopisk-kamerahus-cjqyqr`.
 - Dåverande mappe: `A4/arkiv/tripo-a1/cad-assembly/`. Sjekk gjeldande tre før endring; A1 låg tidlegare i eiga rotmappe.
 - [CAD, printfiler og manual på fast revisjon](https://github.com/lukketsvane/formnerd/tree/d4047d83d9a537a9a991a38238d35ab3a224c60d/A4/arkiv/tripo-a1/cad-assembly).
-- [R03 i FormNerd Space med alle 29 sidebileta](https://chatgpt.com/space/page_9d09528d7f48819180866059748d877f).
 
 | Fil under arbeidsmappa | Bruk |
 | --- | --- |

@@ -1,6 +1,6 @@
 # Endringar i tripo-bruk.md
 
-Lista samanliknar `/home/user/formnerd/.agents/skills/skisse-til-cad/references/tripo-bruk.md` med `/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/tripo-docs/tripo-bruk-revidert.md`. Ingenting under `/home/user/formnerd` er endra. Ingen Tripo-kall er gjorde.
+Endringsnotat for den publiserte Tripo-oppskrifta. Referansar til arbeidsnotat viser kjeldekontrollen i FormNerd-prosjektet, ikkje filer som følgjer denne pakken.
 
 ## Forkortingar
 
