@@ -33,15 +33,24 @@ def seksjonar_kropp():
     return {s["z"]: np.asarray(s["punkt"]) for s in MAAL["kropp"]}
 
 
+def kappe(topp, z0, z1, d0, R, steg=6):
+    """Avrunda tak: snitt langs ein kvartsirkel med radius R frå z0 (forskyving d0) mot z1, flatt tak frå 75°."""
+    ut = []
+    for i in range(1, steg):
+        th = np.pi / 2 * i / steg
+        ut.append((z0 + (z1 - z0) * np.sin(th), d0 - R * (1 - np.cos(th))))
+    return ut
+
+
 def kropp_loft():
     b = F["kropp"]
     S = seksjonar_kropp()
     zs = sorted(S)
     flater = [seksjonsflate(S[z], z) for z in zs]
     topp = S[zs[-1]]
-    for z, d in b["kappe"]:
+    for z, d in kappe(topp, zs[-1], b["topp_z"], 0.0, b["topp_r"]):
         flater.append(seksjonsflate(forskove(topp, d), z))
-    return loft(flater, ruled=False)
+    return loft(flater, ruled=True)
 
 
 def holrom_loft():
@@ -51,9 +60,9 @@ def holrom_loft():
     zs = [z for z in sorted(S) if z >= h["golv_z"]]
     flater = [seksjonsflate(forskove(S[zs[0]], -v), h["golv_z"])] + [seksjonsflate(forskove(S[z], -v), z) for z in zs[1:]]
     topp = S[zs[-1]]
-    for z, d in h["kappe"]:
+    for z, d in kappe(topp, zs[-1], h["tak_z"], -v, h["tak_r"]):
         flater.append(seksjonsflate(forskove(topp, d), z))
-    return loft(flater, ruled=False)
+    return loft(flater, ruled=True)
 
 
 def linsetonne():
@@ -98,8 +107,9 @@ def knappboss():
 def bygg_form():
     k = kropp_loft()
     tid("kropp-loft")
-    delar = {"kropp": k, "linse": linsetonne(), "sokar": sokarblokk(), "hjulboss": hjulboss(), "knappboss": knappboss()}
+    delar = {"kropp": k, "linse": linsetonne()}
     delar.update({p["namn"]: royr(p["punkt"], p["r"], p.get("b")) for p in F["royr"]})
+    delar.update({"sokar": sokarblokk(), "hjulboss": hjulboss(), "knappboss": knappboss()})
     tid("delar")
     u = k
     for n, d in delar.items():
@@ -109,6 +119,8 @@ def bygg_form():
         if not u2.is_valid or len(u2.solids()) != 1:
             u2 = u2.fix()
             print("  fix etter", n, "gyldig", u2.is_valid, "solidar", len(u2.solids()))
+            if not u2.is_valid or len(u2.solids()) != 1:
+                raise RuntimeError(f"union feila ved {n}")
         u = u2
     tid("union")
     return u, delar

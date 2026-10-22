@@ -288,8 +288,20 @@ def rydd(m):
 
 
 DELAR = {"botn": rydd(BOTN), "topp": rydd(TOPP), "utloysar": KNAPP, "usb-lokk": USBLOKK, "hjulaksel": AKSEL}
+
+
+def skriv_stl(m, fil):
+    import trimesh
+    export_stl(m, fil, tolerance=0.01, angular_tolerance=0.08)
+    t = trimesh.load(fil, process=True)
+    t.update_faces(t.nondegenerate_faces())
+    t.merge_vertices()
+    t.export(fil)
+    return t.is_watertight, round(t.volume / 1000, 2)
+
+
 for n, m in DELAR.items():
-    print(f"{n:<10} gyldig {m.is_valid!s:<5} solidar {len(m.solids())}  volum {m.volume / 1000:6.2f} cm3")
-    export_stl(m, UT / "stl" / f"{n}.stl", tolerance=0.01, angular_tolerance=0.08)
+    vasstett, vol = skriv_stl(m, UT / "stl" / f"{n}.stl")
+    print(f"{n:<10} gyldig {m.is_valid!s:<5} solidar {len(m.solids())}  stl vasstett {vasstett!s:<5} volum {vol:6.2f} cm3")
     export_step(m, UT / "step" / f"{n}.step")
 tid("eksport")
