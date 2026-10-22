@@ -1,0 +1,18 @@
+{
+ "R": 12.0, "HR": 7.0,
+ "CH_BOT": 0.3, "CH_TOP_O": 0.35, "CH_TOP_I": 0.0,
+ "RC": 11.25, "GAP": 0.15, "REC": 0.8,
+ "CAP_MODE": "flat", "CAP_UP": 0.7, "CH_CAP": 0.4, "CAP_CLEAR": 0.05,
+ "DISH_D": 10.74, "DISH_SY": 0.91, "DISH_DEPTH": 1.5, "DISH_X": 1.9, "DISH_Y": -0.45, "DISH_FIL": 0.4,
+ "IDX_MODE": "line_cap", "IDX_ANG": 159.3, "IDX_R0": 8.3, "IDX_R1": 10.3, "IDX_W": 0.28, "IDX_D": 0.15, "IDX_LEN": 2.4, "IDX_RM": 10.8,
+ "BORE_R": 3.0, "BORE_FLAT": 1.5, "BORE_DEPTH": 5.0,
+ "KNURL": "fd", "N": 48, "PHASE": 3.3, "Z_LO": 0.45, "Z_HI": 6.45,
+ "W_FLUTE": 1.53, "DEPTH_FLUTE": 0.275, "FLUTE_SHRINK": 0.15, "MIN_FLUTE": 1.6, "FLUTE_GAP": 0.12,
+ "TH_A": -88.0, "SPAN": 90.0, "SLANT": 12.0, "SEAM": 120.0, "NOISE": 0.04, "E1": 0.1, "E_SMOOTH": 1,
+ "D_MAX": 1.55, "D_MIN": 0.62, "D_GAMMA": 0.8, "DEPTH_DIMPLE": 0.38, "OVERLAP": 1.06, "D_JIT": 0.04,
+ "FLUTE_CLEAR": 0.92, "RELAX": 80,
+ "NT": 54, "WG": 0.75, "DG": 0.8, "GZ_TOP0": 4.5, "GZ_TOP1": 7.0, "GZ_JIT": 0.25,
+ "NS0": 1.0, "NS1": 0.55, "NR": 0.42, "ND": 0.6, "NZ0": 0.3, "NL": 1.05,
+ "SEED": 17, "NSEC": 12,
+ "BASE": false, "BASE_GAP": 0.25, "BASE_H": 2.2, "BASE_R": 11.0, "BASE_RI": 7.5, "BASE_CH": 0.3
+}

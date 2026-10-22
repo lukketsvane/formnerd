@@ -1,6 +1,6 @@
 ﻿param(
-    [ValidateSet('Test', 'Knapp', 'Front', 'Rest')]
-    [string]$Plate = 'Test',
+    [ValidateSet('Prove', 'Front', 'Rest', 'ProveGeometri', 'FrontGeometri', 'RestGeometri')]
+    [string]$Plate = 'Prove',
     [switch]$VerifyOnly
 )
 
@@ -68,10 +68,12 @@ foreach ($model in $largeFiles.files) {
 Write-Host 'Filkontroll og tapsfri samansetjing godkjende.'
 if ($VerifyOnly) { return }
 $choices = @{
-    Test = 'print\Plate-00-test.3mf'
-    Knapp = 'print\P04.stl'
-    Front = 'print\Plate-01-framhus.3mf'
-    Rest = 'print\Plate-02-deksel-og-smadelar.3mf'
+    Prove = 'print\bambu\Plate-00-prove-P1S.gcode.3mf'
+    Front = 'print\bambu\Plate-01-framhus-P1S.gcode.3mf'
+    Rest = 'print\bambu\Plate-02-deksel-og-smadelar-P1S.gcode.3mf'
+    ProveGeometri = 'print\Plate-00-prove.3mf'
+    FrontGeometri = 'print\Plate-01-framhus.3mf'
+    RestGeometri = 'print\Plate-02-deksel-og-smadelar.3mf'
 }
 $target = Join-Path $rootPath $choices[$Plate]
 $candidates = @()
@@ -85,7 +87,7 @@ foreach ($basePath in @($env:ProgramFiles, ${env:ProgramFiles(x86)}, $env:LOCALA
     }
 }
 $studio = $candidates | Where-Object { Test-Path -LiteralPath $_ -PathType Leaf } | Select-Object -First 1
-Write-Host 'Vel faktisk P1S, dyse, plate og filament i sliceren.'
+Write-Host 'Dei slica filene er laga for P1S, 0,4 mm dyse, Textured PEI og Bambu PLA Basic. Kontroller plate og filament.'
 Write-Host 'Dette opnar berre modellen. Inga utskrift blir starta.'
 if ($studio) {
     Start-Process -FilePath $studio -ArgumentList ('"' + $target + '"')

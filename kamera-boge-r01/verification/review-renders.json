@@ -1,0 +1,104 @@
+{
+ "source": "cad/assembled.3mf (P01 shown as 400 000-triangle display derivative, other parts full)",
+ "renderer": "three.js 0.169 in headless Chrome (verktoy/strek.mjs), orthographic, 1600 px",
+ "cmf": {
+  "P01, P02": "#c9cbc8",
+  "P03, P04": "#3a3d40",
+  "P05": "#e8e2d0",
+  "hardware": "#737573"
+ },
+ "views": {
+  "hero": [
+   1,
+   2,
+   1.1
+  ],
+  "front": [
+   0,
+   1,
+   0
+  ],
+  "back": [
+   0,
+   -1,
+   0
+  ],
+  "grip-side": [
+   1,
+   0,
+   0
+  ],
+  "lens-side": [
+   -1,
+   0,
+   0
+  ],
+  "top": [
+   0,
+   0,
+   1
+  ],
+  "rear-34": [
+   -1,
+   -1.6,
+   0.9
+  ],
+  "exploded": [
+   -1,
+   -1,
+   0.7
+  ]
+ },
+ "exploded_offsets_mm": {
+  "P02": [
+   0,
+   -55,
+   0
+  ],
+  "P03": [
+   0,
+   35,
+   0
+  ],
+  "P04": [
+   0,
+   -55,
+   -46
+  ],
+  "P05": [
+   0,
+   -27,
+   0
+  ],
+  "rear-screw": [
+   0,
+   -65,
+   0
+  ],
+  "nut": [
+   0,
+   -18,
+   0
+  ],
+  "spring-screw": [
+   0,
+   -45,
+   0
+  ],
+  "lens-screw": [
+   0,
+   48,
+   0
+  ]
+ },
+ "files": {
+  "back.png": "505bee7512875085677c4e8871319a888731f6f61ad08bbf9235c156aa9d4ef0",
+  "exploded.png": "4dfda4ed099dc55e9fcf8929f1b8445898acb2ff3a8dbcd4ea06aa9eae03458b",
+  "front.png": "008a01bca9c115e528443049daa905b4180e84bf829c061665aa4c54bc01805a",
+  "grip-side.png": "eae6413b75da4fac02bbea35fc40f5f40546301d63f65d0eaf3b2ceb6b322cf8",
+  "hero.png": "689b236e6e5bfca08da9088d56a4d01d80ef1547793df9a3289fd7609792db2c",
+  "lens-side.png": "c26a95c2000d47d1d3a5b6e987df9dbe493a2b022bf08e21ef3f713ba6724de5",
+  "rear-34.png": "0a30610937133a5ba1fa2eb8ebb82923db7d50481db199f8da9740e255b0d70d",
+  "top.png": "1ca0d0bdfa78e2a079c96793c3ca2842fbc3f8f7afa32231bfa7a526f0e0e420"
+ }
+}

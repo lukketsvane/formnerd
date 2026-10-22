@@ -1,0 +1,4 @@
+{"blast": {"col": [0.9, 0.9, 0.89], "rough": 0.3, "rvar": 0.03, "grain": 14, "bump": 0.2, "bdist": 0.003, "ao_dist": 0.8, "ao_min": 0.35, "ao_pow": 1.0, "bevel": 0.03},
+ "spun": {"tan": "radial", "rough": 0.2, "aniso": 0.85},
+ "brushz": {"tan": "z", "rough": 0.25, "aniso": 0.85},
+ "polish": {"rough": 0.06}}
