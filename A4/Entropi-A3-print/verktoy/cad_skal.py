@@ -69,14 +69,21 @@ def union(delar):
 
 
 # --- ytre form ---------------------------------------------------------------
-FORM, OMRISS, KOMP = cf.bygg_form()
+FORM, KOMP = cf.bygg_form()
 KROPP0 = FORM
-om_pg = OMRISS
 hx, hy = F["hjulboss"]["senter"]
 hr = F["hjulboss"]["r"]
 st, ec = K["stabel"], S["ec11"]
-yk = F["kropp"]["y"]
-y_hjul_usb, y_grep, y_panel = yk[1], yk[0], yk[1]
+def flate_y(x, z, fraa_minus):
+    sek = section(KOMP["kropp"], Plane.XY.offset(z))
+    pts = [p for f in sek.faces() for e in f.outer_wire().edges() for p in [e.position_at(t) for t in np.linspace(0, 1, 900)] if abs(p.X - x) < 0.6]
+    ys = [p.Y for p in pts]
+    return min(ys) if fraa_minus else max(ys)
+
+
+y_hjul_usb = flate_y(st["cam_front_x"] - st["cam_pcb"] - st["header_gap"] + st["usb_akse_over_mb"], az, False)
+y_grep = flate_y(K["usbc_grep"]["x"], K["usbc_grep"]["z"], True)
+print("y_hjul_usb", round(y_hjul_usb, 2), "y_grep", round(y_grep, 2))
 
 ok_r = D["okularring"]
 oc = ok_r["senter"]
@@ -93,7 +100,7 @@ prof = Polygon((xm_ - hb, sk_["z_botn"]), (xm_ + hb, sk_["z_botn"]), (xm_ + ht, 
 KROPP0 += Pos(0, sk_["y"][0], 0) * Rot(90, 0, 0) * extrude(prof, -(sk_["y"][1] - sk_["y"][0]))
 lr = D["linsering"]
 L = F["linse"]
-KROPP0 -= xsyl(lr["x_flate"], L["x"][1] + 5, lr["r_ytre"])
+KROPP0 -= xsyl(lr["x_flate"], L["profil"][-1][0] + 5, lr["r_ytre"])
 tid("kropp0")
 
 # --- stabelen ----------------------------------------------------------------
@@ -148,13 +155,7 @@ tid("opningar")
 
 # --- holkjerne ---------------------------------------------------------------
 v = S["vegg"]
-indre = offset(om_pg, -v)
-KJERNE = extrude(indre, S["tak_z"] - v).moved(Pos(0, 0, v))
-try:
-    KJERNE = fillet(KJERNE.edges().filter_by(Axis.Z, reverse=True).group_by(Axis.Z)[-1], 4.0)
-except Exception as e:
-    print("kjerne-fillet feila:", e)
-KJERNE &= boks([-50, S["front_x"]], [-50, 200], [-50, 200])
+KJERNE = cf.holrom_loft() & boks([-50, S["front_x"]], [-50, 200], [-50, 200])
 vern = Pos(bx - br["side_x"] / 2 - v, by - br["side_y"] / 2 - v, lomme_botn - v) * Box(br["side_x"] + 2 * v, br["side_y"] + 2 * v, 90 - lomme_botn + v, align=MN)
 vern += vsyl(ux, uy, ut_["brunn_r"] + v, brunn_golv - v, 90)
 uh = S["usb_hylse"]
@@ -190,11 +191,19 @@ if "--form" in sys.argv:
     sys.exit()
 
 # --- detaljar skorne i overflata ---------------------------------------------
-YTRE_BLOKK = extrude(om_pg, F["kropp"]["topp_z"])
+YTRE_BLOKK = KOMP["kropp"]
 
 
-def band_z(flate, z0, tjukn, breidd):
-    return extrude(flate - offset(flate, -tjukn), breidd).moved(Pos(0, 0, z0 - breidd / 2))
+def band_z(flate, z0, tjukn, breidd, region=None):
+    b = flate - offset(flate, -tjukn)
+    if region is not None:
+        b = b & region
+    return extrude(b, breidd).moved(Pos(0, 0, z0 - breidd / 2))
+
+
+def kropp_snitt(z):
+    sek = section(KOMP["kropp"], Plane.XY.offset(z))
+    return Sketch() + [make_face(f.outer_wire()) for f in sek.faces()]
 
 
 def polar_z(n, r0, r1, tjukn, senter, z, vinkel0=0.0):
@@ -212,8 +221,7 @@ def linse_r(x):
 
 ri = D["riller"]
 rille_region = Pos(ri["x"][0], -10) * Rectangle(ri["x"][1] - ri["x"][0], ri["y_maks"] + 10, align=(Align.MIN, Align.MIN))
-band_flate = om_pg & rille_region
-RILLER = union([band_z(band_flate, z, ri["djupn"], ri["breidd"]) for z in np.arange(ri["z"][0], ri["z"][1] + 0.01, ri["deling"]) if abs(z - dz) > ri["unngaa_deling"]])
+RILLER = union([band_z(kropp_snitt(z), z, ri["djupn"], ri["breidd"], rille_region) for z in np.arange(ri["z"][0], ri["z"][1] + 0.01, ri["deling"]) if abs(z - dz) > ri["unngaa_deling"]])
 tid("riller")
 over_golv = boks([-50, 200], [-50, 200], [D["knurl_z_min"], 200])
 KNURL = Part()
@@ -243,7 +251,7 @@ sokar_flate = Pos((sb["x"][0] + sb["x"][1]) / 2, (sb["y"][0] + sb["y"][1]) / 2) 
 saum_sokar = band_z(sokar_flate, sa["z"], sa["djupn"], sa["breidd"]) & boks([-10, sb["x"][1] - 0.5], [-10, 200], [-10, 200])
 saum_hjul = band_z(Pos(hx, hy) * Circle(hr), sa["z"], sa["djupn"], sa["breidd"])
 saum_knapp = band_z(Pos(ux, uy) * Circle(F["knappboss"]["r"]), sa["z"], sa["djupn"], sa["breidd"])
-andre = union([KOMP[n] for n in KOMP if n not in ("sokar", "hjulboss", "knappboss", "linse")])
+andre = union([KOMP[n] for n in KOMP if n not in ("kropp", "sokar", "hjulboss", "knappboss", "linse")])
 SAUM = (saum_sokar + saum_hjul + saum_knapp) - andre
 tid("saumar")
 
