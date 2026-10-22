@@ -1,0 +1,24 @@
+{
+  "name": "f14-hawking-bitar",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea HAWKING BITS, all that falls in is written as bits on the horizon: the left grip is a coarse, perfectly ordered diamond knurl like image[2]; across the body it turns into raised 1 mm square pixels in an ordered checker, then random noise of mixed heights; in a wide ring round the lens it becomes a tight mosaic of tiny pixels in random black and white: maximum entropy at the horizon. Inside it a thin satin grey photon ring as in image[3] and the deep black lens. Pixel relief is the grip, missing pixels over the electronics are vent holes, a row of red pixels is the index line. image[4] = engraved tick scale, for the lens ring. Smooth islands for flash window, collared shutter, switch pocket and ports; light-pipe dots, hinged plug cover, strap anchor, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws, QR code",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_a2641043-9d07-4e93-9526-a0eec08aab81",
+      "file_a1a712e0-4767-4cc8-8ab2-d4243f08f0f5",
+      "file_033484c1-7c8c-42ae-b41d-c9c09dcb57b4"
+    ]
+  },
+  "task_id": "88f4864a-4d1c-4527-9ac1-4c73cb6edc57",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f14-hawking-bitar/bilete.png",
+      "sha256": "37a878a8ed2848a66662458dc47a8b089892c6bf164c45bf7adf4f026fdc1c71"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "f16-krystall-oske",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "3:4",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea CRYSTAL TO ASH, a phase change: the lower body is an ordered faceted crystal plinth in translucent PLA with crisp planar facets, glowing faintly from the charge light at the USB-C. Moving up, the facets turn opaque light grey and crack into a Voronoi mosaic with widening black joints; the tiles crumble into grains; round the lens everything is black, granular fuzzy-skin texture like ash, the swirl into the void of image[2]. Only the lens sits in a small, perfectly smooth gloss-black dome with an engraved scale like image[3]: a black hole has no hair. Soft upright volume like image[4]. Facets give the grip, Voronoi joints over the electronics are vents. Collared shutter, recessed switch, red index triangle on the lens ring, frosted flash window, strap eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_e12f8b74-f4c7-4202-a738-157a691825be",
+      "file_7e8e7271-c361-421d-b668-68d11e9d6b37",
+      "file_f13652ff-8ddb-406c-8192-0f62413d2a07",
+      "file_a295e5ff-fe15-4313-a78d-e597f3e21352"
+    ]
+  },
+  "task_id": "e366afc7-41db-4288-aa39-2c35ae4b4cca",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f16-krystall-oske/bilete.png",
+      "sha256": "c85083d953927ff96f7641bc3c674d412fa437f465e51690b4e53dbcd58cea5b"
+    }
+  }
+}

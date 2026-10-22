@@ -1,0 +1,25 @@
+{
+  "name": "f02-einsteinring",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea EINSTEIN RING FLASH: the body is a calm, deep matte black monolith, the shadow. The only light on it is milky translucent white inlay, flush with the surface: from the flash window three thin rays curve round like the bent rays in image[2] and merge into one thin glowing ring round the lens, as in image[3], with a recessed black annulus between ring and lens. The ring is the flash diffuser, a ring light. image[4] = sculpted black body with stepped top plate, tone on tone. image[5] = only knurled pads and machined edges. Diamond-knurled black grip pad front left, satin graphite shutter with collar, two translucent light-pipe dots on top, engraved ticks, bottom vent slots, plug cover with exhaust slots on the left end, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_487ba534-e812-473c-8d99-c83c62805bfa",
+      "file_fae54ac4-aa17-4461-b472-e00a034fc1a0",
+      "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+      "file_a2641043-9d07-4e93-9526-a0eec08aab81"
+    ]
+  },
+  "task_id": "9eb93276-60bd-4643-9b6d-28ccaaf9b91c",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f02-einsteinring/bilete.png",
+      "sha256": "9fd94277464b67d296079544033171888101b49bcaa53eb9e04a38869eb1a367"
+    }
+  }
+}

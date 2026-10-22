@@ -1,0 +1,25 @@
+{
+  "name": "f05-doppler",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea DOPPLER DISK: the matte black core is wrapped by a stack of thin horizontal lamellae, 1 mm plates with 1 mm gaps, like the layered edge-on disk in image[2], lopsided as Doppler beaming makes it. On the left, the side moving toward you, they are thick, crisp, bright white and bulge 3 mm out as a full-height grip; going right they thin, crowd and darken through light grey and graphite to black, four colour steps = redshift; the last fine black lines dive into the lens rim. image[3] = such fine ridges on a real product. image[4] = crisp sculpted black top plate carrying shutter and switch. image[5] = ribbed lens ring with red index. Lamella edges are grip ribs, gaps open into bottom vents; flash window and light-pipe dots between lamellae, plug cover on the left end, corner eyelet. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_7e8e7271-c361-421d-b668-68d11e9d6b37",
+      "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+      "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+    ]
+  },
+  "task_id": "0414bff1-cfa0-4c5e-b3b4-cc26f416ec64",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f05-doppler/bilete.png",
+      "sha256": "2a2094b6f6276125202314c2b616db8bb1c027a0d45c362dc33a3ba12e37a720"
+    }
+  }
+}

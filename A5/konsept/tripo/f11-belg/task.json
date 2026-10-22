@@ -1,0 +1,24 @@
+{
+  "name": "f11-belg",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea TIDAL BELLOWS, a tiny optical bench: a crisp matte black front plate (lens standard) and back plate (sliding battery door) are joined by a band of sharp zig-zag bellows pleats wrapping the body. The pleats are wide and calm at the grip end and squeezed ever tighter toward the lens end, like matter crushed by tides near a black hole. Below, a clip-on rail foot with engraved ticks, fine gear rack and knurled thumb knob (tripod insert). image[2] = bellows pleats, rail with engraved scale, gear rack, knurled knob. image[3] = knurled pads, red tabs, machined lever. image[4] = lines compressing toward a dark mass. Vertical grip ribs front left, frosted flash window, knurled shutter collar, switch in a pocket, ribbed lens ring, red index dot, flush pins at plate corners, vents, light-pipe dots. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_6e485571-80ce-4efe-a818-32f81764eaea",
+      "file_a2641043-9d07-4e93-9526-a0eec08aab81",
+      "file_e49d3fd7-4254-42c4-94b4-189e7510a982"
+    ]
+  },
+  "task_id": "b8e2060b-2a68-4f0e-bf48-46a9c6159dfc",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f11-belg/bilete.png",
+      "sha256": "7f4673c3052d9e9208921a2f19740b9fed0b5290fcaddf14a08eb17b04caf21b"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "f06-hawking-perler",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea HAWKING RADIATION, the black hole evaporating: satin light-grey tubes leave the lens rim and flow left over front and top; the further from the horizon, the more each tube breaks into a chain of beads shrinking from 6 to 2 mm. The beads work: a dense pearl field on the front-left grip for two fingertips, a bead chain over the top shrinking toward the shutter to lead the index finger into a beaded collar, two clear pearls on top as charge light pipes, gaps between bottom beads as vents, a pearl loop at the top-left corner as strap eyelet, a flattened pearl cluster on the back as thumb rest. image[2] = tube paths flowing into a lens. image[3] = bright ring round a black void, for the lens rim. image[4] = knurled pads and red marks. Matte black core, red index dot, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_f0af38b1-26a8-4f9c-97ff-2f88320a5676",
+      "file_a1a712e0-4767-4cc8-8ab2-d4243f08f0f5",
+      "file_a2641043-9d07-4e93-9526-a0eec08aab81"
+    ]
+  },
+  "task_id": "f2fd3a1c-fa5b-42ff-920d-f48e5ad82d46",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f06-hawking-perler/bilete.png",
+      "sha256": "42aa52e544e72b0a917e1e7bec84c4b25b1a8ae1d4248a5a7593987f58656fd9"
+    }
+  }
+}

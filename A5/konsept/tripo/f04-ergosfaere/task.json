@@ -1,0 +1,24 @@
+{
+  "name": "f04-ergosfaere",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "3:4",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea ERGOSPHERE, a spinning black hole drags space with it: the graphite front plate is twisted a few degrees round the lens against the matte black body, its corners stepping out over the block as if dragged, the steps forming finger ledges. Round the lens sits a flattened oval collar, the ergosphere, with knurled rim and red index triangle: turning it drags six curved iris vanes inward to close the lens, a privacy cover; show it half closed. Short tangential turbine vanes skirt the collar. image[2] = knurled rotating ring with red index and tick scale. image[3] = stepped sculpted plate over a dark body. image[4] = flattened bright halo round a black sphere, for the oval collar. Collared shutter and two light-pipe dots on top, vent slots beside the USB-C, plug cover, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_e12f8b74-f4c7-4202-a738-157a691825be",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd",
+      "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+      "file_fae54ac4-aa17-4461-b472-e00a034fc1a0"
+    ]
+  },
+  "task_id": "395a9983-8b7c-4bcd-8d8e-db93d0afacc6",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f04-ergosfaere/bilete.png",
+      "sha256": "e879b7867093ddc9191e62a097d10f1fe212efd0dfcfbeba2dbe0596b21b6286"
+    }
+  }
+}

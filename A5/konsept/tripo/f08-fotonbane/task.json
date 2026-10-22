@@ -1,0 +1,24 @@
+{
+  "name": "f08-fotonbane",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "3:4",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea PHOTON ORBIT, light circling the black hole exactly once: one thick 9 mm satin light-grey tube wraps the matte black core in a single open loop on the grip side and maps the whole hand. It starts as a raised collar round the shutter for the index finger, runs down the back as a thumb ridge, swings 6 mm below the bottom-left edge as an open hook for the little finger, which is also the strap eyelet, then climbs the front-left as a ridge for middle and ring finger and stops short of its start: the gap is the escape, and the flash window glows in it. No closed frame. image[2] = upright camera with a C-shaped tube. image[3] = sketch of wavy finger seats. image[4] = vertical lensed disk with black shadow, for the lens surround. Tick ring and red index on the lens ring, fine vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_e12f8b74-f4c7-4202-a738-157a691825be",
+      "file_a295e5ff-fe15-4313-a78d-e597f3e21352",
+      "file_fd5dc618-217d-49a8-8660-82f7bf7f3336",
+      "file_7e8e7271-c361-421d-b668-68d11e9d6b37"
+    ]
+  },
+  "task_id": "09381bdc-2c2e-4c8b-80d1-204a79e5717d",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f08-fotonbane/bilete.png",
+      "sha256": "dca03fc7502fa383ca7f918634d73711e4fbce7e16cd919fc565c5e2210bc44c"
+    }
+  }
+}

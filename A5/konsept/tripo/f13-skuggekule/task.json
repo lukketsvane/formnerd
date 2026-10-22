@@ -1,0 +1,24 @@
+{
+  "name": "f13-skuggekule",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea SHADOW SPHERE, the black hole is not a hole but a shadow: a matte black low dome bulges 5 mm out of the front, only 26 mm across, with the lens ring sunk at its pole. Engraved latitude rings with tick dashes crowd ever closer toward the lens. A satin light-grey machined collar clamps the dome = photon ring: ribbed grip sections, a smooth flat with red index triangle, a small lever with an oblong slot that locks a printed lens cap. Calm graphite body, precise as a tripod head. image[2] = that collar: ribbed sections, red index, slotted lever. image[3] = black dome with engraved tick scale. image[4] = black sphere in a bright photon ring. Vertical grip grooves front left, frosted flash window, knurled shutter collar, switch in a pocket, light-pipe dots, vents, strap anchor, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd",
+      "file_033484c1-7c8c-42ae-b41d-c9c09dcb57b4",
+      "file_fae54ac4-aa17-4461-b472-e00a034fc1a0"
+    ]
+  },
+  "task_id": "d1476e82-4c80-4cef-841e-543b46af68b2",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f13-skuggekule/bilete.png",
+      "sha256": "aecaa2f48ef473e825a26ed77642a206a936868db9296e46dbdd573941cd8524"
+    }
+  }
+}

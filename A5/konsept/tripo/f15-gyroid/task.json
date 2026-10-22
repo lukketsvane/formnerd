@@ -1,0 +1,25 @@
+{
+  "name": "f15-gyroid",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea GYROID EROSION: at the left grip the body is a smooth, ordered light-grey shell of soft vertical tube ribs like image[2]; moving right the shell is eaten away along a ragged erosion front, exposing a matte black gyroid lattice, the print infill made visible, over a solid inner wall. The gyroid cells shrink and densify toward the lens and fuse into one gloss-black ring round it, like the photon ring in image[3]. Light-grey shell islands float in the lattice. The open gyroid over the electronics is the vent; translucent cells on top glow as charge-light pipes. image[4] = ribbed lens ring with red index triangle. image[5] = knurled pads and red accents. Collared shutter, recessed switch, plugged port on the left end, corner strap eyelet, shadow-gap seam, visible layer lines. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_5c0afe65-2fca-42ef-a7d7-0cd777669aad",
+      "file_a1a712e0-4767-4cc8-8ab2-d4243f08f0f5",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd",
+      "file_a2641043-9d07-4e93-9526-a0eec08aab81"
+    ]
+  },
+  "task_id": "a1c0facc-5135-4dd7-813d-76aee319d2e7",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f15-gyroid/bilete.png",
+      "sha256": "4071e1a4694801ef256473b338f3f41422e8124b404fbcdbb747a0354fbd48f2"
+    }
+  }
+}
