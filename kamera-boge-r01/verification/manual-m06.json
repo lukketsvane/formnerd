@@ -1,0 +1,174 @@
+{
+ "document_revision": "M06",
+ "geometry_revision": "R01",
+ "page_count": 14,
+ "a4": true,
+ "pdf": "manual/Kamera-boge-M06.pdf",
+ "pdf_sha256": "8e7d405d4e10423695d08b49ccd55a04707f5e6eb1898a152740c24342aaa8f8",
+ "raster_images_in_pdf": 0,
+ "style_reference": "referansar/ikea-monteringsstil (10 pages) and the pages the user supplied 2026-10-21",
+ "changes_from_m05": [
+  "new layout engine source/manual_v6.py: page frame, circled part numbers with quantity, hardware column with letter and count, hollow arrows between states, magnifier bubbles with leaders, dashed insertion lines labelled Ax2/Bx4/Cx3, multiplier x2, near wordless step pages",
+  "stroke weight per line type in pt drawn directly from the SVG paths: contour 1.45, detail 0.62, organic contour 0.72, organic valley 0.5, hardware 1.0/0.45, section hatch 0.28",
+  "Liberation Sans (Arial metrics) instead of DejaVu Sans",
+  "restructured from 16 to 14 pages: cover, parts 1-5 + T, hardware A/B/C at 5:1 with 1:1 length bars and hex keys 2,5/2, print plates, T01 fit test, exploded overview with button/spring inset, steps 1-7, final check and troubleshooting",
+  "new model-derived figures: T01 fit test with P04 and hardware above the graded holes, button context (L route from the open back), installed button/spring for the function test, hex key pictogram; lens screw C re-rendered facing the reader"
+ ],
+ "bench": {
+  "tool": "verktoy/ikea/maal.py",
+  "summary": {
+   "pages": 14,
+   "step_pages": 8,
+   "stroke_weight_pt_step_mean": 0.987,
+   "stroke_weight_pt_range_all": [
+    0.757,
+    1.114
+   ],
+   "occupancy_pct_step_range": [
+    25.3,
+    46.5
+   ],
+   "largest_empty_rect_pct_step_max": 17.3,
+   "dead_area_pct": {
+    "2": 25.6,
+    "3": 43.3
+   }
+  },
+  "reference": {
+   "stroke_weight_pt": [
+    0.833,
+    1.205
+   ],
+   "step_occupancy_pct": [
+    24.9,
+    34.7
+   ],
+   "step_largest_empty_rect_pct": [
+    8.1,
+    16.7
+   ],
+   "parts_dead_area_pct": 10.7,
+   "hardware_dead_area_pct": 22.3
+  },
+  "m05": {
+   "stroke_weight_pt": [
+    0.488,
+    0.815
+   ],
+   "step_occupancy_pct": [
+    16.2,
+    27.1
+   ],
+   "step_largest_empty_rect_pct_max": 22.8
+  },
+  "pages": {
+   "1": {
+    "type": "cover",
+    "stroke_pt": 0.935,
+    "occupancy_pct": 31.3,
+    "dead_pct": 45.7,
+    "largest_empty_pct": 15.4
+   },
+   "2": {
+    "type": "inventory",
+    "stroke_pt": 0.992,
+    "occupancy_pct": 45.1,
+    "dead_pct": 25.6,
+    "largest_empty_pct": 5.7
+   },
+   "3": {
+    "type": "hardware",
+    "stroke_pt": 0.757,
+    "occupancy_pct": 27.9,
+    "dead_pct": 43.3,
+    "largest_empty_pct": 12.4
+   },
+   "4": {
+    "type": "print",
+    "stroke_pt": 0.974,
+    "occupancy_pct": 34.8,
+    "dead_pct": 35.4,
+    "largest_empty_pct": 12.0
+   },
+   "5": {
+    "type": "step",
+    "stroke_pt": 1.114,
+    "occupancy_pct": 34.3,
+    "dead_pct": 39.4,
+    "largest_empty_pct": 7.1
+   },
+   "6": {
+    "type": "exploded",
+    "stroke_pt": 0.957,
+    "occupancy_pct": 34.9,
+    "dead_pct": 35.3,
+    "largest_empty_pct": 11.6
+   },
+   "7": {
+    "type": "step",
+    "stroke_pt": 0.827,
+    "occupancy_pct": 46.5,
+    "dead_pct": 25.0,
+    "largest_empty_pct": 7.5
+   },
+   "8": {
+    "type": "step",
+    "stroke_pt": 1.015,
+    "occupancy_pct": 25.3,
+    "dead_pct": 52.9,
+    "largest_empty_pct": 12.0
+   },
+   "9": {
+    "type": "step",
+    "stroke_pt": 0.969,
+    "occupancy_pct": 30.3,
+    "dead_pct": 39.6,
+    "largest_empty_pct": 10.4
+   },
+   "10": {
+    "type": "step",
+    "stroke_pt": 1.009,
+    "occupancy_pct": 40.6,
+    "dead_pct": 33.2,
+    "largest_empty_pct": 11.3
+   },
+   "11": {
+    "type": "step",
+    "stroke_pt": 0.899,
+    "occupancy_pct": 35.2,
+    "dead_pct": 36.4,
+    "largest_empty_pct": 17.3
+   },
+   "12": {
+    "type": "step",
+    "stroke_pt": 1.05,
+    "occupancy_pct": 37.6,
+    "dead_pct": 22.1,
+    "largest_empty_pct": 6.0
+   },
+   "13": {
+    "type": "step",
+    "stroke_pt": 1.015,
+    "occupancy_pct": 31.4,
+    "dead_pct": 36.1,
+    "largest_empty_pct": 16.1
+   },
+   "14": {
+    "type": "final",
+    "stroke_pt": 0.968,
+    "occupancy_pct": 39.6,
+    "dead_pct": 38.1,
+    "largest_empty_pct": 12.8
+   }
+  },
+  "notes": [
+   "hardware page dead area 43 % is above the 25 % heuristic: three hardware types only",
+   "the bench warning \"0 figurar, neste steg\" only applies to pages built by verktoy/ikea/bygg.py, which records figure sizes; not applicable here"
+  ]
+ },
+ "source_package": "manual/Kamera-boge-M06-kjelder.zip",
+ "rebuild_check": "fresh extraction, python source/manual_v6.py: identical text on all 14 pages and identical 60 dpi rasters",
+ "visual_review": "all 14 pages rasterized and inspected at full size; label collisions on pages 5, 6 and 11 fixed in review",
+ "geometry_modified": false,
+ "physically_tested": false
+}

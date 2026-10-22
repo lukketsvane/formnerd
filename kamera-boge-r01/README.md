@@ -1,6 +1,6 @@
 # Kamera med boge
 
-Den valde forma (`reference/sketch.png`) ført gjennom Tripo, mekanisk CAD R01, P1S-slicing og monteringsrettleiing M05. Førebels breidd er 145 mm. Ytterforma er mesh; STEP dekkjer P03, P04, P05 og T01. Faktisk elektronikk og maskinvare er ikkje målte, og ingenting er printa fysisk enno.
+Den valde forma (`reference/sketch.png`) ført gjennom Tripo, mekanisk CAD R01, P1S-slicing og monteringsrettleiing M06. Førebels breidd er 145 mm. Ytterforma er mesh; STEP dekkjer P03, P04, P05 og T01. Faktisk elektronikk og maskinvare er ikkje målte, og ingenting er printa fysisk enno.
 
 ![Kamera med boge, CAD R01](review/hero.png)
 
@@ -13,7 +13,7 @@ Den valde forma (`reference/sketch.png`) ført gjennom Tripo, mekanisk CAD R01, 
 | Veggtjukkleik på det organiske skalet | Kontrollert og dokumentert (`verification/wall-thickness.json`) |
 | Slicing for Bambu Lab P1S, tre plater med G-kode | Ferdig (`print/bambu/`, `verification/slicing-p1s.json`) |
 | Rendringar av faktisk R01-geometri | Ferdig (`review/`) |
-| Monteringsrettleiing M05, 16 sider med printside, feilsøking og formlinjer frå målte buffer | Ferdig (`manual/`) |
+| Monteringsrettleiing M06, 14 sider i stilen til monteringsreferansane | Ferdig (`manual/`) |
 | Fysisk utskrift, passform, fjørretur, maskinvare | Står att |
 
 ## Prent på P1S
@@ -29,7 +29,7 @@ Dei tre filene i `print/bambu/*.gcode.3mf` er slica med Bambu Studio 02.08.02.61
 1. Opne `Plate-00-prove-P1S.gcode.3mf` i Bambu Studio (Fil → Opne), trykk *Print plate* og vel P1S-en. Knyt filament 1 til PLA-spolen. Utan nettverk: kopier fila til microSD-kortet og start henne frå skjermen.
 2. Prøv T01 og P04: knappen skal gli i Ø16,4-holet, M3-mutteren skal passe i AF5,9-lomma, og M3/M2,5-skruane skal gå i pilotane. Passar det ikkje, juster `cad/parameters.json` og bygg på nytt før framhuset.
 3. Prent framhuset. Trekk støtta ut gjennom bakopninga, ut av linseholet, knappeholet og under bogen. Prent deretter deksel og smådelar.
-4. Følg `manual/Kamera-boge-M05.pdf`.
+4. Følg `manual/Kamera-boge-M06.pdf`.
 
 Tidene er sliceranslag. `print/bambu/profil/` har dei faktiske profilane, `print/bambu/*.json` tid, vekt og G-kodekontrollen per plate. Platefilene utan G-kode (`print/Plate-*.3mf`) har same plassering, for å endre innstillingar sjølv.
 
@@ -40,9 +40,9 @@ Tidene er sliceranslag. `print/bambu/profil/` har dei faktiske profilane, `print
 | `print/bambu/` | Tre slica P1S-plater med G-kode, profilane og slicerapportane |
 | `print/Plate-00-prove.3mf`, `Plate-01-framhus.3mf`, `Plate-02-deksel-og-smadelar.3mf` | Same plater som geometri, utan G-kode |
 | `print/*.stl` | T01, P03, P04 og P05 i printorientering |
-| `manual/Kamera-boge-M05.pdf` | 16 A4-sider med tekniske vektorfigurar frå uendra CAD: silhuettar og eksakte kantar frå VTK, formlinjer på dei organiske delane målte frå djupne- og normalbuffer, printside og feilsøking |
-| `manual/pages/` | Dei 16 sidene som PNG |
-| `manual/Kamera-boge-M05-kjelder.zip` | Kjeldekode, SVG, scenar og kontrollrapportar for manualen; M03-kjeldene ligg ved som historikk |
+| `manual/Kamera-boge-M06.pdf` | 14 A4-sider: sideramme, nummer i sirkel med mengd, beslagkolonne, hole piler, forstørringsbobler og nesten ordlause steg. Vektorfigurar frå uendra CAD med strekvekt per linjetype (målt 0,76–1,11 pt, som referansen) |
+| `manual/pages/` | Dei 14 sidene som PNG |
+| `manual/Kamera-boge-M06-kjelder.zip` | Kjeldekode, SVG, scenar og kontrollrapportar for manualen; M03-kjeldene ligg ved som historikk |
 | `review/` | Åtte rendringar av R01: hero, front, bak, grepside, linseside, topp, bak-3/4 og eksplodert |
 | `cad/assembled.3mf` | Full geometri for P01 til P05 i CAD-koordinatar, mm |
 | `cad/*.step` | Analytisk mekanikk (P03, P04, P05) og passningsprøva T01 |
