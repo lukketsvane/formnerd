@@ -135,7 +135,7 @@ def utval(a):
         if not e:
             continue
         p0 = e["produkt"][0] if e["produkt"] else {}
-        namn = re.sub(r"[^A-Za-z0-9ÆØÅæøå]+", "-", (p0.get("name") or e["label"] or "x")).strip("-")
+        namn = re.sub(r"[^A-Za-z0-9ÆØÅæøåÄÖäö]+", "-", (p0.get("name") or e["label"] or "x")).strip("-")
         stamme = f"{n:02d}-{namn}-{e['aa']}"
         shutil.copy2(a.korpus / e["fil"], mal / f"{stamme}.pdf")
         shutil.copy2(e["kontaktark"], mal / "kontaktark" / f"{stamme}.png")
