@@ -10,3 +10,9 @@ Bilete brukaren delte 22.10.2026, berre til intern formutvikling. Rettane ligg h
 | 07, 08, 13, 14, 15 | Tubespråket i FormNerd: lyse tubar rundt ei mørk kjerne |
 | 09–12 sirui-* | Overflatedetalj: rifla puter, graverte skalaer, raud indeksmerke, rilla ringar og spak |
 | 16-skisse-grep-fatning | Skisse med bølgjande grep |
+| 17-leica-belg-skala | Presisjonsdetalj: belg, skinne, graverte skalaer og rifla knott |
+| 18-linsing-strekar | Linsing som strekfelt: parallelle liner som bøyer seg rundt ei form |
+| 19-skisse-tube-maleri | Skisse: tube over toppen og grep som sylinder |
+| 20-solv-tube-stereo | Tubespråk i satengmetall med stereolinser |
+| 21-nocs-riller | Overflate: konsentriske riller som feltlinjer |
+| 22-svart-toppplate | Skulpturert toppplate over ein mørk kropp |
