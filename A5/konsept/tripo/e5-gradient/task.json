@@ -1,0 +1,25 @@
+{
+  "name": "e5-gradient",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: what happens when light reaches a black hole. image[1] = exact proportions, 3/4 front view and layout: lens right of centre, flash window upper left, shutter and slide switch on top left over the grip, USB-C on the right side. image[2] = black hole with photon ring and lensed accretion disk. image[3] = soft light-grey tubes wrapping a dark core. image[4] and image[5] = only for machined surface detail. Matte black core = the black hole; satin light-grey tubes = the light; lens = event horizon, a deep black funnel with a real recessed lens. Idea ORDER TO DISORDER: the left grip half is crisp and ordered (machined block, knurled pads, engraved scale); towards the lens the surface melts into soft disordered tubes that tangle and flow into the event-horizon funnel. Rich functional detail: diamond-knurled grip pads, engraved degree scale around the lens, a small red index triangle, ribbed machined rings, tiny flush screws, fine vent slots, clean seams. Printable PLA forms, one camera centred on pure white, soft neutral light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses",
+    "inputs": [
+      "file_54714bc2-d5fd-42cb-b351-0912ec5c484f",
+      "file_29f8e2d6-7117-4b6a-8907-01c561166acf",
+      "file_77f99359-a3e4-4dae-829f-344f6967e4b0",
+      "file_a442fb58-9c9f-42f4-b6d4-9f9937da552b",
+      "file_dbe57ead-99eb-4a11-9116-9f11fe4ba545"
+    ]
+  },
+  "task_id": "22994e5c-9b7f-44bd-ac7a-da15dfbf020f",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/e5-gradient/bilete.png",
+      "sha256": "11e587f00b0ca045ba448ec9c15ce18d023c5b1ef8b1de66f7e5cef0c79c3047"
+    }
+  }
+}
