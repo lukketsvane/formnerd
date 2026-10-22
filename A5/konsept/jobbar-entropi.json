@@ -1,0 +1,104 @@
+[
+ {
+  "name": "e1-fotonring",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/e1-fotonring",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photorealistic industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: what happens when light reaches a black hole. image[1] = exact proportions, 3/4 front view and layout: lens right of centre, flash window upper left, shutter and slide switch on top left over the grip, USB-C on the right side. image[2] = black hole with photon ring and lensed accretion disk. image[3] = soft light-grey tubes wrapping a dark core. image[4] and image[5] = only for machined surface detail. Matte black core = the black hole; satin light-grey tubes = the light; lens = event horizon, a deep black funnel with a real recessed lens. Idea PHOTON RING: a thick satin torus around the lens is the photon ring; one flat band wraps horizontally around the whole body at lens height and, like the lensed disk in image[2], its image arcs up over the top as the ridge carrying the shutter and down under the bottom. Rich functional detail: diamond-knurled grip pads, engraved degree scale around the lens, a small red index triangle, ribbed machined rings, tiny flush screws, fine vent slots, clean seams. Printable PLA forms, one camera centred on pure white, soft neutral light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses",
+   "inputs": [
+    "file_54714bc2-d5fd-42cb-b351-0912ec5c484f",
+    "file_29f8e2d6-7117-4b6a-8907-01c561166acf",
+    "file_77f99359-a3e4-4dae-829f-344f6967e4b0",
+    "file_a442fb58-9c9f-42f4-b6d4-9f9937da552b",
+    "file_dbe57ead-99eb-4a11-9116-9f11fe4ba545"
+   ]
+  }
+ },
+ {
+  "name": "e2-spaghetti",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/e2-spaghetti",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photorealistic industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: what happens when light reaches a black hole. image[1] = exact proportions, 3/4 front view and layout: lens right of centre, flash window upper left, shutter and slide switch on top left over the grip, USB-C on the right side. image[2] = black hole with photon ring and lensed accretion disk. image[3] = soft light-grey tubes wrapping a dark core. image[4] and image[5] = only for machined surface detail. Matte black core = the black hole; satin light-grey tubes = the light; lens = event horizon, a deep black funnel with a real recessed lens. Idea SPAGHETTIFICATION: on the grip the tubes run parallel, calm and ordered; across the top they stretch longer and thinner and spiral inward, finally pouring into the lens funnel as tight concentric coils. Rich functional detail: diamond-knurled grip pads, engraved degree scale around the lens, a small red index triangle, ribbed machined rings, tiny flush screws, fine vent slots, clean seams. Printable PLA forms, one camera centred on pure white, soft neutral light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses",
+   "inputs": [
+    "file_54714bc2-d5fd-42cb-b351-0912ec5c484f",
+    "file_29f8e2d6-7117-4b6a-8907-01c561166acf",
+    "file_77f99359-a3e4-4dae-829f-344f6967e4b0",
+    "file_a442fb58-9c9f-42f4-b6d4-9f9937da552b",
+    "file_dbe57ead-99eb-4a11-9116-9f11fe4ba545"
+   ]
+  }
+ },
+ {
+  "name": "e3-bronn",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/e3-bronn",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photorealistic industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: what happens when light reaches a black hole. image[1] = exact proportions, 3/4 front view and layout: lens right of centre, flash window upper left, shutter and slide switch on top left over the grip, USB-C on the right side. image[2] = black hole with photon ring and lensed accretion disk. image[3] = soft light-grey tubes wrapping a dark core. image[4] and image[5] = only for machined surface detail. Matte black core = the black hole; satin light-grey tubes = the light; lens = event horizon, a deep black funnel with a real recessed lens. Idea GRAVITY WELL: the whole front surface sinks into a deep smooth funnel towards the lens, with fine engraved concentric rings like a scale; one light tube circles the rim of the well as the photon ring. Rich functional detail: diamond-knurled grip pads, engraved degree scale around the lens, a small red index triangle, ribbed machined rings, tiny flush screws, fine vent slots, clean seams. Printable PLA forms, one camera centred on pure white, soft neutral light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses",
+   "inputs": [
+    "file_54714bc2-d5fd-42cb-b351-0912ec5c484f",
+    "file_29f8e2d6-7117-4b6a-8907-01c561166acf",
+    "file_77f99359-a3e4-4dae-829f-344f6967e4b0",
+    "file_a442fb58-9c9f-42f4-b6d4-9f9937da552b",
+    "file_dbe57ead-99eb-4a11-9116-9f11fe4ba545"
+   ]
+  }
+ },
+ {
+  "name": "e4-ramme",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/e4-ramme",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photorealistic industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: what happens when light reaches a black hole. image[1] = exact proportions, 3/4 front view and layout: lens right of centre, flash window upper left, shutter and slide switch on top left over the grip, USB-C on the right side. image[2] = black hole with photon ring and lensed accretion disk. image[3] = soft light-grey tubes wrapping a dark core. image[4] and image[5] = only for machined surface detail. Matte black core = the black hole; satin light-grey tubes = the light; lens = event horizon, a deep black funnel with a real recessed lens. Idea D-FRAME: one continuous light tube bends in a rounded D-loop around the dark core block, hugging it like light orbiting the hole; small machined clamps join tube and core; the lens sits in the core at the opening of the D. Rich functional detail: diamond-knurled grip pads, engraved degree scale around the lens, a small red index triangle, ribbed machined rings, tiny flush screws, fine vent slots, clean seams. Printable PLA forms, one camera centred on pure white, soft neutral light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses",
+   "inputs": [
+    "file_54714bc2-d5fd-42cb-b351-0912ec5c484f",
+    "file_29f8e2d6-7117-4b6a-8907-01c561166acf",
+    "file_77f99359-a3e4-4dae-829f-344f6967e4b0",
+    "file_a442fb58-9c9f-42f4-b6d4-9f9937da552b",
+    "file_dbe57ead-99eb-4a11-9116-9f11fe4ba545"
+   ]
+  }
+ },
+ {
+  "name": "e5-gradient",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/e5-gradient",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photorealistic industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: what happens when light reaches a black hole. image[1] = exact proportions, 3/4 front view and layout: lens right of centre, flash window upper left, shutter and slide switch on top left over the grip, USB-C on the right side. image[2] = black hole with photon ring and lensed accretion disk. image[3] = soft light-grey tubes wrapping a dark core. image[4] and image[5] = only for machined surface detail. Matte black core = the black hole; satin light-grey tubes = the light; lens = event horizon, a deep black funnel with a real recessed lens. Idea ORDER TO DISORDER: the left grip half is crisp and ordered (machined block, knurled pads, engraved scale); towards the lens the surface melts into soft disordered tubes that tangle and flow into the event-horizon funnel. Rich functional detail: diamond-knurled grip pads, engraved degree scale around the lens, a small red index triangle, ribbed machined rings, tiny flush screws, fine vent slots, clean seams. Printable PLA forms, one camera centred on pure white, soft neutral light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses",
+   "inputs": [
+    "file_54714bc2-d5fd-42cb-b351-0912ec5c484f",
+    "file_29f8e2d6-7117-4b6a-8907-01c561166acf",
+    "file_77f99359-a3e4-4dae-829f-344f6967e4b0",
+    "file_a442fb58-9c9f-42f4-b6d4-9f9937da552b",
+    "file_dbe57ead-99eb-4a11-9116-9f11fe4ba545"
+   ]
+  }
+ },
+ {
+  "name": "e6-linsing",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/e6-linsing",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photorealistic industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: what happens when light reaches a black hole. image[1] = exact proportions, 3/4 front view and layout: lens right of centre, flash window upper left, shutter and slide switch on top left over the grip, USB-C on the right side. image[2] = black hole with photon ring and lensed accretion disk. image[3] = soft light-grey tubes wrapping a dark core. image[4] and image[5] = only for machined surface detail. Matte black core = the black hole; satin light-grey tubes = the light; lens = event horizon, a deep black funnel with a real recessed lens. Idea LENSING: seen from the front, tubes arc over the top and under the bottom of the lens like the warped image of an accretion disk, meeting at the sides in a horizontal band; the arcs frame the lens in a halo. Rich functional detail: diamond-knurled grip pads, engraved degree scale around the lens, a small red index triangle, ribbed machined rings, tiny flush screws, fine vent slots, clean seams. Printable PLA forms, one camera centred on pure white, soft neutral light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses",
+   "inputs": [
+    "file_54714bc2-d5fd-42cb-b351-0912ec5c484f",
+    "file_29f8e2d6-7117-4b6a-8907-01c561166acf",
+    "file_77f99359-a3e4-4dae-829f-344f6967e4b0",
+    "file_a442fb58-9c9f-42f4-b6d4-9f9937da552b",
+    "file_dbe57ead-99eb-4a11-9116-9f11fe4ba545"
+   ]
+  }
+ }
+]
