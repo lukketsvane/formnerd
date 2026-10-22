@@ -6,10 +6,15 @@
     ],
     "r_skore": 11.03
   },
+  "saum": {
+    "linjer": 6,
+    "lengd_mm": 1626.3,
+    "volum_mm3": 741.1
+  },
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 78.915,
+      "volum_cm3": 78.154,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -19,7 +24,7 @@
           -4.5
         ],
         [
-          88.6,
+          89.28,
           118.88,
           35.0
         ]
@@ -27,7 +32,7 @@
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 131.561,
+      "volum_cm3": 130.85,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -37,7 +42,7 @@
           32.0
         ],
         [
-          88.6,
+          89.27,
           120.0,
           84.73
         ]
@@ -166,7 +171,7 @@
       "topp": 0.0
     },
     "magnetar_i_lommene": 0.0,
-    "botn_mot_topp": -0.0
+    "botn_mot_topp": 0.0
   },
   "sveip_mm3": {
     "stabel_ned_i_botn": 0.0,
@@ -179,5 +184,5 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "innvendig_volum_cm3": 311.6
+  "innvendig_volum_cm3": 305.8
 }

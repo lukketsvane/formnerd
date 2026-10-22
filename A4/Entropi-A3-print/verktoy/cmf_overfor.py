@@ -1,60 +1,39 @@
-import sys, pathlib, numpy as np, trimesh
+import sys, json, pathlib, numpy as np, trimesh
 from scipy.spatial import cKDTree
+import saum as sm_
 
 HER = pathlib.Path(__file__).resolve().parent
 A3 = HER.parent
 UT = A3 / "print" / "cmf"
 UT.mkdir(parents=True, exist_ok=True)
+LYS, MOERK = np.array([150, 154, 154], np.uint8), np.array([62, 67, 69], np.uint8)
+k = np.load(UT / "klasse.npz")
+tre = cKDTree(k["punkt"])
+klasse = k["klasse"]
+saum = cKDTree(k["saum"]) if len(k["saum"]) else None
+K = json.loads((HER / "delar_konfig.json").read_text())
+hx, hy = json.loads((A3 / "print" / "kontroll.json").read_text())["hjul"]["senter"]
 
-glb = trimesh.load(A3.parent / "arkiv/entropi-a3/03-3d/a3-entropi-pbr.glb", force="mesh", process=False)
-tex = np.asarray(glb.visual.material.baseColorTexture.convert("RGB"), dtype=np.uint8)
-uv = np.asarray(glb.visual.uv)
-v = np.asarray(glb.vertices) @ trimesh.transformations.rotation_matrix(np.pi / 2, [1, 0, 0])[:3, :3].T
-v *= 120.0 / (v.max(0) - v.min(0)).max()
-v -= v.min(0)
-tre = cKDTree(v)
-H, W = tex.shape[:2]
-
-
-def farge(punkt, k=4):
-    d, i = tre.query(punkt, k=k)
+felt = k["felt"]
+saum_side, lys_pluss, lys_minus = k["saum_side"], k["saum_lys_pluss"], k["saum_lys_minus"]
+for namn in sys.argv[1:] or ["botn", "topp", "utloysar", "usb-lokk", "hjulaksel"]:
+    m = trimesh.load(A3 / "print/stl" / f"{namn}.stl", process=False)
+    v = np.asarray(m.vertices)
+    d, i = tre.query(v, k=6)
     w = 1.0 / np.maximum(d, 1e-3)
-    w /= w.sum(1, keepdims=True)
-    px = np.clip((uv[i, 0] % 1.0) * (W - 1), 0, W - 1).astype(int)
-    py = np.clip((1 - uv[i, 1] % 1.0) * (H - 1), 0, H - 1).astype(int)
-    return (tex[py, px] * w[..., None]).sum(1)
-
-
-for namn in sys.argv[1:] or ["botn", "topp", "utloysar", "usb-lokk"]:
-    m = trimesh.load(A3 / "print/stl" / f"{namn}.stl")
-    v = np.array(m.vertices, float)
-    grep = (v[:, 1] < 12.0) & (v[:, 0] > 12.0) & (v[:, 0] < 60.0) & (v[:, 2] > 7.0) & (v[:, 2] < 51.0)
-    v[grep, 1] -= 0.9
-    c = farge(v)
-    df, _ = tre.query(m.triangles_center)
-    ny = df > 0.6
-    tc = m.triangles_center
-    for (x0, x1), (y0, y1), (z0, z1) in (((1.5, 17.0), (44.0, 86.0), (69.0, 81.0)), ((25.0, 29.6), (114.0, 120.5), (22.4, 31.6)), ((12.0, 60.0), (-5.0, 12.0), (7.0, 51.0)), ((4.0, 17.0), (60.0, 84.0), (83.0, 85.5))):
-        ny &= ~((tc[:, 0] > x0) & (tc[:, 0] < x1) & (tc[:, 1] > y0) & (tc[:, 1] < y1) & (tc[:, 2] > z0) & (tc[:, 2] < z1))
-    ny |= (tc[:, 0] > 66.0) & (np.hypot(tc[:, 1] - 65.0, tc[:, 2] - 32.0) < 27.2)
-    f = m.faces.reshape(-1)
-    hjorne = c[f].reshape(-1, 3, 3)
-    hjorne[ny] = [14, 14, 16]
-    # kurset tillet to graatonar: lys paa tubane og grepet, moerk paa kjernen
-    LYS, MOERK = np.array([150, 154, 154]), np.array([62, 67, 69])
-    lys = hjorne.mean(2) > 110
-    hjorne[lys] = LYS
-    hjorne[~lys] = MOERK
-    rr = np.hypot(tc[:, 1] - 65.0, tc[:, 2] - 32.0)
-    hjorne[(tc[:, 0] > 70.0) & (rr > 26.9) & (rr < 33.0)] = LYS
-    hjorne[(tc[:, 0] > 66.0) & (rr <= 26.9)] = MOERK
-    hjorne[(tc[:, 0] < 17.5) & (tc[:, 1] > 44.0) & (tc[:, 1] < 86.0) & (tc[:, 2] > 60.0)] = MOERK
-    if namn in ("utloysar", "usb-lokk"):
-        hjorne[:] = MOERK
-    if namn == "botn":
-        skinne = (tc[:, 2] < 6.2) & (tc[:, 0] > 17.5) & (tc[:, 0] < 56.5) & (tc[:, 1] > 17.5) & (tc[:, 1] < 104.5)
-        hjorne[skinne] = MOERK
-    m = trimesh.Trimesh(m.vertices[f], np.arange(len(f)).reshape(-1, 3), process=False)
-    m.visual = trimesh.visual.ColorVisuals(m, vertex_colors=np.c_[hjorne.reshape(-1, 3), np.full(len(f), 255)].astype(np.uint8))
+    lys = (felt[i] * w).sum(1) / w.sum(1) > 0.5
+    if saum is not None:
+        ds, js = saum.query(v)
+        naer = ds < 2.5
+        side = np.einsum("ij,ij->i", v - k["saum"][js], saum_side[js])
+        lys[naer] = np.where(side[naer] > 0, lys_pluss[js[naer]], lys_minus[js[naer]])
+        lys[naer & (np.abs(side) < 0.3)] = False
+    moerk_r, lys_r = sm_.regel(v, K, hx, hy)
+    lys[lys_r] = True
+    lys[moerk_r] = False
+    if namn in ("utloysar", "usb-lokk", "hjulaksel"):
+        lys[:] = False
+    farge = np.where(lys[:, None], LYS, MOERK)
+    m.visual = trimesh.visual.ColorVisuals(m, vertex_colors=np.c_[farge, np.full(len(v), 255, np.uint8)])
     m.export(UT / f"{namn}.ply")
-    print(namn, len(df), "nye flater (svarte):", int(ny.sum()))
+    print(namn, len(v), "lyse punkt:", int(lys.sum()))

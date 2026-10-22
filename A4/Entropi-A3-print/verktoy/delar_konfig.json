@@ -394,10 +394,11 @@
    ],
    "boss_r": 9.5,
    "boss_z_topp": 11.0,
-   "mutter_af": 11.4,
+   "mutter_af": 11.6,
    "mutter_djupn": 6.0,
    "hol_d": 7.0,
-   "hol_z_topp": 8.5
+   "hol_z_topp": 4.6,
+   "tak_z": 4.6
   },
   "riller": {
    "z": [
@@ -416,23 +417,23 @@
   },
   "knurl_linse": {
    "x": [
-    84.5,
-    88.2
+    81.0,
+    84.6
    ],
    "n": 72,
    "tjukn": 0.7,
    "djupn": 0.5
   },
   "linsering": {
-   "x_flate": 88.6,
-   "r_ytre": 30.5,
+   "x_flate": 85.0,
+   "r_ytre": 29.0,
    "n": 72,
    "lang_kvar": 3,
    "r": [
-    27.4,
-    29.4
+    24.0,
+    26.5
    ],
-   "r_lang": 30.0,
+   "r_lang": 27.0,
    "tjukn": 0.5,
    "djupn": 0.4
   },
@@ -447,7 +448,7 @@
     12.0,
     14.0
    ],
-   "r_lang": 15.5,
+   "r_lang": 14.0,
    "lang_kvar": 9,
    "tjukn": 0.5,
    "z": [
@@ -457,7 +458,7 @@
   },
   "namn": {
    "tekst": "ENTROPI",
-   "hogd": 2.6,
+   "hogd": 3.0,
    "djupn": 0.5,
    "senter": [
     10.5,
@@ -471,8 +472,8 @@
     65.0,
     73.5
    ],
-   "r_ytre": 8.6,
-   "r_front": 7.6,
+   "r_ytre": 10.2,
+   "r_front": 9.0,
    "r_indre": 6.4,
    "x": [
     -1.2,
@@ -513,6 +514,7 @@
    "r": 1.4,
    "hogd": 0.6,
    "z": 84.13
-  }
+  },
+  "knurl_z_min": 14.0
  }
 }
