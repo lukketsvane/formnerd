@@ -4,6 +4,8 @@ from manifold3d import Manifold, Mesh, CrossSection, JoinType, FillRule
 from scipy import ndimage
 from skimage import measure
 import detalj as dt
+import saum as sm_
+from scipy.spatial import cKDTree
 
 HER = pathlib.Path(__file__).resolve().parent
 K = json.loads((HER / "delar_konfig.json").read_text())
@@ -208,7 +210,9 @@ vern += Manifold.batch_hull([usbc.translate([0, -1.0, 0]), usbc.translate([0, v 
 vern += boks([hx - pw / 2 - v, hx + pw / 2 + v], [hy - pd / 2 - v, hy + pd / 2 + v], [S["tak_z"] - 6, 90])
 stv = D["stativ"]
 vern += vsyl(stv["senter"][0], stv["senter"][1], stv["boss_r"], sk_["z_botn"] - 1, stv["boss_z_topp"])
-stativ_hol = dt.sekskant(stv["senter"][0], stv["senter"][1], stv["mutter_af"], sk_["z_botn"] - 1, sk_["z_botn"] + stv["mutter_djupn"]) + vsyl(stv["senter"][0], stv["senter"][1], stv["hol_d"] / 2, sk_["z_botn"] - 1, stv["hol_z_topp"])
+z_mutter = sk_["z_botn"] + stv["mutter_djupn"]
+stativ_hol = dt.sekskant(stv["senter"][0], stv["senter"][1], stv["mutter_af"], sk_["z_botn"] - 1, z_mutter)
+stativ_hol += Manifold.batch_hull([dt.sekskant(stv["senter"][0], stv["senter"][1], stv["mutter_af"], z_mutter - 0.01, z_mutter), vsyl(stv["senter"][0], stv["senter"][1], stv["hol_d"] / 2, stv["tak_z"] - 0.01, stv["tak_z"], 48)])
 
 # --- søyler for magnetar og pinnar -------------------------------------------
 dz = S["deling_z"]
@@ -240,30 +244,59 @@ STOLPAR -= spor
 HOLROM = (KJERNE - vern - SOYLER - STOLPAR) + sete + konus + trakt + brunn + brytarlomme + brytarhol + usb_tunnel + usbc + okular + EC11 + stativ_hol
 KROPP = KROPP0 - HOLROM
 
+# --- saum: to graatonar skilde av eit spor i overflata -----------------------
+glb = trimesh.load(HER.parent.parent / "arkiv/entropi-a3/03-3d/a3-entropi-pbr.glb", force="mesh", process=False)
+tex = np.asarray(glb.visual.material.baseColorTexture.convert("RGB"), dtype=np.uint8)
+uv = np.asarray(glb.visual.uv)
+gv = np.asarray(glb.vertices) @ trimesh.transformations.rotation_matrix(np.pi / 2, [1, 0, 0])[:3, :3].T
+gv *= 120.0 / (gv.max(0) - gv.min(0)).max()
+gv -= gv.min(0)
+gtre = cKDTree(gv)
+hud = til_trimesh(KROPP0)
+dd, ii = gtre.query(hud.vertices, k=4)
+w = 1.0 / np.maximum(dd, 1e-3)
+w /= w.sum(1, keepdims=True)
+px = np.clip((uv[ii, 0] % 1.0) * (tex.shape[1] - 1), 0, tex.shape[1] - 1).astype(int)
+py = np.clip((1 - uv[ii, 1] % 1.0) * (tex.shape[0] - 1), 0, tex.shape[0] - 1).astype(int)
+lys0 = (tex[py, px].mean(2) * w).sum(1) / 255.0
+felt = sm_.glatt_felt(hud, lys0, 300)
+felt = sm_.fjern_oyar(hud, felt)
+hv = np.asarray(hud.vertices)
+moerk, lys = sm_.regel(hv, K, hx, hy)
+felt[moerk] = 0.0
+felt[lys] = 1.0
+klasse = felt > 0.5
+linjer = sm_.isolinjer(hud, felt, 0.5)
+SAUM, saumlinjer = sm_.spor_langs(linjer, 0.4, min_lengd=12.0, tol=0.2)
+(UT / "cmf").mkdir(exist_ok=True)
+sp_, st_, ss_ = sm_.saumsider(saumlinjer, hud, klasse, 0.25, 2.0)
+np.savez_compressed(UT / "cmf" / "klasse.npz", punkt=hv.astype(np.float32), klasse=klasse, felt=felt.astype(np.float32), saum=sp_.astype(np.float32), saum_side=ss_.astype(np.float32), saum_lys_pluss=st_[:, 0], saum_lys_minus=st_[:, 1])
+
 # --- detaljar som er skorne i overflata ------------------------------------
 ri = D["riller"]
 rille_region = CrossSection.square([ri["x"][1] - ri["x"][0], ri["y_maks"] + 10]).translate([ri["x"][0], -10])
 RILLER = sum((dt.band_z(KROPP0, z, ri["djupn"], ri["breidd"], rille_region) for z in np.arange(ri["z"][0], ri["z"][1] + 0.01, ri["deling"]) if abs(z - dz) > ri["unngaa_deling"]), Manifold())
 kn = D["knurl_linse"]
 linse_region = CrossSection.circle(34.0, 96).translate([ay, az])
+knurl_region = linse_region - CrossSection.square([80, 80]).translate([ay - 40, D["knurl_z_min"] - 80])
 xm = (kn["x"][0] + kn["x"][1]) / 2
-KNURL = dt.band_x(KROPP0, xm, kn["djupn"], kn["x"][1] - kn["x"][0], linse_region) ^ dt.radialslabar(kn["n"], kn["tjukn"], 40.0, (ay, az), x_spenn=[kn["x"][0], kn["x"][1]])
+KNURL = dt.band_x(KROPP0, xm, kn["djupn"], kn["x"][1] - kn["x"][0], knurl_region) ^ dt.radialslabar(kn["n"], kn["tjukn"], 40.0, (ay, az), x_spenn=[kn["x"][0], kn["x"][1]])
 kn2 = D["knurl_linse2"]
-KNURL += dt.band_x(KROPP0, (kn2["x"][0] + kn2["x"][1]) / 2, kn2["djupn"], kn2["x"][1] - kn2["x"][0], linse_region) ^ dt.radialslabar(kn2["n"], kn2["tjukn"], 40.0, (ay, az), x_spenn=[kn2["x"][0], kn2["x"][1]], vinkel0=3.0)
+KNURL += dt.band_x(KROPP0, (kn2["x"][0] + kn2["x"][1]) / 2, kn2["djupn"], kn2["x"][1] - kn2["x"][0], knurl_region) ^ dt.radialslabar(kn2["n"], kn2["tjukn"], 40.0, (ay, az), x_spenn=[kn2["x"][0], kn2["x"][1]], vinkel0=3.0)
 SKALA = Manifold()
 for i in range(lr["n"]):
     lang = i % lr["lang_kvar"] == 0
     r0, r1, t = lr["r"][0], (lr["r_lang"] if lang else lr["r"][1]), (lr["tjukn"] + 0.2 if lang else lr["tjukn"])
     SKALA += boks([lr["x_flate"] - lr["djupn"], lr["x_flate"] + 3.0], [-t / 2, t / 2], [r0, r1]).rotate([360.0 * i / lr["n"], 0, 0]).translate([0, ay, az])
 pl = D["panel_linje"]
-PANEL = dt.band_x(KROPP0, pl["x"], pl["djupn"], pl["breidd"], linse_region)
+PANEL = dt.band_x(KROPP0, pl["x"], pl["djupn"], pl["breidd"], knurl_region)
 hs = D["hjulskala"]
 HJULSKALA = dt.radialslabar_z(hs["n"], hs["tjukn"], hs["r"][0], hs["r"][1], (hx, hy), hs["z"]) + dt.radialslabar_z(hs["n"] // hs["lang_kvar"], hs["tjukn"] + 0.2, hs["r"][0], hs["r_lang"], (hx, hy), hs["z"])
 nm = D["namn"]
 NAMN = dt.gravert_tekst(nm["tekst"], nm["hogd"], nm["djupn"], nm["senter"], nm["z"], nm["retning"])
 ok_ring_region = Manifold.cylinder(ok_r["x"][1] - ok_r["x"][0] + 0.5, ok_r["r_ytre"] + 1, ok_r["r_ytre"] + 1, 64).rotate([0, 90, 0]).translate([ok_r["x"][0] - 0.5, oc[0], oc[1]]) - Manifold.cylinder(5, ok_r["r_indre"] + 0.8, ok_r["r_indre"] + 0.8, 64).rotate([0, 90, 0]).translate([ok_r["x"][0] - 1, oc[0], oc[1]])
 OKULARKNURL = (ok_ring_region ^ dt.radialslabar(ok_r["n"], ok_r["tjukn"], 12.0, (oc[0], oc[1]), x_spenn=[ok_r["x"][0] - 0.5, ok_r["x"][0] + ok_r["djupn"]]))
-KROPP -= RILLER + KNURL + SKALA + PANEL + HJULSKALA + NAMN + OKULARKNURL
+KROPP -= RILLER + KNURL + SKALA + PANEL + HJULSKALA + NAMN + OKULARKNURL + SAUM
 KNAPP = KROPP0 ^ vsyl(ux, uy, ut_["kapp_r"], ut_["kapp_z"], 90)
 lokk_ytre = rboks_y_tak(y_hjul_usb - ut_t["lokk_lengd"], y_hjul_usb + 6, x_usb, az, ut_t["b_x"] - 2 * ut_t["lokk_klaring"], ut_t["h_z"] - 2 * ut_t["lokk_klaring"], max(ut_t["r"] - ut_t["lokk_klaring"], 0.5))
 USBLOKK = KROPP0 ^ lokk_ytre
@@ -310,7 +343,7 @@ DELAR = {"botn": rydd(BOTN), "topp": rydd(TOPP), "utloysar": KNAPP, "usb-lokk": 
 
 # --- kontroll --------------------------------------------------------------
 UTE = boks([-20, 130], [-20, 140], [-20, 110]) - KROPP0
-rap = {"hjul": {"senter": [round(hx, 2), round(hy, 2)], "r_skore": round(hr + ec["lomme_r_ekstra"], 2)}, "delar": {}, "veggar_mm": {}, "kollisjonar_mm3": {}, "sveip_mm3": {}}
+rap = {"hjul": {"senter": [round(hx, 2), round(hy, 2)], "r_skore": round(hr + ec["lomme_r_ekstra"], 2)}, "saum": {"linjer": len(saumlinjer), "lengd_mm": round(sum(sm_.lengd(p) for p in saumlinjer), 1), "volum_mm3": round(SAUM.volume(), 1)}, "delar": {}, "veggar_mm": {}, "kollisjonar_mm3": {}, "sveip_mm3": {}}
 for n, m in DELAR.items():
     bb = m.bounding_box()
     kv = sorted((c.volume() for c in m.decompose()), reverse=True)
