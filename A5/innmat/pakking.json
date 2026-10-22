@@ -1,0 +1,211 @@
+{
+ "layouts": [
+  {
+   "namn": "L1 Minimum (sandwich, brute force, ingen JST)",
+   "ytre_mm": "57,3 B x 39,1 H x 33,0 D (36,0 D med objektivringen). Veggar 2,0; baklokket 1,6 (flatt panel som ikkje ber last).",
+   "indre_mm": "53,3 B x 35,1 H x 29,4 D. Boksar i ytre mm (origo i utvendig bak-botn-venstre hjørne sett bakfrå; x = fram, y = opp, z = mot høgre): celle x2,1–9,0 y2,3–36,8 z5,0–55,0 (6,93 mm = 6,3 + 10 %; skumpute x1,6–2,1); leidningssone x1,6–9,0 z2,0–5,0; skiljeplate x9,0–10,0; stabel (CAM+MB) x13,0–30,5 y2,3–29,6 z14,5–55,0 med loddesone x10,0–13,0; SD-kanal x26,0–28,6 y7,6–24,5 z2,0–14,5; tp4056 x10,0–27,3 y32,5–36,8 z2,3–34,3; utløysar x10,0–21,0 y30,7–36,8 z34,6–45,6; brytar x10,0–18,8 y2,3–11,5 z10,3–14,2; C1 x10,0–25,0 y23,7–32,2 z5,7–14,2; boost x19,1–23,1 y5,2–23,4 z2,8–14,2; diode x10,0–13,2 y14,2–23,4 z11,0–14,2.",
+   "volum_cm3": 74,
+   "masse_g": 64,
+   "portar": "Linsa på framsida (senter 16,0 over botnen, 24,0 frå venstre kant sett bakfrå). USB-C på venstre side, høgt oppe (y 35,1: kappa kjem 0,75 mm frå toppkanten, så det er trongt). Programmerings-USB (MB) og microSD på kvar si side. Utløysar på toppen. Straumbrytaren i BOTNEN (spaken peikar ned).",
+   "opning": "Frontskal (fem sider i eitt, ope bak) + baklokk som skyvelokk (1,6 mm, spor i topp- og botnveggen) + innmatsramme med heil skiljeplate på 1,0 mm. Ingen skruer.",
+   "rekkjefolgje": "1) Lodd leidningane på førehand: MB-undersida 5V/GND via 1N5817 til boost, C1 rett på padane, IO13 til utløysaren, boost VIN til TP4056 OUT, SHDN til brytaren. Celleleidningane blir korta til ca. 85 mm (kanalen er 81 mm) og lodda på B+/B−. 2) Frontskalet med fronten ned. 3) Utløysar og brytar i lommene sine. 4) TP4056 med USB-C mot porten. 5) CAM+MB inn bakfrå, linsa i ringen. 6) Boost, C1 og diode i lommene, leidningane i kanalane. 7) Innmatsramma klikkar inn. 8) Cella og skumputa. 9) Baklokket blir skyvd inn frå venstre.",
+   "fordelar_ulemper": "+ Søket fann løysinga i første hol det prøvde, og det holet er den analytiske nedre grensa for heile familien (celle + stabel + reglar). Golv- og sidearkitekturane har grense 88,8 cm³ (+20 %). + Kanalane: celle->TP 81 mm, TP->boost 68, boost->diode 29, diode->5V 21, C1->5V 14, utløysar 27, brytar 23 mm. Tyngdepunktet ligg innanfor 2 mm av senteret. − Brytaren sit i botnen, og USB-C ligg tett på toppkanten. − Ingen JST: cella må loddast av. − Cella ligg bak PCB-antennesona. Søket tok 23 s. Massa er 60–68 g (PLA 26,1 g som massive veggar + CAM, MB, celle, boost og knapp). Vekta til TP4056, brytar, C1, diode, leidningar og skum er ikkje funnen."
+  },
+  {
+   "namn": "L2 Grep (sandwich, ergonomisk, JST) - TILRÅDD",
+   "ytre_mm": "57,3 B x 39,1 H x 33,0 D (36,0 D med objektivring Ø16 x 3,0). Proporsjon B:H:D = 1,47 : 1 : 0,84 (0,92 med ringen).",
+   "indre_mm": "53,3 B x 35,1 H x 29,4 D. Boksar i ytre mm (same origo som L1): celle x2,1–9,0 y2,3–36,8 z5,0–55,0; skum x1,6–2,1; leidningssone x1,6–9,0 z2,0–5,0 (venstre ende); skiljeplate x9,0–10,0 y2,0–37,1 z5,0–55,3; stabel x13,0–30,5 y2,3–29,6 z14,5–55,0 (SD-ende til venstre, USB/antenne-ende mot høgre vegg, 5V-kanten ned); loddesone x10,0–13,0; SD-kanal x26,0–28,6 y7,4–24,3 z2,0–14,5; tp4056 x10,0–27,3 y29,9–34,2 z2,3–34,3 (flatt i toppstripa, USB-C mot venstre); utløysar x10,0–21,0 y30,7–36,8 z34,6–45,6; brytar (pinnane klipte til 2,0) x10,0–18,8 y30,3–36,8 z45,9–49,8; C1 x10,0–18,5 y2,3–17,3 z5,7–14,2; boost x18,8–22,8 y2,3–20,5 z2,8–14,2; JST x10,0–25,4 y20,8–26,8 z2,3–6,8; diode x10,0–13,2 y17,6–26,8 z11,0–14,2.",
+   "volum_cm3": 74,
+   "masse_g": 64,
+   "portar": "Framside: objektivring (senter y 16,0, z 24,0; sett framanfrå 33,3 frå venstre kant) og blitsvindauge (y 27,1, z 44,6). Topp: utløysar (z 40,1, 17,5 bak fronten) og AV/PÅ-brytar like ved (z 47,8). Ladelys på toppen ved venstre kant (z 9,3). Venstre side: USB-C (y 32,5, 14,3 bak fronten) og microSD (y 15,9, 5,8 bak fronten). Høgre side: programmerings-micro-USB (y 16,0, 16,9 bak fronten) med propp. Botn: RST-pinhol og luftespalter. Bak: skyvelokk med trykkavlastning og tommelkvile.",
+   "opning": "Frontskal (fem sider i eitt) + skyvelokk bak (1,6 mm, går i spor 0,8 x 1,0 i topp- og botnveggen og blir skyvd ut mot venstre, med hakelås) + innmatsramme med skiljeplate på 1,0 mm som klikkar inn med 4 knastar. Ingen skruer eller bossar inne.",
+   "rekkjefolgje": "1) Førebu: 26 AWG frå MB-undersida pad 1 (5V) og pad 2 (GND) via 1N5817 (ringen mot MB) til boost VOUT/GND, C1 470 µF rett på padane, 30 AWG frå pad 4 (IO13) til utløysaren, boost VIN/GND til TP4056 OUT+/OUT−, SHDN + GND til brytaren. Lodd B2B-PH-K-S-stiftene til B+/B− med krympestrømpe. 2) Frontskalet med fronten ned. 3) Utløysarhetta og 6x6-knappen inn frå innsida, så brytaren med spaken gjennom toppsporet. 4) TP4056 med USB-C mot venstre port; ribba bak tek innstikkskrafta. 5) CAM+MB inn bakfrå: linsa i ringen, USB-enden mot høgre port, SD-enden mot SD-sporet. 6) Boost, C1, diode og JST i lommene i venstre stripe. Leidningane går i kanalane, og loddesona bak MB er hovudkanalen. 7) Innmatsramma klikkar inn. 8) Plugg cella i JST-en, legg cella flatt med PCM-enden til venstre, og skumputa oppå. Overskotet av celleleidningane (ca. 68 mm) blir bretta i S i leidningssona. 9) Skyv lokket inn. Opning: lokket ut, cella ut og JST-pluggen trekt.",
+   "fordelar_ulemper": "+ Same volum som L1 (74,0 cm³, den nedre grensa) sjølv om alle ergonomikrava er med: linsa til venstre for midten, utløysaren oppe til høgre, brytaren på toppen, USB-C på venstre side og JST-plugg. + Alle 8 kanalane held lengdekrava: celle->JST 32, JST->TP 68, TP->boost 58, boost->diode 18, diode->5V 30, C1->5V 18 (krav ≤ 25), brytar 63, utløysar 50 mm. + Tyngdepunktet ligg −1,1/−1,0/+1,9 mm frå senteret. + Overflata har mykje plass til funksjonelle detaljar. − Cella ligg bak antennesona (MB-kortet ligg imellom). − Ein stativmutter får ikkje plass inne, så stativfeste krev ein fot til å klipse på. − Brytarpinnane må klippast til 2,0 mm. Søket tok 0,3 s. Massa er 60–68 g med same atterhald som L1."
+  },
+  {
+   "namn": "L3 Balanse/antenne/stativ (sandwich, JST, 1/4\"-20 inne)",
+   "ytre_mm": "61,8 B x 39,1 H x 33,0 D (36,0 med ringen)",
+   "indre_mm": "57,8 B x 35,1 H x 29,4 D. Boksar i ytre mm: celle x2,1–9,0 y2,3–36,8 z2,3–52,3; leidningssone z52,3–55,3 (høgre); skiljeplate x9,0–10,0 z2,0–52,3; stabel x13,0–30,5 y2,3–29,6 z19,0–59,5 (antennesona z53,3–59,5 er fri for cella); SD-kanal z2,0–19,0; tp4056 x10,0–27,3 y32,5–36,8 z2,3–34,3; utløysar x19,7–30,7 y30,7–36,8 z48,5–59,5; brytar x10,0–18,8 y30,3–36,8 z34,6–38,5; stativmutter-boss x10,0–23,5 y2,3–10,8 z5,2–18,7; C1 x10,0–25,0 y11,1–19,6 z10,2–18,7; boost x10,0–21,4 y11,1–29,3 z5,9–9,9; JST x10,0–16,0 y29,9–34,4 z44,1–59,5; diode x10,0–19,2 y19,9–23,1 z15,5–18,7.",
+   "volum_cm3": 79.8,
+   "masse_g": 65.5,
+   "portar": "Som L2, men utløysaren står lenger fram (x 25,2, 7,8 bak fronten) og heilt ute til høgre (z 54,0). Brytaren er på toppen (z 36,5). Stativgjenga er i botnen ved x 16,8, z 11,9, altså 19 mm til venstre for midten. USB-C står på venstre side høgt oppe.",
+   "opning": "Som L2: frontskal + skyvelokk bak + innmatsramme. Stativmutteren blir smelta ned i bossen i frontskalet før montering.",
+   "rekkjefolgje": "Som L2, med to endringar: smelt 1/4\"-20-mutteren ned i botnbossen først (hol 8,2, OD 9,53, lengd 9,5), og legg cella med PCM-enden mot høgre.",
+   "fordelar_ulemper": "+ Cella står ikkje bak PCB-antennesona (6,2 mm). + Stativgjenge inne utan fot. + Tyngdepunktet ligg 1,1 mm frå senteret i breidda. − +5,8 cm³ (+8 %) og 4,5 mm breiare. − Stativgjenga ligg 19 mm frå midtlinja. Eit sentrert stativ ga 100,7 cm³ i eit tidlegare søk. − Utløysar->IO13 er 69 mm. 85 hol prøvde, 16,5 s. Massa er 61,5–69,5 g."
+  },
+  {
+   "namn": "L4 Botnluke (cella i golvet, djupare kropp)",
+   "ytre_mm": "57,3 B x 40,1 H x 39,1 D (42,1 med ringen)",
+   "indre_mm": "53,3 B x 36,5 H x 35,1 D. Boksar i ytre mm: celle x2,3–36,8 y2,1–9,0 z5,0–55,0 (flatt i golvet); skiljeplate y9,0–10,0; stabel x19,1–36,6 y10,5–37,8 z14,5–55,0; loddesone x16,1–19,1; tp4056 x2,3–6,6 y10,0–27,3 z2,3–34,3 (ståande bak stabelen); utløysar 12x12 x2,3–15,3 y29,5–37,8 z42,0–55,0; brytar x2,3–11,1 y28,6–37,8 z2,3–6,2; C1 x7,6–16,1 y10,0–18,5 z2,3–17,3; boost x20,7–32,1 y10,0–28,2 z10,2–14,2; JST x16,4–31,8 y10,0–14,5 z2,3–8,3; diode x22,9–32,1 y14,8–18,0 z6,7–9,9.",
+   "volum_cm3": 89.8,
+   "masse_g": 67.9,
+   "portar": "Linsa på framsida (y 24,2, z 24,0). USB-C på venstre side bak (x 4,9). microSD på venstre side framme. Programmeringsporten på høgre side. Utløysaren (12x12) oppe til høgre, men bak (x 8,8). Brytaren oppe til venstre.",
+   "opning": "Hovudskal (fem sider, ope nede) + botnluke som skyvelokk (1,6 mm). Det er ikkje plass til M2-bossar, fordi cella fyller 34,5 av 35,1 mm djupn.",
+   "rekkjefolgje": "1) Lodd på førehand som i L2. 2) Hovudskalet med toppen ned. Utløysar og brytar i lommene. 3) TP4056, boost, C1, diode og JST bak stabelen. Stabelen inn, linsa i ringen. 4) Innmatsramma klikkar inn under stabelen. 5) Cella og skumputa. 6) Skyv inn botnluka.",
+   "fordelar_ulemper": "+ Batteriet blir skifta nedanfrå, som på eit vanleg kamera. + Det djupe grepet (39 mm) gir plass til ein 12x12-utløysar. + Ryggen er heil, utan skøyt. − +15,8 cm³ (+21 %). − Tyngdepunktet ligg 2,6 mm under senteret og 2,5 mm framom, fordi cella ligg i golvet. − Botnluka kan ikkje bere stativ. Funnen på 0,9 s ved familiegrensa (88,8 cm³ analytisk, 89,8 med smådelane). Massa er 63,9–71,9 g."
+  },
+  {
+   "namn": "L5 Portrett (sandwich, ståande)",
+   "ytre_mm": "39,1 B x 57,3 H x 33,0 D (36,0 med ringen)",
+   "indre_mm": "35,1 B x 53,3 H x 29,4 D. Boksar i ytre mm: celle x2,1–9,0 y5,0–55,0 z2,3–36,8; leidningssone y2,0–5,0 (nede); stabel x13,0–30,5 y2,3–42,8 z2,3–29,6 (USB-enden ned); SD-kanal y42,8–55,3; tp4056 x10,0–27,3 y2,3–34,3 z29,9–34,2 (ståande, USB-C ned); utløysar x10,0–21,0 y48,9–55,0 z25,8–36,8; brytar x10,0–18,8 y45,8–55,0 z2,3–6,2; C1 x10,0–25,0 y43,1–51,6 z17,0–25,5; boost x10,0–28,2 y34,6–46,0 z32,8–36,8; JST x10,0–25,4 y43,1–47,6 z10,7–16,7; diode x10,0–19,2 y43,1–46,3 z29,3–32,5.",
+   "volum_cm3": 74,
+   "masse_g": 64,
+   "portar": "Linsa på framsida (y 33,3, z 16,0). USB-C og programmeringsporten i botnen, så kameraet kan stå i ein ladar. microSD, utløysar og brytar på toppen.",
+   "opning": "Frontskal + skyvelokk bak + innmatsramme (som L2).",
+   "rekkjefolgje": "Som L2, men stabelen står med USB-enden ned og TP4056 står på kant langs høgre vegg.",
+   "fordelar_ulemper": "+ Same volum som L1/L2. + Begge USB-portane er i botnen, så kameraet kan lade ståande. + Kanalane er korte (TP->boost 19 mm). − Det ståande formatet er uvanleg for eit kamera, og grepet blir 39 mm breitt. − Celle->JST er 76 mm. − Antennesona peikar ned mot handa. Søket tok 16,4 s. Massa er 60–68 g."
+  }
+ ],
+ "tilrading": "TILRÅDD: L2 «Grep».\nKroppen er 57,3 B x 39,1 H x 33,0 D mm. Med objektivringen (Ø16 x 3,0) blir djupna 36,0 mm. Volumet er 74,0 cm³, og 74,6 cm³ med ringen. Proporsjonane er B:H:D = 1,47 : 1 : 0,84: ein liggjande, nesten kubisk blokk, med objektivringen på venstre halvdel sett bakfrå. Sett framanfrå står objektivringen 33,3 mm frå venstre kant og 16,0 mm over botnen (41 % av høgda). Blitsvindauget står oppe til venstre, og grepsona framme til høgre sett bakfrå. Massa er 60–68 g, der PLA er 26,1 g rekna som massive veggar med ρ 1,24 (Bambu-TDS). I tillegg kjem småkomponentar med ukjend vekt.\n\nKVIFOR L2:\n1) Storleik. Brute-force-søket gir 74,0 cm³ både for L1 utan krav og for L2 med alle ergonomikrava. Det er lik den analytiske nedre grensa for sandwich-familien, der cella ligg flatt bak MB. Golv- og sidefamiliane har grense 88,8 cm³, altså +20 %. Ergonomien, JST-pluggen og leidningskanalar med lengdekrav kostar dermed 0 mm³.\n2) Grep. Linsa står 24 mm frå venstre kant sett bakfrå, så fingrane på høgre side har eit felt på 18 x 18,4 mm som er fritt for linse og blits. Utløysaren og AV/PÅ står saman oppe til høgre, og tommelkvila sit på lokket.\n3) Balanse. Tyngdepunktet ligg innanfor 2 mm av senteret i alle akser.\n4) Porttilgang. Ladeporten (USB-C) og SD-sporet er på venstre side, borte frå grepet. Programmeringsporten er på høgre side bak ein propp, og han blir brukt sjeldan, med brytaren AV.\n5) Montering. Kroppen har ein opning (skyvelokket bak) og ingen skruer eller bossar inne, så heile bakflata kan vere cellelomme. Batteriet blir skifta ved å dra JST-pluggen.\n\nUtan ringen må fronten vere flat. Då blir djupna 36,0 mm og volumet 80,7 cm³. Ringen sparer altså 8 %.\n\nREGLAR SOM GJELD I ALLE LAYOUTANE (kontrollert med AABB- og trimesh-snitt, 0 overlapp):\n- 0,3 mm klaring rundt kort og delar. 0,5 mm framfor kamerakroppen (A2-frigang, fordi høgda på kamerakroppen, 4,5 mm, er anslått).\n- Cella er dimensjonert med maksmåla 50,0 x 34,5 x 6,3 og +10 % tjukn (6,93), pluss 0,5 mm skumpute.\n- 3 mm leidningssone ved PCM-enden.\n- Loddesone på 3,0 mm under MB, som òg er hovudkanalen for leidningane.\n- Heil skiljeplate på 1,0 mm mellom MB og cella.\n- Veggane er 2,0 mm. Baklokket er 1,6 mm.\n- Leidningskanalane er 3 mm for par i 26 AWG og 2 mm for par i 30 AWG. Dei er ruta med BFS på eit rutenett på 1 mm og har lengdegrenser, til dømes C1 ≤ 25 mm og diode->5V ≤ 40 mm.\n- Utstikk er rekna med: TP4056-leidningssone 3 mm, brytar 7,2 frå topp til pinnespiss, B3F-bein, kondensatorbein 2 mm, JST parra 8,0 + stift 3,4, micro-B-kappe 10,6 x 8,5, USB-C-kappe 12,35 x 6,5 og GCT-parring ≥ 1,85.\n\nDETTE MÅ MÅLAST ELLER AVKLARAST FØR CAD:\n(a) TP4056-modulen. 29 x 17,3 x 4,3 er eit planleggingsmål, og forhandlarane oppgir 25–29 x 17–19 x 4,0–4,3. Det finst ikkje tal for kor langt USB-C stikk ut, eller kvar LED-ane sit.\n(b) Høgda på micro-USB på MB: 3,1 er valt, mellom 1,3 og 3,8. Det er heller ikkje kjent kor langt RST- og IO0-knappane stikk ut på sidene. Lag ei lomme på 7,3 x 1,0 i veggen der knappane sit.\n(c) Stabelhøgda (18–22, konstruert for 22) og linseposisjonen (8,0–10,6 frå SD-enden).\n(d) Celleleidningane er 100 ± 3 mm, medan kanalen er 32 mm. Overskotet må brettast i leidningssona, eller pluggen må krympast på nytt.\n(e) Brytarpinnane blir klipte til 2,0 mm. Dette er eit eige val.\n(f) USB-C-veggen er lokalt 1,5 mm, under 1,6-regelen. Grunnen er at GCT-teikninga krev ≤ 1,85 frå kontaktfronten til ytterflata.\n\nKONFLIKTAR MELLOM INNSPELA:\n- Integrasjonsnotatet set brytaren i batterilinja. Eg følgjer kraftnotatet og set han på SHDN, fordi SS-12D00 er klassa til 0,3–0,5 A mot toppar på 0,9–1,0 A.\n- Kraftnotatet frårår diode etter ein fast 5 V-boost, sidan det gir 4,6 V, under 4,75 V. Integrasjonsnotatet tilrår dioden. Plassen til dioden (3,2 x 3,2 x 9,2) er halden av, og han kan bytast med ein lus eller ein LM66100 utan at volumet endrar seg.\n- Cella ligg bak PCB-antennesona, med MB imellom. Skulle WiFi-rekkjevidda bli for dårleg, løyser L3 det for +5,8 cm³ og gir samtidig stativgjenge inne.\n- Under 74 cm³ kjem ein berre ved å bryte reglane: ta MB ut av kameraet, eller bruke ei anna celle. LP523450 er 0,88 mm tynnare, men 2 mm lengre, og gir difor ingen vinst.",
+ "overflate": [
+  {
+   "namn": "Objektivring og linsehol",
+   "posisjon": "framside; senter x 33,0, y 16,0, z 24,0 (sett framanfrå: 33,3 frå venstre kant, 16,0 over botnen)",
+   "funksjon": "Linsetoppen står 4,0 framom innsida av frontveggen (9,0 over CAM-PCB, design-maks). Ringa vernar linsa og gjer heile kroppen 3 mm tynnare enn med flat front. Kjelde: delmaal.json (linse 6,6–9,0 over PCB, Ø7,1–7,92, 8,0–10,6 frå SD-enden), A2 parametrar.json (hol 11, 35° halvvinkel).",
+   "mål_mm": "Hol Ø11,0 gjennom frontveggen (linseløp Ø7,1–7,92, handmontert ±1,5). Ring Ø16,0 ytre, står 3,0 fram frå frontflata. 35°-kon inne frå linsetopp-planet ut til Ø12,4 i ringflata. Valfri fas 0,4 mm på ringkanten."
+  },
+  {
+   "namn": "Blitsvindauge",
+   "posisjon": "framside; senter x 33,0, y 27,1, z 44,6 (sett framanfrå: 12,7 frå venstre kant, 27,1 over botnen)",
+   "funksjon": "Kvit blits-LED (GPIO4) sit 29,4–30,8 frå SD-enden og 24,5–25 frå 5V-kanten. Vindauget kan sløyfast om blitsen ikkje skal brukast. Kjelde: delmaal.json; Printables 650751.",
+   "mål_mm": "Opning 5,4 x 5,2, eller 0,6 mm restvegg i natur/kvit PLA som diffusor"
+  },
+  {
+   "namn": "Grepsone framme til høgre",
+   "posisjon": "framside; senter x 33,0, y 13,2, z 46,3 (sett framanfrå: 11,0 frå venstre kant, 13,2 over botnen); felt z 37,3–55,3, y 4,0–22,4",
+   "funksjon": "Langfinger og ringfinger ligg her, minst 8 mm frå objektivringen. Blitsvindauget er halde fritt.",
+   "mål_mm": "18,0 B x 18,4 H: vertikale riller 0,6 djupe med deling 1,6, eller tekstur 0,3. Valfri fingerrygg: +3,0 mm fram over same breidd (berre skal, hol innvendig)."
+  },
+  {
+   "namn": "Utløysar",
+   "posisjon": "topp; senter x 15,5, y 39,1, z 40,1 (17,5 bak frontflata)",
+   "funksjon": "GPIO13 mot GND, aktiv låg. Kragen gjer knappen lett å finne med peikefingeren utan å sjå. Kjelde: Omron B3F-datablad.",
+   "mål_mm": "Hol Ø8,4 for printa hette Ø8,0 med flens Ø11 x 0,8 inne; hetta står 0,8 over toppflata. Krage Ø12 x 0,6. Under: 6x6 B3F-1000 (vandring 0,25 +0,2/−0,1, stempel Ø3,5)."
+  },
+  {
+   "namn": "Straumbrytar AV/PÅ (SS-12D00G3 på SHDN)",
+   "posisjon": "topp; senter x 14,4, y 39,1, z 47,8 (18,6 bak frontflata), like til høgre for utløysaren",
+   "funksjon": "Lukka brytar = AV (SHDN mot GND). Forsenkinga hindrar utilsikta påslag i lomma. Kjelde: Vimex SS-12D00 og LCSC-datablad (8,8 x 3,9, spak 1,5 brei, 3,0 lang, vandring 2,0).",
+   "mål_mm": "Spor 4,1 x 2,1 langs x. Forsenking 12 x 7 x 0,8, så spaken står ca. 0,7 over flata. Gravert «0 | I» 0,4 djupt."
+  },
+  {
+   "namn": "Ladeport USB-C (TP4056)",
+   "posisjon": "venstre side; senter x 18,7, y 32,5, z 0,0 (14,3 bak frontflata, 32,5 over botnen, 6,6 under toppkanten)",
+   "funksjon": "Kappa (maks 12,35 x 6,5) skal liggje an mot ytterflata. Ei ribbe bak modulen tek innstikkskrafta (5–20 N). Kjelder: GCT USB4105-teikning (kappa >= 1,85 frå kontaktfronten, 3,31 høg); USB Type-C R2.0 (kappe og pluggskal).",
+   "mål_mm": "Gjennomgang 9,2 x 3,4 obround (pluggskal 8,25 x 2,40 + toleranse). Veggen lokalt 1,5 mm (lomme 13 x 7,5 x 0,5 frå innsida), så kontaktfront->ytterflate = 0,3 + 1,5 = 1,8 <= 1,85. Gravert «5V»."
+  },
+  {
+   "namn": "Ladelys (raud = ladar, grøn = ferdig)",
+   "posisjon": "topp; senter x 18,7, y 39,1, z 9,3 (over TP4056, ca. 7 mm inn frå USB-C-enden)",
+   "funksjon": "LED-ane sit på komponentsida av TP4056. Ingen forhandlar oppgir kvar, så flytt etter måling. Lyset må sjåast medan kabelen står i. Kjelde: TP4056-datablad.",
+   "mål_mm": "2 x lysleiar Ø2,0 x 5,4 (klar PLA- eller PMMA-stav), 3,0 c/c, eller eitt felt 3 x 8 med 0,5 mm restvegg i natur-PLA"
+  },
+  {
+   "namn": "microSD-spor",
+   "posisjon": "venstre side; senter x 27,2, y 15,9, z 0,0 (5,8 bak frontflata)",
+   "funksjon": "Kortet går inn langs kortaksen frå SD-enden, og sokkelen er flukt med kanten. Den indre kanalen på 2,6 x 16,9 er halden fri i pakkinga. Kjelde: delmaal.json.",
+   "mål_mm": "Spalte 11,8 x 2,1 (kortet er 11 x 15 x 1,0), fas 0,5, fingerhakk Ø10 x 1,0 ved sida. Gravert SD-symbol."
+  },
+  {
+   "namn": "Programmeringsport (micro-USB på MB)",
+   "posisjon": "høgre side; senter x 16,1, y 16,0, z 57,3 (16,9 bak frontflata)",
+   "funksjon": "Berre for programmering, med brytaren AV (éi 5 V-kjelde om gongen). Antenneenden av CAM ligg mot same vegg, så her skal det ikkje vere metall. Kjelde: delmaal.json (micro-B-kappe maks 10,6 x 8,5, pluggen >= 5,4 lang).",
+   "mål_mm": "Opning 11,6 x 9,5. Senter 3,1 over MB-undersida (spenn 1,3–3,8, så mål kortet). Printa propp eller TPU-lokk 11,4 x 9,3 med hengsel. Gravert «PROG»."
+  },
+  {
+   "namn": "Luftutløp ved programmeringsporten",
+   "posisjon": "høgre side; senter x 24,0, y 16,0, z 57,3 (9 bak frontflata), over og under porten",
+   "funksjon": "Utløp for varm luft frå ESP32-S og AMS1117 (ca. 0,25–0,31 W ved 180 mA).",
+   "mål_mm": "2 x 3 spalter 1,2 x 6,0, deling 2,4"
+  },
+  {
+   "namn": "Luftinntak under ESP32-S-skjoldet",
+   "posisjon": "botn; senter x 23,0, y 0,0, z 36,8 (10 bak frontflata), 11–25,5 mm frå USB-enden",
+   "funksjon": "Kald luft inn under antennehalvdelen og ut ved porten. ESP32-brikka låg på 65–74 °C internt i ein test (arXiv 2505.24081), og PLA har HDT 54–57 °C. Kjelde: delmaal.json (skjoldet 18 x 25,5 x 3,0).",
+   "mål_mm": "6 spalter 1,2 x 6,0 langs x, deling 2,4, over 14,5 mm"
+  },
+  {
+   "namn": "Luftespalter ved boosten",
+   "posisjon": "botn; senter x 20,8, y 0,0, z 8,5 (12,2 bak frontflata)",
+   "funksjon": "Tapet i U1V11F5 er P_ut·(1/η−1) ≈ 0,06–0,41 W, med η 70–90 % (Pololu). Spaltene ligg vekk frå cella.",
+   "mål_mm": "4 spalter 1,2 x 8,0, deling 2,4 (bru 1,2 = 3 liner)"
+  },
+  {
+   "namn": "RST-pinhol (valfritt)",
+   "posisjon": "botn; senter x 15,6, y 0,0, z 47,0 (7,5–8,6 frå USB-enden)",
+   "funksjon": "Sideaktivert RST på MB. RST på MB resettar ikkje alltid CAM-en, så holet er berre eit hjelpemiddel. Kjelde: delmaal.json.",
+   "mål_mm": "Ø1,5. Høgda er anslått (MB-PCB-tjukna er ikkje funnen), så mål før du borar."
+  },
+  {
+   "namn": "Baklokk som skyvelokk (batteriluke)",
+   "posisjon": "bakside; heile flata 53,3 x 35,1, senter x 0,0, y 19,6, z 28,6",
+   "funksjon": "Held cella med skumputa og innmatsramma. Utan skruer eller bossar kan heile bakflata vere cellelomme. Kjelde: A2 parametrar.json (knast r 1,0 / 0,5).",
+   "mål_mm": "Flatt panel 1,6 mm i spor 0,8 x 1,0 i topp- og botnveggen, skyvast ut mot venstre. Venstre vegg stoppar 1,6 før bakkanten. Hakelås med knast r 1,0 / 0,5 i høgre ende."
+  },
+  {
+   "namn": "Trykkavlastning i lokket",
+   "posisjon": "bakside; senter x 0,0, y 30,8, z 30,0 (nær overkanten av cellelomma)",
+   "funksjon": "Lufteveg slik at gass frå ei skadd celle kan sleppe ut utan at boksen blir sett under trykk. PLA mjuknar ved 54–60 °C og er ikkje brannvern (kraftnotatet, Bambu-TDS).",
+   "mål_mm": "3 spalter 0,8 x 12, eller eit felt 15 x 10 med 0,6 mm restvegg"
+  },
+  {
+   "namn": "Tommelkvile",
+   "posisjon": "bakside; senter x 0,0, y 23,8, z 45,3",
+   "funksjon": "Mothald for tommelen når utløysaren blir trykt.",
+   "mål_mm": "Opphøgd pute 14 x 18 x 1,0 med 3 tverriller, eller tekstur 0,3"
+  },
+  {
+   "namn": "Fingergrep for lokket",
+   "posisjon": "bakside; senter x 0,0, y 19,6, z 5,0 (venstre kant)",
+   "funksjon": "For å skyve ut lokket med tommelen.",
+   "mål_mm": "3 riller 0,6 x 10"
+  },
+  {
+   "namn": "Skøyt (delelinje)",
+   "posisjon": "rundt heile bakkanten, x = 1,6 frå bakflata",
+   "funksjon": "Den einaste synlege delelinja (frontskal i fem sider + baklokk), så kroppen kan lesast som éin blokk.",
+   "mål_mm": "0,3 mm skuggefuge (fas 0,3 x 45°)"
+  },
+  {
+   "namn": "Klips for innmatsramma (inne)",
+   "posisjon": "innsida av topp- og botnveggen, x 10,0, z = 25 % og 75 % av breidda",
+   "funksjon": "Held stabelen mot fire hjørneribber (2 x 2) frå frontveggen til CAM-PCB, utanfor stifta. Kjelde: A2 parametrar.json.",
+   "mål_mm": "4 knastar r 1,0 / 0,5 ut, rett framom skiljeplata (1,0)"
+  },
+  {
+   "namn": "Stroppfeste",
+   "posisjon": "hjørne høgre oppe framme; senter x 27,5, y 33,6, z 51,8",
+   "funksjon": "Handleddsstropp. Hjørnekuben er kontrollert fri for alle komponentar.",
+   "mål_mm": "Bøygd kanal Ø2,2 gjennom ein massiv hjørneblokk 5 x 5 x 5 (inn på høgre side, ut på toppen)"
+  },
+  {
+   "namn": "Stativ (tilval: fot til å klipse på)",
+   "posisjon": "botn; senter x 16,3, y 0,0, z 28,6",
+   "funksjon": "Mutteren får ikkje plass inne utan at kroppen veks; L3 viser kva det kostar. Sony tilrår stativskruer under 5,5 mm. Kjelde: Albany County Fasteners (1/4\"-20: hol 0,323\", OD 0,375\", lengd 0,375–0,500\", boss 0,531\"); Sony helpguide.",
+   "mål_mm": "Fotplate 10,5 tjukk med 1/4\"-20-innsmeltingsmutter (hol 8,2, OD 9,53, lengd 9,5, boss Ø13,5) som klikkar i 2 spor 1,0 x 1,0 i botnen"
+  },
+  {
+   "namn": "Graveringar",
+   "posisjon": "ved kvar port og kontroll",
+   "funksjon": "Funksjonell merking.",
+   "mål_mm": "0,4 djupe, linjebreidd >= 0,5 (2 liner): «0 | I», «5V», «PROG», SD-symbol, pil på lokket"
+  }
+ ],
+ "filer": [
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/pakking.py",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/pakking.json",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_1.glb",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_2.glb",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_3.glb",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_4.glb",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_5.glb",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_1.png",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_2.png",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_3.png",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_4.png",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/layout_5.png",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/pakking_dl/gct/usb4105.pdf",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/pakking_dl/acf/insert.pdf",
+  "/tmp/claude-0/-home-user-formnerd/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/a5/pakking_dl/jst_sf/ePH_sf.pdf"
+ ]
+}
