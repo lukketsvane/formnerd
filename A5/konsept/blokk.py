@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 import subprocess
 import sys
 
@@ -52,4 +53,6 @@ for namn, d in {"34-framme": [1.0, 0.45, 0.75], "framme": [1.0, 0.05, 0.0], "34-
     json.dump(sc, open(f"{UT}/scene-{namn}.json", "w"))
     subprocess.run(["node", f"{HER}/../../verktoy/ikea/strek.mjs", f"{UT}/scene-{namn}.json", f"{UT}/{namn}"], check=True)
     os.replace(f"{UT}/{namn}/farge.png", f"{UT}/blokk-{namn}.png")
+    shutil.rmtree(f"{UT}/{namn}")
+    os.remove(f"{UT}/scene-{namn}.json")
 print(UT)
