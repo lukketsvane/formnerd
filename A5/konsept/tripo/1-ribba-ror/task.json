@@ -1,0 +1,22 @@
+{
+  "name": "1-ribba-ror",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one palm-sized handheld digital camera, 57 mm wide, 39 mm tall, 33 mm deep. Use image[1] for the exact proportions, the 3/4 front view from slightly above and the feature layout: lens with a 16 mm ring right of centre at 41 % of the height, small square flash window upper left, round shutter button and a small slide switch on the top left above the grip, USB-C port on the right side face. Use image[2] for material, colour and the soft tube design language. Concept 'Ribbed tube': soft rounded tube bands run vertically around the left grip as deep fluted ribs, one thick tube wraps the lens as a torus ring, the rest of the block is a calm satin surface. Details: a 0.3 mm shadow-gap seam around the back edge, fine vent slots on the bottom and right side, a knurled inner ring around the lens, a tiny light-pipe dot for the charge LED on top, engraved micro icons by each port, a strap lug cast into the upper left corner. Matte light-grey 3D-printed PLA with dark-grey accents, crisp edges, clean part lines, believable to 3D print. One camera fully in frame, centered, seamless pure white background, soft neutral studio light, sharp focus, high detail. --no text, logos, screen, viewfinder hump, extra lenses, hands, people, strap",
+    "inputs": [
+      "file_f6f75aff-0107-465e-8531-ba77136b1f68",
+      "file_07f1d18f-db07-44e8-ad58-2fa2c651c384"
+    ]
+  },
+  "task_id": "9f97e771-9e72-48d0-8497-3a4355c56fdc",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/1-ribba-ror/bilete.png",
+      "sha256": "6b705b72cdd56769fb2f16b53cf977378532af778227a3053af2299139d88075"
+    }
+  }
+}

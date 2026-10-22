@@ -1,0 +1,259 @@
+{
+ "komponentar": [
+  {
+   "namn": "LiPo 1S 1050 mAh, EEMB LP603448-PCM-LD (tilrådd referansecelle)",
+   "rolle": "Batteri. Tilrådd: 50 × 34-flatcelle med eiga PCM og JST-PH 2,0",
+   "mål_mm": "Pakke maks 50,0 × 34,5 × 6,3 mm. Dette er garanterte maksmål på EEMB-teikning A13151, og PCM-en i toppen er rekna med i lengda. Leidningane er 100 ± 3 mm og går ut frå kortsida (34,5 mm-sida) til ein JST-PHR-02-plugg. Sjølve cella LP603448 er 48,0 × maks 34,5 × 6,0 ± 0,3 mm. Lomma i huset (eige val): 51 × 35,5 × 7,0–7,3 mm, dvs. +10–15 % tjukn og 0,5 mm klaring rundt. Set i tillegg av ei sone til plugg og kveil ved kortsida.",
+   "viktige_data": "Kapasitet 1050 mAh typisk og 950 mAh minimum (0,2C). Nominelt 3,7 V, ca. 3,9 Wh typisk (rekna: 1,05 × 3,7). Lading CC/CV til 4,2 ± 0,05 V: standard 0,5C = 475 mA, maks 1C = 950 mA, berre ved 0–45 °C. Cella toler maks 2C = 1900 mA utlading og har cut-off på 2,75 V. PCM (frå teikninga): overlading 4,28 ± 0,05 V, overutlading 2,3 ± 0,1 V, lastgrense 1 A kontinuerleg og 2 A topp. Indre motstand ≤ 200 mΩ, vekt ca. 19 ± 2 g. Alle tal er frå produsenten.",
+   "kjelder": [
+    "https://store.comet.bg/download-file.php?id=19944",
+    "https://store.comet.bg/download-file.php?id=9211",
+    "https://store.comet.bg/en/Catalogue/Product/18543/"
+   ]
+  },
+  {
+   "namn": "LiPo 1S 1000 mAh, LiPol LP523450 med PCM (Upergy ARL90122)",
+   "rolle": "Batteri. Alternativ som er om lag 1 mm tynnare",
+   "mål_mm": "51 ± 1,0 × 34 ± 0,5 × 5,2 ± 0,3 mm, altså maks 52 × 34,5 × 5,5 mm. PCM-en ligg under kaptontape i toppen og er rekna med i lengda. Leidningane er 50 ± 3 mm (AWG26) og går ut frå kortsida. Teikninga viser ingen plugg.",
+   "viktige_data": "1000 mAh typisk og 980 mAh minimum. Lading maks 500 mA, standard 250 mA. Maks kontinuerleg utlading 1000 mA. PCM: overlading 4,275 ± 0,05 V, overutlading 2,75 ± 0,05 V, overstraum 2,0–2,5 A. Lading berre ved +10 til +45 °C. Ca. 20 g. Datablad frå produsenten (2023).",
+   "kjelder": [
+    "https://api.all-batteries.fr/INTERSHOP/rest/WFS/Upergy-AllbatteriesFR-Site/-;loc=fr_FR/attachments/Upergy%253A%252FFICHE_TECHNIQUE%252FARL90122_UK.pdf"
+   ]
+  },
+  {
+   "namn": "LiPo 1S 1000 mAh, generisk 503450 med PCM og JST-PH (vanleg forhandlarvare)",
+   "rolle": "Batteri. Det vanlegaste i handelen, men måla sprikjer",
+   "mål_mm": "50–52 × 33,5–34,5 × 5,0–6,2 mm. Forhandlarar oppgir 50 × 34 × 5 mm (19 g). SparkFun PRT-13813 (1 Ah, JST-PH) er 50,8 × 33,5 × 5,9 mm. EEMB LP503450 som berr celle utan PCM (950 mAh) er maks 51 mm (kropp) eller 52 mm (inkl. toppen) × 34,5 × 5,3 mm, med flikar på 10 ± 1 mm. Eitt oppslag seier 52 × 34,5 × 6,2 mm. Leidningane er 50–63 mm.",
+   "viktige_data": "Namnekoden er tjukn–breidd–lengd (503450 ≈ 5,0 × 34 × 50). EEMB-cella: lading maks 1C (950 mA), utlading maks 2C (1900 mA), cut-off 2,75 V. UNIT Electronics-oppslaget har eg berre sett i eit søkjeutdrag (sida gav 403). Det oppgir overlading 4,28 ± 0,025 V, overutlading 3,0 ± 0,05 V, 1 A kontinuerleg og 3 A topp. Forhandlartal er ikkje garanterte, så mål cella du får.",
+   "kjelder": [
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2152/PRT-13813_Web.pdf",
+    "https://eemb.oss-accelerate.aliyuncs.com//uploads/20230311/9b4528f45ac3cb1d13483e978793975b.pdf",
+    "https://www.eemb.com/product-138",
+    "https://uelectronics.com/producto/bateria-lipo-3-7v-1000mah-503450/",
+    "https://vxb.com/products/high-capacity-3-7v-1000mah-lipo-battery-503450-wit"
+   ]
+  },
+  {
+   "namn": "LiPo 1S 1200 mAh, 603450 (Akyga AKY0638 LP603450)",
+   "rolle": "Batteri. Meir kapasitet på same fotavtrykk (50 × 34)",
+   "mål_mm": "50 × 34 × 6 mm (Akyga). Sida seier ikkje om PCM-en er med i måla. Leidningslengda er 100 mm i spesifikasjonen men 150 mm i teksten, så sida er sjølvmotseiande.",
+   "viktige_data": "1200 mAh, 3,7 V, 22 g. PCM mot overlading, djuputlading og kortslutning, men utan tal. Ingen lade- eller utladestraum er oppgitt. Kontakten er JST SYP-02T-1 med 2,54 mm deling, IKKJE JST-PH 2,0, så han må byttast eller loddast om. Driftstid med same formel: 1,2 × 3,7 × 0,85 / 1,1 W = 3,4 t ved 220 mA (rekna).",
+   "kjelder": [
+    "https://www.akyga.com/products/841-li-po-battery-lp603450-akyga-aky0638-3-7v-1200mah-pcm-jst-2-pin-connector-100mm.html"
+   ]
+  },
+  {
+   "namn": "LiPo 1S 1000 mAh, 803040 (Cellevia LP803040, Akyga, Rozetka)",
+   "rolle": "Batteri. Alternativ der fotavtrykket ligg nær CAM+MB-stabelen (40,5 × 27–29)",
+   "mål_mm": "Pakke med PCM maks 42,5 × 31,0 × 8,5 mm, målt med 300 gf (Cellevia). Cella åleine er maks 40,5 × 31,0 × 8,5 mm. Forhandlarar oppgir 40 × 30 × 8 mm.",
+   "viktige_data": "1000 mAh (0,2C). Lading maks 1C, standard 0,2C, hurtig 0,5C. Utlading maks 1C = 1000 mA. Cut-off 2,75 V, ca. 20 g. Kontakten er JST SYP-02T-1 (2,54 mm) hjå Cellevia og Akyga. Rozetka-varianten har JST-PHR-2 (2,0 mm) og 10 cm 26AWG. 1C-grensa ligg tett på toppane på ca. 0,9–1,0 A (rekna). Cella er 2,2 mm tjukkare enn LP603448.",
+   "kjelder": [
+    "https://ormix.lv/files/item_uploads/efbb66c7ca05fc77e83d4b5b1e774742.pdf",
+    "https://ormix.lv/en/catalog/item/id/35361/",
+    "https://www.akyga.com/products/854-lithium-polymer-battery-3-7v-1000mah-pcm-connector-socket-2-54-jst-2-pins-l-150mm.html",
+    "https://rozetka.com.ua/610096190/p610096190/"
+   ]
+  },
+  {
+   "namn": "LiPo 1S 1200 mAh, Adafruit 258 (PKCELL LP503562)",
+   "rolle": "Batteri. Godt dokumentert alternativ, men 12 mm lengre",
+   "mål_mm": "34 × 62 × 5 mm (Adafruit). Adafruit seier ikkje om PCM-en er med i måla.",
+   "viktige_data": "1200 mAh, ca. 4,5 Wh, 23 g. PCM-en kuttar ved 3,0 V og vernar mot overlading og kortslutning. Adafruit tilrår å lade med 500 mA eller mindre (ca. 1/2C). PKCELL-databladet: maks kontinuerleg utlading 1C, standard lading 0,2C, hurtiglading 1C, lading ved 0–45 °C, og «Do not leave battery in charge over 24 hours». JST-PH-polariteten følgjer Adafruit, og andre merke kan vere omvende. Kablane er klassa for 2 A.",
+   "kjelder": [
+    "https://www.adafruit.com/product/258",
+    "https://cdn-shop.adafruit.com/product-files/258/C101-_Li-Polymer_503562_1200mAh_3.7V_with_PCM_APPROVED_8.18.pdf"
+   ]
+  },
+  {
+   "namn": "LiPo 1S ca. 2000 mAh, 103450-klassen",
+   "rolle": "Batteri. Dobbel driftstid mot om lag 4 mm meir tjukn",
+   "mål_mm": "34,5 × 52,5–53 × 10,2 mm (VXB, og Tinytronics sin no utgåtte JST-PH-celle).",
+   "viktige_data": "2000 mAh, 1C maks utlading (VXB), JST-PH 2,0, 40 g. Rekna driftstid: 2,0 × 3,7 × 0,85 / 1,1 W = 5,7 t ved 220 mA. Rekna ladetid ved 0,5 A: minst 4,0 t.",
+   "kjelder": [
+    "https://vxb.com/products/3-7v-2000mah-lipo-battery-pack-with-positive-polar",
+    "https://www.tinytronics.nl/nl/li-po-accu-3.7v-2000mah-jst-ph"
+   ]
+  },
+  {
+   "namn": "TP4056-lademodul med USB-C og DW01A/FS8205A-vern (tilrådd ladar)",
+   "rolle": "USB-C-lading (CC/CV) og batterivern. Batteriet går på B+/B−, lasta på OUT+/OUT−",
+   "mål_mm": "25–29 × 17–19 × 4,0–4,3 mm, og forhandlarane er usamde: Tinytronics 29 × 17 × 4, AZ-Delivery 29 × 17,3 × 4,3, Digitec/Purecrea 29 × 17 × 4,1, Makers Electronics 28 × 17, iFuturetech 26 × 17, Cirkit Designer ca. 25 × 19. Ingen kjelde seier kor langt USB-C-kontakten stikk ut over PCB-kanten. Planlegg for 29 × 17,3 × 4,3 mm og mål kortet. Opninga i veggen må gi plass til pluggkappa, som kan vere opptil 12,35 × 6,5 mm etter USB-C-spesifikasjonen (sjå delmaal.json).",
+   "viktige_data": "TP4056 (eller TC4056A): CC/CV til 4,2 V ± 1,5 %, altså 4,137–4,263 V over 0–85 °C. Inngang 4,0–8,0 V. Ladestraumen er I_BAT = (V_PROG / R_PROG) × 1200. Garantert i databladet: 1,2 kΩ gir 950–1050 mA og 2,4 kΩ gir 450–550 mA. Typiske tabellverdiar: 2 kΩ = 580 mA, 3 kΩ = 400 mA, 5 kΩ = 250 mA. Modulen kjem med 1,2 kΩ (R3 på dei vanlege korta). Ladinga terminerer ved C/10 av programmert straum. Under 2,9 V ladar han med trickle-straum. Brikka regulerer ned straumen ved varme (T_LIM 145 °C i dette databladet). Raud LED = ladar, grøn = ferdig. DW01A: overlading 4,30 ± 0,05 V, overutlading 2,4 V, overstraum ved 150 mV, kvilestraum ca. 3 µA. Forhandlarane oppgir 2,4–2,5 V og ca. 3 A. FS8205A er maks 27 mΩ per transistor, og 150 mV / 54 mΩ gir ≈ 2,8 A (rekna). Modulen har ingen lastdeling og ikkje NTC-vern for batteriet. Mange USB-C-kort manglar 5,1 kΩ CC-motstandar.",
+   "kjelder": [
+    "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf",
+    "https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit",
+    "https://www.az-delivery.de/en/products/tp4056-with-protection-type-c",
+    "https://www.digitec.ch/en/s1/product/purecrea-tp4056-lithium-lipo-akku-batterie-lademodul-usb-c-5v-1a-single-board-computer-kits-48003317",
+    "https://makerselectronics.com/product/tp4056-type-c-lithium-charging-module/",
+    "https://ifuturetech.org/?p=19602",
+    "https://docs.cirkitdesigner.com/component/37cf53fb-befb-4b16-981b-156065036dae/tp4056-type-c",
+    "https://www.electrokit.com/en/tp4056-batteriladdare-lipo-microusb",
+    "https://components101.com/ics/dw01a-battery-protection-ic",
+    "https://www.digikey.co.uk/en/products/detail/evvo/FS8205A/26220994",
+    "https://grobotronics.com/lithium-battery-charger-and-protection-module-1a-usb-c-tp4056.html?sl=en"
+   ]
+  },
+  {
+   "namn": "Electrokit USB-C-laddmodul «extra skydd» (art. 41037030, TP4056 + DW01A)",
+   "rolle": "Alternativ ladar som allereie er sett til 0,5 A og har JST-kontakt (nordisk forhandlar)",
+   "mål_mm": "38 × 22 mm. Høgda er ikkje oppgitt. Kortet har 4 monteringshol.",
+   "viktige_data": "TP4056 + DW01A. Ladestraum maks 0,5 A frå fabrikken, så PROG-motstanden treng ikkje byttast. Maks last 1 A. Inngang 4,5–5,5 V via USB-C eller VIN. Batteriet går på ein 2-pins JST-kontakt eller loddeputer, og utgangen er OUT+/OUT−. To LED-ar, ingen polvendingsvern. Pris 85 SEK. Var ikkje på lager 21.10.2026. Sida nemner ikkje CC-motstandar.",
+   "kjelder": [
+    "https://www.electrokit.com/en/usb-c-charger-module-extra-protection-li-ion/lipo-1a"
+   ]
+  },
+  {
+   "namn": "Pololu U1V11F5, fast 5 V step-up (tilrådd boost)",
+   "rolle": "5 V til ESP32-CAM-MB. SHDN-pinnen er av/på med ekte frånkopling",
+   "mål_mm": "11,4 × 15,2 × 2,5 mm (0,45 × 0,6 × 0,1 tommar). Pololu rundar av til 12 × 15 × 3 mm. Måla er utan stiftlist. Fire pinnar, VOUT, GND, VIN og SHDN, med 2,54 mm deling langs den korte kanten.",
+   "viktige_data": "5 V ± 4 %, inngang 0,5–5,5 V, maks inngangsstraum 1,2 A (brytargrense 1,2–1,5 A typisk). Verknadsgrad typisk 70–90 %. Frå Pololu-grafen ved 3,3 V inn (typisk, avlese): ca. 84 % ved 150 mA, ca. 87 % ved 300 mA og ca. 91 % ved om lag 350 mA. Kurva for 3,3 V går til ca. 800 mA, og kurva for 2,4 V går til ca. 550 mA. Kvilestraum under 1 mA typisk, maks 3 mA ved svært låg inngangsspenning. Med SHDN låg (under ca. 0,4 V) er kvilestraumen under 100 µA typisk, og lasta er kopla frå: inngangen går IKKJE gjennom til utgangen. SHDN har intern 100 kΩ pull-up til VIN. Termisk utkopling ved ca. 140 °C. Ingen polvendingsvern. Vekt 0,7 g.",
+   "kjelder": [
+    "https://www.pololu.com/product/2562",
+    "https://pololu.com/product/2562/specs",
+    "https://a.pololu-files.com/picture/0J4607.1200.png?4d405753ef7bf3f0dd47704dc3ed94ba",
+    "https://a.pololu-files.com/picture/0J4608.1200.jpg?e85a4c086e77225f6f97c60778f79d20",
+    "https://shop.pimoroni.com/products/pololu-5v-step-up-voltage-regulator-u1v11f5"
+   ]
+  },
+  {
+   "namn": "MT3608-boostmodul (justerbar, «2 A»)",
+   "rolle": "Alternativ boost: billeg og vanleg, men større og utan avslåing",
+   "mål_mm": "36–37,2 × 17–17,2 mm. Høgda er 7 mm hjå ProtoSupplies og 14 mm hjå Components101 og fleire forhandlarar (truleg med stift eller trimpot). Mål kortet du får.",
+   "viktige_data": "Brikka (MT3608B-databladet): 2,5–24 V inn, UVLO maks 2,4 V, 1,2 MHz, brytargrense 4 A typisk. Kvilestraum 70 µA (PFM, ingen svitsjing) eller 1,0 mA typisk / 2,0 mA maks (PWM), og 0,1 µA når brikka er av. Verknadsgrad ved 5 V ut (typisk graf, avlese): ca. 91,5 % ved 300 mA frå 3,7 V, ca. 90 % frå 3,0 V og ca. 92 % frå 4,2 V. Ein modul med billige komponentar kan liggje lågare, men det er ikkje målt. ProtoSupplies tilrår modulen for maks 1 A kontinuerleg og 1,5 A topp, rundt 500 mA for best regulering, og oppgir ca. 1 mA på tomgang. Modulen har berre VIN+/VIN−/OUT+/OUT−, så EN er ikkje ført ut. Når brikka er av, går VIN gjennom spolen og dioden til OUT (VIN minus eitt diodefall). Fleirvendings trimpot: still han til 5,0–5,1 V før ESP32 blir kopla til.",
+   "kjelder": [
+    "https://atta.szlcsc.com/upload/public/pdf/source/20231108/A2E6FFA724546D8334EF0FC1E6740EDE.pdf",
+    "https://protosupplies.com/product/mt3608-mini-adjustable-dc-dc-boost-module/",
+    "https://components101.com/modules/mt3608-2a-dc-dc-step-up-power-module",
+    "https://sigmanortec.ro/en/mt3608-voltage-booster-module-5-28v-2a",
+    "https://eevblog.com/forum/projects/mt3608-enable-pin-does-it-work-as-supposed-or-i-miss-something/msg1403233"
+   ]
+  },
+  {
+   "namn": "Pololu U3V16F5, fast 5 V step-up",
+   "rolle": "Alternativ boost: minst og sterkast, men utan av/på-pinne",
+   "mål_mm": "13,1 × 8,1 × 3 mm (0,515 × 0,32 × 0,1 tommar), 0,4 g.",
+   "viktige_data": "5 V fast. Inngang 1,3–16 V, men må ha minst 2,7 V for å starte. Typisk inngangsstraum opptil ca. 1,6 A. Verknadsgrad typisk 85–95 %, kvilestraum under 1 mA. Har INGEN EN/SHDN-pinne, så brytaren må sitje i batterilinja. Ingen kortslutnings- eller polvendingsvern. 6,95 USD for 1 stk.",
+   "kjelder": [
+    "https://www.pololu.com/product/4941",
+    "https://pololu.com/product/4941/specs"
+   ]
+  },
+  {
+   "namn": "FP6277-baserte «5 V 2 A»-boostkort",
+   "rolle": "Alternativ boost med ekte frånkopling (berre brikkedata)",
+   "mål_mm": "Modulmål ikkje funne. Brikka sit i SOP-8L(EP).",
+   "viktige_data": "Synkron boost på 500 kHz med 30 mΩ/30 mΩ-brytarar. Inngang 2,4–4,5 V, utgang opptil 5,3 V. Kvilestraum 280 µA (ingen svitsjing), 0,1 µA når brikka er av. Lasta blir kopla frå ved avslåing (EasyEDA-kort stadfestar at utgangen blir heilt straumlaus med EN mot GND). EN er aktiv høg (0,96 V). Verknadsgrad ved 300 mA er ikkje henta ut.",
+   "kjelder": [
+    "https://atta.szlcsc.com/upload/public/pdf/source/20170705/1499242768269.pdf",
+    "https://easyeda.com/gendor/5v-boost"
+   ]
+  },
+  {
+   "namn": "IP5306 kombikort (USB-C-lading + 5 V boost, «powerbank-modul»)",
+   "rolle": "Alternativ ladar og boost i eitt, MED lastdeling",
+   "mål_mm": "Ikkje stadfesta for generiske USB-C-kort. Det einaste oppgitte målet er ClimateGuard-kortet med I2C: 19 × 22 mm. Brikka sit i eSOP8.",
+   "viktige_data": "Synkron ladar på 2,1 A. Boost til 5 V på 2,1 A (V1.10) eller 2,4 A (V1.2). Boost-verknadsgraden er «opptil» 96 % (V1.10) eller 92 % (V1.2), ikkje oppgitt ved 300 mA. Utgangen er 5,10 V typisk ved 3,7 V batterispenning. Ladar til 4,2 V, og kan stillast til 4,3/4,35/4,4 V. Har innebygd straumvegstyring, så kortet kan lade og forsyne samtidig (V1.2). Lastdetektoren set kortet i standby når lasta er under 45 mA samanhengande i 32 s (under 100 µA, batteri-standby 50 µA). KEY: eit kort trykk på 30 ms–2 s slår på boosten, og eit langt trykk over 2 s slår han av. Termisk utkopling ved 125 °C. Utkopling ved låg batterispenning (3,0 V) kan stillast i eit I2C-register.",
+   "kjelder": [
+    "https://electrokit.com/upload/quick/12/91/662c_IP5306.pdf",
+    "https://atta.szlcsc.com/upload/public/pdf/source/20231017/AB6A25E64E1038420E9A7039637542A8.pdf",
+    "https://tindie.com/products/climateguard/battery-charge-board-with-i2c-control-on-an-ip5306",
+    "https://othoba.com/ip5306-power-bank-module-5v-2a-usb-type-c-charging-circuit-board-electronics-parts-bd-1018303"
+   ]
+  },
+  {
+   "namn": "Adafruit PowerBoost 1000C (produkt 2465)",
+   "rolle": "Alternativ ladar og boost med lastdeling og EN. Har micro-USB, ikkje USB-C",
+   "mål_mm": "23 × 45 × 10 mm med USB-A-kontakten montert (Adafruit).",
+   "viktige_data": "Lading på micro-USB, maks 1000 mA. 5,2 V ut, 1000 mA eller meir frå ein LiPo. Lastdeling, så kortet kan lade og forsyne utan avbrot. EN mot GND koplar utgangen heilt frå. LBO-LED-en lyser under 3,2 V. Kvilestraum ca. 5 mA med LED, 20 µA når kortet er avslått. Verknadsgrad «90 % eller betre i dei fleste tilfelle» (typisk).",
+   "kjelder": [
+    "https://www.adafruit.com/product/2465"
+   ]
+  },
+  {
+   "namn": "Adafruit bq25185 USB/DC/Solar-ladar med 5 V boost (ADA6106)",
+   "rolle": "Alternativ med USB-C og lastdeling, men med risiko ved påslag",
+   "mål_mm": "Ikkje stadfesta. Adafruit oppgir ikkje mål i teksten.",
+   "viktige_data": "USB-C med 5,1 kΩ CC-motstandar. Lastdeling: lasta tek straum frå ladaren først. Ladar med 1 A, eller 500 mA med kutta jumper. TPS61023-boost gir opptil 1 A ved 5 V, men Adafruit åtvarar: «cannot turn on/off high loads; it will stall over 200mA». EN-puta låg slår av 5 V-utgangen. Ladinga har ein fast tryggleikstidtakar på 6 timar.",
+   "kjelder": [
+    "https://learn.adafruit.com/adafruit-bq25185-usb-dc-solar-charger-with-5v-boost-board?view=all",
+    "https://thepihut.com/collections/maker-store/products/adafruit-bq25185-usb-dc-solar-charger-with-5v-boost-board"
+   ]
+  },
+  {
+   "namn": "Kombikort «TP4056 + MT3608, USB-C 5 V 2 A»",
+   "rolle": "Billeg kombialternativ. Låg tillit",
+   "mål_mm": "Ca. 36 × 21 mm med to Ø3 mm-hol (forumpost, ingen offisiell produsent).",
+   "viktige_data": "USB-C inn, USB-A ut, og puter for B+/B−/OUT+/OUT−. Spesifikasjonen i posten er sjølvmotseiande, sidan han seier «opptil 2 A» lading med TP4056, som er ei 1 A-brikke. Kortet arvar same problem som TP4056 + MT3608: ingen lastdeling, ingen EN og gjennomgang når boosten er av.",
+   "kjelder": [
+    "https://forum.fritzing.org/t/type-c-usb-5v-2a-boost-converter-step-up-power-module-lithium-battery-charging-protection-board/33362"
+   ]
+  },
+  {
+   "namn": "Skyvebrytar SS-12D00 (SPDT, gjennomhol)",
+   "rolle": "Av/på-brytar. Tilrådd kopla mellom SHDN og GND på U1V11F5, ikkje i batterilinja",
+   "mål_mm": "Kropp 8,5 × 3,5 mm og 3,5 mm høg. 7,2 mm frå toppen av kroppen til pinnespissane. Spaken er 1,5 mm brei og har 2,0 mm vandring. Spaklengda (x) varierer med variant, og ein forhandlar oppgir 3 mm for G3. Tre pinnar (0,5 × 0,3) med 2,5 mm deling, hol Ø0,9 mm.",
+   "viktige_data": "Vimex-databladet: DC 30 V / 0,3 A, kontaktmotstand maks 30 mΩ, minst 10 000 brytingar. Forhandlarar oppgir DC 50 V / 0,5 A, så kjeldene er usamde. I batterilinja kan toppane bli ca. 0,9–1,0 A (rekna), som er over begge klassingane. På SHDN ber brytaren berre ca. 42 µA (4,2 V / 100 kΩ, rekna).",
+   "kjelder": [
+    "http://vimex.com/switches/techdocs/SS12D00-tech.pdf",
+    "https://zappee.odoo.com/shop/slide-switch-ss12d00g3-3mm-35",
+    "https://www.globalsources.com/Slide-switch/Slide-Switch-1213354673p.htm"
+   ]
+  },
+  {
+   "namn": "SMD-skyvebrytar MSK12C02 (Shou Han)",
+   "rolle": "Liten signalbrytar for SHDN når han sit på eit kretskort",
+   "mål_mm": "8 × 2,8 mm og 1,4 mm høg (LCSC: «SMD,8x2.8mm»).",
+   "viktige_data": "DC 12 V / 50 mA, kontaktmotstand ≤ 100 mΩ, vandring 1,6 ± 0,2 mm, −20 til +70 °C. Eignar seg berre for signalstraum (SHDN), ikkje for batteristraumen.",
+   "kjelder": [
+    "https://lcsc.com/product-detail/C431540.html",
+    "https://datasheet.lcsc.com/datasheet/pdf/5162155576bfd231c35aa9a893d25c8c.pdf"
+   ]
+  },
+  {
+   "namn": "Mini-vippebrytar KCD11 (Yizhi KCD11-3P-R)",
+   "rolle": "Panelbrytar for ekte brot i batterilinja (aktuell med MT3608 eller U3V16F5)",
+   "mål_mm": "Ramme 15 ± 0,1 × 10,5 ± 0,1 mm, kropp 12,95 ± 0,2 × 8,6 ± 0,1 mm. Total høgd 17,1 ± 0,2 mm, ca. 11,4 mm under ramma. Utsparinga skal vere 13,8 × 8,8 mm for panel på 0,6–1,5 mm. Eit eBay-oppslag seier 13,5 × 9 mm.",
+   "viktige_data": "3 A 250 V AC / 6 A 125 V AC. DC-klassing er ikkje oppgitt. 3-pinnars ON-ON. Klipsa held berre i panel på 0,6–1,5 mm, så ein PLA-vegg må tynnast lokalt rundt utsparinga.",
+   "kjelder": [
+    "https://datasheet.lcsc.com/datasheet/pdf/835a64c28845155517da1a53c4139f84.pdf",
+    "https://www.lcsc.com/product-detail/C52125283.html",
+    "https://www.ebay.de/itm/320893330688"
+   ]
+  },
+  {
+   "namn": "Utløysarknapp, taktil 12 × 12 × 7,3 (Omron B3F-4050-klassen) eller 6 × 6 (gjenbrukt frå A2/print/delmaal.json)",
+   "rolle": "Momentan utløysar på GPIO13 mot GND med INPUT_PULLUP",
+   "mål_mm": "12 × 12: kropp 12 ± 0,2 × 12 ± 0,2 mm, høgd 7,3 ± 0,2 mm med firkanta stilk på 3,8 mm (flat variant 4,3 mm). Pinnar 12,5 × 5,0 mm (Omron) eller 12,7 × 5,08 mm (generisk). Rund hette Ø13 × 8 mm (forhandlartal). 6 × 6: 6,0 ± 0,2 mm, høgd 4,3 eller 5,0 ± 0,2 mm, stempel Ø3,5 mm, pinnar 6,5 × 4,5 mm.",
+   "viktige_data": "Vandring 0,3 mm (+0,2/−0,1) på 12 × 12 og 0,25 mm på 6 × 6. Brytaren ber berre signalstraum: med intern pull-up på 45 kΩ blir det ca. 73 µA (3,3 V / 45 kΩ, rekna). Bruk GPIO13 i 1-bit SD-modus. GPIO12 er oppstartspinne (sjå delmaal.json).",
+   "kjelder": [
+    "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+    "https://protosupplies.com/product/tactile-momentary-pushbutton-round-12x12/",
+    "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/",
+    "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"
+   ]
+  }
+ ],
+ "tilrading": "TILRÅDD KJEDE (éi løysing):\nUSB-C 5 V → TP4056-USB-C-modul med DW01A/FS8205A → B+/B− → 1S LiPo-flatcelle på ca. 1000–1050 mAh med eiga PCM og JST-PH 2,0 → OUT+/OUT− → Pololu U1V11F5 (fast 5 V) → 5V/GND på ESP32-CAM-MB (+ 470 µF ved 5 V-pinnen).\n\nReferansecella er EEMB LP603448-PCM-LD, maks 50,0 × 34,5 × 6,3 mm. Ei vanleg 503450/603450 med PCM og JST-PH gjer same jobben om ho er innanfor 52 × 34,5 × 6,3 mm.\n\n- Av/på: SS-12D00 mellom SHDN og GND på U1V11F5, slik at lukka brytar = AV. Boosten koplar då lasta heilt frå, og brytaren ber berre ca. 42 µA (4,2 V / 100 kΩ, rekna).\n- Utløysar: 12 × 12 × 7,3 mm tact-brytar mellom GPIO13 og GND (sjå delmaal.json).\n- Endring på TP4056-kortet: byt PROG-motstanden (R3 på dei vanlege korta, pinne 2 på TP4056) frå 1,2 kΩ til 2,4 kΩ. Det gir 500 mA, garantert 450–550 mA i databladet.\n  - Grunngjeving: 1 A frå fabrikken er over maks lading for EEMB-cella (1C = 950 mA) og over det Adafruit og LiPol tilrår (≤ 500 mA).\n  - Varmen i ladaren går òg ned, frå 1,3–2,0 W til 0,65–1,0 W (rekna som (5 V − V_bat) × I).\n  - Alternativt: Electrokit 41037030 er levert med 0,5 A og JST-kontakt, men er 38 × 22 mm.\n\nVOLUM (netto omhylling):\n- Celle: 50,0 × 34,5 × 6,3 = 10,9 cm³. Lomme med +10–15 % tjukn og 0,5 mm klaring rundt: 51 × 35,5 × 7,0–7,3 = 12,7–13,2 cm³.\n- TP4056: 29 × 17,3 × 4,3 = 2,2 cm³.\n- U1V11F5: 12 × 15 × 3 = 0,5 cm³.\n- SS-12D00: 8,5 × 3,5 × 7,2 + spak ≈ 0,2–0,3 cm³.\n- Utløysar: 12 × 12 × 7,3 = 1,1 cm³.\n- Sum for straumkjeda: ≈ 15 cm³, eller ≈ 17 cm³ med svellelomme.\n- Saman med CAM+MB-stabelen (40,5 × 27–29 × 18–22 = 19,7–25,8 cm³): ≈ 35–43 cm³ netto, før veggar, leidningar og luft.\n- Eige plasseringsforslag, ikkje modellert: cella flatt under MB med ei heil skiljeplate på ca. 1,2 mm. TP4056 og U1V11F5 står på kant i den 9,5 mm breie stripa ved enden av stabelen (50 − 40,5). Indre rom blir då ca. 51 × 35,5 × 27–31 mm ≈ 48–55 cm³.\n\nDRIFTSTID: t = C × 3,7 V × η / (5 V × I)\n- C = 1,05 Ah (typisk) og η = 0,85: 1,05 × 3,7 × 0,85 = 3,30 Wh.\n  - 180 mA: 3,30 / (5 × 0,18 = 0,90 W) = 3,7 t\n  - 220 mA: 3,30 / 1,10 W = 3,0 t\n  - 260 mA: 3,30 / 1,30 W = 2,5 t\n- Med η = 0,88 (typisk for U1V11F5 ved ca. 300 mA, frå grafen): 3,42 Wh, som gir 3,8 / 3,1 / 2,6 t.\n- Verste tilfelle, C = 0,95 Ah (minimum) og η = 0,85: 2,99 Wh, som gir 3,3 / 2,7 / 2,3 t.\n- Rekn med 2,5–3,5 t aktiv bruk, ca. 3 t ved 220 mA.\n- Batteristraumen er ca. 5 × 0,22 / (3,7 × 0,85) ≈ 0,35 A i snitt (0,33C). Toppar på 500 mA på 5 V-sida blir ca. 0,9 A ved 3,3 V og ca. 1,0 A ved 3,0 V.\n- Det er innanfor PCM-en (1 A kontinuerleg, 2 A topp), cella (2C) og U1V11F5 (1,2 A inn). Ved 3,3 V går U1V11F5-kurva til ca. 800 mA ut.\n\nLADETID (2,4 kΩ, dvs. 0,5 A):\n- Nedre grense: 1,05 Ah / 0,5 A = 2,1 t.\n- TP4056-databladet viser at ei 1000 mAh-celle ved ca. 1 A blir ferdig etter ca. 1,8 t. Det er ca. 1,8 gonger den reine CC-tida, fordi CV-halen tek tid.\n- Ved 0,5C er halen relativt kortare. Rekn grovt med 2,5–3,5 t (overslag, ikkje målt).\n- Ladinga terminerer ved 50 mA (C/10), og berre når lasta er av.\n\nBRUK:\n- Lad med brytaren AV.\n- Aldri lad utan tilsyn i ein lukka boks.\n- Programmer via MB-USB med brytaren AV.\n\nKVIFOR IKKJE DEI ANDRE:\n- MT3608: brikka er god (typisk 90–92 %), men modulen er 37 × 17 mm, har ikkje EN ført ut, slepp VIN gjennom når han er av, og har ein trimpot som kan drive. Då må brytaren sitje i batterilinja og tole ca. 1 A, t.d. KCD11.\n- Pololu U3V16F5: har ingen av/på-pinne.\n- IP5306-kort: har lastdeling, men slår seg av når lasta er under 45 mA i 32 s, og må vekkjast med knapp.\n- PowerBoost 1000C: har micro-USB, ikkje USB-C.\n- Adafruit bq25185-boost: kan stoppe over 200 mA ved påslag, som er risikabelt med ESP32-CAM og 470 µF.\n\nVIL DU BRUKE KAMERAET MEDAN DET LADAR: legg til ein lastdelingskrets med P-MOSFET (AO3401) og Schottky-diode (MBRS130LT3), eller vel eit kort med lastdeling. Rein TP4056 er ikkje nok.",
+ "fallgruver": [
+  "TP4056 har INGEN lastdeling. Han avsluttar først når ladestraumen fell til C/10 av programmert verdi, dvs. 50 mA ved 2,4 kΩ. Står ESP32-CAM på under lading, trekkjer han ca. 0,35 A på batterisida (5 V × 0,22 A / (3,7 V × 0,85), rekna). Då går berre ca. 0,15 A av 0,5 A til cella, ladinga terminerer aldri, og cella står på 4,2 V med straum gjennom seg. PKCELL-databladet seier «Do not leave battery in charge over 24 hours». Løysing: lad med brytaren AV (SHDN låg gir under 0,1 mA last). Alternativt ein straumveg med P-MOSFET (AO3401) og Schottky (MBRS130LT3, 0,395 V ved 1 A), eller eit kort med lastdeling. Kjelder: https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf ; https://www.best-microcontroller-projects.com/tp4056-page2.html ; https://cdn-shop.adafruit.com/product-files/258/C101-_Li-Polymer_503562_1200mAh_3.7V_with_PCM_APPROVED_8.18.pdf",
+  "TP4056-modulane kjem nesten alltid med 1,2 kΩ, som gir 1 A. Det er over maks lading for EEMB LP603448 (1C = 950 mA), og over det LiPol LP523450 (500 mA) og Adafruit (≤ 500 mA) tilrår. Byt til 2,4 kΩ (450–550 mA garantert) eller 3 kΩ (ca. 400 mA typisk). Kjelder: https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf ; https://www.electrokit.com/en/tp4056-batteriladdare-lipo-microusb ; https://store.comet.bg/download-file.php?id=9211 ; https://www.adafruit.com/product/258",
+  "Mange billige TP4056-kort med USB-C manglar 5,1 kΩ CC-motstandar. Dei ladar då berre med ein kabel frå USB-A til USB-C, ikkje med ein C-til-C-kabel frå ein USB-C-ladar. Sjå etter to 5,1 kΩ-motstandar ved kontakten, eller kjøp eit kort som har dei. Kjelde: https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit",
+  "Ein vanleg boostomformar (MT3608) slår seg ikkje av. Modulen har berre VIN og OUT, og sjølv med EN låg går VIN gjennom spolen og dioden til utgangen (VIN minus eitt diodefall). ESP32 kan då halvt gå på ca. 3,4 V. Med MT3608 eller U3V16F5 må brytaren difor bryte batterilinja. U1V11F5 og FP6277 koplar derimot lasta frå. Kjelder: https://eevblog.com/forum/projects/mt3608-enable-pin-does-it-work-as-supposed-or-i-miss-something/msg1403233 ; https://www.pololu.com/product/2562 ; https://www.pololu.com/product/4941",
+  "Klassinga på små skyvebrytarar er for låg for batteristraumen. SS-12D00 er klassa til DC 30 V / 0,3 A (Vimex) eller 0,5 A (forhandlarar), og MSK12C02 til 12 V / 50 mA. Batteritoppane blir ca. 0,9–1,0 A (rekna). Bruk difor skyvebrytaren på SHDN-signalet. Treng du eit ekte brot i batterilinja, ta ein KCD11-vippebrytar (3 A AC). Han krev ein panelvegg på 0,6–1,5 mm ved ei utsparing på 13,8 × 8,8 mm, så PLA-veggen må tynnast lokalt. Kjelder: http://vimex.com/switches/techdocs/SS12D00-tech.pdf ; https://lcsc.com/product-detail/C431540.html ; https://datasheet.lcsc.com/datasheet/pdf/835a64c28845155517da1a53c4139f84.pdf",
+  "AV via SHDN er ikkje null straum. U1V11F5 trekkjer under 100 µA typisk med SHDN låg, pull-upen gir ca. 42 µA og DW01A ca. 3 µA. Rekna øvste overslag er ca. 0,15 mA, som tømmer 1000 mAh på ca. 6700 t (ca. 9 månader). Ved lang lagring bør du dra ut JST-pluggen. Kjelder: https://www.pololu.com/product/2562 ; https://components101.com/ics/dw01a-battery-protection-ic",
+  "JST-PH-polariteten er ikkje standardisert. Adafruit skriv at «other brands may have reverse polarity and can destroy your battery». U1V11F5 har heller ikkje polvendingsvern. Mål pol med multimeter før du koplar til, og merk pluggen. Kjelder: https://www.adafruit.com/product/258 ; https://pololu.com/product/2562/specs",
+  "Djuputlading: U1V11F5 går ned til 0,5 V inn, så boosten stoppar ikkje ein tom celle. Det er PCM-en som stoppar, ved 2,3 ± 0,1 V (EEMB) eller ca. 2,4 V (DW01A), og det er under cut-off for cella på 2,75 V. Ein ESP32-CAM har inga trygg ledig ADC-pinne for batterimåling. Ein spenningsdelar som drar GPIO12 høg ved reset stoppar oppstarten. Lad straks etter bruk, og vurder ein brukstidsteljar i fastvara. Kjelder: https://store.comet.bg/download-file.php?id=19944 ; https://components101.com/ics/dw01a-battery-protection-ic ; https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf (sjå GPIO12-oppføringa i /home/user/formnerd/A2/print/delmaal.json)",
+  "Dobbel 5 V-forsyning: det finst ingen skjematikk for ESP32-CAM-MB, så det er ukjent om USB-5 V har ein diode (delmaal.json). Koplar du til micro-USB på MB medan boosten står på, kan to 5 V-kjelder møtast, og det er ikkje dokumentert korleis U1V11F5 tek tilbakemating på utgangen. Programmer berre med brytaren AV, eller trekk JST-pluggen. Ein Schottky-diode etter boosten gir 5,0 − 0,4 ≈ 4,6 V, som er under minstekravet på 4,75 V for ESP32-CAM. Det er difor ikkje tilrådd med fast 5 V-boost. Kjelder: https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/ ; https://atta.szlcsc.com/upload/public/pdf/source/231023/C17416982-30bc871038898b12774324a310c0150b.pdf ; https://www.best-microcontroller-projects.com/tp4056-page2.html",
+  "Brownout: ESP32-CAM har toppar på ca. 500 mA, og AMS1117 har eit fall på 1,1–1,3 V. Set ein elektrolyttkondensator på minst 470 µF tett ved 5 V-pinnen, og bruk korte, tjukke leidningar frå boosten. Kondensatoren gir ein innkoplingsstraum ved påslag. Det toler U1V11F5 (1,2 A inn), men ikkje nødvendigvis bq25185-boosten, som kan stoppe over 200 mA. Kjelder: https://www.makerguides.com/fix-brownout-of-esp32-cam/ ; http://www.advanced-monolithic.com/pdf/ds1117.pdf ; https://learn.adafruit.com/adafruit-bq25185-usb-dc-solar-charger-with-5v-boost-board?view=all",
+  "Varme og PLA: Bambu PLA Basic har Tg 60 °C og HDT 54 °C (1,8 MPa) eller 57 °C (0,45 MPa). TP4056 er ein lineær ladar som brenn av (5 V − V_bat) × I: 0,65–1,0 W ved 0,5 A og 1,3–2,0 W ved 1 A (rekna). Brikka regulerer seg sjølv ned først ved ein junction-temperatur på 145 °C. I bruk blir det ca. 1,1 W varme frå ESP32-CAM pluss ca. 0,16 W tap i boosten (rekna). LiPo-celler skal ikkje ladast over 45 °C (EEMB, LiPol). Hald TP4056 og ESP32-S-skjoldet unna cella og unna belasta PLA-klips, og lag luftspalter. Kjelder: https://www.additive-x.com/shop/mpattachments/file/viewonline/id/494/product_id/2236 (Bambu PLA Basic TDS V2.0) ; https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf ; https://store.comet.bg/download-file.php?id=9211",
+  "Ingen temperaturvern under lading: TP4056-modulane har ikkje NTC (Tinytronics: «not equipped with a temperature protection for the battery»). LiPol-cella skal berre ladast ved +10 til +45 °C, og EEMB-cella ved 0–45 °C. Ikkje lad i kulde ute eller i ein varm bil. Kjelder: https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit ; https://api.all-batteries.fr/INTERSHOP/rest/WFS/Upergy-AllbatteriesFR-Site/-;loc=fr_FR/attachments/Upergy%253A%252FFICHE_TECHNIQUE%252FARL90122_UK.pdf",
+  "Svelling: Jauch skriv at ei celle under lading «takes up to 15% more space overall». Ein produsent av battericeller (large-battery.com) avviser ein universell 10 %-regel, og ei måling viser ca. 2 % under ein syklus. Dimensjoner lomma frå maksmåla i databladet, med +10–15 % tjukn: 6,3 mm blir 6,9–7,3 mm. Bruk gjerne ei tynn skumpute. Lomma må ikkje klemme cella, og ingen ribbe må trykkje midt på posen. Kjelder: https://jauch.com/blog/en/?p=1771 ; https://www.large-battery.com/?p=14977 ; https://iestbattery.com/case/in-situ-expansion-analysis-of-pouch-cell/",
+  "Punktering: loddespissane under ESP32-CAM-MB stikk ut ca. 1–2 mm (delmaal.json). Legg ei heil PLA-skiljeplate mellom MB og cella, utan skruespissar, gradar eller skarpe kantar mot posen. PCM-hovudet og leidningsutgangen sit i kortenden og må verken bøyast eller klemmast. Både Adafruit og EEMB seier at cella ikkje skal bøyast, knusast, deformerast eller punkterast. Kjelder: https://www.adafruit.com/product/258 ; https://store.comet.bg/download-file.php?id=9211 ; https://eemb.oss-accelerate.aliyuncs.com//uploads/20230311/9b4528f45ac3cb1d13483e978793975b.pdf",
+  "Lukka PLA-boks: lad aldri utan tilsyn med kameraet lukka, og ta aldri i bruk ei celle som har svelt, er varm eller luktar. Databladet seier at slik bruk skal stoppast. Gi huset ein lufteveg, t.d. spalter eller ein tynn vegg ved cella, slik at gass kan sleppe ut utan at boksen blir sett under trykk. PLA mjuknar alt ved 54–60 °C, så huset er ikkje eit brannvern. Kjelder: https://eemb.oss-accelerate.aliyuncs.com//uploads/20230311/9b4528f45ac3cb1d13483e978793975b.pdf ; https://ormix.lv/files/item_uploads/efbb66c7ca05fc77e83d4b5b1e774742.pdf ; https://www.additive-x.com/shop/mpattachments/file/viewonline/id/494/product_id/2236",
+  "Antenne: plasser verken cella (aluminiumslaminat) eller boostspolen under eller over PCB-antennesona på ESP32-CAM, dvs. dei ca. 6,2 mm i enden motsett SD-sporet (sjå keep-out-oppføringa i delmaal.json). Kjelde: https://iarduino.ru/lib/78eba891fa500cedb3b7a5641d82ce74.pdf",
+  "IP5306-kort går i standby når lasta er under 45 mA samanhengande i 32 s. ESP32 i deep-sleep (ca. 6 mA) mistar då straumen og må vekkjast med KEY-knappen. Kjelder: https://electrokit.com/upload/quick/12/91/662c_IP5306.pdf ; https://atta.szlcsc.com/upload/public/pdf/source/20231017/AB6A25E64E1038420E9A7039637542A8.pdf",
+  "Kopla lasta til OUT+/OUT− på TP4056-modulen, aldri direkte til B−. Då går han utanom vernet i FS8205A/DW01A. Cella har òg eiga PCM, så vernet blir dobbelt. Det er bra, men terskelen for djuputlading er framleis under cut-off for cella. Kjelder: https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit ; https://store.comet.bg/download-file.php?id=19944",
+  "Ikkje stol på namnekoden eller ei forhandlarside for mål. Cellekoden (t.d. 503450) er nominell. Produsentdata gir lengder på 50–52 mm inkl. PCM og tjukner på 5,2–6,3 mm, medan forhandlarar oppgir 5,0–6,2 mm. Mål òg overhenget til USB-C-kontakten på TP4056-kortet, for det er ikkje oppgitt nokon stad (25–29 mm totalt). Fleire «PH 2.0»-celler kjem med JST SYP på 2,54 mm. Kjelder: https://store.comet.bg/download-file.php?id=19944 ; https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2152/PRT-13813_Web.pdf ; https://www.akyga.com/products/841-li-po-battery-lp603450-akyga-aky0638-3-7v-1200mah-pcm-jst-2-pin-connector-100mm.html ; https://www.az-delivery.de/en/products/tp4056-with-protection-type-c",
+  "Ladelysa sit på TP4056-kortet inne i huset, med raud for lading og grøn for ferdig. Huset treng eit vindauge eller ein lysleiar for at dei skal synast. Kjelde: https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf"
+ ]
+}
