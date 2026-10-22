@@ -134,12 +134,12 @@ def utval(a):
         e = kand.get(r["aa"])
         if not e:
             continue
-        p0 = e["produkt"][0] if e["produkt"] else {}
-        namn = re.sub(r"[^A-Za-z0-9ÆØÅæøåÄÖäö]+", "-", (p0.get("name") or e["label"] or "x")).strip("-")
+        tittel = e["label"] or (e["produkt"][0].get("tittel") if e["produkt"] else "") or e["aa"]
+        namn = re.sub(r"[^A-Za-z0-9ÆØÅæøåÄÖäö]+", "-", " ".join(t for t in tittel.split() if t.upper() == t) or tittel).strip("-")
         stamme = f"{n:02d}-{namn}-{e['aa']}"
         shutil.copy2(a.korpus / e["fil"], mal / f"{stamme}.pdf")
         shutil.copy2(e["kontaktark"], mal / "kontaktark" / f"{stamme}.png")
-        linjer.append(f"| {n} | {p0.get('tittel') or e['label']} | [{e['aa']}]({e['url']}) | {e['sider']} | {r.get('poeng', '')} | {r.get('grunn', '')} |")
+        linjer.append(f"| {n} | {tittel} | [{e['aa']}]({e['url']}) | {e['sider']} | {r.get('poeng', '')} | {r.get('grunn', '')} |")
     (mal / "UTVAL.md").write_text("\n".join(linjer) + "\n", encoding="utf-8")
     shutil.copy2(a.rangering, mal / "rangering.json")
     print(f"{len(rang)} rettleiingar kopierte til {mal}")
