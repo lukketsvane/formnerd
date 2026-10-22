@@ -1,0 +1,34 @@
+{
+  "programvare": "02.08.02.61",
+  "skrivar": "Bambu Lab P1S 0.4 nozzle",
+  "prosess": "0.20mm Standard @BBL X1C + trestotte fraa plata",
+  "filament": "Bambu PLA Basic @BBL P1S 0.4 nozzle",
+  "plate": "Textured PEI Plate",
+  "stotte": "tree(auto), berre fraa plata=1",
+  "veggar": "3",
+  "veggmotor": "arachne",
+  "fyll": "15%",
+  "lag_mm": "0.2",
+  "plater": [
+    {
+      "fil": "Metadata/plate_1.gcode",
+      "tid": "1h 51m 27s",
+      "lag": 50,
+      "kontroll": {
+        "p1s_startkode": true,
+        "ams_lasting": true,
+        "dysetemp_220": true,
+        "printer_model_id": "C12"
+      }
+    }
+  ],
+  "vekt_g": [
+    49.49
+  ],
+  "objekt": [
+    "P02.stl",
+    "P03.stl",
+    "P05.stl"
+  ],
+  "åtvaringar": []
+}

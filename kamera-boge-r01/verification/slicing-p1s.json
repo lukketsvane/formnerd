@@ -1,0 +1,164 @@
+{
+ "sliced": true,
+ "physically_printed": false,
+ "software": "Bambu Studio 02.08.02.61 (Flathub com.bambulab.BambuStudio, CLI with xvfb-run)",
+ "printer": "Bambu Lab P1S 0.4 nozzle",
+ "bed": "Textured PEI Plate",
+ "filament": "Bambu PLA Basic @BBL P1S 0.4 nozzle",
+ "base_process": "0.20mm Standard @BBL X1C",
+ "process_changes": {
+  "wall_loops": 3,
+  "wall_generator": "arachne",
+  "sparse_infill_density": "15%",
+  "sparse_infill_pattern": "gyroid",
+  "enable_support": true,
+  "support_type": "tree(auto)",
+  "support_on_build_plate_only": {
+   "Plate-00-prove": true,
+   "Plate-02-deksel-og-smadelar": true,
+   "Plate-01-framhus": false
+  }
+ },
+ "why_support_on_model_for_P01": "The cavity ceiling (z 76 mm in print orientation) and the lens bore can only be supported from the model; trees stand on the cavity floor and are removed through the rear opening.",
+ "arrange": "Bambu Studio --arrange 1 (rotation about Z only; print orientation from R01 is kept)",
+ "total_estimated_time": "9 h 31 min",
+ "total_filament_g": 258.76,
+ "profiles": {
+  "maskin.json": "print/bambu/profil/maskin.json",
+  "prosess.json": "print/bambu/profil/prosess.json",
+  "prosess-framhus.json": "print/bambu/profil/prosess-framhus.json",
+  "filament.json": "print/bambu/profil/filament.json"
+ },
+ "thumbnail_in_gcode_3mf": false,
+ "gcode_safety_check": "verktoy/bambu_etter.py: P1S start code, AMS load, nozzle 220 C, printer_model_id C12",
+ "plates": [
+  {
+   "gcode_3mf": "print/bambu/Plate-00-prove-P1S.gcode.3mf",
+   "sha256": "66d4ce260f01680784517a2b38db0196669331b0fd2a18685bdfbae015418879",
+   "geometry_3mf": "print/Plate-00-prove.3mf",
+   "objects": [
+    "P04",
+    "T01"
+   ],
+   "process": "0.20mm Standard @BBL X1C + trestotte fraa plata",
+   "support": "tree(auto), berre fraa plata=1",
+   "estimated_time": "27m 28s",
+   "layers": 133,
+   "filament_g": 9.15,
+   "gcode_checks": {
+    "p1s_startkode": true,
+    "ams_lasting": true,
+    "dysetemp_220": true,
+    "printer_model_id": "C12"
+   },
+   "slicer_warnings": [],
+   "gcode_qa": {
+    "support_mm3": 0,
+    "support_z_max_mm": 0,
+    "bridge_total_length_mm": 3286,
+    "extrusion_mm3_by_feature": {
+     "Bottom surface": 255.1,
+     "Bridge": 409.1,
+     "Custom": 75.5,
+     "Floating vertical shell": 48.2,
+     "Gap infill": 5.4,
+     "Inner wall": 2415.7,
+     "Internal solid infill": 1385.9,
+     "Outer wall": 1162.9,
+     "Sparse infill": 1140.9,
+     "Top surface": 360.4
+    }
+   }
+  },
+  {
+   "gcode_3mf": "print/bambu/Plate-01-framhus-P1S.gcode.3mf",
+   "sha256": "e737de65dcde5f50d339227677c7b4db417f59c779bc3b65f97379b7bdb6ddd5",
+   "geometry_3mf": "print/Plate-01-framhus.3mf",
+   "objects": [
+    "P01"
+   ],
+   "process": "0.20mm Standard @BBL X1C + trestotte paa modell",
+   "support": "tree(auto), berre fraa plata=0",
+   "estimated_time": "7h 12m 18s",
+   "layers": 537,
+   "filament_g": 200.12,
+   "gcode_checks": {
+    "p1s_startkode": true,
+    "ams_lasting": true,
+    "dysetemp_220": true,
+    "printer_model_id": "C12"
+   },
+   "slicer_warnings": [],
+   "gcode_qa": {
+    "support_mm3": 24725.4,
+    "support_z_max_mm": 94.8,
+    "bridge_total_length_mm": 47862,
+    "extrusion_mm3_by_feature": {
+     "Bottom surface": 50.6,
+     "Bridge": 4736.1,
+     "Brim": 62.0,
+     "Custom": 75.5,
+     "Floating vertical shell": 8200.3,
+     "Gap infill": 11.3,
+     "Inner wall": 40359.4,
+     "Internal solid infill": 8952.9,
+     "Outer wall": 18843.4,
+     "Overhang wall": 575.8,
+     "Sparse infill": 50401.6,
+     "Support": 22520.5,
+     "Support interface": 2204.9,
+     "Top surface": 1816.1
+    }
+   }
+  },
+  {
+   "gcode_3mf": "print/bambu/Plate-02-deksel-og-smadelar-P1S.gcode.3mf",
+   "sha256": "ee5cccb9ebe02fe735b6b50eb3f33aa51da6052587ea73f3fe0d4f50ed4c47e2",
+   "geometry_3mf": "print/Plate-02-deksel-og-smadelar.3mf",
+   "objects": [
+    "P02",
+    "P03",
+    "P05"
+   ],
+   "process": "0.20mm Standard @BBL X1C + trestotte fraa plata",
+   "support": "tree(auto), berre fraa plata=1",
+   "estimated_time": "1h 51m 27s",
+   "layers": 50,
+   "filament_g": 49.49,
+   "gcode_checks": {
+    "p1s_startkode": true,
+    "ams_lasting": true,
+    "dysetemp_220": true,
+    "printer_model_id": "C12"
+   },
+   "slicer_warnings": [],
+   "gcode_qa": {
+    "support_mm3": 6600.7,
+    "support_z_max_mm": 3.4,
+    "bridge_total_length_mm": 35472,
+    "extrusion_mm3_by_feature": {
+     "Bottom surface": 662.0,
+     "Bridge": 3421.8,
+     "Custom": 75.5,
+     "Floating vertical shell": 3413.7,
+     "Gap infill": 5.0,
+     "Inner wall": 6739.4,
+     "Internal solid infill": 8078.8,
+     "Outer wall": 3097.8,
+     "Overhang wall": 1.8,
+     "Sparse infill": 5791.9,
+     "Support": 5212.2,
+     "Support interface": 1388.6,
+     "Top surface": 1381.5
+    }
+   }
+  }
+ ],
+ "not_verified": [
+  "physical print",
+  "support removal",
+  "dimensional accuracy",
+  "spring return",
+  "actual hardware"
+ ]
+}
