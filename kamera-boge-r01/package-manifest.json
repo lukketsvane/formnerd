@@ -1,7 +1,7 @@
 {
  "project": "Kamera med boge",
  "geometry_revision": "R01",
- "document_revision": "M05",
+ "document_revision": "M06",
  "units": "millimeter",
  "sliced": true,
  "physically_tested": false,
@@ -19,8 +19,8 @@
   },
   {
    "path": "Kamera-boge-Start-P1S.zip",
-   "bytes": 851251,
-   "sha256": "afbc5455c6cf2db81a959a05f61e2ca0c88717acbd6c7ec044b405f6711b4527"
+   "bytes": 949431,
+   "sha256": "ff1ee9f4167f4c25b0d10822266db36f0e3d4825e93dccc2a9a0f895c38c53a2"
   },
   {
    "path": "Open-Print.ps1",
@@ -30,12 +30,12 @@
   {
    "path": "PRINT-P1S.txt",
    "bytes": 1295,
-   "sha256": "44fb7e282af14f320885fcacce7c8626a3017e05a31d4dc618318f259261d3cc"
+   "sha256": "1c43758e202cdea137b9eceaf95e09b344a379d9a623646997c96a10504b469d"
   },
   {
    "path": "README.md",
-   "bytes": 5592,
-   "sha256": "d32345a0ec323dc81ac4f15891b6a6da286d939dcc292d4f471c238746d6d6d1"
+   "bytes": 5594,
+   "sha256": "96ba217c96c1614046aeb4548ad3f3c9aaedd9329beff038695500c02c7d2464"
   },
   {
    "path": "cad/BOM.json",
@@ -158,94 +158,84 @@
    "sha256": "1130d65cec9ab2b9fdc2080208a6fc0aa85728a97515d3d09e83264ce103f8fa"
   },
   {
-   "path": "manual/Kamera-boge-M05-kjelder.zip",
-   "bytes": 3594511,
-   "sha256": "8e7fd0abeccf29418aebd29454bb36d75f9d91f5759b40e35a855d6531a5ea5e"
+   "path": "manual/Kamera-boge-M06-kjelder.zip",
+   "bytes": 4238523,
+   "sha256": "d2f7943845f67b659bdfd5ea32cc88f47cd86950878c531de8afa9db0e2c788c"
   },
   {
-   "path": "manual/Kamera-boge-M05.pdf",
-   "bytes": 548858,
-   "sha256": "ee91d6b12b674a3759783acffe948baebb53f85d418b95eb6da7fa6a217e6862"
+   "path": "manual/Kamera-boge-M06.pdf",
+   "bytes": 670036,
+   "sha256": "8e7d405d4e10423695d08b49ccd55a04707f5e6eb1898a152740c24342aaa8f8"
   },
   {
    "path": "manual/pages/side-01.png",
-   "bytes": 87283,
-   "sha256": "cc5dcec3c57ffe104a9f6df71491eb0546cadcf2b96c0f49c138e92a8b80a592"
+   "bytes": 99010,
+   "sha256": "39e9e86d8acc991dd54822e0ae18756502ef636030b4adcd529c54848b487164"
   },
   {
    "path": "manual/pages/side-02.png",
-   "bytes": 109480,
-   "sha256": "bdfa0ddec8300d34c662604fa25c07d17982ad5ead3b972fd13d4b110f9fbcc6"
+   "bytes": 149989,
+   "sha256": "45f5c36cc7a574f28d7435b3036d48e767bbff152413d5445e1c971ffdcf6817"
   },
   {
    "path": "manual/pages/side-03.png",
-   "bytes": 122538,
-   "sha256": "15386dc49318eece6483dec10e79e4f0eed54b5e0ab20538ca600b9dab048a7f"
+   "bytes": 68828,
+   "sha256": "7f994cd80bf43086f1eb01ab545a2b7f3c4f6bfb14dcf3cdbc29ebf228739eae"
   },
   {
    "path": "manual/pages/side-04.png",
-   "bytes": 115152,
-   "sha256": "0e3940231d234a595c8dbf4e079cbf2f73e8731cd20d64587cbee8cce1ebf66c"
+   "bytes": 117554,
+   "sha256": "f3620ffaf893fe883bf5ba09c56b0029e81e5dc7bd7f22149d841e3eff6604a4"
   },
   {
    "path": "manual/pages/side-05.png",
-   "bytes": 110125,
-   "sha256": "f825c1bae3d3ba2a9c1bc73fd86f35fd865f41f660925c2e8ae996cf3ff25c4f"
+   "bytes": 144271,
+   "sha256": "d0944b3d8a47877f9a8689ae71abc3dff390bd313e12d5fc9bfbdd98897c68cb"
   },
   {
    "path": "manual/pages/side-06.png",
-   "bytes": 77468,
-   "sha256": "b68a89411e04f9f142d65bd33960094b26cf8fbeadf53fee9fa85ccb41eebfd8"
+   "bytes": 123632,
+   "sha256": "9fb36af8181d7619429579da47c22ada13561b7dfe3e581d711f634a80a65d4c"
   },
   {
    "path": "manual/pages/side-07.png",
-   "bytes": 78378,
-   "sha256": "febd5cf3807bbf5edff22eeb943e2dbada0cf3382181f49c96946ba23664cbe9"
+   "bytes": 134331,
+   "sha256": "ab55e112120c0dd8bd47655da57a3706acaca8848528b0f207d60c86013eb06c"
   },
   {
    "path": "manual/pages/side-08.png",
-   "bytes": 70964,
-   "sha256": "02ca1db4fcd7cee37efa140b4742259c61044250b01c000482a4e75d3eb93d40"
+   "bytes": 88687,
+   "sha256": "d57c63d4987d7a6b99664cfffecad2ba8b904feaba7ecb6903f0208592efd0ef"
   },
   {
    "path": "manual/pages/side-09.png",
-   "bytes": 81004,
-   "sha256": "7e4475f99ef04b26421e04f037a79b104f9e9603d90df99e05a64046e79ed3bb"
+   "bytes": 107655,
+   "sha256": "7fffff6cb99f323fef4bd020d30dd745b5a19d6d119b3a83118dd40bc8b26722"
   },
   {
    "path": "manual/pages/side-10.png",
-   "bytes": 58699,
-   "sha256": "2a40e4b71ef762274297c1d13296a5af3bde7c43c9f6cb47ddf628074b1644ea"
+   "bytes": 149112,
+   "sha256": "66608a00e77bc5282fbc24a239ed086cbf5f742ccc04c09a9c95a9c4389f396a"
   },
   {
    "path": "manual/pages/side-11.png",
-   "bytes": 89387,
-   "sha256": "556e809dea60ac63acea34676d234926c0aa7840320ac8c40a9e11225dbe9dde"
+   "bytes": 128392,
+   "sha256": "78e7b3d83fde1d67370f11c3356283e030ad4e0c1a335c64f693a38490e26bac"
   },
   {
    "path": "manual/pages/side-12.png",
-   "bytes": 102435,
-   "sha256": "03c323aa79e4821f0f02a7c399bef553504922aec2df6e6ee8d66c00352b6254"
+   "bytes": 122068,
+   "sha256": "b8ac74f1ed801f2221b2059e47db60da433a9a192074c4d4d14079a891aea1f1"
   },
   {
    "path": "manual/pages/side-13.png",
-   "bytes": 95038,
-   "sha256": "dff9e05d29c6d0d6f4fb8b2f77fe964f4274e5568ea2eb1da32c5fd822ee9a7d"
+   "bytes": 111068,
+   "sha256": "54905ce3ff1124d469c6c489bd0740d8a56dc84c79d9212d7736a7223de536d4"
   },
   {
    "path": "manual/pages/side-14.png",
-   "bytes": 78575,
-   "sha256": "ea89ebeb75ee3e5a38bcbfa4b45375a294bfd788827de8c78b3a38c374eb69d5"
-  },
-  {
-   "path": "manual/pages/side-15.png",
-   "bytes": 93695,
-   "sha256": "6833a73d958e6f5d63b6f05468e75df456ef94a95530d360dbe5cc15f63bc8da"
-  },
-  {
-   "path": "manual/pages/side-16.png",
-   "bytes": 107483,
-   "sha256": "9b38efafc99857d27d8adcd8729a593b0089c256450909537423505bd52d74f9"
+   "bytes": 123312,
+   "sha256": "9f3f2e7b47d156f58fca5fe08fdd0cf0848266847dd3620136b7b221f7b97a2b"
   },
   {
    "path": "payloads/assembled.3mf.part-001",
@@ -453,9 +443,9 @@
    "sha256": "933c11153bf1b85241fafc011276f550154c82bd1dc1cbbcd54a34fa7ea3b3ec"
   },
   {
-   "path": "verification/manual-m05.json",
-   "bytes": 2350,
-   "sha256": "2b353c96b938c4bed59a3b75a97e611afe7f308fc126f459a1976ca51942c6ce"
+   "path": "verification/manual-m06.json",
+   "bytes": 4764,
+   "sha256": "af2ba96376ba7401234d5c446e461c5d82347990dc9eb0c9923e2e17d9d75e63"
   },
   {
    "path": "verification/manual-v3-readtest.json",

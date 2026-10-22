@@ -14,4 +14,4 @@ Prent prøveplata først. Knappen skal gli i 16,4 mm-hòlet, M3-mutteren skal pa
 Passar det, prent framhuset. Trekk støtta ut gjennom bakopninga, ut av linseholet og knappeholet og under bogen. Prent deretter deksel og smådelar.
 Avgrad hol og kantar. Bakdekselet har ein tynn kant heile vegen rundt; handter han varsamt.
 
-Tidene er sliceranslag. Ingen fysisk utskrift er gjord. Feste: 6 M3x12, 4 M3-mutrar, 3 M2.5x8 (nominelle). Følg manual/Kamera-boge-M05.pdf.
+Tidene er sliceranslag. Ingen fysisk utskrift er gjord. Feste: 6 M3x12, 4 M3-mutrar, 3 M2.5x8 (nominelle). Følg manual/Kamera-boge-M06.pdf.
