@@ -82,3 +82,9 @@ Utdata ligg i `referansar/ikea-manualar/`:
 - `pdf/<slag>/<AA>.pdf`, `sider/<AA>/s-NN.jpg` og `_arbeid/` (sitemap- og produktcache): ikkje sjekka inn. Køyringa kan avbrytast og startast om att; alt som alt er henta blir hoppa over.
 
 Berre `assembly` blir lasta ned om ikkje `--slag` seier noko anna; dei andre slaga blir likevel indekserte. Marknad skrivast slik han står i URL-en (`no/no`, `us/en`, `de/de`), og første marknad som nemner eit produkt vinn.
+
+## Utvalet (`kurater.py`)
+
+`kurater.py kandidatar` måler kvar nedlasta rettleiing (sider, raster/vektor, format, årstal), filtrerer til ståande, reine vektor-PDF-ar med 8–80 sider, favoriserer møblar og lagar eitt kontaktark (8 jamt fordelte sider) per kandidat. Eit dommarpanel (Claude med syn) skårar kontaktarka på strek, layout, klarleik, heilskap og wow i to rundar; `kurater.py utval --rangering rangering.json` kopierer vinnarane til `referansar/ikea-manualar/utval/` med kontaktark, `UTVAL.md` og heile dommarresultatet.
+
+Status for utvalet som ligg her: 300 kandidatar frå møbelkategoriane (2 743 rettleiingar), alle skåra i runde 1 med ankerkalibrering; runde 2 (tre dommarar per finalist) vart fullført for 20 av 90 finalistar før øktgrensa stoppa resten, så plass 21–40 kviler på runde 1 åleine, og nokre grunngjevingar er dommarmerknader på engelsk. `runde2` i `rangering.json` seier kva som gjeld for kvar rad.
