@@ -1,0 +1,135 @@
+"""Ytre form til Entropi som rein B-rep (build123d/OCCT), bygd av måla i form_maal.json."""
+import json, pathlib, time
+import numpy as np
+from shapely.geometry import Polygon as ShPolygon
+from omriss import glatt, resample
+from build123d import *
+
+HER = pathlib.Path(__file__).resolve().parent
+K = json.loads((HER / "delar_konfig.json").read_text())
+F = K["form"]
+MAAL = json.loads((HER / "form_maal.json").read_text())
+T0 = time.time()
+N_PKT = 96
+SENTER = (36.0, 60.0)
+
+
+def tid(n):
+    print(f"{n:<28}{time.time() - T0:7.1f} s", flush=True)
+
+
+def seksjonsflate(punkt, z):
+    return make_face(Wire([Spline(*[(float(x), float(y), z) for x, y in punkt], periodic=True)]))
+
+
+def forskove(punkt, d):
+    p = ShPolygon(punkt).buffer(d, join_style=1)
+    if p.geom_type != "Polygon":
+        p = max(p.geoms, key=lambda q: q.area)
+    return resample(glatt(p, 2.0))
+
+
+def seksjonar_kropp():
+    return {s["z"]: np.asarray(s["punkt"]) for s in MAAL["kropp"]}
+
+
+def kappe(topp, z0, z1, d0, R, steg=6):
+    """Avrunda tak: snitt langs ein kvartsirkel med radius R frå z0 (forskyving d0) mot z1, flatt tak frå 75°."""
+    ut = []
+    for i in range(1, steg):
+        th = np.pi / 2 * i / steg
+        ut.append((z0 + (z1 - z0) * np.sin(th), d0 - R * (1 - np.cos(th))))
+    return ut
+
+
+def kropp_loft():
+    b = F["kropp"]
+    S = seksjonar_kropp()
+    zs = sorted(S)
+    flater = [seksjonsflate(S[z], z) for z in zs]
+    topp = S[zs[-1]]
+    for z, d in kappe(topp, zs[-1], b["topp_z"], 0.0, b["topp_r"]):
+        flater.append(seksjonsflate(forskove(topp, d), z))
+    return loft(flater, ruled=True)
+
+
+def holrom_loft():
+    h = F["holrom"]
+    S = seksjonar_kropp()
+    v = K["skal"]["vegg"]
+    zs = [z for z in sorted(S) if z >= h["golv_z"]]
+    flater = [seksjonsflate(forskove(S[zs[0]], -v), h["golv_z"])] + [seksjonsflate(forskove(S[z], -v), z) for z in zs[1:]]
+    topp = S[zs[-1]]
+    for z, d in kappe(topp, zs[-1], h["tak_z"], -v, h["tak_r"]):
+        flater.append(seksjonsflate(forskove(topp, d), z))
+    return loft(flater, ruled=True)
+
+
+def linsetonne():
+    L = F["linse"]
+    ay, az = K["akse"]["y"], K["akse"]["z"]
+    pr = L["profil"]
+    prof = Polyline((pr[0][0], 0), *[(x, r) for x, r in pr], (pr[-1][0], 0), close=True)
+    k = revolve(make_face(prof), Axis.X)
+    k = Pos(0, ay, az) * k
+    return fillet(k.edges().group_by(Axis.X)[-1], L["front_fillet"])
+
+
+def royr(p, r, b=None):
+    sti = Spline(*[tuple(float(v) for v in q) for q in p])
+    pl = Plane(origin=sti @ 0, z_dir=sti % 0)
+    sek = pl * (Ellipse(r, b) if b else Circle(r))
+    return sweep(sek, sti, transition=Transition.ROUND)
+
+
+def sokarblokk():
+    b = F["sokar"]
+    k = Box(b["x"][1] - b["x"][0], b["y"][1] - b["y"][0], b["z"][1] - b["z"][0], align=(Align.MIN, Align.MIN, Align.MIN)).moved(Pos(b["x"][0], b["y"][0], b["z"][0]))
+    return fillet([e for e in k.edges() if e.center().Z > b["z"][0] + 1], b["fillet"])
+
+
+def syl(cx, cy, r, z0, z1):
+    return Pos(cx, cy, z0) * Cylinder(r, z1 - z0, align=(Align.CENTER, Align.CENTER, Align.MIN))
+
+
+def hjulboss():
+    b = F["hjulboss"]
+    c = syl(b["senter"][0], b["senter"][1], b["r"], b["z"][0], b["z"][1])
+    return fillet(c.edges().group_by(Axis.Z)[-1], b["fillet"])
+
+
+def knappboss():
+    b = F["knappboss"]
+    c = syl(K["utloysar"]["senter"][0], K["utloysar"]["senter"][1], b["r"], b["z"][0], b["z"][1])
+    return fillet(c.edges().group_by(Axis.Z)[-1], b["fillet"])
+
+
+def bygg_form():
+    k = kropp_loft()
+    tid("kropp-loft")
+    delar = {"kropp": k, "linse": linsetonne()}
+    delar.update({p["namn"]: royr(p["punkt"], p["r"], p.get("b")) for p in F["royr"]})
+    delar.update({"sokar": sokarblokk(), "hjulboss": hjulboss(), "knappboss": knappboss()})
+    tid("delar")
+    u = k
+    for n, d in delar.items():
+        if n == "kropp":
+            continue
+        u2 = u + d
+        if not u2.is_valid or len(u2.solids()) != 1:
+            u2 = u2.fix()
+            print("  fix etter", n, "gyldig", u2.is_valid, "solidar", len(u2.solids()))
+            if not u2.is_valid or len(u2.solids()) != 1:
+                raise RuntimeError(f"union feila ved {n}")
+        u = u2
+    tid("union")
+    return u, delar
+
+
+if __name__ == "__main__":
+    k, delar = bygg_form()
+    print("gyldig", k.is_valid, "volum", round(k.volume / 1000, 1), "cm3", "flater", len(k.faces()), "solidar", len(k.solids()))
+    ut = HER.parent / "print" / "cad"
+    ut.mkdir(exist_ok=True)
+    export_stl(k, ut / "form.stl", tolerance=0.02, angular_tolerance=0.15)
+    tid("stl")

@@ -7,7 +7,7 @@ UT.mkdir(exist_ok=True)
 SKAL = ("botn", "topp", "utloysar", "usb-lokk")
 FARGE = {"cam_kort": 0x2F6F3E, "esp32s": 0x9A9A9A, "sd_og_fpc": 0x8A8A8A, "sd_kort": 0x1A3A7A, "kameramodul": 0x1E1E1E, "mb_kort": 0x2F6F3E, "mb_tappar": 0x222222,
          "usb_kontakt": 0xA0A0A0, "mb_knappar": 0x333333, "headerar": 0x1E1E1E, "pinnetappar": 0x777777, "brytar6x6": 0x2A2A2A, "ec11": 0x9A9A9A, "magnetar": 0x8899AA}
-HJUL = {"stl": str(P / "printretning" / "hjul-A17-V4.stl"), "style": "shaded", "color": 0x2A2A2A, "rough": 0.4}
+HJUL = {"stl": str(P / "printretning" / "hjul-A17-V4.stl"), "style": "shaded", "color": 0x424749, "rough": 0.5}
 SNITT = [0, 1, 0, -65.0]
 
 

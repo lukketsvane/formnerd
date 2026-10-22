@@ -1,50 +1,53 @@
 {
   "hjul": {
     "senter": [
-      31.12,
-      103.89
+      31.1,
+      103.9
     ],
-    "r_skore": 11.03
+    "r_skore": 17.5
   },
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 72.164,
+      "volum_cm3": 98.581,
       "komponentar": 1,
+      "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          6.38,
+          6.5,
           0.0,
-          0.0
+          -4.5
         ],
         [
-          90.17,
-          118.88,
+          90.0,
+          118.6,
           35.0
         ]
       ]
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 132.674,
+      "volum_cm3": 135.281,
       "komponentar": 1,
+      "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          0.0,
+          -1.2,
           0.0,
           32.0
         ],
         [
-          90.16,
-          120.0,
-          84.13
+          90.0,
+          121.4,
+          84.73
         ]
       ]
     },
     "utloysar": {
       "status": "Error.NoError",
-      "volum_cm3": 0.429,
+      "volum_cm3": 0.512,
       "komponentar": 1,
+      "smaa_komponentar_mm3": [],
       "bbox": [
         [
           39.9,
@@ -54,53 +57,53 @@
         [
           51.1,
           19.1,
-          63.78
+          63.5
         ]
       ]
     },
     "usb-lokk": {
       "status": "Error.NoError",
-      "volum_cm3": 1.285,
+      "volum_cm3": 1.201,
       "komponentar": 1,
+      "smaa_komponentar_mm3": [],
       "bbox": [
         [
           43.5,
-          108.95,
+          110.6,
           25.6
         ],
         [
           55.3,
-          118.24,
+          118.6,
           42.6
         ]
       ]
     },
     "hjulaksel": {
       "status": "Error.NoError",
-      "volum_cm3": 0.444,
+      "volum_cm3": 0.651,
       "komponentar": 1,
+      "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          27.57,
-          100.34,
-          72.0
+          25.25,
+          98.05,
+          74.5
         ],
         [
-          34.67,
-          107.44,
+          36.95,
+          109.75,
           85.5
         ]
       ]
     }
   },
   "veggar_mm": {
-    "kjerne": 1.34,
-    "brytarlomme": 2.54,
-    "brunn": 1.27,
-    "ec11_pipe": 3.3,
-    "magnetlommer": 2.2,
-    "pinnehol": 1.93,
-    "usb_tunnel": 2.01
+    "stabel": 10.37,
+    "brytarlomme": 4.41,
+    "ec11_pipe": 5.5,
+    "magnetlommer": 1.46,
+    "usb_tunnel": 13.0
   },
   "kollisjonar_mm3": {
     "mb_kort": {
@@ -149,7 +152,7 @@
     },
     "brytar6x6": {
       "botn": 0.0,
-      "topp": -0.0
+      "topp": 0.0
     },
     "usb_plugg": {
       "botn": 0.0,
@@ -167,11 +170,11 @@
     "topp_ned_paa_stabelen": 0.0,
     "usb_plugg_inn": 0.0,
     "ec11_opp_gjennom_pipa": 0.0,
-    "brytar_ned_i_lomma": -0.0
+    "brytar_ned_i_lomma": 0.0
   },
   "klaring_stabel_mm": {
     "botn": 0.2,
     "topp": 0.2
   },
-  "innvendig_volum_cm3": 304.0
+  "ytre_volum_cm3": 562.3
 }
