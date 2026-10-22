@@ -1,0 +1,21 @@
+{
+  "name": "2-instrument",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one palm-sized handheld digital camera, 57 mm wide, 39 mm tall, 33 mm deep. Use image[1] for the exact proportions, the 3/4 front view from slightly above and the feature layout: lens with a 16 mm ring right of centre at 41 % of the height, small square flash window upper left, round shutter button and a small slide switch on the top left above the grip, USB-C port on the right side face. Concept 'Machined instrument': a crisp rectangular block with small chamfers and a stepped top plate, like a precision measuring instrument. Details: diamond-knurled lens ring with engraved scale dots, recessed square flash window with frosted diffuser, guarded shutter button with a collar, slide switch in a recessed pocket with engraved 0 | I, fine vertical grip grooves on the front left, rows of tiny vent slots, a thin shadow-gap seam, two small flush pins. Matte light-grey 3D-printed PLA with dark-grey accents, crisp edges, clean part lines, believable to 3D print. One camera fully in frame, centered, seamless pure white background, soft neutral studio light, sharp focus, high detail. --no text, logos, screen, viewfinder hump, extra lenses, hands, people, strap",
+    "inputs": [
+      "file_f6f75aff-0107-465e-8531-ba77136b1f68"
+    ]
+  },
+  "task_id": "7e52a084-0af2-4c86-9577-b2436a0a6b43",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/2-instrument/bilete.png",
+      "sha256": "479a963a3804d4153bd08d80fbc9faaa8ec6855de65a3bd192a06f162ccc2cf1"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "5-lag",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one palm-sized handheld digital camera, 57 mm wide, 39 mm tall, 33 mm deep. Use image[1] for the exact proportions, the 3/4 front view from slightly above and the feature layout: lens with a 16 mm ring right of centre at 41 % of the height, small square flash window upper left, round shutter button and a small slide switch on the top left above the grip, USB-C port on the right side face. Concept 'Layered sandwich': the body reads as a stack of plates front to back: a front shell, a thin contrasting middle frame and a back door, separated by visible offset seams and small steps. Details: vent slots cut across the layers, the lens ring rising out of the front plate like a short tube with fine ridges, a small square flash window, shutter and switch on a raised top segment, engraved port labels, a grip formed by stepped layer edges on the front left. Matte light-grey 3D-printed PLA with dark-grey accents, crisp edges, clean part lines, believable to 3D print. One camera fully in frame, centered, seamless pure white background, soft neutral studio light, sharp focus, high detail. --no text, logos, screen, viewfinder hump, extra lenses, hands, people, strap",
+    "inputs": [
+      "file_f6f75aff-0107-465e-8531-ba77136b1f68"
+    ]
+  },
+  "task_id": "41b1043e-3a15-4ecb-a982-c22378c3674a",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/5-lag/bilete.png",
+      "sha256": "e138390b407cc7a53b9bd2b16149822187a9e58cac9e1df21f008eeebb5d5709"
+    }
+  }
+}
