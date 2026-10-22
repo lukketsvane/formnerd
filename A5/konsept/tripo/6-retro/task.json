@@ -1,0 +1,21 @@
+{
+  "name": "6-retro",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one palm-sized handheld digital camera, 57 mm wide, 39 mm tall, 33 mm deep. Use image[1] for the exact proportions, the 3/4 front view from slightly above and the feature layout: lens with a 16 mm ring right of centre at 41 % of the height, small square flash window upper left, round shutter button and a small slide switch on the top left above the grip, USB-C port on the right side face. Concept 'Retro compact': a 1960s pocket camera reinterpreted for 3D printing, two-tone with a dark finely textured band wrapping the middle and light-grey top and bottom plates. Details: a stepped lens barrel with fine knurling and a bezel ring, a small rectangular flash window with prism ridges, a shutter button with a threaded collar, a mini slide switch, a curved finger rest on the front left, small vent slits in the bottom plate, tiny engraved icons. Matte light-grey 3D-printed PLA with dark-grey accents, crisp edges, clean part lines, believable to 3D print. One camera fully in frame, centered, seamless pure white background, soft neutral studio light, sharp focus, high detail. --no text, logos, screen, viewfinder hump, extra lenses, hands, people, strap",
+    "inputs": [
+      "file_f6f75aff-0107-465e-8531-ba77136b1f68"
+    ]
+  },
+  "task_id": "c6a326ef-e817-4d85-99c1-f10845b743a5",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/6-retro/bilete.png",
+      "sha256": "989d139ee2fdb22240cc6b5b98d713c0b13fb79f1c9159b1f4e111bdb765f9e7"
+    }
+  }
+}

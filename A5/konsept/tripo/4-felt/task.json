@@ -1,0 +1,21 @@
+{
+  "name": "4-felt",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one palm-sized handheld digital camera, 57 mm wide, 39 mm tall, 33 mm deep. Use image[1] for the exact proportions, the 3/4 front view from slightly above and the feature layout: lens with a 16 mm ring right of centre at 41 % of the height, small square flash window upper left, round shutter button and a small slide switch on the top left above the grip, USB-C port on the right side face. Concept 'Field camera': a sturdy field instrument with protective bumpers on all eight corners, ribbed side panels and an inset grip panel with a non-slip texture. Details: a chunky lens guard ring with four notches, a recessed flash window with a fine grille, an oversized shutter button with a protective collar, the slide switch behind a raised guard, small screw heads at the corners, horizontal vent louvres on the right side, a lanyard loop cast into the upper left corner. Matte light-grey 3D-printed PLA with dark-grey accents, crisp edges, clean part lines, believable to 3D print. One camera fully in frame, centered, seamless pure white background, soft neutral studio light, sharp focus, high detail. --no text, logos, screen, viewfinder hump, extra lenses, hands, people, strap",
+    "inputs": [
+      "file_f6f75aff-0107-465e-8531-ba77136b1f68"
+    ]
+  },
+  "task_id": "3ba445ba-a776-467a-ad4e-4a862d69b36f",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/4-felt/bilete.png",
+      "sha256": "d0333a74e797cd24d8dc351c3aa3323fd7b462c2e9b5a3710981b12f316a771e"
+    }
+  }
+}

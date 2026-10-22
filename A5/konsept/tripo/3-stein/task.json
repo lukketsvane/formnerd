@@ -1,0 +1,21 @@
+{
+  "name": "3-stein",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photorealistic industrial-design studio render of one palm-sized handheld digital camera, 57 mm wide, 39 mm tall, 33 mm deep. Use image[1] for the exact proportions, the 3/4 front view from slightly above and the feature layout: lens with a 16 mm ring right of centre at 41 % of the height, small square flash window upper left, round shutter button and a small slide switch on the top left above the grip, USB-C port on the right side face. Concept 'Soft pebble': a monolithic soft-edged form with large radii, like a smooth river pebble, with a slightly concave front face. Details: a dimple-textured grip pad inset on the front left, the lens sitting in a shallow funnel with a thin raised lip, a domed shutter button, a recessed slide switch, a frosted flash lens, a constellation of small round vent holes on the bottom, a thin seam line around the back. Matte light-grey 3D-printed PLA with dark-grey accents, crisp edges, clean part lines, believable to 3D print. One camera fully in frame, centered, seamless pure white background, soft neutral studio light, sharp focus, high detail. --no text, logos, screen, viewfinder hump, extra lenses, hands, people, strap",
+    "inputs": [
+      "file_f6f75aff-0107-465e-8531-ba77136b1f68"
+    ]
+  },
+  "task_id": "63962c3c-330a-4e2a-b10f-e8aef27962a1",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/3-stein/bilete.png",
+      "sha256": "fae11b9b503ab6cff5e3173a4c2172d09e04fedffdcd04cf7011b28050c0af37"
+    }
+  }
+}
