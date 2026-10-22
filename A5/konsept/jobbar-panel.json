@@ -1,0 +1,264 @@
+[
+ {
+  "name": "f01-strekfelt",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f01-strekfelt",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea LINE FIELD, lensing drawn as in image[2]: a crisp matte black block whose front, top and grip end carry one continuous field of fine raised ridges with light-grey crests. Over the grip they stand straight and vertical at 2.4 mm pitch as grip ribs; toward the lens they bow round it and crowd to 0.6 mm pitch until they fuse into a solid black band hugging the ring: light cannot escape. On top they part round the shutter collar like round a smaller mass; flash window and two light-pipe dots sit where lines open. image[3] = such ridges as a real moulded surface. image[4] = ribbed ring with red index triangle, for the lens ring; one red ridge is the index line. Vent slots cut in the bottom valleys, plug cover with exhaust slots on the left end, corner eyelet, shadow-gap seam at the back. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_e49d3fd7-4254-42c4-94b4-189e7510a982",
+    "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+   ]
+  }
+ },
+ {
+  "name": "f02-einsteinring",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f02-einsteinring",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea EINSTEIN RING FLASH: the body is a calm, deep matte black monolith, the shadow. The only light on it is milky translucent white inlay, flush with the surface: from the flash window three thin rays curve round like the bent rays in image[2] and merge into one thin glowing ring round the lens, as in image[3], with a recessed black annulus between ring and lens. The ring is the flash diffuser, a ring light. image[4] = sculpted black body with stepped top plate, tone on tone. image[5] = only knurled pads and machined edges. Diamond-knurled black grip pad front left, satin graphite shutter with collar, two translucent light-pipe dots on top, engraved ticks, bottom vent slots, plug cover with exhaust slots on the left end, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_487ba534-e812-473c-8d99-c83c62805bfa",
+    "file_fae54ac4-aa17-4461-b472-e00a034fc1a0",
+    "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+    "file_a2641043-9d07-4e93-9526-a0eec08aab81"
+   ]
+  }
+ },
+ {
+  "name": "f03-jet",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f03-jet",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "3:4",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea RELATIVISTIC JET: matte black body = the black hole, lens = its centre. Along the spin axis a slender satin light-grey column set into the front runs from the lens up over the top edge and down to the bottom edge: two jets fired from the poles. Its raised ring knots, tight near the lens and spreading toward the ends, are finger ribs. A thin knife-edge disc crosses it horizontally at the lens, an accretion disk seen edge-on. On top it ends in a machined cap with the slide switch and two light-pipe dots; below in a ribbed foot ring with vent slots round the USB-C, so it stands to charge. image[2] = upright tube body, satin finish. image[3] = vertical machined column with stacked rings. image[4] = ribbed ring with red index triangle, for the lens. Knurled side panel, plug cover, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_e12f8b74-f4c7-4202-a738-157a691825be",
+    "file_a295e5ff-fe15-4313-a78d-e597f3e21352",
+    "file_f13652ff-8ddb-406c-8192-0f62413d2a07",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+   ]
+  }
+ },
+ {
+  "name": "f04-ergosfaere",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f04-ergosfaere",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "3:4",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea ERGOSPHERE, a spinning black hole drags space with it: the graphite front plate is twisted a few degrees round the lens against the matte black body, its corners stepping out over the block as if dragged, the steps forming finger ledges. Round the lens sits a flattened oval collar, the ergosphere, with knurled rim and red index triangle: turning it drags six curved iris vanes inward to close the lens, a privacy cover; show it half closed. Short tangential turbine vanes skirt the collar. image[2] = knurled rotating ring with red index and tick scale. image[3] = stepped sculpted plate over a dark body. image[4] = flattened bright halo round a black sphere, for the oval collar. Collared shutter and two light-pipe dots on top, vent slots beside the USB-C, plug cover, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_e12f8b74-f4c7-4202-a738-157a691825be",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd",
+    "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+    "file_fae54ac4-aa17-4461-b472-e00a034fc1a0"
+   ]
+  }
+ },
+ {
+  "name": "f05-doppler",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f05-doppler",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea DOPPLER DISK: the matte black core is wrapped by a stack of thin horizontal lamellae, 1 mm plates with 1 mm gaps, like the layered edge-on disk in image[2], lopsided as Doppler beaming makes it. On the left, the side moving toward you, they are thick, crisp, bright white and bulge 3 mm out as a full-height grip; going right they thin, crowd and darken through light grey and graphite to black, four colour steps = redshift; the last fine black lines dive into the lens rim. image[3] = such fine ridges on a real product. image[4] = crisp sculpted black top plate carrying shutter and switch. image[5] = ribbed lens ring with red index. Lamella edges are grip ribs, gaps open into bottom vents; flash window and light-pipe dots between lamellae, plug cover on the left end, corner eyelet. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_7e8e7271-c361-421d-b668-68d11e9d6b37",
+    "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+    "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+   ]
+  }
+ },
+ {
+  "name": "f06-hawking-perler",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f06-hawking-perler",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea HAWKING RADIATION, the black hole evaporating: satin light-grey tubes leave the lens rim and flow left over front and top; the further from the horizon, the more each tube breaks into a chain of beads shrinking from 6 to 2 mm. The beads work: a dense pearl field on the front-left grip for two fingertips, a bead chain over the top shrinking toward the shutter to lead the index finger into a beaded collar, two clear pearls on top as charge light pipes, gaps between bottom beads as vents, a pearl loop at the top-left corner as strap eyelet, a flattened pearl cluster on the back as thumb rest. image[2] = tube paths flowing into a lens. image[3] = bright ring round a black void, for the lens rim. image[4] = knurled pads and red marks. Matte black core, red index dot, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_f0af38b1-26a8-4f9c-97ff-2f88320a5676",
+    "file_a1a712e0-4767-4cc8-8ab2-d4243f08f0f5",
+    "file_a2641043-9d07-4e93-9526-a0eec08aab81"
+   ]
+  }
+ },
+ {
+  "name": "f07-ramdraging",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f07-ramdraging",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "3:4",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea FRAME DRAGGING, a spinning black hole twisting space: three thick satin light-grey tubes wind round the matte black core as a helix, calm and parallel at the bottom, a quarter turn up the left grip side, then dragged tight into a whirl round the lens ring. The twist is the grip: diagonal grooves between tubes follow the slant of fingers closing round an upright body, three finger channels. Tube ends rise as a collar round the shutter, a flat ring foot frames the USB-C so it stands in a dock, one tube end loops out at the bottom rear corner as eyelet; ribbed thumb pad on the back. image[2] = upright soft tube camera. image[3] = lines bending round a form, for the twist. image[4] = field-line grooves on the core. image[5] = ribbed ring with red index, for the lens. Engraved ticks, fine vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_e12f8b74-f4c7-4202-a738-157a691825be",
+    "file_a295e5ff-fe15-4313-a78d-e597f3e21352",
+    "file_e49d3fd7-4254-42c4-94b4-189e7510a982",
+    "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+   ]
+  }
+ },
+ {
+  "name": "f08-fotonbane",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f08-fotonbane",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "3:4",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea PHOTON ORBIT, light circling the black hole exactly once: one thick 9 mm satin light-grey tube wraps the matte black core in a single open loop on the grip side and maps the whole hand. It starts as a raised collar round the shutter for the index finger, runs down the back as a thumb ridge, swings 6 mm below the bottom-left edge as an open hook for the little finger, which is also the strap eyelet, then climbs the front-left as a ridge for middle and ring finger and stops short of its start: the gap is the escape, and the flash window glows in it. No closed frame. image[2] = upright camera with a C-shaped tube. image[3] = sketch of wavy finger seats. image[4] = vertical lensed disk with black shadow, for the lens surround. Tick ring and red index on the lens ring, fine vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_e12f8b74-f4c7-4202-a738-157a691825be",
+    "file_a295e5ff-fe15-4313-a78d-e597f3e21352",
+    "file_fd5dc618-217d-49a8-8660-82f7bf7f3336",
+    "file_7e8e7271-c361-421d-b668-68d11e9d6b37"
+   ]
+  }
+ },
+ {
+  "name": "f09-penrose",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f09-penrose",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea PENROSE PROCESS, energy stolen from a spinning black hole: a flat oval halo, the ergosphere, rings the lens. A slim tube comes over the top from the right, enters the halo and splits in a Y: one thin branch spirals into the lens rim and vanishes, the other escapes with more energy, swelling to a fat 14 mm tube that drops down the grip end as a grip column, so the hand closes round a cylinder. It wraps under the bottom and up the back as thumb rest, ending in a top-left corner eyelet; the shutter sits in a ribbed collar on the swelling branch, switch recessed beside it. image[2] = tube camera, grip cylinder, top bridge. image[3] = sketch, top tube and cylinder grip. image[4] = lensed disk, for the halo. image[5] = ribbed ring, red index. Halo ticks, vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_c3ec3d88-edbf-42b5-a235-7d4e1cf4f461",
+    "file_7743f505-cde1-4bed-984f-4f426e0a1bbd",
+    "file_fae54ac4-aa17-4461-b472-e00a034fc1a0",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+   ]
+  }
+ },
+ {
+  "name": "f10-samansmelting",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f10-samansmelting",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea MERGER, two black holes merging, radiating gravitational waves: the lens ring and the flash window are the two holes. Round them satin light-grey tubes lie nested as two-centred contour lines, merging into one peanut loop, then rounder waves. The waves chirp: thin tight rings at the lens, widening to finger-thick tubes at the edges. The outer tubes wrap the grip end as stacked tubes with seats for middle and ring finger, roll over the top to frame shutter and switch, cross the back as thumb ridges and end as fine grooves round USB-C and microSD. Matte black core between tubes, one red index. image[2] = nested soft tubes on a camera. image[3] = two-centred concentric grooves. image[4] = line field bending round a form. image[5] = engraved scales. Vents between tubes, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_5c0afe65-2fca-42ef-a7d7-0cd777669aad",
+    "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+    "file_e49d3fd7-4254-42c4-94b4-189e7510a982",
+    "file_6e485571-80ce-4efe-a818-32f81764eaea"
+   ]
+  }
+ },
+ {
+  "name": "f11-belg",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f11-belg",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea TIDAL BELLOWS, a tiny optical bench: a crisp matte black front plate (lens standard) and back plate (sliding battery door) are joined by a band of sharp zig-zag bellows pleats wrapping the body. The pleats are wide and calm at the grip end and squeezed ever tighter toward the lens end, like matter crushed by tides near a black hole. Below, a clip-on rail foot with engraved ticks, fine gear rack and knurled thumb knob (tripod insert). image[2] = bellows pleats, rail with engraved scale, gear rack, knurled knob. image[3] = knurled pads, red tabs, machined lever. image[4] = lines compressing toward a dark mass. Vertical grip ribs front left, frosted flash window, knurled shutter collar, switch in a pocket, ribbed lens ring, red index dot, flush pins at plate corners, vents, light-pipe dots. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_6e485571-80ce-4efe-a818-32f81764eaea",
+    "file_a2641043-9d07-4e93-9526-a0eec08aab81",
+    "file_e49d3fd7-4254-42c4-94b4-189e7510a982"
+   ]
+  }
+ },
+ {
+  "name": "f12-akkresjonsplate",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f12-akkresjonsplate",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea ACCRETION PLATE: a thick sculpted matte black top plate is the accretion disk seen edge-on, floating over a graphite body on a recessed satin grey neck. Thick over the grip, it thins to a sharp chamfered blade toward the lens, with a half-circle bitten out above the lens ring: the disk ends where light never returns. Like a quick-release plate it carries: knurled shutter collar, slide switch in a pocket between diamond-knurled pads, two red tabs, engraved edge ticks, the charge light pipe as a green vial. image[2] = sculpted top plate floating over a dark body on a satin neck. image[3] = knurled pads, red tabs, edge scale, bubble level, cam lever. image[4] = black sphere, thin bright disk edge-on. Cam lever on the left end closing the program port, bottom vents, grip grooves front left. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+    "file_a2641043-9d07-4e93-9526-a0eec08aab81",
+    "file_fae54ac4-aa17-4461-b472-e00a034fc1a0"
+   ]
+  }
+ },
+ {
+  "name": "f13-skuggekule",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f13-skuggekule",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea SHADOW SPHERE, the black hole is not a hole but a shadow: a matte black low dome bulges 5 mm out of the front, only 26 mm across, with the lens ring sunk at its pole. Engraved latitude rings with tick dashes crowd ever closer toward the lens. A satin light-grey machined collar clamps the dome = photon ring: ribbed grip sections, a smooth flat with red index triangle, a small lever with an oblong slot that locks a printed lens cap. Calm graphite body, precise as a tripod head. image[2] = that collar: ribbed sections, red index, slotted lever. image[3] = black dome with engraved tick scale. image[4] = black sphere in a bright photon ring. Vertical grip grooves front left, frosted flash window, knurled shutter collar, switch in a pocket, light-pipe dots, vents, strap anchor, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd",
+    "file_033484c1-7c8c-42ae-b41d-c9c09dcb57b4",
+    "file_fae54ac4-aa17-4461-b472-e00a034fc1a0"
+   ]
+  }
+ },
+ {
+  "name": "f14-hawking-bitar",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f14-hawking-bitar",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea HAWKING BITS, all that falls in is written as bits on the horizon: the left grip is a coarse, perfectly ordered diamond knurl like image[2]; across the body it turns into raised 1 mm square pixels in an ordered checker, then random noise of mixed heights; in a wide ring round the lens it becomes a tight mosaic of tiny pixels in random black and white: maximum entropy at the horizon. Inside it a thin satin grey photon ring as in image[3] and the deep black lens. Pixel relief is the grip, missing pixels over the electronics are vent holes, a row of red pixels is the index line. image[4] = engraved tick scale, for the lens ring. Smooth islands for flash window, collared shutter, switch pocket and ports; light-pipe dots, hinged plug cover, strap anchor, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws, QR code",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_a2641043-9d07-4e93-9526-a0eec08aab81",
+    "file_a1a712e0-4767-4cc8-8ab2-d4243f08f0f5",
+    "file_033484c1-7c8c-42ae-b41d-c9c09dcb57b4"
+   ]
+  }
+ },
+ {
+  "name": "f15-gyroid",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f15-gyroid",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "4:3",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea GYROID EROSION: at the left grip the body is a smooth, ordered light-grey shell of soft vertical tube ribs like image[2]; moving right the shell is eaten away along a ragged erosion front, exposing a matte black gyroid lattice, the print infill made visible, over a solid inner wall. The gyroid cells shrink and densify toward the lens and fuse into one gloss-black ring round it, like the photon ring in image[3]. Light-grey shell islands float in the lattice. The open gyroid over the electronics is the vent; translucent cells on top glow as charge-light pipes. image[4] = ribbed lens ring with red index triangle. image[5] = knurled pads and red accents. Collared shutter, recessed switch, plugged port on the left end, corner strap eyelet, shadow-gap seam, visible layer lines. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+    "file_5c0afe65-2fca-42ef-a7d7-0cd777669aad",
+    "file_a1a712e0-4767-4cc8-8ab2-d4243f08f0f5",
+    "file_eb570efd-b927-4c59-ade4-d1835c958cdd",
+    "file_a2641043-9d07-4e93-9526-a0eec08aab81"
+   ]
+  }
+ },
+ {
+  "name": "f16-krystall-oske",
+  "endpoint": "generation/image-to-image",
+  "dir": "A5/konsept/tripo/f16-krystall-oske",
+  "body": {
+   "model": "banana_pro",
+   "aspect_ratio": "3:4",
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea CRYSTAL TO ASH, a phase change: the lower body is an ordered faceted crystal plinth in translucent PLA with crisp planar facets, glowing faintly from the charge light at the USB-C. Moving up, the facets turn opaque light grey and crack into a Voronoi mosaic with widening black joints; the tiles crumble into grains; round the lens everything is black, granular fuzzy-skin texture like ash, the swirl into the void of image[2]. Only the lens sits in a small, perfectly smooth gloss-black dome with an engraved scale like image[3]: a black hole has no hair. Soft upright volume like image[4]. Facets give the grip, Voronoi joints over the electronics are vents. Collared shutter, recessed switch, red index triangle on the lens ring, frosted flash window, strap eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "inputs": [
+    "file_e12f8b74-f4c7-4202-a738-157a691825be",
+    "file_7e8e7271-c361-421d-b668-68d11e9d6b37",
+    "file_f13652ff-8ddb-406c-8192-0f62413d2a07",
+    "file_a295e5ff-fe15-4313-a78d-e597f3e21352"
+   ]
+  }
+ }
+]

@@ -1,0 +1,203 @@
+{
+ "utval": [
+  {
+   "id": "f01-strekfelt",
+   "ide": "Heile blokka er dekt av eitt samanhengande felt med fine, opphøgde riller, slik strekfeltet i bilete 18 er. Over grepet står dei rette og loddrette med 2,4 mm deling og er griperiller. Mot linsa bøyer dei seg rundt ho og pakkar seg saman til 0,6 mm, til dei flyt saman i eit heilt svart band kring ringen, der lyset ikkje slepp ut. Rilletoppane får lys grå farge med eit AMS-byte i høgda til toppane (fronten opp i printaren), og éi raud rille er indekslina. Der strekane opnar seg, sit blits og ladelys, og luftespaltene er skorne i dalane i botnen. Slått saman med linjefelt-stigning (delinga og den svarte sona) og ekvipotensial (spalter i rilledalane).",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/18-linsing-strekar.png",
+    "/home/user/formnerd/A5/referansar/21-nocs-riller.jpg",
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea LINE FIELD, lensing drawn as in image[2]: a crisp matte black block whose front, top and grip end carry one continuous field of fine raised ridges with light-grey crests. Over the grip they stand straight and vertical at 2.4 mm pitch as grip ribs; toward the lens they bow round it and crowd to 0.6 mm pitch until they fuse into a solid black band hugging the ring: light cannot escape. On top they part round the shutter collar like round a smaller mass; flash window and two light-pipe dots sit where lines open. image[3] = such ridges as a real moulded surface. image[4] = ribbed ring with red index triangle, for the lens ring; one red ridge is the index line. Vent slots cut in the bottom valleys, plug cover with exhaust slots on the left end, corner eyelet, shadow-gap seam at the back. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "fysikk"
+  },
+  {
+   "id": "f02-einsteinring",
+   "ide": "Kroppen er ein roleg, djupt matt svart monolitt, sjølve skuggen. Det einaste lyset på han er flukt innlagd, gjennomskinleg natur-PLA: frå blitsvindauget bøyer tre tynne strålar seg rundt og samlar seg i ein smal ring kring linsa, slik lys frå ei kjelde bak eit svart hol kjem fram som ein einsteinring. Ringen er diffusor for blits-LED-en og gir ein ringblits med jamt nærlys, så lyset som bøyer seg rundt holet, er det same lyset som teiknar biletet. Rifla puter, krage på utløysaren og lysleiarar er tone i tone i svart og grafitt.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/04-svart-hol-optikk-nasa.jpg",
+    "/home/user/formnerd/A5/referansar/05-svart-hol-linsa-skive.jpg",
+    "/home/user/formnerd/A5/referansar/22-svart-toppplate.png",
+    "/home/user/formnerd/A5/referansar/09-sirui-plate-detalj.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea EINSTEIN RING FLASH: the body is a calm, deep matte black monolith, the shadow. The only light on it is milky translucent white inlay, flush with the surface: from the flash window three thin rays curve round like the bent rays in image[2] and merge into one thin glowing ring round the lens, as in image[3], with a recessed black annulus between ring and lens. The ring is the flash diffuser, a ring light. image[4] = sculpted black body with stepped top plate, tone on tone. image[5] = only knurled pads and machined edges. Diamond-knurled black grip pad front left, satin graphite shutter with collar, two translucent light-pipe dots on top, engraved ticks, bottom vent slots, plug cover with exhaust slots on the left end, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "fysikk"
+  },
+  {
+   "id": "f03-jet",
+   "ide": "I det ståande formatet går spinnaksen loddrett gjennom linsa som ei slank, lys grå søyle med ringknutar: to jetstrålar skotne ut frå polane. Ei tynn skive med knivskarp kant kryssar søyla vassrett ved linsa, akkresjonsskiva sett frå kanten. Knutane står tett ved linsa og glisnar mot endane, og dei er fingerriller for grepet. Toppen endar i ein frest kapsel med av/på-brytaren og ladelysa, der energien kjem ut. Botnen endar i ein rilla fot med luftespalter rundt USB-C-en, så kameraet står oppreist medan det ladar.",
+   "layout": "portrett",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/08-stereo-staande-ror.png",
+    "/home/user/formnerd/A5/referansar/12-sirui-kule.jpg",
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea RELATIVISTIC JET: matte black body = the black hole, lens = its centre. Along the spin axis a slender satin light-grey column set into the front runs from the lens up over the top edge and down to the bottom edge: two jets fired from the poles. Its raised ring knots, tight near the lens and spreading toward the ends, are finger ribs. A thin knife-edge disc crosses it horizontally at the lens, an accretion disk seen edge-on. On top it ends in a machined cap with the slide switch and two light-pipe dots; below in a ribbed foot ring with vent slots round the USB-C, so it stands to charge. image[2] = upright tube body, satin finish. image[3] = vertical machined column with stacked rings. image[4] = ribbed ring with red index triangle, for the lens. Knurled side panel, plug cover, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "fysikk"
+  },
+  {
+   "id": "f04-ergosfaere",
+   "ide": "Eit roterande svart hol drar rommet rundt med seg. Difor er frontplata i grafitt vridd nokre grader rundt linsa i høve til den svarte kroppen, og hjørna stikk ut over blokka i trinn som blir fingerkantar. Kring linsa sit ein flattrykt oval krage, ergosfæren, med rifla kant og raud indeks. Når kragen blir vridd, drar han seks bøygde irisblad inn og lukkar linsa. Det er eit personvernlokk som gjer kameraet blindt, for innanfor ergosfæren kan ingenting stå stille. Ein krans av korte, skrå turbinblad rundt kragen viser rotasjonen og gir grep når han skal vridast.",
+   "layout": "portrett",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg",
+    "/home/user/formnerd/A5/referansar/22-svart-toppplate.png",
+    "/home/user/formnerd/A5/referansar/05-svart-hol-linsa-skive.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea ERGOSPHERE, a spinning black hole drags space with it: the graphite front plate is twisted a few degrees round the lens against the matte black body, its corners stepping out over the block as if dragged, the steps forming finger ledges. Round the lens sits a flattened oval collar, the ergosphere, with knurled rim and red index triangle: turning it drags six curved iris vanes inward to close the lens, a privacy cover; show it half closed. Short tangential turbine vanes skirt the collar. image[2] = knurled rotating ring with red index and tick scale. image[3] = stepped sculpted plate over a dark body. image[4] = flattened bright halo round a black sphere, for the oval collar. Collared shutter and two light-pipe dots on top, vent slots beside the USB-C, plug cover, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "fysikk"
+  },
+  {
+   "id": "f05-doppler",
+   "ide": "Kjernen er pakka inn i ein stabel tynne, vassrette lameller (1 mm plater, 1 mm glipe) som ei akkresjonsskive sett frå kanten, men skeiv slik dopplerstrålinga gjer ho. På venstre side, som kjem mot deg, er lamellane tjukke, skarpe og kvite og bular 3 mm ut som eit grep i full høgd. Mot høgre blir dei tynnare, tettare og mørkare i fire AMS-steg frå kvitt via lys grå og grafitt til svart som ei raudforskyving, og dei siste svarte strekane bøyer seg rundt ringen og dukkar inn i linsekanten. Glipene er griperiller og opnar seg til luftespalter i botnen, og ei skarp svart toppplate ber utløysar og brytar. Slått saman med smeltande-lameller (kjøleribbe-delinga, toppplata og stupet inn i linsa).",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/03-svart-hol-skive-loddrett.jpg",
+    "/home/user/formnerd/A5/referansar/21-nocs-riller.jpg",
+    "/home/user/formnerd/A5/referansar/22-svart-toppplate.png",
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea DOPPLER DISK: the matte black core is wrapped by a stack of thin horizontal lamellae, 1 mm plates with 1 mm gaps, like the layered edge-on disk in image[2], lopsided as Doppler beaming makes it. On the left, the side moving toward you, they are thick, crisp, bright white and bulge 3 mm out as a full-height grip; going right they thin, crowd and darken through light grey and graphite to black, four colour steps = redshift; the last fine black lines dive into the lens rim. image[3] = such fine ridges on a real product. image[4] = crisp sculpted black top plate carrying shutter and switch. image[5] = ribbed lens ring with red index. Lamella edges are grip ribs, gaps open into bottom vents; flash window and light-pipe dots between lamellae, plug cover on the left end, corner eyelet. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "materie"
+  },
+  {
+   "id": "f06-hawking-perler",
+   "ide": "Svarte hol fordampar, og lyset som slepp unna, kjem ut som einskilde kvantar. Satenggrå tubar går ut frå linsekanten og brotnar opp i perlekjeder som krympar frå 6 til 2 mm jo lenger frå hendingshorisonten dei kjem. Perlene gjer arbeidet: dei blir eit perlefelt i grepet, ei rad som leier peikefingeren inn til utløysarkragen, klare perler som ladelys, mellomrom som lufting, ei perleløkke som stroppfeste og ei flattrykt klynge som tommelkvile bak. Storleiken på perlene blir eit taktilt kart for handa, og den samanhengande tuben som går over i einskilde perler, er orden som går over i uorden.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/15-entropi-render.jpg",
+    "/home/user/formnerd/A5/referansar/02-svart-hol-ring.jpg",
+    "/home/user/formnerd/A5/referansar/09-sirui-plate-detalj.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea HAWKING RADIATION, the black hole evaporating: satin light-grey tubes leave the lens rim and flow left over front and top; the further from the horizon, the more each tube breaks into a chain of beads shrinking from 6 to 2 mm. The beads work: a dense pearl field on the front-left grip for two fingertips, a bead chain over the top shrinking toward the shutter to lead the index finger into a beaded collar, two clear pearls on top as charge light pipes, gaps between bottom beads as vents, a pearl loop at the top-left corner as strap eyelet, a flattened pearl cluster on the back as thumb rest. image[2] = tube paths flowing into a lens. image[3] = bright ring round a black void, for the lens rim. image[4] = knurled pads and red marks. Matte black core, red index dot, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "tube"
+  },
+  {
+   "id": "f07-ramdraging",
+   "ide": "Eit roterande svart hol dreg rommet med seg. Tre tjukke tubar vind seg ein kvart omdreiing rundt den ståande svarte kjernen: rolege og parallelle nede, og dregne inn i ein virvel rundt linsa oppe til høgre. Vridinga er sjølve grepet. Dei skrå spora mellom tubane følgjer den skråvinkelen fingrane får når dei lukkar seg rundt ein ståande kropp, og gir tre fingerkanalar på eit tverrsnitt på 39 × 33 mm, som ligg nær ideell kraftgrepsdiameter. Tubeendane blir krage rundt utløysaren, ringfot rundt USB-C-en så kameraet kan stå i ein ladar, og stroppauge nede bak.",
+   "layout": "portrett",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/08-stereo-staande-ror.png",
+    "/home/user/formnerd/A5/referansar/18-linsing-strekar.png",
+    "/home/user/formnerd/A5/referansar/21-nocs-riller.jpg",
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea FRAME DRAGGING, a spinning black hole twisting space: three thick satin light-grey tubes wind round the matte black core as a helix, calm and parallel at the bottom, a quarter turn up the left grip side, then dragged tight into a whirl round the lens ring. The twist is the grip: diagonal grooves between tubes follow the slant of fingers closing round an upright body, three finger channels. Tube ends rise as a collar round the shutter, a flat ring foot frames the USB-C so it stands in a dock, one tube end loops out at the bottom rear corner as eyelet; ribbed thumb pad on the back. image[2] = upright soft tube camera. image[3] = lines bending round a form, for the twist. image[4] = field-line grooves on the core. image[5] = ribbed ring with red index, for the lens. Engraved ticks, fine vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "tube"
+  },
+  {
+   "id": "f08-fotonbane",
+   "ide": "Ved fotonsfæra kan lyset gå éin gong rundt det svarte holet før det slepp unna. Her går éin tjukk tube ein open runde rundt grepsida og teiknar heile handa: krage rundt utløysaren for peikefingeren, tommelrygg bak, ein krok under botnen for veslefingeren og fingerrygg framme for lang- og ringfingeren. Kroken gjer det 57 mm høge kameraet like høgt som handa og er òg stroppauge. Opninga der banen ikkje lukkar seg, er flukta, og der lyser blitsvindauget. Banen er open med vilje, så han ikkje blir den lukka D-ramma frå e4.",
+   "layout": "portrett",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/08-stereo-staande-ror.png",
+    "/home/user/formnerd/A5/referansar/16-skisse-grep-fatning.jpg",
+    "/home/user/formnerd/A5/referansar/03-svart-hol-skive-loddrett.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea PHOTON ORBIT, light circling the black hole exactly once: one thick 9 mm satin light-grey tube wraps the matte black core in a single open loop on the grip side and maps the whole hand. It starts as a raised collar round the shutter for the index finger, runs down the back as a thumb ridge, swings 6 mm below the bottom-left edge as an open hook for the little finger, which is also the strap eyelet, then climbs the front-left as a ridge for middle and ring finger and stops short of its start: the gap is the escape, and the flash window glows in it. No closed frame. image[2] = upright camera with a C-shaped tube. image[3] = sketch of wavy finger seats. image[4] = vertical lensed disk with black shadow, for the lens surround. Tick ring and red index on the lens ring, fine vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "tube"
+  },
+  {
+   "id": "f09-penrose",
+   "ide": "Penrose-prosessen hentar energi ut av eit roterande svart hol. Ein slank tube kjem over toppen og delar seg i ein Y i den ovale ergosfæren rundt linsa: éi grein spiralar inn i linsekanten og forsvinn, medan den andre slepp ut med meir energi og sveller til ein feit grepssylinder (Ø14) i grepsenden. Energien som blir stolen frå holet, hamnar der handa er, så handa lukkar seg rundt ein ekte sylinder i staden for ein flat kant. Den same tuben ber utløysarkragen, går under botnen og opp bak som tommelkvile og endar i stroppauget.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/07-stereo-rorkropp.png",
+    "/home/user/formnerd/A5/referansar/19-skisse-tube-maleri.png",
+    "/home/user/formnerd/A5/referansar/05-svart-hol-linsa-skive.jpg",
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea PENROSE PROCESS, energy stolen from a spinning black hole: a flat oval halo, the ergosphere, rings the lens. A slim tube comes over the top from the right, enters the halo and splits in a Y: one thin branch spirals into the lens rim and vanishes, the other escapes with more energy, swelling to a fat 14 mm tube that drops down the grip end as a grip column, so the hand closes round a cylinder. It wraps under the bottom and up the back as thumb rest, ending in a top-left corner eyelet; the shutter sits in a ribbed collar on the swelling branch, switch recessed beside it. image[2] = tube camera, grip cylinder, top bridge. image[3] = sketch, top tube and cylinder grip. image[4] = lensed disk, for the halo. image[5] = ribbed ring, red index. Halo ticks, vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "tube"
+  },
+  {
+   "id": "f10-samansmelting",
+   "ide": "To svarte hol som smeltar saman, sender ut gravitasjonsbølgjer. Linsa og blitsvindauget er dei to hola, og tubar ligg nøsta rundt dei som konturliner med to sentrum, som smeltar saman til éi peanøttløkke og vidare til rundare bølgjer. Bølgjelengda aukar utover, frå fine ringar ved linsa til fingertjukke tubar ved kantane. Dermed er det same mønsteret knurling ved linsa, fingersete for lang- og ringfingeren i grepsenden, tommelrygger bak og fine riller rundt USB-C og microSD der den andre handa støttar.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A2/referansar/ref-7-hovudreferanse.png",
+    "/home/user/formnerd/A5/referansar/21-nocs-riller.jpg",
+    "/home/user/formnerd/A5/referansar/18-linsing-strekar.png",
+    "/home/user/formnerd/A5/referansar/17-leica-belg-skala.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea MERGER, two black holes merging, radiating gravitational waves: the lens ring and the flash window are the two holes. Round them satin light-grey tubes lie nested as two-centred contour lines, merging into one peanut loop, then rounder waves. The waves chirp: thin tight rings at the lens, widening to finger-thick tubes at the edges. The outer tubes wrap the grip end as stacked tubes with seats for middle and ring finger, roll over the top to frame shutter and switch, cross the back as thumb ridges and end as fine grooves round USB-C and microSD. Matte black core between tubes, one red index. image[2] = nested soft tubes on a camera. image[3] = two-centred concentric grooves. image[4] = line field bending round a form. image[5] = engraved scales. Vents between tubes, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "tube"
+  },
+  {
+   "id": "f11-belg",
+   "ide": "Kameraet er ein liten optisk benk. Ei svart frontplate med linsa og eit baklokk (skyvelokket) er bundne saman av ein belg med skarpe sikk-sakk-faldar rundt heile kroppen, som på Leica-belgen i bilete 17. Faldane er breie og rolege ved grepet og blir pressa tettare mot linsa, slik tidekreftene knusar stoff nær eit svart hol. Under står den klikkbare stativfoten som ei skinne med gravert skala, tannstong og rifla tommelknott over 1/4\"-mutteren. Faldane er òg griperiller, og dei tette faldane mot linsa gir lufting over ESP32-en.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/17-leica-belg-skala.jpg",
+    "/home/user/formnerd/A5/referansar/09-sirui-plate-detalj.jpg",
+    "/home/user/formnerd/A5/referansar/18-linsing-strekar.png"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea TIDAL BELLOWS, a tiny optical bench: a crisp matte black front plate (lens standard) and back plate (sliding battery door) are joined by a band of sharp zig-zag bellows pleats wrapping the body. The pleats are wide and calm at the grip end and squeezed ever tighter toward the lens end, like matter crushed by tides near a black hole. Below, a clip-on rail foot with engraved ticks, fine gear rack and knurled thumb knob (tripod insert). image[2] = bellows pleats, rail with engraved scale, gear rack, knurled knob. image[3] = knurled pads, red tabs, machined lever. image[4] = lines compressing toward a dark mass. Vertical grip ribs front left, frosted flash window, knurled shutter collar, switch in a pocket, ribbed lens ring, red index dot, flush pins at plate corners, vents, light-pipe dots. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "instrument"
+  },
+  {
+   "id": "f12-akkresjonsplate",
+   "ide": "Ei tjukk, skulpturert svart toppplate er akkresjonsskiva sett frå kanten, og ho svevar over ein grafittkropp på ein inntrekt, satenggrå hals. Plata er tjukk over grepet og smalnar til ei skarp, fasa egg mot linsa. Over objektivringen er ho eten bort i ein halvsirkel, der lyset ikkje kjem att. Ho ber betjeninga som ei Sirui-hurtigplate: rifla puter, raude tappar, graverte strekar og ladelyset som eit grønt vaterpass. Ein kamspak på venstre ende lukkar programmeringsporten.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/22-svart-toppplate.png",
+    "/home/user/formnerd/A5/referansar/09-sirui-plate-detalj.jpg",
+    "/home/user/formnerd/A5/referansar/05-svart-hol-linsa-skive.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea ACCRETION PLATE: a thick sculpted matte black top plate is the accretion disk seen edge-on, floating over a graphite body on a recessed satin grey neck. Thick over the grip, it thins to a sharp chamfered blade toward the lens, with a half-circle bitten out above the lens ring: the disk ends where light never returns. Like a quick-release plate it carries: knurled shutter collar, slide switch in a pocket between diamond-knurled pads, two red tabs, engraved edge ticks, the charge light pipe as a green vial. image[2] = sculpted top plate floating over a dark body on a satin neck. image[3] = knurled pads, red tabs, edge scale, bubble level, cam lever. image[4] = black sphere, thin bright disk edge-on. Cam lever on the left end closing the program port, bottom vents, grip grooves front left. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "instrument"
+  },
+  {
+   "id": "f13-skuggekule",
+   "ide": "Det svarte holet er ein skugge, ikkje eit hol. Ein låg, matt svart kuppel (Ø26, 5 mm ut) bular ut frå fronten med objektivet i polen, og graverte breiddegrader med strekar blir tettare mot linsa, som på Sirui-kula. Ein maskinert krage i lys grå er fotonringen: rilla grepsfelt, eit glatt felt med raud indekstrekant og ein liten spak med avlang opning som låser eit printa linsedeksel. Resten av kroppen er roleg og presis som eit stativhovud. Kuppelen er det motsette av gravitasjonsbrønnen i e3: holet bular ut i staden for å søkke inn.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg",
+    "/home/user/formnerd/A5/referansar/10-sirui-plate-skala.jpg",
+    "/home/user/formnerd/A5/referansar/05-svart-hol-linsa-skive.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea SHADOW SPHERE, the black hole is not a hole but a shadow: a matte black low dome bulges 5 mm out of the front, only 26 mm across, with the lens ring sunk at its pole. Engraved latitude rings with tick dashes crowd ever closer toward the lens. A satin light-grey machined collar clamps the dome = photon ring: ribbed grip sections, a smooth flat with red index triangle, a small lever with an oblong slot that locks a printed lens cap. Calm graphite body, precise as a tripod head. image[2] = that collar: ribbed sections, red index, slotted lever. image[3] = black dome with engraved tick scale. image[4] = black sphere in a bright photon ring. Vertical grip grooves front left, frosted flash window, knurled shutter collar, switch in a pocket, light-pipe dots, vents, strap anchor, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "instrument"
+  },
+  {
+   "id": "f14-hawking-bitar",
+   "ide": "Alt som fell inn i eit svart hol, blir skrive som bitar på overflata av horisonten (Bekenstein–Hawking). Ved grepet har kameraet grov, perfekt ordna diamantrifling. Over kroppen går riflinga over i opphøgde kvadratiske pikslar på 1 mm, først i eit ordna sjakkmønster og så i tilfeldig støy i ulike høgder. I ein brei ring rundt linsa blir det ein tett mosaikk av små pikslar i tilfeldig svart og kvitt, printa i to fargar med AMS: maksimal entropi på horisonten. Pikselrelieffet er grepet, manglande pikslar over elektronikken er luftehol, og ei rad raude pikslar er indekslina. Portar og kontrollar ligg som glatte øyer i feltet. Slått saman med dither-stoy.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/09-sirui-plate-detalj.jpg",
+    "/home/user/formnerd/A5/referansar/02-svart-hol-ring.jpg",
+    "/home/user/formnerd/A5/referansar/10-sirui-plate-skala.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea HAWKING BITS, all that falls in is written as bits on the horizon: the left grip is a coarse, perfectly ordered diamond knurl like image[2]; across the body it turns into raised 1 mm square pixels in an ordered checker, then random noise of mixed heights; in a wide ring round the lens it becomes a tight mosaic of tiny pixels in random black and white: maximum entropy at the horizon. Inside it a thin satin grey photon ring as in image[3] and the deep black lens. Pixel relief is the grip, missing pixels over the electronics are vent holes, a row of red pixels is the index line. image[4] = engraved tick scale, for the lens ring. Smooth islands for flash window, collared shutter, switch pocket and ports; light-pipe dots, hinged plug cover, strap anchor, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws, QR code",
+   "linse": "instrument"
+  },
+  {
+   "id": "f15-gyroid",
+   "ide": "Skalet blir ete opp. Ved grepet er kameraet eit roleg, lyst skal av mjuke, loddrette tuberibber, men mot linsa er skalet erodert bort langs ei fillete front og avdekkjer eit svart gyroidgitter, infillet frå printen gjort synleg. Cellene krympar og smeltar saman til éin blank svart ring rundt linsa. Entropien er at den ordna forma går i oppløysing til den rå strukturen ho vart printa av, og det opne gitteret over elektronikken er samstundes luftinga. Gjennomskinlege celler på toppen lyser som ladelys.",
+   "layout": "landskap",
+   "refs": [
+    "/home/user/formnerd/A2/referansar/ref-7-hovudreferanse.png",
+    "/home/user/formnerd/A5/referansar/02-svart-hol-ring.jpg",
+    "/home/user/formnerd/A5/referansar/11-sirui-ring-indeks.jpg",
+    "/home/user/formnerd/A5/referansar/09-sirui-plate-detalj.jpg"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea GYROID EROSION: at the left grip the body is a smooth, ordered light-grey shell of soft vertical tube ribs like image[2]; moving right the shell is eaten away along a ragged erosion front, exposing a matte black gyroid lattice, the print infill made visible, over a solid inner wall. The gyroid cells shrink and densify toward the lens and fuse into one gloss-black ring round it, like the photon ring in image[3]. Light-grey shell islands float in the lattice. The open gyroid over the electronics is the vent; translucent cells on top glow as charge-light pipes. image[4] = ribbed lens ring with red index triangle. image[5] = knurled pads and red accents. Collared shutter, recessed switch, plugged port on the left end, corner strap eyelet, shadow-gap seam, visible layer lines. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "materie"
+  },
+  {
+   "id": "f16-krystall-oske",
+   "ide": "Ein faseovergang frå krystall til oske. Nedst står ein ordna, fasettert krystallsokkel i gjennomskinleg PLA som lyser svakt frå ladelyset ved USB-C. Oppover blir fasettane opake og lys grå og sprekk opp i ein Voronoi-mosaikk med stadig breiare svarte fuger, flisene smuldrar til korn, og rundt linsa er alt svart, grynete fuzzy skin som oske. Berre linsa sit i ein liten, heilt glatt og blank svart kuppel med gravert skala, for eit svart hol har ikkje hår. Fasettane er grepet, og fugene over elektronikken er luftespalter.",
+   "layout": "portrett",
+   "refs": [
+    "/home/user/formnerd/A5/referansar/03-svart-hol-skive-loddrett.jpg",
+    "/home/user/formnerd/A5/referansar/12-sirui-kule.jpg",
+    "/home/user/formnerd/A5/referansar/08-stereo-staande-ror.png"
+   ],
+   "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea CRYSTAL TO ASH, a phase change: the lower body is an ordered faceted crystal plinth in translucent PLA with crisp planar facets, glowing faintly from the charge light at the USB-C. Moving up, the facets turn opaque light grey and crack into a Voronoi mosaic with widening black joints; the tiles crumble into grains; round the lens everything is black, granular fuzzy-skin texture like ash, the swirl into the void of image[2]. Only the lens sits in a small, perfectly smooth gloss-black dome with an engraved scale like image[3]: a black hole has no hair. Soft upright volume like image[4]. Facets give the grip, Voronoi joints over the electronics are vents. Collared shutter, recessed switch, red index triangle on the lens ring, frosted flash window, strap eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+   "linse": "materie"
+  }
+ ],
+ "merknad": "Utvalet er 16 konsept av 20. 11 er i landskap (L2) og 5 i portrett (L5: f03, f04, f07, f08, f16). Alle fire linsene er med: fysikk 4, tube 5, instrument 4 og materie 3.\n\nSamanslåingar: Det var fire grupper med nesten like idear. (1) Tre strekfelt: strekfelt-linsing, linjefelt-stigning og ekvipotensial er slått saman til f01. f01 tek delinga 2,4→0,6 mm, den svarte sona og den raude indeksrilla frå linjefelt-stigning, og spaltene i rilledalane frå ekvipotensial. Ekvipotensial fell ut som eige konsept fordi han òg overlappar med f10 (to sentrum). (2) Lameller: doppler-lameller og smeltande-lameller er slått saman til f05. Dopplerideen er hovudsaka. Kjøleribbedelinga (1/1 mm), toppplata og stupet inn i linsa kjem frå smeltande-lameller. Den rennande, drypande smeltinga er teken ut fordi ho låg for nær e5. (3) Pikslar: hawking-bitar og dither-stoy er slått saman til f14 i landskap, slik at portrettalet held seg på 5. (4) Ingen andre er droppa. f08 fotonbane har fått «No closed frame» i prompten, og ref 13 er bytt ut, så han ikkje gli over i e4 D-ramma.\n\nSjekka med skript: Kvar prompt er 1351–1392 teikn og berre ASCII. image[1] står fremst og er rett blokk etter layout: landskap /home/user/formnerd/A5/konsept/blokk/blokk-34-framme.png, portrett /home/user/formnerd/A5/konsept/blokk-portrett/blokk-34-framme.png. image[2..n] følgjer refs-rekkjefølgja utan hol, med 2–4 refs per konsept. Alle ref-stiane finst. Kvar prompt har konseptordet, «Rich functional surface detail», studio, kvit bakgrunn, 3/4 ovanfrå og éin avsluttande --no-liste.\n\nPolering: Felles toppblokk med «SMALL 16 mm lens ring … a quarter of the width» og «big lens barrel» i --no, fordi alle e1–e6 fekk altfor store objektiv. «screws» er lagt til i --no fordi huset er skrufritt (klikk). f14 har i tillegg «QR code». Sidene er retta mot koordinatane i pakking.json: overflate-lista kallar USB-C-sida «venstre» og prog-porten «høgre» i sin eigen ramme. Sett framanfrå er USB-C og microSD på høgre side, og prog-porten og stroppfestet på venstre (grepsenden). Promptane brukar framanfrå-ramma.\n\nRisiko: f02 brukar NASA-diagrammet (04), som har tekst og oransje linjer. --no-lista tek tekst, men bytt til 05 åleine om fargen lek inn. Ref 13 og 20 er same fil (lik sha256), så berre éin av dei bør brukast. f09 (Ø14-sylinder) og f08 (krok 6 mm under botnen) går mest ut over blokka, men held seg innanfor «nokre mm». Ingen filer er endra. Arbeidsfilene ligg i /tmp/claude-0/-home-user/5a4d58d7-593e-5716-ba41-5a17e2e52d04/scratchpad/ (utval.json, konsept.py, kurator.py)."
+}
