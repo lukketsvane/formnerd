@@ -1,11 +1,17 @@
-FØRSTE PRINT
+PRENT PÅ BAMBU LAB P1S
 
-Opne Plate-00-test.3mf i Bambu Studio. Vel faktisk Bambu Lab P1S, dyse, plate og PLA. Førebels start: 0,4 mm dyse, 0,20 mm lag, 3 veggar, 15 prosent gyroid. Dette er innstillingar som skal vurderast, ikkje ein validert slicerprofil.
+Tre slica plater ligg i print/bambu/. Dei er laga med Bambu Studio 02.08.02.61 og dei offisielle P1S-profilane:
+0,4 mm dyse, Textured PEI-plate, Bambu PLA Basic, 0,20 mm Standard, 3 veggar (Arachne), 15 prosent gyroid, trestøtte.
 
-Print T01 og P04 først. Prøv knappen i 16,4 mm-hòlet, M3-mutter i 5,9 mm-lomma, og faktiske M3/M2.5-skruar i pilotane. Knappen skal gli og kunne løftast ut; mutteren skal kunne førast inn og halde mot rotasjon. Juster parametrane og bygg på nytt ved behov.
+1. Plate-00-prove-P1S.gcode.3mf   T01 + P04      27 min    9 g
+2. Plate-01-framhus-P1S.gcode.3mf P01            7 t 12 min 200 g   (støtte også på modellen: holrom, linsehol, knappehol, under bogen)
+3. Plate-02-deksel-og-smadelar-P1S.gcode.3mf  P02 + P03 + P05   1 t 51 min   49 g
 
-Deretter print Plate-01-framhus.3mf og Plate-02-deksel-og-smadelar.3mf. P01 er oppreist og krev vurdert brim og støtte; kontroller innvendig tak, kanal, boge og tilgjenge for å fjerne støtte gjennom bakopninga. Smådelane er orienterte for flat kontakt. Kontroller alle lag og støtter før utskrift.
+Opne fila i Bambu Studio, trykk Print plate og vel P1S-en. Filament 1 = PLA Basic. Utan nettverk: kopier til microSD og start frå skjermen.
+Filene har P1S-startkode, AMS-lasting og printar-ID C12, men inga miniatyrbilete.
 
-Platefilene inneheld geometri, ikkje G-kode. Ingen P1S-slicing eller fysisk prøve er utført. Ytterform er mesh; STEP dekkjer berre analytisk mekanikk.
+Prent prøveplata først. Knappen skal gli i 16,4 mm-hòlet, M3-mutteren skal passe i 5,9 mm-lomma, og dei faktiske skruane skal gå i pilotane.
+Passar det, prent framhuset. Trekk støtta ut gjennom bakopninga, ut av linseholet og knappeholet og under bogen. Prent deretter deksel og smådelar.
+Avgrad hol og kantar. Bakdekselet har ein tynn kant heile vegen rundt; handter han varsamt.
 
-Feste: 6 M3x12, 4 M3-mutrar, 3 M2.5x8. Maskinvare er nominell og må kontrollerast. Stram varsamt i printa pilotar. Følg manualen for innføringsrekkjefølgje og funksjonsprøve.
+Tidene er sliceranslag. Ingen fysisk utskrift er gjord. Feste: 6 M3x12, 4 M3-mutrar, 3 M2.5x8 (nominelle). Følg manual/Kamera-boge-M06.pdf.
