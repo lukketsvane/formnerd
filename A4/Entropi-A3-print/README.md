@@ -32,18 +32,18 @@ Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, ve
 
 ## Forma som CAD
 
-`verktoy/cad_form.py` byggjer den ytre forma av få, reine solidar, med mål under `form` i konfigurasjonen:
+`verktoy/form_fraa_mesh.py` måler A3-forma frå Tripo-meshen (`arkiv/entropi-a3`) og skriv tala til `verktoy/form_maal.json`: 19 vassrette snitt gjennom kroppen (z 0,6–54), radiusprofilen til linseløpet og toppen av søkarblokka. `verktoy/royr_fraa_mesh.py` finn tubane som ryggar i eit høgdekart sett ovanfrå. `verktoy/cad_form.py` byggjer så forma som B-rep utan å røre meshen:
 
 | Del | Solid |
 | --- | --- |
-| Kroppen | Avrunda rektangel (r 12) med ein bule på hjulsida, ekstrudert til z 58, fillet 7 mm oppe og 2,5 mm nede |
-| Linseløpet | Kjegle r 30,5 → 29,5 frå x 58 til 90, fillet 2 mm framme, forsenking r 26,8 frå x 85 og trakt innover |
-| Dei fem tubane | Sirkel r 7,5 (gripryggen r 9) sveipt langs ein spline kvar, frå søkarblokka og hjulbossen ned i kroppen |
-| Søkarblokka | Boks 18 × 39 × 26 mm med fillet 3 mm |
+| Kroppen med grepet | Loft gjennom snitta, kvart snitt ein periodisk B-spline gjennom 140 punkt, og fire innoverforskove snitt som rundar toppen av |
+| Linseløpet | Omdreiingsflate av den målte profilen (r 29,9 → 27,9 frå x 60 til 90), kjegleforma rot inne i kroppen, fillet 1,5 mm framme, forsenking r 26,8 frå x 85 og trakt innover |
+| Dei åtte tubane | Sirkel (r 7,5–9,5) eller ellipse sveipt langs ein spline kvar: tre frå søkarblokka, gripryggen og gripframen ned til grepet, armen frå hjulbossen, armen ned til linseløpet og armen over på linseløpet |
+| Søkarblokka | Boks 18 × 37 × 32 mm med fillet 2,5 mm |
 | Hjulbossen | Sylinder r 17,5 til z 80, fillet 2 mm |
-| Utløysarbossen | Sylinder r 9 til z 63,5, fillet 2 mm |
+| Utløysarbossen | Sylinder r 9 til z 63,5, fillet 2,5 mm |
 
-Holrommet er omrisset til kroppen forskove 2,6 mm inn, og søyler, stolpar, trakter og lommer er boksar, sylindrar og loft. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
+Holrommet er eit loft av dei same snitta forskove 2,6 mm inn (golv z 5, tak z 55,4), og søyler, stolpar, trakter og lommer er boksar, sylindrar og loft. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
 
 ## Overflatedetaljar
 
@@ -109,6 +109,7 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 cd verktoy
 npm install
 pip install build123d
+python3 form_fraa_mesh.py && python3 royr_fraa_mesh.py   # mål frå Tripo-meshen -> form_maal.json
 python3 cad_skal.py       # B-rep-delar: print/step og print/stl
 python3 kontroll_cad.py   # kontroll.json frå STL-ane og proxyane
 python3 print_skal.py     # prentretning

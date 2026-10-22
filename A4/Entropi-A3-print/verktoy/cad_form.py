@@ -1,50 +1,82 @@
-"""Ytre form til Entropi som rein B-rep (build123d/OCCT). Ingen mesh-kjelde."""
+"""Ytre form til Entropi som rein B-rep (build123d/OCCT), bygd av måla i form_maal.json."""
 import json, pathlib, time
+import numpy as np
+from shapely.geometry import Polygon as ShPolygon
+from omriss import glatt, resample
 from build123d import *
 
 HER = pathlib.Path(__file__).resolve().parent
 K = json.loads((HER / "delar_konfig.json").read_text())
 F = K["form"]
+MAAL = json.loads((HER / "form_maal.json").read_text())
 T0 = time.time()
+N_PKT = 96
+SENTER = (36.0, 60.0)
 
 
 def tid(n):
     print(f"{n:<28}{time.time() - T0:7.1f} s", flush=True)
 
 
-def omriss():
-    b = F["kropp"]
-    r = RectangleRounded(b["x"][1] - b["x"][0], b["y"][1] - b["y"][0], b["hjorne_r"]).moved(Pos((b["x"][0] + b["x"][1]) / 2, (b["y"][0] + b["y"][1]) / 2))
-    for cx, cy, cr in b["bular"]:
-        r = r + Pos(cx, cy) * Circle(cr)
-    kon = [v for v in r.vertices() if v.Z == 0]
-    return fillet(kon, b["konkav_r"])
+def seksjonsflate(punkt, z):
+    return make_face(Wire([Spline(*[(float(x), float(y), z) for x, y in punkt], periodic=True)]))
 
 
-def kropp_blokk(om):
+def forskove(punkt, d):
+    p = ShPolygon(punkt).buffer(d, join_style=1)
+    if p.geom_type != "Polygon":
+        p = max(p.geoms, key=lambda q: q.area)
+    return resample(glatt(p, 2.0))
+
+
+def seksjonar_kropp():
+    return {s["z"]: np.asarray(s["punkt"]) for s in MAAL["kropp"]}
+
+
+def kropp_loft():
     b = F["kropp"]
-    k = extrude(om, b["topp_z"])
-    k = fillet(k.edges().filter_by(Axis.Z, reverse=True).group_by(Axis.Z)[-1], b["topp_fillet"])
-    k = fillet(k.edges().filter_by(Axis.Z, reverse=True).group_by(Axis.Z)[0], b["botn_fillet"])
-    return k
+    S = seksjonar_kropp()
+    zs = sorted(S)
+    flater = [seksjonsflate(S[z], z) for z in zs]
+    topp = S[zs[-1]]
+    for z, d in b["kappe"]:
+        flater.append(seksjonsflate(forskove(topp, d), z))
+    return loft(flater, ruled=False)
+
+
+def holrom_loft():
+    h = F["holrom"]
+    S = seksjonar_kropp()
+    v = K["skal"]["vegg"]
+    zs = [z for z in sorted(S) if z >= h["golv_z"]]
+    flater = [seksjonsflate(forskove(S[zs[0]], -v), h["golv_z"])] + [seksjonsflate(forskove(S[z], -v), z) for z in zs[1:]]
+    topp = S[zs[-1]]
+    for z, d in h["kappe"]:
+        flater.append(seksjonsflate(forskove(topp, d), z))
+    return loft(flater, ruled=False)
 
 
 def linsetonne():
     L = F["linse"]
     ay, az = K["akse"]["y"], K["akse"]["z"]
-    c = Pos(L["x"][0], ay, az) * Rot(0, 90, 0) * Cone(L["r"][0], L["r"][1], L["x"][1] - L["x"][0], align=(Align.CENTER, Align.CENTER, Align.MIN))
-    return fillet(c.edges().group_by(Axis.X)[-1], L["front_fillet"])
+    pr = L["profil"]
+    prof = Polyline((pr[0][0], 0), *[(x, r) for x, r in pr], (pr[-1][0], 0), close=True)
+    k = revolve(make_face(prof), Axis.X)
+    k = Pos(0, ay, az) * k
+    return fillet(k.edges().group_by(Axis.X)[-1], L["front_fillet"])
 
 
-def royr(p, r):
-    sti = Spline(*[tuple(q) for q in p])
-    return sweep(Plane(origin=sti @ 0, z_dir=sti % 0) * Circle(r), sti, transition=Transition.ROUND)
+def royr(p, r, b=None):
+    sti = Spline(*[tuple(float(v) for v in q) for q in p])
+    pl = Plane(origin=sti @ 0, z_dir=sti % 0)
+    sek = pl * (Ellipse(r, b) if b else Circle(r))
+    return sweep(sek, sti, transition=Transition.ROUND)
 
 
 def sokarblokk():
     b = F["sokar"]
     k = Box(b["x"][1] - b["x"][0], b["y"][1] - b["y"][0], b["z"][1] - b["z"][0], align=(Align.MIN, Align.MIN, Align.MIN)).moved(Pos(b["x"][0], b["y"][0], b["z"][0]))
-    return fillet([e for e in k.edges() if e.center().Z > F["kropp"]["topp_z"] - 1], b["fillet"])
+    return fillet([e for e in k.edges() if e.center().Z > b["z"][0] + 1], b["fillet"])
 
 
 def syl(cx, cy, r, z0, z1):
@@ -64,27 +96,27 @@ def knappboss():
 
 
 def bygg_form():
-    om = omriss()
-    k = kropp_blokk(om)
-    delar = {"linse": linsetonne(), "sokar": sokarblokk(), "hjulboss": hjulboss(), "knappboss": knappboss()}
-    delar.update({p["namn"]: royr(p["punkt"], p["r"]) for p in F["royr"]})
+    k = kropp_loft()
+    tid("kropp-loft")
+    delar = {"kropp": k, "linse": linsetonne(), "sokar": sokarblokk(), "hjulboss": hjulboss(), "knappboss": knappboss()}
+    delar.update({p["namn"]: royr(p["punkt"], p["r"], p.get("b")) for p in F["royr"]})
     tid("delar")
+    u = k
     for n, d in delar.items():
-        for_ = set(k.edges())
-        k = k + d
-        if n in F.get("fillet_overgang", []):
-            nye = [e for e in k.edges() if e not in for_ and not any(e.is_same(b) for b in d.edges())]
-            try:
-                k = fillet(nye, F["overgang_fillet"])
-            except Exception as ex:
-                print("overgangsfillet feila for", n, ex)
+        if n == "kropp":
+            continue
+        u2 = u + d
+        if not u2.is_valid or len(u2.solids()) != 1:
+            u2 = u2.fix()
+            print("  fix etter", n, "gyldig", u2.is_valid, "solidar", len(u2.solids()))
+        u = u2
     tid("union")
-    return k, om, delar
+    return u, delar
 
 
 if __name__ == "__main__":
-    k, _, _ = bygg_form()
-    print("gyldig", k.is_valid, "volum", round(k.volume / 1000, 1), "cm3", "flater", len(k.faces()))
+    k, delar = bygg_form()
+    print("gyldig", k.is_valid, "volum", round(k.volume / 1000, 1), "cm3", "flater", len(k.faces()), "solidar", len(k.solids()))
     ut = HER.parent / "print" / "cad"
     ut.mkdir(exist_ok=True)
     export_stl(k, ut / "form.stl", tolerance=0.02, angular_tolerance=0.15)
