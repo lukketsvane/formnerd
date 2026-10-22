@@ -1,0 +1,25 @@
+{
+  "name": "f09-penrose",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea PENROSE PROCESS, energy stolen from a spinning black hole: a flat oval halo, the ergosphere, rings the lens. A slim tube comes over the top from the right, enters the halo and splits in a Y: one thin branch spirals into the lens rim and vanishes, the other escapes with more energy, swelling to a fat 14 mm tube that drops down the grip end as a grip column, so the hand closes round a cylinder. It wraps under the bottom and up the back as thumb rest, ending in a top-left corner eyelet; the shutter sits in a ribbed collar on the swelling branch, switch recessed beside it. image[2] = tube camera, grip cylinder, top bridge. image[3] = sketch, top tube and cylinder grip. image[4] = lensed disk, for the halo. image[5] = ribbed ring, red index. Halo ticks, vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_c3ec3d88-edbf-42b5-a235-7d4e1cf4f461",
+      "file_7743f505-cde1-4bed-984f-4f426e0a1bbd",
+      "file_fae54ac4-aa17-4461-b472-e00a034fc1a0",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+    ]
+  },
+  "task_id": "ed25150e-55b0-4dc5-93a3-ff081fd08f4c",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f09-penrose/bilete.png",
+      "sha256": "c85d7d20c49d888f9d8a74e259319aa7e1453e9eabc0ef6c9e476f8b360c5582"
+    }
+  }
+}

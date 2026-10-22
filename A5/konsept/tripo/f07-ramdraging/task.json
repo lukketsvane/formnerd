@@ -1,0 +1,25 @@
+{
+  "name": "f07-ramdraging",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "3:4",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea FRAME DRAGGING, a spinning black hole twisting space: three thick satin light-grey tubes wind round the matte black core as a helix, calm and parallel at the bottom, a quarter turn up the left grip side, then dragged tight into a whirl round the lens ring. The twist is the grip: diagonal grooves between tubes follow the slant of fingers closing round an upright body, three finger channels. Tube ends rise as a collar round the shutter, a flat ring foot frames the USB-C so it stands in a dock, one tube end loops out at the bottom rear corner as eyelet; ribbed thumb pad on the back. image[2] = upright soft tube camera. image[3] = lines bending round a form, for the twist. image[4] = field-line grooves on the core. image[5] = ribbed ring with red index, for the lens. Engraved ticks, fine vents, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_e12f8b74-f4c7-4202-a738-157a691825be",
+      "file_a295e5ff-fe15-4313-a78d-e597f3e21352",
+      "file_e49d3fd7-4254-42c4-94b4-189e7510a982",
+      "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+    ]
+  },
+  "task_id": "81434d98-e6ae-44de-92ac-4fde8caeaad1",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f07-ramdraging/bilete.png",
+      "sha256": "bdaf1f8f0082233bdb868ab1736e6c402c714f59d32bef00fd55daf96d9c1060"
+    }
+  }
+}

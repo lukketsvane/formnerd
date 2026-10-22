@@ -1,0 +1,24 @@
+{
+  "name": "f12-akkresjonsplate",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea ACCRETION PLATE: a thick sculpted matte black top plate is the accretion disk seen edge-on, floating over a graphite body on a recessed satin grey neck. Thick over the grip, it thins to a sharp chamfered blade toward the lens, with a half-circle bitten out above the lens ring: the disk ends where light never returns. Like a quick-release plate it carries: knurled shutter collar, slide switch in a pocket between diamond-knurled pads, two red tabs, engraved edge ticks, the charge light pipe as a green vial. image[2] = sculpted top plate floating over a dark body on a satin neck. image[3] = knurled pads, red tabs, edge scale, bubble level, cam lever. image[4] = black sphere, thin bright disk edge-on. Cam lever on the left end closing the program port, bottom vents, grip grooves front left. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_f52a511c-664e-4125-bec2-6ca83eacf663",
+      "file_a2641043-9d07-4e93-9526-a0eec08aab81",
+      "file_fae54ac4-aa17-4461-b472-e00a034fc1a0"
+    ]
+  },
+  "task_id": "29bae3b8-4208-4947-b07f-6179fa9792e2",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f12-akkresjonsplate/bilete.png",
+      "sha256": "26f7d2eea01c7e0a2ff4c638c76f8b634bf3216423f8b0e7e223c1b7b38ece69"
+    }
+  }
+}

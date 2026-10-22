@@ -1,0 +1,24 @@
+{
+  "name": "f01-strekfelt",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea LINE FIELD, lensing drawn as in image[2]: a crisp matte black block whose front, top and grip end carry one continuous field of fine raised ridges with light-grey crests. Over the grip they stand straight and vertical at 2.4 mm pitch as grip ribs; toward the lens they bow round it and crowd to 0.6 mm pitch until they fuse into a solid black band hugging the ring: light cannot escape. On top they part round the shutter collar like round a smaller mass; flash window and two light-pipe dots sit where lines open. image[3] = such ridges as a real moulded surface. image[4] = ribbed ring with red index triangle, for the lens ring; one red ridge is the index line. Vent slots cut in the bottom valleys, plug cover with exhaust slots on the left end, corner eyelet, shadow-gap seam at the back. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_e49d3fd7-4254-42c4-94b4-189e7510a982",
+      "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+    ]
+  },
+  "task_id": "d66460ff-d4ed-436b-aaab-6eb32edf00fa",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f01-strekfelt/bilete.png",
+      "sha256": "c15db94901c731ecdc3a00693eb1caf7438a6478732eb97503428ad85311bc72"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "f10-samansmelting",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "4:3",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized camera, 57 x 39 x 33 mm, concept ENTROPY: light reaching a black hole. image[1] = exact block and layout, keep it: SMALL 16 mm lens ring right of centre (a quarter of the width), flash window upper left, shutter and recessed switch on top left over the grip, USB-C and microSD on the right side. Idea MERGER, two black holes merging, radiating gravitational waves: the lens ring and the flash window are the two holes. Round them satin light-grey tubes lie nested as two-centred contour lines, merging into one peanut loop, then rounder waves. The waves chirp: thin tight rings at the lens, widening to finger-thick tubes at the edges. The outer tubes wrap the grip end as stacked tubes with seats for middle and ring finger, roll over the top to frame shutter and switch, cross the back as thumb ridges and end as fine grooves round USB-C and microSD. Matte black core between tubes, one red index. image[2] = nested soft tubes on a camera. image[3] = two-centred concentric grooves. image[4] = line field bending round a form. image[5] = engraved scales. Vents between tubes, sliding back door. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_52de5e86-c70f-418b-95ce-599b04d896ec",
+      "file_5c0afe65-2fca-42ef-a7d7-0cd777669aad",
+      "file_4b91ceb6-99e3-4a1d-ac99-caeb815875ed",
+      "file_e49d3fd7-4254-42c4-94b4-189e7510a982",
+      "file_6e485571-80ce-4efe-a818-32f81764eaea"
+    ]
+  },
+  "task_id": "413f8526-c72b-469d-ae72-a3fa0c72f9c3",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f10-samansmelting/bilete.png",
+      "sha256": "c7c15b57374d8bafd7cee8cfeba8462879a08572324543a2834fbb0bec927f2a"
+    }
+  }
+}

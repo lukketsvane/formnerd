@@ -1,0 +1,24 @@
+{
+  "name": "f03-jet",
+  "endpoint": "generation/image-to-image",
+  "body": {
+    "model": "banana_pro",
+    "aspect_ratio": "3:4",
+    "prompt": "Photoreal industrial-design studio render of one palm-sized upright camera, 39 W x 57 H x 33 D mm, concept ENTROPY: light reaching a black hole. image[1] = exact upright block and layout, keep it: SMALL 16 mm lens ring upper right, flash window upper left, shutter top front-left, slide switch top rear right, USB-C in the bottom. Idea RELATIVISTIC JET: matte black body = the black hole, lens = its centre. Along the spin axis a slender satin light-grey column set into the front runs from the lens up over the top edge and down to the bottom edge: two jets fired from the poles. Its raised ring knots, tight near the lens and spreading toward the ends, are finger ribs. A thin knife-edge disc crosses it horizontally at the lens, an accretion disk seen edge-on. On top it ends in a machined cap with the slide switch and two light-pipe dots; below in a ribbed foot ring with vent slots round the USB-C, so it stands to charge. image[2] = upright tube body, satin finish. image[3] = vertical machined column with stacked rings. image[4] = ribbed ring with red index triangle, for the lens. Knurled side panel, plug cover, corner eyelet, shadow-gap seam. Rich functional surface detail, printable PLA. One camera centred on pure white, 3/4 front view slightly from above, soft light, sharp. --no text, logos, letters, numbers, screen, hands, strap, extra lenses, big lens barrel, screws",
+    "inputs": [
+      "file_e12f8b74-f4c7-4202-a738-157a691825be",
+      "file_a295e5ff-fe15-4313-a78d-e597f3e21352",
+      "file_f13652ff-8ddb-406c-8192-0f62413d2a07",
+      "file_eb570efd-b927-4c59-ade4-d1835c958cdd"
+    ]
+  },
+  "task_id": "4a043c9d-cbe4-4fbe-9d1f-46ac4f38c3da",
+  "status": "success",
+  "credits": 15.0,
+  "filer": {
+    "generated_image_url": {
+      "sti": "A5/konsept/tripo/f03-jet/bilete.png",
+      "sha256": "e5e92248d87f7c96df60c8ee69411f9df686b73ebc650f418479ba9cd32cfbb0"
+    }
+  }
+}
