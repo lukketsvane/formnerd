@@ -23,8 +23,10 @@ Tripo Workspace: https://studio.tripo3d.ai/workspace/retopology/7fe16741-5e00-44
 - [H3.1 master](tripo/Colani_Lady_Tripo_H31_Master.glb) – original 3D-form, teksturert og uendra
 - [Tripo Smart Mesh, GLB](tripo/Colani_Lady_Tripo_SmartMesh_10k_Quad.glb) – avleidd lett mesh med triangulert quad-topologi
 - [Tripo Smart Mesh, original FBX med teksturar](tripo/Colani_Lady_Tripo_SmartMesh_Quad_FBX_and_textures.zip) – **brukt når ekte quad-topologi trengst**
-- [Redigerbar Blender-scene](tripo/Colani_Lady_Quad_Cage_Edit.blend) – quad-grunnlag for manuell SubD-/overflateretning, ikkje native NURBS eller mekanisk BRep
+- [Redigerbar Blender-scene](tripo/Colani_Lady_Quad_Cage_Edit.blend) – original quad-cage frå FBX, ikkje native NURBS eller mekanisk BRep
+- [Ikkje-destruktiv Catmull-Clark SubD-scene](tripo/Colani_Lady_Quad_SubD_Reference.blend) – original cage bevart med separat SubD-modifikator på nivå 2, framleis ikkje native NURBS
 - [Tripo 3/4-view](preview/01_Tripo_3quarter_frontA.png), [frontriss](preview/03_Tripo_frontA.png), [profil](preview/05_Tripo_side.png)
+- [Glatt SubD 3/4](preview/06_Tripo_SubD_3quarter.png) og [glatt SubD front](preview/07_Tripo_SubD_front.png), rendera frå same referansemesh
 - [Faktisk meshkontroll](tripo/lowpoly_mesh_qa.json) og [FBX-topologikontroll](tripo/fbx/qa_fbx_quads.json).
 
 ## Engineering-kontroll
