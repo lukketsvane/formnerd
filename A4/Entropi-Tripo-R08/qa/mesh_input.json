@@ -1,0 +1,86 @@
+{
+  "source": "A4/arkiv/tripo-a1/mesh/04-smart-retopology-preview.glb",
+  "bounds_min": [
+    -0.2584710121154785,
+    -0.4994359016418457,
+    -0.3716315031051636
+  ],
+  "bounds_max": [
+    0.25998666882514954,
+    0.4990691840648651,
+    0.3723088502883911
+  ],
+  "dimensions": [
+    0.518457680940628,
+    0.9985050857067108,
+    0.7439403533935547
+  ],
+  "objects": [
+    {
+      "name": "tripo_part_0",
+      "verts": 2927,
+      "faces": 5853,
+      "triangles": 5853
+    },
+    {
+      "name": "tripo_part_1",
+      "verts": 1564,
+      "faces": 3124,
+      "triangles": 3124
+    },
+    {
+      "name": "tripo_part_10",
+      "verts": 297,
+      "faces": 590,
+      "triangles": 590
+    },
+    {
+      "name": "tripo_part_2",
+      "verts": 1232,
+      "faces": 2460,
+      "triangles": 2460
+    },
+    {
+      "name": "tripo_part_3",
+      "verts": 796,
+      "faces": 1588,
+      "triangles": 1588
+    },
+    {
+      "name": "tripo_part_4",
+      "verts": 614,
+      "faces": 1220,
+      "triangles": 1220
+    },
+    {
+      "name": "tripo_part_5",
+      "verts": 592,
+      "faces": 1180,
+      "triangles": 1180
+    },
+    {
+      "name": "tripo_part_6",
+      "verts": 343,
+      "faces": 682,
+      "triangles": 682
+    },
+    {
+      "name": "tripo_part_7",
+      "verts": 380,
+      "faces": 756,
+      "triangles": 756
+    },
+    {
+      "name": "tripo_part_8",
+      "verts": 527,
+      "faces": 1050,
+      "triangles": 1050
+    },
+    {
+      "name": "tripo_part_9",
+      "verts": 268,
+      "faces": 532,
+      "triangles": 532
+    }
+  ]
+}

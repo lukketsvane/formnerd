@@ -1,0 +1,16 @@
+{
+  "rear_case_dimensions_mm": [
+    101.4,
+    46.5,
+    70.8
+  ],
+  "powerbank_dimensions_mm": [
+    94,
+    15,
+    62
+  ],
+  "minimum_nominal_sidewall_mm": 2.5,
+  "case_nonmanifold_edges": 0,
+  "case_volume_mm3": 46277.44,
+  "status": "WIP CAD; fit and external intersections require check"
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "part": "A0_Tripo_quads_organic_front",
+    "before": {
+      "faces": 16076,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 67185.03
+    },
+    "after": {
+      "faces": 7121,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 23178.81
+    },
+    "retained_fraction": 0.345
+  },
+  {
+    "part": "tripo_part_3",
+    "before": {
+      "faces": 1588,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 19521.99
+    },
+    "after": {
+      "faces": 860,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 4754.74
+    },
+    "retained_fraction": 0.2436
+  },
+  {
+    "part": "tripo_part_4",
+    "before": {
+      "faces": 1220,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 21048.58
+    },
+    "after": {
+      "faces": 621,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 8376.05
+    },
+    "retained_fraction": 0.3979
+  },
+  {
+    "part": "tripo_part_5",
+    "before": {
+      "faces": 1180,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 28868.01
+    },
+    "after": {
+      "faces": 252,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 6271.74
+    },
+    "retained_fraction": 0.2173
+  },
+  {
+    "part": "tripo_part_6",
+    "before": {
+      "faces": 682,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 2929.63
+    },
+    "after": {
+      "faces": 508,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 2456.5
+    },
+    "retained_fraction": 0.8385
+  },
+  {
+    "part": "tripo_part_7",
+    "before": {
+      "faces": 756,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 1719.12
+    },
+    "after": {
+      "faces": 611,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 1225.81
+    },
+    "retained_fraction": 0.713
+  },
+  {
+    "part": "tripo_part_8",
+    "before": {
+      "faces": 1050,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 8929.31
+    },
+    "after": {
+      "faces": 890,
+      "edges_nonmanifold": 0,
+      "volume_mm3": 7859.98
+    },
+    "retained_fraction": 0.8802
+  }
+]
