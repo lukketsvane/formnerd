@@ -1,29 +1,51 @@
-# Colani Stereo R06 | Tripo-formgrunnlag
+# FormNerd · Colani Stereo · Tripo R01
 
-Status: Tripo H3.1-master og Tripo Smart Mesh Quad-retopologi er genererte. Berre digitalt formgrunnlag, ikkje produksjonsgodkjent.
+**Status:** Faktisk Tripo-baserte formmodellar er ferdige og eksporterte. Ikkje mekanisk produksjonsklar. Dette er ein ny Tripo-grein, ikkje same geometri som den tidlegare parametriske R05.
 
-## Faktiske genereringsfiler
+## Kjelda og modellkøyring
 
-- `tripo/Colani_Lady_Tripo_H31_Master.glb`: original, teksturert Tripo-master (61,7 MB), lagra lokalt på PC. H3.1 Best Quality, 55 Studio-kredittar, 1 958 283 trekantar.
-- `tripo/Colani_Lady_Tripo_Retopo_10k.glb`: Tripo Smart Mesh Quad, mål 10 000; resultat 9 750 quads i Tripo UI. Eksportert GLB viser 18 584 trekantar.
-- `tripo/Colani_Lady_Tripo_Retopo_10k_welded.glb`: Blender sveisa arbeidskopi utan materialteksturar.
-- `tripo/welded_topology_qa.json`: topologikontroll. Det er att 98 opne kantar etter sveising; fila er førebels ikkje klar for printing.
-- `tripo/shape_cross_sections.json`: rissbaserte grensar langs høgda til Tripo-lågpolymodellen.
+Referanse: foto av Canon Colani-kameraet, originalbilete brukt i Tripo Studio, med kjelde `https://images.navigart.fr/1000/4N/43/4N43150.jpg`. Fotografi og opphavleg design er tredjepartsmateriale, ikkje eit nytt originaldesign.
 
-Tripo-produktet er ikkje automatisk ein NURBS/BRep-solid. Bevar form-masteren; konstruer nøyaktige passflater, batterilomme, optiske hol, korthaldarar, skruar og USB-opningar separat. GLB-en har modellinterne einingar; mål i millimeter må fastsetjast eksplisitt etter komponentpakking.
+Tripo Studio, 23. oktober 2026:
 
-## Mekanisk pakke som skal få plass
+| Trinn | Utført og verifisert |
+| --- | --- |
+| H3.1 Best Quality image-to-3D | 55 kredittar, detaljert teksturert GLB, 1 958 283 trekantar, 61 702 316 byte |
+| Smart Mesh P1.0 retopologi | 40 kredittar, quad-topologi med 10 000 target |
+| Native FBX-mesh frå Tripo | 9 750 flater: 8 834 quads + 916 trekantar, 9 312 hjørne |
+| Nedlasta GLB | 18 584 triangulerte flater og 5 220 924 byte |
+| Sum | **95 Studio-kredittar** |
 
-- Linocell 5000 mAh: 94 × 62 × 15 mm.
-- To ESP32-CAM med OV2640, nominelt 27 × 40,5 mm PCB kvar, parallelle kameraaksar.
-- ESP32-CAM-MB-brikka blir berre brukt til programmering, ikkje permanent montert.
-- To optiske opningar og USB-C/USB-A frå sjølve powerbanken må integrerast, med dokumentert klaring.
-- Print til Bambu Lab P1S må ha lukka skal, nøyaktige grensesnitt og verifisert slicing.
+Tripo Workspace: https://studio.tripo3d.ai/workspace/retopology/7fe16741-5e00-44ed-9210-318d7989ab35
 
-## Revisjonsportar
+## Filer
 
-**Engineering:** Førebels ikkje bestått, opne mesh-kantar, elektronikk og port/ledning ikkje prøvde.
+- [H3.1 master](tripo/Colani_Lady_Tripo_H31_Master.glb) – original 3D-form, teksturert og uendra
+- [Tripo Smart Mesh, GLB](tripo/Colani_Lady_Tripo_SmartMesh_10k_Quad.glb) – avleidd lett mesh med triangulert quad-topologi
+- [Tripo Smart Mesh, original FBX med teksturar](tripo/Colani_Lady_Tripo_SmartMesh_Quad_FBX_and_textures.zip) – **brukt når ekte quad-topologi trengst**
+- [Redigerbar Blender-scene](tripo/Colani_Lady_Quad_Cage_Edit.blend) – quad-grunnlag for manuell SubD-/overflateretning, ikkje native NURBS eller mekanisk BRep
+- [Tripo 3/4-view](preview/01_Tripo_3quarter_frontA.png), [frontriss](preview/03_Tripo_frontA.png), [profil](preview/05_Tripo_side.png)
+- [Faktisk meshkontroll](tripo/lowpoly_mesh_qa.json) og [FBX-topologikontroll](tripo/fbx/qa_fbx_quads.json).
 
-**Industridesign:** Tripo-masteren fangar hovudformene i originalfotoet, men det er framleis ikkje vist at den tekniske pakka kan plasserast utan å svekkje silhuetten. Overflata skal vurderast uavhengig av teknisk passform.
+## Engineering-kontroll
 
-Arbeidsgrunnlag: foto av Canon Colani-referansen frå brukaren, tidlegare R05-konstruksjon og Tripo Studio-jobben `7fe16741-5e00-44ed-9210-318d7989ab35`.
+**FAIL / prototypestadium.** Den originale quad-FBX har 98 opne kantar og 3 ekstra ikkje-manifolde kantar (101 totalt). GLB-en har UV-duplikat som kan sveises; etter sveising står dei same 98+3 feilane att. Ho er difor ikkje vasstett. Avleidd reparasjonsarbeid må vurderast for topologiske og visuelle endringar før det kan brukast i konstruksjonen. Sjølv lukka mesh ville ikkje åleine stadfeste monterbarheit, materialtjukkleik, toleransar eller funksjon.
+
+Den genererte forma har **ikkje dokumentert mm-skala**. Berekna ytre mål, kollisjonar eller radier frå Tripo aleine må ikkje presenterast som målte fysiske delar.
+
+Teknisk må vidare konstruksjon romme Linocell-powerbank 94 × 62 × 15 mm, to ESP32-CAM-modular og to optiske opningar med stereobase som kan målast. ESP32-CAM-MB-programmeringsmodulane bør ikkje stå permanent i det tronge kamerahuset. USB-A og USB-C må få separate reelle opningar i sideveggen, og powerbanken må vere uttakbar. Lengd på reelle pluggkontaktar, leidning, brytar og optisk modul må målast fysisk.
+
+## Industridesign-kontroll
+
+**PASS som formreferanse, IKKJE som ferdig produkt.** Ekte Tripo-overflate tek vare på bølgjene, den ujamne visuelle vekta og den asymmetriske Colani-silhuetten som var borte i tidlegare R05. Genereringa har samstundes teke med tilfeldig tekstrelieff, optiske artefaktar, merkeelement, knapperelieff og AI-generert skjult geometri. Desse må formgivast om til eigne produksjonsflater. Den ikkje-symmetriske originalforma må tilpassast ei ny ekte stereokamera-konstruksjon og konseptet entropi.
+
+### Rett vidare flyt
+
+1. Bevar master og quad-FBX uendra som designkjelde.
+2. Rydd topologi i **eigen avleidd kopi**, kontroller avvik mot master.
+3. Rekonstruer velde framflater som G2-kontinuerlege CAD-/NURBS-flater eller bruk dokumentert SubD-meshhybrid. Quad-mesh er ikkje automatisk NURBS/STEP.
+4. Bygg ei målsett mekanisk indre ramme og elektronikkmodell rundt dei faktiske komponentane.
+5. Modellér front-/bakskal, begge linsehol, sideportar, låsing og knappen, kontroller veggar/kollisjonar/monteringsrekkje.
+6. Først då: printprøve for powerbank og kamera, P1S slicing og IKEA-liknande rettleiing frå faktisk geometrisk samanstilling.
+
+Ingen output i denne mappa er stadfesta som komplett montert stereokamera eller produksjonsgodkjend P1S-del.

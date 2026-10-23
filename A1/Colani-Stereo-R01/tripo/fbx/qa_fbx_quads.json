@@ -1,0 +1,19 @@
+{
+  "source": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\Colani-Stereo-R01\\tripo\\fbx\\tripo_convert_ce1a9124-59d0-4c61-9f8c-5e9afef4786c.fbx",
+  "parts": [
+    {
+      "name": "tripo_node_ce1a9124",
+      "raw": {
+        "faces": 9750,
+        "verts": 9312,
+        "quads": 8834,
+        "tris": 916,
+        "edges_open": 98,
+        "edges_nonmanifold": 101
+      },
+      "welded_verts": 9312,
+      "welded_boundary_edges": 98,
+      "welded_nonmanifold_edges": 101
+    }
+  ]
+}
