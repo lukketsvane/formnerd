@@ -1,0 +1,94 @@
+{
+  "project": "FormNerd stereo R01, selected IMG_8761(1).jpeg",
+  "checked_date": "2026-10-22",
+  "units": "mm",
+  "scope": "Primary-source nominal hardware dimensions and explicit remaining assumptions. No measurements of the user's physical boards were taken.",
+  "sources": [
+    {
+      "id": "waveshare-esp32-cam",
+      "publisher": "Waveshare",
+      "url": "https://www.waveshare.com/ESP32-CAM.htm",
+      "source_type": "manufacturer product page",
+      "access": "Manufacturer page content returned by web search; direct open returned HTTP 403.",
+      "claims": {
+        "published_module_dimensions_mm": [40.5, 27.0, 4.5],
+        "camera": "OV2640",
+        "included_adapter": "ESP32-CAM-MB micro-USB to serial adapter"
+      },
+      "limits": "Published module dimensions do not establish the full envelope of a stacked CAM, MB, headers, camera and connected USB plug. Exact equivalence to the user's clone is unverified."
+    },
+    {
+      "id": "joy-it-esp32-cam",
+      "publisher": "Joy-IT",
+      "url": "https://joy-it.net/en/products/SBC-ESP32-Cam",
+      "source_type": "manufacturer product page",
+      "access": "Opened and read successfully.",
+      "claims": {
+        "published_module_dimensions_mm": [27.0, 40.5, 4.5],
+        "camera": "2MP OV2640",
+        "supply_voltage_V": 5
+      },
+      "limits": "Nominal candidate dimensions, not measurements of the user's individual boards."
+    },
+    {
+      "id": "joy-it-compatible-programmer",
+      "publisher": "Joy-IT",
+      "url": "https://www.joy-it.net/en/products/SBC-ESP32-CP",
+      "source_type": "manufacturer product page",
+      "access": "Opened and read successfully.",
+      "claims": {
+        "compatible_board": "SBC-ESP32-CAM",
+        "pin_pitch_mm": 2.54,
+        "pin_row_spacing_mm": 22.86,
+        "programmer_dimensions_mm": [38, 27, 12],
+        "connector": "USB Type-C"
+      },
+      "limits": "This is a different programmer from the user's photographed micro-USB ESP32-CAM-MB. Its external dimensions and connector position MUST NOT be used for that MB. Pitch and row spacing are a compatible nominal reference, not verified measurements of the exact clone."
+    },
+    {
+      "id": "omnivision-ov2640",
+      "publisher": "OmniVision Technologies",
+      "distributor": "Espressif Systems",
+      "url": "https://dl.espressif.com/dl/schematics/Camera_OV2640.pdf",
+      "source_type": "manufacturer datasheet hosted by chip-platform manufacturer",
+      "version": "2.2, February 23, 2007",
+      "pages_used": [1],
+      "access": "Opened and read successfully.",
+      "claims": {
+        "output_array_pixels": [1600, 1200],
+        "pixel_size_um": [2.2, 2.2],
+        "image_area_mm": [3.590, 2.684],
+        "optical_format": "1/4 inch"
+      },
+      "limits": "Optical format is not lens-barrel diameter. The sensor datasheet does not establish the supplied lens module's outer envelope, focal length, field of view, optical-center position or flex dimensions."
+    }
+  ],
+  "observations_from_user_photos": {
+    "cam_header_rows": 2,
+    "contacts_per_row": 8,
+    "mb_connector": "micro-USB",
+    "mb_buttons": 2,
+    "mb_revision_reading": "appears V0.9; not independently confirmed"
+  },
+  "cad_input_classification": {
+    "cam_board_nominal_mm": {"value": [40.5, 27.0], "status": "published nominal candidate, exact user's board unmeasured"},
+    "pin_pitch_mm": {"value": 2.54, "status": "compatible manufacturer reference"},
+    "pin_row_spacing_mm": {"value": 22.86, "status": "compatible manufacturer reference"},
+    "case_width_mm": {"value": 140, "status": "design scale assumption from existing source-transform.json, not a measurement"},
+    "mb_external_dimensions": {"value": null, "status": "unverified exact variant"},
+    "cam_mb_stacked_height": {"value": null, "status": "unverified"},
+    "usb_center_and_plug_volume": {"value": null, "status": "unverified"},
+    "camera_lens_envelope_and_optical_axis": {"value": null, "status": "unverified"},
+    "camera_flex_route_and_bend_radius": {"value": null, "status": "unverified"},
+    "battery_envelope": {"value": null, "status": "not specified"},
+    "usb_c_power_and_charge_hardware": {"value": null, "status": "not specified"},
+    "trigger_switch_envelope_and_travel": {"value": null, "status": "not specified"}
+  },
+  "assembly_requirements": [
+    "Keep unverified board, stack, lens and connector dimensions parameterized.",
+    "Check fit using small coupons before printing the complete enclosure.",
+    "Check full image field for vignetting after fitting both lens adapters.",
+    "Do not treat two identical ESP32 boards as evidence of synchronized exposure.",
+    "The project brief's 30 mm lens requirement is not proven by an ornamental 30 mm ring around a small ESP32 lens."
+  ]
+}

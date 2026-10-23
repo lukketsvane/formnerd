@@ -1,0 +1,89 @@
+{
+  "objects": [
+    {
+      "id": "P03",
+      "path": "cad/P03.stl",
+      "color": "#9fa4a9",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P08",
+      "path": "cad/P08.stl",
+      "color": "#b7bbc0",
+      "translation": [
+        0,
+        17,
+        16
+      ]
+    },
+    {
+      "id": "P09",
+      "path": "cad/P09.stl",
+      "color": "#b7bbc0",
+      "translation": [
+        0,
+        17,
+        16
+      ]
+    },
+    {
+      "id": "H07",
+      "path": "cad/H07.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        26,
+        16
+      ]
+    },
+    {
+      "id": "H08",
+      "path": "cad/H08.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        26,
+        16
+      ]
+    },
+    {
+      "id": "H09",
+      "path": "cad/H09.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        26,
+        16
+      ]
+    },
+    {
+      "id": "H10",
+      "path": "cad/H10.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        26,
+        16
+      ]
+    }
+  ],
+  "camera": {
+    "direction": [
+      -1,
+      2,
+      1
+    ]
+  },
+  "margin": 0.12,
+  "mode": "line",
+  "size": [
+    2000,
+    1651
+  ],
+  "supersample": 1.35,
+  "line_width": 1.6505402768506225
+}

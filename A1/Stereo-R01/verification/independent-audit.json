@@ -1,0 +1,2069 @@
+{
+  "audit_version": 1,
+  "source_hashes": {
+    "source/build.py": "1389e0ef189c3f4c532c7086f07a8338ef7754243ef77b52fa4979b1133d56a0",
+    "cad/assembly-manifest.json": "2a9c8c9104b2e21c872d4df9680633fabc1875e39dbce16c4f0cebdd2b266943",
+    "cad/assembly.glb": "bfb8f848faa6d337d8db0d54049597dbe1fb6dbb91b02aa614478cb3607d0e91",
+    "reference/outer-regularized.glb": "9dc9bda10e060ed55245b2f06d6c332c4f6c9fd777e250789c83ff3d63ec9167",
+    "cad/P04.stl": "05a2123974be82db366aafbd2c0dfa6ee9002653e6a32fe860a100b51d807992",
+    "cad/P05.stl": "e189f4e754b8c7b5e6ed1011de1676febf0665465860b84016fd4ae28def8a5d",
+    "cad/P08.stl": "a33fbe74eb95ca7e28880d48605451acab44ce3d5a687f33c89384ac52734cf1",
+    "cad/P09.stl": "a8c176063e2c0a9c38593984186ef06dac099a586d738863d4f2f398692e095e",
+    "cad/P06.stl": "76373c4b5a3c095915d8495d0694ed91c3558322df4d3b942a795b1fc90c30df",
+    "cad/P01.stl": "2f79eaef888d52f99ea65a674806a3cf6bd670516aa13a81af0b90997ad5e919",
+    "cad/P02.stl": "8da7f4dacb2ebaf925e05c0ad5e43f94a441ee8897b72a2f38f1dd78a54a8e0d",
+    "cad/P03.stl": "768f5176d05b6918c294d573ad687c332386ded772d64e1e0216b1a1d1363991",
+    "cad/P10.stl": "ad4c22859ddbd38c16008aee5c8a1b58a832ab60a471437bba5857cde92cd7d3"
+  },
+  "revision": "stereo-final-r01",
+  "units": "mm",
+  "intersection_reporting_threshold_mm3": 0.01,
+  "printed_topology": [
+    {
+      "id": "P01",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 59117.41390766149,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    },
+    {
+      "id": "P02",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 50829.356082788814,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    },
+    {
+      "id": "P03",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 24024.68104913644,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    },
+    {
+      "id": "P04",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 5446.230040614514,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    },
+    {
+      "id": "P05",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 5446.229926692579,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    },
+    {
+      "id": "P06",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 1646.5125616195558,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    },
+    {
+      "id": "P08",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 659.7274329087253,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    },
+    {
+      "id": "P09",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "volume_mm3": 659.7274310145959,
+      "positive_components_above_0_01_mm3": 1,
+      "manifold_status": "Error.NoError"
+    }
+  ],
+  "stl_roundtrip_all_print_parts_including_coupon": [
+    {
+      "id": "P04",
+      "path": "cad/P04.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 5446.230040614514,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P05",
+      "path": "cad/P05.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 5446.229926692579,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P08",
+      "path": "cad/P08.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 659.7274329087253,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P09",
+      "path": "cad/P09.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 659.7274310145959,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P06",
+      "path": "cad/P06.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 1646.512561619554,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P01",
+      "path": "cad/P01.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 59117.41390842859,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P02",
+      "path": "cad/P02.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 50829.35608278882,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P03",
+      "path": "cad/P03.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 24024.68104913644,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    },
+    {
+      "id": "P10",
+      "path": "cad/P10.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 5248.509235172313,
+      "bounds_vs_manifest_max_abs_mm": 0.0
+    }
+  ],
+  "stl_roundtrip_failures": [],
+  "unexpected_assembled_intersections": [],
+  "intentional_thread_envelope_intersections": [
+    {
+      "a": "H01",
+      "b": "N01",
+      "intersection_mm3": 5.185003,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H02",
+      "b": "N02",
+      "intersection_mm3": 5.185003,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H03",
+      "b": "N03",
+      "intersection_mm3": 5.185003,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H04",
+      "b": "N04",
+      "intersection_mm3": 5.185011,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H05",
+      "b": "N05",
+      "intersection_mm3": 5.185008,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H06",
+      "b": "N06",
+      "intersection_mm3": 5.185016,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H07",
+      "b": "N07",
+      "intersection_mm3": 5.185013,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H08",
+      "b": "N08",
+      "intersection_mm3": 5.185012,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H09",
+      "b": "N09",
+      "intersection_mm3": 5.185013,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    },
+    {
+      "a": "H10",
+      "b": "N10",
+      "intersection_mm3": 5.185009,
+      "reason": "Nominal smooth screw shaft intersects nominal nut bore; thread engagement intentionally approximated."
+    }
+  ],
+  "translation_checks": [
+    {
+      "name": "loaded_cassette_from_rear",
+      "moving": [
+        "P03",
+        "P08",
+        "P09",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "PCB1_bare_nominal",
+        "PCB2_bare_nominal"
+      ],
+      "fixed": [
+        "P01",
+        "P04",
+        "P05",
+        "P06",
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N06"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Cassette is preloaded outside housing; H05/H06 are installed after seating. Bare PCB approximation only.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.000113
+        },
+        {
+          "offset_mm": 0.25,
+          "intersection_mm3": 0.000816
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.001253
+        },
+        {
+          "offset_mm": 0.75,
+          "intersection_mm3": 0.001436
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.001402
+        },
+        {
+          "offset_mm": 1.5,
+          "intersection_mm3": 0.000828
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 1.1e-05
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.000301
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 5.0,
+          "intersection_mm3": 2e-06
+        },
+        {
+          "offset_mm": 7.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 30.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 35.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 50.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 60.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.001436,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "rear_shell_insertion",
+      "moving": [
+        "P02"
+      ],
+      "fixed": [
+        "P04",
+        "P05",
+        "P08",
+        "P09",
+        "P06",
+        "P01",
+        "P03",
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "H07",
+        "N07",
+        "H08",
+        "N08",
+        "H09",
+        "N09",
+        "H10",
+        "N10",
+        "H05",
+        "N05",
+        "H06",
+        "N06",
+        "PCB1_bare_nominal",
+        "PCB2_bare_nominal"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Closure screws are absent until rear shell is seated; checks capture fork and loaded cassette.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 5.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 30.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 35.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 50.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 60.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "P04_collar_insertion",
+      "moving": [
+        "P04"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Rear-to-front axial insertion before cassette installation.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 5.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 30.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 35.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 50.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 60.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "P05_collar_insertion",
+      "moving": [
+        "P05"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Rear-to-front axial insertion before cassette installation.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 5.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 30.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 35.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 50.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 60.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N01_closure_nut_vertical_access",
+      "moving": [
+        "N01"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Z",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "N01/N02 withdraw upward (+Z); N03/N04 withdraw downward (-Z). Tests insertion slot only, not hand/tool access.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 18.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N02_closure_nut_vertical_access",
+      "moving": [
+        "N02"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Z",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "N01/N02 withdraw upward (+Z); N03/N04 withdraw downward (-Z). Tests insertion slot only, not hand/tool access.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 18.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N03_closure_nut_vertical_access",
+      "moving": [
+        "N03"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Z",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "N01/N02 withdraw upward (+Z); N03/N04 withdraw downward (-Z). Tests insertion slot only, not hand/tool access.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -12.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -18.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N04_closure_nut_vertical_access",
+      "moving": [
+        "N04"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Z",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "N01/N02 withdraw upward (+Z); N03/N04 withdraw downward (-Z). Tests insertion slot only, not hand/tool access.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -12.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -18.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N05_carrier_nut_side_access",
+      "moving": [
+        "N05"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "X",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Side-load slot in +X direction, before cassette installation.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 16.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N06_carrier_nut_side_access",
+      "moving": [
+        "N06"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "X",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Side-load slot in +X direction, before cassette installation.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 16.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N07_keeper_nut_front_access",
+      "moving": [
+        "N07"
+      ],
+      "fixed": [
+        "P03"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Front access before boards/keepers are fitted; excludes shell because cassette is outside housing.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -12.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N08_keeper_nut_front_access",
+      "moving": [
+        "N08"
+      ],
+      "fixed": [
+        "P03"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Front access before boards/keepers are fitted; excludes shell because cassette is outside housing.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -12.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N09_keeper_nut_front_access",
+      "moving": [
+        "N09"
+      ],
+      "fixed": [
+        "P03"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Front access before boards/keepers are fitted; excludes shell because cassette is outside housing.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -12.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "N10_keeper_nut_front_access",
+      "moving": [
+        "N10"
+      ],
+      "fixed": [
+        "P03"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Front access before boards/keepers are fitted; excludes shell because cassette is outside housing.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -3.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -4.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -6.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -12.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "shutter_cap_rear_access_at_declared_entry_height",
+      "moving": [
+        "P06"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Y",
+      "base_translation_mm": [
+        0,
+        0,
+        -2.8
+      ],
+      "purpose": "Compound shutter insertion segment 1: slide in from rear at Z offset -2.8 mm.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.75,
+          "intersection_mm3": 1e-06
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 1e-06
+        },
+        {
+          "offset_mm": 2.25,
+          "intersection_mm3": 2e-06
+        },
+        {
+          "offset_mm": 2.5,
+          "intersection_mm3": 5e-06
+        },
+        {
+          "offset_mm": 2.75,
+          "intersection_mm3": 1.2e-05
+        },
+        {
+          "offset_mm": 3.0,
+          "intersection_mm3": 1.2e-05
+        },
+        {
+          "offset_mm": 3.25,
+          "intersection_mm3": 1.3e-05
+        },
+        {
+          "offset_mm": 3.5,
+          "intersection_mm3": 2e-05
+        },
+        {
+          "offset_mm": 3.75,
+          "intersection_mm3": 1.2e-05
+        },
+        {
+          "offset_mm": 4.0,
+          "intersection_mm3": 1.1e-05
+        },
+        {
+          "offset_mm": 4.25,
+          "intersection_mm3": 1.2e-05
+        },
+        {
+          "offset_mm": 4.5,
+          "intersection_mm3": 2.8e-05
+        },
+        {
+          "offset_mm": 4.75,
+          "intersection_mm3": 1.2e-05
+        },
+        {
+          "offset_mm": 5.0,
+          "intersection_mm3": 1.3e-05
+        },
+        {
+          "offset_mm": 5.25,
+          "intersection_mm3": 2.2e-05
+        },
+        {
+          "offset_mm": 5.5,
+          "intersection_mm3": 1.1e-05
+        },
+        {
+          "offset_mm": 5.75,
+          "intersection_mm3": 1.1e-05
+        },
+        {
+          "offset_mm": 6.0,
+          "intersection_mm3": 1.1e-05
+        },
+        {
+          "offset_mm": 6.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 6.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 6.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 7.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 8.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 9.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 9.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 9.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 9.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 11.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 11.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 11.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 11.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 12.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 13.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 13.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 13.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 13.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 14.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 14.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 14.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 14.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 15.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 16.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 16.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 16.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 16.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 17.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 17.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 17.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 17.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 18.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 18.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 18.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 18.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 19.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 19.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 19.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 19.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 21.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 21.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 21.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 21.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 22.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 22.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 22.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 22.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 23.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 23.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 23.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 23.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 24.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 24.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 24.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 24.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 25.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 26.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 26.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 26.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 26.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 27.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 27.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 27.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 27.75,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 28.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 35.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 50.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 60.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 2.8e-05,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "shutter_cap_final_lift",
+      "moving": [
+        "P06"
+      ],
+      "fixed": [
+        "P01"
+      ],
+      "translation_axis": "Z",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Compound shutter insertion segment 2: lift 2.8 mm into assembled position after rear slide.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.2333333333333333,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.4666666666666666,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.7,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -0.9333333333333332,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.1666666666666665,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.4,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.633333333333333,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -1.8666666666666665,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.0999999999999996,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.333333333333333,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.5666666666666664,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": -2.8,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "PCB1_bare_nominal_loading_outside_housing",
+      "moving": [
+        "PCB1_bare_nominal"
+      ],
+      "fixed": [
+        "P03"
+      ],
+      "translation_axis": "Z",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Nominal bare PCB slides downward into empty carrier before keepers are fitted.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 5.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 30.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 45.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    },
+    {
+      "name": "PCB2_bare_nominal_loading_outside_housing",
+      "moving": [
+        "PCB2_bare_nominal"
+      ],
+      "fixed": [
+        "P03"
+      ],
+      "translation_axis": "Z",
+      "base_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "purpose": "Nominal bare PCB slides downward into empty carrier before keepers are fitted.",
+      "method": "discrete sampled translations; reverse offsets describe insertion",
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 0.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 1.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 5.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 10.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 20.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 30.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 40.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_mm": 45.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "max_intersection_mm3": 0.0,
+      "all_sampled_positions_clear": true
+    }
+  ],
+  "failed_sampled_paths": [],
+  "status": "digital_checks_pass_for_tested_nominal_geometry",
+  "limitations": [
+    "Discrete translations do not certify continuous motion or collision-free rotations.",
+    "Bare nominal PCB geometry is not populated ESP32-CAM, MB programmer, camera flex, optics, connectors, cables, battery, switch or electronics.",
+    "Aperture fit is not clearance, tool accessibility, structural strength, tolerance stack, printability, slicing or physical validation.",
+    "Thread envelopes are nominal smooth cylinders and bores; corresponding screw/nut intersection is intentional.",
+    "This independent audit does not alter geometry."
+  ]
+}

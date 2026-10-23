@@ -1,0 +1,189 @@
+{
+  "project": "FormNerd stereo R01",
+  "audit_date": "2026-10-22",
+  "auditor_scope": "Read-only audit of the existing stereo-r01 reference, local Tripo result records and mesh derivatives. No Tripo calls or modifications to the source staging were made.",
+  "source_staging": "/workspace/scratch/74c7d82618ad/stereo-r01",
+  "frozen_build_snapshot": {
+    "root": "/workspace/scratch/2dbc576247b3/work/stereo-final",
+    "reference/selected-sketch.jpeg": "84b0f82628dfc59fb9f4d06cfebb8739da0cfc6c8096d032f607b9552c0c00ed",
+    "reference/outer-regularized.glb": "9dc9bda10e060ed55245b2f06d6c332c4f6c9fd777e250789c83ff3d63ec9167",
+    "reference/shape-field.npz": "476cdb6f46d4ff01b0bf5b51246eec547471b064cf3aa18867032d150d849e2c",
+    "note": "The source staging is concurrently authored and its outer-regularized.glb subsequently changed. The mesh statistics below describe the audited hash, preserved in this frozen build snapshot, not any later file at the external staging path. source/build.py adds a separately declared smoothing/shelling derivative; see assembly-manifest.surface_derivation and independent-audit.source_hashes for the actual audited assembly."
+  },
+  "source_reference": {
+    "recovered_image": "/workspace/scratch/2dbc576247b3/work/current-reference/IMG_8761(1).jpeg",
+    "staged_image": "reference/selected-sketch.jpeg",
+    "both_size_bytes": 19466,
+    "both_sha256": "84b0f82628dfc59fb9f4d06cfebb8739da0cfc6c8096d032f607b9552c0c00ed",
+    "identical_bytes": true,
+    "selected_form": "Twin visible lenses, continuous sculptural body and left grip. Not the earlier spiral/pinhole design."
+  },
+  "tasks": [
+    {
+      "task_id": "4a86f395-3e21-47cf-9def-18bc0282db4f",
+      "type": "image_to_model",
+      "recorded_status": "success",
+      "recorded_credits_consumed": 40,
+      "created_at": "2026-10-22T19:36:44.117635Z",
+      "completed_at": "2026-10-22T19:39:24.466684Z",
+      "parameters": {
+        "model_version": "v3.1-20260211",
+        "geometry_quality": "detailed",
+        "model_seed": 22102026,
+        "texture": false,
+        "pbr": false,
+        "export_uv": true,
+        "enable_image_autofix": false
+      },
+      "evidence": [
+        "tripo/master-result.json",
+        "tripo/tripo-out/formnerd-stereo-r01-4a86f395/task.json"
+      ]
+    },
+    {
+      "task_id": "8c9ff98a-c5f9-464b-bedf-047cb8369aeb",
+      "parent_task_id": "4a86f395-3e21-47cf-9def-18bc0282db4f",
+      "type": "mesh_segmentation",
+      "recorded_status": "success",
+      "recorded_credits_consumed": 40,
+      "created_at": "2026-10-22T19:41:10.769975Z",
+      "completed_at": "2026-10-22T19:41:55.867364Z",
+      "parameters": {
+        "model_version": "v2.0-20260430",
+        "split_by_connectivity": true,
+        "segmentation_granularity": "balanced"
+      },
+      "geometry_count": 20,
+      "evidence": [
+        "tripo/segment-result.json",
+        "tripo/segmented/tripo-out/4a86f395-segment-8c9ff98a/task.json"
+      ]
+    }
+  ],
+  "recorded_total_credits_consumed": 80,
+  "cost_evidence_limit": "This is the sum of two unique completed task records, not a fresh account-balance or billing API reconciliation. The repeated chain record was not counted twice.",
+  "transform": {
+    "units": "mm",
+    "case_width_assumption_mm": 140,
+    "scale_mm_per_raw_unit": 142.8486907930169,
+    "matrix": [
+      [0, 0, -142.8486907930169, 0.00018093196626267627],
+      [-142.8486907930169, 0, 0, 0.0337310400404256],
+      [0, 142.8486907930169, 0, 41.91226843103006],
+      [0, 0, 0, 1]
+    ],
+    "source": "verification/source-transform.json",
+    "physical_measurement": false,
+    "raw_transformed_to_reference_mm_max_nearest_vertex_distance_mm": 0.000005403355525314405,
+    "reference_mm_to_raw_transformed_max_nearest_vertex_distance_mm": 0.000005403355525314405,
+    "interpretation": "The mm mesh agrees with the declared rotation, uniform scaling and translation to floating-point export precision. Vertex count changes are consistent with geometry-only welding of attribute seams."
+  },
+  "mesh_audit_method": {
+    "library": "trimesh 5.1.1",
+    "load": "force=mesh, process=false",
+    "topology": "Unique-edge usage counts, winding consistency, watertightness and split components. Geometry-only welding of raw UV/normal seams was also checked separately.",
+    "distance": "Bidirectional nearest-vertex checks where explicitly reported; not a certified surface Hausdorff measurement.",
+    "limits": "No self-intersection certification, print slicing, physical fit or optical test was performed. Signed volume of a nonmanifold mesh is descriptive only."
+  },
+  "meshes": [
+    {
+      "path": "tripo/tripo-out/formnerd-stereo-r01-4a86f395/model.glb",
+      "sha256": "b7991c6da11c9e315b462445b75f018448315b57d17cf623dd5e8f662007697f",
+      "units": "raw model units",
+      "vertices_as_stored": 997507,
+      "faces": 1944472,
+      "extents": [0.4758433848619461, 0.5870218276977539, 0.9800579845905304],
+      "geometry_only_weld": {
+        "vertices": 972231,
+        "watertight": false,
+        "winding_consistent": false,
+        "boundary_edges": 4,
+        "edges_used_by_more_than_two_faces": 5,
+        "euler_number": -3
+      },
+      "note": "The as-stored 50068 boundary edges and 237 components include UV/normal attribute seams and must not be interpreted as 237 independent mechanical pieces."
+    },
+    {
+      "path": "tripo/segmented/tripo-out/4a86f395-segment-8c9ff98a/model.glb",
+      "sha256": "b528316b2b1c64121045ae68a4e86931e9dd285fea58c15b13d43b8db2ba5bc2",
+      "geometry_count": 20,
+      "vertices_as_stored": 983259,
+      "faces": 1944472,
+      "max_nearest_vertex_distance_to_raw_master_raw_units": 0.00000008256793118753098,
+      "vertices_over_0_000001_raw_units": 0,
+      "note": "Segmentation retains the same face count and vertex positions within floating-point precision. This does not establish closed or mechanically useful manufacturing parts."
+    },
+    {
+      "path": "cad/reference-mm.glb",
+      "sha256": "58d2a9c9357ba1f84f96d9d2a1118e99706616a8c9106f9da753aeeb55fd560d",
+      "units": "mm",
+      "vertices": 972231,
+      "faces": 1944472,
+      "bounds_mm": [[-70.0, -33.98680114746094, 0.0], [70.0, 33.98680114746094, 83.85530090332031]],
+      "extents_mm": [140.0, 67.97360229492188, 83.85530090332031],
+      "watertight": false,
+      "winding_consistent": false,
+      "boundary_edges": 4,
+      "edges_used_by_more_than_two_faces": 5,
+      "euler_number": -3,
+      "component_count": 5,
+      "largest_component_faces": [1944060, 406, 4, 1, 1],
+      "signed_volume_mm3": 484624.278874804
+    },
+    {
+      "path": "cad/reference-repaired.glb",
+      "sha256": "c79ceb911fee8bae6cb51404e1bfe0a3e6a3d2fe009d1726254877e3712c07f4",
+      "units": "mm",
+      "vertices": 972229,
+      "faces": 1944476,
+      "bounds_mm": [[-70.0, -33.98680114746094, 0.0], [70.0, 33.98680114746094, 83.85530090332031]],
+      "extents_mm": [140.0, 67.97360229492188, 83.85530090332031],
+      "watertight": false,
+      "winding_consistent": false,
+      "boundary_edges": 0,
+      "edges_used_by_more_than_two_faces": 9,
+      "euler_number": 2,
+      "component_count": 10,
+      "signed_volume_mm3": 484624.34695189353,
+      "note": "The repaired filename does not indicate successful manifold repair. Boundary edges were removed, but nonmanifold edges increased. Do not treat this as a verified closed printable solid."
+    },
+    {
+      "path": "cad/outer-regularized.glb",
+      "sha256": "9dc9bda10e060ed55245b2f06d6c332c4f6c9fd777e250789c83ff3d63ec9167",
+      "units": "mm",
+      "vertices": 45861,
+      "faces": 91726,
+      "bounds_mm": [[-69.80000305175781, -33.786800384521484, 0.20000000298023224], [69.80000305175781, 33.81319808959961, 83.80000305175781]],
+      "extents_mm": [139.60000610351562, 67.5999984741211, 83.60000304877758],
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "edges_used_by_more_than_two_faces": 0,
+      "euler_number": -2,
+      "component_count": 1,
+      "signed_volume_mm3": 484363.8848736727,
+      "method": "Ray parity voxel volume, one closing iteration at 0.4 mm pitch, fill enclosed voids, retain largest connected volume, extract isosurface, simplify with 0.08 mm tolerance.",
+      "native_outer_preserved_exactly": false,
+      "raw_master_retained": true,
+      "surface_deviation_certified": false,
+      "note": "This is a watertight manufacturing derivative, not the unchanged original master. Face count drops and envelope dimensions change. Internal void filling is an intentional geometry change recorded in the existing regularization report."
+    }
+  ],
+  "reference_mm_to_repaired_difference": {
+    "extents_changed": false,
+    "vertex_count_delta": -2,
+    "face_count_delta": 4,
+    "max_nearest_vertex_distance_mm_to_repaired_mm": 0.06670470055026032,
+    "mm_vertices_more_than_0_001mm_from_repaired_vertex_set": 2,
+    "max_nearest_vertex_distance_repaired_to_mm_mm": 0,
+    "repair_establishes_closed_manifold": false
+  },
+  "conclusions": [
+    "The recovered current sketch and staged Tripo reference are byte-identical.",
+    "Both existing Tripo task records report success, totaling 80 credits across two unique tasks.",
+    "The declared master transformation is reproducible; the 140 mm width remains a design assumption.",
+    "The mm reference and nominally repaired reference are still nonmanifold and cannot be described as verified printable solids.",
+    "The regularized outer is a closed, consistently wound single component, but is an explicitly altered derivative.",
+    "The manufacture-ready assembly still requires its own wall, interference, retention, fit-coupon and print checks."
+  ]
+}

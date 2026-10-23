@@ -1,0 +1,611 @@
+{
+  "units": "mm",
+  "source_manifest_sha256": "2a9c8c9104b2e21c872d4df9680633fabc1875e39dbce16c4f0cebdd2b266943",
+  "status": "unsliced candidates; support, bed contact and all layers require Bambu Studio inspection",
+  "profiles_embedded": false,
+  "parts": [
+    {
+      "id": "P04",
+      "path": "print/P04.stl",
+      "sha256": "994f78646d72d68a13ae0ada2c43aa03943c7d413cf266bcdad3858f2e992eb1",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.999999761581421
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -48.00290870666504
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          -16.000000000000004
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.999999761581421
+        ],
+        [
+          -0.0,
+          6.123233995736766e-17,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          48.00290870666504
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 0.0,
+      "size_mm": [
+        25.997089385986328,
+        25.994182586669922,
+        18.299999237060547
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Optical axis vertical; flange on plate. Bore is a provisional \u00d810 opening, not a verified camera mount."
+    },
+    {
+      "id": "P05",
+      "path": "print/P05.stl",
+      "sha256": "f84ee68a48e531415b8510baed1d2b4551dd8a6e1bae41ee5606f8ba96de9d3d",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -48.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -48.00290870666504
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          -16.000000000000004
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          48.0
+        ],
+        [
+          -0.0,
+          6.123233995736766e-17,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          48.00290870666504
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 0.0,
+      "size_mm": [
+        25.997093200683594,
+        25.994182586669922,
+        18.299999237060547
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Optical axis vertical; flange on plate. Bore is a provisional \u00d810 opening, not a verified camera mount."
+    },
+    {
+      "id": "P08",
+      "path": "print/P08.stl",
+      "sha256": "e432d8029573281ab5615e1fe2c8a36109208d14b963d9c51beae2878e066a5a",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -64.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          17.299999237060543
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.0
+        ],
+        [
+          -0.0,
+          6.123233995736766e-17,
+          -1.0,
+          17.299999237060547
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 0.0,
+      "size_mm": [
+        38.0,
+        5.0,
+        7.19999885559082
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Flat face on plate. Keeper retains nominal PCB top edge; check populated-board clearance before fitting."
+    },
+    {
+      "id": "P09",
+      "path": "print/P09.stl",
+      "sha256": "e14149c908f8e1200d76f27ca07ea5d072babc20039661439e94306138e6e03c",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -44.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -64.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          17.299999237060543
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          44.0
+        ],
+        [
+          -0.0,
+          6.123233995736766e-17,
+          -1.0,
+          17.299999237060547
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 0.0,
+      "size_mm": [
+        38.0,
+        5.0,
+        7.19999885559082
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Flat face on plate. Keeper retains nominal PCB top edge; check populated-board clearance before fitting."
+    },
+    {
+      "id": "P06",
+      "path": "print/P06.stl",
+      "sha256": "b1a38d1aa6b35ae287228b67699287689196ec0395ddae791419db31aaf14c42",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          49.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.599999785423279
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -67.80000305175781
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -49.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.599999785423279
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          67.80000305175781
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 0.0,
+      "size_mm": [
+        19.400001525878906,
+        15.59999942779541,
+        13.322837829589844
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Flange down. Rear-shell fork captures cap; no spring or switch fitted. This is a retained mechanical demonstrator only."
+    },
+    {
+      "id": "P01",
+      "path": "print/P01.stl",
+      "sha256": "cd9a3d4c8bba1f395a7439de12fcce6f62c9f5cfcd38f34910b367c7c5faddca",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.00012969970703125
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -42.00012989342213
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          12.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.00012969970703125
+        ],
+        [
+          -0.0,
+          6.123233995736766e-17,
+          -1.0,
+          12.000000000000002
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          42.00012989342213
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 7.105427357601002e-15,
+      "size_mm": [
+        139.6002960205078,
+        83.60029602050781,
+        45.59773254394531
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Split plane y=12 on plate; front outward. Supports may be needed inside bosses and lens sockets. Inspect slice first."
+    },
+    {
+      "id": "P02",
+      "path": "print/P02.stl",
+      "sha256": "770bd7f0948035fb20090d1f6c4f2df3dcb14503da9b6770fce1af019deaa9e1",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.021915435791015625
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          41.999599650502205
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          13.600000381469723
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.021915435791015625
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -13.600000381469725
+        ],
+        [
+          -0.0,
+          -1.0,
+          6.123233995736766e-17,
+          41.999599650502205
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 3.552713678800501e-15,
+      "size_mm": [
+        139.53543090820312,
+        83.59923553466797,
+        47.413475036621094
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Orientation must accommodate projecting capture fork; split-plane-down needs support under shell. Inspect slice and support contact before printing."
+    },
+    {
+      "id": "P03",
+      "path": "print/P03.stl",
+      "sha256": "21f617d9637bce66a2615fc0f332c37031876a716d0fd4bde9809ad8d252c88a",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -19.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          -41.0
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17,
+          13.999999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          19.0
+        ],
+        [
+          -0.0,
+          6.123233995736766e-17,
+          -1.0,
+          14.0
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 1.7763568394002505e-15,
+      "size_mm": [
+        87.99773406982422,
+        61.0,
+        29.700000762939453
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Rear planar rail faces on plate; optical axis vertical. PCB edge channels and collars require fit-coupon approval."
+    },
+    {
+      "id": "P10",
+      "path": "print/P10.stl",
+      "sha256": "6d660e2cc12732312e02f6093effece8c87abf963ac9048acf21df729916c988",
+      "assembly_to_print_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -27.825000002980232
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -12.000000178813934
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_to_assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          27.825000002980232
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.000000178813934
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "transform_roundtrip_max_error_mm": 1.7763568394002505e-15,
+      "size_mm": [
+        56.349998474121094,
+        26.700000762939453,
+        9.0
+      ],
+      "minimum_build_z_mm": 0.0,
+      "watertight": true,
+      "components": 1,
+      "note": "Base on plate. Tests \u00d821.9 collar receiver, \u00d83.5 screw clearance, 5.9 AF nut pocket and 2.2 PCB channel; not part of assembly."
+    }
+  ]
+}
