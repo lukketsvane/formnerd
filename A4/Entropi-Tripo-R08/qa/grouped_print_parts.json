@@ -1,0 +1,134 @@
+{
+  "before": {
+    "A_WHITE_TRIPO_RIB_SHELL": {
+      "name": "A_WHITE_TRIPO_RIB_SHELL",
+      "faces": 17569,
+      "vertices": 18302,
+      "loose_shells": 11,
+      "nonmanifold_edges": 1,
+      "volume_mm3": 99324.7
+    },
+    "B_BLACK_TRIPO_BACK": {
+      "name": "B_BLACK_TRIPO_BACK",
+      "faces": 4660,
+      "vertices": 3178,
+      "loose_shells": 2,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 74923.1
+    },
+    "C_TRIPO_OPTIC": {
+      "name": "C_TRIPO_OPTIC",
+      "faces": 1900,
+      "vertices": 1268,
+      "loose_shells": 4,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 27660.7
+    },
+    "D_LEFT_TOP_BUTTON": {
+      "name": "D_LEFT_TOP_BUTTON",
+      "faces": 590,
+      "vertices": 297,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 457.9
+    },
+    "E_RIGHT_TOP_BUTTON": {
+      "name": "E_RIGHT_TOP_BUTTON",
+      "faces": 528,
+      "vertices": 284,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 821.9
+    },
+    "F_BATTERY_HOLDER": {
+      "name": "F_BATTERY_HOLDER",
+      "faces": 704,
+      "vertices": 814,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 14743.3
+    },
+    "G_ESP32_LEFT_HOLDER": {
+      "name": "G_ESP32_LEFT_HOLDER",
+      "faces": 410,
+      "vertices": 456,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3562.7
+    },
+    "H_ESP32_RIGHT_HOLDER": {
+      "name": "H_ESP32_RIGHT_HOLDER",
+      "faces": 410,
+      "vertices": 456,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3562.7
+    }
+  },
+  "after": {
+    "A_WHITE_TRIPO_RIB_SHELL": {
+      "name": "A_WHITE_TRIPO_RIB_SHELL",
+      "faces": 17808,
+      "vertices": 18609,
+      "loose_shells": 11,
+      "nonmanifold_edges": 1,
+      "volume_mm3": 99319.7
+    },
+    "B_BLACK_TRIPO_BACK": {
+      "name": "B_BLACK_TRIPO_BACK",
+      "faces": 7208,
+      "vertices": 8178,
+      "loose_shells": 2,
+      "nonmanifold_edges": 516,
+      "volume_mm3": 74263.0
+    },
+    "C_TRIPO_OPTIC": {
+      "name": "C_TRIPO_OPTIC",
+      "faces": 3792,
+      "vertices": 5117,
+      "loose_shells": 4,
+      "nonmanifold_edges": 10,
+      "volume_mm3": 27373.9
+    },
+    "D_LEFT_TOP_BUTTON": {
+      "name": "D_LEFT_TOP_BUTTON",
+      "faces": 590,
+      "vertices": 297,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 457.9
+    },
+    "E_RIGHT_TOP_BUTTON": {
+      "name": "E_RIGHT_TOP_BUTTON",
+      "faces": 528,
+      "vertices": 284,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 821.9
+    },
+    "F_BATTERY_HOLDER": {
+      "name": "F_BATTERY_HOLDER",
+      "faces": 704,
+      "vertices": 814,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 14743.3
+    },
+    "G_ESP32_LEFT_HOLDER": {
+      "name": "G_ESP32_LEFT_HOLDER",
+      "faces": 410,
+      "vertices": 456,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3562.7
+    },
+    "H_ESP32_RIGHT_HOLDER": {
+      "name": "H_ESP32_RIGHT_HOLDER",
+      "faces": 410,
+      "vertices": 456,
+      "loose_shells": 1,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3562.7
+    }
+  }
+}

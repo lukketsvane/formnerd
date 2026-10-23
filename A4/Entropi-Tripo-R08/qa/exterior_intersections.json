@@ -1,0 +1,152 @@
+[
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_1",
+    "volume_mm3": 58.526,
+    "nonmanifold": 0
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_2",
+    "volume_mm3": 14.629,
+    "nonmanifold": 20
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_3",
+    "volume_mm3": 74.428,
+    "nonmanifold": 0
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_4",
+    "volume_mm3": 1.46,
+    "nonmanifold": 0
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_5",
+    "volume_mm3": 117.144,
+    "nonmanifold": 8
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_6",
+    "volume_mm3": 7.353,
+    "nonmanifold": 0
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_7",
+    "volume_mm3": 169.166,
+    "nonmanifold": 0
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_8",
+    "volume_mm3": 12.541,
+    "nonmanifold": 0
+  },
+  {
+    "first": "A0_Tripo_quads_organic_front",
+    "second": "tripo_part_10",
+    "volume_mm3": 1.677,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_1",
+    "second": "tripo_part_2",
+    "volume_mm3": 18.771,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_1",
+    "second": "tripo_part_5",
+    "volume_mm3": 96.008,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_1",
+    "second": "tripo_part_6",
+    "volume_mm3": 8.363,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_1",
+    "second": "tripo_part_7",
+    "volume_mm3": 19.584,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_1",
+    "second": "tripo_part_8",
+    "volume_mm3": 39.394,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_1",
+    "second": "tripo_part_9",
+    "volume_mm3": 2.025,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_2",
+    "second": "tripo_part_4",
+    "volume_mm3": 25.01,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_2",
+    "second": "tripo_part_5",
+    "volume_mm3": 54.545,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_2",
+    "second": "tripo_part_6",
+    "volume_mm3": 2.268,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_2",
+    "second": "tripo_part_8",
+    "volume_mm3": 4.609,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_3",
+    "second": "tripo_part_4",
+    "volume_mm3": 211.561,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_4",
+    "second": "tripo_part_6",
+    "volume_mm3": 4.017,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_4",
+    "second": "tripo_part_8",
+    "volume_mm3": 0.206,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_5",
+    "second": "tripo_part_7",
+    "volume_mm3": 15.66,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_6",
+    "second": "tripo_part_8",
+    "volume_mm3": 54.675,
+    "nonmanifold": 0
+  },
+  {
+    "first": "tripo_part_8",
+    "second": "tripo_part_10",
+    "volume_mm3": 3.354,
+    "nonmanifold": 0
+  }
+]

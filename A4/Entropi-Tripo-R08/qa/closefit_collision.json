@@ -1,0 +1,20 @@
+{
+  "rear_case_vs_battery_and_boards_mm3": {
+    "REF_Linocell_94x62x15": 0,
+    "REF_ESP32_CAM_1": 0,
+    "REF_ESP32_CAM_2": 0,
+    "P2_ESP32_BRACKET": 0,
+    "P3_ESP32_BRACKET": 0
+  },
+  "rear_case_vs_tripo_sculpture_mm3": {
+    "A0_Tripo_quads_organic_front": 2788.51,
+    "tripo_part_3": 2774.77,
+    "tripo_part_4": 3237.8,
+    "tripo_part_5": 0,
+    "tripo_part_6": 293.49,
+    "tripo_part_7": 148.32,
+    "tripo_part_8": 725.73,
+    "tripo_part_9": 63.74,
+    "tripo_part_10": 25.99
+  }
+}
