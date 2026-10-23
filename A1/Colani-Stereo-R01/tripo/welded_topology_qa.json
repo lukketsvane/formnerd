@@ -1,0 +1,18 @@
+{
+  "source": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\Colani-Stereo-R01\\tripo\\Colani_Lady_Tripo_Retopo_10k.glb",
+  "before": {
+    "verts": 15216,
+    "edges": 33040,
+    "faces": 18584,
+    "boundary": 10330,
+    "nonmanifold": 10332
+  },
+  "after": {
+    "verts": 9312,
+    "edges": 27923,
+    "faces": 18584,
+    "boundary": 98,
+    "nonmanifold": 101
+  },
+  "removed_vertices": 5904
+}
