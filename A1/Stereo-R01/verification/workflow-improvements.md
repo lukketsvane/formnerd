@@ -12,3 +12,4 @@
 10. Skil digital geometritest, slicartest og fysisk passformprøve i leveransen. Ingen av dei tre er ei erstatning for dei andre.
 11. Last inn kvar eksportert STL på nytt. Gyldig GLB eller manifold interngeometri garanterer ikkje gyldig STL etter flyttalsavrunding. Loggfør eventuell minimal opprydding og volumendring.
 12. Lås modellhashane før manualen blir rendera. Kontroller at printfiler, PDF og uavhengig audit viser til same revisjon før pakking.
+13. Bruk prosjektlokal `.gitattributes` med `* -text` når hashkontroll og tapsfrie filbitar skal fungere på Windows. Automatisk CRLF-konvertering kan endre både kjelder og PDF-bitar utan å endre Git-objektet. Prøv gjenoppbygging etter faktisk Windows-checkout.
