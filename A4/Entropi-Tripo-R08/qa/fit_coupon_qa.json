@@ -1,0 +1,24 @@
+[
+  {
+    "name": "01_battery_corner",
+    "vertices": 223,
+    "triangles": 442,
+    "nonmanifold_edges": 0,
+    "dimensions_mm": [
+      14.6,
+      21.5,
+      16.9
+    ]
+  },
+  {
+    "name": "02_esp32_retention",
+    "vertices": 248,
+    "triangles": 492,
+    "nonmanifold_edges": 0,
+    "dimensions_mm": [
+      30.2,
+      6.95,
+      8.9
+    ]
+  }
+]
