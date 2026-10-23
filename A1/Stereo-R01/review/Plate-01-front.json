@@ -1,0 +1,33 @@
+{
+  "objects": [
+    {
+      "id": "P01",
+      "path": "print/P01.stl",
+      "translation": [
+        128,
+        128,
+        0
+      ],
+      "color": "#62676c"
+    }
+  ],
+  "camera": {
+    "direction": [
+      0,
+      0,
+      1
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ]
+  },
+  "mode": "line",
+  "size": [
+    1800,
+    1800
+  ],
+  "margin": 0.09,
+  "line_width": 1.8
+}

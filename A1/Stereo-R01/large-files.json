@@ -1,0 +1,239 @@
+{
+  "method": "byte concatenation, SHA-256 verified",
+  "files": [
+    {
+      "path": "cad/P01.stl",
+      "bytes": 5898684,
+      "sha256": "2f79eaef888d52f99ea65a674806a3cf6bd670516aa13a81af0b90997ad5e919",
+      "chunks": [
+        {
+          "path": "payloads/cad/P01.stl.part000",
+          "bytes": 4194304,
+          "sha256": "2e2e4e58de56412eb810d2f13b57295eb121d7671c91925fafb628db1602f9b5"
+        },
+        {
+          "path": "payloads/cad/P01.stl.part001",
+          "bytes": 1704380,
+          "sha256": "e03ce63158079f4416bbf07a328f3c0418125201663b49fa862ae5849faa8063"
+        }
+      ]
+    },
+    {
+      "path": "manual/FormNerd-Stereo-R01-montering.pdf",
+      "bytes": 5281699,
+      "sha256": "34779bf611b0da82b2efeb8f966a01338f07470a2d85b62ad299e132842df486",
+      "chunks": [
+        {
+          "path": "payloads/manual/FormNerd-Stereo-R01-montering.pdf.part000",
+          "bytes": 4194304,
+          "sha256": "11091362b8f747d5dad11bc65d6aab7206ad727f47a9401437485f35aab38486"
+        },
+        {
+          "path": "payloads/manual/FormNerd-Stereo-R01-montering.pdf.part001",
+          "bytes": 1087395,
+          "sha256": "0a17a10e7c7b582a7e7eb9b036a564fb6d8e91002914c329e6cc5a92b58d61b3"
+        }
+      ]
+    },
+    {
+      "path": "print/P01.stl",
+      "bytes": 5898684,
+      "sha256": "cd9a3d4c8bba1f395a7439de12fcce6f62c9f5cfcd38f34910b367c7c5faddca",
+      "chunks": [
+        {
+          "path": "payloads/print/P01.stl.part000",
+          "bytes": 4194304,
+          "sha256": "c9d1322c26fa2d2bee8d8af5310a4df91061f4edeff38f953bd6054ab1593507"
+        },
+        {
+          "path": "payloads/print/P01.stl.part001",
+          "bytes": 1704380,
+          "sha256": "b8c55324098eb78be227d00900fcb77356aa0d7ba018d7e63b8e8d100a49a7f5"
+        }
+      ]
+    },
+    {
+      "path": "reference/.tripo-segmented-original.glb.4DhtbX",
+      "bytes": 6553600,
+      "sha256": "a01190888d2879a83e07c911b21f1723096e86166926ae29fbb8321e95573e7e",
+      "chunks": [
+        {
+          "path": "payloads/reference/.tripo-segmented-original.glb.4DhtbX.part000",
+          "bytes": 4194304,
+          "sha256": "bf9a4aa36f7a31f87e8442defb24852a72d856ac04c8d0d86a19f1d64aae85ca"
+        },
+        {
+          "path": "payloads/reference/.tripo-segmented-original.glb.4DhtbX.part001",
+          "bytes": 2359296,
+          "sha256": "96d4aad4d55e4beb2d1b908969da26db0969c82ffe853f3c7c40f8f19a4c0aef"
+        }
+      ]
+    },
+    {
+      "path": "reference/shape-field.npz",
+      "bytes": 15790057,
+      "sha256": "476cdb6f46d4ff01b0bf5b51246eec547471b064cf3aa18867032d150d849e2c",
+      "chunks": [
+        {
+          "path": "payloads/reference/shape-field.npz.part000",
+          "bytes": 4194304,
+          "sha256": "dc7a4b8374f047292001d7f6c9f3f402e62643c454e10344616181a0e481669b"
+        },
+        {
+          "path": "payloads/reference/shape-field.npz.part001",
+          "bytes": 4194304,
+          "sha256": "d11d784ad6101499cbf588e74700230216b695bda830cd16af946e03b4bfa96f"
+        },
+        {
+          "path": "payloads/reference/shape-field.npz.part002",
+          "bytes": 4194304,
+          "sha256": "13b95a0367abd5364642bdc414882b279bcdc80f49201d5f354446585a10126d"
+        },
+        {
+          "path": "payloads/reference/shape-field.npz.part003",
+          "bytes": 3207145,
+          "sha256": "c0b9dbc27f4e790d0e7bc6affa43f313c5ac5830757ad9320d6302d4eccc750f"
+        }
+      ]
+    },
+    {
+      "path": "reference/tripo-master-original.glb",
+      "bytes": 55255352,
+      "sha256": "b7991c6da11c9e315b462445b75f018448315b57d17cf623dd5e8f662007697f",
+      "chunks": [
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part000",
+          "bytes": 4194304,
+          "sha256": "d5561ff39b0f75855f92e4f8f3351096df729d2d2b8f24d2881f82e670deceaf"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part001",
+          "bytes": 4194304,
+          "sha256": "9e2d854fad351ca9f8a0b0a3a5e879d4f06ff3b0b85e224f33d4876510984cda"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part002",
+          "bytes": 4194304,
+          "sha256": "5086a7b955893774f2050f27dae59d07fb42f28dd7920155e0817fedbe7323c7"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part003",
+          "bytes": 4194304,
+          "sha256": "2d4b41d543fca64726290c3526b10efda72c0fdc0e1ca8f3e816356cfa4b762e"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part004",
+          "bytes": 4194304,
+          "sha256": "1bdb681fd5625d27b5580460a3c92af1ee5d54e24e326d64a0ca8c68086226c6"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part005",
+          "bytes": 4194304,
+          "sha256": "f67d89328e3b1c8fc754526c526612ec8b73720211389e9ac569823709e2a85d"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part006",
+          "bytes": 4194304,
+          "sha256": "a3f83cc373d23a5018634a7d8f75cb7cffa2dc4e080f019f60a86f04800e49a7"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part007",
+          "bytes": 4194304,
+          "sha256": "a8b071718ea8725c5d7ff691cefc3ab2d42ead34dbf4c5267d1697bfca8e711b"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part008",
+          "bytes": 4194304,
+          "sha256": "d02dd667f8160891bc7240470eb353f6244bcddcf58f0cfbbe0ad229e3a141dd"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part009",
+          "bytes": 4194304,
+          "sha256": "7b3ce27c4bef044f01cb12ed8883176c8a98e24871613a25607dc6df8e93fac7"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part010",
+          "bytes": 4194304,
+          "sha256": "ff193a21e5f6f7aa3bcc64caaf35d4118b450d6169680052a0bfd0289174fe52"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part011",
+          "bytes": 4194304,
+          "sha256": "b05e85eb015d25f8e31d1303a2a662348086e0c57b967eb477e4c4ccc4b514ed"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part012",
+          "bytes": 4194304,
+          "sha256": "568fa29de1d7b778671829b201064a80f62ed27883f46a12c804a6f16435245b"
+        },
+        {
+          "path": "payloads/reference/tripo-master-original.glb.part013",
+          "bytes": 729400,
+          "sha256": "da122a5e677d58eb0780576ae9550733cdc0553d1b17102b98c2e1540744f10c"
+        }
+      ]
+    },
+    {
+      "path": "reference/tripo-segmented-original.glb",
+      "bytes": 44007536,
+      "sha256": "b528316b2b1c64121045ae68a4e86931e9dd285fea58c15b13d43b8db2ba5bc2",
+      "chunks": [
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part000",
+          "bytes": 4194304,
+          "sha256": "bf9a4aa36f7a31f87e8442defb24852a72d856ac04c8d0d86a19f1d64aae85ca"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part001",
+          "bytes": 4194304,
+          "sha256": "1edd117927a7a6969d7141421a7eef860b3ed3f1eba6da02937bd0dcdd3d875a"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part002",
+          "bytes": 4194304,
+          "sha256": "173e3000a32c6f7f474105fb458ec52cf70373e9136c86db3828dcebe50b0e4e"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part003",
+          "bytes": 4194304,
+          "sha256": "da0b8c4d004ba31cb32ae337774a294d5110772c03edfe81975bbb0917fd9126"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part004",
+          "bytes": 4194304,
+          "sha256": "6048136570d191a38ca005cfa611587909af9c12bdc9d245044976ed3443c1ad"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part005",
+          "bytes": 4194304,
+          "sha256": "a4fe229c8e25106fbe033d80c4e9b17e2d2a3a65e69c3b4aa2b58ebf9a1462e6"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part006",
+          "bytes": 4194304,
+          "sha256": "3db560e03da31467818cd381de8edff6622d7a62f4e6af1235ba11ed0cbfb32f"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part007",
+          "bytes": 4194304,
+          "sha256": "602219cb5ab2ee231d0fc095f2d3f100fca4fa7552c56dd5f28dcea17cef39d7"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part008",
+          "bytes": 4194304,
+          "sha256": "f29e821ad54e3ca0f4266c7f4a20fb6b19099534abdf114234b5756b6a17ac66"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part009",
+          "bytes": 4194304,
+          "sha256": "6e47336e9372faa7952e71482f6e46f75ff772164f228629835472397546314b"
+        },
+        {
+          "path": "payloads/reference/tripo-segmented-original.glb.part010",
+          "bytes": 2064496,
+          "sha256": "6b331bc2f6a44abb14cba32415e54a1e4f7df846648da4185c0056d69d05986e"
+        }
+      ]
+    }
+  ]
+}

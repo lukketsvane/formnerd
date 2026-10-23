@@ -1,0 +1,63 @@
+{
+  "objects": [
+    {
+      "id": "P10",
+      "path": "print/P10.stl",
+      "translation": [
+        100,
+        110,
+        0
+      ],
+      "color": "#62676c"
+    },
+    {
+      "id": "P04",
+      "path": "print/P04.stl",
+      "translation": [
+        80,
+        165,
+        0
+      ],
+      "color": "#62676c"
+    },
+    {
+      "id": "P05",
+      "path": "print/P05.stl",
+      "translation": [
+        125,
+        165,
+        0
+      ],
+      "color": "#62676c"
+    },
+    {
+      "id": "P06",
+      "path": "print/P06.stl",
+      "translation": [
+        160,
+        110,
+        0
+      ],
+      "color": "#62676c"
+    }
+  ],
+  "camera": {
+    "direction": [
+      0,
+      0,
+      1
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ]
+  },
+  "mode": "line",
+  "size": [
+    1800,
+    1800
+  ],
+  "margin": 0.09,
+  "line_width": 1.8
+}

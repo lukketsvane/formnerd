@@ -1,0 +1,554 @@
+{
+  "parts": [
+    {
+      "id": "P04",
+      "name": "Lens collar left",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P04.stl",
+      "step": "cad/P04.step",
+      "color": "#34383c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -25,
+        0
+      ],
+      "print_orientation": "Optical axis vertical; flange on plate. Bore is a provisional \u00d810 opening, not a verified camera mount.",
+      "bounds_mm": [
+        [
+          -18.998544692993164,
+          -34.29999923706055,
+          35.00581741333008
+        ],
+        [
+          6.998545169830322,
+          -16.0,
+          61.0
+        ]
+      ],
+      "volume_mm3": 5446.230040614514,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P05",
+      "name": "Lens collar right",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P05.stl",
+      "step": "cad/P05.step",
+      "color": "#34383c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -25,
+        0
+      ],
+      "print_orientation": "Optical axis vertical; flange on plate. Bore is a provisional \u00d810 opening, not a verified camera mount.",
+      "bounds_mm": [
+        [
+          35.0014533996582,
+          -34.29999923706055,
+          35.00581741333008
+        ],
+        [
+          60.9985466003418,
+          -16.0,
+          61.0
+        ]
+      ],
+      "volume_mm3": 5446.229926692579,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P08",
+      "name": "PCB top keeper left",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P08.stl",
+      "step": "cad/P08.step",
+      "color": "#b7bbc0",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        32,
+        20
+      ],
+      "print_orientation": "Flat face on plate. Keeper retains nominal PCB top edge; check populated-board clearance before fitting.",
+      "bounds_mm": [
+        [
+          -25.0,
+          10.100000381469727,
+          61.5
+        ],
+        [
+          13.0,
+          17.299999237060547,
+          66.5
+        ]
+      ],
+      "volume_mm3": 659.7274329087253,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P09",
+      "name": "PCB top keeper right",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P09.stl",
+      "step": "cad/P09.step",
+      "color": "#b7bbc0",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        32,
+        20
+      ],
+      "print_orientation": "Flat face on plate. Keeper retains nominal PCB top edge; check populated-board clearance before fitting.",
+      "bounds_mm": [
+        [
+          25.0,
+          10.100000381469727,
+          61.5
+        ],
+        [
+          63.0,
+          17.299999237060547,
+          66.5
+        ]
+      ],
+      "volume_mm3": 659.7274310145959,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P06",
+      "name": "Captured shutter cap",
+      "quantity": 1,
+      "geometry_type": "hybrid_mesh",
+      "stl": "cad/P06.stl",
+      "step": null,
+      "color": "#34383c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        0,
+        20
+      ],
+      "print_orientation": "Flange down. Rear-shell fork captures cap; no spring or switch fitted. This is a retained mechanical demonstrator only.",
+      "bounds_mm": [
+        [
+          -59.20000076293945,
+          -14.399999618530273,
+          67.80000305175781
+        ],
+        [
+          -39.79999923706055,
+          1.2000000476837158,
+          81.12284088134766
+        ]
+      ],
+      "volume_mm3": 1646.512561619554,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": null
+    },
+    {
+      "id": "P01",
+      "name": "Front shell",
+      "quantity": 1,
+      "geometry_type": "hybrid_mesh",
+      "stl": "cad/P01.stl",
+      "step": null,
+      "color": "#62676c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -6,
+        0
+      ],
+      "print_orientation": "Split plane y=12 on plate; front outward. Supports may be needed inside bosses and lens sockets. Inspect slice first.",
+      "bounds_mm": [
+        [
+          -69.80001831054688,
+          -33.59773254394531,
+          0.19998207688331604
+        ],
+        [
+          69.80027770996094,
+          12.0,
+          83.80027770996094
+        ]
+      ],
+      "volume_mm3": 59117.41390842859,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": {
+        "precision_mm": 0.0001,
+        "faces_removed": 48,
+        "volume_delta_mm3": -1.6331468941643834e-06
+      },
+      "brep_valid": null
+    },
+    {
+      "id": "P02",
+      "name": "Rear shell with shutter capture fork",
+      "quantity": 1,
+      "geometry_type": "hybrid_mesh",
+      "stl": "cad/P02.stl",
+      "step": null,
+      "color": "#62676c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        58,
+        0
+      ],
+      "print_orientation": "Orientation must accommodate projecting capture fork; split-plane-down needs support under shell. Inspect slice and support contact before printing.",
+      "bounds_mm": [
+        [
+          -69.78962707519531,
+          -13.600000381469727,
+          0.19998207688331604
+        ],
+        [
+          69.74579620361328,
+          33.813472747802734,
+          83.7992172241211
+        ]
+      ],
+      "volume_mm3": 50829.35608278882,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": {
+        "precision_mm": 0.0001,
+        "faces_removed": 16,
+        "volume_delta_mm3": 1.9472354324534535e-06
+      },
+      "brep_valid": null
+    },
+    {
+      "id": "P03",
+      "name": "Shared camera carrier",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P03.stl",
+      "step": "cad/P03.step",
+      "color": "#9fa4a9",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        26,
+        0
+      ],
+      "print_orientation": "Rear planar rail faces on plate; optical axis vertical. PCB edge channels and collars require fit-coupon approval.",
+      "bounds_mm": [
+        [
+          -24.99886703491211,
+          -15.699999809265137,
+          10.5
+        ],
+        [
+          62.99886703491211,
+          14.0,
+          71.5
+        ]
+      ],
+      "volume_mm3": 24024.68104913644,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P10",
+      "name": "Critical fit coupon",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P10.stl",
+      "step": "cad/P10.step",
+      "color": "#b7bbc0",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        0,
+        0
+      ],
+      "print_orientation": "Base on plate. Tests \u00d821.9 collar receiver, \u00d83.5 screw clearance, 5.9 AF nut pocket and 2.2 PCB channel; not part of assembly.",
+      "bounds_mm": [
+        [
+          -0.3499999940395355,
+          -1.350000023841858,
+          0.0
+        ],
+        [
+          56.0,
+          25.350000381469727,
+          9.0
+        ]
+      ],
+      "volume_mm3": 5248.509235172313,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    }
+  ],
+  "pair_intersections": [],
+  "printability_status": "watertight checks only; supports and slicer not validated"
+}

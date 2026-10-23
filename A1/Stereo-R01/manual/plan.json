@@ -1,0 +1,2221 @@
+{
+  "title": "FormNerd Stereo R01 · Monteringsrettleiing",
+  "revision": "STEREO R01 · MEKANISK PROTOTYPE",
+  "filename": "FormNerd-Stereo-R01-montering.pdf",
+  "pages": [
+    {
+      "type": "cover",
+      "title": "STEREO R01",
+      "scene": {
+        "objects": [
+          {
+            "id": "P04",
+            "path": "cad/P04.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P05",
+            "path": "cad/P05.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P08",
+            "path": "cad/P08.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P09",
+            "path": "cad/P09.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P06",
+            "path": "cad/P06.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P02",
+            "path": "cad/P02.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P03",
+            "path": "cad/P03.stl",
+            "color": "#9fa4a9",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H01",
+            "path": "cad/H01.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N01",
+            "path": "cad/N01.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H02",
+            "path": "cad/H02.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N02",
+            "path": "cad/N02.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H03",
+            "path": "cad/H03.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N03",
+            "path": "cad/N03.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H04",
+            "path": "cad/H04.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N04",
+            "path": "cad/N04.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H07",
+            "path": "cad/H07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N07",
+            "path": "cad/N07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H08",
+            "path": "cad/H08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N08",
+            "path": "cad/N08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H09",
+            "path": "cad/H09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N09",
+            "path": "cad/N09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H10",
+            "path": "cad/H10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N10",
+            "path": "cad/N10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H05",
+            "path": "cad/H05.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N05",
+            "path": "cad/N05.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H06",
+            "path": "cad/H06.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N06",
+            "path": "cad/N06.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            -2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "subtitle": "Montering av mekanisk prototype",
+      "note": "Bygd frå vald skisse og Tripo-master. Digitalt mekanisk byggjesett. Mål mot elektronikken, fysisk passform og kamerafunksjon må framleis prøvast."
+    },
+    {
+      "type": "inventory",
+      "title": "Delar · 1",
+      "items": [
+        {
+          "id": "P01",
+          "name": "Frontskal",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P01",
+                "path": "cad/P01.stl",
+                "color": "#62676c",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "P02",
+          "name": "Bakskal",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P02",
+                "path": "cad/P02.stl",
+                "color": "#62676c",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "P03",
+          "name": "Kameraberar",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P03",
+                "path": "cad/P03.stl",
+                "color": "#9fa4a9",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "P04",
+          "name": "Venstre linsekrage",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P04",
+                "path": "cad/P04.stl",
+                "color": "#34383c",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "P05",
+          "name": "Høgre linsekrage",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P05",
+                "path": "cad/P05.stl",
+                "color": "#34383c",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "P06",
+          "name": "Utløysarknapp",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P06",
+                "path": "cad/P06.stl",
+                "color": "#34383c",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        }
+      ],
+      "note": "Linsekragane er mekaniske innfatningar, ikkje optikk. Skala og knappen har mesh-geometri; dei presise mekaniske delane har eigne STEP-filer."
+    },
+    {
+      "type": "inventory",
+      "title": "Delar · 2",
+      "items": [
+        {
+          "id": "P08",
+          "name": "Venstre haldelist",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P08",
+                "path": "cad/P08.stl",
+                "color": "#b7bbc0",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "P09",
+          "name": "Høgre haldelist",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P09",
+                "path": "cad/P09.stl",
+                "color": "#b7bbc0",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "P10",
+          "name": "Passningsprøve",
+          "quantity": 1,
+          "scene": {
+            "objects": [
+              {
+                "id": "P10",
+                "path": "cad/P10.stl",
+                "color": "#b7bbc0",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "A",
+          "name": "M3 × 25",
+          "quantity": 4,
+          "scene": {
+            "objects": [
+              {
+                "id": "H01",
+                "path": "cad/H01.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "B",
+          "name": "M3 × 12",
+          "quantity": 6,
+          "scene": {
+            "objects": [
+              {
+                "id": "H05",
+                "path": "cad/H05.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        },
+        {
+          "id": "C",
+          "name": "M3-mutter",
+          "quantity": 10,
+          "scene": {
+            "objects": [
+              {
+                "id": "N01",
+                "path": "cad/N01.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          }
+        }
+      ],
+      "note": "Kjøp skruar og mutrar; ikkje print maskinvara. Verktøy: passande sekskantnøkkel, skyvelære og avgradingsverktøy. P10 er prøve, ikkje produktdel."
+    },
+    {
+      "number": 1,
+      "title": "Prøv passforma",
+      "scene": {
+        "objects": [
+          {
+            "id": "P10",
+            "path": "cad/P10.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            -2,
+            2
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P10",
+          "text": "P10",
+          "position": [
+            0.82,
+            0.75
+          ]
+        }
+      ],
+      "instructions": [
+        "Print P10 først. Prøv ei linsekrage, M3-skrue, mutter og kortkant.",
+        "Avgrad forsiktig. Delane skal gli på plass utan stor kraft."
+      ],
+      "check": "Stopp dersom passninga er feil. Juster toleransar før resten av delane blir printa."
+    },
+    {
+      "number": 2,
+      "title": "Set inn mutrane",
+      "needed": [
+        {
+          "scene": {
+            "objects": [
+              {
+                "id": "N01",
+                "path": "cad/N01.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          },
+          "label": "M3",
+          "quantity": 6
+        }
+      ],
+      "scene": {
+        "objects": [
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N01",
+            "path": "cad/N01.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              12
+            ]
+          },
+          {
+            "id": "N02",
+            "path": "cad/N02.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              12
+            ]
+          },
+          {
+            "id": "N03",
+            "path": "cad/N03.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              -12
+            ]
+          },
+          {
+            "id": "N04",
+            "path": "cad/N04.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              -12
+            ]
+          },
+          {
+            "id": "N05",
+            "path": "cad/N05.stl",
+            "color": "#74787d",
+            "translation": [
+              12,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N06",
+            "path": "cad/N06.stl",
+            "color": "#74787d",
+            "translation": [
+              12,
+              0,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P01",
+          "text": "P01",
+          "position": [
+            0.1,
+            0.78
+          ]
+        }
+      ],
+      "instructions": [
+        "Skyv fire mutrar inn i lommene ved skøyten frå innsida.",
+        "Skyv dei to berarmutrane inn frå sida. Alle skal liggje flatt."
+      ],
+      "check": "Monteringsvegane og tilkomsten til mutrane er viste og kontrollerte digitalt. Prøv dei også fysisk."
+    },
+    {
+      "number": 3,
+      "title": "Set inn kragane",
+      "scene": {
+        "objects": [
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P04",
+            "path": "cad/P04.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              32,
+              0
+            ]
+          },
+          {
+            "id": "P05",
+            "path": "cad/P05.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              32,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P04",
+          "text": "P04",
+          "offset": [
+            35,
+            55
+          ]
+        },
+        {
+          "id": "P05",
+          "text": "P05",
+          "offset": [
+            -30,
+            55
+          ]
+        }
+      ],
+      "arrows": [
+        {
+          "from": [
+            -6,
+            11,
+            48
+          ],
+          "to": [
+            -6,
+            -11,
+            48
+          ]
+        },
+        {
+          "from": [
+            48,
+            11,
+            48
+          ],
+          "to": [
+            48,
+            -11,
+            48
+          ]
+        }
+      ],
+      "instructions": [
+        "Før begge kragane frå innsida mot fronten.",
+        "Flensane skal liggje bak skuldrene i frontskalet."
+      ],
+      "check": "Kragane blir haldne på plass av kameraberaren i steg 6. Ingen liming i denne modellen."
+    },
+    {
+      "number": 4,
+      "title": "Set inn knappen",
+      "scene": {
+        "objects": [
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P04",
+            "path": "cad/P04.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P05",
+            "path": "cad/P05.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P06",
+            "path": "cad/P06.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              28,
+              -2.8
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P06",
+          "text": "P06",
+          "offset": [
+            -45,
+            75
+          ]
+        }
+      ],
+      "arrows": [
+        {
+          "from": [
+            -49.5,
+            16.4,
+            75
+          ],
+          "to": [
+            -49.5,
+            -1.5999999999999996,
+            75
+          ]
+        }
+      ],
+      "instructions": [
+        "Før knappen inn frå baksida, 2,8 mm under sluttposisjonen.",
+        "Lyft knappen 2,8 mm opp i setet. Hald han støtta til bakskalet er på."
+      ],
+      "check": "Knappen er ein mekanisk demonstrator. Fjør og elektrisk brytar er ikkje monterte."
+    },
+    {
+      "number": 5,
+      "title": "Prøv korta",
+      "needed": [
+        {
+          "scene": {
+            "objects": [
+              {
+                "id": "H07",
+                "path": "cad/H07.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          },
+          "label": "M3 × 12",
+          "quantity": 4
+        },
+        {
+          "scene": {
+            "objects": [
+              {
+                "id": "N07",
+                "path": "cad/N07.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          },
+          "label": "M3",
+          "quantity": 4
+        }
+      ],
+      "scene": {
+        "objects": [
+          {
+            "id": "P03",
+            "path": "cad/P03.stl",
+            "color": "#9fa4a9",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P08",
+            "path": "cad/P08.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              17,
+              16
+            ]
+          },
+          {
+            "id": "P09",
+            "path": "cad/P09.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              17,
+              16
+            ]
+          },
+          {
+            "id": "H07",
+            "path": "cad/H07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              26,
+              16
+            ]
+          },
+          {
+            "id": "H08",
+            "path": "cad/H08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              26,
+              16
+            ]
+          },
+          {
+            "id": "H09",
+            "path": "cad/H09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              26,
+              16
+            ]
+          },
+          {
+            "id": "H10",
+            "path": "cad/H10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              26,
+              16
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P08",
+          "text": "P08",
+          "offset": [
+            40,
+            65
+          ]
+        },
+        {
+          "id": "P09",
+          "text": "P09",
+          "offset": [
+            -30,
+            60
+          ]
+        }
+      ],
+      "instructions": [
+        "Prøv dei faktiske korta utan straum medan P03 ligg utanfor huset.",
+        "Set inn mutrane og fest haldelistene berre når kort og komponentar ligg fritt."
+      ],
+      "check": "Nominell kortflate: 27 × 40,5 mm. MB-kort, optisk senter, linsemodul og kabelruting er ikkje passformstadfesta."
+    },
+    {
+      "number": 6,
+      "title": "Fest beraren",
+      "needed": [
+        {
+          "scene": {
+            "objects": [
+              {
+                "id": "H05",
+                "path": "cad/H05.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          },
+          "label": "M3 × 12",
+          "quantity": 2
+        }
+      ],
+      "scene": {
+        "objects": [
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P04",
+            "path": "cad/P04.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P05",
+            "path": "cad/P05.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P06",
+            "path": "cad/P06.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P03",
+            "path": "cad/P03.stl",
+            "color": "#9fa4a9",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "P08",
+            "path": "cad/P08.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "P09",
+            "path": "cad/P09.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "H07",
+            "path": "cad/H07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "H08",
+            "path": "cad/H08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "H09",
+            "path": "cad/H09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "H10",
+            "path": "cad/H10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "N07",
+            "path": "cad/N07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "N08",
+            "path": "cad/N08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "N09",
+            "path": "cad/N09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "N10",
+            "path": "cad/N10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "id": "H05",
+            "path": "cad/H05.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              38,
+              0
+            ]
+          },
+          {
+            "id": "H06",
+            "path": "cad/H06.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              38,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P03",
+          "text": "P03",
+          "position": [
+            0.85,
+            0.76
+          ]
+        }
+      ],
+      "arrows": [
+        {
+          "from": [
+            21,
+            20,
+            40
+          ],
+          "to": [
+            21,
+            2,
+            40
+          ]
+        }
+      ],
+      "instructions": [
+        "Før den ferdig prøvde kassetten inn frå baksida. Hald kablane fri.",
+        "Fest med to M3 × 12. Stram varsamt for hand."
+      ],
+      "check": "Ingen del skal bøyast for å få skruehola til å passe. Kontroller at kragane ikkje kan falle ut."
+    },
+    {
+      "number": 7,
+      "title": "Lukk huset",
+      "needed": [
+        {
+          "scene": {
+            "objects": [
+              {
+                "id": "H01",
+                "path": "cad/H01.stl",
+                "color": "#74787d",
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "camera": {
+              "direction": [
+                -1,
+                2,
+                1
+              ]
+            },
+            "margin": 0.12
+          },
+          "label": "M3 × 25",
+          "quantity": 4
+        }
+      ],
+      "scene": {
+        "objects": [
+          {
+            "id": "P04",
+            "path": "cad/P04.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P05",
+            "path": "cad/P05.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P08",
+            "path": "cad/P08.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P09",
+            "path": "cad/P09.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P06",
+            "path": "cad/P06.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P02",
+            "path": "cad/P02.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              46,
+              0
+            ]
+          },
+          {
+            "id": "P03",
+            "path": "cad/P03.stl",
+            "color": "#9fa4a9",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H01",
+            "path": "cad/H01.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              60,
+              0
+            ]
+          },
+          {
+            "id": "N01",
+            "path": "cad/N01.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H02",
+            "path": "cad/H02.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              60,
+              0
+            ]
+          },
+          {
+            "id": "N02",
+            "path": "cad/N02.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H03",
+            "path": "cad/H03.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              60,
+              0
+            ]
+          },
+          {
+            "id": "N03",
+            "path": "cad/N03.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H04",
+            "path": "cad/H04.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              60,
+              0
+            ]
+          },
+          {
+            "id": "N04",
+            "path": "cad/N04.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H07",
+            "path": "cad/H07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N07",
+            "path": "cad/N07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H08",
+            "path": "cad/H08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N08",
+            "path": "cad/N08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H09",
+            "path": "cad/H09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N09",
+            "path": "cad/N09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H10",
+            "path": "cad/H10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N10",
+            "path": "cad/N10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H05",
+            "path": "cad/H05.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N05",
+            "path": "cad/N05.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H06",
+            "path": "cad/H06.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N06",
+            "path": "cad/N06.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P02",
+          "text": "P02",
+          "position": [
+            0.82,
+            0.76
+          ]
+        }
+      ],
+      "arrows": [
+        {
+          "from": [
+            -10,
+            49,
+            42
+          ],
+          "to": [
+            -10,
+            27,
+            42
+          ]
+        }
+      ],
+      "instructions": [
+        "Hald kablar utanfor skøyt og knappgaffel. Før bakskalet rett inn.",
+        "Fest med fire M3 × 25. Stram lett og kryssvis."
+      ],
+      "check": "Bakskalet fangar knappen. Kontroller fri knapperørsle og at skøytane sluttar jamt."
+    },
+    {
+      "title": "Monteringsoversikt",
+      "scene": {
+        "objects": [
+          {
+            "id": "P04",
+            "path": "cad/P04.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              -10,
+              0
+            ]
+          },
+          {
+            "id": "P05",
+            "path": "cad/P05.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              -10,
+              0
+            ]
+          },
+          {
+            "id": "P08",
+            "path": "cad/P08.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              95,
+              35
+            ]
+          },
+          {
+            "id": "P09",
+            "path": "cad/P09.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              95,
+              35
+            ]
+          },
+          {
+            "id": "P06",
+            "path": "cad/P06.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              -65,
+              30
+            ]
+          },
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              -65,
+              0
+            ]
+          },
+          {
+            "id": "P02",
+            "path": "cad/P02.stl",
+            "color": "#62676c",
+            "translation": [
+              -30,
+              185,
+              0
+            ]
+          },
+          {
+            "id": "P03",
+            "path": "cad/P03.stl",
+            "color": "#9fa4a9",
+            "translation": [
+              0,
+              55,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            1,
+            2,
+            1.1
+          ]
+        },
+        "margin": 0.12
+      },
+      "labels": [
+        {
+          "id": "P01",
+          "text": "P01",
+          "offset": [
+            -28,
+            -28
+          ],
+          "anchor_fraction": [
+            0.04,
+            0.6
+          ]
+        },
+        {
+          "id": "P02",
+          "text": "P02",
+          "offset": [
+            45,
+            25
+          ]
+        },
+        {
+          "id": "P03",
+          "text": "P03",
+          "offset": [
+            0,
+            -65
+          ]
+        },
+        {
+          "id": "P04",
+          "text": "P04",
+          "offset": [
+            0,
+            45
+          ]
+        },
+        {
+          "id": "P05",
+          "text": "P05",
+          "offset": [
+            -25,
+            35
+          ]
+        },
+        {
+          "id": "P06",
+          "text": "P06",
+          "offset": [
+            -15,
+            35
+          ]
+        },
+        {
+          "id": "P08",
+          "text": "P08",
+          "offset": [
+            10,
+            30
+          ]
+        },
+        {
+          "id": "P09",
+          "text": "P09",
+          "offset": [
+            25,
+            20
+          ]
+        }
+      ],
+      "instructions": [
+        "Ta vare på delnummera ved reparasjon eller vidare endring."
+      ],
+      "check": "Alle viste delar kjem frå same CAD-revisjon som printfilene. Eksploderte avstandar er berre for forklaring."
+    },
+    {
+      "title": "Før bruk",
+      "scene": {
+        "objects": [
+          {
+            "id": "P04",
+            "path": "cad/P04.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P05",
+            "path": "cad/P05.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P08",
+            "path": "cad/P08.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P09",
+            "path": "cad/P09.stl",
+            "color": "#b7bbc0",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P06",
+            "path": "cad/P06.stl",
+            "color": "#34383c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P01",
+            "path": "cad/P01.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P02",
+            "path": "cad/P02.stl",
+            "color": "#62676c",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "P03",
+            "path": "cad/P03.stl",
+            "color": "#9fa4a9",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H01",
+            "path": "cad/H01.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N01",
+            "path": "cad/N01.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H02",
+            "path": "cad/H02.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N02",
+            "path": "cad/N02.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H03",
+            "path": "cad/H03.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N03",
+            "path": "cad/N03.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H04",
+            "path": "cad/H04.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N04",
+            "path": "cad/N04.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H07",
+            "path": "cad/H07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N07",
+            "path": "cad/N07.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H08",
+            "path": "cad/H08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N08",
+            "path": "cad/N08.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H09",
+            "path": "cad/H09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N09",
+            "path": "cad/N09.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H10",
+            "path": "cad/H10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N10",
+            "path": "cad/N10.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H05",
+            "path": "cad/H05.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N05",
+            "path": "cad/N05.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "H06",
+            "path": "cad/H06.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "N06",
+            "path": "cad/N06.stl",
+            "color": "#74787d",
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "camera": {
+          "direction": [
+            -1,
+            -2,
+            1
+          ]
+        },
+        "margin": 0.12
+      },
+      "instructions": [
+        "Dette er eit digitalt mekanisk prøvebygg, ikkje eit ferdig fungerande kamera.",
+        "Prøv passform, varme, optikk, utløysar og elektrisk system før bruk."
+      ],
+      "check": "USB-C er ei reservert opning. Lading, dataoverføring, stereosynkronisering og kravet om minst Ø30 mm faktisk optikk er framleis opne."
+    }
+  ]
+}

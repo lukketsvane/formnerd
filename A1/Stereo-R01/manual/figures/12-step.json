@@ -1,0 +1,299 @@
+{
+  "objects": [
+    {
+      "id": "P04",
+      "path": "cad/P04.stl",
+      "color": "#34383c",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P05",
+      "path": "cad/P05.stl",
+      "color": "#34383c",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P08",
+      "path": "cad/P08.stl",
+      "color": "#b7bbc0",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P09",
+      "path": "cad/P09.stl",
+      "color": "#b7bbc0",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P06",
+      "path": "cad/P06.stl",
+      "color": "#34383c",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P01",
+      "path": "cad/P01.stl",
+      "color": "#62676c",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P02",
+      "path": "cad/P02.stl",
+      "color": "#62676c",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P03",
+      "path": "cad/P03.stl",
+      "color": "#9fa4a9",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H01",
+      "path": "cad/H01.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N01",
+      "path": "cad/N01.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H02",
+      "path": "cad/H02.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N02",
+      "path": "cad/N02.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H03",
+      "path": "cad/H03.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N03",
+      "path": "cad/N03.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H04",
+      "path": "cad/H04.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N04",
+      "path": "cad/N04.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H07",
+      "path": "cad/H07.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N07",
+      "path": "cad/N07.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H08",
+      "path": "cad/H08.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N08",
+      "path": "cad/N08.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H09",
+      "path": "cad/H09.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N09",
+      "path": "cad/N09.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H10",
+      "path": "cad/H10.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N10",
+      "path": "cad/N10.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H05",
+      "path": "cad/H05.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N05",
+      "path": "cad/N05.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "H06",
+      "path": "cad/H06.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "N06",
+      "path": "cad/N06.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "camera": {
+    "direction": [
+      -1,
+      -2,
+      1
+    ]
+  },
+  "margin": 0.12,
+  "mode": "line",
+  "size": [
+    2000,
+    1651
+  ],
+  "supersample": 1.35,
+  "line_width": 1.6505402768506225
+}
