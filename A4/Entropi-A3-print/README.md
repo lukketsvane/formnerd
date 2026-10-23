@@ -34,21 +34,36 @@ Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, ve
 - **Botnskalet** står på skinna med delingsflata opp. Skinna er den flate botnen, og støtta står berre utanpå, under den runde botnkanten og linseløpet.
 - **Toppskalet** står på delingsflata. Støtta står under det flate taket inne i skalet og kan takast ut gjennom den opne delingsflata. Magnetlommene, spora i kortstolpane, EC11-pipa, brytartrakta og USB-tunnelen har tak på 45°, så dei treng inga støtte.
 
+## Forma som CAD
+
+`verktoy/form_fraa_mesh.py` måler A3-forma frå Tripo-meshen (`arkiv/entropi-a3`) og skriv tala til `verktoy/form_maal.json`: 19 vassrette snitt gjennom kroppen (z 0,6–54), radiusprofilen til linseløpet og toppen av søkarblokka. `verktoy/royr_fraa_mesh.py` finn tubane som ryggar i eit høgdekart sett ovanfrå. `verktoy/cad_form.py` byggjer så forma som B-rep utan å røre meshen:
+
+| Del | Solid |
+| --- | --- |
+| Kroppen med grepet | Loft gjennom snitta, kvart snitt ein periodisk B-spline gjennom 140 punkt, og fire innoverforskove snitt som rundar toppen av |
+| Linseløpet | Omdreiingsflate av den målte profilen (r 29,9 → 27,9 frå x 60 til 90), kjegleforma rot inne i kroppen, fillet 1,5 mm framme, forsenking r 26,8 frå x 85 og trakt innover |
+| Dei åtte tubane | Sirkel (r 7,5–9,5) eller ellipse sveipt langs ein spline kvar: tre frå søkarblokka, gripryggen og gripframen ned til grepet, armen frå hjulbossen, armen ned til linseløpet og armen over på linseløpet |
+| Søkarblokka | Boks 18 × 37 × 32 mm med fillet 2,5 mm |
+| Hjulbossen | Sylinder r 17,5 til z 80, fillet 2 mm |
+| Utløysarbossen | Sylinder r 9 til z 63,5, fillet 2,5 mm |
+
+Holrommet er eit loft av dei same snitta forskove 2,6 mm inn (golv z 5, tak z 55,4), og søyler, stolpar, trakter og lommer er boksar, sylindrar og loft. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
+
 ## Overflatedetaljar
 
-Detaljane er skorne eller lagde til i `verktoy/detalj.py`, og måla ligg under `detalj` i konfigurasjonen. Alle spor er minst 0,5 mm breie og 0,4–0,5 mm djupe, så ei 0,4 mm dyse får dei med.
+Detaljane er skorne eller lagde til i `verktoy/cad_skal.py` som eitt solid per detalj (polare mønster av rektangel, ekstrudert tekst, band mellom omrisset og eit innoverforskove omriss), og måla ligg under `detalj` i konfigurasjonen. Alle spor er minst 0,5 mm breie og 0,4–0,5 mm djupe, så ei 0,4 mm dyse får dei med.
 
 | Detalj | Kvar | Referanse |
 | --- | --- | --- |
 | Riller i grepet, 0,8 × 0,5 mm med 2,4 mm deling | Grepsida, z 8–50 | Nocs-kikkert, Hasselblad-grep |
 | Arca-Swiss-skinne, 38 mm brei med 45° svalehale, og lomme for 1/4"-20-mutter med Ø7-hol | Under botnskalet, x 18–56 | Sirui TY-70 |
 | Flat frontring med 72 skalastrek, og to knurla ringar (72 og 60 spor) | Linseløpet, x 73–77 og 84–89 | Leica Summicron |
-| Panel-linje rundt linsebasen | x 71 | Canon Colani |
+| Panel-linje rundt linsebasen, saum mellom gråtonane | x 71,2 | Canon Colani |
 | Gradskala med 36 strek rundt hjulet | Toppen, r 12–15,5 | Sirui BH-60 |
 | Gravert «ENTROPI» og tre små knappar | Toppen av søkarblokka | Hasselblad X2D |
 | Knurla okularring som stikk 1,2 mm ut | Baksida | Leica |
 | 0,4 mm fas på begge sider av delinga | Rundt heile kroppen | |
-| To gråtonar: lys på tubar, grep og linsering, mørk på kjerne, trakt, hjul og utløysar | CMF, etter kursregelen om form | |
+| To gråtonar: lys på kropp, tubar og linsering, mørk på søkarblokk, hjulboss, utløysar, linsefront, skinne og okular, skilde av spor i overflata | CMF, etter kursregelen om form | |
 
 ## Innkjøp
 
@@ -97,11 +112,14 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 ```bash
 cd verktoy
 npm install
-python3 lag_skal.py       # skal, delar, proxyar og kontroll.json
+pip install build123d
+python3 form_fraa_mesh.py && python3 royr_fraa_mesh.py   # mål frå Tripo-meshen -> form_maal.json
+python3 cad_skal.py       # B-rep-delar: print/step og print/stl
+python3 kontroll_cad.py   # kontroll.json frå STL-ane og proxyane
 python3 print_skal.py     # prentretning
 bash bambu_skal.sh A3-Entropi-botn-P1S ../print/printretning/botn.stl
 bash bambu_skal.sh A3-Entropi-topp-P1S ../print/printretning/topp.stl
 python3 cmf_overfor.py && python3 vis.py
 ```
 
-Mål og plasseringar ligg i `verktoy/delar_konfig.json` under `skal`. Luke-versjonen med stabelhaldar ligg i git-historikken (958babc).
+Mål og plasseringar ligg i `verktoy/delar_konfig.json` under `form`, `skal` og `detalj`. Luke-versjonen med stabelhaldar ligg i git-historikken (958babc).

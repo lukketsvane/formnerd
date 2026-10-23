@@ -6,11 +6,11 @@
       -1
     ],
     "storleik_mm": [
-      82.2,
-      118.9,
+      83.5,
+      118.6,
       39.5
     ],
-    "volum_cm3": 78.92
+    "volum_cm3": 98.58
   },
   "topp": {
     "botn_mot_bordet": [
@@ -19,11 +19,11 @@
       -1
     ],
     "storleik_mm": [
-      89.8,
-      120.0,
+      91.2,
+      121.4,
       52.7
     ],
-    "volum_cm3": 131.56
+    "volum_cm3": 135.28
   },
   "utloysar": {
     "botn_mot_bordet": [
@@ -34,9 +34,9 @@
     "storleik_mm": [
       11.2,
       11.2,
-      5.5
+      5.2
     ],
-    "volum_cm3": 0.43
+    "volum_cm3": 0.51
   },
   "usb-lokk": {
     "botn_mot_bordet": [
@@ -47,9 +47,9 @@
     "storleik_mm": [
       17.0,
       11.8,
-      9.3
+      8.0
     ],
-    "volum_cm3": 1.29
+    "volum_cm3": 1.2
   },
   "hjulaksel": {
     "botn_mot_bordet": [
