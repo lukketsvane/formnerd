@@ -1,0 +1,332 @@
+{
+  "input": "actual Tripo v3 retopology, saved mesh, 11 parts",
+  "source_mm_scale": 118.0,
+  "expected_outer_envelope_mm": [
+    117.8,
+    87.8,
+    61.2
+  ],
+  "powerbank_mm": [
+    94,
+    62,
+    15
+  ],
+  "battery_clearance_side_mm": 0.5,
+  "module_nominal_mm": [
+    27,
+    40.5,
+    10.4
+  ],
+  "camera_axis_centers_mm": [
+    [
+      -29.0,
+      37.1
+    ],
+    [
+      29.0,
+      37.1
+    ]
+  ],
+  "lens_center_distance_mm": 58.0,
+  "pocket_results": [
+    {
+      "part": "A0_Tripo_quads_organic_front",
+      "before": {
+        "name": "A0_Tripo_quads_organic_front",
+        "verts": 16076,
+        "faces": 16076,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 67185.0
+      },
+      "after": {
+        "name": "A0_Tripo_quads_organic_front",
+        "verts": 14486,
+        "faces": 14119,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 60010.5
+      },
+      "retained_fraction": 0.8932
+    },
+    {
+      "part": "tripo_part_1",
+      "before": {
+        "name": "tripo_part_1",
+        "verts": 1564,
+        "faces": 3124,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 134226.2
+      },
+      "after": {
+        "name": "tripo_part_1",
+        "verts": 1688,
+        "faces": 2840,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 48748.3
+      },
+      "retained_fraction": 0.3632
+    },
+    {
+      "part": "tripo_part_2",
+      "before": {
+        "name": "tripo_part_2",
+        "verts": 1232,
+        "faces": 2460,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 96178.3
+      },
+      "after": {
+        "name": "tripo_part_2",
+        "verts": 1173,
+        "faces": 1790,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 26193.6
+      },
+      "retained_fraction": 0.2723
+    },
+    {
+      "part": "tripo_part_3",
+      "before": {
+        "name": "tripo_part_3",
+        "verts": 796,
+        "faces": 1588,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 19522.0
+      },
+      "after": {
+        "name": "tripo_part_3",
+        "verts": 790,
+        "faces": 1387,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 15404.3
+      },
+      "retained_fraction": 0.7891
+    },
+    {
+      "part": "tripo_part_4",
+      "before": {
+        "name": "tripo_part_4",
+        "verts": 614,
+        "faces": 1220,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 21048.6
+      },
+      "after": {
+        "name": "tripo_part_4",
+        "verts": 698,
+        "faces": 981,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 12575.9
+      },
+      "retained_fraction": 0.5975
+    },
+    {
+      "part": "tripo_part_5",
+      "before": {
+        "name": "tripo_part_5",
+        "verts": 592,
+        "faces": 1180,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 28868.0
+      },
+      "after": {
+        "name": "tripo_part_5",
+        "verts": 640,
+        "faces": 1134,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 25957.2
+      },
+      "retained_fraction": 0.8992
+    },
+    {
+      "part": "tripo_part_6",
+      "before": {
+        "name": "tripo_part_6",
+        "verts": 343,
+        "faces": 682,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 2929.6
+      },
+      "after": {
+        "name": "tripo_part_6",
+        "verts": 347,
+        "faces": 684,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 2929.6
+      },
+      "retained_fraction": 1.0
+    },
+    {
+      "part": "tripo_part_7",
+      "before": {
+        "name": "tripo_part_7",
+        "verts": 380,
+        "faces": 756,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1719.1
+      },
+      "after": {
+        "name": "tripo_part_7",
+        "verts": 380,
+        "faces": 756,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1719.1
+      },
+      "retained_fraction": 1.0
+    },
+    {
+      "part": "tripo_part_8",
+      "before": {
+        "name": "tripo_part_8",
+        "verts": 527,
+        "faces": 1050,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 8929.3
+      },
+      "after": {
+        "name": "tripo_part_8",
+        "verts": 548,
+        "faces": 1039,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 8770.8
+      },
+      "retained_fraction": 0.9822
+    },
+    {
+      "part": "tripo_part_9",
+      "before": {
+        "name": "tripo_part_9",
+        "verts": 268,
+        "faces": 532,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 824.3
+      },
+      "after": {
+        "name": "tripo_part_9",
+        "verts": 284,
+        "faces": 528,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 821.9
+      },
+      "retained_fraction": 0.9971
+    },
+    {
+      "part": "tripo_part_10",
+      "before": {
+        "name": "tripo_part_10",
+        "verts": 297,
+        "faces": 590,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 457.9
+      },
+      "after": {
+        "name": "tripo_part_10",
+        "verts": 297,
+        "faces": 590,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 457.9
+      },
+      "retained_fraction": 1.0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "A0_Tripo_quads_organic_front",
+      "verts": 14486,
+      "faces": 14119,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 60010.5
+    },
+    {
+      "name": "tripo_part_1",
+      "verts": 1688,
+      "faces": 2840,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 48748.3
+    },
+    {
+      "name": "tripo_part_2",
+      "verts": 1173,
+      "faces": 1790,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 26193.6
+    },
+    {
+      "name": "tripo_part_3",
+      "verts": 790,
+      "faces": 1387,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 15404.3
+    },
+    {
+      "name": "tripo_part_4",
+      "verts": 698,
+      "faces": 981,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 12575.9
+    },
+    {
+      "name": "tripo_part_5",
+      "verts": 640,
+      "faces": 1134,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 25957.2
+    },
+    {
+      "name": "tripo_part_6",
+      "verts": 347,
+      "faces": 684,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 2929.6
+    },
+    {
+      "name": "tripo_part_7",
+      "verts": 380,
+      "faces": 756,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 1719.1
+    },
+    {
+      "name": "tripo_part_8",
+      "verts": 548,
+      "faces": 1039,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 8770.8
+    },
+    {
+      "name": "tripo_part_9",
+      "verts": 284,
+      "faces": 528,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 821.9
+    },
+    {
+      "name": "tripo_part_10",
+      "verts": 297,
+      "faces": 590,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 457.9
+    },
+    {
+      "name": "P1_BATTERY_RING",
+      "verts": 814,
+      "faces": 704,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 14743.3
+    },
+    {
+      "name": "P2_ESP32_BRACKET",
+      "verts": 456,
+      "faces": 410,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3562.7
+    },
+    {
+      "name": "P3_ESP32_BRACKET",
+      "verts": 456,
+      "faces": 410,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 3562.7
+    }
+  ],
+  "print_status": "UNVERIFIED CANDIDATES, NOT SLICED, PHYSICAL HARDWARE NOT TESTED"
+}
