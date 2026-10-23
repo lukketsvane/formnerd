@@ -1,6 +1,10 @@
 # Entropi · A3-print (delt skal)
 
-A3-designet frå `arkiv/entropi-a3` bygd opp att som rein CAD: alle delane er B-rep-solidar (NURBS/analytiske flater i OCCT via build123d), ikkje mesh. Tripo-meshen er berre brukt som målestokk for forma. Kvar del ligg som STEP i `print/step/` og som tett tessellert STL i `print/stl/`. Modellen skal målast i to gråtonar, så renderane viser berre dei. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Linsa sit i ei glatt trakt med éin skarp kant, hendingshorisonten, i staden for den tynne ringen og sporet. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
+## Monteringsrettleiing R03
+
+[Opne det nye A4-heftet (20 sider)](../../verktoy/ikea/eksempel/ut/rettleiing.pdf). Det er bygd frå desse delane med det felles [manualverktøyet](../../verktoy/ikea/README.md). R03 viser prenta aksel og V4-hjul, tolv magnetar, stativmutter og kontroll før lukking.
+
+A3-designet frå `arkiv/entropi-a3` som delt og hol kamerakropp for Bambu Lab P1S. Modellen skal målast i to gråtonar, så renderane viser berre dei. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Linsa sit i ei glatt trakt med éin skarp kant, hendingshorisonten, i staden for den tynne ringen og sporet. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
 
 ![CMF](bilete/cmf.png)
 
