@@ -1,0 +1,19 @@
+{
+  "input_file": "Colani_Lady_Tripo_SmartMesh_10k_Quad.glb",
+  "meshes": 1,
+  "parts": [
+    {
+      "mesh": "tripo_node_3abcd40f-ef3c-477a-a891-726cfb398ce0",
+      "verts": 9312,
+      "faces": 18584,
+      "triangles": 18584,
+      "quads": 0,
+      "boundary_edges_raw": 10330,
+      "non_manifold_edges_raw": 10332,
+      "boundary_edges_welded": 98,
+      "non_manifold_edges_welded": 101,
+      "loose_edges": 0,
+      "watertight_after_weld": false
+    }
+  ]
+}

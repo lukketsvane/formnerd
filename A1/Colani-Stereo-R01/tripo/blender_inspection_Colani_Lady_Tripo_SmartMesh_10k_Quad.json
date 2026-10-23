@@ -1,0 +1,30 @@
+{
+  "source": "Colani_Lady_Tripo_SmartMesh_10k_Quad.glb",
+  "source_file_bytes": 5220924,
+  "objects": [
+    {
+      "name": "tripo_node_3abcd40f-ef3c-477a-a891-726cfb398ce0",
+      "vertices": 15216,
+      "triangles": 18584,
+      "materials": [
+        "tripo_node_3abcd40f-ef3c-477a-a891-726cfb398ce0_material"
+      ]
+    }
+  ],
+  "bbox_units": [
+    0.62915,
+    0.55265,
+    0.97718
+  ],
+  "bbox_minimum": [
+    -0.31457266211509705,
+    -0.2763267457485199,
+    0.0
+  ],
+  "bbox_maximum": [
+    0.31457266211509705,
+    0.2763267457485199,
+    0.9771831035614014
+  ],
+  "coordinate_units_unverified": true
+}
