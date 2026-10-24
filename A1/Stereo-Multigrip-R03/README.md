@@ -31,3 +31,7 @@ For disassembly, pull the cross wedge first, then withdraw its T-pin. The T-pin 
 - `checks/geometry-checks.json`: validity, connectivity and intersection results for the generated nominal geometry.
 
 Bank and ESP32-CAM dimensions originate from the supplied nominal 1:1 PDF. That PDF does not contain the MB programmer boards. MB dimensions, header height, sensor shoulders, plugs and sensor-contact height remain assumptions. The design is not physically fit-tested. Hardware references are not vendor production CAD. Larger programmer boards require a coordinated cage/keeper change; the script guards against silently increasing them beyond the current nests.
+
+## Feltreparasjon for laus ramme (24.10.2026)
+
+Om berre dei to store R03-rammedelane er printa, vil dei vere lause utan dei fire tverrpinnane og fire låsekilane. For å berge dei eksisterande printa: sjå [R03-REPAIR-LOCKS-R01](REPAIR-LOCKS-R01/README.md) med passformprøve, tre klemmande pinnevariantar, fire hovudlåsesett, dei mindre kamerafestene og 3MF-plater for P1S. Fysisk passform må verifiserast før montering av elektronikk.
