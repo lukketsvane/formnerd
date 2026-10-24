@@ -1,0 +1,432 @@
+{
+  "file": "output/stereo-multigrip-r03/Bambu-Studio/Stereo-Multigrip-R03-02-Harness.3mf",
+  "type": "unsliced 3MF Core build layout",
+  "bed_mm": [
+    256,
+    256
+  ],
+  "margin_mm": 16,
+  "gap_mm": 8,
+  "parts": [
+    {
+      "name": "PRINT_01_bank_cradle",
+      "size_mm": [
+        104.599998,
+        82.800004,
+        18.400000000000002
+      ],
+      "translation_mm": [
+        68.299999,
+        57.400002,
+        0
+      ],
+      "triangles": 8794
+    },
+    {
+      "name": "PRINT_02_multigrip_carrier",
+      "size_mm": [
+        107.844216,
+        80.800004,
+        35.850001000000006
+      ],
+      "translation_mm": [
+        182.522106,
+        56.400002,
+        0
+      ],
+      "triangles": 35092
+    },
+    {
+      "name": "PRINT_03_MB_keeper_left",
+      "size_mm": [
+        49.45525,
+        63.699852,
+        13.450000000000001
+      ],
+      "translation_mm": [
+        40.727625,
+        138.64993,
+        0
+      ],
+      "triangles": 5000
+    },
+    {
+      "name": "PRINT_04_MB_keeper_right",
+      "size_mm": [
+        49.45525,
+        63.699852,
+        13.450000000000001
+      ],
+      "translation_mm": [
+        98.18287500000001,
+        138.64993,
+        0
+      ],
+      "triangles": 5000
+    },
+    {
+      "name": "PRINT_05_sensor_yoke_left",
+      "size_mm": [
+        15.714096,
+        47.658234,
+        8.75
+      ],
+      "translation_mm": [
+        138.767548,
+        130.629121,
+        0
+      ],
+      "triangles": 3968
+    },
+    {
+      "name": "PRINT_06_sensor_yoke_right",
+      "size_mm": [
+        15.714096,
+        47.658234,
+        8.75
+      ],
+      "translation_mm": [
+        162.481644,
+        130.629121,
+        0
+      ],
+      "triangles": 3968
+    },
+    {
+      "name": "PRINT_20_keeper_L_down_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        190.94758499999998,
+        113.131474,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_20_keeper_L_up_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        224.165586,
+        113.131474,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_20_keeper_R_down_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        28.608893000000002,
+        184.831326,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_20_keeper_R_up_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        61.826894,
+        184.831326,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_30_yoke_L_down_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        95.044895,
+        184.831326,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_30_yoke_L_up_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        128.262896,
+        184.831326,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_30_yoke_R_down_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        161.480897,
+        184.831326,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_30_yoke_R_up_pin",
+      "size_mm": [
+        25.218001,
+        12.663155,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        194.698898,
+        184.831326,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_10_frame_1_pin",
+      "size_mm": [
+        24.299999999999997,
+        10.0,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        227.45791900000003,
+        183.499856,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_10_frame_2_pin",
+      "size_mm": [
+        24.299999999999997,
+        10.0,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        28.149912999999998,
+        204.16301099999998,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_10_frame_3_pin",
+      "size_mm": [
+        24.299999999999997,
+        10.0,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        60.449912999999995,
+        204.16301099999998,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_10_frame_4_pin",
+      "size_mm": [
+        24.299999999999997,
+        10.0,
+        4.3999999999999995
+      ],
+      "translation_mm": [
+        92.74991299999999,
+        204.16301099999998,
+        0
+      ],
+      "triangles": 1344
+    },
+    {
+      "name": "PRINT_10_frame_1_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        120.89999999999999,
+        202.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_10_frame_2_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        144.89999999999998,
+        202.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_10_frame_3_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        168.89999999999998,
+        202.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_10_frame_4_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        192.89999999999998,
+        202.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_20_keeper_L_down_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        216.89999999999998,
+        202.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_20_keeper_L_up_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        24.0,
+        220.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_20_keeper_R_down_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        48.0,
+        220.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_20_keeper_R_up_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        72.0,
+        220.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_L_down_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        96.0,
+        220.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_L_up_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        120.0,
+        220.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_R_down_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        144.0,
+        220.66301099999998,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_R_up_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        168.0,
+        220.66301099999998,
+        0
+      ],
+      "triangles": 468
+    }
+  ]
+}
