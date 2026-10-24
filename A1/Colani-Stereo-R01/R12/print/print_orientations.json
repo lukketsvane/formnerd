@@ -1,0 +1,22 @@
+{
+  "P01_front_Tripo_R12.stl": {
+    "path": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\Colani-Stereo-R01\\R12\\print\\P01_front_Tripo_R12_P1S.stl",
+    "z_min": 0.0,
+    "height": 23.722557067871094,
+    "bounds_mm": [
+      95.90977478027344,
+      144.96673583984375,
+      23.722557067871094
+    ]
+  },
+  "P02_back_Tripo_R12.stl": {
+    "path": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\Colani-Stereo-R01\\R12\\print\\P02_back_Tripo_R12_P1S.stl",
+    "z_min": 0.0,
+    "height": 25.257274627685547,
+    "bounds_mm": [
+      95.91118621826172,
+      144.96719360351562,
+      25.257274627685547
+    ]
+  }
+}
