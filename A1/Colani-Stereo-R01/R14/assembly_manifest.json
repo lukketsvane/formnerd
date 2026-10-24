@@ -1,0 +1,41 @@
+{
+  "revision": "R14",
+  "outer_source": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\Colani-Stereo-R01\\R12\\Colani_R12_Tripo_geometry.blend",
+  "actual_outer_geometry": "R12 Tripo-derived shell",
+  "internals": "R13 CAD primitive geometry reconstructed with verified nominal dimensions and R14 shift of powerbank into rear half",
+  "envelope_mm": [
+    96,
+    145,
+    46
+  ],
+  "powerbank_center_mm": [
+    -9,
+    10,
+    -5
+  ],
+  "pcb_centers_mm": [
+    [
+      -14.75,
+      -13,
+      -25
+    ],
+    [
+      14.75,
+      -13,
+      -25
+    ]
+  ],
+  "lens_baseline_mm": 29.5,
+  "pictures": [
+    "01_finished_hero_actual_CAD.png",
+    "02_finished_front_actual_CAD.png",
+    "03_finished_right_actual_CAD.png",
+    "04_finished_rear_actual_CAD.png",
+    "05_open_back_with_electronics.png",
+    "06_exploded_outer_inner.png",
+    "07_internal_assembled.png",
+    "08_mechanical_parts_only.png",
+    "09_rear_section_side.png"
+  ],
+  "status": "digital assembly visualization, not production fit certified"
+}
