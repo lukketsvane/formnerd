@@ -1,0 +1,18 @@
+R03 / CORRECT PRINT FILES
+=========================
+1. First open Stereo-Multigrip-R03-P1S-01-LOCK-TEST.3mf
+   Four coupon parts only. Print and test pin/fork/tongue/wedge fit by hand.
+2. Then open Stereo-Multigrip-R03-P1S-02-ALL-30-PARTS.3mf
+   This contains six main plastic parts, twelve T-pins and twelve retaining wedges.
+3. In Bambu Studio select the actual P1S, 0.4 mm nozzle, build plate,
+   and the filament currently loaded. Slice and inspect supports and first layer.
+4. Do NOT print Stereo-Multigrip-R03-assembly.step:
+   it includes simplified electronic component references.
+5. R03 is a different assembly from the R04-LITE fit prototype.
+   R03 parts are NOT verified to fit onto an R04-LITE frame.
+6. Test physical fit first. Camera/programmer/USB plug dimensions were assumed.
+   Do not force locking pins against sensor optics or flex cable.
+
+Checked 2026-10-24: both fixed 3MF files pass ZIP/XML/mesh checks;
+both 3MF formats opened in Bambu Studio; 30-part geometry visible on P1S bed.
+NOT YET SLICED AND NOT SENT TO PRINTER.

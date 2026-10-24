@@ -1,0 +1,957 @@
+﻿[
+    {
+        "path":  "README.md",
+        "bytes":  4401,
+        "sha256":  "a0139d86e6b51862a340255aff29fa518f67b71d2417ac08bcd2fd906586bdda"
+    },
+    {
+        "path":  "scene_assembled.json",
+        "bytes":  16042,
+        "sha256":  "b9c4a10d28dffac4ed847dbb00e4cdb90d376a4417bffd59cbfb90b3691eb62d"
+    },
+    {
+        "path":  "scene_exploded.json",
+        "bytes":  21697,
+        "sha256":  "5865ca06dd900e0b139104650d40a817601803abeb7ac3d8f2a1fcf80b6cd781"
+    },
+    {
+        "path":  "scene_harness.json",
+        "bytes":  5613,
+        "sha256":  "78a44df6e7a1962f6c49a7a6dfba2896ce932b298ff00782a03bfb701c744c32"
+    },
+    {
+        "path":  "SESSION-2026-10-24.md",
+        "bytes":  1358,
+        "sha256":  "6228e56003e642df44d886a55dc9eac5c6aea13f554c14daa43395bbe40a9d05"
+    },
+    {
+        "path":  "alternates/stereo_harness_R04_LITE_P1S_UNSLICED.3mf",
+        "bytes":  13738,
+        "sha256":  "2faec59eac9ecc03d89e534527e37b6d916662255f40ad27cd332fe8ac9838d5"
+    },
+    {
+        "path":  "Bambu-Studio/OPEN-IN-BAMBU.md",
+        "bytes":  1395,
+        "sha256":  "519907c3dfee1319c00484bd8b905c573a34e248be84568c304605988fa32c75"
+    },
+    {
+        "path":  "Bambu-Studio/Stereo-Multigrip-R03-01-Lock-Test.3mf",
+        "bytes":  31676,
+        "sha256":  "bfecfb2134f00278b449cca9d4ca79ba95ded47f82033325151393c4b3e32246"
+    },
+    {
+        "path":  "Bambu-Studio/Stereo-Multigrip-R03-01-Lock-Test.json",
+        "bytes":  1045,
+        "sha256":  "aee84e0a64eb6e6a59320eeb30f21d200ec3e06a784917b88237c11aba813f3e"
+    },
+    {
+        "path":  "Bambu-Studio/Stereo-Multigrip-R03-02-Harness.3mf",
+        "bytes":  774888,
+        "sha256":  "12f2e77c853c116c5162ed73d65733e46bf52ef606b26d7a1b804b4af26104be"
+    },
+    {
+        "path":  "Bambu-Studio/Stereo-Multigrip-R03-02-Harness.json",
+        "bytes":  7757,
+        "sha256":  "79ffc0ef941ba8e240d213b1b0b57919e81f4111739bbc266a7903a8d405311e"
+    },
+    {
+        "path":  "Bambu-Studio/Stereo-Multigrip-R03-P1S-01-LOCK-TEST.3mf",
+        "bytes":  33509,
+        "sha256":  "56308d6bfa1f11715630c4a169523e9d4887e7696f1892c0d6d5660d3632ae55"
+    },
+    {
+        "path":  "Bambu-Studio/Stereo-Multigrip-R03-P1S-02-ALL-30-PARTS.3mf",
+        "bytes":  820559,
+        "sha256":  "47933a05352e32d3ba2f80dd2be2148a3950daf4c1e3070b986d798eb1e58753"
+    },
+    {
+        "path":  "Bambu-Studio/Stereo-Multigrip-R03-P1S-READ-ME.txt",
+        "bytes":  1047,
+        "sha256":  "d6da8684793a22567cfd99f7a6042284eca25e240241fe92a3492f7cedb052ca"
+    },
+    {
+        "path":  "checks/export-checks.json",
+        "bytes":  8951,
+        "sha256":  "1fb859c05ba704fef9ceb1f4ffadcd5776a51bdfb9f2bf78335b3c2206a6229c"
+    },
+    {
+        "path":  "checks/geometry-checks.json",
+        "bytes":  7336,
+        "sha256":  "ed1cfd30fca98fa3163eefc381bfa120b61657cd6a3d0704586616c0fd425cc2"
+    },
+    {
+        "path":  "fit_coupon/TEST_fork.step",
+        "bytes":  92973,
+        "sha256":  "8805552c186256f8ba94358c5bee502d93cdcc7e77424f511ab79c15730e0610"
+    },
+    {
+        "path":  "fit_coupon/TEST_fork.stl",
+        "bytes":  54684,
+        "sha256":  "34b301ad7b49a62ff297779e2161a1445edf200d9fb4f16758bde64455ac76e2"
+    },
+    {
+        "path":  "fit_coupon/TEST_pin.step",
+        "bytes":  92709,
+        "sha256":  "eed161279dc164b3b12f443dc1c5f8695f2c4bfe9066040385575eb88723c3b7"
+    },
+    {
+        "path":  "fit_coupon/TEST_pin.stl",
+        "bytes":  79284,
+        "sha256":  "2d809580c1e63057a2d274419135e40f56e218e90b9e7973715636e6aaa7e306"
+    },
+    {
+        "path":  "fit_coupon/TEST_tongue.step",
+        "bytes":  46711,
+        "sha256":  "53b089cf68aa4ff5b5bd889a081f5c6228797d70790d184ae64df7de5dd0cb09"
+    },
+    {
+        "path":  "fit_coupon/TEST_tongue.stl",
+        "bytes":  27284,
+        "sha256":  "88d1858ae184b40509bcc92081153a937e7c99475d2ccd490371c40d64318256"
+    },
+    {
+        "path":  "fit_coupon/TEST_wedge.step",
+        "bytes":  53706,
+        "sha256":  "fcc3b192b4f5c503ef08ad4b7e7745b837d2ef00e127d262fb893fa6535b39f0"
+    },
+    {
+        "path":  "fit_coupon/TEST_wedge.stl",
+        "bytes":  27484,
+        "sha256":  "6340a68bb1c02c3c1c6afe25b7306400db3de018e1dcabbcfa4ce1ddac7f5616"
+    },
+    {
+        "path":  "previews/assembled-r03.png",
+        "bytes":  231077,
+        "sha256":  "1defd2953e29050faf42585cbe2eb0a470597fc5ec290cee2157faaedec99de7"
+    },
+    {
+        "path":  "releases/Stereo-Multigrip-R03-CAD.zip",
+        "bytes":  7538243,
+        "sha256":  "69f4eb7767028e8a68cf3fad2e5146fe95291429c1168f21dea4d5631158cdbb"
+    },
+    {
+        "path":  "source/build_harness.py",
+        "bytes":  15603,
+        "sha256":  "a779aafcf23c509fd4c9ff91cc8c376229da409ba9e8d812867394a9802777c6"
+    },
+    {
+        "path":  "source/clean_stl.py",
+        "bytes":  676,
+        "sha256":  "9751a93787a431860bd078a5e9a7ff29e63bfbbf019ae2f5223e07d5fb260ef5"
+    },
+    {
+        "path":  "source/make_print_plate.py",
+        "bytes":  5170,
+        "sha256":  "978f03d316aecfb544fe94d030ebab76b170b390fd601aebd92effb9e022dbc4"
+    },
+    {
+        "path":  "source/parameters.json",
+        "bytes":  2295,
+        "sha256":  "e51b850e78958a4628f055d2da50e7d41e8407adee3e149bc949bf475e0992d3"
+    },
+    {
+        "path":  "source/render_cad.py",
+        "bytes":  7321,
+        "sha256":  "b632d573decb355e37967fd61cbaf490bff459509ac223689df38daff56eb84d"
+    },
+    {
+        "path":  "source/verify_exports.py",
+        "bytes":  2111,
+        "sha256":  "8c9444eba06518ce9bce66ab22856bcf9cb3c682fb3adb5cb3536cfa793b8ac5"
+    },
+    {
+        "path":  "STEP/01_bank_cradle.step",
+        "bytes":  1014915,
+        "sha256":  "2ac035232e82412aa6752307d6422ff7ca56fa66d6b08fa2325e46c03f26b334"
+    },
+    {
+        "path":  "STEP/02_multigrip_carrier.step",
+        "bytes":  3942500,
+        "sha256":  "3d6a448a5bc5f4a127d749db84ec3ef12aebea0050733ccd386358d65e6491e0"
+    },
+    {
+        "path":  "STEP/03_MB_keeper_left.step",
+        "bytes":  418818,
+        "sha256":  "0a3abd4527f95b4098a021ed380c74d519d10f658d4aa16918927a445e878dec"
+    },
+    {
+        "path":  "STEP/04_MB_keeper_right.step",
+        "bytes":  418564,
+        "sha256":  "0aa27bd7e9a48f929bea2a6ff12ee0a117f046fbd6e6e196ee5e2b7c075d3214"
+    },
+    {
+        "path":  "STEP/05_sensor_yoke_left.step",
+        "bytes":  335018,
+        "sha256":  "de55357074efb23328bdf75fba029f4a9a6a65ffc18b1bbd697aa4212e1d3afa"
+    },
+    {
+        "path":  "STEP/06_sensor_yoke_right.step",
+        "bytes":  335740,
+        "sha256":  "6b5ae9ae7accd1aa8f3b3df6748a48b2a6a5db828fc85cf8f6c2c21f482eee84"
+    },
+    {
+        "path":  "STEP/10_frame_1_pin.step",
+        "bytes":  93300,
+        "sha256":  "616ee54273a565757099cad68523e3266196fbb7dec4912aacee5c5488f00019"
+    },
+    {
+        "path":  "STEP/10_frame_1_wedge.step",
+        "bytes":  54755,
+        "sha256":  "485d7077d3ffda5dffffd2cc6f7f35aacef8e3f9e3e1a6483a278fe721e34cf0"
+    },
+    {
+        "path":  "STEP/10_frame_2_pin.step",
+        "bytes":  93154,
+        "sha256":  "04732d8e14384ad1ccd9635147cd9f499b9b6f275cc6018439c5cb8b7b81ef67"
+    },
+    {
+        "path":  "STEP/10_frame_2_wedge.step",
+        "bytes":  54663,
+        "sha256":  "45f5a9717752dd9913f7f8eb2a687e1f1bde29f8ea7205abead9a5bbad5de029"
+    },
+    {
+        "path":  "STEP/10_frame_3_pin.step",
+        "bytes":  93154,
+        "sha256":  "61d7cddb461b0ef9d6a9b9511168f2905ba90f403f73c8fe39925e379c80bbdf"
+    },
+    {
+        "path":  "STEP/10_frame_3_wedge.step",
+        "bytes":  54681,
+        "sha256":  "ce434239834a7db1af991829aefee913191c1b187bb0aecbfa990a577c98930b"
+    },
+    {
+        "path":  "STEP/10_frame_4_pin.step",
+        "bytes":  93008,
+        "sha256":  "5aba70c18223e78a51b3884147901891d4fde85f1e0a2dcd067996b87dd3b1f9"
+    },
+    {
+        "path":  "STEP/10_frame_4_wedge.step",
+        "bytes":  54587,
+        "sha256":  "59a49ea0a27b48e19a4629ff35415dfa2e0e91ca0869e2a57e1ccbddcc8f29d6"
+    },
+    {
+        "path":  "STEP/20_keeper_L_down_pin.step",
+        "bytes":  96915,
+        "sha256":  "62a3495766c80ecfd4a763ce780c588160548396c86c6bce587201de0267c19c"
+    },
+    {
+        "path":  "STEP/20_keeper_L_down_wedge.step",
+        "bytes":  56999,
+        "sha256":  "8e5647f11d0a5d0e45588e4ebcee49291d199713535af85204101244d26b8efd"
+    },
+    {
+        "path":  "STEP/20_keeper_L_up_pin.step",
+        "bytes":  96918,
+        "sha256":  "98006e1c5b0fd149b1fcd5719b5d5d30aad116fb11ba3afb50222ecf0493269e"
+    },
+    {
+        "path":  "STEP/20_keeper_L_up_wedge.step",
+        "bytes":  57010,
+        "sha256":  "866dfbbb2bcea8099585e5746e6b80bf9ea030e7fa5a4c17d1870f0bee84bb2c"
+    },
+    {
+        "path":  "STEP/20_keeper_R_down_pin.step",
+        "bytes":  96900,
+        "sha256":  "396d550c12ba0d3851bb71cbbd169fbf7e3b47715caa1ade15382d0bbbbaa6cc"
+    },
+    {
+        "path":  "STEP/20_keeper_R_down_wedge.step",
+        "bytes":  56938,
+        "sha256":  "51d3cea74e3944de6cb76f1dc5a0d459f9998e75002b2f3ec0cd444c676f4fe4"
+    },
+    {
+        "path":  "STEP/20_keeper_R_up_pin.step",
+        "bytes":  96898,
+        "sha256":  "dcee7d80ba10539c6d09a2f3f17ecdc03a69e2c927e6ac66fe66c791a5433e3d"
+    },
+    {
+        "path":  "STEP/20_keeper_R_up_wedge.step",
+        "bytes":  56986,
+        "sha256":  "248a71b5545ccadf84029fcfc7851fda67f1d129d8db18a9e4f52a5f6f47d2dd"
+    },
+    {
+        "path":  "STEP/30_yoke_L_down_pin.step",
+        "bytes":  96915,
+        "sha256":  "95f627a69c1c71156d76148ca01e029c6c34aa18f3ce1a963692f74a0290c4ac"
+    },
+    {
+        "path":  "STEP/30_yoke_L_down_wedge.step",
+        "bytes":  57028,
+        "sha256":  "d44972b244e8987d3edb1bc3b3d70ed13690cd5baad08a8516e6c6817435d2d3"
+    },
+    {
+        "path":  "STEP/30_yoke_L_up_pin.step",
+        "bytes":  96906,
+        "sha256":  "bbed4dcf8b4a0ffca6ba125578370fa89f980b160a3283af9b2a319a469f00b0"
+    },
+    {
+        "path":  "STEP/30_yoke_L_up_wedge.step",
+        "bytes":  56957,
+        "sha256":  "d7d1948268b052cf0dfc9a6a8754047dbefdf60f5d47992a8f617d041fe65601"
+    },
+    {
+        "path":  "STEP/30_yoke_R_down_pin.step",
+        "bytes":  96922,
+        "sha256":  "92c70af9ec6616a1567c5500a2c8fcca5b552a34c47a2d209bce09c100c3e466"
+    },
+    {
+        "path":  "STEP/30_yoke_R_down_wedge.step",
+        "bytes":  56956,
+        "sha256":  "75b2bd0f8f974a79c0c52312004fd7c80a7fc346a8429ea56b6448e3db99c9db"
+    },
+    {
+        "path":  "STEP/30_yoke_R_up_pin.step",
+        "bytes":  96907,
+        "sha256":  "f9f89ccf6a55472aa00f73bcfecfd0aa8d91e06f73ec49a41314cac009c0b895"
+    },
+    {
+        "path":  "STEP/30_yoke_R_up_wedge.step",
+        "bytes":  57035,
+        "sha256":  "f6a196ea2726e08d57ac4accf0f66f2a9d0c216cb34418e5f65e261860d020c4"
+    },
+    {
+        "path":  "STEP/Stereo-Multigrip-R03-assembly.step",
+        "bytes":  10085771,
+        "sha256":  "0277b3cc60534a4cc74975270f7036e49285048377579a885224f84654214b7b"
+    },
+    {
+        "path":  "STEP/Stereo-Multigrip-R03-harness-only.step",
+        "bytes":  8695027,
+        "sha256":  "ca3aa27f4ce54ced0ed36e0618d741fe7f8b0d97ede3e311c78ac02ab48849d6"
+    },
+    {
+        "path":  "STEP/USB-keepouts-reference.step",
+        "bytes":  142700,
+        "sha256":  "7a55e6ce668bcf74179fea9762077c7c5e64a2b27839c627f018479b40964c0d"
+    },
+    {
+        "path":  "STL/01_bank_cradle.stl",
+        "bytes":  351584,
+        "sha256":  "8ca4921e9b873403bbc18e5914357ccae2720e96f6d24a46de0703a8a97f6f71"
+    },
+    {
+        "path":  "STL/02_multigrip_carrier.stl",
+        "bytes":  1398384,
+        "sha256":  "ef576d340991a9350d06a540b311d491c7f70ccedd47a906e8b7843f30a8394c"
+    },
+    {
+        "path":  "STL/03_MB_keeper_left.stl",
+        "bytes":  197284,
+        "sha256":  "107b7e17d55ed773fc6b4eae68f47babc0dedcd5c6fc29e96ea5e13383e68778"
+    },
+    {
+        "path":  "STL/04_MB_keeper_right.stl",
+        "bytes":  197284,
+        "sha256":  "3fa8681467a0cbdcfb19ac4203e4dc097721962f563612ba56acc0e7c453d437"
+    },
+    {
+        "path":  "STL/05_sensor_yoke_left.stl",
+        "bytes":  157084,
+        "sha256":  "c1d9faea2305d787f3296c59695a7ea9b78116ee8b54dce3dd48281fab16d946"
+    },
+    {
+        "path":  "STL/06_sensor_yoke_right.stl",
+        "bytes":  157084,
+        "sha256":  "9bf608091261e45ab41377aea390a97854c618cf95943370af003ff5cfe8bd3b"
+    },
+    {
+        "path":  "STL/10_frame_1_pin.stl",
+        "bytes":  52884,
+        "sha256":  "8625c4461a5bb716ea3ce1abf3021351a48929e23fb3ccd0c28b9294a681f3fa"
+    },
+    {
+        "path":  "STL/10_frame_1_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "e00ee78636f20e7393c838d4298b8438a5d0df01a87a9a8847a5f51914f1d0dd"
+    },
+    {
+        "path":  "STL/10_frame_2_pin.stl",
+        "bytes":  52884,
+        "sha256":  "1318cea2cc667f3941132407733be037fba88e15db4f4588a2c92ca02b3aeca7"
+    },
+    {
+        "path":  "STL/10_frame_2_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "eb576299ad7ce7a39bece563e4805f1a1814f85eaf7446c15719e7b1945e8112"
+    },
+    {
+        "path":  "STL/10_frame_3_pin.stl",
+        "bytes":  52884,
+        "sha256":  "efa512ec7555980a474e8cdf5f92e06a153c82a39987e95c14258ada64710a0a"
+    },
+    {
+        "path":  "STL/10_frame_3_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "565aeb4e5c51ff8c4c111ad3eb56f62f7dcca7934ee741a814a52ed4ae4cc68f"
+    },
+    {
+        "path":  "STL/10_frame_4_pin.stl",
+        "bytes":  52884,
+        "sha256":  "ab41733d5479e46c536ebdff3a04ed9924597eb2eff089385eaa6b4a7eb6aa1c"
+    },
+    {
+        "path":  "STL/10_frame_4_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "63f62903fb77a394afa6bf6fef5bb9a331c26a6402b0e28ca81ea3843fdf1d9c"
+    },
+    {
+        "path":  "STL/20_keeper_L_down_pin.stl",
+        "bytes":  52884,
+        "sha256":  "ff991191b5c82668014e29fee050ec255500955ae303db34df94d04426cb2723"
+    },
+    {
+        "path":  "STL/20_keeper_L_down_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "457fcdf9c95d3a145fb61f8fb62979583353aa425f5fb9782769dac5b7759baa"
+    },
+    {
+        "path":  "STL/20_keeper_L_up_pin.stl",
+        "bytes":  52884,
+        "sha256":  "28cb75bb67c83090d875eabc0e097e6701a85be17c278efa9fc4c33612f673bc"
+    },
+    {
+        "path":  "STL/20_keeper_L_up_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "a6bae937927f41c79eeeafd9ff54509608ccb5225e0eb6c8dbf6b483850a1c56"
+    },
+    {
+        "path":  "STL/20_keeper_R_down_pin.stl",
+        "bytes":  52884,
+        "sha256":  "dcf6b05f5f2444ee31e9a4adc74d4e8c1940c3bee2ae347b1ba1b3eeff2fdd8a"
+    },
+    {
+        "path":  "STL/20_keeper_R_down_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "c04d715c597d4112cca8b3605e828317feb67a135fd92b194cf9ba454248f13b"
+    },
+    {
+        "path":  "STL/20_keeper_R_up_pin.stl",
+        "bytes":  52884,
+        "sha256":  "15eeb7ca7fcc33e312e00e963a08feddfebc3da2626985466b4959006b6aeaa4"
+    },
+    {
+        "path":  "STL/20_keeper_R_up_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "26c8f9bb9b6bfeb8233730cf67bbe0363c38e182536e977aaa15ae0f72438591"
+    },
+    {
+        "path":  "STL/30_yoke_L_down_pin.stl",
+        "bytes":  52884,
+        "sha256":  "86cd825bb4d627f89e2ea90e64dbc86758fd9101929f71a34315d3196cff3f33"
+    },
+    {
+        "path":  "STL/30_yoke_L_down_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "88f3435b22e196fe543609ee18325d98816f48473f5fb731e872fe1817bc847e"
+    },
+    {
+        "path":  "STL/30_yoke_L_up_pin.stl",
+        "bytes":  52884,
+        "sha256":  "6706debd04fcce690a2b2af6d1a67680f83d3421bb19d637f84574e1dfde1d0f"
+    },
+    {
+        "path":  "STL/30_yoke_L_up_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "a754cade7745edf00269d4330a235940bcbb17c10954859034ae23eb5f547f0e"
+    },
+    {
+        "path":  "STL/30_yoke_R_down_pin.stl",
+        "bytes":  52884,
+        "sha256":  "2b03fbce817fe37ecaa832521f94c9502ccd8873a3efc22f0ee91aa5f0430bb7"
+    },
+    {
+        "path":  "STL/30_yoke_R_down_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "d2739a857a68b9145422da653eefa70ea719fb90739bbf68f6bf53ebb0860417"
+    },
+    {
+        "path":  "STL/30_yoke_R_up_pin.stl",
+        "bytes":  52884,
+        "sha256":  "db096ca1a68c68e48d4ed4734f3e02d1ff6b773fec51bb12afdde0210e48002d"
+    },
+    {
+        "path":  "STL/30_yoke_R_up_wedge.stl",
+        "bytes":  18684,
+        "sha256":  "39e1c2bb84e13a8b639b64922e2f563fc02e5585c0edb4b38bc6b01d2f1b736a"
+    },
+    {
+        "path":  "STL/PAD_L_-1_-1.stl",
+        "bytes":  17484,
+        "sha256":  "903f4feeeab580b156bb1280745440f6027b5f071f9474d97c93a0dc87d37d8e"
+    },
+    {
+        "path":  "STL/PAD_L_-1_1.stl",
+        "bytes":  17484,
+        "sha256":  "3d9d3e94d2ca37f33478c24271f207ec2d311956ae7b22ceb7abde20c13092ef"
+    },
+    {
+        "path":  "STL/PAD_L_1_-1.stl",
+        "bytes":  17484,
+        "sha256":  "04ff28990ecc8e58751d0823d8a837852c4dddf807f836044395a5a2c28665c1"
+    },
+    {
+        "path":  "STL/PAD_L_1_1.stl",
+        "bytes":  17484,
+        "sha256":  "651d40e1b667599769947a0217af6a53f01b701bfc3d7578938e975ec6e0a7f7"
+    },
+    {
+        "path":  "STL/PAD_R_-1_-1.stl",
+        "bytes":  17484,
+        "sha256":  "43f6c8f0d104e360939d536f833181653f7dc25efe456f531578ec75a713db13"
+    },
+    {
+        "path":  "STL/PAD_R_-1_1.stl",
+        "bytes":  17484,
+        "sha256":  "97c3a5e7639ffc07aa44ef19daa93d04842b0036fa3aecf3a13137558edf63da"
+    },
+    {
+        "path":  "STL/PAD_R_1_-1.stl",
+        "bytes":  17484,
+        "sha256":  "0e8edfc474d8a395d519d1824c5b00a0e6266b70e82c23cb6a6a5313fa30d254"
+    },
+    {
+        "path":  "STL/PAD_R_1_1.stl",
+        "bytes":  17484,
+        "sha256":  "46ca52da0b577a9806896b07c1f0989727fee26381a7595198e9365a87894c85"
+    },
+    {
+        "path":  "STL/PRINT_01_bank_cradle.stl",
+        "bytes":  439784,
+        "sha256":  "c0e92696d3d1b92aa324ea8c4cf63bf4bd1e8b37d9ef09dbf559f870e338f40f"
+    },
+    {
+        "path":  "STL/PRINT_02_multigrip_carrier.stl",
+        "bytes":  1754684,
+        "sha256":  "d58dc92237b89d6c85e8eb9368962e8d82aa66cc9380afb8c7defec5e2e606bf"
+    },
+    {
+        "path":  "STL/PRINT_03_MB_keeper_left.stl",
+        "bytes":  250084,
+        "sha256":  "5bffc5d8438c3d486056a4b59cb643864f2bfe9bfc0cea9583a75d2eb02b1a3c"
+    },
+    {
+        "path":  "STL/PRINT_04_MB_keeper_right.stl",
+        "bytes":  250084,
+        "sha256":  "c21c8de29601d565f4f7609ba280c6acd0fe8ab6f47252111a30a9325a3aafe1"
+    },
+    {
+        "path":  "STL/PRINT_05_sensor_yoke_left.stl",
+        "bytes":  198484,
+        "sha256":  "08545b161c73806dfceb8197733f07b9b09e9ff3171db8f9aa68b4eca4dc6a0a"
+    },
+    {
+        "path":  "STL/PRINT_06_sensor_yoke_right.stl",
+        "bytes":  198484,
+        "sha256":  "4d3f43f531500cfe388b086c9225ceb013aee587a2bd1aa2af30c55a58f4c12e"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_1_pin.stl",
+        "bytes":  67284,
+        "sha256":  "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_1_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_2_pin.stl",
+        "bytes":  67284,
+        "sha256":  "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_2_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_3_pin.stl",
+        "bytes":  67284,
+        "sha256":  "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_3_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_4_pin.stl",
+        "bytes":  67284,
+        "sha256":  "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8"
+    },
+    {
+        "path":  "STL/PRINT_10_frame_4_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_L_down_pin.stl",
+        "bytes":  67284,
+        "sha256":  "58b0fc186469cbdff2d1fd9c3961d22a6e5b02b6a5508a4111cfdac0f3920ace"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_L_down_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_L_up_pin.stl",
+        "bytes":  67284,
+        "sha256":  "59292bc583380f2cd50db48f112457b17f8933a0600b4ac31a883abd054c62be"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_L_up_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_R_down_pin.stl",
+        "bytes":  67284,
+        "sha256":  "d7c0b1deea49886ac8f359693a1b9bb5624adfbde5141e00ec005c1948d31418"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_R_down_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_R_up_pin.stl",
+        "bytes":  67284,
+        "sha256":  "0660de16d88953d35a82e66ce733a06515cc3c24befe7d5ea3575786c7e51f17"
+    },
+    {
+        "path":  "STL/PRINT_20_keeper_R_up_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_L_down_pin.stl",
+        "bytes":  67284,
+        "sha256":  "a537a2bbf696fcea9298aa86d514e599d994bbcf014f99c8a1179177ccea2bb3"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_L_down_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_L_up_pin.stl",
+        "bytes":  67284,
+        "sha256":  "2b052abdd24b2a3e8ce7d7bd4be162cf0d20523382a3ab6a4a6ea8494b1ca362"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_L_up_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_R_down_pin.stl",
+        "bytes":  67284,
+        "sha256":  "9d32caf4a925616d23dff5adcb0f571e4ccd0f4dd36a2d248d23f02d0ef720d8"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_R_down_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_R_up_pin.stl",
+        "bytes":  67284,
+        "sha256":  "da56fe1f4fa3c34d9074c6afb45902a1453e08bdcec45ac358c15c9d6d7df9bf"
+    },
+    {
+        "path":  "STL/PRINT_30_yoke_R_up_wedge.stl",
+        "bytes":  23484,
+        "sha256":  "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    {
+        "path":  "STL/REF_bank_indicator.stl",
+        "bytes":  17484,
+        "sha256":  "cf3d59af4fe1ebe77ed4b83fd3879f8fb4654bb5560393873441f0c4f6382b6c"
+    },
+    {
+        "path":  "STL/REF_LED_16.stl",
+        "bytes":  16684,
+        "sha256":  "14e441b444202b1848fb12ca5cef120c916c6036765c1e40ba9b0853550716de"
+    },
+    {
+        "path":  "STL/REF_LED_9.stl",
+        "bytes":  16684,
+        "sha256":  "7651d8edbfa922ad1483547358534c8bd0fdda97d27a69194f1a7f6fd78537b1"
+    },
+    {
+        "path":  "STL/REF_L_CAM.stl",
+        "bytes":  17484,
+        "sha256":  "8d9ddb7dbd2251273aa292eae6423df03394cdbe7c593e327cb16f6242de2866"
+    },
+    {
+        "path":  "STL/REF_L_flex.stl",
+        "bytes":  684,
+        "sha256":  "02c089e105b1ae9120cd24362bf6992bfd05a9889051e17841c3e613d4d60c0b"
+    },
+    {
+        "path":  "STL/REF_L_flex_socket.stl",
+        "bytes":  17484,
+        "sha256":  "7eea15a9ecf6bab79266fa703b2ba1938d9f88cbc3f422146dd1adfe971d1860"
+    },
+    {
+        "path":  "STL/REF_L_lens_barrel.stl",
+        "bytes":  16684,
+        "sha256":  "ec7ec68fbe56116ab28114dbdb1282abbb0065ab1e0defb537c233ede64c3fae"
+    },
+    {
+        "path":  "STL/REF_L_lens_glass.stl",
+        "bytes":  16684,
+        "sha256":  "6c6e536fb93dfd9ebc544f899ee9f8d5b2183b990c04dbcd9f9c2dc9984afe0d"
+    },
+    {
+        "path":  "STL/REF_L_MB.stl",
+        "bytes":  17484,
+        "sha256":  "313850710a8bf699838850b74ad8982ebb7d2858c4c3b13fb8569ffd784cce8d"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_0.stl",
+        "bytes":  684,
+        "sha256":  "ca790162495ba787950e6b62dec4685b55443d805db3dc932ed48dc61f131162"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_1.stl",
+        "bytes":  684,
+        "sha256":  "6b147c308149481fc4bb3912180b0d11ab9ba710fe5a62feb03fea6c0e8e5d9e"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_2.stl",
+        "bytes":  684,
+        "sha256":  "72eb1840999d9fe6900f4eff973c81f8543c7d68d1a01344135e97a3b322b6b8"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_3.stl",
+        "bytes":  684,
+        "sha256":  "b73b35bf34b8711b4cb49f1ad8af2ce5c43b0d716bc2ff7428a007723a2b2f97"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_4.stl",
+        "bytes":  684,
+        "sha256":  "b1a921c496d80e815d6f63a2640502738e29f354985aa3d6d9a25d196a569132"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_5.stl",
+        "bytes":  684,
+        "sha256":  "7ee9cc089d1aac08082b53fe0ab21fab3b3544d07345a22ead22ef01813e5f51"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_6.stl",
+        "bytes":  684,
+        "sha256":  "29630794a4f9ff115f5aca2aaae4dc61ca08f2b0f8949aa4315424d9eeb0d1b1"
+    },
+    {
+        "path":  "STL/REF_L_pin_-1_7.stl",
+        "bytes":  684,
+        "sha256":  "f85fc91fb3108a3c7c887a4883a87468d86df546d99f6b8c7af317aae7171852"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_0.stl",
+        "bytes":  684,
+        "sha256":  "700c43cb24504bd508b0ee5db3cb21d1892ce47fde770ef70b904408cdfa5fea"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_1.stl",
+        "bytes":  684,
+        "sha256":  "f5f4d6e295b790b544defc658d24bcfafe694aafd320ee5aea0fdc628bb00e56"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_2.stl",
+        "bytes":  684,
+        "sha256":  "f620572dbef7f92be98b35ae636dd4e484b04570d73fc11b215acba0feacbbac"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_3.stl",
+        "bytes":  684,
+        "sha256":  "53df39fe37b6d8c9ba31a0bc96917304cdc47578953f6fdff5fb7cd3cc853755"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_4.stl",
+        "bytes":  684,
+        "sha256":  "803357610acc173586719bb82d52e17fa1434e6e71e3d0e120bf1edf416c73f6"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_5.stl",
+        "bytes":  684,
+        "sha256":  "c4122bdd3874cfddd75bf66d28841a44d1880c11d67a2ebb1b431670f9810d89"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_6.stl",
+        "bytes":  684,
+        "sha256":  "1b7c7c6ea00e5d4ce224e62406fd19ba5f54d9d4e36cc4487bc5a36c5cc6f658"
+    },
+    {
+        "path":  "STL/REF_L_pin_1_7.stl",
+        "bytes":  684,
+        "sha256":  "dea757a57efe629cc68664890ba17e54c01068f469f1371bce933c04f86c0021"
+    },
+    {
+        "path":  "STL/REF_L_SD_cage.stl",
+        "bytes":  17484,
+        "sha256":  "ebcdd9b17d9b004dec1d4a08e2a25203078d3ca4232a89976b6431f7b702cb76"
+    },
+    {
+        "path":  "STL/REF_L_sensor_carrier.stl",
+        "bytes":  17484,
+        "sha256":  "ba09d075eda3db04a19f74c00ed8d5293e7a44106d0a8cdea466c5d7b838a7bf"
+    },
+    {
+        "path":  "STL/REF_L_socket_-1.stl",
+        "bytes":  17484,
+        "sha256":  "78820b3dcca6655d19642c264d3ecbb4572c7895e97aea3793e33deca34d0b24"
+    },
+    {
+        "path":  "STL/REF_L_socket_1.stl",
+        "bytes":  17484,
+        "sha256":  "8046390f53b438ae41c0192c2f3d28acfa7169bee04057201d07d15551ad44d0"
+    },
+    {
+        "path":  "STL/REF_L_USB_socket.stl",
+        "bytes":  17484,
+        "sha256":  "babeba1f2689ce6a9f883f661cb25eaa66b909c0b8642b41aff36f9d9337070a"
+    },
+    {
+        "path":  "STL/REF_power_bank.stl",
+        "bytes":  17484,
+        "sha256":  "5877ef3220f4426b34ac810f5a0e0b49066e2d03564aea6c9b49975a5b3d120c"
+    },
+    {
+        "path":  "STL/REF_R_CAM.stl",
+        "bytes":  17484,
+        "sha256":  "47de5f79d9c7661513f856aed6de519f9c663d34351976e1f72882d0383b1ae3"
+    },
+    {
+        "path":  "STL/REF_R_flex.stl",
+        "bytes":  684,
+        "sha256":  "b737f71750281910382f0afaf9767e30df4fc240af2f6d03cdfa7b1248374bfd"
+    },
+    {
+        "path":  "STL/REF_R_flex_socket.stl",
+        "bytes":  17484,
+        "sha256":  "866d149ac5567825cd241e789a452eda7a234ff0aba16115569a2c2ddd450aea"
+    },
+    {
+        "path":  "STL/REF_R_lens_barrel.stl",
+        "bytes":  16684,
+        "sha256":  "f0ea0e6f6d7ce4fbc8bf18690b2ff5d9a78f4d1045f90f2b5f362c1734dc89f8"
+    },
+    {
+        "path":  "STL/REF_R_lens_glass.stl",
+        "bytes":  16684,
+        "sha256":  "cef53d9789daf0805ee7eb25421ae8e1a12d7a3b7856a7f250425e6f11bbd97d"
+    },
+    {
+        "path":  "STL/REF_R_MB.stl",
+        "bytes":  17484,
+        "sha256":  "16e538adaca09db1d98d40773edbf3cba12e1d291eec533389c4059157cdbf83"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_0.stl",
+        "bytes":  684,
+        "sha256":  "53e6636b62083ea341666bc43749cac4ff9a95d9a62384da0132501eed0b410e"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_1.stl",
+        "bytes":  684,
+        "sha256":  "a1a6272bc6cd5cf71fd6e4da51486af2ab2b3150acd03e1f43fff7c2d536d998"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_2.stl",
+        "bytes":  684,
+        "sha256":  "429292ccfae493f5ce40f071e2872dc82be4d0f65a7a3de22e927a798bd55893"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_3.stl",
+        "bytes":  684,
+        "sha256":  "570e0959473b3e420d102a6e2435ad46ba992a50d7128b5c3c35311f6f3a3a82"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_4.stl",
+        "bytes":  684,
+        "sha256":  "5db4a7e71c0a0a5a5afeb2899715b2e98452d823cdb6262d629877503a4e5106"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_5.stl",
+        "bytes":  684,
+        "sha256":  "2a91dc2d84d3b53b34a7a42fabd596a19390cb31c7f0edc94c224d5148f57211"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_6.stl",
+        "bytes":  684,
+        "sha256":  "ffe347ba86b34b3d0a7e2c3af050238eb6df1d283b694d390a40504f173cf2d2"
+    },
+    {
+        "path":  "STL/REF_R_pin_-1_7.stl",
+        "bytes":  684,
+        "sha256":  "0159b07f082a96453beafa927b3a769dd622d1cfe83525f7220900defa90ee43"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_0.stl",
+        "bytes":  684,
+        "sha256":  "b34dccb15a92c111bbf5737d2a43cd655290978adb73c5d3208388a32a4eba43"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_1.stl",
+        "bytes":  684,
+        "sha256":  "46934b652e5c5237f9dd17f7b2b9d0726caef77595ea81d329e3a05dd2e8cc3c"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_2.stl",
+        "bytes":  684,
+        "sha256":  "0dd5ef41146cea05975edf8ff6f38bf7525ae4341277c452bfb71873351f4dc0"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_3.stl",
+        "bytes":  684,
+        "sha256":  "c3bab4eb47d2db267f503a42542e45bfec2534a9a0a17d6e09b097be7b4afdac"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_4.stl",
+        "bytes":  684,
+        "sha256":  "636ed009dd7004b0a192f06c68ec6ff55b34c3fcb96a7c2a60b229cc4fb550bb"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_5.stl",
+        "bytes":  684,
+        "sha256":  "19af9ea0b60e5cd805b138fe5a2e3088ba66f620179ee52e765edf6e3d138baa"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_6.stl",
+        "bytes":  684,
+        "sha256":  "a9b295cb1c08d389ef58b918face0c639648b19d5229c51f7979350a87b432e1"
+    },
+    {
+        "path":  "STL/REF_R_pin_1_7.stl",
+        "bytes":  684,
+        "sha256":  "6b77425c27ab245932a18521297e5e2f2d7631418a0907544b48d010bbc73d4a"
+    },
+    {
+        "path":  "STL/REF_R_SD_cage.stl",
+        "bytes":  17484,
+        "sha256":  "aaf57b8485b37980012bafcd714355ec6e823b700dd0c1d318e7f6dee242828b"
+    },
+    {
+        "path":  "STL/REF_R_sensor_carrier.stl",
+        "bytes":  17484,
+        "sha256":  "7d8cb9ea230a53290fd4e227d32d3409870cdba7b4c64d726636fdbaf8195547"
+    },
+    {
+        "path":  "STL/REF_R_socket_-1.stl",
+        "bytes":  17484,
+        "sha256":  "4256f80c88d5c216e550fb48fb0b808f994efb9fd6a89126b4e26738bf778ef2"
+    },
+    {
+        "path":  "STL/REF_R_socket_1.stl",
+        "bytes":  17484,
+        "sha256":  "20be5c96f225e3e6d7a49a23dfb1b765765797f2346ccddf31dbbe2d1f6ff87a"
+    },
+    {
+        "path":  "STL/REF_R_USB_socket.stl",
+        "bytes":  17484,
+        "sha256":  "75991b180a11ab664fdd7ae781958cceb6205022554db7ad6b57560e216eafa6"
+    }
+]
