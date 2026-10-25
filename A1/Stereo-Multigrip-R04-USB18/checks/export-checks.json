@@ -1,0 +1,259 @@
+{
+  "STL": {
+    "PRINT_01_bank_cradle.stl": {
+      "triangles": 8666,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 21355.8477,
+      "sha256": "0d1468e5cc57e6ed698febecc97c01d0bd2acc9713f5037be5d4276b4ab68374"
+    },
+    "PRINT_02_multigrip_carrier.stl": {
+      "triangles": 32842,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 22894.09441,
+      "sha256": "4ca1abc5fed95ec95400031534a559ab00f4bb73d238228ad39c7d73d3f87d07"
+    },
+    "PRINT_03_MB_keeper_left.stl": {
+      "triangles": 7636,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 2666.44669,
+      "sha256": "5036ba4eb13878e5e1dc6d30a44eb00be9ae7aaa613092cce251904bf5368fc0"
+    },
+    "PRINT_04_MB_keeper_right.stl": {
+      "triangles": 7230,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 2676.54871,
+      "sha256": "584d51a03109222b23d027cb7ef8ffe8b87b31be76ce7e98678d64f46727b461"
+    },
+    "PRINT_05_sensor_yoke_left.stl": {
+      "triangles": 3968,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 885.6222,
+      "sha256": "2ee9566ee974cfc5cfb4b7b3fb45e0e2b4818e554ebb9d183a1dee74551c4076"
+    },
+    "PRINT_06_sensor_yoke_right.stl": {
+      "triangles": 3968,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 885.62217,
+      "sha256": "c3d99c34c249c4ec65446d2a772ac62ae22ec0c44463a4704123890f7de19192"
+    },
+    "PRINT_10_frame_1_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.99442,
+      "sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8"
+    },
+    "PRINT_10_frame_1_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 170.62067,
+      "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    "PRINT_10_frame_2_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.99442,
+      "sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8"
+    },
+    "PRINT_10_frame_2_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 170.62067,
+      "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    "PRINT_10_frame_3_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.99442,
+      "sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8"
+    },
+    "PRINT_10_frame_3_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 170.62067,
+      "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    "PRINT_10_frame_4_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.99442,
+      "sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8"
+    },
+    "PRINT_10_frame_4_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 170.62067,
+      "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f"
+    },
+    "PRINT_20_keeper_L_down_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "a97ca624b72832a346f20077ac51787123c9652f300ad1d1f61adca5eaae6d85"
+    },
+    "PRINT_20_keeper_L_down_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "PRINT_20_keeper_L_up_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "a6d78d073c23e05c2b91a0a4684983980c0b9770955858b5d53de8cbdfbd9640"
+    },
+    "PRINT_20_keeper_L_up_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "PRINT_20_keeper_R_down_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "253f68ea26da0936528b4f64f96de9bc087c9454491a5f9932bb1670fdbf382d"
+    },
+    "PRINT_20_keeper_R_down_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "PRINT_20_keeper_R_up_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "a4308108b3a9c6e17d5ece6b45495c78863fedaf32f4fb2d916a5583666c42d3"
+    },
+    "PRINT_20_keeper_R_up_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "PRINT_30_yoke_L_down_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "8f9b694929d3b6737e77d13390045f46088166d8ff7edfa7b4f63987067f8b5c"
+    },
+    "PRINT_30_yoke_L_down_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "PRINT_30_yoke_L_up_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "0da5248ad8dc121d35184ab70c2ab741dd9e9c7a1f23f35ee47ad2a44fb60af0"
+    },
+    "PRINT_30_yoke_L_up_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "PRINT_30_yoke_R_down_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "41fa73449e86fbd48bae0739d197bd599d40a29a12708e3fbc48827171a9347f"
+    },
+    "PRINT_30_yoke_R_down_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "PRINT_30_yoke_R_up_pin.stl": {
+      "triangles": 1344,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.9944,
+      "sha256": "db557326db4f8f42504a14098a1cad915e414d3d99bbf9ff5284c39504651362"
+    },
+    "PRINT_30_yoke_R_up_wedge.stl": {
+      "triangles": 468,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 117.58703,
+      "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0"
+    },
+    "TEST_USB_clearance_18deg.stl": {
+      "triangles": 14316,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 10498.03846,
+      "sha256": "de232be6aada9e37bb5aed06e6356be031d55564aac8c9faba980f9336b1bb9a"
+    },
+    "TEST_fork.stl": {
+      "triangles": 1092,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 894.05108,
+      "sha256": "34b301ad7b49a62ff297779e2161a1445edf200d9fb4f16758bde64455ac76e2"
+    },
+    "TEST_pin.stl": {
+      "triangles": 1584,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 637.99589,
+      "sha256": "2d809580c1e63057a2d274419135e40f56e218e90b9e7973715636e6aaa7e306"
+    },
+    "TEST_tongue.stl": {
+      "triangles": 544,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 207.39961,
+      "sha256": "88d1858ae184b40509bcc92081153a937e7c99475d2ccd490371c40d64318256"
+    },
+    "TEST_wedge.stl": {
+      "triangles": 548,
+      "boundary_or_nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "volume_mm3": 170.62104,
+      "sha256": "6340a68bb1c02c3c1c6afe25b7306400db3de018e1dcabbcfa4ce1ddac7f5616"
+    }
+  },
+  "STEP": {
+    "Stereo-Multigrip-R04-USB18-assembly.step": {
+      "valid": true,
+      "solids": 88
+    },
+    "Stereo-Multigrip-R04-USB18-harness-only.step": {
+      "valid": true,
+      "solids": 30
+    }
+  }
+}

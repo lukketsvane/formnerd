@@ -1,0 +1,26 @@
+{
+  "file": "/workspace/scratch/185d3eec6f20/formnerd/A1/Stereo-Multigrip-R04-USB18/3MF/00_USB_CLEARANCE_TEST_FIRST.3mf",
+  "type": "unsliced 3MF Core build layout",
+  "bed_mm": [
+    256,
+    256
+  ],
+  "margin_mm": 16,
+  "gap_mm": 8,
+  "parts": [
+    {
+      "name": "TEST_USB_clearance_18deg",
+      "size_mm": [
+        110.863838,
+        74.800004,
+        5.4
+      ],
+      "translation_mm": [
+        71.431919,
+        53.400002,
+        0
+      ],
+      "triangles": 14316
+    }
+  ]
+}

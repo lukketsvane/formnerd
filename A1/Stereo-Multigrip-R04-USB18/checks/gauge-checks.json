@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "solids": 1,
+  "height_mm": 5.4,
+  "service_intersection_volumes_mm3": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "support_foot_y_mm": 3.8,
+  "status": "nominal fit test; physical fitting not verified"
+}
