@@ -1,6 +1,6 @@
 # R04: ekte 3D-rendringar
 
-Bileta er raytraca i Blender Cycles frå dei eksisterande R04-STL-filene. Ingen biletegenerering, nye komponentar eller endringar i printgeometrien er brukte. Dupliserte meshpunkt er sveisa saman for korrekte visingsnormalar. Materialar, lys og kamera er eigne visingsinnstillingar.
+Dei tre opphavlege bileta er raytraca i Blender Cycles frå dei eksisterande R04-STL-filene. Ingen biletegenerering, nye komponentar eller endringar i printgeometrien er brukte. Dupliserte meshpunkt er sveisa saman for korrekte visingsnormalar. Materialar, lys og kamera er eigne visingsinnstillingar.
 
 Gult viser dei tre nye hovuddelane og dei åtte korte låsekilane. Grått viser linsebøylane og T-pinnane som skal brukast om att. Ramma bak batteriet er ikkje med i desse produktvisingane. Elektronikken er dei forenkla, nominelle CAD-voluma, utan oppdikta komponentdetaljar. Dei svarte USB-voluma og kabelbanane er førebelse geometriske referansar, ikkje målt kabelgeometri.
 
@@ -11,6 +11,8 @@ Gult viser dei tre nye hovuddelane og dei åtte korte låsekilane. Grått viser 
 - `render_actual.py`: byggjer scena frå dei eksisterande STL-filene.
 - `scene_A3.json`: del-ID-ar, fargar og kjeldestiar.
 - `render-*.json`: filhashar, trekanttal og renderinnstillingar per vising.
+
+[Den detaljerte ESP32-visingsmodellen](electronics/README.md) blir brukt i serien [svart, grått og tofarga](mono-series/README.md), med seks vinklar per materialval. Dei tre opphavlege bileta ovanfor bruker forenkla elektronikk. Printgeometrien er uendra.
 
 Køyr frå prosjektmappa med Blender 4.3 eller nyare, Python 3 og Pillow:
 

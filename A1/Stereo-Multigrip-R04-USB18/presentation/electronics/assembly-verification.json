@@ -1,0 +1,258 @@
+{
+  "status": "passed",
+  "scope": "Unchanged original housing and cable-envelope meshes, plus electronics placement and rotation parity",
+  "source_revision": "abc4b921c989caf9e1e14d1babe25940b68502be",
+  "unchanged_source_objects": 25,
+  "unchanged_printed_objects": 21,
+  "max_coordinate_error_mm": 1.8477439880371094e-06,
+  "electronics_placement": [
+    {
+      "side": "L",
+      "objects": 866,
+      "rotation_is_reflection": false,
+      "camera_center_xy_mm": [
+        -38.16299885511398,
+        9.313225746154785e-07
+      ],
+      "canonical_to_world": [
+        [
+          -0.9510565400123596,
+          0.30901679396629333,
+          0.0,
+          -0.027064168825745583
+        ],
+        [
+          -0.30901679396629333,
+          -0.9510565400123596,
+          0.0,
+          0.003606226993724704
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.032099999487400055
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "R",
+      "objects": 866,
+      "rotation_is_reflection": false,
+      "camera_center_xy_mm": [
+        38.16299885511398,
+        0.0
+      ],
+      "canonical_to_world": [
+        [
+          0.9510565400123596,
+          -0.3090168833732605,
+          0.0,
+          0.027064168825745583
+        ],
+        [
+          0.3090168833732605,
+          0.9510565400123596,
+          0.0,
+          -0.003606226993724704
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.032099999487400055
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "physical_fit": "Not validated; component heights and cable envelopes nominal",
+  "checks": [
+    {
+      "name": "02_multigrip_carrier",
+      "category": "printed",
+      "triangles": 26320,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "03_MB_keeper_left",
+      "category": "printed",
+      "triangles": 6060,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "04_MB_keeper_right",
+      "category": "printed",
+      "triangles": 5740,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "05_sensor_yoke_left",
+      "category": "printed",
+      "triangles": 3140,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "06_sensor_yoke_right",
+      "category": "printed",
+      "triangles": 3140,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_down_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.430511474609375e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_down_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.6391277313232422e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_up_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_up_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_down_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_down_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 9.238719940185547e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_up_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_up_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_down_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_down_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_up_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.6689300537109375e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_up_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.6987323760986328e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_down_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_down_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_up_pin",
+      "category": "printed",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_up_wedge",
+      "category": "printed",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "USB_L_nominal_body",
+      "category": "assumed_plug",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.854534149169922e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "USB_R_nominal_body",
+      "category": "assumed_plug",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.854534149169922e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "cable_clearance_0",
+      "category": "assumed_cable_clearance",
+      "triangles": 8816,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "cable_clearance_1",
+      "category": "assumed_cable_clearance",
+      "triangles": 8816,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    }
+  ]
+}

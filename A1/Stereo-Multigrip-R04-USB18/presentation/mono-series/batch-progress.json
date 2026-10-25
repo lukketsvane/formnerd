@@ -1,0 +1,818 @@
+{
+  "shots": {
+    "01": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 141.22,
+      "size_bytes": 1916213,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        268,
+        123,
+        2131,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "74066c97ad09944e64374b86fd65ffd8c6944b9aa4ba51e18752356f4490962e"
+      }
+    },
+    "07": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 186.92,
+      "size_bytes": 1876184,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        268,
+        124,
+        2131,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "033c909bc9d5c65137945d8c97fb982351ac688231e3d4bd3b52eadb902da9fa"
+      }
+    },
+    "13": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 151.75,
+      "size_bytes": 1952127,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        268,
+        123,
+        2131,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "3e0c682c3cd3d6473f085c9d2b952f7e1575ff91ec327d822b71837cee53682e"
+      }
+    },
+    "06": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 157.37,
+      "size_bytes": 2248519,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        273,
+        67,
+        2399,
+        1799
+      ],
+      "edge_nonwhite": 3062,
+      "intentional_detail_crop": true,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          52,
+          53,
+          53
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "6502c83c5d714a4d0f3b2d104438bad6d0175c81c6c2dbfb99ae5fee6963183b"
+      }
+    },
+    "12": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 220.96,
+      "size_bytes": 2040855,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        274,
+        67,
+        2399,
+        1799
+      ],
+      "edge_nonwhite": 3061,
+      "intentional_detail_crop": true,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          53,
+          54,
+          55
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "a4953314daa86086194f9e6304f810bbc06afb6ef0146a515d9d2050e3ac7fed"
+      }
+    },
+    "18": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 170.03,
+      "size_bytes": 2237589,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        274,
+        67,
+        2399,
+        1799
+      ],
+      "edge_nonwhite": 3062,
+      "intentional_detail_crop": true,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          52,
+          54,
+          54
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "a9e0364bc24d2aca51da279a0a4c89a76134c206902eeec82ec7a0779a13e942"
+      }
+    },
+    "02": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 104.6,
+      "size_bytes": 1639334,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        342,
+        124,
+        2057,
+        1675
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "64f4d90d9d5a2203c4b91befb2ecd007dce808a3e6a8caa565eb308ab827414b"
+      }
+    },
+    "08": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 140.59,
+      "size_bytes": 1587413,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        342,
+        124,
+        2057,
+        1675
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "6a0d59a0458d055911dddf92b0105b49eacc4ac707ec903b06e6c0258f852df4"
+      }
+    },
+    "14": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 118.08,
+      "size_bytes": 1660147,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        342,
+        124,
+        2057,
+        1675
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "b98681448acf270f90b13ac2e73c57ba838df54a59e6a65db784b611b8573ba3"
+      }
+    },
+    "03": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 81.31,
+      "size_bytes": 1222995,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        412,
+        123,
+        1987,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "41b2180c12b519cc7c49178492f1214a8650113301c5051a4cf1d46bc0365ebb"
+      }
+    },
+    "09": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 102.57,
+      "size_bytes": 1207218,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        412,
+        123,
+        1987,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "03aeef6f61a475cca09f1e012cc37328c38fa0411248d9b3e11574a3259f32d2"
+      }
+    },
+    "15": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 84.66,
+      "size_bytes": 1259585,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        412,
+        123,
+        1987,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "38d459bd4995413dbf799a499552a1cf0d2deeb26ff23e0022359b95890b716a"
+      }
+    },
+    "04": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 115.57,
+      "size_bytes": 1605806,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        165,
+        221,
+        2234,
+        1578
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "61a52dce8c52a14965c1cca9c8a5374d8634b3739c339842b9bbbce591b73365"
+      }
+    },
+    "10": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 155.08,
+      "size_bytes": 1507670,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        165,
+        221,
+        2234,
+        1578
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "b70fea9b7498ee940946dcbbbdcab6c4d9517a0c62497f38bc59f5498f5b311e"
+      }
+    },
+    "16": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 127.08,
+      "size_bytes": 1622887,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        165,
+        221,
+        2234,
+        1578
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "b1acb38b3257fa65f31b674173c81272e1cba31449074de478b728fc4421aaf7"
+      }
+    },
+    "05": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 77.89,
+      "size_bytes": 988016,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        687,
+        123,
+        1711,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "1272245c3b6f0e35397ff128282222a44c4c8ef31476544a2c7ac35a5e43b2da"
+      }
+    },
+    "11": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 99.92,
+      "size_bytes": 971330,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        688,
+        123,
+        1711,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "502547678dc58104236eb0d22ef56cbe990a9a1c9e9221faf2634a1efa9bc29e"
+      }
+    },
+    "17": {
+      "status": "ready_for_visual_qa",
+      "elapsed_seconds": 86.5,
+      "size_bytes": 1001699,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "object_bounds": [
+        687,
+        123,
+        1711,
+        1676
+      ],
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "corners": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "cc8075419b0575ad27697a715c192f7ecd80d19cb3890540c9a039b0adb337c6"
+      }
+    }
+  },
+  "started": 1792957121.1199746,
+  "batch_status": "complete",
+  "electronics_revision": "CAM+MB photo reconstruction with corrected library transforms",
+  "delivery_status": "all18assembly_images_visually_approved"
+}
