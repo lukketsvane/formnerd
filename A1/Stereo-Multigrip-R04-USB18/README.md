@@ -46,7 +46,9 @@ Dette er ei digitalt kontrollert prøveutgåve med uavklart innføring av kamera
 
 ## Faktiske rendringar og monteringsutkast
 
-`presentation/` inneheld material- og lysrendringar av dei eksisterande R04-meshane. Elektronikken og kabelvoluma er forenkla nominelle CAD-referansar. `manual-r05/ENTROPI_R04_Monteringsutkast.pdf` har ti sider med vektorteikningar frå STEP, separate sidebilete og portabel byggjekjelde. Side 3 viser berre sluttplasseringa av kamerakorta, sidan innføringsvegen må avklarast. Dokumenta endrar ikkje modellgeometrien eller printfila.
+`presentation/` inneheld material- og lysrendringar av dei eksisterande R04-meshane. [Den detaljerte ESP32-visingsmodellen](presentation/electronics/README.md) kombinerer referansegeometri og rekonstruerte komponentdetaljar. Dei nominelle elektronikkvoluma i passformkontrollen er uendra. `manual-r05/ENTROPI_R04_Monteringsutkast.pdf` har ti sider med vektorteikningar frå STEP, separate sidebilete og portabel byggjekjelde. Side 3 viser berre sluttplasseringa av kamerakorta, sidan innføringsvegen må avklarast. Dokumenta endrar ikkje modellgeometrien eller printfila.
+
+Serien [svart, grått og tofarga](presentation/mono-series/README.md) viser same CAD-modell frå seks vinklar per materialval.
 
 ## Bygg på nytt
 

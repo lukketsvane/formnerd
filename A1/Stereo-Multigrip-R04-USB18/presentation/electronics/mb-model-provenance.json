@@ -1,0 +1,1664 @@
+{
+  "model": "ESP32-CAM-MB",
+  "collection": "ESP32_CAM_MB",
+  "unit": "meter",
+  "canonical_cam_bottom_z_mm": 0,
+  "mb_bottom_z_mm": -10.1,
+  "pcb_size_mm": [
+    40.5,
+    27,
+    1.6
+  ],
+  "header_height_mm": 8.5,
+  "header_pin_x_mm": [
+    -2.36,
+    0.18000000000000016,
+    2.72,
+    5.26,
+    7.800000000000001,
+    10.34,
+    12.88,
+    15.420000000000002
+  ],
+  "header_pin_y_mm": [
+    -11.43,
+    11.43
+  ],
+  "usb_open_front_x_mm": -22.1,
+  "source_photo": "https://github.com/prusa3d/Prusa-Firmware-ESP32-Cam/blob/master/doc/AI_Thinker-ESP32-cam/esp32_and_prog.jpg",
+  "reference_note": "Appearance reconstructed from the Prusa programmer photo; exact manufacturer revision and package dimensions not measured. Markings are product identification, not a serial number.",
+  "geometry_origin": "Own primitive and mesh reconstruction; no external mesh asset included",
+  "objects": [
+    {
+      "name": "MB_PCB_core",
+      "material": "edge",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_top_soldermask",
+      "material": "pcb",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_bottom_soldermask",
+      "material": "pcb",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_-1",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_0",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_0_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_0_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_0",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_1",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_1_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_1_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_2",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_2_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_2_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_2",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_3",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_3_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_3_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_3",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_4",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_4_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_4_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_4",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_5",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_5_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_5_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_5",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_5",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_6",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_6_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_6_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_6",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_6",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_-1_7",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_7_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_-1_7_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_-1_7",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_-1_7",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_1",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_0",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_0_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_0_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_0",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_1",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_1_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_1_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_2",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_2_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_2_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_2",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_3",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_3_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_3_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_3",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_4",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_4_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_4_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_4",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_5",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_5_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_5_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_5",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_5",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_6",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_6_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_6_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_6",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_6",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_floor_1_7",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_7_-1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_socket_contact_1_7_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_solder_pad_bottom_1_7",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_header_pin_tail_1_7",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_microUSB_open_metal_shell",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_microUSB_rear_insulator",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_microUSB_inner_tongue",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_contact_0",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_solder_lead_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_signal_pad_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_contact_1",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_solder_lead_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_signal_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_contact_2",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_solder_lead_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_signal_pad_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_contact_3",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_solder_lead_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_signal_pad_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_contact_4",
+      "material": "gold",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_solder_lead_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_signal_pad_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_anchor_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_roof_slot_-1",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_anchor_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_roof_slot_1",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_base",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_shell",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_amber_top",
+      "material": "amber",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_recess",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_actuator",
+      "material": "amber",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_leg_-1_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_leg_-1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_leg_1_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_switch_leg_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_IO0_mark",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from Prusa programmer-board photograph"
+    },
+    {
+      "name": "MB_RST_switch_base",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_switch_shell",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_switch_amber_top",
+      "material": "amber",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_switch_recess",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_actuator",
+      "material": "amber",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_switch_leg_-1_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_switch_leg_-1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_switch_leg_1_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_switch_leg_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_RST_mark",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from Prusa programmer-board photograph"
+    },
+    {
+      "name": "MB_CH340_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_5",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_5",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_6",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_6",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_-1_7",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_-1_7",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_5",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_5",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_6",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_6",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_gullwing_1_7",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_pad_1_7",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_orientation_dot",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_CH340_mark",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from Prusa programmer-board photograph"
+    },
+    {
+      "name": "MB_regulator_package",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_regulator_lead_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_regulator_lead_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_regulator_lead_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_regulator_tab",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C1_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C2_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R1_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R2_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C3_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R3_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R4_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R5_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_C4_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_R6_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_body",
+      "material": "red",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_terminal-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_pad-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_terminal1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_pad1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_status_LED_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_board_model",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from Prusa programmer-board photograph"
+    },
+    {
+      "name": "MB_power_mark",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from Prusa programmer-board photograph"
+    },
+    {
+      "name": "MB_USB_test_mark_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_test_mark_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_test_mark_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_USB_test_mark_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_test_pad_-0.55_-0.55",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_test_pad_-0.55_0.55",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_test_pad_0.55_-0.55",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_test_pad_0.55_0.55",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_0_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_0_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_0_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_1_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_1_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_1_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_2_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_2_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_2_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_3_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_3_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_3_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_4_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_4_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_4_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_4_3",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_5_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_5_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_5_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_5_3",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_6_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_6_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_6_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_6_3",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_7_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_7_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_7_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_8_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_8_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_9_0",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_9_1",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_visible_trace_9_2",
+      "material": "trace",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_0",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_1",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_2",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_3",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_4",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_4",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_5",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_5",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_6",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_6",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_7",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_7",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_annulus_8",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    },
+    {
+      "name": "MB_via_hole_8",
+      "material": "cavity",
+      "origin": "Photo-based reconstruction; component dimensions and placement nominal"
+    }
+  ],
+  "object_count": 326
+}
