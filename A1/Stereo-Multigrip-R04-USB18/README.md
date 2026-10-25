@@ -44,9 +44,9 @@ Begge bileta får den nye felles rotasjonen. Orientering eller stereokalibrering
 
 Dette er ei digitalt kontrollert prøveutgåve med uavklart innføring av kamerakorta. Ho er ikkje fysisk passformprøvd med dei faktiske kablane dine. Erstatningsplata med tre hovuddelar og åtte korte kilar er importert og slica i Bambu Studio for P1S med 0,4 mm dyse, 0,12 mm lag, tre veggar, 20 % gyroid og seks topp-/botnlag. Ytterveggar og toppflater er sette til 40 mm/s. Jobben vart starta med AMS A3 og gult PLA; estimatet var 5 timar 23 minutt og 60,99 g med støtter. Dette stadfestar slicing og oppstart, ikkje ferdig utskrift eller fysisk montering.
 
-## Faktiske rendringar og monteringsutkast
+## Faktiske rendringar og fullstendig monteringsmanual
 
-`presentation/` inneheld material- og lysrendringar av dei eksisterande R04-meshane. [Den detaljerte ESP32-visingsmodellen](presentation/electronics/README.md) kombinerer referansegeometri og rekonstruerte komponentdetaljar. Dei nominelle elektronikkvoluma i passformkontrollen er uendra. `manual-r05/ENTROPI_R04_Monteringsutkast.pdf` har ti sider med vektorteikningar frå STEP, separate sidebilete og portabel byggjekjelde. Side 3 viser berre sluttplasseringa av kamerakorta, sidan innføringsvegen må avklarast. Dokumenta endrar ikkje modellgeometrien eller printfila.
+`presentation/` inneheld material- og lysrendringar av dei eksisterande R04-meshane. [Den detaljerte ESP32-visingsmodellen](presentation/electronics/README.md) kombinerer referansegeometri og rekonstruerte komponentdetaljar. Dei nominelle elektronikkvoluma i passformkontrollen er uendra. [Monteringsmanualen utgåve 07](manual-r07/output/ENTROPI_R04_Monteringsmanual.pdf) har 15 sider med faktiske ESP32-rendringar, deleoversikt, tydelege byggjesteg og sluttkontroll. [Alle manualsider](https://chatgpt.com/space/page_f9400752da088191973e1efe3b0adebc) er samla i FormNerd. [Byggjekjelda](manual-r07/README.md) kan regenerere PDF-en og alle sidebileta lokalt. Innføringsvegen for kamerakorta må framleis avklarast fysisk; korta skal ikkje pressast på plass. Den eldre ti-siders utgåva er bevart i `manual-r05/`. Dokumenta endrar ikkje modellgeometrien eller printfila.
 
 Serien [svart, grått og tofarga](presentation/mono-series/README.md) viser same CAD-modell frå seks vinklar per materialval.
 

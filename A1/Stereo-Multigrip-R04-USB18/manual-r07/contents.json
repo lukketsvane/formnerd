@@ -1,0 +1,77 @@
+[
+  {
+    "page": 1,
+    "title": "ENTROPI",
+    "step": null
+  },
+  {
+    "page": 2,
+    "title": "R04",
+    "step": null
+  },
+  {
+    "page": 3,
+    "title": "R03",
+    "step": null
+  },
+  {
+    "page": 4,
+    "title": "2×",
+    "step": null
+  },
+  {
+    "page": 5,
+    "title": "Før montering",
+    "step": null
+  },
+  {
+    "page": 6,
+    "title": "Deloversikt",
+    "step": null
+  },
+  {
+    "page": 7,
+    "title": "Bakhaldarar",
+    "step": 1
+  },
+  {
+    "page": 8,
+    "title": "Lås bakhaldarane",
+    "step": 2
+  },
+  {
+    "page": 9,
+    "title": "Linsebøylar",
+    "step": 3
+  },
+  {
+    "page": 10,
+    "title": "Lås linsebøylane",
+    "step": 4
+  },
+  {
+    "page": 11,
+    "title": "USB og test",
+    "step": 5
+  },
+  {
+    "page": 12,
+    "title": "Valfri batteriramme",
+    "step": 6
+  },
+  {
+    "page": 13,
+    "title": "Lås batteriramma",
+    "step": 7
+  },
+  {
+    "page": 14,
+    "title": "Kontroller",
+    "step": null
+  },
+  {
+    "page": 15,
+    "title": "Opne og kontrollere",
+    "step": null
+  }
+]

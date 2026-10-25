@@ -1,0 +1,73 @@
+{
+  "page": 6,
+  "status": "PASS_ISOLATED_RENDER",
+  "image": "page6-qa/page6.png",
+  "image_sha256": "4e2aaa48de15edee2550ae1c7f3c4e82651326b502b9392baf535be01c64d954",
+  "source_block": "start(Deloversikt) only",
+  "inspection": "Individual full-page image viewed; all labels in blank white margins, no label/geometry overlap, endpoint on respective visible printed part surface, disclaimer intact. Full-build page pending root rebuild.",
+  "anchors": {
+    "02_multigrip_carrier": {
+      "choice": 2,
+      "uv": [
+        0.3401902374843932,
+        0.6540315104574049
+      ],
+      "shown_world_mm": [
+        -53.2778434753418,
+        20.71988296508789,
+        46.25
+      ]
+    },
+    "03_MB_keeper_left": {
+      "choice": 0,
+      "uv": [
+        0.6173965769406049,
+        0.8300218418631868
+      ],
+      "shown_world_mm": [
+        -39.46311950683594,
+        33.20006306966146,
+        -31.200000762939453
+      ]
+    },
+    "04_MB_keeper_right": {
+      "choice": 3,
+      "uv": [
+        0.9290352151732209,
+        0.4436755571471192
+      ],
+      "shown_world_mm": [
+        56.44005330403646,
+        -13.085899035135904,
+        -31.200000762939453
+      ]
+    },
+    "05_sensor_yoke_left": {
+      "choice": 0,
+      "uv": [
+        0.20130502784128124,
+        0.5595060778983958
+      ],
+      "shown_world_mm": [
+        -48.01815287272135,
+        21.820709864298504,
+        98.25
+      ]
+    },
+    "06_sensor_yoke_right": {
+      "choice": 1,
+      "uv": [
+        0.4893798759654779,
+        0.17204804816272817
+      ],
+      "shown_world_mm": [
+        48.01815287272135,
+        -21.820709864298504,
+        106.25
+      ]
+    }
+  },
+  "projection_max_abs_uv_residual": 7.447731087406595e-08,
+  "geometry_changes": false,
+  "inventory_audit": "pin-inventory-audit.json"
+}
