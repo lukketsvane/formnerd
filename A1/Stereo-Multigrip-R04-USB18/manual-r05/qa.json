@@ -1,0 +1,23 @@
+{
+  "pages": 10,
+  "PNG_pages": 10,
+  "SVG_pages": 10,
+  "text_outside_margins": [],
+  "all_pages_visually_reviewed": true,
+  "vector_paths": 20951,
+  "geometry_changed": false,
+  "status": "Monteringsutkast; straight rear camera-board entry collides; no insertion arrow on page 3.",
+  "fresh_unpack_rebuild": "passed",
+  "rebuilt_page_pixels_identical": {
+    "R04_montering_01.png": true,
+    "R04_montering_06.png": true,
+    "R04_montering_09.png": true,
+    "R04_montering_05.png": true,
+    "R04_montering_03.png": true,
+    "R04_montering_04.png": true,
+    "R04_montering_07.png": true,
+    "R04_montering_10.png": true,
+    "R04_montering_02.png": true,
+    "R04_montering_08.png": true
+  }
+}

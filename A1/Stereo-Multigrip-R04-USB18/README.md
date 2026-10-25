@@ -25,7 +25,7 @@ Dei to 3MF-filene er uslica modellplater for ei 256 × 256 mm plate. Dei innehel
 ## Montering
 
 1. Prøv vinkelen og begge USB-kablane i den tynne prøveramma.
-2. Flytt stablane til den nye kameraberaren. Kontroller at ingen ledning eller loddepinne ligg mot plasten.
+2. Avklar innføringa av kamerakorta før montering. Kontrollen i `checks/manual-insertion-review.json` viser at ei rett innføring bakfrå kolliderer med den nominelle kameraberaren. Sluttposisjonane har klaring, men det dokumenterer ikkje innføringsvegen. Ikkje press korta gjennom ramma.
 3. Monter dei to nye bakhaldarane. Bruk dei fire eksisterande keeper-T-pinnane og dei fire nye korte keeperkilane. Ikkje tving ein kile som bind.
 4. Flytt over linsebøylane og T-pinnane deira, og bruk dei fire nye korte linsebøylekilane. Kontroller at kontaktane landar på dei stive sensorskuldrene og ikkje på linsa eller flekskabelen.
 5. Kople til begge USB-kablane og prøv at pluggane går heilt inn utan sidepress. La kablane følgje dei opne servicevegane.
@@ -42,7 +42,11 @@ Begge bileta får den nye felles rotasjonen. Orientering eller stereokalibrering
 - Positive meshvolum, avstand mellom delane og plassering innanfor begge 3MF-platene.
 - STEP-eksportane importerte på nytt og kontrollerte.
 
-Dette er ei digitalt kontrollert prøveutgåve. Ho er ikkje fysisk passformprøvd med dei faktiske kablane dine og er ikkje slicer-verifisert.
+Dette er ei digitalt kontrollert prøveutgåve med uavklart innføring av kamerakorta. Ho er ikkje fysisk passformprøvd med dei faktiske kablane dine. Erstatningsplata med tre hovuddelar og åtte korte kilar er importert og slica i Bambu Studio for P1S med 0,4 mm dyse, 0,12 mm lag, tre veggar, 20 % gyroid og seks topp-/botnlag. Ytterveggar og toppflater er sette til 40 mm/s. Jobben vart starta med AMS A3 og gult PLA; estimatet var 5 timar 23 minutt og 60,99 g med støtter. Dette stadfestar slicing og oppstart, ikkje ferdig utskrift eller fysisk montering.
+
+## Faktiske rendringar og monteringsutkast
+
+`presentation/` inneheld material- og lysrendringar av dei eksisterande R04-meshane. Elektronikken og kabelvoluma er forenkla nominelle CAD-referansar. `manual-r05/ENTROPI_R04_Monteringsutkast.pdf` har ti sider med vektorteikningar frå STEP, separate sidebilete og portabel byggjekjelde. Side 3 viser berre sluttplasseringa av kamerakorta, sidan innføringsvegen må avklarast. Dokumenta endrar ikkje modellgeometrien eller printfila.
 
 ## Bygg på nytt
 

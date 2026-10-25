@@ -16,8 +16,8 @@
     "sha256": "e35227bf3f8169f74aa229755e66df1f86bcb6e8864c95654cfe094223998a4b"
   },
   "README.md": {
-    "bytes": 5336,
-    "sha256": "b8291844f1ffd0e690fdf47d72aa6f79a4049dedea42080a41fd51af046ad1a4"
+    "bytes": 6421,
+    "sha256": "43efa3d9de6a22b0e08e74b7896cc4d06a9c3a3cab21cb88739b5730af24b519"
   },
   "STEP/01_bank_cradle.step": {
     "bytes": 990381,
@@ -643,6 +643,10 @@
     "bytes": 3010,
     "sha256": "0ea270845334498e538117c8186788075d5b8b28b61a4889fca91436e8d8f1f7"
   },
+  "checks/manual-insertion-review.json": {
+    "bytes": 5877,
+    "sha256": "6d87c6f662409072d04f8fab0544b6372d83689c14ce93c3ac4f64914a36bdf9"
+  },
   "checks/provenance.json": {
     "bytes": 1137,
     "sha256": "1a22344de4118a5483b351542fb03ab1bd70286d044616ed62dc5ddf9c7ebee5"
@@ -691,6 +695,254 @@
     "bytes": 27484,
     "sha256": "6340a68bb1c02c3c1c6afe25b7306400db3de018e1dcabbcfa4ce1ddac7f5616"
   },
+  "manual-r05/.gitignore": {
+    "bytes": 20,
+    "sha256": "fba3161fc0773b7851ddc424b0e52a8a9bdd249cf70e6c274c84ea365c19f396"
+  },
+  "manual-r05/ENTROPI_R04_Monteringsutkast.pdf": {
+    "bytes": 1158566,
+    "sha256": "fe7de39339f288b1700ea26e6f1a2c90ca634216720e0100716eda462d404b80"
+  },
+  "manual-r05/ENTROPI_R04_Monteringsutkast_kjelde.zip": {
+    "bytes": 8485307,
+    "sha256": "ad883c0a2552beb11c14988e0220ab3833cd20f2a15277b8ea54eb65cf41a4da"
+  },
+  "manual-r05/README.md": {
+    "bytes": 1064,
+    "sha256": "fa3dca8d58af94c4e0a0789cad2f1d04adbd9306eec6df4a5d47167b9192a55c"
+  },
+  "manual-r05/figures/01_assembled.svg": {
+    "bytes": 317988,
+    "sha256": "c2ef9d313f9ec2d2052b7b342e1178ca97c5ef813bddc8647f8e9199a316a735"
+  },
+  "manual-r05/figures/03_camera_placement.svg": {
+    "bytes": 230108,
+    "sha256": "3970d96c448357389096de75490daf7c8ecb8a77c90f15724136c3bd76bdd84e"
+  },
+  "manual-r05/figures/04_keeper_insertion.svg": {
+    "bytes": 276429,
+    "sha256": "cfe9423f888b547a29706b3f7ba8a6dd3f9c9f9ffe36180ba30f71440c897395"
+  },
+  "manual-r05/figures/05_yoke_insertion.svg": {
+    "bytes": 272158,
+    "sha256": "8182beab57743199e96d260e317ee5d262a96ab23098622f5c33827dcfebfda7"
+  },
+  "manual-r05/figures/06_pin_insertion.svg": {
+    "bytes": 303931,
+    "sha256": "6537f0df05e1637e32a6e1aab2dfb782ddd94a5f2a4c628e756a71d461cf7cf9"
+  },
+  "manual-r05/figures/07_wedge_insertion.svg": {
+    "bytes": 319709,
+    "sha256": "fad43a7c0304cf3bd4ea5428022ecb45db806e9d20a02e5874064e0c7defc1e0"
+  },
+  "manual-r05/figures/08_USB_insertion.svg": {
+    "bytes": 165738,
+    "sha256": "c2b2ef424c8008076b6e023a08a84d18592ec9ab20711e429a6597423605ce6c"
+  },
+  "manual-r05/figures/09_rear_frame.svg": {
+    "bytes": 351554,
+    "sha256": "d3e3a369c516bd10912241b45bda611f1e4c75c546221a3375c70c7b11357a89"
+  },
+  "manual-r05/figures/10_frame_locks.svg": {
+    "bytes": 355520,
+    "sha256": "9d37f013f746e5990fe0121b95a72e7e8fb84b31fdd411e69ccf28339afdcd15"
+  },
+  "manual-r05/figures/part_02_multigrip_carrier.svg": {
+    "bytes": 200148,
+    "sha256": "19cd413f103271e8e4aa1f6b0d37d0a24e16e5962bb029df448856caf0308249"
+  },
+  "manual-r05/figures/part_03_MB_keeper_left.svg": {
+    "bytes": 56243,
+    "sha256": "ec2187ccfe757cd2ee62281a8bf19f797f574c0a4277a3cf566535abd8ef1217"
+  },
+  "manual-r05/figures/part_04_MB_keeper_right.svg": {
+    "bytes": 47519,
+    "sha256": "479aa8e21c48562ac4886b5dc16149020023fc32d7148d094d14aa2cd09b69f4"
+  },
+  "manual-r05/figures/part_long_wedge.svg": {
+    "bytes": 4622,
+    "sha256": "70bc6bf384b0df815bf969ef259a7f9538c56c6f83aceba0d862e27f553ee1a0"
+  },
+  "manual-r05/figures/part_pin.svg": {
+    "bytes": 9290,
+    "sha256": "1dd113a004f1d5a5a6923157db81e5a56a27e80b12890460c5205acbc6377c4f"
+  },
+  "manual-r05/figures/part_short_wedge.svg": {
+    "bytes": 4442,
+    "sha256": "8ef62381cf4e7cb769edcc87c40ec93240d3506e246e1844e9daffcfe6eb1a7b"
+  },
+  "manual-r05/figures/part_yoke.svg": {
+    "bytes": 19424,
+    "sha256": "5de08d74337203e0fd71acd76585feb04b95abf5c3534c15309a9b1487a3cfd6"
+  },
+  "manual-r05/pages/R04_montering_01.png": {
+    "bytes": 351291,
+    "sha256": "b57c9fba9d0bde1cd7f2b9ca33843b52de614a5a11e01c8c180900eba1ec9a5f"
+  },
+  "manual-r05/pages/R04_montering_01.svg": {
+    "bytes": 606571,
+    "sha256": "1e8d4b8bdd107b2b5cfa73926f21c7b76e5132ddfe0ac18a35e79ffedc64eea0"
+  },
+  "manual-r05/pages/R04_montering_02.png": {
+    "bytes": 272529,
+    "sha256": "4de0c5a22fdbf438cfcc1852868a3635818318059bed23a1641c7f5ce6830d5d"
+  },
+  "manual-r05/pages/R04_montering_02.svg": {
+    "bytes": 724811,
+    "sha256": "c21d6aafac80c788efdcbe59538159eefbc9e9497337968aa29b603ecbf96163"
+  },
+  "manual-r05/pages/R04_montering_03.png": {
+    "bytes": 361835,
+    "sha256": "0250fe85140d9e843ccffd3036261b651f9362fbbbe421c4df6e83ccea8881a9"
+  },
+  "manual-r05/pages/R04_montering_03.svg": {
+    "bytes": 493979,
+    "sha256": "b5695ac66a9775747e7e0450ebdeac507e5f732e98f88028ee823e8d9d27b424"
+  },
+  "manual-r05/pages/R04_montering_04.png": {
+    "bytes": 338406,
+    "sha256": "445273f0cd7596ec1080e41d1c35e0433382a8854aca1526e0d6b7d9d6cd707f"
+  },
+  "manual-r05/pages/R04_montering_04.svg": {
+    "bytes": 578333,
+    "sha256": "41e6d3782eac6b172b10d04c86bf957dd5ce2e1a1077ed171c5e594070364432"
+  },
+  "manual-r05/pages/R04_montering_05.png": {
+    "bytes": 344275,
+    "sha256": "42e8d07a7f41219429386e61117bab121697ac53a7c85360a634a398d0109029"
+  },
+  "manual-r05/pages/R04_montering_05.svg": {
+    "bytes": 554820,
+    "sha256": "339e09d6c838d2b511239697a7240859e6e593f9faeb3a3138f7231c807a4780"
+  },
+  "manual-r05/pages/R04_montering_06.png": {
+    "bytes": 338319,
+    "sha256": "75f0de7a9727819519209109f2ccedb177df8856b0d602b09e86c2f4ff353f07"
+  },
+  "manual-r05/pages/R04_montering_06.svg": {
+    "bytes": 612280,
+    "sha256": "3a14cdf079b3e2010d1a690559521bf64a8d439f82a7a6ce50a65baa0ca10af8"
+  },
+  "manual-r05/pages/R04_montering_07.png": {
+    "bytes": 370110,
+    "sha256": "7138c66fc9f16ad3968aa3608e76c9fe08131a0b9e37ab6ffe03044ff92c4761"
+  },
+  "manual-r05/pages/R04_montering_07.svg": {
+    "bytes": 635383,
+    "sha256": "a2db4ab991447f48f85fc62e819b5e590484d8aa2e4389e2710ecfdde3b311b5"
+  },
+  "manual-r05/pages/R04_montering_08.png": {
+    "bytes": 269719,
+    "sha256": "d656a00a62b064d6db3f2b02a00675eebdd75451557334f1b5ac178b6821727e"
+  },
+  "manual-r05/pages/R04_montering_08.svg": {
+    "bytes": 388485,
+    "sha256": "ec25cdb354f88ea4e626bad79d83791c2c9f3d4fec82b7f703f560bc4642cc6b"
+  },
+  "manual-r05/pages/R04_montering_09.png": {
+    "bytes": 346910,
+    "sha256": "8c9f3293de278f8393689a69104af75a417c81a04b6a8afa4c6e53e5b6039aef"
+  },
+  "manual-r05/pages/R04_montering_09.svg": {
+    "bytes": 707151,
+    "sha256": "b670e7b0c8db7b38af95903ec3d7cb07a6a6b641638f49d6bfc202469b40241d"
+  },
+  "manual-r05/pages/R04_montering_10.png": {
+    "bytes": 360436,
+    "sha256": "63958e615bb42a8d0cbd5a924c47675ef725cbe9de2803d7cc6af628b7020053"
+  },
+  "manual-r05/pages/R04_montering_10.svg": {
+    "bytes": 707254,
+    "sha256": "35d9849c5bb3d870fb1e5703862105b136bc7bf5b795f457d35f8f3cb9d127fa"
+  },
+  "manual-r05/qa.json": {
+    "bytes": 701,
+    "sha256": "9934e8305b79db0efbff56890c6620767e4d626afb914c34129310e2ee953bc9"
+  },
+  "manual-r05/scene-manifest.json": {
+    "bytes": 17491,
+    "sha256": "a3eabd036fbeba127b7a7e5b99021944776d145e8710279b6ac9db3cc3f67412"
+  },
+  "manual-r05/source/build_manual.py": {
+    "bytes": 16634,
+    "sha256": "17fffc669ff61637e0349bdd495e8edfddfe976e9762deb1cdd6543a406ff91e"
+  },
+  "manual-r05/source/fonts/DejaVuSans-Bold.ttf": {
+    "bytes": 708920,
+    "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "manual-r05/source/fonts/DejaVuSans.ttf": {
+    "bytes": 759720,
+    "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
+  },
+  "manual-r05/source/fonts/LICENSE.txt": {
+    "bytes": 3859,
+    "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+  },
+  "manual-r05/source/requirements.txt": {
+    "bytes": 62,
+    "sha256": "eb0b89addfe1a5fde11ee400eec125067e13b6fad25644a7cfc7c7bac5570b6f"
+  },
+  "presentation/.gitignore": {
+    "bytes": 74,
+    "sha256": "e503e69c8348450711a302b04125ced0ea58429cfe13bc0b341f0ef217ef0fad"
+  },
+  "presentation/R04_actual_front.png": {
+    "bytes": 1614264,
+    "sha256": "167f304af52543e73b3729a94693f9bead3e3c2fe1619bdefdd220202cda1690"
+  },
+  "presentation/R04_actual_hero.png": {
+    "bytes": 1997823,
+    "sha256": "257a8548efe7f2ea8e29c47e8686b5025ce6b2602bf4b5401c81766417842702"
+  },
+  "presentation/R04_actual_rear.png": {
+    "bytes": 1456168,
+    "sha256": "e809a88d6b2bdb0ccf3ac264a622db9081b099d6524bb6b1cbf39ace973ff9aa"
+  },
+  "presentation/R04_actual_studio.blend": {
+    "bytes": 5191468,
+    "sha256": "b42379f72d26c91c3a5c57213999bb1ad1850e5d2ecf1dde13e18670d2e30f1e"
+  },
+  "presentation/README.md": {
+    "bytes": 1981,
+    "sha256": "cd5e427c0a957662ea702426514aa1db005d91333e8d200591b4d8b719f92296"
+  },
+  "presentation/actual-render-verification.json": {
+    "bytes": 12045,
+    "sha256": "f04ee4ee0231a22c1520039ebc5699fe801e2e3ccb0caf72cdc503c2284e941f"
+  },
+  "presentation/image-checks.json": {
+    "bytes": 1301,
+    "sha256": "5144e59c36cf6c95c6c38710918f40783c1ab002fba55b9f350b539181213b7b"
+  },
+  "presentation/render-front.json": {
+    "bytes": 19047,
+    "sha256": "2e2858e106375ef573fd11c535e26dcb9528c56083cb1741e871f78057f55b7e"
+  },
+  "presentation/render-hero.json": {
+    "bytes": 19046,
+    "sha256": "2e851444a75286b4947e2fa808f2e3b1047eb3aa1f23ca3ef8d92c3790a0b925"
+  },
+  "presentation/render-rear.json": {
+    "bytes": 19046,
+    "sha256": "c791416ffa39e7b6829f2a659eaec053b42fad42a4dadb2143c4ce23b64ef043"
+  },
+  "presentation/render_actual.py": {
+    "bytes": 8593,
+    "sha256": "11484f2f7f172e7b3d8b0708fd6b0524da3895ddf72e921083966026c337f7fd"
+  },
+  "presentation/scene_A3.json": {
+    "bytes": 14750,
+    "sha256": "69d0b1a45122e6b129125a74f2430c0d2499c2bd09ab4c6cf8e4ad8312b34f59"
+  },
+  "presentation/verify_render_geometry.py": {
+    "bytes": 1730,
+    "sha256": "a5bcadf4edd142e426c77648460b5bb0678ab73141a97d4a791caec5b30fecb0"
+  },
+  "presentation/white_background.py": {
+    "bytes": 253,
+    "sha256": "1e71e14005fdeabdaf458839f301c18ca650cd4970e2cd685928480394d07456"
+  },
   "previews/R04_USB18_front.png": {
     "bytes": 80132,
     "sha256": "64d004d7cccba4b3e341b7bb49fd70cfcd961f28f403114798e800648153997c"
@@ -734,6 +986,10 @@
   "source/build_harness.py": {
     "bytes": 20784,
     "sha256": "fae7a85e1d16a79047149184c5ad12b477074fcb77be6cc025b200ce7aaa8184"
+  },
+  "source/check_camera_insertion.py": {
+    "bytes": 2572,
+    "sha256": "04489810604991cd93f72ef4bbc39ba4b897ebab3a3d64263d6bec691043275d"
   },
   "source/clean_stl.py": {
     "bytes": 676,

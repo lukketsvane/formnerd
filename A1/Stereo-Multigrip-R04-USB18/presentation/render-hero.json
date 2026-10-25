@@ -1,0 +1,569 @@
+{
+  "engine": "Blender Cycles",
+  "blender_version": "4.3.2",
+  "view": "hero",
+  "samples": 128,
+  "resolution": [
+    2400,
+    1800
+  ],
+  "mesh_count": 79,
+  "triangle_count": 80784,
+  "objects": [
+    {
+      "name": "02_multigrip_carrier",
+      "source_stl": "STL/02_multigrip_carrier.stl",
+      "sha256": "b14e742b022e5efb7e0cc00ba7098a5c359ebaf2f99cfa802460a29a8e1c2fc4",
+      "triangles": 26320,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "03_MB_keeper_left",
+      "source_stl": "STL/03_MB_keeper_left.stl",
+      "sha256": "039659c54f1ac254afbd396a7d1ad8e1afeb8713fe68bbda3501ba477cd3c66b",
+      "triangles": 6060,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "04_MB_keeper_right",
+      "source_stl": "STL/04_MB_keeper_right.stl",
+      "sha256": "6e3c99ff3bfd76ecaf71568d062875cade72399942b25e5b677f218e3dc0965f",
+      "triangles": 5740,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "05_sensor_yoke_left",
+      "source_stl": "STL/05_sensor_yoke_left.stl",
+      "sha256": "bde977bae339844b26a679571447c5b328c5d0efde609697da1ca04fbca46ea0",
+      "triangles": 3140,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "06_sensor_yoke_right",
+      "source_stl": "STL/06_sensor_yoke_right.stl",
+      "sha256": "a7b37a39a184a9c8e12c5784c3a14da1e2b7d018cc0db015d51183f4619ce8d5",
+      "triangles": 3140,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "20_keeper_L_down_pin",
+      "source_stl": "STL/20_keeper_L_down_pin.stl",
+      "sha256": "90c4205451870de53111d0332dcaaa0a89f5b44e4f59f924c9038b57a67e2bc7",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "20_keeper_L_down_wedge",
+      "source_stl": "STL/20_keeper_L_down_wedge.stl",
+      "sha256": "4a1cd1b1a29417e9f176a9ce4ca523310fcf2be2d4feb0def93871dbda19eddb",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "20_keeper_L_up_pin",
+      "source_stl": "STL/20_keeper_L_up_pin.stl",
+      "sha256": "f1eb78d443a63796df5aded9fa04c80c899874dff0edf55eddf32f13f9137f1c",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "20_keeper_L_up_wedge",
+      "source_stl": "STL/20_keeper_L_up_wedge.stl",
+      "sha256": "a53f1e822725b17ffa074bb348d6828fbe33741d67c108f1b6f77160b32df977",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "30_yoke_L_down_pin",
+      "source_stl": "STL/30_yoke_L_down_pin.stl",
+      "sha256": "9c14ca3fba56b36979632f30cf895727d912f84cc51ddbae33df3477fdaa19ad",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "30_yoke_L_down_wedge",
+      "source_stl": "STL/30_yoke_L_down_wedge.stl",
+      "sha256": "3fdb3f4160d6179973a4f0c97fab3ee792f0c5c469fb3fd37c4640f23961e6ea",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "30_yoke_L_up_pin",
+      "source_stl": "STL/30_yoke_L_up_pin.stl",
+      "sha256": "ee75754f759af3849516004c02ffbbed792037a8fb51185ab6de6be58f5bc6da",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "30_yoke_L_up_wedge",
+      "source_stl": "STL/30_yoke_L_up_wedge.stl",
+      "sha256": "2a2e27d8d368343fd304303e167006582703febc0da4c659469f3aa94b87528c",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "20_keeper_R_down_pin",
+      "source_stl": "STL/20_keeper_R_down_pin.stl",
+      "sha256": "4697ebbbb7b6f23e7d1e6c1d8b6b853eab1a8e9b8e8a2b89c86d602963f83b32",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "20_keeper_R_down_wedge",
+      "source_stl": "STL/20_keeper_R_down_wedge.stl",
+      "sha256": "9a1e2ca4de683113d8889473cba73aaa913ff09862345370f1cdc40617ee7122",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "20_keeper_R_up_pin",
+      "source_stl": "STL/20_keeper_R_up_pin.stl",
+      "sha256": "6d9f7f7d7f052064e0974f55749aa2cf90ec73b39d4c9aef8ab03b528c2a373c",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "20_keeper_R_up_wedge",
+      "source_stl": "STL/20_keeper_R_up_wedge.stl",
+      "sha256": "f3fbb89f15f4fa66cbd29768ce463fe2687cfdc40f4bf9f063394fc2e58c2c7e",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "30_yoke_R_down_pin",
+      "source_stl": "STL/30_yoke_R_down_pin.stl",
+      "sha256": "b15d6d237729f64a046dcddcbb89ea705946f7dc23490e352626b1f109fe4abf",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "30_yoke_R_down_wedge",
+      "source_stl": "STL/30_yoke_R_down_wedge.stl",
+      "sha256": "f77214d46c000289340285f8becc64a33573dd62dedf21c10cfc24d64347ddbd",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "30_yoke_R_up_pin",
+      "source_stl": "STL/30_yoke_R_up_pin.stl",
+      "sha256": "e31dd92f0fe65a27d9cd299adaba202be66026d778237d23b6e5e07284543600",
+      "triangles": 1056,
+      "material": "Reused gray PLA"
+    },
+    {
+      "name": "30_yoke_R_up_wedge",
+      "source_stl": "STL/30_yoke_R_up_wedge.stl",
+      "sha256": "e653820909609a1ed413149b9ea5f94f035a3bb8bedfa5b6a25d490d2c326aa7",
+      "triangles": 372,
+      "material": "AMS A3 yellow PLA"
+    },
+    {
+      "name": "REF_L_MB",
+      "source_stl": "STL/REF_L_MB.stl",
+      "sha256": "4c6101f640d466a9069e17444919ea0d6960546120d99d619562b55723ce5c7e",
+      "triangles": 348,
+      "material": "Nominal black PCB"
+    },
+    {
+      "name": "REF_L_CAM",
+      "source_stl": "STL/REF_L_CAM.stl",
+      "sha256": "55dba23ef21e5435ecb8d37504fa6ef7cc7abc7fa5e10936322078390eb4089c",
+      "triangles": 348,
+      "material": "Nominal black PCB"
+    },
+    {
+      "name": "REF_L_socket_-1",
+      "source_stl": "STL/REF_L_socket_-1.stl",
+      "sha256": "4cc86d520e45250be2387dc6bab116c18579674c0df4b5c29599ad7c21910a0e",
+      "triangles": 348,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_L_pin_-1_0",
+      "source_stl": "STL/REF_L_pin_-1_0.stl",
+      "sha256": "a88eb72533cd67343a4e9ab10cb1f87668c533477373f93656c3e4805dafddcc",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_-1_1",
+      "source_stl": "STL/REF_L_pin_-1_1.stl",
+      "sha256": "3afc267e287c0b75b60de0878966327c82230317ed1f63335272aa4d6acc85ba",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_-1_2",
+      "source_stl": "STL/REF_L_pin_-1_2.stl",
+      "sha256": "2d7973db56dd89731daa7719d58e2c6966a56730e536eeac0e207df69d8cb584",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_-1_3",
+      "source_stl": "STL/REF_L_pin_-1_3.stl",
+      "sha256": "7cbcc2f2cee4692ab4ee1b6377258933c619e105b2c3eb9929c644aa37a534f8",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_-1_4",
+      "source_stl": "STL/REF_L_pin_-1_4.stl",
+      "sha256": "9010379ef165012ebc3897c6f0ddcf1e32f34e644a50eed5cc6f5cffed5a6a45",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_-1_5",
+      "source_stl": "STL/REF_L_pin_-1_5.stl",
+      "sha256": "9d3c2ab0842e1a8d2553965c188339ca3ea89c34bf0d8707950d019bd28de3a1",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_-1_6",
+      "source_stl": "STL/REF_L_pin_-1_6.stl",
+      "sha256": "53a3e46c3a5d39d4dc2df7c5ae59fcf3f8fd42e469a0cd390b7981f754e613d2",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_-1_7",
+      "source_stl": "STL/REF_L_pin_-1_7.stl",
+      "sha256": "78d6df6f927683e1adfb61daa2106d8c64a69a2b4db34a9da0f20431b3cd6f13",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_socket_1",
+      "source_stl": "STL/REF_L_socket_1.stl",
+      "sha256": "4b77ccf3aabe7bd1994fc668fad5999027d90ae7e9280803b1b22eea11318407",
+      "triangles": 348,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_L_pin_1_0",
+      "source_stl": "STL/REF_L_pin_1_0.stl",
+      "sha256": "b81e817dac95ed5ae1a85a489f4d5b0e8e147e2c2c3801a093d9c38dbe1e031c",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_1_1",
+      "source_stl": "STL/REF_L_pin_1_1.stl",
+      "sha256": "4f187f57ac74e7d682c96c6745db227294beedf1ba005528402b2bb4fb393db2",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_1_2",
+      "source_stl": "STL/REF_L_pin_1_2.stl",
+      "sha256": "cba30a73b47ea782ca7d5555cd66c3d26cdb9b536aacfb9a65920f2a78553e01",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_1_3",
+      "source_stl": "STL/REF_L_pin_1_3.stl",
+      "sha256": "35135490cef614714191361d1abdb071d4b08bcda448e50c23de3046d9df0a9e",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_1_4",
+      "source_stl": "STL/REF_L_pin_1_4.stl",
+      "sha256": "47a946f7e70ef30f444229523639eebb7df4d06b8fa7f280ed13b3401151a5db",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_1_5",
+      "source_stl": "STL/REF_L_pin_1_5.stl",
+      "sha256": "0b8afc2f621ed82c109fe228f8a823c80de363287885fbd5b1ef103471667105",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_1_6",
+      "source_stl": "STL/REF_L_pin_1_6.stl",
+      "sha256": "d5fc65c9c1743a2d13bf7d1ea2f7620266159f2debba9157240ee99772335fe9",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_pin_1_7",
+      "source_stl": "STL/REF_L_pin_1_7.stl",
+      "sha256": "b7e3c507dd3bbfb43fb85f929bb13ef6e1a44bfcb951113111794bb8b2b1b6a4",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_L_SD_cage",
+      "source_stl": "STL/REF_L_SD_cage.stl",
+      "sha256": "0e906abd77802001c123f4c9c0d610fc3afe99247f76fe04b2efc6be8337596a",
+      "triangles": 348,
+      "material": "Satin connector metal"
+    },
+    {
+      "name": "REF_L_sensor_carrier",
+      "source_stl": "STL/REF_L_sensor_carrier.stl",
+      "sha256": "eddf156cfa1340fdd9d3ba6891a1fe92dc37319eb562c0973d65144b4777a000",
+      "triangles": 348,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_L_lens_barrel",
+      "source_stl": "STL/REF_L_lens_barrel.stl",
+      "sha256": "0869bf8708080c41d17f8c67464f1eb1deba82f6cc15b5bce5dfc2ae219df0a2",
+      "triangles": 332,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_L_lens_glass",
+      "source_stl": "STL/REF_L_lens_glass.stl",
+      "sha256": "5124105cc0157f7f31b270113ad9629e0fcb44583747a9347b625af69eeb2677",
+      "triangles": 332,
+      "material": "Optical coating"
+    },
+    {
+      "name": "REF_L_flex",
+      "source_stl": "STL/REF_L_flex.stl",
+      "sha256": "40b05bcdce17cc5a155ca37bee7703e3f8590aee69186ad806038d5e915c189b",
+      "triangles": 12,
+      "material": "Polyimide flex"
+    },
+    {
+      "name": "REF_L_flex_socket",
+      "source_stl": "STL/REF_L_flex_socket.stl",
+      "sha256": "ba329c0a6d8295e2d245cd1aa6387d137e112c45576708c88c0fd8252a35dd9f",
+      "triangles": 348,
+      "material": "Ivory flex socket"
+    },
+    {
+      "name": "REF_L_USB_socket",
+      "source_stl": "STL/REF_L_USB_socket.stl",
+      "sha256": "0083178f297263988fd9da955211a22e7b2e3655bc0433f116945c222f412361",
+      "triangles": 348,
+      "material": "Satin connector metal"
+    },
+    {
+      "name": "REF_R_MB",
+      "source_stl": "STL/REF_R_MB.stl",
+      "sha256": "7820bcf4f8f111b44d327979dee6e37c1054e6be6edc20dce1083b196ee246c8",
+      "triangles": 348,
+      "material": "Nominal black PCB"
+    },
+    {
+      "name": "REF_R_CAM",
+      "source_stl": "STL/REF_R_CAM.stl",
+      "sha256": "a582185e555061ef3f7a55d7117c6535358c8b613004f6c5d95ff396c8d09279",
+      "triangles": 348,
+      "material": "Nominal black PCB"
+    },
+    {
+      "name": "REF_R_socket_-1",
+      "source_stl": "STL/REF_R_socket_-1.stl",
+      "sha256": "0cf0dd12c60e57ae084fe29a6222100355ea65a18ffe171b078e0203907b7658",
+      "triangles": 348,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_R_pin_-1_0",
+      "source_stl": "STL/REF_R_pin_-1_0.stl",
+      "sha256": "6912657fbce1df8efd36cc414f4ad842425e50bd35850d62ddf27c1ea5d05774",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_-1_1",
+      "source_stl": "STL/REF_R_pin_-1_1.stl",
+      "sha256": "55b9202a0d6873d1aa50a1e467fbc54e79f2f5584140e395455d2b9e97cbb608",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_-1_2",
+      "source_stl": "STL/REF_R_pin_-1_2.stl",
+      "sha256": "36bb2e87ea38772a9f1b96e7ea88594e4b67652ff06b3352c1bd7375aa83f7b0",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_-1_3",
+      "source_stl": "STL/REF_R_pin_-1_3.stl",
+      "sha256": "df207a9dbee262349d518d49f64cab0c495bc6728031e1e7e68a3f71704df60d",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_-1_4",
+      "source_stl": "STL/REF_R_pin_-1_4.stl",
+      "sha256": "50e8d9170efb7dbd9032b44eaa07997892771823a87031fa6680ecfc51ace313",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_-1_5",
+      "source_stl": "STL/REF_R_pin_-1_5.stl",
+      "sha256": "49400f2958b847a17055e6954624f8bfaa8a6fdc4c06f6f16e16f70ac13643ad",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_-1_6",
+      "source_stl": "STL/REF_R_pin_-1_6.stl",
+      "sha256": "6f9d62d0516e1830ff44781d81145df5574e23a16b4c7329c60268338a4137fa",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_-1_7",
+      "source_stl": "STL/REF_R_pin_-1_7.stl",
+      "sha256": "d97101adf9742fe8687678ec3d25cf71048ea94d350f805a7bff84e2597f70e4",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_socket_1",
+      "source_stl": "STL/REF_R_socket_1.stl",
+      "sha256": "768a5710041f0bee108dbb83b5d25cbc8de8c5ea845ff016898efda466868d78",
+      "triangles": 348,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_R_pin_1_0",
+      "source_stl": "STL/REF_R_pin_1_0.stl",
+      "sha256": "eb555c96f202c55fe0b75440a57e04e1ec643c45712eab5946b98d2343033207",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_1_1",
+      "source_stl": "STL/REF_R_pin_1_1.stl",
+      "sha256": "437c671e8f7e916892ba4df2cb7d630aaa3798bfdc1f3dab0228a630ed83296a",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_1_2",
+      "source_stl": "STL/REF_R_pin_1_2.stl",
+      "sha256": "3a06f7e99ebbe4c40f9a00762e0fe27c2802ab7007c83827b925843c5bd56848",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_1_3",
+      "source_stl": "STL/REF_R_pin_1_3.stl",
+      "sha256": "087fb90d52deb690902a125a32f0c010d529122538777746086865ae76dc34ca",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_1_4",
+      "source_stl": "STL/REF_R_pin_1_4.stl",
+      "sha256": "becfbd5dcbeac8aa7f60f9d05b9302ba9d355210cc9343716c1849c66ea30f9c",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_1_5",
+      "source_stl": "STL/REF_R_pin_1_5.stl",
+      "sha256": "34df3a19a76c1f7a1b0fb82b3d193f4b431757939013474c36a3b52d19991888",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_1_6",
+      "source_stl": "STL/REF_R_pin_1_6.stl",
+      "sha256": "adcfe451fa26813acc90772285abe3cd97af745a12a1f76b512913703859d8c6",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_pin_1_7",
+      "source_stl": "STL/REF_R_pin_1_7.stl",
+      "sha256": "75382e3cb515b8e46a9aa8e75e2817bf80907f7a794bbfc2eee127df55728c44",
+      "triangles": 12,
+      "material": "Pin metal"
+    },
+    {
+      "name": "REF_R_SD_cage",
+      "source_stl": "STL/REF_R_SD_cage.stl",
+      "sha256": "a60e8d515461b9a7d96703132357325a776a213701a223fde10d811c2a2ce1b7",
+      "triangles": 348,
+      "material": "Satin connector metal"
+    },
+    {
+      "name": "REF_R_sensor_carrier",
+      "source_stl": "STL/REF_R_sensor_carrier.stl",
+      "sha256": "1dbe0e1cf9dc1d2f25e47e6536548c703b79733bbd03542067928736e72fcfeb",
+      "triangles": 348,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_R_lens_barrel",
+      "source_stl": "STL/REF_R_lens_barrel.stl",
+      "sha256": "d12ab4769967d12369f78051ba4ac468bb24451ae123ff18d33ccb9db6769a03",
+      "triangles": 332,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "REF_R_lens_glass",
+      "source_stl": "STL/REF_R_lens_glass.stl",
+      "sha256": "78b5aa2a2aa26319e4cc73f22f2b1df5a3012680568c731332ef0f3083e67f8a",
+      "triangles": 332,
+      "material": "Optical coating"
+    },
+    {
+      "name": "REF_R_flex",
+      "source_stl": "STL/REF_R_flex.stl",
+      "sha256": "4b3cc7a2e5c9c819fd327671ebb82ae3f37da7011e1ce7b530bf4eae72bc4248",
+      "triangles": 12,
+      "material": "Polyimide flex"
+    },
+    {
+      "name": "REF_R_flex_socket",
+      "source_stl": "STL/REF_R_flex_socket.stl",
+      "sha256": "4932b9effec119615d4aa539dd6419d47b995fd6d9adf80bac65d7ba8308cae8",
+      "triangles": 348,
+      "material": "Ivory flex socket"
+    },
+    {
+      "name": "REF_R_USB_socket",
+      "source_stl": "STL/REF_R_USB_socket.stl",
+      "sha256": "38c0883054200a2de4c6eddf94f0c96835648da23e13b86c7677b8fe01e2b20f",
+      "triangles": 348,
+      "material": "Satin connector metal"
+    },
+    {
+      "name": "USB_L_nominal_body",
+      "source_stl": "previews/assets/USB_L_nominal_body.stl",
+      "sha256": "e18bd5736bcdfd27ab94d6827d5471bb9a3f4a84dad7b7a79048f248e046fa56",
+      "triangles": 12,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "USB_R_nominal_body",
+      "source_stl": "previews/assets/USB_R_nominal_body.stl",
+      "sha256": "ae4469b3e6309b45bdf888fb23d58352f3f5b6dc6d9151ecd248697f9accd6d4",
+      "triangles": 12,
+      "material": "Black moulded polymer"
+    },
+    {
+      "name": "cable_clearance_0",
+      "source_stl": "previews/assets/cable_clearance_0.stl",
+      "sha256": "68769fd5e640dd6aa4dba9baf651181464ff19ce253d11f682ba2df82d9dfb93",
+      "triangles": 8816,
+      "material": "Black USB cable"
+    },
+    {
+      "name": "cable_clearance_1",
+      "source_stl": "previews/assets/cable_clearance_1.stl",
+      "sha256": "4f91dd1fe5f370976a82c3848632f6db92d1915afb3ddcdc99c2890081a9bd0a",
+      "triangles": 8816,
+      "material": "Black USB cable"
+    }
+  ],
+  "geometry_changes": "none; duplicate-vertex welding and display normals only",
+  "physical_fit": "not verified"
+}
