@@ -1,0 +1,252 @@
+{
+  "method": "Exact continuous negative-Z extrusion of the nominal CAM PCB footprint, intersected with the exported carrier STEP.",
+  "scope": "Rigid straight rear insertion of nominal CAM PCB alone; other stack components can only add obstructions.",
+  "interpretation": "The documented straight rear insertion has nominal interference. Final seated PCB clearance is insufficient to prove assembly access.",
+  "limitations": "Actual board dimensions, tilted paths and elastic insertion are not evaluated. This does not establish that the physical assembly is impossible.",
+  "results": [
+    {
+      "revision": "Stereo-Multigrip-R03",
+      "side": "L",
+      "carrier_sha256": "3d6a448a5bc5f4a127d749db84ec3ef12aebea0050733ccd386358d65e6491e0",
+      "final_camera_pcb_intersection_mm3": 0.0,
+      "continuous_rear_pcb_sweep_intersection_mm3": 26.821471,
+      "sweep_z_mm": [
+        -25.0,
+        33.7
+      ],
+      "collision_regions": [
+        {
+          "volume_mm3": 0.645542,
+          "center_mm": [
+            -48.746167,
+            9.981358,
+            18.6
+          ]
+        },
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            -24.043062,
+            -10.299484,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            -29.452973,
+            15.152143,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 3.926389,
+          "center_mm": [
+            -24.043062,
+            -10.299484,
+            23.975
+          ]
+        },
+        {
+          "volume_mm3": 3.926389,
+          "center_mm": [
+            -29.452973,
+            15.152143,
+            23.975
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Stereo-Multigrip-R03",
+      "side": "R",
+      "carrier_sha256": "3d6a448a5bc5f4a127d749db84ec3ef12aebea0050733ccd386358d65e6491e0",
+      "final_camera_pcb_intersection_mm3": 0.0,
+      "continuous_rear_pcb_sweep_intersection_mm3": 26.821471,
+      "sweep_z_mm": [
+        -25.0,
+        33.7
+      ],
+      "collision_regions": [
+        {
+          "volume_mm3": 0.645542,
+          "center_mm": [
+            48.746167,
+            -9.981358,
+            18.6
+          ]
+        },
+        {
+          "volume_mm3": 3.926389,
+          "center_mm": [
+            29.452973,
+            -15.152143,
+            23.975
+          ]
+        },
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            24.043062,
+            10.299484,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            29.452973,
+            -15.152143,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 3.926389,
+          "center_mm": [
+            24.043062,
+            10.299484,
+            23.975
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Stereo-Multigrip-R04-USB18",
+      "side": "L",
+      "carrier_sha256": "ae1e979cef5ad574d0dad64e31e1e9f7b97a159b6af52f574b336fcfc7ae9e54",
+      "final_camera_pcb_intersection_mm3": 0.0,
+      "continuous_rear_pcb_sweep_intersection_mm3": 149.681432,
+      "sweep_z_mm": [
+        -25.0,
+        33.7
+      ],
+      "collision_regions": [
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            -31.084517,
+            15.979583,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            -23.043824,
+            -8.767127,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 65.003557,
+          "center_mm": [
+            -31.084517,
+            15.979583,
+            27.475
+          ]
+        },
+        {
+          "volume_mm3": 0.060481,
+          "center_mm": [
+            -47.943343,
+            10.995801,
+            20.125
+          ]
+        },
+        {
+          "volume_mm3": 1.254749,
+          "center_mm": [
+            -48.67448,
+            10.110163,
+            19.6
+          ]
+        },
+        {
+          "volume_mm3": 0.035938,
+          "center_mm": [
+            -47.943343,
+            10.995801,
+            24.775
+          ]
+        },
+        {
+          "volume_mm3": 65.003557,
+          "center_mm": [
+            -23.043824,
+            -8.767127,
+            27.475
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "Stereo-Multigrip-R04-USB18",
+      "side": "R",
+      "carrier_sha256": "ae1e979cef5ad574d0dad64e31e1e9f7b97a159b6af52f574b336fcfc7ae9e54",
+      "final_camera_pcb_intersection_mm3": 0.0,
+      "continuous_rear_pcb_sweep_intersection_mm3": 149.681432,
+      "sweep_z_mm": [
+        -25.0,
+        33.7
+      ],
+      "collision_regions": [
+        {
+          "volume_mm3": 65.003557,
+          "center_mm": [
+            31.084517,
+            -15.979583,
+            27.475
+          ]
+        },
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            31.084517,
+            -15.979583,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 9.161575,
+          "center_mm": [
+            23.043824,
+            8.767127,
+            21.325
+          ]
+        },
+        {
+          "volume_mm3": 0.060481,
+          "center_mm": [
+            47.943343,
+            -10.995801,
+            20.125
+          ]
+        },
+        {
+          "volume_mm3": 1.254749,
+          "center_mm": [
+            48.67448,
+            -10.110163,
+            19.6
+          ]
+        },
+        {
+          "volume_mm3": 0.035938,
+          "center_mm": [
+            47.943343,
+            -10.995801,
+            24.775
+          ]
+        },
+        {
+          "volume_mm3": 65.003557,
+          "center_mm": [
+            23.043824,
+            8.767127,
+            27.475
+          ]
+        }
+      ]
+    }
+  ]
+}

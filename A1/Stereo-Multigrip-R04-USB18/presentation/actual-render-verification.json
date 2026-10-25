@@ -1,0 +1,486 @@
+{
+  "status": "passed",
+  "source_revision": "abc4b921c989caf9e1e14d1babe25940b68502be",
+  "mesh_objects": 79,
+  "triangles": 80784,
+  "max_coordinate_error_mm": 1.8477439880371094e-06,
+  "coordinate_precision_note": "STL millimetres converted to Blender float32 metres; sub-0.00001 mm quantisation only",
+  "extra_meshes": 0,
+  "geometry_modifiers": 0,
+  "checks": [
+    {
+      "name": "02_multigrip_carrier",
+      "triangles": 26320,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "03_MB_keeper_left",
+      "triangles": 6060,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "04_MB_keeper_right",
+      "triangles": 5740,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "05_sensor_yoke_left",
+      "triangles": 3140,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "06_sensor_yoke_right",
+      "triangles": 3140,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_down_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.430511474609375e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_down_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.6391277313232422e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_up_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_L_up_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_down_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_down_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 9.238719940185547e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_up_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_L_up_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_down_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_down_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_up_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.6689300537109375e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "20_keeper_R_up_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.6987323760986328e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_down_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_down_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_up_pin",
+      "triangles": 1056,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "30_yoke_R_up_wedge",
+      "triangles": 372,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_MB",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.7583370208740234e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_CAM",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.7583370208740234e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_socket_-1",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.7881393432617188e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_0",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_1",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.6391277313232422e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_2",
+      "triangles": 12,
+      "max_coordinate_error_mm": 8.642673492431641e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_3",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.109476089477539e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_4",
+      "triangles": 12,
+      "max_coordinate_error_mm": 7.003545761108398e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_5",
+      "triangles": 12,
+      "max_coordinate_error_mm": 8.791685104370117e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_6",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.109476089477539e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_-1_7",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.854534149169922e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_socket_1",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_0",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.6093254089355469e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_1",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.3113021850585938e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_2",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.7881393432617188e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_3",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.6689300537109375e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_4",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.2814998626708984e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_5",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.109476089477539e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_6",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.705522537231445e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_pin_1_7",
+      "triangles": 12,
+      "max_coordinate_error_mm": 8.642673492431641e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_SD_cage",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_sensor_carrier",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_lens_barrel",
+      "triangles": 332,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_lens_glass",
+      "triangles": 332,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_flex",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.0728836059570312e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_flex_socket",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.1622905731201172e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_L_USB_socket",
+      "triangles": 348,
+      "max_coordinate_error_mm": 5.364418029785156e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_MB",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.7583370208740234e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_CAM",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.7583370208740234e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_socket_-1",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_0",
+      "triangles": 12,
+      "max_coordinate_error_mm": 8.642673492431641e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_1",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.705522537231445e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_2",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.109476089477539e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_3",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.2814998626708984e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_4",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.6689300537109375e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_5",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.7881393432617188e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_6",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.3113021850585938e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_-1_7",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.6093254089355469e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_socket_1",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.7881393432617188e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_0",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.854534149169922e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_1",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.109476089477539e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_2",
+      "triangles": 12,
+      "max_coordinate_error_mm": 8.791685104370117e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_3",
+      "triangles": 12,
+      "max_coordinate_error_mm": 7.003545761108398e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_4",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.109476089477539e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_5",
+      "triangles": 12,
+      "max_coordinate_error_mm": 8.642673492431641e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_6",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.6391277313232422e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_pin_1_7",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_SD_cage",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_sensor_carrier",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_lens_barrel",
+      "triangles": 332,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_lens_glass",
+      "triangles": 332,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_flex",
+      "triangles": 12,
+      "max_coordinate_error_mm": 1.0728836059570312e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_flex_socket",
+      "triangles": 348,
+      "max_coordinate_error_mm": 1.1622905731201172e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "REF_R_USB_socket",
+      "triangles": 348,
+      "max_coordinate_error_mm": 5.364418029785156e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "USB_L_nominal_body",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.854534149169922e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "USB_R_nominal_body",
+      "triangles": 12,
+      "max_coordinate_error_mm": 6.854534149169922e-07,
+      "modifiers": 0
+    },
+    {
+      "name": "cable_clearance_0",
+      "triangles": 8816,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    },
+    {
+      "name": "cable_clearance_1",
+      "triangles": 8816,
+      "max_coordinate_error_mm": 1.8477439880371094e-06,
+      "modifiers": 0
+    }
+  ]
+}
