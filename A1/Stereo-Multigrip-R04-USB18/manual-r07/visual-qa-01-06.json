@@ -1,0 +1,75 @@
+{
+  "reviewer": "manual_recovery",
+  "edition": "07",
+  "scope": "pages01-06",
+  "method": "Individual visual review of each PNG; no collage; compare against inspected IKEA references and mechanical audit",
+  "status": "PENDING_PAGE06_LABEL_FIX",
+  "pages": [
+    {
+      "page": 1,
+      "file": "pages/R04_manual_01.png",
+      "sha256": "c1fd7f4a09a3c365d59a427f4c350530f472e7dd75302a1a19c667b003a0ee6d",
+      "size_px": [
+        1489,
+        2105
+      ],
+      "status": "PASS",
+      "findings": "Product-name hierarchy, large accurate model-derived line render and short prototype reference match inspected IKEA cover structure. No cropping or overlap."
+    },
+    {
+      "page": 2,
+      "file": "pages/R04_manual_02.png",
+      "sha256": "872a5c52cde0de50e1c793cbfd05813af5992fb3fa855d4f9ef498173f571f02",
+      "size_px": [
+        1489,
+        2105
+      ],
+      "status": "PASS",
+      "findings": "Clear actual new-part silhouettes, IDs and1+1+1+8quantities.11newparts statement accurate."
+    },
+    {
+      "page": 3,
+      "file": "pages/R04_manual_03.png",
+      "sha256": "d5f7e5ee65224bec53c3c35aa02a0e8719734a9eb3c94c09d120f84437dcc2f9",
+      "size_px": [
+        1489,
+        2105
+      ],
+      "status": "PASS",
+      "findings": "Reused yokes and8camera pins distinct. Optional frame group contains1frame+4pins+4longwedges. Totals21/30accurate. No clutter or overlap."
+    },
+    {
+      "page": 4,
+      "file": "pages/R04_manual_04.png",
+      "sha256": "78bbe92cc467e8729ebea467bbf7e88c9d57888f6859076918aa27388723b509",
+      "size_px": [
+        1489,
+        2105
+      ],
+      "status": "PASS",
+      "findings": "Correct opposite180degree CAM orientations and same18degree roll, L/R defined fromlensside. TwoCAM+MB and2microUSB quantities correct. MB inset describes its location without claiming measured dimensions."
+    },
+    {
+      "page": 5,
+      "file": "pages/R04_manual_05.png",
+      "sha256": "0838ae106d52014161a578c10cc7810b9eba61264363fd3b0966ebe17db44455",
+      "size_px": [
+        1489,
+        2105
+      ],
+      "status": "PASS",
+      "findings": "Prominent specific PCB gate: rearstraight collision, no alternative checked, finalposition only. No unsupported insertion arrows. Disconnect/clean/separatefitchecks concise."
+    },
+    {
+      "page": 6,
+      "file": "pages/R04_manual_06.png",
+      "sha256": "2387fb3d1a09985d074f10a96cb0d1e5d9bdb49af0b32628350d35a85af70a84",
+      "size_px": [
+        1489,
+        2105
+      ],
+      "status": "NEEDS_CALLOUT_CLEANUP",
+      "findings": "02label sits on dense frame linework.03leader traverses structure and terminates in crowdedcentralarea; move02towhitespace and connect03to clear visible keeperedge. Other labels and exploded disclaimer understandable."
+    }
+  ]
+}

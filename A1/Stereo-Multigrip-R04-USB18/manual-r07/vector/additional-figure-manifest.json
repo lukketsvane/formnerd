@@ -1,0 +1,308 @@
+{
+  "revision": "R04 USB18",
+  "source_commit": "88cc8f327fba72e6517ea30dcadc4e978419da37",
+  "geometry_modified": false,
+  "figures": [
+    {
+      "name": "bank_placement_with_bank",
+      "camera": [
+        1.35,
+        0.75,
+        1.6
+      ],
+      "line_count": 2687,
+      "parts": [
+        "20_keeper_R_up_wedge",
+        "06_sensor_yoke_right",
+        "30_yoke_L_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_R_up_wedge",
+        "20_keeper_R_down_pin",
+        "30_yoke_R_down_wedge",
+        "30_yoke_L_down_wedge",
+        "20_keeper_L_down_wedge",
+        "30_yoke_R_up_pin",
+        "05_sensor_yoke_left",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_wedge",
+        "30_yoke_L_up_wedge",
+        "02_multigrip_carrier",
+        "30_yoke_R_down_pin",
+        "20_keeper_R_up_pin",
+        "03_MB_keeper_left",
+        "20_keeper_L_down_pin",
+        "04_MB_keeper_right",
+        "20_keeper_L_up_wedge",
+        "01_bank_cradle",
+        "REF_power_bank"
+      ],
+      "translations_mm": {
+        "01_bank_cradle": [
+          0,
+          0,
+          -42
+        ],
+        "REF_power_bank": [
+          0,
+          0,
+          -42
+        ]
+      },
+      "bank": "Nominal source envelope94x62x15mm, lowerZ2.8, vertical corner fillet4.1; no modeled ports. Not a measurement of user hardware.",
+      "bank_nominal_mm": [
+        94,
+        62,
+        15
+      ],
+      "bank_bottom_z_mm": 2.8,
+      "assembled_centers_local_mm": {
+        "01_bank_cradle": [
+          0.10115830544773784,
+          -1.3553146379271634,
+          7.032835820273948
+        ],
+        "REF_power_bank": [
+          -6.674918530984542e-16,
+          -8.086966230373398e-17,
+          10.3
+        ]
+      },
+      "shown_centers_local_mm": {
+        "01_bank_cradle": [
+          0.10115830544773784,
+          -1.3553146379271634,
+          -34.967164179726055
+        ],
+        "REF_power_bank": [
+          -6.674918530984542e-16,
+          -8.086966230373398e-17,
+          -31.7
+        ]
+      },
+      "motion": "Cradle and bank separated42mm toward rear; nominal illustrative placement, no verified bank motion sweep."
+    },
+    {
+      "name": "yoke_pin_stage",
+      "camera": [
+        -1.5,
+        1.0,
+        1.8
+      ],
+      "line_count": 225,
+      "parts": [
+        "02_multigrip_carrier",
+        "05_sensor_yoke_left",
+        "30_yoke_L_up_pin"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -44.281536488623956,
+          18.83091902264404,
+          36.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and yoke only; surrounding material sectioned for joint detail",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "wedge_insertion_local": [
+        0,
+        0,
+        -1
+      ],
+      "slot_upper_center_local_mm": [
+        0,
+        -9.8,
+        8.45
+      ],
+      "translations_mm": {
+        "30_yoke_L_up_pin": [
+          0,
+          24,
+          0
+        ]
+      },
+      "assembled_centers_local_mm": {
+        "30_yoke_L_up_pin": [
+          -1.369613933566134e-12,
+          0.7556690383560256,
+          6.25
+        ]
+      },
+      "shown_centers_local_mm": {
+        "30_yoke_L_up_pin": [
+          -1.369613933566134e-12,
+          24.755669038356025,
+          6.25
+        ]
+      }
+    },
+    {
+      "name": "yoke_wedge_stage",
+      "camera": [
+        -1.5,
+        -1.0,
+        1.8
+      ],
+      "line_count": 268,
+      "parts": [
+        "02_multigrip_carrier",
+        "05_sensor_yoke_left",
+        "30_yoke_L_up_pin",
+        "30_yoke_L_up_wedge"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -44.281536488623956,
+          18.83091902264404,
+          36.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and yoke only; surrounding material sectioned for joint detail",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "wedge_insertion_local": [
+        0,
+        0,
+        -1
+      ],
+      "slot_upper_center_local_mm": [
+        0,
+        -9.8,
+        8.45
+      ],
+      "translations_mm": {
+        "30_yoke_L_up_wedge": [
+          0,
+          0,
+          22
+        ]
+      },
+      "assembled_centers_local_mm": {
+        "30_yoke_L_up_pin": [
+          -1.369613933566134e-12,
+          0.7556690383560256,
+          6.25
+        ],
+        "30_yoke_L_up_wedge": [
+          -1.6052546555403088e-12,
+          -9.800000000004431,
+          8.247047528171171
+        ]
+      },
+      "shown_centers_local_mm": {
+        "30_yoke_L_up_pin": [
+          -1.369613933566134e-12,
+          0.7556690383560256,
+          6.25
+        ],
+        "30_yoke_L_up_wedge": [
+          -1.6052546555403088e-12,
+          -9.800000000004431,
+          30.247047528171173
+        ]
+      }
+    },
+    {
+      "name": "yoke_lock_seated",
+      "camera": [
+        -1.5,
+        -1.0,
+        1.8
+      ],
+      "line_count": 248,
+      "parts": [
+        "02_multigrip_carrier",
+        "05_sensor_yoke_left",
+        "30_yoke_L_up_pin",
+        "30_yoke_L_up_wedge"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -44.281536488623956,
+          18.83091902264404,
+          36.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and yoke only; surrounding material sectioned for joint detail",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "wedge_insertion_local": [
+        0,
+        0,
+        -1
+      ],
+      "slot_upper_center_local_mm": [
+        0,
+        -9.8,
+        8.45
+      ],
+      "translations_mm": {},
+      "assembled_centers_local_mm": {
+        "30_yoke_L_up_pin": [
+          -1.369613933566134e-12,
+          0.7556690383560256,
+          6.25
+        ],
+        "30_yoke_L_up_wedge": [
+          -1.6052546555403088e-12,
+          -9.800000000004431,
+          8.247047528171171
+        ]
+      },
+      "shown_centers_local_mm": {
+        "30_yoke_L_up_pin": [
+          -1.369613933566134e-12,
+          0.7556690383560256,
+          6.25
+        ],
+        "30_yoke_L_up_wedge": [
+          -1.6052546555403088e-12,
+          -9.800000000004431,
+          8.247047528171171
+        ]
+      }
+    }
+  ]
+}
