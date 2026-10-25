@@ -6,6 +6,7 @@ commands. Import into Bambu Studio, choose the actual printer/material, slice.
 from pathlib import Path
 import argparse, struct, json, zipfile, math
 import xml.etree.ElementTree as ET
+from xml.parsers import expat
 
 NS='http://schemas.microsoft.com/3dmanufacturing/core/2015/02'
 REL='http://schemas.openxmlformats.org/package/2006/relationships'
@@ -62,10 +63,17 @@ def make(parts,out,title,bed=256,margin=16,gap=8):
     ET.SubElement(rels,f'{{{REL}}}Relationship',{'Target':'/3D/3dmodel.model','Id':'rel0','Type':'http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel'})
     out.parent.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
-        for name,tree in [('[Content_Types].xml',content),('_rels/.rels',rels),('3D/3dmodel.model',model)]:z.writestr(name,ET.tostring(tree,encoding='utf-8',xml_declaration=True))
+        for name,tree,namespace in [('[Content_Types].xml',content,CT),('_rels/.rels',rels,REL),('3D/3dmodel.model',model,NS)]:
+            ET.register_namespace('',namespace)
+            z.writestr(name,ET.tostring(tree,encoding='utf-8',xml_declaration=True))
     with zipfile.ZipFile(out) as z:
         assert z.testzip() is None
         for name in z.namelist():ET.fromstring(z.read(name))
+        for name,root_tag,child_tag in [('[Content_Types].xml','Types','Default'),('_rels/.rels','Relationships','Relationship'),('3D/3dmodel.model','model','object')]:
+            tags=[];parser=expat.ParserCreate()
+            parser.StartElementHandler=lambda tag,attrs:tags.append(tag)
+            parser.Parse(z.read(name),True)
+            assert tags[0]==root_tag and child_tag in tags,(name,'prefixed or missing package elements')
     report={'file':str(out),'type':'unsliced 3MF Core build layout','bed_mm':[bed,bed],'margin_mm':margin,'gap_mm':gap,'parts':[{'name':i['name'],'size_mm':i['size'],'translation_mm':i['translation'],'triangles':len(i['triangles'])} for i in items]}
     out.with_suffix('.json').write_text(json.dumps(report,indent=2))
     print(json.dumps({'file':str(out),'objects':len(items),'checks':'ZIP/XML, positive mesh volume, part separation and bed containment passed'}))

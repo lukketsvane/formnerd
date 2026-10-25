@@ -1,15 +1,15 @@
 {
   "3MF/00_USB_CLEARANCE_TEST_FIRST.3mf": {
-    "bytes": 150755,
-    "sha256": "79510f7a7d1785c6de104af0e2c97693cb360e2e6670264a18caf581493d529d"
+    "bytes": 150744,
+    "sha256": "d7cdf0ed3baa02cd6a407269b43d0e88b7053594b79631749d9859e2b655c505"
   },
   "3MF/00_USB_CLEARANCE_TEST_FIRST.json": {
     "bytes": 495,
     "sha256": "7ec310bd206cb6c94c95ccf2fa2377d810d2c42f94672e18edc900d2d741bda5"
   },
   "3MF/01_R04_REPLACEMENT_PARTS.3mf": {
-    "bytes": 506248,
-    "sha256": "be402de3015084ce6ee95e58055e5f5082a6bbaadae9990fb31603fc210abed7"
+    "bytes": 506237,
+    "sha256": "fd3c76e408d4a84c0bcc6ec5e56c8ddd219ae712e69a3a7b8cc697032e230ee4"
   },
   "3MF/01_R04_REPLACEMENT_PARTS.json": {
     "bytes": 2890,
@@ -623,6 +623,10 @@
     "bytes": 17484,
     "sha256": "5877ef3220f4426b34ac810f5a0e0b49066e2d03564aea6c9b49975a5b3d120c"
   },
+  "checks/3mf-compatibility.json": {
+    "bytes": 1309,
+    "sha256": "8ba6d40d805fca0beac158f114ab042559b8fe87f3034de5a13ff24b4dd2fa0f"
+  },
   "checks/export-checks.json": {
     "bytes": 9216,
     "sha256": "26aaa1f76a1ed2e9541f269a64f7049ff07095e734281c949d1566f444f0981a"
@@ -736,8 +740,8 @@
     "sha256": "9751a93787a431860bd078a5e9a7ff29e63bfbbf019ae2f5223e07d5fb260ef5"
   },
   "source/make_print_plate.py": {
-    "bytes": 5170,
-    "sha256": "978f03d316aecfb544fe94d030ebab76b170b390fd601aebd92effb9e022dbc4"
+    "bytes": 5720,
+    "sha256": "e7f24d1345e78ee052fc29c01de5adf0c75755d1ae4cbad97201621a4ea70a09"
   },
   "source/parameters.json": {
     "bytes": 2942,
