@@ -1,0 +1,64 @@
+[
+  {
+    "page": 1,
+    "scene": "assembled"
+  },
+  {
+    "page": 4,
+    "scene": "pair_front"
+  },
+  {
+    "page": 4,
+    "scene": "mb_only"
+  },
+  {
+    "page": 7,
+    "scene": "seated"
+  },
+  {
+    "page": 8,
+    "scene": "exploded"
+  },
+  {
+    "page": 9,
+    "scene": "keepers_rear"
+  },
+  {
+    "page": 10,
+    "scene": "keepers_locked"
+  },
+  {
+    "page": 11,
+    "scene": "yokes"
+  },
+  {
+    "page": 11,
+    "scene": "sensor_contact",
+    "crop_uv": [
+      0.34,
+      0.27,
+      0.82,
+      0.81
+    ]
+  },
+  {
+    "page": 12,
+    "scene": "assembled"
+  },
+  {
+    "page": 13,
+    "scene": "rear_usb"
+  },
+  {
+    "page": 14,
+    "scene": "bank_placement"
+  },
+  {
+    "page": 15,
+    "scene": "bank_locked"
+  },
+  {
+    "page": 16,
+    "scene": "assembled"
+  }
+]

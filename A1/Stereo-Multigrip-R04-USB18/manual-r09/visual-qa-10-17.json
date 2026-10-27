@@ -1,0 +1,59 @@
+{
+  "edition": "09",
+  "reviewer": "manual_usability",
+  "method": "All eight final page PNGs individually viewed; actionlogic compared with edition08 and actual MOSSJÖN reference pages7–13and31.",
+  "page_reviews": [
+    {
+      "page": 10,
+      "status": "approved",
+      "sha256": "3703659c03fda634664614feb53ad209a60257edb1b12a62ca52c9cceef6f66a",
+      "notes": "20-family four keeper locks:2a pin,2b short9.5mm wedge,2c actual seated pose. Dashed axis and integrated tail reach the actual joint without crossing text; all4joints marked."
+    },
+    {
+      "page": 11,
+      "status": "approved",
+      "sha256": "83c5557e34f077eb660756f6bc583ad47f4d1a3d4667e6c95aedbdec29799b89",
+      "notes": "Tight actual sensor-shoulder detail remains legible. Integrated tail targets modeled shoulder; free lens/flex condition and raised-yoke explanatory note remain clear."
+    },
+    {
+      "page": 12,
+      "status": "approved",
+      "sha256": "32c18e9fcc2bbf6dcfc4a9a49fc93e75b7bb9cedc1a7e6d8f70608141381a508",
+      "notes": "30-family four yoke locks:4a/b/c sequence, actual seated yokejoint, aligned axes. Tail ends outside critical hardware at correct joint; no caption collision."
+    },
+    {
+      "page": 13,
+      "status": "approved",
+      "sha256": "db3b2f805f9ae5205156112a5de244e4f2ad7d317a77a644f3b6194f94e92652",
+      "notes": "Both verified nominal USBaxes point toward sockets. Holds plug shell and supports base; test before optional bank remains explicit."
+    },
+    {
+      "page": 14,
+      "status": "approved",
+      "sha256": "88aff0064dae1aef52f8303a5fa36472e58e3f24a6bf6831fa92f834fa84d5eb",
+      "notes": "Optional choice is now above action. Skip to page16 correct. Nominal94x62x15bank note retained; movement direction clear."
+    },
+    {
+      "page": 15,
+      "status": "approved",
+      "sha256": "ff854be5cf54080a4bbda1c2899f992d80ac34cf96355734db44655856f9a1b5",
+      "notes": "Actual frame2joint, pin entry and wedgecrossslot visible with per-asset trueheight guides.10-family4locks and16mm longwedge correct. Shorter integrated tail reaches upperframejoint without crossing PCB. Final seatedpose and4jointmarkers clear."
+    },
+    {
+      "page": 16,
+      "status": "approved",
+      "sha256": "5e214d73d484ab4e3f282738b4d311057ae59d04b797bf5a2512e2b964f1c567",
+      "notes": "Correct8pins+8shortwedges orfull12pins+12wedges. No compression, accessibletabs and stablefeeds checked. Date/observations blank and legible."
+    },
+    {
+      "page": 17,
+      "status": "approved",
+      "sha256": "8dad2b7a5488e04b1e44739f2f70018725f768abd74c57a0bfbff2d2a175aa00",
+      "notes": "Wedge withdrawn before pin; frame→yokes→keepers order correct, electronic support and unresolved extraction retained. No clipping."
+    }
+  ],
+  "issues": [],
+  "pdf_source_modified": false,
+  "production_certification": false,
+  "scope": "Visual and documented nominal mechanics review only. Physical PCB insertion and actual cable fit remain unverified."
+}
