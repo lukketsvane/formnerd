@@ -198,7 +198,7 @@ def hol_solid(ytre, indre):
             ms.Add(skal(sh.wrapped.Reversed()))
     s = ms.Solid()
     orient(s)
-    return Part(Solid(s))
+    return Solid(s)
 
 
 KROPP = hol_solid(KROPP0, KJ)
