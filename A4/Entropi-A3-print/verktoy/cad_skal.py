@@ -220,7 +220,7 @@ YTRE_BLOKK = KOMP["kropp"]
 
 
 def band_z(flate, z0, tjukn, breidd, region=None):
-    b = flate - offset(flate, -tjukn)
+    b = offset(flate, 1.0) - offset(flate, -tjukn)
     if region is not None:
         b = b & region
     return extrude(b, breidd).moved(Pos(0, 0, z0 - breidd / 2))
