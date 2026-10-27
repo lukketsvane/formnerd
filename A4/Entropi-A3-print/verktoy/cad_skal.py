@@ -156,7 +156,6 @@ tid("opningar")
 # --- holkjerne ---------------------------------------------------------------
 v = S["vegg"]
 KJERNE = cf.holrom_loft() & boks([-50, S["front_x"]], [-50, 200], [-50, 200])
-KJERNE -= boks([56.0, 70.0], [-50, 200], [-50, 200]) - xsyl(55.0, 71.0, 27.0)
 vern = Pos(bx - br["side_x"] / 2 - v, by - br["side_y"] / 2 - v, lomme_botn - v) * Box(br["side_x"] + 2 * v, br["side_y"] + 2 * v, 90 - lomme_botn + v, align=MN)
 vern += vsyl(ux, uy, ut_["brunn_r"] + v, brunn_golv - v, 90)
 uh = S["usb_hylse"]

@@ -49,7 +49,7 @@ def tonnekutt(punkt, z):
     w = np.sqrt(max(29.6**2 - (z - az) ** 2, 0.0)) + 0.3
     p = ShPolygon(punkt)
     if w > 0.5:
-        p = p.difference(shbox(58.0, ay - w, 95.0, ay + w))
+        p = p.difference(shbox(66.0, ay - w, 95.0, ay + w))
         if p.geom_type != "Polygon":
             p = max(p.geoms, key=lambda q: q.area)
     return resample(glatt(p, 2.0), front=(58.0, ay))
