@@ -220,9 +220,8 @@ YTRE_BLOKK = KOMP["kropp"]
 
 
 def band_z(flate, z0, tjukn, breidd, region=None):
-    b = offset(flate, 1.0) - offset(flate, -tjukn)
-    if region is not None:
-        b = b & region
+    ytre = region if region is not None else offset(flate, 1.0)
+    b = ytre - offset(flate, -tjukn)
     return extrude(b, breidd).moved(Pos(0, 0, z0 - breidd / 2))
 
 
@@ -304,7 +303,7 @@ OPP = boks([-50, 200], [-50, 200], [dz, 200])
 df_ = D["delingsfas"]
 snitt = section(FORM, Plane.XY.offset(dz))
 fas_flate = Sketch() + [Pos(0, 0, -dz) * make_face(f.outer_wire()) for f in snitt.faces()]
-fas = band_z(fas_flate, dz, df_["djupn"], 2 * df_["breidd"] + 0.2)
+fas = band_z(fas_flate, dz, df_["djupn"], 2 * df_["breidd"] + 0.2, Pos(-20, -20) * Rectangle(150, 160, align=(Align.MIN, Align.MIN)))
 BOTN = ((KROPP & NED) - mag_lommer) + pinnar - (fas & boks([-50, 200], [-50, 200], [-50, dz + 0.1]))
 TOPP = (KROPP & OPP) - mag_lommer - pinnehol - (fas & boks([-50, 200], [-50, 200], [dz - 0.1, 200]))
 tid("deling")
