@@ -1,7 +1,7 @@
 {
   "A3-Entropi-botn-P1S.gcode.3mf": {
-    "tid": "2h 37m 48s",
-    "vekt_g": 83.6,
+    "tid": "2h 42m 17s",
+    "vekt_g": 76.63,
     "lag": 197,
     "objekt": [
       "botn.stl"
@@ -14,8 +14,8 @@
     }
   },
   "A3-Entropi-topp-P1S.gcode.3mf": {
-    "tid": "4h 5m 21s",
-    "vekt_g": 103.8,
+    "tid": "3h 53m 30s",
+    "vekt_g": 99.47,
     "lag": 264,
     "objekt": [
       "topp.stl"
@@ -28,8 +28,8 @@
     }
   },
   "A3-Entropi-smaadelar-P1S.gcode.3mf": {
-    "tid": "12m 4s",
-    "vekt_g": 1.98,
+    "tid": "12m 5s",
+    "vekt_g": 1.97,
     "lag": 55,
     "objekt": [
       "usb-lokk.stl",
