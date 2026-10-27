@@ -1,0 +1,296 @@
+{
+  "revision": "R04 USB18",
+  "source_commit": "88cc8f327fba72e6517ea30dcadc4e978419da37",
+  "geometry_modified": false,
+  "figures": [
+    {
+      "name": "lock_keeper_seated",
+      "camera": [
+        1.5,
+        1.0,
+        1.4
+      ],
+      "line_count": 203,
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "20_keeper_L_up_pin",
+        "20_keeper_L_up_wedge"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -35.71664629733408,
+          30.235810780619936,
+          29.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and keeper only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "wedge_insertion_local": [
+        0,
+        0,
+        -1
+      ],
+      "keeper_insertion_local": [
+        0,
+        0,
+        1
+      ],
+      "translations_mm": {}
+    },
+    {
+      "name": "lock_keeper_exploded",
+      "camera": [
+        1.5,
+        1.0,
+        1.4
+      ],
+      "line_count": 261,
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "20_keeper_L_up_pin",
+        "20_keeper_L_up_wedge"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -35.71664629733408,
+          30.235810780619936,
+          29.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and keeper only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "wedge_insertion_local": [
+        0,
+        0,
+        -1
+      ],
+      "keeper_insertion_local": [
+        0,
+        0,
+        1
+      ],
+      "translations_mm": {
+        "02_multigrip_carrier": [
+          0,
+          0,
+          0
+        ],
+        "03_MB_keeper_left": [
+          0,
+          0,
+          -16
+        ],
+        "20_keeper_L_up_pin": [
+          0,
+          24,
+          0
+        ],
+        "20_keeper_L_up_wedge": [
+          0,
+          0,
+          22
+        ]
+      },
+      "note": "All translations describe individual part interfaces; not a board insertion path."
+    },
+    {
+      "name": "lock_keeper_pin_stage",
+      "camera": [
+        1.5,
+        1.0,
+        1.4
+      ],
+      "line_count": 199,
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "20_keeper_L_up_pin"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -35.71664629733408,
+          30.235810780619936,
+          29.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and keeper only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "wedge_insertion_local": [
+        0,
+        0,
+        -1
+      ],
+      "keeper_insertion_local": [
+        0,
+        0,
+        1
+      ],
+      "translations_mm": {
+        "20_keeper_L_up_pin": [
+          0,
+          24,
+          0
+        ]
+      }
+    },
+    {
+      "name": "lock_keeper_wedge_stage",
+      "camera": [
+        1.5,
+        1.0,
+        1.4
+      ],
+      "line_count": 220,
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "20_keeper_L_up_pin",
+        "20_keeper_L_up_wedge"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -35.71664629733408,
+          30.235810780619936,
+          29.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and keeper only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "wedge_insertion_local": [
+        0,
+        0,
+        -1
+      ],
+      "keeper_insertion_local": [
+        0,
+        0,
+        1
+      ],
+      "translations_mm": {
+        "20_keeper_L_up_wedge": [
+          0,
+          0,
+          22
+        ]
+      }
+    },
+    {
+      "name": "wedge_short_profile",
+      "camera": [
+        1,
+        0,
+        0
+      ],
+      "line_count": 16,
+      "parts": [
+        "20_keeper_L_up_wedge"
+      ],
+      "nominal_length_mm": 9.5,
+      "view": "orthographic profile",
+      "note": "Pure rigid transform of actual short wedge STEP."
+    },
+    {
+      "name": "wedge_long_profile",
+      "camera": [
+        1,
+        0,
+        0
+      ],
+      "line_count": 17,
+      "parts": [
+        "10_frame_1_wedge"
+      ],
+      "nominal_length_mm": 16.0,
+      "view": "orthographic profile",
+      "note": "Pure rigid transform of actual long wedge STEP."
+    },
+    {
+      "name": "wedge_short_iso",
+      "camera": [
+        1.2,
+        0.8,
+        0.9
+      ],
+      "line_count": 30,
+      "parts": [
+        "20_keeper_L_up_wedge"
+      ],
+      "nominal_length_mm": 9.5
+    },
+    {
+      "name": "wedge_long_iso",
+      "camera": [
+        1.2,
+        0.8,
+        0.9
+      ],
+      "line_count": 30,
+      "parts": [
+        "10_frame_1_wedge"
+      ],
+      "nominal_length_mm": 16.0
+    }
+  ]
+}
