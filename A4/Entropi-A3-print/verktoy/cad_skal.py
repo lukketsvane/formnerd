@@ -241,7 +241,8 @@ def polar_x(n, r0, r1, tjukn, x, vinkel0=0.0, y=ay, z=az):
 
 
 def linse_r(x):
-    return L["r"][0] + (L["r"][1] - L["r"][0]) * (x - L["x"][0]) / (L["x"][1] - L["x"][0])
+    pr = np.asarray(L["profil"])
+    return float(np.interp(x, pr[:, 0], pr[:, 1]))
 
 
 ri = D["riller"]
