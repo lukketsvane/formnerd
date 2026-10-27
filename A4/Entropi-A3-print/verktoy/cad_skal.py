@@ -245,8 +245,36 @@ def linse_r(x):
 
 
 ri = D["riller"]
-rille_region = Pos(ri["x"][0], -10) * Rectangle(ri["x"][1] - ri["x"][0], ri["y_maks"] + 10, align=(Align.MIN, Align.MIN))
-RILLER = union([band_z(kropp_snitt(z), z, ri["djupn"], ri["breidd"], rille_region) for z in np.arange(ri["z"][0], ri["z"][1] + 0.01, ri["deling"]) if abs(z - dz) > ri["unngaa_deling"]])
+
+
+def vegg_y(z, x):
+    """y til grepsida (minste y) ved (x, z), lineært mellom dei målte snitta."""
+    from shapely.geometry import LineString
+    S_ = cf.seksjonar_kropp()
+    zs = sorted(S_)
+    z1 = max([q for q in zs if q <= z] or [zs[0]]); z2 = min([q for q in zs if q >= z] or [zs[-1]])
+    ut = []
+    for zz in (z1, z2):
+        kryss = ShPolygon(S_[zz]).exterior.intersection(LineString([(x, -20), (x, 60)]))
+        ys = [g.y for g in getattr(kryss, "geoms", [kryss]) if not kryss.is_empty]
+        ut.append(min(ys) if ys else None)
+    if None in ut:
+        return None
+    t = 0.0 if z2 == z1 else (z - z1) / (z2 - z1)
+    return ut[0] + t * (ut[1] - ut[0])
+
+
+from shapely.geometry import Polygon as ShPolygon
+rille_boksar = []
+for z in np.arange(ri["z"][0], ri["z"][1] + 0.01, ri["deling"]):
+    if abs(z - dz) <= ri["unngaa_deling"]:
+        continue
+    for x0 in np.arange(ri["x"][0], ri["x"][1], ri["steg"]):
+        ys = [vegg_y(z, x) for x in (x0, x0 + ri["steg"] / 2, x0 + ri["steg"])]
+        if any(y is None for y in ys):
+            continue
+        rille_boksar.append(boks([x0, x0 + ri["steg"]], [min(ys) - 3.0, max(ys) + ri["djupn"]], [z - ri["breidd"] / 2, z + ri["breidd"] / 2]))
+RILLER = union(rille_boksar)
 tid("riller")
 over_golv = boks([-50, 200], [-50, 200], [D["knurl_z_min"], 200])
 KNURL = Part()
@@ -281,7 +309,16 @@ SAUM = (saum_sokar + saum_hjul + saum_knapp) - andre
 tid("saumar")
 
 for namn_, op_ in (("riller", RILLER), ("knurl", KNURL), ("skala", SKALA), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)):
-    KROPP = KROPP - op_
+    ny_ = KROPP - op_
+    ok_ = ny_ is not None and ny_.is_valid and len(ny_.solids()) == 1
+    if not ok_ and ny_ is not None:
+        ny_ = ny_.fix()
+        ok_ = ny_.is_valid and len(ny_.solids()) == 1
+        print("   fix etter", namn_, "gyldig", ok_)
+    if ok_:
+        KROPP = ny_
+    else:
+        print("   HOPPA OVER", namn_, "(ugyldig resultat)")
     tid("  - " + namn_)
 print("KROPP gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
 
