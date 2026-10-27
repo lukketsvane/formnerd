@@ -179,10 +179,14 @@ spor += tak_boks([x_mb_topp - 0.01, x_mb_topp + 3.0 + kl], [y_usb - 6.5, y_usb +
 spor += rboks_y_tak(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
 STOLPAR -= spor
 tid("kjerne+stolpar")
-HOLROM = (KJERNE - vern - SOYLER - STOLPAR) + sete + konus + trakt + brunn + brytarlomme + brytarhol + usb_tunnel + usbc + okular + EC11 + stativ_hol
-tid("holrom")
-KROPP = KROPP0 - HOLROM
-tid("kropp - holrom")
+KJ = KJERNE - vern - SOYLER - STOLPAR
+tid("kjerne - soyler")
+KROPP = KROPP0 - KJ
+tid("kropp - kjerne")
+for namn_, op_ in (("sete", sete), ("konus", konus), ("trakt", trakt), ("brunn", brunn), ("brytarlomme", brytarlomme), ("brytarhol", brytarhol), ("usb_tunnel", usb_tunnel),
+                   ("usbc", usbc), ("okular", okular), ("EC11", EC11), ("stativ_hol", stativ_hol)):
+    KROPP = KROPP - op_
+    tid("  - " + namn_)
 print("KROPP gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
 
 if "--form" in sys.argv:
@@ -255,8 +259,9 @@ andre = union([KOMP[n] for n in KOMP if n not in ("kropp", "sokar", "hjulboss", 
 SAUM = (saum_sokar + saum_hjul + saum_knapp) - andre
 tid("saumar")
 
-KROPP -= RILLER + KNURL + SKALA + HJULSKALA + NAMN + OKULARKNURL + SAUM
-tid("kropp - detaljar")
+for namn_, op_ in (("riller", RILLER), ("knurl", KNURL), ("skala", SKALA), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)):
+    KROPP = KROPP - op_
+    tid("  - " + namn_)
 print("KROPP gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
 
 # --- lause delar ---------------------------------------------------------------
