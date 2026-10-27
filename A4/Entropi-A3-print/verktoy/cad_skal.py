@@ -156,6 +156,7 @@ tid("opningar")
 # --- detaljar skorne i overflata ---------------------------------------------
 YTRE_BLOKK = KOMP["kropp"]
 KROPP = KROPP0
+dz = S["deling_z"]
 
 
 def band_z(flate, z0, tjukn, breidd, region=None):
