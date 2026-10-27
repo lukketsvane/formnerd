@@ -153,70 +153,9 @@ stativ_hol = sekskant(stv["senter"][0], stv["senter"][1], stv["mutter_af"], sk_[
 stativ_hol += Pos(stv["senter"][0], stv["senter"][1], z_mutter - 0.01) * loft([Rot(0, 0, 30) * RegularPolygon(stv["mutter_af"] / 2 / math.cos(math.radians(30)), 6), Pos(0, 0, stv["tak_z"] - z_mutter + 0.01) * Circle(stv["hol_d"] / 2)])
 tid("opningar")
 
-# --- holkjerne ---------------------------------------------------------------
-v = S["vegg"]
-KJERNE = cf.holrom_loft() & boks([-50, S["front_x"]], [-50, 200], [-50, 200])
-vern = Pos(bx - br["side_x"] / 2 - v, by - br["side_y"] / 2 - v, lomme_botn - v) * Box(br["side_x"] + 2 * v, br["side_y"] + 2 * v, 90 - lomme_botn + v, align=MN)
-vern += vsyl(ux, uy, ut_["brunn_r"] + v, brunn_golv - v, 90)
-uh = S["usb_hylse"]
-vern += rboks_y(y_hjul_usb - uh["djupn"], y_hjul_usb + 5, x_usb, az + 2.0, ut_t["b_x"] + 2 * uh["vegg"], ut_t["h_z"] + 4 + 2 * uh["vegg"], ut_t["r"] + uh["vegg"])
-vern += boks([ug["x"] - r_s - v, ug["x"] + r_s + v], [y_grep - 3, y_grep + ug["djupn"] + v], [ug["z"] - ug["lengd_z"] / 2 - v, ug["z"] + ug["lengd_z"] / 2 + v])
-vern += boks([hx - pw / 2 - v, hx + pw / 2 + v], [hy - pd / 2 - v, hy + pd / 2 + v], [S["tak_z"] - 6, 90])
-vern += vsyl(stv["senter"][0], stv["senter"][1], stv["boss_r"], sk_["z_botn"] - 1, stv["boss_z_topp"])
-dz = S["deling_z"]
-SOYLER = union([vsyl(x, y, S["soyle_r_magnet"], -10, S["tak_z"] + 1) for x, y in S["magnetar"]] + [vsyl(x, y, S["soyle_r_pinne"], -10, S["tak_z"] + 1) for x, y in S["pinnar"]])
-sp = S["stolpe"]
-kl = sp["klaring"]
-x0, x1 = x_tappar - sp["bak"], x_cam_front + sp["fram"]
-STOLPAR = boks([x0, x1], [y_sd - kl - sp["ende"], y_sd + sp["inn"]], [-10, S["tak_z"] + 1]) + boks([x0, x1], [y_ant - sp["inn"], y_ant + kl + sp["ende"]], [-10, S["tak_z"] + 1])
-spor = tak_boks([x_cam_bak - kl, x_cam_front + kl], [y_sd - kl, y_ant + kl], [z_lag - kl, z_hog + kl])
-spor += tak_boks([x_mb_botn - kl, x_mb_topp + kl], [y_usb - st["mb_lengd"] - kl, y_usb + kl], [z_lag - kl, z_hog + kl])
-spor += tak_boks([x_cam_front - 0.01, x1 + 1.0], [y_sd - 10, y_sd + 16], [az - 7.5 - kl, z_hog + kl])
-spor += tak_boks([x_kort - 0.4, x_kort + 1.2], [y_sd - 10, y_sd + 13], [az - 5.5 - 0.4, z_hog + kl])
-spor += boks([x_cam_front - 0.01, x1 + 1], [y_sd - 10, y_sd + 13], [-10, sp["leidning_z"]])
-spor += tak_boks([x_cam_bak - 3.2 - kl, x_cam_bak + 0.01], [y_sd + 14.5 - kl, y_ant + kl], [az - 9.0 - kl, z_hog + kl])
-spor += tak_boks([x_mb_topp - 0.01, x_mb_topp + 3.0 + kl], [y_usb - 6.5, y_usb + 1.0], [az - 4.0 - kl, z_hog + kl])
-spor += rboks_y_tak(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
-STOLPAR -= spor
-tid("kjerne+stolpar")
-KJ = KJERNE - vern - SOYLER - STOLPAR
-tid("kjerne - soyler")
-
-
-def hol_solid(ytre, indre):
-    """Solid med holrom: ytre skal + dei indre skala snudde, utan boolsk operasjon."""
-    from OCP.BRepBuilderAPI import BRepBuilderAPI_MakeSolid
-    from OCP.BRepLib import BRepLib
-    from OCP.TopoDS import TopoDS
-    skal = getattr(TopoDS, "Shell_s", None) or TopoDS.Shell
-    orient = getattr(BRepLib, "OrientClosedSolid_s", None) or BRepLib.OrientClosedSolid
-    ys = ytre.solids()[0].shells()
-    assert len(ys) == 1, len(ys)
-    ms = BRepBuilderAPI_MakeSolid(skal(ys[0].wrapped))
-    for sol in indre.solids():
-        for sh in sol.shells():
-            ms.Add(skal(sh.wrapped.Reversed()))
-    s = ms.Solid()
-    orient(s)
-    return Solid(s)
-
-
-KROPP = hol_solid(KROPP0, KJ)
-print("hol kropp gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()), "skal", len(KROPP.solids()[0].shells()))
-tid("kropp med holrom")
-for namn_, op_ in (("sete", sete), ("konus", konus), ("trakt", trakt), ("brunn", brunn), ("brytarlomme", brytarlomme), ("brytarhol", brytarhol), ("usb_tunnel", usb_tunnel),
-                   ("usbc", usbc), ("okular", okular), ("EC11", EC11), ("stativ_hol", stativ_hol)):
-    KROPP = KROPP - op_
-    tid("  - " + namn_)
-print("KROPP gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
-
-if "--form" in sys.argv:
-    export_stl(KROPP, UT / "stl" / "kropp.stl", tolerance=0.02, angular_tolerance=0.15)
-    tid("stl kropp")
-    sys.exit()
-
 # --- detaljar skorne i overflata ---------------------------------------------
 YTRE_BLOKK = KOMP["kropp"]
+KROPP = KROPP0
 
 
 def band_z(flate, z0, tjukn, breidd, region=None):
@@ -308,7 +247,8 @@ andre = union([KOMP[n] for n in KOMP if n not in ("kropp", "sokar", "hjulboss", 
 SAUM = (saum_sokar + saum_hjul + saum_knapp) - andre
 tid("saumar")
 
-for namn_, op_ in (("riller", RILLER), ("knurl", KNURL), ("skala", SKALA), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)):
+kutt_ = [(f"rille {i}", s_) for i, s_ in enumerate(RILLER.solids())] + [("knurl", KNURL), ("skala", SKALA), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)]
+for namn_, op_ in kutt_:
     ny_ = KROPP - op_
     ok_ = ny_ is not None and ny_.is_valid and len(ny_.solids()) == 1
     if not ok_ and ny_ is not None:
@@ -320,7 +260,70 @@ for namn_, op_ in (("riller", RILLER), ("knurl", KNURL), ("skala", SKALA), ("hju
     else:
         print("   HOPPA OVER", namn_, "(ugyldig resultat)")
     tid("  - " + namn_)
+print("KROPP0 med detaljar gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
+KROPP0 = KROPP
+
+# --- holkjerne ---------------------------------------------------------------
+v = S["vegg"]
+KJERNE = cf.holrom_loft() & boks([-50, S["front_x"]], [-50, 200], [-50, 200])
+vern = Pos(bx - br["side_x"] / 2 - v, by - br["side_y"] / 2 - v, lomme_botn - v) * Box(br["side_x"] + 2 * v, br["side_y"] + 2 * v, 90 - lomme_botn + v, align=MN)
+vern += vsyl(ux, uy, ut_["brunn_r"] + v, brunn_golv - v, 90)
+uh = S["usb_hylse"]
+vern += rboks_y(y_hjul_usb - uh["djupn"], y_hjul_usb + 5, x_usb, az + 2.0, ut_t["b_x"] + 2 * uh["vegg"], ut_t["h_z"] + 4 + 2 * uh["vegg"], ut_t["r"] + uh["vegg"])
+vern += boks([ug["x"] - r_s - v, ug["x"] + r_s + v], [y_grep - 3, y_grep + ug["djupn"] + v], [ug["z"] - ug["lengd_z"] / 2 - v, ug["z"] + ug["lengd_z"] / 2 + v])
+vern += boks([hx - pw / 2 - v, hx + pw / 2 + v], [hy - pd / 2 - v, hy + pd / 2 + v], [S["tak_z"] - 6, 90])
+vern += vsyl(stv["senter"][0], stv["senter"][1], stv["boss_r"], sk_["z_botn"] - 1, stv["boss_z_topp"])
+dz = S["deling_z"]
+SOYLER = union([vsyl(x, y, S["soyle_r_magnet"], -10, S["tak_z"] + 1) for x, y in S["magnetar"]] + [vsyl(x, y, S["soyle_r_pinne"], -10, S["tak_z"] + 1) for x, y in S["pinnar"]])
+sp = S["stolpe"]
+kl = sp["klaring"]
+x0, x1 = x_tappar - sp["bak"], x_cam_front + sp["fram"]
+STOLPAR = boks([x0, x1], [y_sd - kl - sp["ende"], y_sd + sp["inn"]], [-10, S["tak_z"] + 1]) + boks([x0, x1], [y_ant - sp["inn"], y_ant + kl + sp["ende"]], [-10, S["tak_z"] + 1])
+spor = tak_boks([x_cam_bak - kl, x_cam_front + kl], [y_sd - kl, y_ant + kl], [z_lag - kl, z_hog + kl])
+spor += tak_boks([x_mb_botn - kl, x_mb_topp + kl], [y_usb - st["mb_lengd"] - kl, y_usb + kl], [z_lag - kl, z_hog + kl])
+spor += tak_boks([x_cam_front - 0.01, x1 + 1.0], [y_sd - 10, y_sd + 16], [az - 7.5 - kl, z_hog + kl])
+spor += tak_boks([x_kort - 0.4, x_kort + 1.2], [y_sd - 10, y_sd + 13], [az - 5.5 - 0.4, z_hog + kl])
+spor += boks([x_cam_front - 0.01, x1 + 1], [y_sd - 10, y_sd + 13], [-10, sp["leidning_z"]])
+spor += tak_boks([x_cam_bak - 3.2 - kl, x_cam_bak + 0.01], [y_sd + 14.5 - kl, y_ant + kl], [az - 9.0 - kl, z_hog + kl])
+spor += tak_boks([x_mb_topp - 0.01, x_mb_topp + 3.0 + kl], [y_usb - 6.5, y_usb + 1.0], [az - 4.0 - kl, z_hog + kl])
+spor += rboks_y_tak(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
+STOLPAR -= spor
+tid("kjerne+stolpar")
+KJ = KJERNE - vern - SOYLER - STOLPAR
+tid("kjerne - soyler")
+
+
+def hol_solid(ytre, indre):
+    """Solid med holrom: ytre skal + dei indre skala snudde, utan boolsk operasjon."""
+    from OCP.BRepBuilderAPI import BRepBuilderAPI_MakeSolid
+    from OCP.BRepLib import BRepLib
+    from OCP.TopoDS import TopoDS
+    skal = getattr(TopoDS, "Shell_s", None) or TopoDS.Shell
+    orient = getattr(BRepLib, "OrientClosedSolid_s", None) or BRepLib.OrientClosedSolid
+    ys = ytre.solids()[0].shells()
+    assert len(ys) == 1, len(ys)
+    ms = BRepBuilderAPI_MakeSolid(skal(ys[0].wrapped))
+    for sol in indre.solids():
+        for sh in sol.shells():
+            ms.Add(skal(sh.wrapped.Reversed()))
+    s = ms.Solid()
+    orient(s)
+    return Solid(s)
+
+
+KROPP = hol_solid(KROPP0, KJ)
+print("hol kropp gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()), "skal", len(KROPP.solids()[0].shells()))
+tid("kropp med holrom")
+for namn_, op_ in (("sete", sete), ("konus", konus), ("trakt", trakt), ("brunn", brunn), ("brytarlomme", brytarlomme), ("brytarhol", brytarhol), ("usb_tunnel", usb_tunnel),
+                   ("usbc", usbc), ("okular", okular), ("EC11", EC11), ("stativ_hol", stativ_hol)):
+    KROPP = KROPP - op_
+    tid("  - " + namn_)
 print("KROPP gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
+
+if "--form" in sys.argv:
+    export_stl(KROPP, UT / "stl" / "kropp.stl", tolerance=0.02, angular_tolerance=0.15)
+    tid("stl kropp")
+    sys.exit()
 
 # --- lause delar ---------------------------------------------------------------
 KNAPP = KROPP0 & vsyl(ux, uy, ut_["kapp_r"], ut_["kapp_z"], 90)
