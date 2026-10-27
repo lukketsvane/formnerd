@@ -188,14 +188,16 @@ def hol_solid(ytre, indre):
     from OCP.BRepBuilderAPI import BRepBuilderAPI_MakeSolid
     from OCP.BRepLib import BRepLib
     from OCP.TopoDS import TopoDS
+    skal = getattr(TopoDS, "Shell_s", None) or TopoDS.Shell
+    orient = getattr(BRepLib, "OrientClosedSolid_s", None) or BRepLib.OrientClosedSolid
     ys = ytre.solids()[0].shells()
     assert len(ys) == 1, len(ys)
-    ms = BRepBuilderAPI_MakeSolid(TopoDS.Shell_s(ys[0].wrapped))
+    ms = BRepBuilderAPI_MakeSolid(skal(ys[0].wrapped))
     for sol in indre.solids():
         for sh in sol.shells():
-            ms.Add(TopoDS.Shell_s(sh.wrapped.Reversed()))
+            ms.Add(skal(sh.wrapped.Reversed()))
     s = ms.Solid()
-    BRepLib.OrientClosedSolid_s(s)
+    orient(s)
     return Part(Solid(s))
 
 
