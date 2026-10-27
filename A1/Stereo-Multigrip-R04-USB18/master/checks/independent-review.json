@@ -1,0 +1,934 @@
+{
+  "reviewer": "independent master_quality",
+  "cad_sha256": "398aea30f6f22c4b865c1cfb26737d511d3e9bee92e44c442b5f2e88b7d73538",
+  "stl_sha256": "1ae5bbe228d5b6908be78b444dfd4be579cb416bd53a5d1b19748e6af7675207",
+  "solid_count": 1,
+  "valid": true,
+  "volume_mm3": 24977.184016522526,
+  "section_z_mm": 1.2,
+  "closed_section_wires": 9,
+  "closed_cutouts": 8,
+  "min_rib_between_cutouts_mm": 3.949450496502187,
+  "min_perimeter_frame_mm": 7.857936507936994,
+  "nominal_bank_collision_mm3": 0.0,
+  "new_web_bank_gap_mm": 0.3999999999999999,
+  "overall_bank_gap_mm": 0.19999999999999973,
+  "functional_interface_removed_above_z_0_301_mm3": 0.0,
+  "original_removed_mm3": 22.75460852717036,
+  "functional_zone_added_mm3": 3187.5703413921874,
+  "mesh": {
+    "triangle_count": 47682,
+    "boundary_or_nonmanifold_edges": 0,
+    "inconsistent_oriented_edges": 0,
+    "degenerate_triangles": 0,
+    "signed_volume_mm3": 24978.491887145006,
+    "cad_mesh_volume_delta_percent": 0.005236261307981666,
+    "bounds_mm": [
+      -52.29999923706055,
+      -41.400001525878906,
+      -1.3877787807814457e-15,
+      52.29999923706055,
+      41.400001525878906,
+      18.399999618530273
+    ]
+  },
+  "print_orientation": "Rear face horizontal at Z=0 (floating-point epsilon only); cavity and inherited fork towers face up. New rear web is bed-supported. Tree supports required only where slicer detects inherited overhangs.",
+  "reference_match": "Eight asymmetric openings and same external interfaces; shallow real engraving. Opening walls are rounded in plan but not physically chamfered. Outer rear perimeter chamfer is 0.3 mm.",
+  "status": "PASS selected backcase CAD, all 30 meshes, unified assembly STEP, visual renders and native sliced master inventory.",
+  "production_limitations": [
+    "Nominal bank 94 \u00d7 62 \u00d7 15 mm is unmeasured physical hardware; new backcase has not been physically fit-tested.",
+    "Existing complete R04 assembly camera insertion path remains unresolved; unchanged assembly parts are retained for completeness, not newly production-certified.",
+    "No print start or physical production test was performed by this review."
+  ],
+  "visual_review": {
+    "status": "PASS",
+    "source_mesh_sha256": "1ae5bbe228d5b6908be78b444dfd4be579cb416bd53a5d1b19748e6af7675207",
+    "observations": [
+      "All eight asymmetric openings match the selected arrangement and orientation.",
+      "Assembled rear view shows the separate black power bank behind the openings.",
+      "Isolated oblique view clearly distinguishes the printable shell, rear web and inherited fixing towers.",
+      "Real recessed yellow lettering is subtler than black lettering in the reference; no unmodelled black printed label is claimed.",
+      "Both images show the whole intended object with white margins, no crop or visible geometry artifacts.",
+      "PLA surface texture and 0.07 mm render-only edge rounding are visual treatments, not additional manufacturing tolerances."
+    ],
+    "images": [
+      {
+        "file": "ENTROPI_MASTER_preview.png",
+        "sha256": "a309850076ed6f73d7e8741383c01ace131351f50cde8d2c03ff5185ec7ea423"
+      },
+      {
+        "file": "ENTROPI_MASTER_backcase.png",
+        "sha256": "70d8d43c6b6dbdf003f873ce8307bf65ee6f9dcd4a6e0960c8e1f5bd2d526f38"
+      }
+    ]
+  },
+  "other_29_print_meshes": {
+    "count": 29,
+    "status": "PASS all closed, consistently oriented, no degenerate triangles, positive volume",
+    "parts": [
+      {
+        "file": "PRINT_02_multigrip_carrier.stl",
+        "sha256": "4ca1abc5fed95ec95400031534a559ab00f4bb73d238228ad39c7d73d3f87d07",
+        "triangles": 32842,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 22894.097762718797
+      },
+      {
+        "file": "PRINT_03_MB_keeper_left.stl",
+        "sha256": "5036ba4eb13878e5e1dc6d30a44eb00be9ae7aaa613092cce251904bf5368fc0",
+        "triangles": 7636,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 2666.4460713265303
+      },
+      {
+        "file": "PRINT_04_MB_keeper_right.stl",
+        "sha256": "584d51a03109222b23d027cb7ef8ffe8b87b31be76ce7e98678d64f46727b461",
+        "triangles": 7230,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 2676.5479722202012
+      },
+      {
+        "file": "PRINT_05_sensor_yoke_left.stl",
+        "sha256": "2ee9566ee974cfc5cfb4b7b3fb45e0e2b4818e554ebb9d183a1dee74551c4076",
+        "triangles": 3968,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 885.622194435594
+      },
+      {
+        "file": "PRINT_06_sensor_yoke_right.stl",
+        "sha256": "c3d99c34c249c4ec65446d2a772ac62ae22ec0c44463a4704123890f7de19192",
+        "triangles": 3968,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 885.6221905406082
+      },
+      {
+        "file": "PRINT_10_frame_1_pin.stl",
+        "sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944526073679
+      },
+      {
+        "file": "PRINT_10_frame_1_wedge.stl",
+        "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 170.6206653754251
+      },
+      {
+        "file": "PRINT_10_frame_2_pin.stl",
+        "sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944526073679
+      },
+      {
+        "file": "PRINT_10_frame_2_wedge.stl",
+        "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 170.6206653754251
+      },
+      {
+        "file": "PRINT_10_frame_3_pin.stl",
+        "sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944526073681
+      },
+      {
+        "file": "PRINT_10_frame_3_wedge.stl",
+        "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 170.6206653754251
+      },
+      {
+        "file": "PRINT_10_frame_4_pin.stl",
+        "sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944526073681
+      },
+      {
+        "file": "PRINT_10_frame_4_wedge.stl",
+        "sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 170.6206653754251
+      },
+      {
+        "file": "PRINT_20_keeper_L_down_pin.stl",
+        "sha256": "a97ca624b72832a346f20077ac51787123c9652f300ad1d1f61adca5eaae6d85",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442945
+      },
+      {
+        "file": "PRINT_20_keeper_L_down_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      },
+      {
+        "file": "PRINT_20_keeper_L_up_pin.stl",
+        "sha256": "a6d78d073c23e05c2b91a0a4684983980c0b9770955858b5d53de8cbdfbd9640",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442946
+      },
+      {
+        "file": "PRINT_20_keeper_L_up_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      },
+      {
+        "file": "PRINT_20_keeper_R_down_pin.stl",
+        "sha256": "253f68ea26da0936528b4f64f96de9bc087c9454491a5f9932bb1670fdbf382d",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442945
+      },
+      {
+        "file": "PRINT_20_keeper_R_down_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      },
+      {
+        "file": "PRINT_20_keeper_R_up_pin.stl",
+        "sha256": "a4308108b3a9c6e17d5ece6b45495c78863fedaf32f4fb2d916a5583666c42d3",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442946
+      },
+      {
+        "file": "PRINT_20_keeper_R_up_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      },
+      {
+        "file": "PRINT_30_yoke_L_down_pin.stl",
+        "sha256": "8f9b694929d3b6737e77d13390045f46088166d8ff7edfa7b4f63987067f8b5c",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442946
+      },
+      {
+        "file": "PRINT_30_yoke_L_down_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      },
+      {
+        "file": "PRINT_30_yoke_L_up_pin.stl",
+        "sha256": "0da5248ad8dc121d35184ab70c2ab741dd9e9c7a1f23f35ee47ad2a44fb60af0",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442946
+      },
+      {
+        "file": "PRINT_30_yoke_L_up_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      },
+      {
+        "file": "PRINT_30_yoke_R_down_pin.stl",
+        "sha256": "41fa73449e86fbd48bae0739d197bd599d40a29a12708e3fbc48827171a9347f",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442946
+      },
+      {
+        "file": "PRINT_30_yoke_R_down_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      },
+      {
+        "file": "PRINT_30_yoke_R_up_pin.stl",
+        "sha256": "db557326db4f8f42504a14098a1cad915e414d3d99bbf9ff5284c39504651362",
+        "triangles": 1344,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 637.9944735442946
+      },
+      {
+        "file": "PRINT_30_yoke_R_up_wedge.stl",
+        "sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "triangles": 468,
+        "boundary_or_nonmanifold_edges": 0,
+        "inconsistent_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 117.58705985152535
+      }
+    ]
+  },
+  "assembly_step": {
+    "file": "ENTROPI_MASTER.step",
+    "sha256": "4ffa1b6677aa220a7ce3f442a89e582362455548926888e48b7553806c0a7317",
+    "valid": true,
+    "solid_count": 30,
+    "all_positive_volumes": true,
+    "volume_mm3": 64264.889896798144
+  },
+  "sliced_master": {
+    "file": "entropi-master/work/sliced.3mf",
+    "sha256": "7cca2c7da169b4a750bb2504e2a21cc05724cb49ccc4fa23020df89876951b9f",
+    "bytes": 13493830,
+    "zip_crc_valid": true,
+    "global_native_ids": 60,
+    "native_meshes": 30,
+    "plate_populations": [
+      {
+        "plate": 1,
+        "parts": 1
+      },
+      {
+        "plate": 2,
+        "parts": 3
+      },
+      {
+        "plate": 3,
+        "parts": 26
+      }
+    ],
+    "all_native_meshes_match_verified_source": true,
+    "all_plate_placements_match_manifest": true,
+    "gcode_files": [
+      {
+        "file": "Metadata/plate_1.gcode",
+        "md5": "8e42e270c1322e68c8c8a509b426df28",
+        "bytes": 9421330
+      },
+      {
+        "file": "Metadata/plate_2.gcode",
+        "md5": "23daced5a0f0809296b11d89069e3b9e",
+        "bytes": 28981858
+      },
+      {
+        "file": "Metadata/plate_3.gcode",
+        "md5": "c513bcf468653217df54eae575508ffd",
+        "bytes": 5255451
+      }
+    ],
+    "parts": [
+      {
+        "part_id": "01_backcase",
+        "plate": 1,
+        "native_mesh_matches_source": true,
+        "triangles": 47682,
+        "source_sha256": "1ae5bbe228d5b6908be78b444dfd4be579cb416bd53a5d1b19748e6af7675207",
+        "slicer_recentering_mm": [
+          3.7060544855194166e-08,
+          2.5878904352794052e-08,
+          -9.19999981
+        ],
+        "bed_bounds_xy_mm": [
+          75.7000008,
+          86.5999985,
+          180.2999992,
+          169.4000015
+        ]
+      },
+      {
+        "part_id": "02_multigrip_carrier",
+        "plate": 2,
+        "native_mesh_matches_source": true,
+        "triangles": 32842,
+        "source_sha256": "4ca1abc5fed95ec95400031534a559ab00f4bb73d238228ad39c7d73d3f87d07",
+        "slicer_recentering_mm": [
+          1.4208985987806955e-08,
+          2.5878904352794052e-08,
+          -17.9250011
+        ],
+        "bed_bounds_xy_mm": [
+          27.721134199999995,
+          87.5999985,
+          134.2788658,
+          168.4000015
+        ]
+      },
+      {
+        "part_id": "03_MB_keeper_left",
+        "plate": 2,
+        "native_mesh_matches_source": true,
+        "triangles": 7636,
+        "source_sha256": "5036ba4eb13878e5e1dc6d30a44eb00be9ae7aaa613092cce251904bf5368fc0",
+        "slicer_recentering_mm": [
+          -9.07531738647549e-07,
+          -3.4179699071046343e-09,
+          -10.2250004
+        ],
+        "bed_bounds_xy_mm": [
+          162.0790215,
+          50.7432785,
+          217.9209785,
+          113.2567215
+        ]
+      },
+      {
+        "part_id": "04_MB_keeper_right",
+        "plate": 2,
+        "native_mesh_matches_source": true,
+        "triangles": 7230,
+        "source_sha256": "584d51a03109222b23d027cb7ef8ffe8b87b31be76ce7e98678d64f46727b461",
+        "slicer_recentering_mm": [
+          -9.07531738647549e-07,
+          -3.4179699071046343e-09,
+          -10.2250004
+        ],
+        "bed_bounds_xy_mm": [
+          162.0790215,
+          142.7432785,
+          217.9209785,
+          205.2567215
+        ]
+      },
+      {
+        "part_id": "05_sensor_yoke_left",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 3968,
+        "source_sha256": "2ee9566ee974cfc5cfb4b7b3fb45e0e2b4818e554ebb9d183a1dee74551c4076",
+        "slicer_recentering_mm": [
+          4.16381844559055e-08,
+          1.0913087322705906e-08,
+          -4.375
+        ],
+        "bed_bounds_xy_mm": [
+          95.8963633,
+          183.5419407,
+          116.1036367,
+          230.4580593
+        ]
+      },
+      {
+        "part_id": "06_sensor_yoke_right",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 3968,
+        "source_sha256": "c3d99c34c249c4ec65446d2a772ac62ae22ec0c44463a4704123890f7de19192",
+        "slicer_recentering_mm": [
+          4.16381844559055e-08,
+          1.0913087322705906e-08,
+          -4.375
+        ],
+        "bed_bounds_xy_mm": [
+          139.8963633,
+          183.5419407,
+          160.1036367,
+          230.4580593
+        ]
+      },
+      {
+        "part_id": "10_frame_1_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8",
+        "slicer_recentering_mm": [
+          -5.046325686208775e-07,
+          0.0,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          27.8499994,
+          41.0,
+          52.1500006,
+          51.0
+        ]
+      },
+      {
+        "part_id": "10_frame_2_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8",
+        "slicer_recentering_mm": [
+          -5.046325686208775e-07,
+          0.0,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          62.8499994,
+          41.0,
+          87.1500006,
+          51.0
+        ]
+      },
+      {
+        "part_id": "10_frame_3_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8",
+        "slicer_recentering_mm": [
+          -5.046325686208775e-07,
+          0.0,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          97.8499994,
+          41.0,
+          122.1500006,
+          51.0
+        ]
+      },
+      {
+        "part_id": "10_frame_4_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8",
+        "slicer_recentering_mm": [
+          -5.046325686208775e-07,
+          0.0,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          132.8499994,
+          41.0,
+          157.1500006,
+          51.0
+        ]
+      },
+      {
+        "part_id": "20_keeper_L_down_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "a97ca624b72832a346f20077ac51787123c9652f300ad1d1f61adca5eaae6d85",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          167.3582935,
+          38.59091519999998,
+          192.6417065,
+          53.40908479999999
+        ]
+      },
+      {
+        "part_id": "20_keeper_L_up_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "a6d78d073c23e05c2b91a0a4684983980c0b9770955858b5d53de8cbdfbd9640",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          202.3582935,
+          38.59091519999998,
+          227.6417065,
+          53.40908479999999
+        ]
+      },
+      {
+        "part_id": "20_keeper_R_down_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "253f68ea26da0936528b4f64f96de9bc087c9454491a5f9932bb1670fdbf382d",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          27.358293500000002,
+          70.59091520000001,
+          52.6417065,
+          85.40908479999999
+        ]
+      },
+      {
+        "part_id": "20_keeper_R_up_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "a4308108b3a9c6e17d5ece6b45495c78863fedaf32f4fb2d916a5583666c42d3",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          62.3582935,
+          70.59091520000001,
+          87.6417065,
+          85.40908479999999
+        ]
+      },
+      {
+        "part_id": "30_yoke_L_down_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "8f9b694929d3b6737e77d13390045f46088166d8ff7edfa7b4f63987067f8b5c",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          97.3582935,
+          70.59091520000001,
+          122.6417065,
+          85.40908479999999
+        ]
+      },
+      {
+        "part_id": "30_yoke_L_up_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "0da5248ad8dc121d35184ab70c2ab741dd9e9c7a1f23f35ee47ad2a44fb60af0",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          132.3582935,
+          70.59091520000001,
+          157.6417065,
+          85.40908479999999
+        ]
+      },
+      {
+        "part_id": "30_yoke_R_down_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "41fa73449e86fbd48bae0739d197bd599d40a29a12708e3fbc48827171a9347f",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          167.3582935,
+          70.59091520000001,
+          192.6417065,
+          85.40908479999999
+        ]
+      },
+      {
+        "part_id": "30_yoke_R_up_pin",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 1344,
+        "source_sha256": "db557326db4f8f42504a14098a1cad915e414d3d99bbf9ff5284c39504651362",
+        "slicer_recentering_mm": [
+          4.4351196315517427e-07,
+          -3.0944820039735532e-09,
+          -2.20000005
+        ],
+        "bed_bounds_xy_mm": [
+          202.3582935,
+          70.59091520000001,
+          227.6417065,
+          85.40908479999999
+        ]
+      },
+      {
+        "part_id": "10_frame_1_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          42.0,
+          106.5,
+          58.0,
+          113.5
+        ]
+      },
+      {
+        "part_id": "10_frame_2_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          94.0,
+          106.5,
+          110.0,
+          113.5
+        ]
+      },
+      {
+        "part_id": "10_frame_3_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          146.0,
+          106.5,
+          162.0,
+          113.5
+        ]
+      },
+      {
+        "part_id": "10_frame_4_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          198.0,
+          106.5,
+          214.0,
+          113.5
+        ]
+      },
+      {
+        "part_id": "20_keeper_L_down_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          45.25,
+          131.5,
+          54.75,
+          138.5
+        ]
+      },
+      {
+        "part_id": "20_keeper_L_up_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          97.25,
+          131.5,
+          106.75,
+          138.5
+        ]
+      },
+      {
+        "part_id": "20_keeper_R_down_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          149.25,
+          131.5,
+          158.75,
+          138.5
+        ]
+      },
+      {
+        "part_id": "20_keeper_R_up_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          201.25,
+          131.5,
+          210.75,
+          138.5
+        ]
+      },
+      {
+        "part_id": "30_yoke_L_down_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          45.25,
+          156.5,
+          54.75,
+          163.5
+        ]
+      },
+      {
+        "part_id": "30_yoke_L_up_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          97.25,
+          156.5,
+          106.75,
+          163.5
+        ]
+      },
+      {
+        "part_id": "30_yoke_R_down_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          149.25,
+          156.5,
+          158.75,
+          163.5
+        ]
+      },
+      {
+        "part_id": "30_yoke_R_up_wedge",
+        "plate": 3,
+        "native_mesh_matches_source": true,
+        "triangles": 468,
+        "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+        "slicer_recentering_mm": [
+          0.0,
+          0.0,
+          -1.5
+        ],
+        "bed_bounds_xy_mm": [
+          201.25,
+          156.5,
+          210.75,
+          163.5
+        ]
+      }
+    ],
+    "status": "PASS sliced native geometry inventory and source match; root separately reviews toolpaths"
+  },
+  "first_layer_review": {
+    "source": "Root-generated actual GCODE line plot",
+    "sha256": "96d90f8aee0705e9844417ce0d5abfc4805681ca1ed96a014a38d074046e2f71",
+    "status": "PASS visual review",
+    "observations": [
+      "All eight cutout openings remain visible in the first-layer outline.",
+      "Both finne and ENTROPI recessed text paths remain present.",
+      "Tree support bases are separately identifiable in orange from grey part paths."
+    ]
+  }
+}

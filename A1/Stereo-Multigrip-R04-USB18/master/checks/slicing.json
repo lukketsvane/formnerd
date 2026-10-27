@@ -1,0 +1,137 @@
+{
+  "cli_exit_code": 0,
+  "cli_runtime_seconds": 86.437,
+  "slicer": "Bambu Studio 02.08.04.57",
+  "input_sha256": "776dd83ebf2152ebcf8d23adbf4d5b5953c2eff50eb77025e4366ff6023341b6",
+  "sliced_archive_sha256": "7cca2c7da169b4a750bb2504e2a21cc05724cb49ccc4fa23020df89876951b9f",
+  "plates": [
+    {
+      "plate": 1,
+      "objects": [
+        "01_backcase"
+      ],
+      "prediction_seconds": 11449,
+      "weight_g": 31.25,
+      "layers": 153,
+      "gcode_sha256": "f16a54d7ba071f080a53d1f3146935994b3944e4da19327d47d48ce7216a60ef",
+      "outside": false,
+      "skipped_objects": false,
+      "support_used": true,
+      "filament": {
+        "id": "1",
+        "tray_info_idx": "GFL99",
+        "type": "PLA",
+        "color": "#F4FF00",
+        "used_m": "10.48",
+        "used_g": "31.25",
+        "group_id": "0",
+        "nozzle_diameter": "0.40",
+        "volume_type": "Standard",
+        "used_for_object": "true",
+        "used_for_support": "true",
+        "total_load_time": "29.00",
+        "total_unload_time": "0.00"
+      }
+    },
+    {
+      "plate": 2,
+      "objects": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right"
+      ],
+      "prediction_seconds": 27085,
+      "weight_g": 52.27,
+      "layers": 298,
+      "gcode_sha256": "0dff0f9d5d2192013cc4325a742a95a34a3b054aceef6c2921eecf0458a52051",
+      "outside": false,
+      "skipped_objects": false,
+      "support_used": true,
+      "filament": {
+        "id": "1",
+        "tray_info_idx": "GFL99",
+        "type": "PLA",
+        "color": "#F4FF00",
+        "used_m": "17.53",
+        "used_g": "52.27",
+        "group_id": "0",
+        "nozzle_diameter": "0.40",
+        "volume_type": "Standard",
+        "used_for_object": "true",
+        "used_for_support": "true",
+        "total_load_time": "29.00",
+        "total_unload_time": "0.00"
+      }
+    },
+    {
+      "plate": 3,
+      "objects": [
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right",
+        "10_frame_1_pin",
+        "10_frame_2_pin",
+        "10_frame_3_pin",
+        "10_frame_4_pin",
+        "20_keeper_L_down_pin",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_pin",
+        "20_keeper_R_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_L_up_pin",
+        "30_yoke_R_down_pin",
+        "30_yoke_R_up_pin",
+        "10_frame_1_wedge",
+        "10_frame_2_wedge",
+        "10_frame_3_wedge",
+        "10_frame_4_wedge",
+        "20_keeper_L_down_wedge",
+        "20_keeper_L_up_wedge",
+        "20_keeper_R_down_wedge",
+        "20_keeper_R_up_wedge",
+        "30_yoke_L_down_wedge",
+        "30_yoke_L_up_wedge",
+        "30_yoke_R_down_wedge",
+        "30_yoke_R_up_wedge"
+      ],
+      "prediction_seconds": 6439,
+      "weight_g": 13.9,
+      "layers": 72,
+      "gcode_sha256": "a2858b0bf671e888015dff5cced53d2fe18cea64dfa2e075ac4f38741527e1f6",
+      "outside": false,
+      "skipped_objects": false,
+      "support_used": true,
+      "filament": {
+        "id": "1",
+        "tray_info_idx": "GFL99",
+        "type": "PLA",
+        "color": "#F4FF00",
+        "used_m": "4.66",
+        "used_g": "13.90",
+        "group_id": "0",
+        "nozzle_diameter": "0.40",
+        "volume_type": "Standard",
+        "used_for_object": "true",
+        "used_for_support": "true",
+        "total_load_time": "29.00",
+        "total_unload_time": "0.00"
+      }
+    }
+  ],
+  "settings": {
+    "printer_model": "Bambu Lab P1S",
+    "printer_settings_id": "Bambu Lab P1S 0.4 nozzle",
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "layer_height": "0.12",
+    "wall_loops": "4",
+    "sparse_infill_density": "30%",
+    "support_type": "tree(auto)",
+    "support_style": "tree_organic",
+    "brim_width": "3"
+  },
+  "first_layer_visual_check": "Passed. All eight negative openings retained; recessed finne and ENTROPI visible as voids in actual first-layer toolpaths. Tree support roots remain separate from model surfaces.",
+  "physical_fit_verified": false,
+  "print_started": false
+}
