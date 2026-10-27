@@ -1,0 +1,159 @@
+{
+  "parts": [
+    {
+      "name": "01_backcase",
+      "source_sha256": "398aea30f6f22c4b865c1cfb26737d511d3e9bee92e44c442b5f2e88b7d73538",
+      "volume_mm3": 24977.184016522526
+    },
+    {
+      "name": "02_multigrip_carrier",
+      "source_sha256": "ae1e979cef5ad574d0dad64e31e1e9f7b97a159b6af52f574b336fcfc7ae9e54",
+      "volume_mm3": 22894.3034205915
+    },
+    {
+      "name": "03_MB_keeper_left",
+      "source_sha256": "ee7f89865a37f6b0f4ea8fb7ebaede221ee0409cde085c318d0838146e5e051e",
+      "volume_mm3": 2666.466575303298
+    },
+    {
+      "name": "04_MB_keeper_right",
+      "source_sha256": "2284161dd7811e631ebf242ab099dd54437d7709e9589f82f1ca4d7b168f2bf4",
+      "volume_mm3": 2676.5682691067814
+    },
+    {
+      "name": "05_sensor_yoke_left",
+      "source_sha256": "7ac033b4cc34039d7c25eb1837f12e2ba70abb3eaa6c78763c7f25f3cda0ae7a",
+      "volume_mm3": 885.589478555115
+    },
+    {
+      "name": "06_sensor_yoke_right",
+      "source_sha256": "aa804acd5f38ae90951c0b57140e852d0a40033f1934c5af1314c6eb3dc3e4c4",
+      "volume_mm3": 885.5894785544133
+    },
+    {
+      "name": "10_frame_1_pin",
+      "source_sha256": "f48d5497ac0e3df4856a7daa34b843527c167b9265e0ea457c948f088d876d50",
+      "volume_mm3": 637.9995125084602
+    },
+    {
+      "name": "10_frame_2_pin",
+      "source_sha256": "efc5a9c3392809522af34416a61b45196d2b0be17c2e2ae106a8441e218c372a",
+      "volume_mm3": 637.9995125084602
+    },
+    {
+      "name": "10_frame_3_pin",
+      "source_sha256": "56dc28d4429f7deb1891e39081534581e57de53309cafb899ceda513df7aaca7",
+      "volume_mm3": 637.9995125084602
+    },
+    {
+      "name": "10_frame_4_pin",
+      "source_sha256": "1a9953deb596970e0a60acb639c5d34e01c92302a128cf1b55267744dd208e36",
+      "volume_mm3": 637.9995125084602
+    },
+    {
+      "name": "20_keeper_L_down_pin",
+      "source_sha256": "6290a37a5b818736e591fc19f06291c72857cdb5d983ecf87de930d181d70d72",
+      "volume_mm3": 637.9995125088349
+    },
+    {
+      "name": "20_keeper_L_up_pin",
+      "source_sha256": "ec7a2e7b8d707298a9cfe823d08c47a693b6147c254c152b3684bfe21e6aedd5",
+      "volume_mm3": 637.9995125083924
+    },
+    {
+      "name": "20_keeper_R_down_pin",
+      "source_sha256": "0cbfc140becca71cf8ebd13e638d14100755580962931c108b56876138f046f1",
+      "volume_mm3": 637.9995125083319
+    },
+    {
+      "name": "20_keeper_R_up_pin",
+      "source_sha256": "8929da3c2b36729ac7063c073ba539fea0d0cfa55f5c83966f0327e142297f30",
+      "volume_mm3": 637.9995125083801
+    },
+    {
+      "name": "30_yoke_L_down_pin",
+      "source_sha256": "7c3db3e44027868eff0226f327f603398abab21fcf9e4dc24fb6be37d8dba800",
+      "volume_mm3": 637.9995125083987
+    },
+    {
+      "name": "30_yoke_L_up_pin",
+      "source_sha256": "e2e51f50b654264c32ffe31ac7b4ac2a160b8a11aa43c017606acb98c3d890ad",
+      "volume_mm3": 637.9995125083926
+    },
+    {
+      "name": "30_yoke_R_down_pin",
+      "source_sha256": "b61121a5b4bb452fb77757197c786c229963be5c649f5fac13dc472755f70899",
+      "volume_mm3": 637.9995125085056
+    },
+    {
+      "name": "30_yoke_R_up_pin",
+      "source_sha256": "6e19e49c4ea5348514082d6a7afd01cdad44ff7bb0c1ff621905da26a6f16d43",
+      "volume_mm3": 637.9995125084741
+    },
+    {
+      "name": "10_frame_1_wedge",
+      "source_sha256": "d711af5f737ec99932f3dfbae556444aed660422897cd8785b2a01cd3563cd99",
+      "volume_mm3": 170.6219467105852
+    },
+    {
+      "name": "10_frame_2_wedge",
+      "source_sha256": "c007f8ce0d730d4d90d942ef140bb2b358fa6099437b817d8b27f0d194ac1551",
+      "volume_mm3": 170.62194671058526
+    },
+    {
+      "name": "10_frame_3_wedge",
+      "source_sha256": "4f1a644e940f81c8625343a49dd59d2b4549416e7582c5157978e2cba7f5bd9a",
+      "volume_mm3": 170.62194671058523
+    },
+    {
+      "name": "10_frame_4_wedge",
+      "source_sha256": "de6958d19c1bfce3bcfadb38c2ea899d287975a01679f14005160ef7b4b1db61",
+      "volume_mm3": 170.62194671058526
+    },
+    {
+      "name": "20_keeper_L_down_wedge",
+      "source_sha256": "6a9678e42ea90451f938bdd5ef0d4e7e1cbd3ffd1dcc3ad221ca7a549612d95c",
+      "volume_mm3": 117.58834015307717
+    },
+    {
+      "name": "20_keeper_L_up_wedge",
+      "source_sha256": "f5768afc75e6cf0f296e5f3e5566c0722f1318cfe6cf5de82e9935bc1366a516",
+      "volume_mm3": 117.5883401532894
+    },
+    {
+      "name": "20_keeper_R_down_wedge",
+      "source_sha256": "ce4e0120670b127de854f8a4127dc2802a9956bd223c53e26832ee6923ae0797",
+      "volume_mm3": 117.58834015314399
+    },
+    {
+      "name": "20_keeper_R_up_wedge",
+      "source_sha256": "bf47411e793892bfaf3bb8d6b246e4542502a9abd00cdf632f8b746755ec2424",
+      "volume_mm3": 117.58834015319395
+    },
+    {
+      "name": "30_yoke_L_down_wedge",
+      "source_sha256": "80207f0c2ae178b77afa42d7e8334fc1abb872698c3529e92126ba6f8d5e6f9b",
+      "volume_mm3": 117.58834015324464
+    },
+    {
+      "name": "30_yoke_L_up_wedge",
+      "source_sha256": "84518d1cafd1e5b4009cfc38c899ef83fdeae98da092a04938d44027a3766144",
+      "volume_mm3": 117.58834015330442
+    },
+    {
+      "name": "30_yoke_R_down_wedge",
+      "source_sha256": "f91d3707a97e44b9a25babe3cb6458677645b38452a53715fa1b0a862c88d044",
+      "volume_mm3": 117.58834015327591
+    },
+    {
+      "name": "30_yoke_R_up_wedge",
+      "source_sha256": "3ef85608cbbaaefd867e3aeeef6b219c9479923856dcb8935af97935ae5bbc72",
+      "volume_mm3": 117.5883401532157
+    }
+  ],
+  "solid_count": 30,
+  "unit": "mm",
+  "coordinate_system": "Assembled positions from R04, selected rear case substituted",
+  "scope": "Printed parts only; electronics and power bank excluded",
+  "step_sha256": "4ffa1b6677aa220a7ce3f442a89e582362455548926888e48b7553806c0a7317"
+}
