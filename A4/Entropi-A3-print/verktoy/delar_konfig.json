@@ -408,11 +408,12 @@
    "breidd": 0.8,
    "djupn": 0.5,
    "x": [
-    12.0,
-    60.0
+    16.0,
+    56.0
    ],
    "y_maks": 12.0,
-   "unngaa_deling": 1.6
+   "unngaa_deling": 1.6,
+   "steg": 2.0
   },
   "knurl_linse": {
    "x": [
