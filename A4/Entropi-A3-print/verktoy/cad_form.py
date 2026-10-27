@@ -55,6 +55,68 @@ def tonnekutt(punkt, z):
     return resample(glatt(p, 2.0), front=(58.0, ay))
 
 
+def vegg_y(S, z, x):
+    """y til grepsida (minste y) ved (x, z), lineært mellom dei målte snitta."""
+    from shapely.geometry import LineString
+    zs = sorted(S)
+    z1 = max([q for q in zs if q <= z] or [zs[0]]); z2 = min([q for q in zs if q >= z] or [zs[-1]])
+    ut = []
+    for zz in (z1, z2):
+        kryss = ShPolygon(S[zz]).exterior.intersection(LineString([(x, -20), (x, 60)]))
+        ys = [c[1] for g in getattr(kryss, "geoms", [kryss]) if not g.is_empty for c in g.coords]
+        ut.append(min(ys) if ys else None)
+    if None in ut:
+        return None
+    t = 0.0 if z2 == z1 else (z - z1) / (z2 - z1)
+    return ut[0] + t * (ut[1] - ut[0])
+
+
+def kutt_alle(k, verktoy, namn):
+    for i, v in enumerate(verktoy):
+        ny = k - v
+        if ny is not None and ny.is_valid and len(ny.solids()) == 1:
+            k = ny
+        else:
+            print(f"  {namn} {i}: kutt hoppa over")
+    return k
+
+
+def riller(k):
+    """Riller i grepsida og eit spor langs delinga, skorne i det reine loftet (plane boksar)."""
+    D, ri, dz, df = K["detalj"], K["detalj"]["riller"], K["skal"]["deling_z"], K["detalj"]["delingsfas"]
+    S = seksjonar_kropp()
+    MN = (Align.MIN, Align.MIN, Align.MIN)
+    verktoy = []
+    for z in np.arange(ri["z"][0], ri["z"][1] + 0.01, ri["deling"]):
+        if abs(z - dz) <= ri["unngaa_deling"]:
+            continue
+        boksar = []
+        for x0 in np.arange(ri["x"][0], ri["x"][1], ri["steg"]):
+            ys = [vegg_y(S, z, x) for x in (x0, x0 + ri["steg"] / 2, x0 + ri["steg"])]
+            if any(y is None for y in ys):
+                continue
+            boksar.append(Pos(x0, min(ys) - 3.0, z - ri["breidd"] / 2) * Box(ri["steg"], max(ys) + ri["djupn"] - min(ys) + 3.0, ri["breidd"], align=MN))
+        u = boksar[0]
+        for b in boksar[1:]:
+            u = u + b
+        verktoy.append(u)
+    k = kutt_alle(k, verktoy, "rille")
+    zs = sorted(S)
+    naer = min(zs, key=lambda q: abs(q - dz))
+    p = np.asarray(S[naer])
+    seg = []
+    for a, b in zip(p, np.roll(p, -1, axis=0)):
+        d = b - a
+        L = float(np.hypot(*d))
+        v = float(np.degrees(np.arctan2(d[1], d[0])))
+        m = (a + b) / 2
+        seg.append(Pos(m[0], m[1], dz) * Rot(0, 0, v) * Box(L + 0.3, 2.0 + df["djupn"], 2 * df["breidd"], align=(Align.CENTER, Align.MAX, Align.CENTER)).moved(Pos(0, df["djupn"], 0)))
+    u = seg[0]
+    for b in seg[1:]:
+        u = u + b
+    return kutt_alle(k, [u], "delingsspor")
+
+
 def kropp_loft():
     b = F["kropp"]
     S = seksjonar_kropp()
@@ -63,7 +125,7 @@ def kropp_loft():
     topp_full = seksjonar_kropp(full=True)[zs[-1]]
     for z, d in kappe(topp_full, zs[-1], b["topp_z"], 0.0, b["topp_r"]):
         flater.append(seksjonsflate(tonnekutt(forskove(topp_full, d), z), z))
-    return loft(flater, ruled=True)
+    return riller(loft(flater, ruled=True))
 
 
 def konservativt(S, z, v):
@@ -132,7 +194,7 @@ def knappboss():
 
 def bygg_form():
     import hashlib
-    nokkel = hashlib.sha1(("v2" + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
+    nokkel = hashlib.sha1(("v3" + json.dumps(K["detalj"]["riller"]) + json.dumps(K["detalj"]["delingsfas"]) + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
     cache = HER.parent / "print" / "cad" / f"form_{nokkel}"
     if (cache / "union.brep").exists():
         delar = {p.stem: import_brep(p) for p in sorted(cache.glob("*.brep")) if p.stem != "union"}
