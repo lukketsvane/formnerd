@@ -9,13 +9,13 @@
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 98.363,
+      "volum_cm3": 98.265,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          6.39,
-          0.04,
+          6.4,
+          0.05,
           -4.5
         ],
         [
@@ -27,7 +27,7 @@
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 139.51,
+      "volum_cm3": 139.246,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -102,8 +102,8 @@
     "stabel": 8.58,
     "brytarlomme": 4.41,
     "ec11_pipe": 5.5,
-    "magnetlommer": 0.73,
-    "usb_tunnel": 9.44
+    "magnetlommer": 1.9,
+    "usb_tunnel": 9.07
   },
   "kollisjonar_mm3": {
     "mb_kort": {
@@ -162,7 +162,7 @@
       "botn": 0.0,
       "topp": 0.0
     },
-    "magnetar_i_lommene": 71.728,
+    "magnetar_i_lommene": 0.0,
     "botn_mot_topp": 0.0
   },
   "sveip_mm3": {
@@ -176,5 +176,5 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "ytre_volum_cm3": 527.4
+  "ytre_volum_cm3": 527.6
 }
