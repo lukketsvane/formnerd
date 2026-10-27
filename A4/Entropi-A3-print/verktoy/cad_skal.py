@@ -359,6 +359,8 @@ def skriv_stl(m, fil):
     t = trimesh.load(fil, process=True)
     t.update_faces(t.nondegenerate_faces())
     t.merge_vertices()
+    if not t.is_watertight:
+        trimesh.repair.fill_holes(t)
     t.export(fil)
     return t.is_watertight, round(t.volume / 1000, 2)
 
