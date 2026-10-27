@@ -9,35 +9,35 @@
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 98.581,
+      "volum_cm3": 106.075,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          6.5,
-          0.0,
+          6.39,
+          -1.41,
           -4.5
         ],
         [
-          90.0,
-          118.6,
+          89.98,
+          118.85,
           35.0
         ]
       ]
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 135.281,
+      "volum_cm3": 149.472,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
         [
           -1.2,
-          0.0,
+          0.03,
           32.0
         ],
         [
-          90.0,
+          89.98,
           121.4,
           84.73
         ]
@@ -63,18 +63,18 @@
     },
     "usb-lokk": {
       "status": "Error.NoError",
-      "volum_cm3": 1.201,
+      "volum_cm3": 1.176,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
         [
           43.5,
-          110.6,
+          109.01,
           25.6
         ],
         [
           55.3,
-          118.6,
+          118.22,
           42.6
         ]
       ]
@@ -99,11 +99,11 @@
     }
   },
   "veggar_mm": {
-    "stabel": 10.37,
+    "stabel": 0.0,
     "brytarlomme": 4.41,
     "ec11_pipe": 5.5,
-    "magnetlommer": 1.46,
-    "usb_tunnel": 13.0
+    "magnetlommer": 0.53,
+    "usb_tunnel": 6.9
   },
   "kollisjonar_mm3": {
     "mb_kort": {
@@ -123,32 +123,32 @@
       "topp": 0.0
     },
     "headerar": {
-      "botn": 0.0,
-      "topp": 0.0
+      "botn": 189.379,
+      "topp": 189.438
     },
     "pinnetappar": {
-      "botn": 0.0,
-      "topp": 0.0
+      "botn": 48.72,
+      "topp": 48.72
     },
     "esp32s": {
-      "botn": 0.0,
-      "topp": 0.0
+      "botn": 726.605,
+      "topp": 727.435
     },
     "cam_kort": {
-      "botn": 0.0,
-      "topp": 0.0
+      "botn": 677.68,
+      "topp": 677.953
     },
     "sd_kort": {
-      "botn": 0.0,
-      "topp": 0.0
+      "botn": 66.0,
+      "topp": 66.0
     },
     "sd_og_fpc": {
-      "botn": 0.0,
-      "topp": 0.0
+      "botn": 339.75,
+      "topp": 339.75
     },
     "kameramodul": {
-      "botn": 0.0,
-      "topp": 0.0
+      "botn": 16.484,
+      "topp": 16.484
     },
     "brytar6x6": {
       "botn": 0.0,
@@ -162,19 +162,19 @@
       "botn": 0.0,
       "topp": 0.0
     },
-    "magnetar_i_lommene": 0.0,
+    "magnetar_i_lommene": 71.728,
     "botn_mot_topp": 0.0
   },
   "sveip_mm3": {
-    "stabel_ned_i_botn": 0.0,
-    "topp_ned_paa_stabelen": 0.0,
+    "stabel_ned_i_botn": 2719.147,
+    "topp_ned_paa_stabelen": 2720.242,
     "usb_plugg_inn": 0.0,
     "ec11_opp_gjennom_pipa": 0.0,
     "brytar_ned_i_lomma": 0.0
   },
   "klaring_stabel_mm": {
-    "botn": 0.2,
-    "topp": 0.2
+    "botn": 0.0,
+    "topp": 0.0
   },
-  "ytre_volum_cm3": 562.3
+  "ytre_volum_cm3": 526.8
 }

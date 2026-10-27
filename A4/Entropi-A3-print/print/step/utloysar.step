@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('Open CASCADE Model'),'2;1');
-FILE_NAME('Open CASCADE Shape Model','2026-10-22T09:53:56',('Author'),(
+FILE_NAME('Open CASCADE Shape Model','2026-10-27T21:45:39',('Author'),(
     'Open CASCADE'),'Open CASCADE STEP processor 8.0','build123d',
   'Unknown');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
@@ -43,7 +43,7 @@ DATA;
 #32 = AXIS2_PLACEMENT_3D('',#33,#34,#35);
 #33 = CARTESIAN_POINT('',(45.5,13.5,63.5));
 #34 = DIRECTION('',(0.,0.,1.));
-#35 = DIRECTION('',(1.,0.,-0.));
+#35 = DIRECTION('',(1.,0.,0.));
 #36 = DEFINITIONAL_REPRESENTATION('',(#37),#41);
 #37 = CIRCLE('',#38,5.6);
 #38 = AXIS2_PLACEMENT_2D('',#39,#40);
