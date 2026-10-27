@@ -181,8 +181,27 @@ STOLPAR -= spor
 tid("kjerne+stolpar")
 KJ = KJERNE - vern - SOYLER - STOLPAR
 tid("kjerne - soyler")
-KROPP = KROPP0 - KJ
-tid("kropp - kjerne")
+
+
+def hol_solid(ytre, indre):
+    """Solid med holrom: ytre skal + dei indre skala snudde, utan boolsk operasjon."""
+    from OCP.BRepBuilderAPI import BRepBuilderAPI_MakeSolid
+    from OCP.BRepLib import BRepLib
+    from OCP.TopoDS import TopoDS
+    ys = ytre.solids()[0].shells()
+    assert len(ys) == 1, len(ys)
+    ms = BRepBuilderAPI_MakeSolid(TopoDS.Shell_s(ys[0].wrapped))
+    for sol in indre.solids():
+        for sh in sol.shells():
+            ms.Add(TopoDS.Shell_s(sh.wrapped.Reversed()))
+    s = ms.Solid()
+    BRepLib.OrientClosedSolid_s(s)
+    return Part(Solid(s))
+
+
+KROPP = hol_solid(KROPP0, KJ)
+print("hol kropp gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()), "skal", len(KROPP.solids()[0].shells()))
+tid("kropp med holrom")
 for namn_, op_ in (("sete", sete), ("konus", konus), ("trakt", trakt), ("brunn", brunn), ("brytarlomme", brytarlomme), ("brytarhol", brytarhol), ("usb_tunnel", usb_tunnel),
                    ("usbc", usbc), ("okular", okular), ("EC11", EC11), ("stativ_hol", stativ_hol)):
     KROPP = KROPP - op_
