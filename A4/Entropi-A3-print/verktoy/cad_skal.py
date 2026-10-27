@@ -228,7 +228,7 @@ def band_z(flate, z0, tjukn, breidd, region=None):
 
 def kropp_snitt(z):
     sek = section(KOMP["kropp"], Plane.XY.offset(z))
-    return Sketch() + [make_face(f.outer_wire()) for f in sek.faces()]
+    return Sketch() + [Pos(0, 0, -z) * make_face(f.outer_wire()) for f in sek.faces()]
 
 
 def polar_z(n, r0, r1, tjukn, senter, z, vinkel0=0.0):
@@ -303,7 +303,7 @@ NED = boks([-50, 200], [-50, 200], [-50, dz])
 OPP = boks([-50, 200], [-50, 200], [dz, 200])
 df_ = D["delingsfas"]
 snitt = section(FORM, Plane.XY.offset(dz))
-fas_flate = Sketch() + [make_face(f.outer_wire()) for f in snitt.faces()]
+fas_flate = Sketch() + [Pos(0, 0, -dz) * make_face(f.outer_wire()) for f in snitt.faces()]
 fas = band_z(fas_flate, dz, df_["djupn"], 2 * df_["breidd"] + 0.2)
 BOTN = ((KROPP & NED) - mag_lommer) + pinnar - (fas & boks([-50, 200], [-50, 200], [-50, dz + 0.1]))
 TOPP = (KROPP & OPP) - mag_lommer - pinnehol - (fas & boks([-50, 200], [-50, 200], [dz - 0.1, 200]))

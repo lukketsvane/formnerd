@@ -33,7 +33,7 @@ def seksjonar_kropp(full=False):
     return {s["z"]: np.asarray(s["punkt_full" if full else "punkt"]) for s in MAAL["kropp"]}
 
 
-def kappe(topp, z0, z1, d0, R, steg=6):
+def kappe(topp, z0, z1, d0, R, steg=12):
     """Avrunda tak: snitt langs ein kvartsirkel med radius R frå z0 (forskyving d0) mot z1, flatt tak frå 75°."""
     ut = []
     for i in range(1, steg):
@@ -132,7 +132,7 @@ def knappboss():
 
 def bygg_form():
     import hashlib
-    nokkel = hashlib.sha1((json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
+    nokkel = hashlib.sha1(("v2" + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
     cache = HER.parent / "print" / "cad" / f"form_{nokkel}"
     if (cache / "union.brep").exists():
         delar = {p.stem: import_brep(p) for p in sorted(cache.glob("*.brep")) if p.stem != "union"}
