@@ -30,13 +30,14 @@ def kropp_seksjonar():
         p = storste_polygon(z)
         if p is None:
             continue
+        full = glatt(p).simplify(0.1)
         w = np.sqrt(max(29.6**2 - (z - AZ) ** 2, 0.0)) + 0.3
         p = p.difference(box(58.0, AY - w, 95.0, AY + w)) if w > 0.5 else p
         p = p.difference(box(-5, 44.0, 18.5, 85.0)) if z > 56 else p
         if p.geom_type != "Polygon":
             p = max(p.geoms, key=lambda q: q.area)
         p = glatt(p).simplify(0.1)
-        ut.append({"z": z, "punkt": np.round(resample(p), 3).tolist(), "areal": round(p.area, 1)})
+        ut.append({"z": z, "punkt": np.round(resample(p), 3).tolist(), "punkt_full": np.round(resample(full, front=(95.0, AY)), 3).tolist(), "areal": round(p.area, 1)})
     return ut
 
 

@@ -26,11 +26,11 @@ def forskove(punkt, d):
     p = ShPolygon(punkt).buffer(d, join_style=1)
     if p.geom_type != "Polygon":
         p = max(p.geoms, key=lambda q: q.area)
-    return resample(glatt(p, 2.0))
+    return resample(glatt(p, 2.0), front=(95.0, K["akse"]["y"]) if p.bounds[2] > 80 else (58.0, K["akse"]["y"]))
 
 
-def seksjonar_kropp():
-    return {s["z"]: np.asarray(s["punkt"]) for s in MAAL["kropp"]}
+def seksjonar_kropp(full=False):
+    return {s["z"]: np.asarray(s["punkt_full" if full else "punkt"]) for s in MAAL["kropp"]}
 
 
 def kappe(topp, z0, z1, d0, R, steg=6):
@@ -55,7 +55,7 @@ def kropp_loft():
 
 def holrom_loft():
     h = F["holrom"]
-    S = seksjonar_kropp()
+    S = seksjonar_kropp(full=True)
     v = K["skal"]["vegg"]
     zs = [z for z in sorted(S) if z >= h["golv_z"]]
     flater = [seksjonsflate(forskove(S[zs[0]], -v), h["golv_z"])] + [seksjonsflate(forskove(S[z], -v), z) for z in zs[1:]]
