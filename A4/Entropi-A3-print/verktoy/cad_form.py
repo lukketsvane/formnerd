@@ -42,15 +42,41 @@ def kappe(topp, z0, z1, d0, R, steg=6):
     return ut
 
 
+def tonnekutt(punkt, z):
+    """Tek bort tonneregionen (x >= 58 innanfor korda til linseløpet) frå eit fullt snitt."""
+    from shapely.geometry import box as shbox
+    ay, az = K["akse"]["y"], K["akse"]["z"]
+    w = np.sqrt(max(29.6**2 - (z - az) ** 2, 0.0)) + 0.3
+    p = ShPolygon(punkt)
+    if w > 0.5:
+        p = p.difference(shbox(58.0, ay - w, 95.0, ay + w))
+        if p.geom_type != "Polygon":
+            p = max(p.geoms, key=lambda q: q.area)
+    return resample(glatt(p, 2.0), front=(58.0, ay))
+
+
 def kropp_loft():
     b = F["kropp"]
     S = seksjonar_kropp()
     zs = sorted(S)
     flater = [seksjonsflate(S[z], z) for z in zs]
-    topp = S[zs[-1]]
-    for z, d in kappe(topp, zs[-1], b["topp_z"], 0.0, b["topp_r"]):
-        flater.append(seksjonsflate(forskove(topp, d), z))
+    topp_full = seksjonar_kropp(full=True)[zs[-1]]
+    for z, d in kappe(topp_full, zs[-1], b["topp_z"], 0.0, b["topp_r"]):
+        flater.append(seksjonsflate(tonnekutt(forskove(topp_full, d), z), z))
     return loft(flater, ruled=True)
+
+
+def konservativt(S, z, v):
+    """Det minste av kroppsnitta ved z-v, z og z+v, så veggen held v òg der flata hallar."""
+    zs = sorted(S)
+    p = None
+    for zz in (z - v, z, z + v):
+        naer = min(zs, key=lambda q: abs(q - zz))
+        q = ShPolygon(S[naer])
+        p = q if p is None else p.intersection(q)
+    if p.geom_type != "Polygon":
+        p = max(p.geoms, key=lambda q: q.area)
+    return np.asarray(p.exterior.coords)[:-1]
 
 
 def holrom_loft():
@@ -58,7 +84,7 @@ def holrom_loft():
     S = seksjonar_kropp(full=True)
     v = K["skal"]["vegg"]
     zs = [z for z in sorted(S) if z >= h["golv_z"]]
-    flater = [seksjonsflate(forskove(S[zs[0]], -v), h["golv_z"])] + [seksjonsflate(forskove(S[z], -v), z) for z in zs[1:]]
+    flater = [seksjonsflate(forskove(konservativt(S, z, v), -v), z) for z in zs]
     topp = S[zs[-1]]
     for z, d in kappe(topp, zs[-1], h["tak_z"], -v, h["tak_r"]):
         flater.append(seksjonsflate(forskove(topp, d), z))
