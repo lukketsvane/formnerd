@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "camera": [
+    -1.5,
+    -1.0,
+    1.8
+  ],
+  "visually_reviewed": "lock_frame_wedge_stage.png",
+  "slot_visibility": "Cross-slot in seated frame T-pin visible at right foreground; long wedge separated above by22mm alongZ.",
+  "actual_geometry": true,
+  "source_parts": [
+    "01_bank_cradle",
+    "02_multigrip_carrier",
+    "10_frame_1_pin",
+    "10_frame_1_wedge"
+  ],
+  "crop": "carrier and cradle sectioned at fixed local22x26x22mm boundingbox; not new printed parts",
+  "slot_upper_center_local_mm": [
+    0,
+    -9.8,
+    8.45
+  ],
+  "files": {
+    "lock_frame_wedge_stage.json": "46739ba9e87f5f5c9407b6095e6ee3983ffa2a1bad5e6353786f6cbd7e685270",
+    "lock_frame_wedge_stage.svg": "18bc762a0664ea012bfe43b6d7c266b20631af2256e0935e8354447986259d6d",
+    "lock_frame_wedge_stage.png": "51deb9618e2f6939b9158107411af6060ef366b3bbb7670c90c56b9162c8e6da"
+  }
+}

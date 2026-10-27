@@ -16,8 +16,8 @@
     "sha256": "e35227bf3f8169f74aa229755e66df1f86bcb6e8864c95654cfe094223998a4b"
   },
   "README.md": {
-    "bytes": 7313,
-    "sha256": "0d37f2f22ce27a06bbdab0aeb62973de4e43824e85c413987cc2d72ba4b01d5f"
+    "bytes": 7516,
+    "sha256": "dada5ab44c95b8c0a5c2e31637c28fe21591862745b42ce5c59167c95ea51692"
   },
   "STEP/01_bank_cradle.step": {
     "bytes": 990381,
@@ -1127,6 +1127,10 @@
     "bytes": 703,
     "sha256": "1adcbdee1c8e4f4573690b35a59e98dfdd1b9016bd35632579b3397331a8ce00"
   },
+  "manual-r07/source-manifest.json": {
+    "bytes": 14402,
+    "sha256": "df0d1f6556f9cb8b71a0ca7373fc26d83455e900ce6a943889b6c8ff9bd9ac19"
+  },
   "manual-r07/source/build_manual.py": {
     "bytes": 13696,
     "sha256": "3b51089ae73281f914d45d98fe41d6e068c7efb04c12b30eb855565a4505f1ea"
@@ -1150,10 +1154,6 @@
   "manual-r07/source/requirements.txt": {
     "bytes": 50,
     "sha256": "1a550ef7ba092b4443f2092dee4e6dfa139a880d18fd1f1b454c1927d501ca38"
-  },
-  "manual-r07/source-manifest.json": {
-    "bytes": 14402,
-    "sha256": "df0d1f6556f9cb8b71a0ca7373fc26d83455e900ce6a943889b6c8ff9bd9ac19"
   },
   "manual-r07/used-assets.json": {
     "bytes": 1502,
@@ -1515,6 +1515,10 @@
     "bytes": 706,
     "sha256": "ddd96ab224ec572baed2806950790ef3340421acb51ef8373ac3220633137770"
   },
+  "manual-r08/source-manifest.json": {
+    "bytes": 16146,
+    "sha256": "868cec74a63ab3715523ee3887db663098ea77cd7217d52bf1b5df1cd1c4c085"
+  },
   "manual-r08/source/build_manual.py": {
     "bytes": 16495,
     "sha256": "8522de064217d58522a516aa6ee5088c038102be78ac998e5e69547cd5e2850e"
@@ -1538,10 +1542,6 @@
   "manual-r08/source/requirements.txt": {
     "bytes": 50,
     "sha256": "1a550ef7ba092b4443f2092dee4e6dfa139a880d18fd1f1b454c1927d501ca38"
-  },
-  "manual-r08/source-manifest.json": {
-    "bytes": 16146,
-    "sha256": "868cec74a63ab3715523ee3887db663098ea77cd7217d52bf1b5df1cd1c4c085"
   },
   "manual-r08/used-assets.json": {
     "bytes": 1768,
@@ -1698,6 +1698,474 @@
   "manual-r08/visual-qa-10-17.json": {
     "bytes": 2438,
     "sha256": "06c8c3e15d4aad8bf966c73d57eea29dd87f889dfca6facd1a56b3aa70b420b2"
+  },
+  "manual-r09/README.md": {
+    "bytes": 3714,
+    "sha256": "d761d4862c77d8511f2ba6f2c35da3fcbf356f56e1759afe59dc0f5a12acd94e"
+  },
+  "manual-r09/contents.json": {
+    "bytes": 1210,
+    "sha256": "f612acf579fb409e27548e9737a4091ff0f963098f234cbc0e29ca1aac864ea4"
+  },
+  "manual-r09/figures/README.md": {
+    "bytes": 5000,
+    "sha256": "d1460b6347ac65d56ccfc2a02c51f81d98440540c2095438bcb069f7112abd22"
+  },
+  "manual-r09/figures/render_technical.py": {
+    "bytes": 13992,
+    "sha256": "2b6b692b5aa2f9d6bcc488f53cd388808b2ff58607e1ab6a60313a2cf7bd138d"
+  },
+  "manual-r09/figures/run_technical.py": {
+    "bytes": 1012,
+    "sha256": "15fe60b51c42bdce2776e0b276043f9117ea4d05f2992fdfdbbea584c7299998"
+  },
+  "manual-r09/figures/technical-qa.json": {
+    "bytes": 7360,
+    "sha256": "2eaf064c4e97d752db92880a4abdd5175076e1a67c3f8c06f4ccbc609d149845"
+  },
+  "manual-r09/figures/technical_assembled.json": {
+    "bytes": 69781,
+    "sha256": "853714507e8c9168f604504f50ed7b9efa6fe771927fec5b49795aab2708a181"
+  },
+  "manual-r09/figures/technical_assembled.png": {
+    "bytes": 960802,
+    "sha256": "7f7e8bead71985bf6d1aa2d8663d745baa3bae9255a60774cac35d861041de2b"
+  },
+  "manual-r09/figures/technical_bank_locked.json": {
+    "bytes": 76180,
+    "sha256": "9fdadc364e3b96211e799a4a289cb0b40ab05d528bd32be391ad869be9922d24"
+  },
+  "manual-r09/figures/technical_bank_locked.png": {
+    "bytes": 1014955,
+    "sha256": "528884730dede777fc41c0b666b9c9eaf802b928bef43ebfc7ea0cc01376609f"
+  },
+  "manual-r09/figures/technical_bank_placement.json": {
+    "bytes": 71547,
+    "sha256": "0764691235cf02c9bcc1085b094984a569fd09d73a6d23a0754d9d7e28980654"
+  },
+  "manual-r09/figures/technical_bank_placement.png": {
+    "bytes": 838226,
+    "sha256": "f5f8371f450cd5a4c7e36913eb95da23907bf1627ecdf25d18a029e07408f70b"
+  },
+  "manual-r09/figures/technical_exploded.json": {
+    "bytes": 217357,
+    "sha256": "da5f26979741697fc87c17f21853b310a7dabe365a2a26550145404e67f5fe2b"
+  },
+  "manual-r09/figures/technical_exploded.png": {
+    "bytes": 721602,
+    "sha256": "fb7897f3f2f1efda3924dac22dda155d8dde581b22d707b2929bc703be595779"
+  },
+  "manual-r09/figures/technical_keepers_locked.json": {
+    "bytes": 65770,
+    "sha256": "90ae234f2e9db889c5720a341b2b64686a717b252e543701d5354b581503b69d"
+  },
+  "manual-r09/figures/technical_keepers_locked.png": {
+    "bytes": 612358,
+    "sha256": "37e55af398cb3571afe9c4467360ef93210301140085c7b999eb43ab45ec411d"
+  },
+  "manual-r09/figures/technical_keepers_rear.json": {
+    "bytes": 62642,
+    "sha256": "ae7b136681c55b1daa1e4894eda4bcdbd3beea0020f9d232b7ce867344b92d94"
+  },
+  "manual-r09/figures/technical_keepers_rear.png": {
+    "bytes": 673791,
+    "sha256": "41c3966068f0312970a2a30865c0a70e419ce418b6c45e40a7d15799e3949363"
+  },
+  "manual-r09/figures/technical_mb_only.json": {
+    "bytes": 13523,
+    "sha256": "455be718d41a14b5cd9c01c8400985af778cd4412cce4f1ec2544f906333bf36"
+  },
+  "manual-r09/figures/technical_mb_only.png": {
+    "bytes": 652427,
+    "sha256": "47da86795184bb2a9e804d69ea39ec7e4ce042d55677a3fb024179c7629d021b"
+  },
+  "manual-r09/figures/technical_pair_front.json": {
+    "bytes": 61314,
+    "sha256": "cde543df6cfe1299b2b9a477f1d0f7cb9e4c234e9e357e22b798ed1853e0c768"
+  },
+  "manual-r09/figures/technical_pair_front.png": {
+    "bytes": 439706,
+    "sha256": "f5c01a5f478cbf01d5be25ae562e91a218b5e1254e3cb73e44cfbef4d79a7e2d"
+  },
+  "manual-r09/figures/technical_rear_usb.json": {
+    "bytes": 69899,
+    "sha256": "11fd9be1148346be0f93504cfbc633a0c353bb56a64bcc52ad4045f04837e491"
+  },
+  "manual-r09/figures/technical_rear_usb.png": {
+    "bytes": 612476,
+    "sha256": "64acc7d978444dc990ba19a0522ce3cf6a999b6b7bde4b1ac0b0f5ac7d8d4d33"
+  },
+  "manual-r09/figures/technical_seated.json": {
+    "bytes": 61695,
+    "sha256": "056b94aba0b13e74952371a5247c813dc885fd46d778f72a83a68724f98c51d0"
+  },
+  "manual-r09/figures/technical_seated.png": {
+    "bytes": 928292,
+    "sha256": "e177d6b2d71fb97d3dddb53d4348180bdf37c2926b1e22b63e524f19a4e9265b"
+  },
+  "manual-r09/figures/technical_sensor_contact.json": {
+    "bytes": 22144,
+    "sha256": "6bd8c5352adcd127d58c932a457502ab465f48eaac330225b51858dfa707f58d"
+  },
+  "manual-r09/figures/technical_sensor_contact.png": {
+    "bytes": 868956,
+    "sha256": "eec5ea72bbedc9bbe765f06ca18cc81ea0e01bf0bb46bdb1a07a04bedcbd8fd8"
+  },
+  "manual-r09/figures/technical_yokes.json": {
+    "bytes": 68842,
+    "sha256": "e59a95970ff14f6fc2a62b5fcb0729ee8e1d941a558a40a2a053fbc4bce741c5"
+  },
+  "manual-r09/figures/technical_yokes.png": {
+    "bytes": 915935,
+    "sha256": "766d295ccadc1fd2f6d841c029bd70fcc132d83edae0b16eea2ab8477777d6ff"
+  },
+  "manual-r09/ikea-comparison.json": {
+    "bytes": 7383,
+    "sha256": "c7b6f745fea2d4e4b3e748c05baeab191fba5d7983081f1ddff3fb67e1d159b6"
+  },
+  "manual-r09/ikea-comparison.md": {
+    "bytes": 3275,
+    "sha256": "4e7509bd9232a5f3dfcafd3ebf245e9ae914d3d949371e23d88a6e60f022da29"
+  },
+  "manual-r09/ikea-reference-audit.json": {
+    "bytes": 2545,
+    "sha256": "ab996e024085758bd692536f7f685f7cb5f357fd784a1d05d41e96300d7ce5e9"
+  },
+  "manual-r09/ikea-reference-audit.md": {
+    "bytes": 10903,
+    "sha256": "c4e01bd49b8e2a549b42a7578f8ea99a64fe7d282d68ee438b26dec403673c03"
+  },
+  "manual-r09/layout-checks.json": {
+    "bytes": 29691,
+    "sha256": "2f022750f2a3bfa75c927d4cd459a43746842e89921abc5a89185713f7ef5f76"
+  },
+  "manual-r09/mechanics-audit.json": {
+    "bytes": 2342,
+    "sha256": "c2211be22ee37f760bdf10891801d61847c21080bf20900e4e058dad2ebf0269"
+  },
+  "manual-r09/mechanics-audit.md": {
+    "bytes": 12248,
+    "sha256": "66dcf759138c2be107557e88838aef47421214d5f37f83376f5efd0efe16e198"
+  },
+  "manual-r09/output/ENTROPI_R04_Monteringsmanual.pdf": {
+    "bytes": 7008713,
+    "sha256": "1caa23b935ea54b401269be2db8d08e14547d2f779f25c373316baef417fb11b"
+  },
+  "manual-r09/pages/R04_manual_01.png": {
+    "bytes": 441587,
+    "sha256": "3f9ef130b024ed14a9766845197f4cfce9d08757515583acef21db8791e09976"
+  },
+  "manual-r09/pages/R04_manual_02.png": {
+    "bytes": 321138,
+    "sha256": "0c42cd7d862a6172e48d9c781583d0300ed327b9fc1a37d6978e9653124e17e9"
+  },
+  "manual-r09/pages/R04_manual_03.png": {
+    "bytes": 161821,
+    "sha256": "5c675ac67efe374dac19a57f825997f637fa26c1992a907de8012dbfe45c0e46"
+  },
+  "manual-r09/pages/R04_manual_04.png": {
+    "bytes": 306740,
+    "sha256": "2dfd5f22200318887f3274277bbb4d2762c4c9149c09a81e81df9818a37c22a6"
+  },
+  "manual-r09/pages/R04_manual_05.png": {
+    "bytes": 358999,
+    "sha256": "9aa343b67d6c066ffe8b45915637db5689a27d9d27f93605d2273dc61536c3bd"
+  },
+  "manual-r09/pages/R04_manual_06.png": {
+    "bytes": 169240,
+    "sha256": "eab4c0c64e3491e5c87a0e08ac6665e13a1c6465de61647e66021fa99d72d81e"
+  },
+  "manual-r09/pages/R04_manual_07.png": {
+    "bytes": 375001,
+    "sha256": "9b77b2e14c8192c671e9d4486bf66966f5ff3a34279f88d1b01dc0f20690f28f"
+  },
+  "manual-r09/pages/R04_manual_08.png": {
+    "bytes": 333955,
+    "sha256": "8a85b9fdb0642d36301cb2763b79b94fe8e9b281d70c74c7251419b76116f70d"
+  },
+  "manual-r09/pages/R04_manual_09.png": {
+    "bytes": 334446,
+    "sha256": "711202df6a02275569e9105e872904f4d0dfb90a52561397eb2a286614850c5f"
+  },
+  "manual-r09/pages/R04_manual_10.png": {
+    "bytes": 271701,
+    "sha256": "3703659c03fda634664614feb53ad209a60257edb1b12a62ca52c9cceef6f66a"
+  },
+  "manual-r09/pages/R04_manual_11.png": {
+    "bytes": 454635,
+    "sha256": "83c5557e34f077eb660756f6bc583ad47f4d1a3d4667e6c95aedbdec29799b89"
+  },
+  "manual-r09/pages/R04_manual_12.png": {
+    "bytes": 337804,
+    "sha256": "32c18e9fcc2bbf6dcfc4a9a49fc93e75b7bb9cedc1a7e6d8f70608141381a508"
+  },
+  "manual-r09/pages/R04_manual_13.png": {
+    "bytes": 318637,
+    "sha256": "db3b2f805f9ae5205156112a5de244e4f2ad7d317a77a644f3b6194f94e92652"
+  },
+  "manual-r09/pages/R04_manual_14.png": {
+    "bytes": 362214,
+    "sha256": "88aff0064dae1aef52f8303a5fa36472e58e3f24a6bf6831fa92f834fa84d5eb"
+  },
+  "manual-r09/pages/R04_manual_15.png": {
+    "bytes": 330847,
+    "sha256": "ff854be5cf54080a4bbda1c2899f992d80ac34cf96355734db44655856f9a1b5"
+  },
+  "manual-r09/pages/R04_manual_16.png": {
+    "bytes": 442501,
+    "sha256": "5e214d73d484ab4e3f282738b4d311057ae59d04b797bf5a2512e2b964f1c567"
+  },
+  "manual-r09/pages/R04_manual_17.png": {
+    "bytes": 172617,
+    "sha256": "8dad2b7a5488e04b1e44739f2f70018725f768abd74c57a0bfbff2d2a175aa00"
+  },
+  "manual-r09/pin-inventory-audit.json": {
+    "bytes": 15867,
+    "sha256": "29d936de2d444057b96cb93a0fde4e1747798cdc10defe9d998810d9c95c77e6"
+  },
+  "manual-r09/pin_inventory_audit.py": {
+    "bytes": 2506,
+    "sha256": "7dd6c0d4aa056d4e6075087e409f49d48bc12a06f9730a2d5399c4544515114e"
+  },
+  "manual-r09/portable-rebuild-check.json": {
+    "bytes": 3525,
+    "sha256": "2aea5a8de781c3fddce4e75c70e920d373feb44bb6e5571e86f9577828adaf65"
+  },
+  "manual-r09/qa.json": {
+    "bytes": 2895,
+    "sha256": "927333173b7f3305d0ae0d835942da948efdebd3cd30e23b831bd3ca90f2ec71"
+  },
+  "manual-r09/scene-manifest.json": {
+    "bytes": 777,
+    "sha256": "9bdc79d4dccb24c1cdfe0303b2a0dae5ca3641cf76a4526efc3251fdf28ad16c"
+  },
+  "manual-r09/source-manifest.json": {
+    "bytes": 17520,
+    "sha256": "52d46fb747bba0fd87520dcf13433f18518ee605a500d847487d2bc06bd4c992"
+  },
+  "manual-r09/source/build_manual.py": {
+    "bytes": 18243,
+    "sha256": "965ebf87b6544663981c4489edc71fbe318b203f51b1a18c4e6189bf78ac6bed"
+  },
+  "manual-r09/source/build_vectors.py": {
+    "bytes": 3948,
+    "sha256": "a05b77fc51fa7d871dc617205ec96a5958f767ed9377bf38025586d0a983c4c4"
+  },
+  "manual-r09/source/fonts/DejaVuSans-Bold.ttf": {
+    "bytes": 708920,
+    "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "manual-r09/source/fonts/DejaVuSans.ttf": {
+    "bytes": 759720,
+    "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
+  },
+  "manual-r09/source/fonts/LICENSE.txt": {
+    "bytes": 3859,
+    "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+  },
+  "manual-r09/source/requirements.txt": {
+    "bytes": 50,
+    "sha256": "1a550ef7ba092b4443f2092dee4e6dfa139a880d18fd1f1b454c1927d501ca38"
+  },
+  "manual-r09/used-assets.json": {
+    "bytes": 1853,
+    "sha256": "7c0c53effdad0c4c819333070edae5aa163cb3a14bea7407695474c263d9b59c"
+  },
+  "manual-r09/vector/additional-figure-manifest.json": {
+    "bytes": 6734,
+    "sha256": "a2a885fbe0cae362fc952a9119894d101ff219c340688f5f2c339ebc1be23f35"
+  },
+  "manual-r09/vector/bank-yoke-frame-qa.json": {
+    "bytes": 2918,
+    "sha256": "ad2c4ee7c04431acf1aa200070932e7b177886fc11ac98c12b1484c1f47fb824"
+  },
+  "manual-r09/vector/build_bank_yoke_figures.py": {
+    "bytes": 5803,
+    "sha256": "1f70938c58e6f33f15f46fa78d4042131a250ca2c93c5000f3453869bc08642f"
+  },
+  "manual-r09/vector/build_carrier_preservation.py": {
+    "bytes": 5938,
+    "sha256": "13a80bff5a9a6ae31936442c153dad7d3ecd6fb5f2cd793f36fbe21beb503514"
+  },
+  "manual-r09/vector/build_frame2_joint_figures.py": {
+    "bytes": 6363,
+    "sha256": "e901322aaec6632c994a28b4c052b886093cd5a7ef9e4eac6b7c875d09debff9"
+  },
+  "manual-r09/vector/build_frame_lock_detail.py": {
+    "bytes": 3621,
+    "sha256": "73443be795606c61d02e726d1cd2e4fb1df48916359c09f7830c157d6f0c0a8e"
+  },
+  "manual-r09/vector/build_frame_pin.py": {
+    "bytes": 3693,
+    "sha256": "36586565eb552575147ce35124ed79c8e03f0f1126697852a13d3adaeb58f8c5"
+  },
+  "manual-r09/vector/build_lock_details.py": {
+    "bytes": 4929,
+    "sha256": "c5ae2edff8370da62b22426de37618cb7f042c187ca3694f28d51b3f333142e0"
+  },
+  "manual-r09/vector/build_seated_joint_figures.py": {
+    "bytes": 4547,
+    "sha256": "e729daf5b9b7ab25c7b40183dfc85da02a4fca542c7b7abcba0f40802242f350"
+  },
+  "manual-r09/vector/build_usb_insertion_guides.py": {
+    "bytes": 4152,
+    "sha256": "a1ab0a366607a6a8887fd2735af50577395ce5b37adc5b8501b6d19d388b3bf6"
+  },
+  "manual-r09/vector/carrier-preservation-manifest.json": {
+    "bytes": 5470,
+    "sha256": "f5339385c7bb40afa07b37fa925b0f4a5a52050d04bc84b1e31ade7a4cce6705"
+  },
+  "manual-r09/vector/carrier_preserve_fork.json": {
+    "bytes": 39672,
+    "sha256": "00f5298a74bb7582c34ed7f0b16847920586a1b516482116b2e58c79c6c41d24"
+  },
+  "manual-r09/vector/carrier_preserve_front.json": {
+    "bytes": 361075,
+    "sha256": "f039ded8773fe07f379e079aa4c133cfe0881ba083796b58b8dc023d6dc128a4"
+  },
+  "manual-r09/vector/carrier_preserve_guide.json": {
+    "bytes": 29420,
+    "sha256": "a28880aec74934f8e76288777e37e1d1484961113d5d4bac1fa37457daf0bb7a"
+  },
+  "manual-r09/vector/frame-lock-detail-manifest.json": {
+    "bytes": 1687,
+    "sha256": "1a5361509e61a201cd1f29796273658cb81e198433468d2e6e86cb362d3f2395"
+  },
+  "manual-r09/vector/frame-lock-detail-qa.json": {
+    "bytes": 888,
+    "sha256": "a891c927363663b139a6fc49552e0b2634bbcc267df547737e06026c26989b7e"
+  },
+  "manual-r09/vector/frame-pin-manifest.json": {
+    "bytes": 1306,
+    "sha256": "a07c05554337e534a6a750ec358bc1b04dea90d76f28214f87ac29adbc5f9298"
+  },
+  "manual-r09/vector/frame2-contact-crop-check.json": {
+    "bytes": 488,
+    "sha256": "efdc1df8ccb8aba3de88da91a756d07c2c39d67cab6efc9caef7a29b135ace84"
+  },
+  "manual-r09/vector/frame2-joint-clear-manifest.json": {
+    "bytes": 7159,
+    "sha256": "af18464100b284f7572460738bd5a8c19590a0d387e7dd0a338a3b4cce3e3367"
+  },
+  "manual-r09/vector/frame2-joint-manifest.json": {
+    "bytes": 4645,
+    "sha256": "7daa8cd02160ad73a28b9266bc2bc1d0484744d159cb9fa57298982df275cbee"
+  },
+  "manual-r09/vector/frame2_lock_seated_clear.json": {
+    "bytes": 41381,
+    "sha256": "428c3a1921352734c6f5c4e0793061f9d3d0e36033e56e5472ed95569a6f74cd"
+  },
+  "manual-r09/vector/frame2_pin_stage_clear.json": {
+    "bytes": 40925,
+    "sha256": "167afe174305b5ec0ed340c0951690911d6dde5cdf5ef93af3541328d7b2b7fb"
+  },
+  "manual-r09/vector/frame2_wedge_stage_clear.json": {
+    "bytes": 46209,
+    "sha256": "98024158b3400b6f630ed02225e474f34129ff8768c001985c159ecf75e5672c"
+  },
+  "manual-r09/vector/frame_lock_seated.json": {
+    "bytes": 40047,
+    "sha256": "0a9c6ebd28a806fb9c2c7781bf0d407137ffbf8a46d9301d04303084250fe7af"
+  },
+  "manual-r09/vector/frame_pin_stage.json": {
+    "bytes": 37612,
+    "sha256": "e95ca982a1df64858198b8814146721bf25bec951216b6f06be3a35e10bf9737"
+  },
+  "manual-r09/vector/lock-detail-manifest.json": {
+    "bytes": 5636,
+    "sha256": "9b9de9ff932261d420fb53e55b02c12a317cb4f52afb832292d410855300cd4b"
+  },
+  "manual-r09/vector/lock_frame_wedge_stage.json": {
+    "bytes": 43517,
+    "sha256": "46739ba9e87f5f5c9407b6095e6ee3983ffa2a1bad5e6353786f6cbd7e685270"
+  },
+  "manual-r09/vector/lock_keeper_pin_stage.json": {
+    "bytes": 39886,
+    "sha256": "07249d89758fb1d861d72fb81f6d43ea557b8fbf47bcca469ac063addfff6ae6"
+  },
+  "manual-r09/vector/lock_keeper_seated.json": {
+    "bytes": 40813,
+    "sha256": "ac94e12da19b228a6b3aedd8161fb38fbd229d86d8008f87ebc9760fc2e27107"
+  },
+  "manual-r09/vector/lock_keeper_wedge_stage.json": {
+    "bytes": 43673,
+    "sha256": "8f1e103355284e7340982dfc9815b3da98c9baf03034dddd7a094a958a4d1e06"
+  },
+  "manual-r09/vector/seated-joint-manifest.json": {
+    "bytes": 2874,
+    "sha256": "858aaf9652d1c426c60542a21445557c59ced74f9879eb019e01b0d84a56379f"
+  },
+  "manual-r09/vector/usb-insertion-guides.json": {
+    "bytes": 4053,
+    "sha256": "b8dedd5232b51651ddc3fd77c676e2e37ddc5ec6c0fa02287e8435b27e163a85"
+  },
+  "manual-r09/vector/wedge_long_iso.json": {
+    "bytes": 7179,
+    "sha256": "b68a5c0e98b18bcbc90361e449c7d9c32b69107f5d976c06a766a332fa094627"
+  },
+  "manual-r09/vector/wedge_long_profile.json": {
+    "bytes": 2797,
+    "sha256": "5dece17ba06ee6aec85977bfb21fb786e654c5b20097576f836e606a9c741750"
+  },
+  "manual-r09/vector/wedge_short_iso.json": {
+    "bytes": 7051,
+    "sha256": "a2e8c45aca8f73923059ee8b2714423f42cab953d9809c243584c17e0e492c43"
+  },
+  "manual-r09/vector/wedge_short_profile.json": {
+    "bytes": 2689,
+    "sha256": "3f87119d904ed82bce738b05ece83ef7b5d027af1dd7e7d599e76e52486c8fb1"
+  },
+  "manual-r09/vector/yoke_lock_seated.json": {
+    "bytes": 54085,
+    "sha256": "9d7efbadda9f4a51d7874925a6a0972363b4eecba033e75d9c74bad04ff44dc5"
+  },
+  "manual-r09/vector/yoke_pin_stage.json": {
+    "bytes": 50069,
+    "sha256": "6579003c690bd25f0862f6f7ec6fc61436565a278483a06ac34d7602d645ece7"
+  },
+  "manual-r09/vector/yoke_wedge_stage.json": {
+    "bytes": 56740,
+    "sha256": "8ab2c75bd45df1a4f316cd34cd340a8453e7698bf516b7b0d6cc8570d758621e"
+  },
+  "manual-r09/vectors/geometry-hashes.json": {
+    "bytes": 2904,
+    "sha256": "0bb127ae8b93a4e9fb8e7aaf44fb9cf6a89a1b8310064c25a10393b95e574edb"
+  },
+  "manual-r09/vectors/part_01_bank_cradle.json": {
+    "bytes": 116078,
+    "sha256": "326ec77e707e73f9463dda856e4f0e7077a1e4c2ea217e4a00f0bff535eac5e5"
+  },
+  "manual-r09/vectors/part_02_multigrip_carrier.json": {
+    "bytes": 360432,
+    "sha256": "ba4d4cca963b83e3ccf20af1744e3f071e9daf529ba94f8eb70aa4de8f7bd8fc"
+  },
+  "manual-r09/vectors/part_03_MB_keeper_left.json": {
+    "bytes": 97722,
+    "sha256": "362fba36b7faced52d92e4a46fe75590a53a4f4b732e42b2ff0a62a4fde5b2bd"
+  },
+  "manual-r09/vectors/part_04_MB_keeper_right.json": {
+    "bytes": 86751,
+    "sha256": "73dde8931f7febd57a23c0a1af73f651f9292440b08e015300480206ca152bf9"
+  },
+  "manual-r09/vectors/part_05_sensor_yoke_left.json": {
+    "bytes": 37913,
+    "sha256": "c4f96cee69a8675a81b64725f8a303fb79bf524fdadca56a15b5909e93061a8d"
+  },
+  "manual-r09/vectors/part_06_sensor_yoke_right.json": {
+    "bytes": 34654,
+    "sha256": "4e8e43d07d2e4ebb3142c6851a560eae13317eea2ed2322d5b2bba1dc93af141"
+  },
+  "manual-r09/vectors/part_20_keeper_L_down_pin.json": {
+    "bytes": 16259,
+    "sha256": "6d792a4f555ff1419ab7c602f831cdb3b031cb174effc8b49f4e310f4f6a08c9"
+  },
+  "manual-r09/visual-qa-01-09.json": {
+    "bytes": 3803,
+    "sha256": "05f9a9d77798ed4b83ddf8910b999ad64e28ecae8d5cc131717214231af94d2f"
+  },
+  "manual-r09/visual-qa-10-17.json": {
+    "bytes": 2995,
+    "sha256": "720c7df032c565aa1d233fe174b67d3d36b978df06c92eb4b234583243dbd26a"
   },
   "presentation/.gitignore": {
     "bytes": 112,

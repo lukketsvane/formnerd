@@ -1,0 +1,24 @@
+{
+  "purpose": "Verify tighter display-only carrier section preserves all actual tongue engagement geometry.",
+  "original_source_unchanged": true,
+  "contact_region_local_mm": [
+    -4.5,
+    -3.5,
+    2,
+    4.5,
+    3.5,
+    10.5
+  ],
+  "carrier_display_section_local_mm": [
+    -11,
+    -7,
+    -6,
+    11,
+    7,
+    16
+  ],
+  "original_contact_volume_mm3": 216.9876102660088,
+  "shown_contact_volume_mm3": 216.9876102660088,
+  "symmetric_difference_mm3": 0.0,
+  "result": "passed"
+}

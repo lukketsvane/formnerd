@@ -1,0 +1,259 @@
+{
+  "comparison_basis": "The three exact PDFs supplied by the user, visually inspected as individual pages and measured from their PDF drawing paths.",
+  "baseline": "ENTROPI edition 08, 17 pages",
+  "planned_edition": "09",
+  "references": [
+    {
+      "name": "MILSBO",
+      "document_code": "AA-2094158-9",
+      "file": "upload/01-MILSBO-AA-2094158-9.pdf",
+      "sha256": "6ee59326d514fd49b943f1ba366a8e491fdd3dac12aed03966144d696437cc08",
+      "page_count": 36,
+      "page_size_pt": [
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "visually_inspected_pdf_pages": [
+        1,
+        7,
+        11
+      ],
+      "stroke_path_histograms": {
+        "7": [
+          {
+            "width_pt": 0.75,
+            "path_count": 1316
+          },
+          {
+            "width_pt": 2.0,
+            "path_count": 19
+          },
+          {
+            "width_pt": 1.5,
+            "path_count": 7
+          },
+          {
+            "width_pt": 1.0,
+            "path_count": 7
+          },
+          {
+            "width_pt": 0.5,
+            "path_count": 6
+          },
+          {
+            "width_pt": 3.0,
+            "path_count": 2
+          },
+          {
+            "width_pt": 2.306,
+            "path_count": 2
+          }
+        ],
+        "11": [
+          {
+            "width_pt": 0.75,
+            "path_count": 579
+          },
+          {
+            "width_pt": 1.5,
+            "path_count": 143
+          },
+          {
+            "width_pt": 0.5,
+            "path_count": 123
+          },
+          {
+            "width_pt": 2.0,
+            "path_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "PAX",
+      "document_code": "AA-2582799-1",
+      "file": "upload/02-PAX-AA-2582799-1.pdf",
+      "sha256": "65ec0ae03afe857a2a97b8a24af7eab2f9e45b8b797a4180a6aaef00250baa16",
+      "page_count": 32,
+      "page_size_pt": [
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "visually_inspected_pdf_pages": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "stroke_path_histograms": {
+        "7": [
+          {
+            "width_pt": 0.75,
+            "path_count": 2092
+          },
+          {
+            "width_pt": 0.5,
+            "path_count": 99
+          },
+          {
+            "width_pt": 1.5,
+            "path_count": 20
+          },
+          {
+            "width_pt": 1.0,
+            "path_count": 17
+          },
+          {
+            "width_pt": 4.0,
+            "path_count": 2
+          }
+        ],
+        "8": [
+          {
+            "width_pt": 0.75,
+            "path_count": 1079
+          },
+          {
+            "width_pt": 0.5,
+            "path_count": 20
+          },
+          {
+            "width_pt": 1.5,
+            "path_count": 14
+          }
+        ]
+      }
+    },
+    {
+      "name": "MOSSJÖN",
+      "document_code": "AA-2390862-4",
+      "file": "upload/03-MOSSJÖN-AA-2390862-4.pdf",
+      "sha256": "9aa141a0b956ea2624f6a0f25cf000f3b8871e7c9b4d2ce8e410c8ba9c15a1dc",
+      "page_count": 32,
+      "page_size_pt": [
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "visually_inspected_pdf_pages": [
+        1,
+        6,
+        10,
+        12
+      ],
+      "stroke_path_histograms": {
+        "10": [
+          {
+            "width_pt": 0.75,
+            "path_count": 648
+          },
+          {
+            "width_pt": 1.5,
+            "path_count": 170
+          },
+          {
+            "width_pt": 0.5,
+            "path_count": 41
+          },
+          {
+            "width_pt": 3.0,
+            "path_count": 7
+          },
+          {
+            "width_pt": 6.0,
+            "path_count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "observations": [
+    {
+      "reference": "MILSBO",
+      "pages": [
+        1
+      ],
+      "observation": "One large product name, one complete product figure, generous white field; no editorial introduction.",
+      "adaptation": "Keep one finished ENTROPI model view on cover; retain only product/revision and prototype pointer."
+    },
+    {
+      "reference": "MILSBO",
+      "pages": [
+        7
+      ],
+      "observation": "Hardware is identified by actual form, nearby quantity and small exact part number. Quantities are 18 pt in extracted PDF text.",
+      "adaptation": "Use 18 pt quantities and20/30/10family IDs next to exact printed fasteners; avoid repeated explanatory paragraphs."
+    },
+    {
+      "reference": "MILSBO",
+      "pages": [
+        11
+      ],
+      "observation": "A small complete object is linked to two large local fastening details through continuous pointed callout tails.",
+      "adaptation": "Use connected tails and a smaller overview on the three lock pages, preserving actual joint targets."
+    },
+    {
+      "reference": "PAX",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "observation": "Hardware overview feeds directly into local repeated counts. Fine approach axes show the relationship between moving hardware and its actual hole.",
+      "adaptation": "Keep the verified pin/wedge axes thin and dashed, with a separate bold motion arrow. Quantities and family IDs sit at the detail."
+    },
+    {
+      "reference": "PAX",
+      "pages": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "observation": "Two or three consecutive actions may share a page while camera and object orientation remain stable; the local outcome is shown at the insertion site.",
+      "adaptation": "Retain 17 pages; use actual seated lock details beside insertion stages and shorten repeated bottom text."
+    },
+    {
+      "reference": "MOSSJÖN",
+      "pages": [
+        6,
+        10,
+        12
+      ],
+      "observation": "Part variants are precise; assembly then fastening is read in order on the same stable object. Adjacent detail comparisons explain an important choice locally.",
+      "adaptation": "Keep pin-before-wedge sequence; distinguish short camera wedges from long frame wedges, with optional frame choice and page jump before that step."
+    }
+  ],
+  "planned_parameters": {
+    "page_count": 17,
+    "vector_secondary_pt": 0.5,
+    "vector_outline_pt": 0.75,
+    "step_number_pt": 32,
+    "quantity_pt": 18,
+    "measured_reference_cover_pt": {
+      "MILSBO": 90,
+      "PAX": 140,
+      "MOSSJÖN": 90
+    },
+    "measured_reference_page_number_pt": 9,
+    "measured_reference_part_id_pt": [
+      7,
+      7.5
+    ]
+  },
+  "layout_risks": [
+    "Connected tails must terminate at the correct actual joint and stay clear of captions; an intact circle plus a new tail would create a visual seam.",
+    "A 0.75 pt contour is appropriate for carrier/lock vectors; dense PCB details need lighter lines rather than a uniform increase across all imagery.",
+    "18 pt quantities and added family IDs must be checked against the two-detail layout at actual A4 size.",
+    "The seated lock detail must use the corresponding keeper/yoke/frame geometry; a generic lock result could be mechanically misleading.",
+    "The PCB insertion gate must stay before assembly; graphical simplification cannot imply a verified approach path."
+  ],
+  "source_artwork_policy": "Independent ENTROPI CAD illustrations and existing fonts; reference PDF artwork and fonts are not copied."
+}
