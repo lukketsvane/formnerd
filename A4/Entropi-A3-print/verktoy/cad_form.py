@@ -105,6 +105,23 @@ def knappboss():
 
 
 def bygg_form():
+    import hashlib
+    nokkel = hashlib.sha1((json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
+    cache = HER.parent / "print" / "cad" / f"form_{nokkel}"
+    if (cache / "union.brep").exists():
+        delar = {p.stem: import_brep(p) for p in sorted(cache.glob("*.brep")) if p.stem != "union"}
+        u = import_brep(cache / "union.brep")
+        tid("form frå cache")
+        return u, delar
+    u, delar = _bygg_form()
+    cache.mkdir(parents=True, exist_ok=True)
+    for n, d in delar.items():
+        export_brep(d, cache / f"{n}.brep")
+    export_brep(u, cache / "union.brep")
+    return u, delar
+
+
+def _bygg_form():
     k = kropp_loft()
     tid("kropp-loft")
     delar = {"kropp": k, "linse": linsetonne()}
