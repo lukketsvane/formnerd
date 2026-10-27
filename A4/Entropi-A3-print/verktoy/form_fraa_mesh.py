@@ -32,7 +32,7 @@ def kropp_seksjonar():
             continue
         full = glatt(p).simplify(0.1)
         w = np.sqrt(max(29.6**2 - (z - AZ) ** 2, 0.0)) + 0.3
-        p = p.difference(box(58.0, AY - w, 95.0, AY + w)) if w > 0.5 else p
+        p = p.difference(box(66.0, AY - w, 95.0, AY + w)) if w > 0.5 else p
         p = p.difference(box(-5, 44.0, 18.5, 85.0)) if z > 56 else p
         if p.geom_type != "Polygon":
             p = max(p.geoms, key=lambda q: q.area)
