@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "image_count": 14,
+  "engine": "Blender 4.3.2 Cycles + Freestyle",
+  "geometry_changes": false,
+  "source_scene_sha256": "0058945ddf817272faac08a8e517442deb472f21adc69f56a1dc610d467c2690",
+  "images": [
+    {
+      "scene": "assembled",
+      "image": "technical_assembled.png",
+      "sha256": "7f7e8bead71985bf6d1aa2d8663d745baa3bae9255a60774cac35d861041de2b",
+      "metadata_sha256": "853714507e8c9168f604504f50ed7b9efa6fe771927fec5b49795aab2708a181",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 21,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "exploded",
+      "image": "technical_exploded.png",
+      "sha256": "fb7897f3f2f1efda3924dac22dda155d8dde581b22d707b2929bc703be595779",
+      "metadata_sha256": "da5f26979741697fc87c17f21853b310a7dabe365a2a26550145404e67f5fe2b",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 21,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "seated",
+      "image": "technical_seated.png",
+      "sha256": "e177d6b2d71fb97d3dddb53d4348180bdf37c2926b1e22b63e524f19a4e9265b",
+      "metadata_sha256": "056b94aba0b13e74952371a5247c813dc885fd46d778f72a83a68724f98c51d0",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 1,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "keepers_rear",
+      "image": "technical_keepers_rear.png",
+      "sha256": "41c3966068f0312970a2a30865c0a70e419ce418b6c45e40a7d15799e3949363",
+      "metadata_sha256": "ae7b136681c55b1daa1e4894eda4bcdbd3beea0020f9d232b7ce867344b92d94",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 3,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "keepers_locked",
+      "image": "technical_keepers_locked.png",
+      "sha256": "37e55af398cb3571afe9c4467360ef93210301140085c7b999eb43ab45ec411d",
+      "metadata_sha256": "90ae234f2e9db889c5720a341b2b64686a717b252e543701d5354b581503b69d",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 11,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "yokes",
+      "image": "technical_yokes.png",
+      "sha256": "766d295ccadc1fd2f6d841c029bd70fcc132d83edae0b16eea2ab8477777d6ff",
+      "metadata_sha256": "e59a95970ff14f6fc2a62b5fcb0729ee8e1d941a558a40a2a053fbc4bce741c5",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 13,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "rear_usb",
+      "image": "technical_rear_usb.png",
+      "sha256": "64acc7d978444dc990ba19a0522ce3cf6a999b6b7bde4b1ac0b0f5ac7d8d4d33",
+      "metadata_sha256": "11fd9be1148346be0f93504cfbc633a0c353bb56a64bcc52ad4045f04837e491",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 21,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "pair_front",
+      "image": "technical_pair_front.png",
+      "sha256": "f5c01a5f478cbf01d5be25ae562e91a218b5e1254e3cb73e44cfbef4d79a7e2d",
+      "metadata_sha256": "cde543df6cfe1299b2b9a477f1d0f7cb9e4c234e9e357e22b798ed1853e0c768",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 0,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "board_stack",
+      "image": "technical_board_stack.png",
+      "sha256": "d2126a6a698fa39de4a4eb6ada9f9a50851c4201c1a71cd336db1da2cfd27e5a",
+      "metadata_sha256": "11b19974aa1236fd8255a7c57d42de79047c648c2e2cda663051237309e57fae",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 0,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "cam_only",
+      "image": "technical_cam_only.png",
+      "sha256": "364ed10300cafdf56d484f00280825d52322b67f2ec184142b3e89cdf7eed27e",
+      "metadata_sha256": "3fd240935df8f83a9d4aaeac8ad8386a1788f941292cb5e0a5384df10335eb40",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 0,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "mb_only",
+      "image": "technical_mb_only.png",
+      "sha256": "47da86795184bb2a9e804d69ea39ec7e4ce042d55677a3fb024179c7629d021b",
+      "metadata_sha256": "455be718d41a14b5cd9c01c8400985af778cd4412cce4f1ec2544f906333bf36",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 0,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "sensor_contact",
+      "image": "technical_sensor_contact.png",
+      "sha256": "eec5ea72bbedc9bbe765f06ca18cc81ea0e01bf0bb46bdb1a07a04bedcbd8fd8",
+      "metadata_sha256": "6bd8c5352adcd127d58c932a457502ab465f48eaac330225b51858dfa707f58d",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 1,
+      "visual_review": "approved",
+      "intentional_crop": true,
+      "additional_source_stl_count": 0
+    },
+    {
+      "scene": "bank_placement",
+      "image": "technical_bank_placement.png",
+      "sha256": "f5f8371f450cd5a4c7e36913eb95da23907bf1627ecdf25d18a029e07408f70b",
+      "metadata_sha256": "0764691235cf02c9bcc1085b094984a569fd09d73a6d23a0754d9d7e28980654",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 22,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 2
+    },
+    {
+      "scene": "bank_locked",
+      "image": "technical_bank_locked.png",
+      "sha256": "528884730dede777fc41c0b666b9c9eaf802b928bef43ebfc7ea0cc01376609f",
+      "metadata_sha256": "9fdadc364e3b96211e799a4a289cb0b40ab05d528bd32be391ad869be9922d24",
+      "dimensions": [
+        3000,
+        2400
+      ],
+      "mode": "RGB",
+      "grayscale_only": true,
+      "printed_part_count": 30,
+      "visual_review": "approved",
+      "intentional_crop": false,
+      "additional_source_stl_count": 10
+    }
+  ]
+}

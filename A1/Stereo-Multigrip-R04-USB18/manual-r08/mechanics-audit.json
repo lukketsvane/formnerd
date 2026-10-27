@@ -1,0 +1,102 @@
+{
+  "source_revision": "88cc8f327fba72e6517ea30dcadc4e978419da37",
+  "geometry_modified": false,
+  "counts": {
+    "full_printed": 30,
+    "camera_only_printed": 21,
+    "new_replacement_prints": 11,
+    "reused_full": 19,
+    "reused_camera_only": 10
+  },
+  "new_ids": [
+    "02_multigrip_carrier",
+    "03_MB_keeper_left",
+    "04_MB_keeper_right",
+    "20_keeper_L_up_wedge",
+    "20_keeper_L_down_wedge",
+    "20_keeper_R_up_wedge",
+    "20_keeper_R_down_wedge",
+    "30_yoke_L_up_wedge",
+    "30_yoke_L_down_wedge",
+    "30_yoke_R_up_wedge",
+    "30_yoke_R_down_wedge"
+  ],
+  "reused_ids": [
+    "01_bank_cradle",
+    "05_sensor_yoke_left",
+    "06_sensor_yoke_right",
+    "10_frame_1_pin",
+    "10_frame_4_pin",
+    "10_frame_2_wedge",
+    "10_frame_2_pin",
+    "10_frame_4_wedge",
+    "10_frame_3_wedge",
+    "10_frame_1_wedge",
+    "10_frame_3_pin",
+    "20_keeper_R_down_pin",
+    "20_keeper_L_up_pin",
+    "20_keeper_R_up_pin",
+    "20_keeper_L_down_pin",
+    "30_yoke_L_up_pin",
+    "30_yoke_L_down_pin",
+    "30_yoke_R_up_pin",
+    "30_yoke_R_down_pin"
+  ],
+  "directions": {
+    "keeper_insertion": [
+      0,
+      0,
+      1
+    ],
+    "yoke_insertion": [
+      0,
+      0,
+      -1
+    ],
+    "camera_pin_insertion": [
+      0.9510565163,
+      0.3090169944,
+      0
+    ],
+    "frame_pin_insertion": [
+      1,
+      0,
+      0
+    ],
+    "all_wedge_insertion": [
+      0,
+      0,
+      -1
+    ],
+    "left_usb_insertion": [
+      -0.9510565163,
+      -0.3090169944,
+      0
+    ],
+    "right_usb_insertion": [
+      0.9510565163,
+      0.3090169944,
+      0
+    ]
+  },
+  "keeper_sweep_sequence": "both keepers before bank, yokes, pins, wedges and cables",
+  "pcb_insertion": {
+    "straight_rear_path": "nominal collision",
+    "collision_mm3_each": 149.681432,
+    "seated_collision_mm3_each": 0,
+    "alternative_path": "not evaluated",
+    "physical_impossibility_claim": false
+  },
+  "hardware": {
+    "esp32_cam": 2,
+    "esp32_cam_mb": 2,
+    "compatible_micro_usb_cables": 2,
+    "power_bank_optional": 1,
+    "fastening_screws": 0,
+    "separate_sensor_pads": 0
+  },
+  "contact": "Integral yoke pads on stiff sensor shoulders, yoke hard stops, no designed compression; keep lens and ribbon free",
+  "physical_test": "not performed",
+  "print_completion": "not confirmed",
+  "audit_notes": "See mechanics-audit.md"
+}

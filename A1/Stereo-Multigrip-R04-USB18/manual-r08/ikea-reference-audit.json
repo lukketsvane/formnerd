@@ -1,0 +1,93 @@
+{
+  "task": "Reduce and improve R04 manual using actual IKEA reference PDF pages",
+  "status": "COMPLETE",
+  "source_manual": "ENTROPI_R04_Monteringsmanual edition06,26pages",
+  "suggested_pages": 17,
+  "reference_review": "12 pages visually viewed individually, no contact sheet",
+  "references": {
+    "MILSBO": {
+      "file": "01-MILSBO-AA-2094158-9.pdf",
+      "pages": [
+        1,
+        7,
+        11,
+        16
+      ]
+    },
+    "MOSSJON": {
+      "file": "03-MOSSJÖN-AA-2390862-4.pdf",
+      "pages": [
+        6,
+        10,
+        12,
+        19
+      ]
+    },
+    "TARVA": {
+      "file": "36-TARVA-AA-2440493-1.pdf",
+      "pages": [
+        3,
+        5,
+        29,
+        30
+      ]
+    }
+  },
+  "inspection_files": [
+    {
+      "file": "refs/MILSBO-01.png",
+      "sha256": "91db9616e2f56c6776ab7a647cd7e13c13cd6ea3ee6d4386c02d213d261da3ba"
+    },
+    {
+      "file": "refs/MILSBO-07.png",
+      "sha256": "a914564c4069d6ab0132e8f869514dc6b5b8067606dafaf1272d3fa85ad6186c"
+    },
+    {
+      "file": "refs/MILSBO-11.png",
+      "sha256": "cda74001215d360ee3f71a7c5abbf2d4a41395444fc3a2619d9753a35e34002e"
+    },
+    {
+      "file": "refs/MILSBO-16.png",
+      "sha256": "9dc8f58edebbc57cf1012e271f39f84d58cb4f73dfc86098acd0d9fbf9ebe021"
+    },
+    {
+      "file": "refs/MOSSJON-06.png",
+      "sha256": "d42b44c7b41328bd7cd2c91a211e97b951cec54abad84a15c601b09e0806fc2f"
+    },
+    {
+      "file": "refs/MOSSJON-10.png",
+      "sha256": "9b704ead978cec900d026c71c234faaa979fc500a35358b46bd713f48d078ac1"
+    },
+    {
+      "file": "refs/MOSSJON-12.png",
+      "sha256": "b1fdbe0d729c3cfe255a42f53658aeb85dbb9da66bfbf921b840f1d0c58eda33"
+    },
+    {
+      "file": "refs/MOSSJON-19.png",
+      "sha256": "6853ddee77b0e4576855cc82487772f1cfbb499d9cf4c34e180a5d79efc2abe9"
+    },
+    {
+      "file": "refs/TARVA-03.png",
+      "sha256": "7b375714ee623e249fa7440025a330e9a5fa15c7860332d2c37cb525cbf2607d"
+    },
+    {
+      "file": "refs/TARVA-05.png",
+      "sha256": "6f7df7e6ddc2f3f6f09eb6d69ec842b2b8c8bc3696894163299a02ce94180f7f"
+    },
+    {
+      "file": "refs/TARVA-29.png",
+      "sha256": "4f1904b318aed60f7d2dabd8a19cdfe26918a94bb588dcd309102e4867fb8204"
+    },
+    {
+      "file": "refs/TARVA-30.png",
+      "sha256": "59a2450fb1698e901ae9c67c30762994c90cc5f099d6d2fe586fdeae48da981e"
+    }
+  ],
+  "nonnegotiable": [
+    "PCB insertion gate",
+    "correct11new/19reuse full inventory",
+    "keeper-before-yoke/pins/cables/bank sequence",
+    "actual source geometry",
+    "no physical-validation overclaim"
+  ]
+}

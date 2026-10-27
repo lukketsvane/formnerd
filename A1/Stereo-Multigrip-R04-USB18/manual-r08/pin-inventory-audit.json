@@ -1,0 +1,536 @@
+{
+  "source": "source/build_harness.py key() and lockpair(): same KEY for all 12 pins, WEDGE_SHORT for all 8 camera wedges, WEDGE for 4 frame wedges",
+  "source_sha256": "fae7a85e1d16a79047149184c5ad12b477074fcb77be6cc025b200ce7aaa8184",
+  "all_24_matches": true,
+  "results": [
+    {
+      "name": "10_frame_1_pin",
+      "sha256": "f48d5497ac0e3df4856a7daa34b843527c167b9265e0ea457c948f088d876d50",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          -28.0,
+          -36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000000004,
+        24.3,
+        4.400000000000002
+      ],
+      "volume_mm3": 637.9995125084603,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "10_frame_1_wedge",
+      "sha256": "d711af5f737ec99932f3dfbae556444aed660422897cd8785b2a01cd3563cd99",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          -28.0,
+          -36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.000000200000001,
+        7.000000000000002,
+        16.0000002
+      ],
+      "volume_mm3": 170.62194671058523,
+      "template_volume_mm3": 170.6219467105847,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "10_frame_2_pin",
+      "sha256": "efc5a9c3392809522af34416a61b45196d2b0be17c2e2ae106a8441e218c372a",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          -28.0,
+          36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000000004,
+        24.3,
+        4.400000000000002
+      ],
+      "volume_mm3": 637.9995125084602,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "10_frame_2_wedge",
+      "sha256": "c007f8ce0d730d4d90d942ef140bb2b358fa6099437b817d8b27f0d194ac1551",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          -28.0,
+          36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.000000200000001,
+        7.000000000000002,
+        16.0000002
+      ],
+      "volume_mm3": 170.62194671058523,
+      "template_volume_mm3": 170.6219467105847,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "10_frame_3_pin",
+      "sha256": "56dc28d4429f7deb1891e39081534581e57de53309cafb899ceda513df7aaca7",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          28.0,
+          -36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000000004,
+        24.3,
+        4.400000000000002
+      ],
+      "volume_mm3": 637.9995125084602,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "10_frame_3_wedge",
+      "sha256": "4f1a644e940f81c8625343a49dd59d2b4549416e7582c5157978e2cba7f5bd9a",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          28.0,
+          -36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.000000200000001,
+        7.000000000000005,
+        16.0000002
+      ],
+      "volume_mm3": 170.62194671058523,
+      "template_volume_mm3": 170.6219467105847,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "10_frame_4_pin",
+      "sha256": "1a9953deb596970e0a60acb639c5d34e01c92302a128cf1b55267744dd208e36",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          28.0,
+          36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000000004,
+        24.3,
+        4.400000000000002
+      ],
+      "volume_mm3": 637.9995125084602,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "10_frame_4_wedge",
+      "sha256": "de6958d19c1bfce3bcfadb38c2ea899d287975a01679f14005160ef7b4b1db61",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 0,
+        "translate_removed_mm": [
+          28.0,
+          36.4,
+          8.150000000000002
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.000000200000001,
+        7.000000000000005,
+        16.0000002
+      ],
+      "volume_mm3": 170.62194671058523,
+      "template_volume_mm3": 170.6219467105847,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_L_down_pin",
+      "sha256": "6290a37a5b818736e591fc19f06291c72857cdb5d983ecf87de930d181d70d72",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -26.492999999999995,
+          -28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000005745,
+        24.300000000000633,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125088349,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_L_down_wedge",
+      "sha256": "6a9678e42ea90451f938bdd5ef0d4e7e1cbd3ffd1dcc3ad221ca7a549612d95c",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -26.492999999999995,
+          -28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.000000200009122,
+        7.000000000001588,
+        9.500000200000095
+      ],
+      "volume_mm3": 117.58834015307717,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_L_down_pin",
+      "sha256": "7c3db3e44027868eff0226f327f603398abab21fcf9e4dc24fb6be37d8dba800",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -38.163,
+          -19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000006278,
+        24.300000000005447,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125083984,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_L_down_wedge",
+      "sha256": "80207f0c2ae178b77afa42d7e8334fc1abb872698c3529e92126ba6f8d5e6f9b",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -38.163,
+          -19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.0000002000121597,
+        7.0000000000053415,
+        9.500000200000178
+      ],
+      "volume_mm3": 117.5883401532446,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_L_up_pin",
+      "sha256": "ec7a2e7b8d707298a9cfe823d08c47a693b6147c254c152b3684bfe21e6aedd5",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -26.492999999999995,
+          28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000002698,
+        24.300000000005355,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125083924,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_L_up_wedge",
+      "sha256": "f5768afc75e6cf0f296e5f3e5566c0722f1318cfe6cf5de82e9935bc1366a516",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -26.492999999999995,
+          28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.00000020000338,
+        7.0000000000078035,
+        9.500000200000338
+      ],
+      "volume_mm3": 117.58834015328935,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_L_up_pin",
+      "sha256": "e2e51f50b654264c32ffe31ac7b4ac2a160b8a11aa43c017606acb98c3d890ad",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -38.163,
+          19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000002705,
+        24.300000000005355,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125083925,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_L_up_wedge",
+      "sha256": "84518d1cafd1e5b4009cfc38c899ef83fdeae98da092a04938d44027a3766144",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          -38.163,
+          19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.0000002000033588,
+        7.000000000007489,
+        9.500000200000342
+      ],
+      "volume_mm3": 117.5883401533045,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_R_down_pin",
+      "sha256": "0cbfc140becca71cf8ebd13e638d14100755580962931c108b56876138f046f1",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          26.492999999999995,
+          -28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000008061,
+        24.300000000002072,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125083321,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_R_down_wedge",
+      "sha256": "ce4e0120670b127de854f8a4127dc2802a9956bd223c53e26832ee6923ae0797",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          26.492999999999995,
+          -28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.000000200008643,
+        7.000000000002679,
+        9.50000020000007
+      ],
+      "volume_mm3": 117.58834015314399,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_R_down_pin",
+      "sha256": "b61121a5b4bb452fb77757197c786c229963be5c649f5fac13dc472755f70899",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          38.163,
+          -19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000007512,
+        24.3000000000023,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125085055,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_R_down_wedge",
+      "sha256": "f91d3707a97e44b9a25babe3cb6458677645b38452a53715fa1b0a862c88d044",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          38.163,
+          -19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.0000002000096835,
+        7.0000000000022276,
+        9.500000200000068
+      ],
+      "volume_mm3": 117.58834015327584,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_R_up_pin",
+      "sha256": "8929da3c2b36729ac7063c073ba539fea0d0cfa55f5c83966f0327e142297f30",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          26.492999999999995,
+          28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000000448,
+        24.30000000000068,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125083803,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "20_keeper_R_up_wedge",
+      "sha256": "bf47411e793892bfaf3bb8d6b246e4542502a9abd00cdf632f8b746755ec2424",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          26.492999999999995,
+          28.0,
+          29.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.000000200001206,
+        7.000000000000373,
+        9.500000199999999
+      ],
+      "volume_mm3": 117.58834015319388,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_R_up_pin",
+      "sha256": "6e19e49c4ea5348514082d6a7afd01cdad44ff7bb0c1ff621905da26a6f16d43",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          38.163,
+          19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        10.000000000000941,
+        24.300000000000686,
+        4.400000000000006
+      ],
+      "volume_mm3": 637.9995125084744,
+      "template_volume_mm3": 637.9995125084564,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    },
+    {
+      "name": "30_yoke_R_up_wedge",
+      "sha256": "3ef85608cbbaaefd867e3aeeef6b219c9479923856dcb8935af97935ae5bbc72",
+      "inverse_placement": {
+        "pod_roll_removed_degrees": 18.0,
+        "translate_removed_mm": [
+          38.163,
+          19.8,
+          36.0
+        ],
+        "lock_rotation_removed_degrees": 90
+      },
+      "dimensions_mm": [
+        3.0000002000014643,
+        7.0000000000004245,
+        9.500000199999999
+      ],
+      "volume_mm3": 117.58834015321573,
+      "template_volume_mm3": 117.58834015320764,
+      "symmetric_difference_mm3": 0.0,
+      "matches_source_common_shape": true
+    }
+  ],
+  "conclusion": "Camera 20 pin is geometrically accurate for all 8 camera pins and optional 4 frame pins. All 8 camera wedges are congruent 9.5 mm short wedges. Frame wedges are the distinct 16 mm long wedge. Only rigid assembly transformations differ."
+}
