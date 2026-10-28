@@ -240,7 +240,7 @@ tid("detaljar")
 sa = F["saum"]
 sb = F["sokar"]
 sokar_flate = Pos((sb["x"][0] + sb["x"][1]) / 2, (sb["y"][0] + sb["y"][1]) / 2) * RectangleRounded(sb["x"][1] - sb["x"][0], sb["y"][1] - sb["y"][0], sb["fillet"])
-saum_sokar = band_z(sokar_flate, sa["z"], sa["djupn"], sa["breidd"]) & boks([-10, sb["x"][1] - 0.5], [-10, 200], [-10, 200])
+saum_sokar = band_z(sokar_flate, sa.get("z_blokk", sa["z"]), sa["djupn"], sa["breidd"]) & boks([-10, sb["x"][1] - 0.5], [-10, 200], [-10, 200])
 saum_hjul = band_z(Pos(hx, hy) * Circle(hr), sa["z"], sa["djupn"], sa["breidd"])
 saum_knapp = band_z(Pos(ux, uy) * Circle(F["knappboss"]["r"]), sa["z"], sa["djupn"], sa["breidd"])
 andre = union([KOMP[n] for n in KOMP if n not in ("kropp", "sokar", "hjulboss", "knappboss", "linse")])
