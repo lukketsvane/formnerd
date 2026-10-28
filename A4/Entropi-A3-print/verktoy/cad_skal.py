@@ -283,7 +283,7 @@ uh = S["usb_hylse"]
 vern += rboks_y(y_hjul_usb - uh["djupn"], y_hjul_usb + 5, x_usb, az + 2.0, ut_t["b_x"] + 2 * uh["vegg"], ut_t["h_z"] + 4 + 2 * uh["vegg"], ut_t["r"] + uh["vegg"])
 kjol_b = ut_t["b_x"] + 2 * uh["vegg"]
 kjol_zu = az + 2.0 - (ut_t["h_z"] + 4 + 2 * uh["vegg"]) / 2
-kjol_prof = Polygon((x_usb - kjol_b / 2, kjol_zu + 0.5), (x_usb + kjol_b / 2, kjol_zu + 0.5), (x_usb, kjol_zu + 0.5 - kjol_b / 2), align=None)
+kjol_prof = Polygon((x_usb - kjol_b / 2, kjol_zu + 0.5), (x_usb, kjol_zu + 0.5 - kjol_b / 2), (x_usb + kjol_b / 2, kjol_zu + 0.5), align=None)
 vern += Pos(0, y_hjul_usb - uh["djupn"], 0) * Rot(90, 0, 0) * extrude(kjol_prof, -(5 + uh["djupn"]))
 vern += boks([ug["x"] - r_s - v, ug["x"] + r_s + v], [y_grep - 3, y_grep + ug["djupn"] + v], [ug["z"] - ug["lengd_z"] / 2 - v, ug["z"] + ug["lengd_z"] / 2 + v])
 vern += boks([hx - pw / 2 - v, hx + pw / 2 + v], [hy - pd / 2 - v, hy + pd / 2 + v], [S["tak_z"] - 6, 90])
