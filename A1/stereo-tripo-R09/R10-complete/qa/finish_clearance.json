@@ -1,0 +1,48 @@
+{
+  "P01_R10_Tripo_front_shell": {
+    "raw": {
+      "watertight": true,
+      "volume_mm3": 33488.39,
+      "voxels": 326898,
+      "hardware_overlap_voxels": 0,
+      "holder_overlap_voxels": 0
+    },
+    "_SMOOTH_18": {
+      "watertight": true,
+      "volume_mm3": 32819.74,
+      "voxels": 306074,
+      "hardware_overlap_voxels": 14,
+      "holder_overlap_voxels": 0
+    },
+    "_SMOOTH_55": {
+      "watertight": true,
+      "volume_mm3": 31879.55,
+      "voxels": 290790,
+      "hardware_overlap_voxels": 554,
+      "holder_overlap_voxels": 6
+    }
+  },
+  "P02_R10_Tripo_rear_shell": {
+    "raw": {
+      "watertight": true,
+      "volume_mm3": 32136.95,
+      "voxels": 316862,
+      "hardware_overlap_voxels": 0,
+      "holder_overlap_voxels": 0
+    },
+    "_SMOOTH_18": {
+      "watertight": true,
+      "volume_mm3": 31451.38,
+      "voxels": 297633,
+      "hardware_overlap_voxels": 111,
+      "holder_overlap_voxels": 2
+    },
+    "_SMOOTH_55": {
+      "watertight": true,
+      "volume_mm3": 30485.76,
+      "voxels": 282646,
+      "hardware_overlap_voxels": 446,
+      "holder_overlap_voxels": 66
+    }
+  }
+}

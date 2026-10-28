@@ -1,0 +1,16 @@
+{
+  "P01_R10_Tripo_front_shell": {
+    "watertight": true,
+    "faces": 241984,
+    "volume_mm3": 31503.5,
+    "hardware_collision_voxels": 0,
+    "holder_collision_voxels": 0
+  },
+  "P02_R10_Tripo_rear_shell": {
+    "watertight": true,
+    "faces": 217824,
+    "volume_mm3": 29918.7,
+    "hardware_collision_voxels": 0,
+    "holder_collision_voxels": 0
+  }
+}

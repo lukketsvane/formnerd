@@ -1,0 +1,132 @@
+{
+  "revision": "ENTROPI-STEREO-R10-development",
+  "source": "R09 Tripo H3.1 master via previously verified silhouette voxel reconstruction",
+  "master_sha256": "cd8773ad0e1508bb28d19a341f611cb98dc7dacac6964d2a01132e1a7752964c",
+  "units": "mm",
+  "pitch_mm": 0.52,
+  "surface_source": "outer_volume_grid.npz",
+  "battery_mm": [
+    94,
+    62,
+    15
+  ],
+  "battery_center_x_mm": 3.6,
+  "bank_right_port_face_x_mm": 50.6,
+  "nominal_inner_usb_wall_x_mm": 51.050000000000004,
+  "board_stereo_baseline_mm": 76.326,
+  "MB_depth_assumed_mm": 20.5,
+  "parts": {
+    "H12_R10_centered_Linocell_U_cage": {
+      "volume_mm3": 3315.8,
+      "bounds_mm": [
+        [
+          -45.8,
+          -34.5,
+          -1.2
+        ],
+        [
+          43.6,
+          34.5,
+          5.4
+        ]
+      ],
+      "watertight": true
+    },
+    "P01_R10_Tripo_front_shell": {
+      "watertight": true,
+      "volume_mm3": 33488.4,
+      "faces": 238660,
+      "bounds_mm": [
+        [
+          -53.32,
+          -37.2,
+          -27.84
+        ],
+        [
+          53.32,
+          37.2,
+          -1.28
+        ]
+      ],
+      "format": "mesh STL, not NURBS"
+    },
+    "P02_R10_Tripo_rear_shell": {
+      "watertight": true,
+      "volume_mm3": 32136.9,
+      "faces": 209664,
+      "bounds_mm": [
+        [
+          -53.32,
+          -37.2,
+          -1.32
+        ],
+        [
+          53.32,
+          37.2,
+          19.0
+        ]
+      ],
+      "format": "mesh STL, not NURBS"
+    },
+    "P03_R10_lens_bezel_L": {
+      "volume_mm3": 267.4,
+      "bounds_mm": [
+        [
+          -45.41,
+          -3.25,
+          -29.4
+        ],
+        [
+          -30.91,
+          11.25,
+          -24.8
+        ]
+      ],
+      "watertight": true
+    },
+    "P03_R10_lens_bezel_R": {
+      "volume_mm3": 267.4,
+      "bounds_mm": [
+        [
+          30.92,
+          -3.25,
+          -29.4
+        ],
+        [
+          45.41,
+          11.25,
+          -24.8
+        ]
+      ],
+      "watertight": true
+    },
+    "P04_R10_trigger_cap": {
+      "volume_mm3": 331.6,
+      "bounds_mm": [
+        [
+          -40.85,
+          28.5,
+          -10.85
+        ],
+        [
+          -31.15,
+          37.0,
+          -1.15
+        ]
+      ],
+      "watertight": true
+    }
+  },
+  "test_shell_hardware_voxel_overlap": 0,
+  "test_shell_harness_voxel_overlap": 0,
+  "printable_geometry_only": true,
+  "caveats": [
+    "lens-focal-axis-to-Tripo-surface not physically validated",
+    "USB-A/C Y and Z positions nominal, not measured",
+    "outer shell and front graphics approximate Tripo form, not class-A NURBS",
+    "0.52 mm voxel resolution cannot certify 0.45 mm connector clearance",
+    "screw channels nominal and not physically tested",
+    "shell fit with H11/H12 and cable routing needs physical test",
+    "no electrical assembly tested"
+  ]
+}
