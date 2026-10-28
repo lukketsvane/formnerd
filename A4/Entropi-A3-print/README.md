@@ -93,9 +93,9 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 
 | Kontroll | Resultat |
 | --- | --- |
-| Delar | Botnskal 98.1 cm³ og toppskal 139.1 cm³. Alle fem delane er eitt gyldig B-rep-solid kvar (BRepCheck), og STL-ane er vasstette. |
+| Delar | Botnskal 100,6 cm³ og toppskal 142,5 cm³. Alle fem delane er eitt gyldig B-rep-solid kvar (BRepCheck), STEP-filene blir lesne inn att som eitt lukka solid kvar, og STL-ane er vasstette. |
 | Kollisjon mellom elektronikk og skal | 0 mm³ for alle proxyar og for magnetane i lommene. Klaringa til stabelen er 0.2 mm i begge skala. |
-| Monteringsbaner | 0 mm³ for: stabel ned i botnen, toppskal ned over stabelen, USB-plugg inn, EC11 opp i pipa, brytar ned i lomma |
+| Monteringsbaner | 0 mm³ for: stabel ned i botnen, toppskal ned over stabelen, USB-plugg inn, EC11 opp i pipa, brytar ned i lomma. Golvet under brytarlomma er 2,6 mm. |
 | Veggar mot holrom | Stabelen 8.0 mm, brytarlomma 4.41, EC11-pipa 5.5, magnetlommene 1.5, USB-tunnelen 8.68 |
 | Hjulet | Hjulbossen r 17,5 rundt (31.1; 103.9), toppen ved z 80. A17-hjulet er Ø24. |
 | Forma mot Tripo-meshen | Kroppssnitta er målte frå meshen, så omrisset følgjer A3-forma; tubane, bossane og løpet er reine solidar lagde oppå |
