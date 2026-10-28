@@ -285,6 +285,7 @@ kjol_b = ut_t["b_x"] + 2 * uh["vegg"]
 kjol_zu = az + 2.0 - (ut_t["h_z"] + 4 + 2 * uh["vegg"]) / 2
 kjol_prof = Polygon((x_usb - kjol_b / 2, kjol_zu + 0.5), (x_usb, kjol_zu + 0.5 - kjol_b / 2), (x_usb + kjol_b / 2, kjol_zu + 0.5), align=None)
 vern += Pos(0, y_hjul_usb - uh["djupn"], 0) * Rot(90, 0, 0) * extrude(kjol_prof, -(5 + uh["djupn"]))
+vern += tak_boks([x_usb - kjol_b / 2, x_usb + kjol_b / 2], [y_hjul_usb - uh["djupn"], y_hjul_usb + 5], [az + 2.0, az + 2.0 + (ut_t["h_z"] + 4 + 2 * uh["vegg"]) / 2 - 0.5])
 vern += boks([ug["x"] - r_s - v, ug["x"] + r_s + v], [y_grep - 3, y_grep + ug["djupn"] + v], [ug["z"] - ug["lengd_z"] / 2 - v, ug["z"] + ug["lengd_z"] / 2 + v])
 vern += boks([hx - pw / 2 - v, hx + pw / 2 + v], [hy - pd / 2 - v, hy + pd / 2 + v], [S["tak_z"] - 6, 90])
 vern += vsyl(stv["senter"][0], stv["senter"][1], stv["boss_r"], sk_["z_botn"] - 1, stv["boss_z_topp"])
@@ -299,7 +300,7 @@ spor += tak_boks([x_mb_botn - kl, x_mb_topp + kl], [y_usb - st["mb_lengd"] - kl,
 spor += tak_boks([x_cam_front - 0.01, x1 + 1.0], [y_sd - 10, y_sd + 16], [az - 7.5 - kl, z_hog + kl])
 spor += tak_boks([x_kort - 0.4, x_kort + 1.2], [y_sd - 10, y_sd + 13], [az - 5.5 - 0.4, z_hog + kl])
 spor += boks([x_cam_front - 0.01, x1 + 1], [y_sd - 10, y_sd + 13], [-10, sp["leidning_z"]])
-spor += tak_boks([x_cam_bak - 3.2 - kl, x_cam_bak + 0.01], [y_sd + 14.5 - kl, y_ant + kl], [az - 9.0 - kl, z_hog + kl])
+spor += tak_boks([x_cam_bak - 2.4 - kl, x_cam_bak + 0.01], [y_sd + 14.5 - kl, y_ant + kl], [az - 9.0 - kl, z_hog + kl])
 spor += tak_boks([x_mb_topp - 0.01, x_mb_topp + 3.0 + kl], [y_usb - 6.5, y_usb + 1.0], [az - 4.0 - kl, z_hog + kl])
 spor += rboks_y_tak(y_usb - 1.0, y_usb + 30, x_usb, az, 9.4, 11.6, 1.8)
 STOLPAR -= spor
@@ -395,8 +396,13 @@ def skriv_stl(m, fil):
     return t.is_watertight, round(t.volume / 1000, 2)
 
 
+(UT / "cad").mkdir(exist_ok=True)
 for n, m in DELAR.items():
     vasstett, vol = skriv_stl(m, UT / "stl" / f"{n}.stl")
     print(f"{n:<10} gyldig {m.is_valid!s:<5} solidar {len(m.solids())}  stl vasstett {vasstett!s:<5} volum {vol:6.2f} cm3")
+    if n in ("botn", "topp"):
+        export_brep(m, UT / "cad" / f"{n}.brep")
     export_step(m, UT / "step" / f"{n}.step")
+    inn = import_step(UT / "step" / f"{n}.step")
+    print(f"{n:<10} STEP lesen att: solidar {len(inn.solids())} skal {len(inn.shells())} flater {len(inn.faces())}")
 tid("eksport")
