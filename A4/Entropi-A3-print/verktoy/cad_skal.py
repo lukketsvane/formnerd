@@ -118,7 +118,9 @@ def bogesegment(r0, r1, senter_grader, spenn_grader, x0, x1):
 ef_pin_y, ef_pin_z = vinkel_pos(EF["pinne"]["rr"], EF["pinne"]["vinkel"])
 KROPP0 += xsyl(EF["flens_x"][1] - 0.5, EF["flens_x"][1] + EF["pinne"]["hogd"], EF["pinne"]["r"], ef_pin_y, ef_pin_z)
 eu = EF["utloysar"]
-KROPP0 += Pos(eu["x"][0], eu["senter"][0], eu["senter"][1]) * Rot(0, 90, 0) * fillet(Cylinder(eu["r"], eu["x"][1] - eu["x"][0], align=(Align.CENTER, Align.CENTER, Align.MIN)).edges().group_by(Axis.Z)[-1], 1.0)
+EF_KNAPP = Pos(eu["x"][0], eu["senter"][0], eu["senter"][1]) * Rot(0, 90, 0) * fillet(Cylinder(eu["r"], eu["x"][1] - eu["x"][0], align=(Align.CENTER, Align.CENTER, Align.MIN)).edges().group_by(Axis.Z)[-1], 1.0)
+KROPP0_CACHE = cf.HER.parent / "print" / "cad" / "kropp0.brep"
+KROPP0_LASTA = Solid(import_brep(KROPP0_CACHE).solids()[0].wrapped) if "--kropp0" in sys.argv and KROPP0_CACHE.exists() else None
 tid("kropp0")
 
 # --- stabelen ----------------------------------------------------------------
@@ -186,7 +188,7 @@ tid("opningar")
 
 # --- detaljar skorne i overflata ---------------------------------------------
 YTRE_BLOKK = KOMP["kropp"]
-KROPP = KROPP0
+KROPP = KROPP0_LASTA if KROPP0_LASTA is not None else KROPP0
 dz = S["deling_z"]
 
 
@@ -246,7 +248,7 @@ SAUM = (saum_sokar + saum_hjul + saum_knapp) - andre
 tid("saumar")
 
 kutt_ = [("knurl", KNURL), ("ef_skruar", EF_SKRUAR), ("ef_prikk", EF_PRIKK), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)]
-for namn_, op_ in kutt_:
+for namn_, op_ in ([] if KROPP0_LASTA is not None else kutt_):
     try:
         ny_ = KROPP - op_
     except Exception as e_:
@@ -267,6 +269,10 @@ for namn_, op_ in kutt_:
     tid("  - " + namn_)
 print("KROPP0 med detaljar gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
 KROPP0 = KROPP
+if KROPP0_LASTA is None:
+    KROPP0 = Solid((KROPP0 + EF_KNAPP).solids()[0].wrapped)
+    print("utløysarknapp for objektivet lagd til: gyldig", KROPP0.is_valid, "skal", len(KROPP0.shells()))
+    export_brep(KROPP0, KROPP0_CACHE)
 
 # --- holkjerne ---------------------------------------------------------------
 v = S["vegg"]
@@ -305,9 +311,13 @@ def hol_solid(ytre, indre):
     from OCP.TopoDS import TopoDS
     skal = getattr(TopoDS, "Shell_s", None) or TopoDS.Shell
     orient = getattr(BRepLib, "OrientClosedSolid_s", None) or BRepLib.OrientClosedSolid
-    ys = ytre.solids()[0].shells()
-    assert len(ys) == 1, len(ys)
+    ys = sorted(ytre.solids()[0].shells(), key=lambda sh: -sh.bounding_box().diagonal)
+    for sh in ys[1:]:
+        bb = sh.bounding_box()
+        print("   indre skal i ytre kropp:", [round(v, 1) for v in (bb.min.X, bb.min.Y, bb.min.Z, bb.max.X, bb.max.Y, bb.max.Z)])
     ms = BRepBuilderAPI_MakeSolid(skal(ys[0].wrapped))
+    for sh in ys[1:]:
+        ms.Add(skal(sh.wrapped))
     for sol in indre.solids():
         for sh in sol.shells():
             ms.Add(skal(sh.wrapped.Reversed()))
