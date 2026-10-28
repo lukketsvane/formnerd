@@ -1,0 +1,71 @@
+{
+  "P05F1_M3_front_spacer": {
+    "ear_mm": [
+      -18,
+      -27
+    ],
+    "z_length_mm": 10.15,
+    "volume_mm3": 270.96
+  },
+  "P05R1_M3_rear_spacer": {
+    "ear_mm": [
+      -18,
+      -27
+    ],
+    "z_length_mm": 13.9,
+    "volume_mm3": 371.07
+  },
+  "P05F2_M3_front_spacer": {
+    "ear_mm": [
+      -18,
+      27
+    ],
+    "z_length_mm": 14.31,
+    "volume_mm3": 382.02
+  },
+  "P05R2_M3_rear_spacer": {
+    "ear_mm": [
+      -18,
+      27
+    ],
+    "z_length_mm": 13.9,
+    "volume_mm3": 371.07
+  },
+  "P05F3_M3_front_spacer": {
+    "ear_mm": [
+      35,
+      -27
+    ],
+    "z_length_mm": 10.15,
+    "volume_mm3": 270.96
+  },
+  "P05R3_M3_rear_spacer": {
+    "ear_mm": [
+      35,
+      -27
+    ],
+    "z_length_mm": 13.9,
+    "volume_mm3": 371.07
+  },
+  "P05F4_M3_front_spacer": {
+    "ear_mm": [
+      35,
+      27
+    ],
+    "z_length_mm": 14.31,
+    "volume_mm3": 382.02
+  },
+  "P05R4_M3_rear_spacer": {
+    "ear_mm": [
+      35,
+      27
+    ],
+    "z_length_mm": 13.9,
+    "volume_mm3": 371.07
+  },
+  "T13_USB_wall_coupon": {
+    "measure_positions_before_print": true,
+    "z_length_mm": 20.0,
+    "volume_mm3": 1756.99
+  }
+}

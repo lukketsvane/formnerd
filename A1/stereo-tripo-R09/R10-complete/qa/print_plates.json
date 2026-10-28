@@ -1,0 +1,368 @@
+{
+  "revision": "R10",
+  "printer": "Bambu Lab P1S",
+  "plate_mm": [
+    256,
+    256
+  ],
+  "source": "Tripo-derived geometry and analytic CadQuery parts",
+  "plates": [
+    {
+      "file": "01_R10_Tripo_shells_P1S.3mf",
+      "format": "3mf geometry only, NOT gcode",
+      "number_of_objects": 2,
+      "objects": [
+        {
+          "id": "P01_R10_Tripo_front",
+          "file": "parts\\P01_R10_Tripo_front_shell_SMOOTH_CLEAR.stl",
+          "bounds_mm": [
+            [
+              13.68,
+              90.8,
+              0.0
+            ],
+            [
+              120.32,
+              165.2,
+              25.9
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 31503.45
+        },
+        {
+          "id": "P02_R10_Tripo_rear",
+          "file": "parts\\P02_R10_Tripo_rear_shell_SMOOTH_CLEAR.stl",
+          "bounds_mm": [
+            [
+              134.68,
+              90.8,
+              0.0
+            ],
+            [
+              241.32,
+              165.2,
+              19.67
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 29918.69
+        }
+      ],
+      "sha256": "59919f4593ae96342023d1353ee45c13f78df623afbba6f4393bb383308c2061",
+      "bytes": 7211531
+    },
+    {
+      "file": "02_R10_mechanics_P1S.3mf",
+      "format": "3mf geometry only, NOT gcode",
+      "number_of_objects": 13,
+      "objects": [
+        {
+          "id": "H11_R09_dual_MB_harness",
+          "file": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\stereo-tripo-R09\\harness\\stl\\H11_dual_ESP32CAM_MB_harness.stl",
+          "bounds_mm": [
+            [
+              12.5,
+              155.25,
+              0.0
+            ],
+            [
+              113.5,
+              216.75,
+              6.8
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 3831.27
+        },
+        {
+          "id": "H12_R10_centered_battery_cage",
+          "file": "parts\\H12_R10_centered_Linocell_U_cage.stl",
+          "bounds_mm": [
+            [
+              140.3,
+              151.5,
+              0.0
+            ],
+            [
+              229.7,
+              220.5,
+              6.6
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 3315.7
+        },
+        {
+          "id": "P03_L_lens_bezel",
+          "file": "parts\\P03_R10_lens_bezel_L.stl",
+          "bounds_mm": [
+            [
+              20.75,
+              53.75,
+              0.0
+            ],
+            [
+              35.25,
+              68.25,
+              4.6
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 267.11
+        },
+        {
+          "id": "P03_R_lens_bezel",
+          "file": "parts\\P03_R10_lens_bezel_R.stl",
+          "bounds_mm": [
+            [
+              44.75,
+              53.75,
+              0.0
+            ],
+            [
+              59.25,
+              68.25,
+              4.6
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 267.11
+        },
+        {
+          "id": "P04_trigger",
+          "file": "parts\\P04_R10_trigger_cap.stl",
+          "bounds_mm": [
+            [
+              72.15,
+              56.15,
+              0.0
+            ],
+            [
+              81.85,
+              65.85,
+              8.5
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 331.23
+        },
+        {
+          "id": "P05_front_spacer_1",
+          "file": "parts\\P05F1_M3_front_spacer.stl",
+          "bounds_mm": [
+            [
+              99.6,
+              47.6,
+              0.0
+            ],
+            [
+              106.4,
+              54.4,
+              10.15
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 270.8
+        },
+        {
+          "id": "P05_front_spacer_2",
+          "file": "parts\\P05F2_M3_front_spacer.stl",
+          "bounds_mm": [
+            [
+              121.6,
+              47.6,
+              0.0
+            ],
+            [
+              128.4,
+              54.4,
+              14.31
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 381.79
+        },
+        {
+          "id": "P05_front_spacer_3",
+          "file": "parts\\P05F3_M3_front_spacer.stl",
+          "bounds_mm": [
+            [
+              143.6,
+              47.6,
+              0.0
+            ],
+            [
+              150.4,
+              54.4,
+              10.15
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 270.8
+        },
+        {
+          "id": "P05_front_spacer_4",
+          "file": "parts\\P05F4_M3_front_spacer.stl",
+          "bounds_mm": [
+            [
+              165.6,
+              47.6,
+              0.0
+            ],
+            [
+              172.4,
+              54.4,
+              14.31
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 381.79
+        },
+        {
+          "id": "P05_rear_spacer_1",
+          "file": "parts\\P05R1_M3_rear_spacer.stl",
+          "bounds_mm": [
+            [
+              99.6,
+              78.6,
+              0.0
+            ],
+            [
+              106.4,
+              85.4,
+              13.9
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 370.85
+        },
+        {
+          "id": "P05_rear_spacer_2",
+          "file": "parts\\P05R2_M3_rear_spacer.stl",
+          "bounds_mm": [
+            [
+              121.6,
+              78.6,
+              0.0
+            ],
+            [
+              128.4,
+              85.4,
+              13.9
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 370.85
+        },
+        {
+          "id": "P05_rear_spacer_3",
+          "file": "parts\\P05R3_M3_rear_spacer.stl",
+          "bounds_mm": [
+            [
+              143.6,
+              78.6,
+              0.0
+            ],
+            [
+              150.4,
+              85.4,
+              13.9
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 370.85
+        },
+        {
+          "id": "P05_rear_spacer_4",
+          "file": "parts\\P05R4_M3_rear_spacer.stl",
+          "bounds_mm": [
+            [
+              165.6,
+              78.6,
+              0.0
+            ],
+            [
+              172.4,
+              85.4,
+              13.9
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 370.85
+        }
+      ],
+      "sha256": "a1811eff1ca608bce5ec98e1468e24901a92800a5927270403c32d81488295db",
+      "bytes": 187934
+    },
+    {
+      "file": "00_R10_fit_tests_P1S.3mf",
+      "format": "3mf geometry only, NOT gcode",
+      "number_of_objects": 3,
+      "objects": [
+        {
+          "id": "T11_ESP32_MB_fit",
+          "file": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\stereo-tripo-R09\\harness\\stl\\T11_MB_edge_fit_coupon.stl",
+          "bounds_mm": [
+            [
+              43.5,
+              95.0,
+              0.0
+            ],
+            [
+              70.5,
+              115.0,
+              3.8
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 638.56
+        },
+        {
+          "id": "T12_Linocell_corner_fit",
+          "file": "C:\\Users\\Iver\\Documents\\github\\formnerd\\A1\\stereo-tripo-R09\\harness\\stl\\T12_Linocell_corner_fit_coupon.stl",
+          "bounds_mm": [
+            [
+              111.09,
+              93.09,
+              0.0
+            ],
+            [
+              140.91,
+              116.91,
+              4.0
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 456.81
+        },
+        {
+          "id": "T13_USB_wall_test",
+          "file": "parts\\T13_USB_wall_coupon.stl",
+          "bounds_mm": [
+            [
+              188.0,
+              84.0,
+              0.0
+            ],
+            [
+              208.0,
+              126.0,
+              2.6
+            ]
+          ],
+          "watertight": true,
+          "volume_mm3": 1756.97
+        }
+      ],
+      "sha256": "267a4c4eb0f6ca9d2a4931b0bd840541756962ec830c0928583c0786e63d9319",
+      "bytes": 22604
+    }
+  ],
+  "assembly": {
+    "hybrid_mesh_glb": "R10_hybrid_assembly.glb",
+    "analytic_step": "R10_analytic_inserts.step",
+    "mesh_shell_is_nurbs": false,
+    "nominal_hardware": "in GLB only"
+  }
+}
