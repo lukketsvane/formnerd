@@ -1,0 +1,57 @@
+{
+  "edition": "08",
+  "reviewer": "manual_usability",
+  "method": "Each page PNG viewed individually using view_image; source assembly captions checked against mechanics audit.",
+  "page_reviews": [
+    {
+      "page": 10,
+      "status": "approved",
+      "sha256": "ea71570f036f72443df2ff77ca2db0a24401ead26217238d05a481786428953c",
+      "notes": "Four keeper joint markers, single unobstructed leader, pin-before-short-wedge order, clear text."
+    },
+    {
+      "page": 11,
+      "status": "approved",
+      "sha256": "3655a56dbf2f0bbe98e80f581cb65559f934bfef4389d8aad3893ad29eb65adf",
+      "notes": "Yokes approach from lens front, broad sensor locator, free lens/flex and shoulder contact detail, no forced wedging instruction."
+    },
+    {
+      "page": 12,
+      "status": "approved",
+      "sha256": "37686340b63872a20d443895cf4b91f718e9d657e99c1ad1e582d505a2c7a28e",
+      "notes": "Four yoke joint markers, single leader, correct 9.5mm short wedge, all labels clear."
+    },
+    {
+      "page": 13,
+      "status": "approved",
+      "sha256": "a7ff4a7c8a17509cae567ff37478ec8e665495d488614840c4ad5a9b71f62a07",
+      "notes": "Both verified USB insertion-axis arrows clearly point into nominal sockets; supports USBbase, holds plug shell, open test before optional closure."
+    },
+    {
+      "page": 14,
+      "status": "approved",
+      "sha256": "8258b1578456f127cabe9c123927fb4239918da12a1a89069835d5ca0df14075",
+      "notes": "Nominal bank and cradle approach shown; optional branch correctly skips to page16; no text/geometry collision."
+    },
+    {
+      "page": 15,
+      "status": "approved",
+      "sha256": "dadda2a1ccb04486152cca166e04e0ccdf138e8138d129aa92369afacea4ce82",
+      "notes": "Four frame joint markers, single leader, correct pin-first then16mm long wedge action."
+    },
+    {
+      "page": 16,
+      "status": "approved",
+      "sha256": "9b0b23854f92c02bba3c2f6de6f68b1fa76e18c986f622c9661763a30a40d4d8",
+      "notes": "Camera-only8pins+8shortwedges; optional full12pins+12wedges; checklist and empty observations fields legible."
+    },
+    {
+      "page": 17,
+      "status": "approved",
+      "sha256": "25e8bb5fcc3b9dfee03dfa8b7a8cabf0a04542d34d8be40798408bcb34005345",
+      "notes": "USB disconnected, wedge withdrawn before pin, frame→yokes→keepers reverse order, support electronics, unverified extraction clearly stated."
+    }
+  ],
+  "issues": [],
+  "source_modified": false
+}

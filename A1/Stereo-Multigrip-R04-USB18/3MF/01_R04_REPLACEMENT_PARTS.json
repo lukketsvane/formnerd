@@ -1,0 +1,166 @@
+{
+  "file": "/workspace/scratch/185d3eec6f20/formnerd/A1/Stereo-Multigrip-R04-USB18/3MF/01_R04_REPLACEMENT_PARTS.3mf",
+  "type": "unsliced 3MF Core build layout",
+  "bed_mm": [
+    256,
+    256
+  ],
+  "margin_mm": 16,
+  "gap_mm": 8,
+  "parts": [
+    {
+      "name": "PRINT_02_multigrip_carrier",
+      "size_mm": [
+        106.557732,
+        80.800004,
+        35.850001000000006
+      ],
+      "translation_mm": [
+        69.278866,
+        56.400002,
+        0
+      ],
+      "triangles": 32842
+    },
+    {
+      "name": "PRINT_03_MB_keeper_left",
+      "size_mm": [
+        55.841955,
+        62.513442,
+        20.45
+      ],
+      "translation_mm": [
+        158.479437,
+        47.256721,
+        0
+      ],
+      "triangles": 7636
+    },
+    {
+      "name": "PRINT_04_MB_keeper_right",
+      "size_mm": [
+        55.841955,
+        62.513442,
+        20.45
+      ],
+      "translation_mm": [
+        43.920249999999996,
+        136.056725,
+        0
+      ],
+      "triangles": 7230
+    },
+    {
+      "name": "PRINT_20_keeper_L_up_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        84.591955,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_20_keeper_L_down_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        102.091955,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_20_keeper_R_up_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        119.591955,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_20_keeper_R_down_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        137.09195499999998,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_L_up_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        154.59195499999998,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_L_down_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        172.09195499999998,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_R_up_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        189.59195499999998,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "PRINT_30_yoke_R_down_wedge",
+      "size_mm": [
+        9.5,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        207.09195499999998,
+        108.300004,
+        0
+      ],
+      "triangles": 468
+    }
+  ]
+}

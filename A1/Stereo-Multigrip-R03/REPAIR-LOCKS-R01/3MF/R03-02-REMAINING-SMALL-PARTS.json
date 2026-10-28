@@ -1,0 +1,292 @@
+{
+  "file": "C:\\Users\\Iver\\Documents\\github\\formnerd-stereo-r03-save-20261024\\A1\\Stereo-Multigrip-R03\\REPAIR-LOCKS-R01\\3MF\\R03-02-REMAINING-SMALL-PARTS.3mf",
+  "type": "unsliced 3MF Core build layout",
+  "bed_mm": [
+    256,
+    256
+  ],
+  "margin_mm": 16,
+  "gap_mm": 8,
+  "parts": [
+    {
+      "name": "PRINT_03_MB_keeper_left",
+      "size_mm": [
+        49.45525,
+        63.699852,
+        13.450000000000001
+      ],
+      "translation_mm": [
+        40.727625,
+        47.849925999999996,
+        0
+      ],
+      "triangles": 5000
+    },
+    {
+      "name": "PRINT_04_MB_keeper_right",
+      "size_mm": [
+        49.45525,
+        63.699852,
+        13.450000000000001
+      ],
+      "translation_mm": [
+        98.18287500000001,
+        47.849925999999996,
+        0
+      ],
+      "triangles": 5000
+    },
+    {
+      "name": "PRINT_05_sensor_yoke_left",
+      "size_mm": [
+        15.714096,
+        47.658234,
+        8.75
+      ],
+      "translation_mm": [
+        138.767548,
+        39.829117,
+        0
+      ],
+      "triangles": 3968
+    },
+    {
+      "name": "PRINT_06_sensor_yoke_right",
+      "size_mm": [
+        15.714096,
+        47.658234,
+        8.75
+      ],
+      "translation_mm": [
+        162.481644,
+        39.829117,
+        0
+      ],
+      "triangles": 3968
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        183.33869199999998,
+        28.15,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        201.33869199999998,
+        28.15,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        219.33869199999998,
+        28.15,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        21.0,
+        99.849852,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        39.0,
+        99.849852,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        57.0,
+        99.849852,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        75.0,
+        99.849852,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        93.0,
+        99.849852,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        114.0,
+        91.19985199999999,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        138.0,
+        91.19985199999999,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        162.0,
+        91.19985199999999,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        186.0,
+        91.19985199999999,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        210.0,
+        91.19985199999999,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        24.0,
+        123.49985199999999,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        48.0,
+        123.49985199999999,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        72.0,
+        123.49985199999999,
+        0
+      ],
+      "triangles": 468
+    }
+  ]
+}

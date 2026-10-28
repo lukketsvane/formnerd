@@ -1,0 +1,762 @@
+{
+  "geometry_revision": "R04 USB18",
+  "render_revision": "manual-r05",
+  "parts_new": [
+    "02_multigrip_carrier",
+    "03_MB_keeper_left",
+    "04_MB_keeper_right",
+    "20_keeper_L_down_wedge",
+    "20_keeper_L_up_wedge",
+    "20_keeper_R_down_wedge",
+    "20_keeper_R_up_wedge",
+    "30_yoke_L_down_wedge",
+    "30_yoke_L_up_wedge",
+    "30_yoke_R_down_wedge",
+    "30_yoke_R_up_wedge"
+  ],
+  "parts_reused": [
+    "05_sensor_yoke_left",
+    "06_sensor_yoke_right",
+    "20_keeper_L_down_pin",
+    "20_keeper_L_up_pin",
+    "20_keeper_R_down_pin",
+    "20_keeper_R_up_pin",
+    "30_yoke_L_down_pin",
+    "30_yoke_L_up_pin",
+    "30_yoke_R_down_pin",
+    "30_yoke_R_up_pin",
+    "01_bank_cradle",
+    "10_frame_1_pin",
+    "10_frame_2_pin",
+    "10_frame_3_pin",
+    "10_frame_4_pin",
+    "10_frame_1_wedge",
+    "10_frame_2_wedge",
+    "10_frame_3_wedge",
+    "10_frame_4_wedge"
+  ],
+  "electronics": "Analytic nominal geometry reproduced from R04 build_harness.py; tiny header pins omitted in drawings for clarity.",
+  "scenes": [
+    {
+      "name": "01_assembled",
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right",
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right",
+        "20_keeper_L_down_pin",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_pin",
+        "20_keeper_R_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_L_up_pin",
+        "30_yoke_R_down_pin",
+        "30_yoke_R_up_pin",
+        "20_keeper_L_down_wedge",
+        "20_keeper_L_up_wedge",
+        "20_keeper_R_down_wedge",
+        "20_keeper_R_up_wedge",
+        "30_yoke_L_down_wedge",
+        "30_yoke_L_up_wedge",
+        "30_yoke_R_down_wedge",
+        "30_yoke_R_up_wedge",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1"
+      ],
+      "camera": [
+        1.0,
+        0.65,
+        2.5
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "part_02_multigrip_carrier",
+      "parts": [
+        "02_multigrip_carrier"
+      ],
+      "camera": [
+        1.2,
+        0.8,
+        2
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "part_03_MB_keeper_left",
+      "parts": [
+        "03_MB_keeper_left"
+      ],
+      "camera": [
+        1.2,
+        0.8,
+        2
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "part_04_MB_keeper_right",
+      "parts": [
+        "04_MB_keeper_right"
+      ],
+      "camera": [
+        1.2,
+        0.8,
+        2
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "part_short_wedge",
+      "parts": [
+        "20_keeper_L_down_wedge"
+      ],
+      "camera": [
+        1,
+        0.7,
+        2
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "part_yoke",
+      "parts": [
+        "05_sensor_yoke_left"
+      ],
+      "camera": [
+        1.2,
+        0.8,
+        2
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "part_pin",
+      "parts": [
+        "20_keeper_L_down_pin"
+      ],
+      "camera": [
+        1.2,
+        0.8,
+        2
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "part_long_wedge",
+      "parts": [
+        "10_frame_1_wedge"
+      ],
+      "camera": [
+        1.2,
+        0.8,
+        2
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "03_camera_placement",
+      "parts": [
+        "02_multigrip_carrier",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1"
+      ],
+      "camera": [
+        1.0,
+        0.65,
+        2.5
+      ],
+      "translations_mm": {},
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "04_keeper_insertion",
+      "parts": [
+        "02_multigrip_carrier",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right"
+      ],
+      "camera": [
+        1.5,
+        0.85,
+        1.5
+      ],
+      "translations_mm": {
+        "03_MB_keeper_left": [
+          0,
+          0,
+          -50
+        ],
+        "04_MB_keeper_right": [
+          0,
+          0,
+          -50
+        ]
+      },
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "05_yoke_insertion",
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1",
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right"
+      ],
+      "camera": [
+        1.25,
+        0.8,
+        2.0
+      ],
+      "translations_mm": {
+        "05_sensor_yoke_left": [
+          0,
+          0,
+          45
+        ],
+        "06_sensor_yoke_right": [
+          0,
+          0,
+          45
+        ]
+      },
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "06_pin_insertion",
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right",
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1",
+        "20_keeper_L_down_pin",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_pin",
+        "20_keeper_R_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_L_up_pin",
+        "30_yoke_R_down_pin",
+        "30_yoke_R_up_pin"
+      ],
+      "camera": [
+        0.7,
+        0.8,
+        2.4
+      ],
+      "translations_mm": {
+        "20_keeper_L_down_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ],
+        "20_keeper_L_up_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ],
+        "20_keeper_R_down_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ],
+        "20_keeper_R_up_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ],
+        "30_yoke_L_down_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ],
+        "30_yoke_L_up_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ],
+        "30_yoke_R_down_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ],
+        "30_yoke_R_up_pin": [
+          -18.070073809607916,
+          -5.871322893124001,
+          -0.0
+        ]
+      },
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "07_wedge_insertion",
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right",
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right",
+        "20_keeper_L_down_pin",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_pin",
+        "20_keeper_R_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_L_up_pin",
+        "30_yoke_R_down_pin",
+        "30_yoke_R_up_pin",
+        "20_keeper_L_down_wedge",
+        "20_keeper_L_up_wedge",
+        "20_keeper_R_down_wedge",
+        "20_keeper_R_up_wedge",
+        "30_yoke_L_down_wedge",
+        "30_yoke_L_up_wedge",
+        "30_yoke_R_down_wedge",
+        "30_yoke_R_up_wedge",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1"
+      ],
+      "camera": [
+        0.9,
+        0.75,
+        2.5
+      ],
+      "translations_mm": {
+        "20_keeper_L_down_wedge": [
+          0,
+          0,
+          27
+        ],
+        "20_keeper_L_up_wedge": [
+          0,
+          0,
+          27
+        ],
+        "20_keeper_R_down_wedge": [
+          0,
+          0,
+          27
+        ],
+        "20_keeper_R_up_wedge": [
+          0,
+          0,
+          27
+        ],
+        "30_yoke_L_down_wedge": [
+          0,
+          0,
+          27
+        ],
+        "30_yoke_L_up_wedge": [
+          0,
+          0,
+          27
+        ],
+        "30_yoke_R_down_wedge": [
+          0,
+          0,
+          27
+        ],
+        "30_yoke_R_up_wedge": [
+          0,
+          0,
+          27
+        ]
+      },
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "08_USB_insertion",
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right",
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right",
+        "20_keeper_L_down_pin",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_pin",
+        "20_keeper_R_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_L_up_pin",
+        "30_yoke_R_down_pin",
+        "30_yoke_R_up_pin",
+        "20_keeper_L_down_wedge",
+        "20_keeper_L_up_wedge",
+        "20_keeper_R_down_wedge",
+        "20_keeper_R_up_wedge",
+        "30_yoke_L_down_wedge",
+        "30_yoke_L_up_wedge",
+        "30_yoke_R_down_wedge",
+        "30_yoke_R_up_wedge",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1",
+        "USB_L_nominal_body",
+        "USB_R_nominal_body"
+      ],
+      "camera": [
+        0.5,
+        1.15,
+        -2.6
+      ],
+      "translations_mm": {
+        "USB_L_nominal_body": [
+          7.608452130361228,
+          2.472135954999579,
+          0.0
+        ],
+        "USB_R_nominal_body": [
+          -7.608452130361228,
+          -2.472135954999579,
+          -0.0
+        ]
+      },
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "09_rear_frame",
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right",
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right",
+        "20_keeper_L_down_pin",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_pin",
+        "20_keeper_R_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_L_up_pin",
+        "30_yoke_R_down_pin",
+        "30_yoke_R_up_pin",
+        "20_keeper_L_down_wedge",
+        "20_keeper_L_up_wedge",
+        "20_keeper_R_down_wedge",
+        "20_keeper_R_up_wedge",
+        "30_yoke_L_down_wedge",
+        "30_yoke_L_up_wedge",
+        "30_yoke_R_down_wedge",
+        "30_yoke_R_up_wedge",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1",
+        "01_bank_cradle",
+        "REF_power_bank"
+      ],
+      "camera": [
+        1.4,
+        0.8,
+        1.7
+      ],
+      "translations_mm": {
+        "01_bank_cradle": [
+          0,
+          0,
+          -40
+        ],
+        "REF_power_bank": [
+          0,
+          0,
+          -40
+        ]
+      },
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    },
+    {
+      "name": "10_frame_locks",
+      "parts": [
+        "02_multigrip_carrier",
+        "03_MB_keeper_left",
+        "04_MB_keeper_right",
+        "05_sensor_yoke_left",
+        "06_sensor_yoke_right",
+        "20_keeper_L_down_pin",
+        "20_keeper_L_up_pin",
+        "20_keeper_R_down_pin",
+        "20_keeper_R_up_pin",
+        "30_yoke_L_down_pin",
+        "30_yoke_L_up_pin",
+        "30_yoke_R_down_pin",
+        "30_yoke_R_up_pin",
+        "20_keeper_L_down_wedge",
+        "20_keeper_L_up_wedge",
+        "20_keeper_R_down_wedge",
+        "20_keeper_R_up_wedge",
+        "30_yoke_L_down_wedge",
+        "30_yoke_L_up_wedge",
+        "30_yoke_R_down_wedge",
+        "30_yoke_R_up_wedge",
+        "REF_L_MB",
+        "REF_L_CAM",
+        "REF_L_SD_cage",
+        "REF_L_sensor_carrier",
+        "REF_L_lens_barrel",
+        "REF_L_lens_glass",
+        "REF_L_flex",
+        "REF_L_flex_socket",
+        "REF_L_USB_socket",
+        "REF_L_socket_-1",
+        "REF_L_socket_1",
+        "REF_R_MB",
+        "REF_R_CAM",
+        "REF_R_SD_cage",
+        "REF_R_sensor_carrier",
+        "REF_R_lens_barrel",
+        "REF_R_lens_glass",
+        "REF_R_flex",
+        "REF_R_flex_socket",
+        "REF_R_USB_socket",
+        "REF_R_socket_-1",
+        "REF_R_socket_1",
+        "01_bank_cradle",
+        "10_frame_1_pin",
+        "10_frame_2_pin",
+        "10_frame_3_pin",
+        "10_frame_4_pin",
+        "10_frame_1_wedge",
+        "10_frame_2_wedge",
+        "10_frame_3_wedge",
+        "10_frame_4_wedge",
+        "REF_power_bank"
+      ],
+      "camera": [
+        1.1,
+        0.9,
+        1.8
+      ],
+      "translations_mm": {
+        "10_frame_1_pin": [
+          -22,
+          0,
+          0
+        ],
+        "10_frame_2_pin": [
+          -22,
+          0,
+          0
+        ],
+        "10_frame_3_pin": [
+          -22,
+          0,
+          0
+        ],
+        "10_frame_4_pin": [
+          -22,
+          0,
+          0
+        ],
+        "10_frame_1_wedge": [
+          0,
+          0,
+          22
+        ],
+        "10_frame_2_wedge": [
+          0,
+          0,
+          22
+        ],
+        "10_frame_3_wedge": [
+          0,
+          0,
+          22
+        ],
+        "10_frame_4_wedge": [
+          0,
+          0,
+          22
+        ]
+      },
+      "geometry_revision": "R04 USB18",
+      "hidden_edges": false
+    }
+  ]
+}

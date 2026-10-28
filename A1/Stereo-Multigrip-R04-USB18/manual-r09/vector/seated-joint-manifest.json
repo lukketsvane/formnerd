@@ -1,0 +1,105 @@
+{
+  "geometry_modified": false,
+  "figures": [
+    {
+      "name": "yoke_lock_seated",
+      "source_stage": "yoke_wedge_stage",
+      "basis_matches_source_stage_exactly": true,
+      "max_fastener_center_error_mm": 0.0,
+      "line_groups": 248,
+      "source_STEP_sha256": {
+        "02_multigrip_carrier": "ae1e979cef5ad574d0dad64e31e1e9f7b97a159b6af52f574b336fcfc7ae9e54",
+        "05_sensor_yoke_left": "7ac033b4cc34039d7c25eb1837f12e2ba70abb3eaa6c78763c7f25f3cda0ae7a",
+        "30_yoke_L_up_pin": "e2e51f50b654264c32ffe31ac7b4ac2a160b8a11aa43c017606acb98c3d890ad",
+        "30_yoke_L_up_wedge": "84518d1cafd1e5b4009cfc38c899ef83fdeae98da092a04938d44027a3766144"
+      },
+      "local_transform": {
+        "world_pivot_mm": [
+          -44.281536488623956,
+          18.83091902264404,
+          36.0
+        ],
+        "rotate_z_deg": -108.0
+      },
+      "crop": {
+        "scope": "carrier and yoke only; surrounding material sectioned for joint detail",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "basis": [
+        [
+          0.5547001962252291,
+          -0.8320502943378437,
+          0.0
+        ],
+        [
+          0.5878949576358872,
+          0.39192997175725813,
+          0.7076513378950493
+        ],
+        [
+          -0.5888015039841447,
+          -0.3925343359894298,
+          0.7065618047809736
+        ]
+      ],
+      "translations_mm": {}
+    },
+    {
+      "name": "frame_lock_seated",
+      "source_stage": "lock_frame_wedge_stage",
+      "basis_matches_source_stage_exactly": true,
+      "max_fastener_center_error_mm": 0.0,
+      "line_groups": 192,
+      "source_STEP_sha256": {
+        "01_bank_cradle": "03ca1367db49e0ad88f6b229e1965d9d26a18b20b509d8c0fcbc9b598fa25f1f",
+        "02_multigrip_carrier": "ae1e979cef5ad574d0dad64e31e1e9f7b97a159b6af52f574b336fcfc7ae9e54",
+        "10_frame_1_pin": "f48d5497ac0e3df4856a7daa34b843527c167b9265e0ea457c948f088d876d50",
+        "10_frame_1_wedge": "d711af5f737ec99932f3dfbae556444aed660422897cd8785b2a01cd3563cd99"
+      },
+      "local_transform": {
+        "world_pivot_mm": [
+          -28,
+          -36.4,
+          8.15
+        ],
+        "rotate_z_deg": -90
+      },
+      "crop": {
+        "scope": "cradle and carrier only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "basis": [
+        [
+          0.5547001962252291,
+          -0.8320502943378437,
+          0.0
+        ],
+        [
+          0.5878949576358872,
+          0.39192997175725813,
+          0.7076513378950493
+        ],
+        [
+          -0.5888015039841447,
+          -0.3925343359894298,
+          0.7065618047809736
+        ]
+      ],
+      "translations_mm": {}
+    }
+  ]
+}

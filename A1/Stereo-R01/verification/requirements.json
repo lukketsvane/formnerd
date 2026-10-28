@@ -1,0 +1,66 @@
+{
+  "revision": "stereo-r01",
+  "units": "mm",
+  "status": "parameterized_hybrid_CAD_pending_hardware_measurement_and_physical_validation",
+  "selected_reference": "reference/selected-sketch.jpeg",
+  "design_requirements": {
+    "current_sketch_supersedes_previous_pinhole_spiral": true,
+    "visible_lenses": 2,
+    "preserve": [
+      "grip at image-left",
+      "two equal visible lenses on a horizontal front feature",
+      "flowing transition around the front feature",
+      "single dark upper shutter button",
+      "low front USB-C opening",
+      "discreet top and side shell seam"
+    ]
+  },
+  "brief_requirements": {
+    "source": "FormNerd - Prosjektoversikt.pdf",
+    "page": 2,
+    "handheld_camera": true,
+    "minimum_lens_diameter_mm": 30,
+    "shutter_function": true,
+    "USB_C_functions": ["charging", "image transfer"],
+    "high_detail_physical_model_with_consistent_finish": true,
+    "surface_finish_status": "provisional: mesh-derived surface ripples remain; final physical surface finish is not validated",
+    "lens_requirement_status": "unresolved: small ESP32 camera optics do not demonstrate compliance; a decorative 30 mm bezel is not evidence of a 30 mm lens"
+  },
+  "equipment_evidence": {
+    "source": "Utstyret-me-har(2).pdf",
+    "page": 1,
+    "listed_camera_sets": 2,
+    "set_contents": ["ESP32-CAM", "camera module", "ESP32-CAM-MB USB programming board"],
+    "document_status": "collection planned on 2026-10-20; later user context says acquired",
+    "printer": "Bambu Lab P1S",
+    "exact_board_manufacturer_and_revision": "unconfirmed"
+  },
+  "nominal_reference_dimensions": {
+    "component": "Ai-Thinker ESP32-CAM module",
+    "dimensions_mm": [27, 40.5, 4.5],
+    "stated_tolerance_mm": 0.2,
+    "source": "Ai-Thinker ESP32-CAM Wi-Fi+BT SoC Module V1.0 datasheet, distributed by LCSC",
+    "source_url": "https://datasheet.lcsc.com/lcsc/Ai-Thinker-ESP32-CAM_C277946.pdf",
+    "evidence_type": "manufacturer datasheet, not a measurement of the user's components",
+    "limitations": "Does not establish the full assembled envelope with camera head, headers, ESP32-CAM-MB or inserted USB cable."
+  },
+  "unmeasured_interfaces": [
+    "complete ESP32-CAM and ESP32-CAM-MB stack envelope including headers and USB plug",
+    "camera lens housing diameter and protrusion",
+    "optical center relative to PCB datum",
+    "camera flex-cable routing and bend allowance",
+    "battery type, size, connector and clearance",
+    "USB-C and charging electronics variant, envelope and mounting",
+    "shutter switch size, mounting and actuation travel"
+  ],
+  "CAD_scope": {
+    "method": "parameterized hybrid mechanical CAD using the selected Tripo exterior",
+    "mesh_exterior_is_not_analytic_BRep": true,
+    "mechanical_components": ["separate front and rear shells", "shared rigid camera carrier", "lens collars", "separate shutter button", "service access for boards and cables"],
+    "stereo_geometry": "parallel optical axes and fixed camera baseline; optical calibration remains required",
+    "electrical_and_capture_synchronization": "not validated by mechanical CAD",
+    "production_validated": false,
+    "physically_fit_tested": false,
+    "slicer_validated": false
+  }
+}

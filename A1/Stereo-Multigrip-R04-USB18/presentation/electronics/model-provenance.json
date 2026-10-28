@@ -1,0 +1,2735 @@
+{
+  "source_url": "https://www.protoflow.ai/library/parts/C277946/files/COMM-TH_16P-L40.0-W27.0-P2.54_ESP32-CAM.wrl",
+  "source_sha256": "119a8442cfec1df5605e515bf899f3431a069327b13bcfda152778c584f7456f",
+  "external_license": "Not found; do not publicly redistribute source or derived mesh asset",
+  "board_footprint_mm": [
+    40,
+    27
+  ],
+  "datasheet_nominal_footprint_mm": [
+    40.5,
+    27
+  ],
+  "pcb_thickness_nominal_mm": 1.6,
+  "source_connector_xy_scale": "unchanged at2.54mm perVRMLunit",
+  "source_z_remap": "Piecewise Z adaptation: source Z\u22642.5 shifts\u22122.5mm; source2.5..3.5 scales1.6\u00d7 into0..1.6mm; sourceZ\u22653.5 shifts\u22121.9mm. Components crossing the PCB slab are adapted, not rigidly translated. XY and header pitch unchanged.",
+  "canonical_lens_center_mm": [
+    11.67,
+    0
+  ],
+  "housing_modified": false,
+  "reconstructed_details": [
+    "Square camera package with low recessed circular lens",
+    "Orange bent flex",
+    "Flash LED",
+    "ESP32-CAM silkscreen",
+    "Visible SMT component groups and pads; approximate locations and package heights"
+  ],
+  "not_vendor_certified": true,
+  "records": [
+    {
+      "name": "Sourced_00_000",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_001",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_002",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_003",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_004",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_005",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_006",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_007",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_008",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_009",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_010",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_011",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_012",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_013",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_014",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_015",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_016",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_017",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_018",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_019",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_020",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_021",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_022",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_023",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_024",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_025",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_026",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_027",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_028",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_029",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_030",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_031",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_032",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_033",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_034",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_035",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_036",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_037",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_038",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_039",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_040",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_041",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_042",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_043",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_044",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_045",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_046",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_047",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_048",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_049",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_050",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_051",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_052",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_053",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_054",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_055",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_056",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_057",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_058",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_059",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_060",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_061",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_062",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_063",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_064",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_065",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_066",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_067",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_068",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_069",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_070",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_071",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_072",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_073",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_074",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_075",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_076",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_077",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_078",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_079",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_080",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_081",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_082",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_083",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_084",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_085",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_086",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_087",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_088",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_089",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_090",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_091",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_00_092",
+      "material": "metal",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_000",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_001",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_002",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_003",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_004",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_005",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_006",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_007",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_008",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_009",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_010",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_011",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_012",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_013",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_014",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_015",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_016",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_017",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_018",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_019",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_020",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_021",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_022",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_023",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_024",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_025",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_026",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_027",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_028",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_029",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_030",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_031",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_032",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_033",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_034",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_035",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_036",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_037",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_038",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_039",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_040",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_041",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_042",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_043",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_044",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_045",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_046",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_047",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_048",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_049",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_050",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_051",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_052",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_053",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_054",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_055",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_056",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_057",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_058",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_01_059",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_000",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_001",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_002",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_003",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_004",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_005",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_006",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_007",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_008",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_009",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_02_010",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_03_000",
+      "material": "black",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_04_000",
+      "material": "gold",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_000",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_001",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_002",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_003",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_004",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_005",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_006",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_007",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_008",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_009",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_010",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_011",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_012",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_013",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_014",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_015",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_016",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_017",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_018",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_019",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_020",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_021",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_022",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_023",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_024",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_025",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_026",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_027",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_028",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_029",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_030",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_031",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_032",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_033",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_034",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_035",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_036",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_05_037",
+      "material": "substrate",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_06_000",
+      "material": "ivory",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "Sourced_06_001",
+      "material": "ivory",
+      "origin": "External ProtoFlow/FastEDA ESP32-CAM WRL component geometry"
+    },
+    {
+      "name": "CAM_PCB_core",
+      "material": "edge",
+      "origin": "Exact sourced roundedXYboardoutline; nominal reconstructed1.6mm thickness; black face material replaces logo"
+    },
+    {
+      "name": "OV2640_square_camera_body",
+      "material": "sensor",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Camera_optical_seat",
+      "material": "sensor",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Camera_low_annular_rim",
+      "material": "black",
+      "origin": "Photo-based low lens rim; dimensions nominal"
+    },
+    {
+      "name": "Camera_recessed_glass",
+      "material": "lens",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Camera_inner_aperture",
+      "material": "lens",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "OV2640_orange_flex",
+      "material": "flex",
+      "origin": "Photo-based ribbon route and width; nominal bend heights"
+    },
+    {
+      "name": "Flex_internal_trace_00_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_00_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_00_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_00_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_01_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_01_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_01_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_01_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_02_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_02_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_02_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_02_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_03_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_03_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_03_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_03_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_04_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_04_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_04_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_04_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_05_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_05_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_05_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_05_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_06_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_06_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_06_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_06_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_07_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_07_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_07_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_07_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_08_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_08_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_08_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_08_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_09_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_09_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_09_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_09_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_10_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_10_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_10_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_10_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_11_2",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_11_3",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_11_4",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flex_internal_trace_11_5",
+      "material": "flex_trace",
+      "origin": "Visible parallel conductor structure; count illustrative"
+    },
+    {
+      "name": "Flash_LED_white_package",
+      "material": "ivory",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Flash_LED_phosphor",
+      "material": "flash",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Flash_LED_solder_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Flash_LED_solder_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "ESP32_CAM_silkscreen",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Camera_flex_mark",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "RF_module_mark",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "R7_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R7_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R7_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R7_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R7_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R8_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R8_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R8_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R8_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R8_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R9_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R9_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R9_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R9_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R9_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R11_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R11_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R11_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R11_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R11_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R2_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R2_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R2_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R2_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R2_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R13_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R13_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R13_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R13_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R13_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R12_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R12_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R12_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R12_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R12_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C3_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C3_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C3_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C3_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C3_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C9_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C9_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C9_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C9_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C9_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R15_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R15_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R15_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R15_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R15_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R17_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R17_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R17_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R17_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R17_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R18_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R18_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R18_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R18_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R18_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R16_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R16_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R16_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R16_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R16_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C12_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C12_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C12_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C12_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C12_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C14_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C14_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C14_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C14_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C14_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R3_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R3_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R3_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R3_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R3_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U1",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U1_lead_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U1_lead_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U1_lead_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U3",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U3_lead_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U3_lead_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "U3_lead_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q2",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q2_lead_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q2_lead_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q2_lead_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q1",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q1_lead_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q1_lead_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Q1_lead_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Front_pin_label_top_0",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_0",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_top_1",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_1",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_top_2",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_2",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_top_3",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_3",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_top_4",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_4",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_top_5",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_5",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_top_6",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_6",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_top_7",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "Front_pin_label_bottom_7",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    },
+    {
+      "name": "R7_8_9_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R7_8_9_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R7_8_9_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R7_8_9_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_11_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_11_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_11_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R10_11_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_2_12_13_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_2_12_13_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_2_12_13_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R1_2_12_13_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C11_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_3_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_3_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_3_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C2_3_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_9_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_9_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_9_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C8_9_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_15_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_15_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_15_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "R14_15_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Lower_bank_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Lower_bank_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Lower_bank_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Lower_bank_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_outline_x-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_outline_y-1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_outline_x1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "C13_outline_y1",
+      "material": "white",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_0",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_0",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_1",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_1",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_2",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_2",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_3",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_3",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_4",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_4",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_5",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_5",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_6",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_6",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_7",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_7",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_8",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_8",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_9",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_9",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_10",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_10",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Visible_via_11",
+      "material": "substrate",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Via_drill_11",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Rear_C1_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C1_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C1_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C1_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C1_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C7_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C7_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C7_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C7_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C7_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R6_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R6_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R6_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R6_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R6_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R4_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R4_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R4_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R4_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R4_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C10_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C10_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C10_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C10_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C10_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C6_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C6_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C6_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C6_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C6_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R19_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R19_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R19_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R19_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R19_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R5_body",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R5_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R5_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R5_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_R5_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C5_body",
+      "material": "ceramic",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C5_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C5_pad_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C5_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C5_pad_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_tantalum_C4",
+      "material": "flash",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C4_terminal_-1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_C4_terminal_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_AMS1117_regulator",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_AMS1117_tab",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_AMS1117_lead_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_AMS1117_lead_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_AMS1117_lead_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM",
+      "material": "black",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_-1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_-1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_-1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_-1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_1_0",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_1_1",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_1_2",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_PSRAM_lead_1_3",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_reset_switch",
+      "material": "metal",
+      "origin": "Photo-based reconstruction; dimensions nominal"
+    },
+    {
+      "name": "Rear_reset_button",
+      "material": "black",
+      "origin": "Photo-based camera detail; dimensions nominal"
+    },
+    {
+      "name": "Rear_reset_label",
+      "material": "white",
+      "origin": "Visible product marking reconstructed from user photograph"
+    }
+  ],
+  "photo_references": [
+    "User IMG_9518: low square camera exterior and board orientation",
+    "Prusa AI Thinker ESP32-CAM annotated front/back: component layout and silkscreen"
+  ]
+}

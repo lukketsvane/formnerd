@@ -1,0 +1,388 @@
+{
+  "edition": "07",
+  "mechanical_revision": "88cc8f327fba72e6517ea30dcadc4e978419da37",
+  "page_count": 15,
+  "geometry_modified": false,
+  "files": {
+    "README.md": {
+      "bytes": 2121,
+      "sha256": "bb4e23280e2dea6cc2947672f0a3d53f1b0c935970fae70248b5720ed2d53148"
+    },
+    "contents.json": {
+      "bytes": 1032,
+      "sha256": "47971aefa79ebb4ee3239f72329f4971229ee6b8c159a7c99e949fdbf06216cc"
+    },
+    "figures/README.md": {
+      "bytes": 5000,
+      "sha256": "d1460b6347ac65d56ccfc2a02c51f81d98440540c2095438bcb069f7112abd22"
+    },
+    "figures/render_technical.py": {
+      "bytes": 13992,
+      "sha256": "2b6b692b5aa2f9d6bcc488f53cd388808b2ff58607e1ab6a60313a2cf7bd138d"
+    },
+    "figures/run_technical.py": {
+      "bytes": 1012,
+      "sha256": "15fe60b51c42bdce2776e0b276043f9117ea4d05f2992fdfdbbea584c7299998"
+    },
+    "figures/technical-qa.json": {
+      "bytes": 7360,
+      "sha256": "2eaf064c4e97d752db92880a4abdd5175076e1a67c3f8c06f4ccbc609d149845"
+    },
+    "figures/technical_assembled.json": {
+      "bytes": 69781,
+      "sha256": "853714507e8c9168f604504f50ed7b9efa6fe771927fec5b49795aab2708a181"
+    },
+    "figures/technical_assembled.png": {
+      "bytes": 960802,
+      "sha256": "7f7e8bead71985bf6d1aa2d8663d745baa3bae9255a60774cac35d861041de2b"
+    },
+    "figures/technical_bank_locked.json": {
+      "bytes": 76180,
+      "sha256": "9fdadc364e3b96211e799a4a289cb0b40ab05d528bd32be391ad869be9922d24"
+    },
+    "figures/technical_bank_locked.png": {
+      "bytes": 1014955,
+      "sha256": "528884730dede777fc41c0b666b9c9eaf802b928bef43ebfc7ea0cc01376609f"
+    },
+    "figures/technical_bank_placement.json": {
+      "bytes": 71547,
+      "sha256": "0764691235cf02c9bcc1085b094984a569fd09d73a6d23a0754d9d7e28980654"
+    },
+    "figures/technical_bank_placement.png": {
+      "bytes": 838226,
+      "sha256": "f5f8371f450cd5a4c7e36913eb95da23907bf1627ecdf25d18a029e07408f70b"
+    },
+    "figures/technical_board_stack.json": {
+      "bytes": 31383,
+      "sha256": "11b19974aa1236fd8255a7c57d42de79047c648c2e2cda663051237309e57fae"
+    },
+    "figures/technical_board_stack.png": {
+      "bytes": 707311,
+      "sha256": "d2126a6a698fa39de4a4eb6ada9f9a50851c4201c1a71cd336db1da2cfd27e5a"
+    },
+    "figures/technical_cam_only.json": {
+      "bytes": 19304,
+      "sha256": "3fd240935df8f83a9d4aaeac8ad8386a1788f941292cb5e0a5384df10335eb40"
+    },
+    "figures/technical_cam_only.png": {
+      "bytes": 688843,
+      "sha256": "364ed10300cafdf56d484f00280825d52322b67f2ec184142b3e89cdf7eed27e"
+    },
+    "figures/technical_exploded.json": {
+      "bytes": 217357,
+      "sha256": "da5f26979741697fc87c17f21853b310a7dabe365a2a26550145404e67f5fe2b"
+    },
+    "figures/technical_exploded.png": {
+      "bytes": 721602,
+      "sha256": "fb7897f3f2f1efda3924dac22dda155d8dde581b22d707b2929bc703be595779"
+    },
+    "figures/technical_keepers_locked.json": {
+      "bytes": 65770,
+      "sha256": "90ae234f2e9db889c5720a341b2b64686a717b252e543701d5354b581503b69d"
+    },
+    "figures/technical_keepers_locked.png": {
+      "bytes": 612358,
+      "sha256": "37e55af398cb3571afe9c4467360ef93210301140085c7b999eb43ab45ec411d"
+    },
+    "figures/technical_keepers_rear.json": {
+      "bytes": 62642,
+      "sha256": "ae7b136681c55b1daa1e4894eda4bcdbd3beea0020f9d232b7ce867344b92d94"
+    },
+    "figures/technical_keepers_rear.png": {
+      "bytes": 673791,
+      "sha256": "41c3966068f0312970a2a30865c0a70e419ce418b6c45e40a7d15799e3949363"
+    },
+    "figures/technical_mb_only.json": {
+      "bytes": 13523,
+      "sha256": "455be718d41a14b5cd9c01c8400985af778cd4412cce4f1ec2544f906333bf36"
+    },
+    "figures/technical_mb_only.png": {
+      "bytes": 652427,
+      "sha256": "47da86795184bb2a9e804d69ea39ec7e4ce042d55677a3fb024179c7629d021b"
+    },
+    "figures/technical_pair_front.json": {
+      "bytes": 61314,
+      "sha256": "cde543df6cfe1299b2b9a477f1d0f7cb9e4c234e9e357e22b798ed1853e0c768"
+    },
+    "figures/technical_pair_front.png": {
+      "bytes": 439706,
+      "sha256": "f5c01a5f478cbf01d5be25ae562e91a218b5e1254e3cb73e44cfbef4d79a7e2d"
+    },
+    "figures/technical_rear_usb.json": {
+      "bytes": 69899,
+      "sha256": "11fd9be1148346be0f93504cfbc633a0c353bb56a64bcc52ad4045f04837e491"
+    },
+    "figures/technical_rear_usb.png": {
+      "bytes": 612476,
+      "sha256": "64acc7d978444dc990ba19a0522ce3cf6a999b6b7bde4b1ac0b0f5ac7d8d4d33"
+    },
+    "figures/technical_seated.json": {
+      "bytes": 61695,
+      "sha256": "056b94aba0b13e74952371a5247c813dc885fd46d778f72a83a68724f98c51d0"
+    },
+    "figures/technical_seated.png": {
+      "bytes": 928292,
+      "sha256": "e177d6b2d71fb97d3dddb53d4348180bdf37c2926b1e22b63e524f19a4e9265b"
+    },
+    "figures/technical_sensor_contact.json": {
+      "bytes": 22144,
+      "sha256": "6bd8c5352adcd127d58c932a457502ab465f48eaac330225b51858dfa707f58d"
+    },
+    "figures/technical_sensor_contact.png": {
+      "bytes": 868956,
+      "sha256": "eec5ea72bbedc9bbe765f06ca18cc81ea0e01bf0bb46bdb1a07a04bedcbd8fd8"
+    },
+    "figures/technical_yokes.json": {
+      "bytes": 68842,
+      "sha256": "e59a95970ff14f6fc2a62b5fcb0729ee8e1d941a558a40a2a053fbc4bce741c5"
+    },
+    "figures/technical_yokes.png": {
+      "bytes": 915935,
+      "sha256": "766d295ccadc1fd2f6d841c029bd70fcc132d83edae0b16eea2ab8477777d6ff"
+    },
+    "ikea-reference-audit.json": {
+      "bytes": 2545,
+      "sha256": "ab996e024085758bd692536f7f685f7cb5f357fd784a1d05d41e96300d7ce5e9"
+    },
+    "ikea-reference-audit.md": {
+      "bytes": 10903,
+      "sha256": "c4e01bd49b8e2a549b42a7578f8ea99a64fe7d282d68ee438b26dec403673c03"
+    },
+    "layout-checks.json": {
+      "bytes": 25763,
+      "sha256": "b981a6ba63fa84ca60a45621b65ab2d9eecb1fa2b995074f8d78f0f86d4488ef"
+    },
+    "mechanics-audit.json": {
+      "bytes": 2342,
+      "sha256": "c2211be22ee37f760bdf10891801d61847c21080bf20900e4e058dad2ebf0269"
+    },
+    "mechanics-audit.md": {
+      "bytes": 12248,
+      "sha256": "66dcf759138c2be107557e88838aef47421214d5f37f83376f5efd0efe16e198"
+    },
+    "output/ENTROPI_R04_Monteringsmanual.pdf": {
+      "bytes": 6867967,
+      "sha256": "fa037121525070d4810fa011e58b75f7bb767ff1f599f78110b4d4d409254ffc"
+    },
+    "page6-callout-qa.json": {
+      "bytes": 1809,
+      "sha256": "b0739dc33725555c1f70bbcf78d552f3811445237cb434fd4289937b5a75b0d8"
+    },
+    "pages/R04_manual_01.png": {
+      "bytes": 444562,
+      "sha256": "c1fd7f4a09a3c365d59a427f4c350530f472e7dd75302a1a19c667b003a0ee6d"
+    },
+    "pages/R04_manual_02.png": {
+      "bytes": 252193,
+      "sha256": "872a5c52cde0de50e1c793cbfd05813af5992fb3fa855d4f9ef498173f571f02"
+    },
+    "pages/R04_manual_03.png": {
+      "bytes": 142554,
+      "sha256": "d5f7e5ee65224bec53c3c35aa02a0e8719734a9eb3c94c09d120f84437dcc2f9"
+    },
+    "pages/R04_manual_04.png": {
+      "bytes": 301208,
+      "sha256": "78bbe92cc467e8729ebea467bbf7e88c9d57888f6859076918aa27388723b509"
+    },
+    "pages/R04_manual_05.png": {
+      "bytes": 386293,
+      "sha256": "0838ae106d52014161a578c10cc7810b9eba61264363fd3b0966ebe17db44455"
+    },
+    "pages/R04_manual_06.png": {
+      "bytes": 333729,
+      "sha256": "a5b6078aa7fab078e4837da241b825d7e9a2e57e09c49a7f49b053838a9dc479"
+    },
+    "pages/R04_manual_07.png": {
+      "bytes": 336776,
+      "sha256": "c8b0cb3c97d2757ef231ed2699c5bcfe04e7519b6ba66995553ec54919e928e7"
+    },
+    "pages/R04_manual_08.png": {
+      "bytes": 268693,
+      "sha256": "39a7ca477532ddef994843be42219061e7633729662dff152cadf745b15a1e79"
+    },
+    "pages/R04_manual_09.png": {
+      "bytes": 486647,
+      "sha256": "bbf89d556c2778b41ddf39fe12b7e46647243a9ec23a19bfc8dbbcd9a335841c"
+    },
+    "pages/R04_manual_10.png": {
+      "bytes": 355703,
+      "sha256": "244efe26c416e819f3f8ad830a4afc3346ce6c83d7c1da97862bf7d661a9ab37"
+    },
+    "pages/R04_manual_11.png": {
+      "bytes": 316373,
+      "sha256": "099944b7f9b7b998ccff5f30becd4cdd2a0c5fcb7ce5e02a4d6cec7209c1f0aa"
+    },
+    "pages/R04_manual_12.png": {
+      "bytes": 360914,
+      "sha256": "71bdef3c58edf524cf00df7bd1c8d538f84be9fb002b0c737be530c400af1bb3"
+    },
+    "pages/R04_manual_13.png": {
+      "bytes": 376870,
+      "sha256": "7dbb51ab9b096095aec3626254f4afd91ab630f2ebfc36e76afc106d4fc784a0"
+    },
+    "pages/R04_manual_14.png": {
+      "bytes": 442158,
+      "sha256": "ec482a27b4cafd986c688d6e11275b222249e1dbf1807449315a3adc6ba3e794"
+    },
+    "pages/R04_manual_15.png": {
+      "bytes": 171252,
+      "sha256": "e2b78e662419b48478306889880f847b9bd30cf75998bd7d029babdacfebcc2d"
+    },
+    "pin-inventory-audit.json": {
+      "bytes": 15867,
+      "sha256": "29d936de2d444057b96cb93a0fde4e1747798cdc10defe9d998810d9c95c77e6"
+    },
+    "pin_inventory_audit.py": {
+      "bytes": 2506,
+      "sha256": "7dd6c0d4aa056d4e6075087e409f49d48bc12a06f9730a2d5399c4544515114e"
+    },
+    "portable-rebuild-check.json": {
+      "bytes": 2436,
+      "sha256": "c728efcc3fa86533ab026c5d6e776f8bf9d6668bfdac2a63d3282aa8e11550d6"
+    },
+    "qa.json": {
+      "bytes": 10694,
+      "sha256": "b5fdf1b43f55b8db36c8ece30551f28f061dce8ecc1a9d565ef2f103a21d781c"
+    },
+    "scene-manifest.json": {
+      "bytes": 703,
+      "sha256": "1adcbdee1c8e4f4573690b35a59e98dfdd1b9016bd35632579b3397331a8ce00"
+    },
+    "source/build_manual.py": {
+      "bytes": 13696,
+      "sha256": "3b51089ae73281f914d45d98fe41d6e068c7efb04c12b30eb855565a4505f1ea"
+    },
+    "source/build_vectors.py": {
+      "bytes": 3948,
+      "sha256": "a05b77fc51fa7d871dc617205ec96a5958f767ed9377bf38025586d0a983c4c4"
+    },
+    "source/fonts/DejaVuSans-Bold.ttf": {
+      "bytes": 708920,
+      "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+    },
+    "source/fonts/DejaVuSans.ttf": {
+      "bytes": 759720,
+      "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
+    },
+    "source/fonts/LICENSE.txt": {
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    "source/requirements.txt": {
+      "bytes": 50,
+      "sha256": "1a550ef7ba092b4443f2092dee4e6dfa139a880d18fd1f1b454c1927d501ca38"
+    },
+    "used-assets.json": {
+      "bytes": 1502,
+      "sha256": "97922bb53cd9a5588fd30c638886a444c06c97a211101b86c656c5da0aaf2f38"
+    },
+    "vector/additional-figure-manifest.json": {
+      "bytes": 6734,
+      "sha256": "a2a885fbe0cae362fc952a9119894d101ff219c340688f5f2c339ebc1be23f35"
+    },
+    "vector/bank-yoke-frame-qa.json": {
+      "bytes": 2918,
+      "sha256": "ad2c4ee7c04431acf1aa200070932e7b177886fc11ac98c12b1484c1f47fb824"
+    },
+    "vector/build_bank_yoke_figures.py": {
+      "bytes": 5803,
+      "sha256": "1f70938c58e6f33f15f46fa78d4042131a250ca2c93c5000f3453869bc08642f"
+    },
+    "vector/build_frame_lock_detail.py": {
+      "bytes": 3621,
+      "sha256": "73443be795606c61d02e726d1cd2e4fb1df48916359c09f7830c157d6f0c0a8e"
+    },
+    "vector/build_frame_pin.py": {
+      "bytes": 3693,
+      "sha256": "36586565eb552575147ce35124ed79c8e03f0f1126697852a13d3adaeb58f8c5"
+    },
+    "vector/build_lock_details.py": {
+      "bytes": 4929,
+      "sha256": "c5ae2edff8370da62b22426de37618cb7f042c187ca3694f28d51b3f333142e0"
+    },
+    "vector/frame-lock-detail-manifest.json": {
+      "bytes": 1687,
+      "sha256": "1a5361509e61a201cd1f29796273658cb81e198433468d2e6e86cb362d3f2395"
+    },
+    "vector/frame-lock-detail-qa.json": {
+      "bytes": 888,
+      "sha256": "a891c927363663b139a6fc49552e0b2634bbcc267df547737e06026c26989b7e"
+    },
+    "vector/frame-pin-manifest.json": {
+      "bytes": 1306,
+      "sha256": "a07c05554337e534a6a750ec358bc1b04dea90d76f28214f87ac29adbc5f9298"
+    },
+    "vector/frame_pin_stage.json": {
+      "bytes": 37612,
+      "sha256": "e95ca982a1df64858198b8814146721bf25bec951216b6f06be3a35e10bf9737"
+    },
+    "vector/lock-detail-manifest.json": {
+      "bytes": 5636,
+      "sha256": "9b9de9ff932261d420fb53e55b02c12a317cb4f52afb832292d410855300cd4b"
+    },
+    "vector/lock_frame_wedge_stage.json": {
+      "bytes": 43517,
+      "sha256": "46739ba9e87f5f5c9407b6095e6ee3983ffa2a1bad5e6353786f6cbd7e685270"
+    },
+    "vector/lock_keeper_pin_stage.json": {
+      "bytes": 39886,
+      "sha256": "07249d89758fb1d861d72fb81f6d43ea557b8fbf47bcca469ac063addfff6ae6"
+    },
+    "vector/lock_keeper_wedge_stage.json": {
+      "bytes": 43673,
+      "sha256": "8f1e103355284e7340982dfc9815b3da98c9baf03034dddd7a094a958a4d1e06"
+    },
+    "vector/wedge_long_iso.json": {
+      "bytes": 7179,
+      "sha256": "b68a5c0e98b18bcbc90361e449c7d9c32b69107f5d976c06a766a332fa094627"
+    },
+    "vector/wedge_short_iso.json": {
+      "bytes": 7051,
+      "sha256": "a2e8c45aca8f73923059ee8b2714423f42cab953d9809c243584c17e0e492c43"
+    },
+    "vector/yoke_pin_stage.json": {
+      "bytes": 50069,
+      "sha256": "6579003c690bd25f0862f6f7ec6fc61436565a278483a06ac34d7602d645ece7"
+    },
+    "vector/yoke_wedge_stage.json": {
+      "bytes": 56740,
+      "sha256": "8ab2c75bd45df1a4f316cd34cd340a8453e7698bf516b7b0d6cc8570d758621e"
+    },
+    "vectors/geometry-hashes.json": {
+      "bytes": 2904,
+      "sha256": "0bb127ae8b93a4e9fb8e7aaf44fb9cf6a89a1b8310064c25a10393b95e574edb"
+    },
+    "vectors/part_01_bank_cradle.json": {
+      "bytes": 116078,
+      "sha256": "326ec77e707e73f9463dda856e4f0e7077a1e4c2ea217e4a00f0bff535eac5e5"
+    },
+    "vectors/part_02_multigrip_carrier.json": {
+      "bytes": 360432,
+      "sha256": "ba4d4cca963b83e3ccf20af1744e3f071e9daf529ba94f8eb70aa4de8f7bd8fc"
+    },
+    "vectors/part_03_MB_keeper_left.json": {
+      "bytes": 97722,
+      "sha256": "362fba36b7faced52d92e4a46fe75590a53a4f4b732e42b2ff0a62a4fde5b2bd"
+    },
+    "vectors/part_04_MB_keeper_right.json": {
+      "bytes": 86751,
+      "sha256": "73dde8931f7febd57a23c0a1af73f651f9292440b08e015300480206ca152bf9"
+    },
+    "vectors/part_05_sensor_yoke_left.json": {
+      "bytes": 37913,
+      "sha256": "c4f96cee69a8675a81b64725f8a303fb79bf524fdadca56a15b5909e93061a8d"
+    },
+    "vectors/part_06_sensor_yoke_right.json": {
+      "bytes": 34654,
+      "sha256": "4e8e43d07d2e4ebb3142c6851a560eae13317eea2ed2322d5b2bba1dc93af141"
+    },
+    "vectors/part_20_keeper_L_down_pin.json": {
+      "bytes": 16259,
+      "sha256": "6d792a4f555ff1419ab7c602f831cdb3b031cb174effc8b49f4e310f4f6a08c9"
+    },
+    "visual-qa-01-06.json": {
+      "bytes": 2788,
+      "sha256": "4625d9438bf8637dcf9edfa69c3e04edc69ade44a21a4e34834d3e802e7b873e"
+    }
+  }
+}

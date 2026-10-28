@@ -1,0 +1,62 @@
+{
+  "edition": "08",
+  "reviewer": "manual_visual_review",
+  "individual_png_review": true,
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "aa37c464c9ed6764c8a0e88d91141b74d799c5b952cd5132e8174432f61fd875",
+      "visual_review": "approved",
+      "notes": "Cover, correct edition08 and passform pointer to page7."
+    },
+    {
+      "page": 2,
+      "sha256": "3e755be4e3afb27e213827241f87fa599ffdc03d77657c2c2f8e8de45950ca35",
+      "visual_review": "approved",
+      "notes": "Five actual main parts, quantities and lens-side L/R definition."
+    },
+    {
+      "page": 3,
+      "sha256": "be975893c4cba9aa9e1f18a4c51a89f3b5aef8af127360887cfe55dfeae85f01",
+      "visual_review": "approved",
+      "notes": "Eight camera pins and short wedges; optional four frame pins and long wedges;21/30total correct."
+    },
+    {
+      "page": 4,
+      "sha256": "d2146acbaf97c3969f9359e8bbe02604979ef0327d54202aa7ba2856311817d0",
+      "visual_review": "approved",
+      "notes": "Actual opposing camera orientations and complete electronics inventory."
+    },
+    {
+      "page": 5,
+      "sha256": "5106487127584ed01eb9107c83f800700416975bea2cbb57450680f05dd9eee7",
+      "visual_review": "approved",
+      "notes": "Carrier preservation reference with actual guide and fork details; leaders do not cross; captions clear; support removal text does not overlap."
+    },
+    {
+      "page": 6,
+      "sha256": "a3040040fe495a45de5cdce7d05d5a4aadd0f1e0629f03d5fa5e96bed64fe4bc",
+      "visual_review": "approved",
+      "notes": "Short/long wedge profiles at equal2:1scale; pin-first/wedge-second/seated dryfit sequence; remove test lock before fitting boards."
+    },
+    {
+      "page": 7,
+      "sha256": "b7758acc4ffb51f50760fb5092a0ddd994855f8164d8fd92fa92221fb545aa44",
+      "visual_review": "approved",
+      "notes": "Explicit PCB insertion gate, final-position-only figure and no unsupported insertion arrow."
+    },
+    {
+      "page": 8,
+      "sha256": "35351303e074ebc4b461e6f7809449d1f979121ffca8186a83453c7b9d5c0ded",
+      "visual_review": "approved",
+      "notes": "Part overview with clear labels and explicit exploded-view disclaimer."
+    },
+    {
+      "page": 9,
+      "sha256": "eb81e4514071e96f543e4a7b802f9b7b84ac5398f74bd4399911ca000f6ce15f",
+      "visual_review": "approved",
+      "notes": "Both rear keepers shown before later hardware; correct two insertion arrows and support instruction."
+    }
+  ],
+  "blocking_issues": []
+}

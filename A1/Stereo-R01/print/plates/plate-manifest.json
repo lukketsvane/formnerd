@@ -1,0 +1,242 @@
+{
+  "units": "mm",
+  "bed_mm": [
+    256,
+    256
+  ],
+  "status": "geometry-only; slicing pending",
+  "source_manifest_sha256": "2a9c8c9104b2e21c872d4df9680633fabc1875e39dbce16c4f0cebdd2b266943",
+  "plates": [
+    {
+      "id": "Plate-00-prove",
+      "path": "print/plates/Plate-00-prove.3mf",
+      "sha256": "c397b0123706159965f0145cfc863553fcbfb5f71ce66dff9bb5c729c426c63e",
+      "objects": [
+        {
+          "id": "P10",
+          "source": "print/P10.stl",
+          "source_sha256": "6d660e2cc12732312e02f6093effece8c87abf963ac9048acf21df729916c988",
+          "translation_mm": [
+            100,
+            110,
+            0
+          ],
+          "bounds_mm": [
+            [
+              71.82500076293945,
+              96.64999961853027,
+              0.0
+            ],
+            [
+              128.17499923706055,
+              123.35000038146973,
+              9.0
+            ]
+          ],
+          "triangles": 1342
+        },
+        {
+          "id": "P04",
+          "source": "print/P04.stl",
+          "source_sha256": "994f78646d72d68a13ae0ada2c43aa03943c7d413cf266bcdad3858f2e992eb1",
+          "translation_mm": [
+            80,
+            165,
+            0
+          ],
+          "bounds_mm": [
+            [
+              67.00145530700684,
+              152.00290870666504,
+              0.0
+            ],
+            [
+              92.99854469299316,
+              177.99709129333496,
+              18.299999237060547
+            ]
+          ],
+          "triangles": 1260
+        },
+        {
+          "id": "P05",
+          "source": "print/P05.stl",
+          "source_sha256": "f84ee68a48e531415b8510baed1d2b4551dd8a6e1bae41ee5606f8ba96de9d3d",
+          "translation_mm": [
+            125,
+            165,
+            0
+          ],
+          "bounds_mm": [
+            [
+              112.0014533996582,
+              152.00290870666504,
+              0.0
+            ],
+            [
+              137.9985466003418,
+              177.99709129333496,
+              18.299999237060547
+            ]
+          ],
+          "triangles": 1260
+        },
+        {
+          "id": "P06",
+          "source": "print/P06.stl",
+          "source_sha256": "b1a38d1aa6b35ae287228b67699287689196ec0395ddae791419db31aaf14c42",
+          "translation_mm": [
+            160,
+            110,
+            0
+          ],
+          "bounds_mm": [
+            [
+              150.29999923706055,
+              102.2000002861023,
+              0.0
+            ],
+            [
+              169.70000076293945,
+              117.7999997138977,
+              13.322837829589844
+            ]
+          ],
+          "triangles": 778
+        }
+      ],
+      "geometry_roundtrip_passed": true
+    },
+    {
+      "id": "Plate-01-front",
+      "path": "print/plates/Plate-01-front.3mf",
+      "sha256": "3f7df5bc0bc1b3173631ef0d80f17e2b7d5a8fdc1c6d2c8dc804e3afa2f988c3",
+      "objects": [
+        {
+          "id": "P01",
+          "source": "print/P01.stl",
+          "source_sha256": "cd9a3d4c8bba1f395a7439de12fcce6f62c9f5cfcd38f34910b367c7c5faddca",
+          "translation_mm": [
+            128,
+            128,
+            0
+          ],
+          "bounds_mm": [
+            [
+              58.199851989746094,
+              86.1998519897461,
+              0.0
+            ],
+            [
+              197.8001480102539,
+              169.8001480102539,
+              45.59773254394531
+            ]
+          ],
+          "triangles": 117972
+        }
+      ],
+      "geometry_roundtrip_passed": true
+    },
+    {
+      "id": "Plate-02-bak-og-berar",
+      "path": "print/plates/Plate-02-bak-og-berar.3mf",
+      "sha256": "de5780e71b2eb1e694bf211323cfae1bd458f82a26c28d4330ec23447b2abb72",
+      "objects": [
+        {
+          "id": "P02",
+          "source": "print/P02.stl",
+          "source_sha256": "770bd7f0948035fb20090d1f6c4f2df3dcb14503da9b6770fce1af019deaa9e1",
+          "translation_mm": [
+            128,
+            70,
+            0
+          ],
+          "bounds_mm": [
+            [
+              58.23228454589844,
+              28.200382232666016,
+              0.0
+            ],
+            [
+              197.76771545410156,
+              111.79961776733398,
+              47.413475036621094
+            ]
+          ],
+          "triangles": 59512
+        },
+        {
+          "id": "P03",
+          "source": "print/P03.stl",
+          "source_sha256": "21f617d9637bce66a2615fc0f332c37031876a716d0fd4bde9809ad8d252c88a",
+          "translation_mm": [
+            128,
+            170,
+            0
+          ],
+          "bounds_mm": [
+            [
+              84.00113296508789,
+              139.5,
+              0.0
+            ],
+            [
+              171.9988670349121,
+              200.5,
+              29.700000762939453
+            ]
+          ],
+          "triangles": 7834
+        },
+        {
+          "id": "P08",
+          "source": "print/P08.stl",
+          "source_sha256": "e432d8029573281ab5615e1fe2c8a36109208d14b963d9c51beae2878e066a5a",
+          "translation_mm": [
+            78,
+            225,
+            0
+          ],
+          "bounds_mm": [
+            [
+              59.0,
+              222.5,
+              0.0
+            ],
+            [
+              97.0,
+              227.5,
+              7.19999885559082
+            ]
+          ],
+          "triangles": 876
+        },
+        {
+          "id": "P09",
+          "source": "print/P09.stl",
+          "source_sha256": "e14149c908f8e1200d76f27ca07ea5d072babc20039661439e94306138e6e03c",
+          "translation_mm": [
+            170,
+            225,
+            0
+          ],
+          "bounds_mm": [
+            [
+              151.0,
+              222.5,
+              0.0
+            ],
+            [
+              189.0,
+              227.5,
+              7.19999885559082
+            ]
+          ],
+          "triangles": 876
+        }
+      ],
+      "geometry_roundtrip_passed": true
+    }
+  ]
+}

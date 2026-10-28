@@ -1,0 +1,66 @@
+{
+  "revision": "R04 USB18",
+  "source_commit": "88cc8f327fba72e6517ea30dcadc4e978419da37",
+  "geometry_modified": false,
+  "figures": [
+    {
+      "name": "frame_pin_stage",
+      "camera": [
+        -1.5,
+        1.0,
+        1.8
+      ],
+      "line_count": 177,
+      "parts": [
+        "01_bank_cradle",
+        "02_multigrip_carrier",
+        "10_frame_1_pin"
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -28,
+          -36.4,
+          8.15
+        ],
+        "rotate_z_deg": -90
+      },
+      "crop": {
+        "scope": "cradle and carrier only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "pin_insertion_local": [
+        0,
+        -1,
+        0
+      ],
+      "translations_mm": {
+        "10_frame_1_pin": [
+          0,
+          24,
+          0
+        ]
+      },
+      "assembled_centers_local_mm": {
+        "10_frame_1_pin": [
+          -4.287761164457175e-16,
+          0.7556690383583503,
+          6.249999999999997
+        ]
+      },
+      "shown_centers_local_mm": {
+        "10_frame_1_pin": [
+          -4.287761164457175e-16,
+          24.75566903835835,
+          6.249999999999997
+        ]
+      }
+    }
+  ]
+}

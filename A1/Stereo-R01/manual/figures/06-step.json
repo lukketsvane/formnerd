@@ -1,0 +1,49 @@
+{
+  "objects": [
+    {
+      "id": "P01",
+      "path": "cad/P01.stl",
+      "color": "#62676c",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P04",
+      "path": "cad/P04.stl",
+      "color": "#34383c",
+      "translation": [
+        0,
+        32,
+        0
+      ]
+    },
+    {
+      "id": "P05",
+      "path": "cad/P05.stl",
+      "color": "#34383c",
+      "translation": [
+        0,
+        32,
+        0
+      ]
+    }
+  ],
+  "camera": {
+    "direction": [
+      -1,
+      2,
+      1
+    ]
+  },
+  "margin": 0.12,
+  "mode": "line",
+  "size": [
+    2000,
+    1651
+  ],
+  "supersample": 1.35,
+  "line_width": 1.6505402768506225
+}

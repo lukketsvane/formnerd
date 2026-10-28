@@ -1,0 +1,124 @@
+{
+  "file": "C:\\Users\\Iver\\Documents\\github\\formnerd-stereo-r03-save-20261024\\A1\\Stereo-Multigrip-R03\\REPAIR-LOCKS-R01\\3MF\\R03-01-FOUR-FRAME-LOCKS-A_EASY.3mf",
+  "type": "unsliced 3MF Core build layout",
+  "bed_mm": [
+    256,
+    256
+  ],
+  "margin_mm": 16,
+  "gap_mm": 8,
+  "parts": [
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        21.0,
+        28.15,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        39.0,
+        28.15,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        57.0,
+        28.15,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_FRAME_PIN_A_EASY",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.3
+      ],
+      "translation_mm": [
+        75.0,
+        28.15,
+        0
+      ],
+      "triangles": 1792
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        96.0,
+        19.5,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        120.0,
+        19.5,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        144.0,
+        19.5,
+        0
+      ],
+      "triangles": 468
+    },
+    {
+      "name": "R03_CROSS_WEDGE_ORIGINAL",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        168.0,
+        19.5,
+        0
+      ],
+      "triangles": 468
+    }
+  ]
+}

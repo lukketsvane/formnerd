@@ -1,0 +1,6 @@
+FormNerd Stereo R01. Read README.md, cad/assembly-manifest.json and verification/*.json.
+Units mm. Use print/P*.stl if present; otherwise orient cad/P*.stl explicitly. Do not print H*/N* purchased hardware or reference meshes.
+Import into Bambu Studio, select actual P1S/nozzle/material. Do not auto-scale. Slice and inspect every layer, supports, islands, wall continuity, bridges and bed contact.
+Print P10 fit coupon plus collars first. Verify against actual M3 hardware and PCB. Stop and adjust parameters if fit differs.
+Only after coupon approval: one prototype set, dry assembly per manual, no power. Verify real populated PCB/MB/optics/cables before electronics installation.
+No remote print, G-code, functional USB-C, shutter electronics or synchronized stereo is supplied. Physical fit and 30 mm true-optic requirement remain open.

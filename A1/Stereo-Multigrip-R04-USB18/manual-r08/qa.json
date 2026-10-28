@@ -1,0 +1,42 @@
+{
+  "edition": "08",
+  "page_count": 17,
+  "pdf_sha256": "55fa0ce9e48f2eeacc51139981a4568c06e282eac74cd8d6a5ed331e6cf372ed",
+  "pdf_bytes": 6985333,
+  "word_count": 841,
+  "text_outside_safe_page": [],
+  "reviews": [
+    "visual-qa-01-09.json",
+    "visual-qa-10-17.json"
+  ],
+  "all_pages_individually_approved": true,
+  "changes": [
+    "Full product inventory with clear part names",
+    "Actual clean carrier and permanent feature details before support removal",
+    "Actual short and long wedge profiles in same scale2:1",
+    "Three-stage lock trial and removal before electronics",
+    "Four joint location markers per lock page",
+    "Precise nominal USB insertion axes from original source coordinates"
+  ],
+  "limitations": "Actual physical PCB insertion and actual cable fit remain unverified. Page7 explicitly requires free board placement before proceeding. No print geometry changed.",
+  "page_sha256": {
+    "R04_manual_01.png": "aa37c464c9ed6764c8a0e88d91141b74d799c5b952cd5132e8174432f61fd875",
+    "R04_manual_02.png": "3e755be4e3afb27e213827241f87fa599ffdc03d77657c2c2f8e8de45950ca35",
+    "R04_manual_03.png": "be975893c4cba9aa9e1f18a4c51a89f3b5aef8af127360887cfe55dfeae85f01",
+    "R04_manual_04.png": "d2146acbaf97c3969f9359e8bbe02604979ef0327d54202aa7ba2856311817d0",
+    "R04_manual_05.png": "5106487127584ed01eb9107c83f800700416975bea2cbb57450680f05dd9eee7",
+    "R04_manual_06.png": "a3040040fe495a45de5cdce7d05d5a4aadd0f1e0629f03d5fa5e96bed64fe4bc",
+    "R04_manual_07.png": "b7758acc4ffb51f50760fb5092a0ddd994855f8164d8fd92fa92221fb545aa44",
+    "R04_manual_08.png": "35351303e074ebc4b461e6f7809449d1f979121ffca8186a83453c7b9d5c0ded",
+    "R04_manual_09.png": "eb81e4514071e96f543e4a7b802f9b7b84ac5398f74bd4399911ca000f6ce15f",
+    "R04_manual_10.png": "ea71570f036f72443df2ff77ca2db0a24401ead26217238d05a481786428953c",
+    "R04_manual_11.png": "3655a56dbf2f0bbe98e80f581cb65559f934bfef4389d8aad3893ad29eb65adf",
+    "R04_manual_12.png": "37686340b63872a20d443895cf4b91f718e9d657e99c1ad1e582d505a2c7a28e",
+    "R04_manual_13.png": "a7ff4a7c8a17509cae567ff37478ec8e665495d488614840c4ad5a9b71f62a07",
+    "R04_manual_14.png": "8258b1578456f127cabe9c123927fb4239918da12a1a89069835d5ca0df14075",
+    "R04_manual_15.png": "dadda2a1ccb04486152cca166e04e0ccdf138e8138d129aa92369afacea4ce82",
+    "R04_manual_16.png": "9b0b23854f92c02bba3c2f6de6f68b1fa76e18c986f622c9661763a30a40d4d8",
+    "R04_manual_17.png": "25e8bb5fcc3b9dfee03dfa8b7a8cabf0a04542d34d8be40798408bcb34005345"
+  },
+  "build_source_sha256": "8522de064217d58522a516aa6ee5088c038102be78ac998e5e69547cd5e2850e"
+}

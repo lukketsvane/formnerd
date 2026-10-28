@@ -1,0 +1,1471 @@
+{
+  "revision": "stereo-final-r01",
+  "units": "mm",
+  "front_axis": "-Y",
+  "up_axis": "+Z",
+  "datum": {
+    "reference_width_mm": 140,
+    "regularized_width_mm": 139.6002960205078,
+    "lens_centers_mm": [
+      [
+        -6.0,
+        -26,
+        48
+      ],
+      [
+        48.0,
+        -26,
+        48
+      ]
+    ],
+    "baseline_mm": 54,
+    "pcb_centres_mm": [
+      [
+        -6,
+        11.5,
+        41.25
+      ],
+      [
+        44,
+        11.5,
+        41.25
+      ]
+    ],
+    "pcb_nominal_envelope_mm": [
+      27,
+      1.6,
+      40.5
+    ],
+    "pcb_nominal_z_range_mm": [
+      21,
+      61.5
+    ],
+    "shell_split_y_mm": [
+      12,
+      12.3
+    ],
+    "shutter_axis_xy_mm": [
+      -49.5,
+      -6.6
+    ],
+    "closure_centres_xz_mm": [
+      [
+        -58,
+        8
+      ],
+      [
+        57,
+        8
+      ],
+      [
+        -60,
+        50
+      ],
+      [
+        50,
+        74
+      ]
+    ],
+    "closure_nut_y_mm": 8.5,
+    "shutter_entry_drop_mm": 2.8,
+    "shutter_insertion_entry_z_mm": -2.8,
+    "shutter_insertion_path": "rearward entry at Z offset -2.8 mm, slide forward in -Y, then lift +2.8 mm into guide",
+    "usb_service_aperture_mm": [
+      11,
+      5.2
+    ],
+    "usb_service_aperture_centre_xz_mm": [
+      24.9,
+      7.9
+    ]
+  },
+  "parts": [
+    {
+      "id": "P04",
+      "name": "Lens collar left",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P04.stl",
+      "step": "cad/P04.step",
+      "color": "#34383c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -25,
+        0
+      ],
+      "print_orientation": "Optical axis vertical; flange on plate. Bore is a provisional \u00d810 opening, not a verified camera mount.",
+      "bounds_mm": [
+        [
+          -18.998544692993164,
+          -34.29999923706055,
+          35.00581741333008
+        ],
+        [
+          6.998545169830322,
+          -16.0,
+          61.0
+        ]
+      ],
+      "volume_mm3": 5446.230040614514,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P05",
+      "name": "Lens collar right",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P05.stl",
+      "step": "cad/P05.step",
+      "color": "#34383c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -25,
+        0
+      ],
+      "print_orientation": "Optical axis vertical; flange on plate. Bore is a provisional \u00d810 opening, not a verified camera mount.",
+      "bounds_mm": [
+        [
+          35.0014533996582,
+          -34.29999923706055,
+          35.00581741333008
+        ],
+        [
+          60.9985466003418,
+          -16.0,
+          61.0
+        ]
+      ],
+      "volume_mm3": 5446.229926692579,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P08",
+      "name": "PCB top keeper left",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P08.stl",
+      "step": "cad/P08.step",
+      "color": "#b7bbc0",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        32,
+        20
+      ],
+      "print_orientation": "Flat face on plate. Keeper retains nominal PCB top edge; check populated-board clearance before fitting.",
+      "bounds_mm": [
+        [
+          -25.0,
+          10.100000381469727,
+          61.5
+        ],
+        [
+          13.0,
+          17.299999237060547,
+          66.5
+        ]
+      ],
+      "volume_mm3": 659.7274329087253,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P09",
+      "name": "PCB top keeper right",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P09.stl",
+      "step": "cad/P09.step",
+      "color": "#b7bbc0",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        32,
+        20
+      ],
+      "print_orientation": "Flat face on plate. Keeper retains nominal PCB top edge; check populated-board clearance before fitting.",
+      "bounds_mm": [
+        [
+          25.0,
+          10.100000381469727,
+          61.5
+        ],
+        [
+          63.0,
+          17.299999237060547,
+          66.5
+        ]
+      ],
+      "volume_mm3": 659.7274310145959,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P06",
+      "name": "Captured shutter cap",
+      "quantity": 1,
+      "geometry_type": "hybrid_mesh",
+      "stl": "cad/P06.stl",
+      "step": null,
+      "color": "#34383c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        0,
+        20
+      ],
+      "print_orientation": "Flange down. Rear-shell fork captures cap; no spring or switch fitted. This is a retained mechanical demonstrator only.",
+      "bounds_mm": [
+        [
+          -59.20000076293945,
+          -14.399999618530273,
+          67.80000305175781
+        ],
+        [
+          -39.79999923706055,
+          1.2000000476837158,
+          81.12284088134766
+        ]
+      ],
+      "volume_mm3": 1646.512561619554,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": null
+    },
+    {
+      "id": "P01",
+      "name": "Front shell",
+      "quantity": 1,
+      "geometry_type": "hybrid_mesh",
+      "stl": "cad/P01.stl",
+      "step": null,
+      "color": "#62676c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -6,
+        0
+      ],
+      "print_orientation": "Split plane y=12 on plate; front outward. Supports may be needed inside bosses and lens sockets. Inspect slice first.",
+      "bounds_mm": [
+        [
+          -69.80001831054688,
+          -33.59773254394531,
+          0.19998207688331604
+        ],
+        [
+          69.80027770996094,
+          12.0,
+          83.80027770996094
+        ]
+      ],
+      "volume_mm3": 59117.41390842859,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": {
+        "precision_mm": 0.0001,
+        "faces_removed": 48,
+        "volume_delta_mm3": -1.6331468941643834e-06
+      },
+      "brep_valid": null
+    },
+    {
+      "id": "P02",
+      "name": "Rear shell with shutter capture fork",
+      "quantity": 1,
+      "geometry_type": "hybrid_mesh",
+      "stl": "cad/P02.stl",
+      "step": null,
+      "color": "#62676c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        58,
+        0
+      ],
+      "print_orientation": "Orientation must accommodate projecting capture fork; split-plane-down needs support under shell. Inspect slice and support contact before printing.",
+      "bounds_mm": [
+        [
+          -69.78962707519531,
+          -13.600000381469727,
+          0.19998207688331604
+        ],
+        [
+          69.74579620361328,
+          33.813472747802734,
+          83.7992172241211
+        ]
+      ],
+      "volume_mm3": 50829.35608278882,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": {
+        "precision_mm": 0.0001,
+        "faces_removed": 16,
+        "volume_delta_mm3": 1.9472354324534535e-06
+      },
+      "brep_valid": null
+    },
+    {
+      "id": "P03",
+      "name": "Shared camera carrier",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P03.stl",
+      "step": "cad/P03.step",
+      "color": "#9fa4a9",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        26,
+        0
+      ],
+      "print_orientation": "Rear planar rail faces on plate; optical axis vertical. PCB edge channels and collars require fit-coupon approval.",
+      "bounds_mm": [
+        [
+          -24.99886703491211,
+          -15.699999809265137,
+          10.5
+        ],
+        [
+          62.99886703491211,
+          14.0,
+          71.5
+        ]
+      ],
+      "volume_mm3": 24024.68104913644,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    },
+    {
+      "id": "P10",
+      "name": "Critical fit coupon",
+      "quantity": 1,
+      "geometry_type": "analytic",
+      "stl": "cad/P10.stl",
+      "step": "cad/P10.step",
+      "color": "#b7bbc0",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        0,
+        0
+      ],
+      "print_orientation": "Base on plate. Tests \u00d821.9 collar receiver, \u00d83.5 screw clearance, 5.9 AF nut pocket and 2.2 PCB channel; not part of assembly.",
+      "bounds_mm": [
+        [
+          -0.3499999940395355,
+          -1.350000023841858,
+          0.0
+        ],
+        [
+          56.0,
+          25.350000381469727,
+          9.0
+        ]
+      ],
+      "volume_mm3": 5248.509235172313,
+      "watertight": true,
+      "connected_components": 1,
+      "stl_roundtrip_watertight": true,
+      "stl_roundtrip_components": 1,
+      "export_vertex_weld": null,
+      "brep_valid": true
+    }
+  ],
+  "hardware": [
+    {
+      "id": "H01",
+      "name": "M3 \u00d7 25 socket screw",
+      "type": "purchased",
+      "stl": "cad/H01.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N01",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N01.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H02",
+      "name": "M3 \u00d7 25 socket screw",
+      "type": "purchased",
+      "stl": "cad/H02.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N02",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N02.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H03",
+      "name": "M3 \u00d7 25 socket screw",
+      "type": "purchased",
+      "stl": "cad/H03.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N03",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N03.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H04",
+      "name": "M3 \u00d7 25 socket screw",
+      "type": "purchased",
+      "stl": "cad/H04.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N04",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N04.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H07",
+      "name": "M3 \u00d7 12 socket screw",
+      "type": "purchased",
+      "stl": "cad/H07.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N07",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N07.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H08",
+      "name": "M3 \u00d7 12 socket screw",
+      "type": "purchased",
+      "stl": "cad/H08.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N08",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N08.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H09",
+      "name": "M3 \u00d7 12 socket screw",
+      "type": "purchased",
+      "stl": "cad/H09.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N09",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N09.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H10",
+      "name": "M3 \u00d7 12 socket screw",
+      "type": "purchased",
+      "stl": "cad/H10.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N10",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N10.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H05",
+      "name": "M3 \u00d7 12 socket screw",
+      "type": "purchased",
+      "stl": "cad/H05.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N05",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N05.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "H06",
+      "name": "M3 \u00d7 12 socket screw",
+      "type": "purchased",
+      "stl": "cad/H06.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        65,
+        0
+      ],
+      "thread_geometry": "nominal smooth envelope, not modelled thread"
+    },
+    {
+      "id": "N06",
+      "name": "M3 hex nut",
+      "type": "purchased",
+      "stl": "cad/N06.stl",
+      "quantity": 1,
+      "color": "#74787d",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exploded_translation": [
+        0,
+        -4,
+        0
+      ]
+    }
+  ],
+  "bom": [
+    {
+      "name": "M3 \u00d7 25 socket screw",
+      "quantity": 4
+    },
+    {
+      "name": "M3 \u00d7 12 socket screw",
+      "quantity": 6
+    },
+    {
+      "name": "M3 hex nut, 5.5 mm AF \u00d7 2.4 mm nominal",
+      "quantity": 10
+    }
+  ],
+  "assembly_steps": [
+    "Test P10 fit coupon with actual hardware and PCB edge.",
+    "Slide four closure nuts into P01 internal vertical slots: lower nuts from above, upper nuts from below. Insert two carrier nuts through side access.",
+    "Insert P04 and P05 from inside P01 toward front; flanges sit behind socket shoulders.",
+    "Hold P06 2.8 mm below final height, enter from rear and slide forward, then lift 2.8 mm into guide. Keep cap supported until rear shell is fitted.",
+    "Outside housing, check populated-board clearance and slide nominal boards into P03 edge channels.",
+    "Outside housing, install P08/P09 top keepers with four M3\u00d712 screws and nuts.",
+    "Fit loaded P03 cassette from rear and fasten with H05/H06 and N05/N06. Carrier traps lens collar flanges.",
+    "Route prototype cabling clear of closure and shutter fork; USB-C electronics are not included.",
+    "Install P02 from rear; its integral fork captures P06. Tighten four M3\u00d725 screws by hand."
+  ],
+  "interfaces_open": [
+    "Exact PCB clone/component and ESP32-CAM-MB stack dimensions",
+    "Actual lens barrel, optical centre and flex bend clearance",
+    "30 mm true optic requirement is not met by current scale",
+    "Functional USB-C charging/data electronics and mounting",
+    "Shutter spring, switch and actuation interface",
+    "Stereo electrical synchronization and optical calibration",
+    "Print slicing, physical fit and mechanical load validation"
+  ],
+  "status": "mechanical prototype, not production validated",
+  "unintended_collisions": [],
+  "surface_derivation": {
+    "field_voxel_pitch_mm": 0.4,
+    "gaussian_sigma_voxels": 1.5,
+    "outer_iso_mm": 0,
+    "inner_iso_mm": 2.6,
+    "mesh_simplification_mm": 0.025,
+    "final_export_simplification_mm": 0.0001,
+    "shutter_access_guard_iso_mm": 1.6,
+    "raw_tripo_surface_exact": false
+  },
+  "removed_small_components": []
+}

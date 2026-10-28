@@ -1,0 +1,29 @@
+{
+  "objects": [
+    {
+      "id": "P10",
+      "path": "cad/P10.stl",
+      "color": "#b7bbc0",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "camera": {
+    "direction": [
+      -1,
+      -2,
+      2
+    ]
+  },
+  "margin": 0.12,
+  "mode": "line",
+  "size": [
+    2000,
+    1651
+  ],
+  "supersample": 1.35,
+  "line_width": 1.6505402768506225
+}

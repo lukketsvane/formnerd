@@ -1,0 +1,29 @@
+{
+  "objects": [
+    {
+      "id": "H05",
+      "path": "cad/H05.stl",
+      "color": "#74787d",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "camera": {
+    "direction": [
+      -1,
+      2,
+      1
+    ]
+  },
+  "margin": 0.12,
+  "mode": "line",
+  "size": [
+    2000,
+    1038
+  ],
+  "supersample": 1.35,
+  "line_width": 8.653846153846153
+}

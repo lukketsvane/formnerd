@@ -1,0 +1,428 @@
+{
+  "status": "passed",
+  "count": 21,
+  "engine": "Blender4.3.2 Cycles CPU",
+  "samples": 96,
+  "images": [
+    {
+      "id": "CAM-front",
+      "filename": "ESP32_CAM_front.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/electronics/ESP32_CAM_front.png",
+      "sha256": "21a7d44852a3b6a85096e239bee8c8070889c43f8d6d1bdf2ddae517c7983a8c",
+      "bytes": 2397804,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 1508198,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "21a7d44852a3b6a85096e239bee8c8070889c43f8d6d1bdf2ddae517c7983a8c"
+      }
+    },
+    {
+      "id": "CAM-back",
+      "filename": "ESP32_CAM_back.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/electronics/ESP32_CAM_back.png",
+      "sha256": "f34f507cddda657bb0cf49fec1aabad43dbd735422b5f18ceee3b4f4471c58d8",
+      "bytes": 2198066,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 1508450,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "f34f507cddda657bb0cf49fec1aabad43dbd735422b5f18ceee3b4f4471c58d8"
+      }
+    },
+    {
+      "id": "MB-hero",
+      "filename": "ESP32_MB_actual_hero.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/electronics/ESP32_MB_actual_hero.png",
+      "sha256": "f33e176f3a12bb8f654d22f40a6457c94b9ff0361e04049157742621a142feef",
+      "bytes": 1334717,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2953843,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "f33e176f3a12bb8f654d22f40a6457c94b9ff0361e04049157742621a142feef"
+      }
+    },
+    {
+      "id": "M01",
+      "filename": "R04_M01_black_hero.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M01_black_hero.png",
+      "sha256": "74066c97ad09944e64374b86fd65ffd8c6944b9aa4ba51e18752356f4490962e",
+      "bytes": 1916213,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2373070,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "74066c97ad09944e64374b86fd65ffd8c6944b9aa4ba51e18752356f4490962e"
+      }
+    },
+    {
+      "id": "M02",
+      "filename": "R04_M02_black_front.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M02_black_front.png",
+      "sha256": "64f4d90d9d5a2203c4b91befb2ecd007dce808a3e6a8caa565eb308ab827414b",
+      "bytes": 1639334,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2680571,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "64f4d90d9d5a2203c4b91befb2ecd007dce808a3e6a8caa565eb308ab827414b"
+      }
+    },
+    {
+      "id": "M03",
+      "filename": "R04_M03_black_rear.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M03_black_rear.png",
+      "sha256": "41b2180c12b519cc7c49178492f1214a8650113301c5051a4cf1d46bc0365ebb",
+      "bytes": 1222995,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2899122,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "41b2180c12b519cc7c49178492f1214a8650113301c5051a4cf1d46bc0365ebb"
+      }
+    },
+    {
+      "id": "M04",
+      "filename": "R04_M04_black_high.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M04_black_high.png",
+      "sha256": "61a52dce8c52a14965c1cca9c8a5374d8634b3739c339842b9bbbce591b73365",
+      "bytes": 1605806,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2670104,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "61a52dce8c52a14965c1cca9c8a5374d8634b3739c339842b9bbbce591b73365"
+      }
+    },
+    {
+      "id": "M05",
+      "filename": "R04_M05_black_low.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M05_black_low.png",
+      "sha256": "1272245c3b6f0e35397ff128282222a44c4c8ef31476544a2c7ac35a5e43b2da",
+      "bytes": 988016,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 3389675,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "1272245c3b6f0e35397ff128282222a44c4c8ef31476544a2c7ac35a5e43b2da"
+      }
+    },
+    {
+      "id": "M06",
+      "filename": "R04_M06_black_detail.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M06_black_detail.png",
+      "sha256": "6502c83c5d714a4d0f3b2d104438bad6d0175c81c6c2dbfb99ae5fee6963183b",
+      "bytes": 2248519,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 1702247,
+      "edge_nonwhite": 3062,
+      "intentional_detail_crop": true,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "few_parts_review",
+        "sha256": "6502c83c5d714a4d0f3b2d104438bad6d0175c81c6c2dbfb99ae5fee6963183b"
+      }
+    },
+    {
+      "id": "M07",
+      "filename": "R04_M07_grey_hero.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M07_grey_hero.png",
+      "sha256": "033c909bc9d5c65137945d8c97fb982351ac688231e3d4bd3b52eadb902da9fa",
+      "bytes": 1876184,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2372341,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "033c909bc9d5c65137945d8c97fb982351ac688231e3d4bd3b52eadb902da9fa"
+      }
+    },
+    {
+      "id": "M08",
+      "filename": "R04_M08_grey_front.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M08_grey_front.png",
+      "sha256": "6a0d59a0458d055911dddf92b0105b49eacc4ac707ec903b06e6c0258f852df4",
+      "bytes": 1587413,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2679214,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "6a0d59a0458d055911dddf92b0105b49eacc4ac707ec903b06e6c0258f852df4"
+      }
+    },
+    {
+      "id": "M09",
+      "filename": "R04_M09_grey_rear.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M09_grey_rear.png",
+      "sha256": "03aeef6f61a475cca09f1e012cc37328c38fa0411248d9b3e11574a3259f32d2",
+      "bytes": 1207218,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2898665,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "03aeef6f61a475cca09f1e012cc37328c38fa0411248d9b3e11574a3259f32d2"
+      }
+    },
+    {
+      "id": "M10",
+      "filename": "R04_M10_grey_high.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M10_grey_high.png",
+      "sha256": "b70fea9b7498ee940946dcbbbdcab6c4d9517a0c62497f38bc59f5498f5b311e",
+      "bytes": 1507670,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2669520,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "b70fea9b7498ee940946dcbbbdcab6c4d9517a0c62497f38bc59f5498f5b311e"
+      }
+    },
+    {
+      "id": "M11",
+      "filename": "R04_M11_grey_low.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M11_grey_low.png",
+      "sha256": "502547678dc58104236eb0d22ef56cbe990a9a1c9e9221faf2634a1efa9bc29e",
+      "bytes": 971330,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 3389097,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "502547678dc58104236eb0d22ef56cbe990a9a1c9e9221faf2634a1efa9bc29e"
+      }
+    },
+    {
+      "id": "M12",
+      "filename": "R04_M12_grey_detail.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M12_grey_detail.png",
+      "sha256": "a4953314daa86086194f9e6304f810bbc06afb6ef0146a515d9d2050e3ac7fed",
+      "bytes": 2040855,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 1701848,
+      "edge_nonwhite": 3062,
+      "intentional_detail_crop": true,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "r04_manual_mechanics",
+        "sha256": "a4953314daa86086194f9e6304f810bbc06afb6ef0146a515d9d2050e3ac7fed"
+      }
+    },
+    {
+      "id": "M13",
+      "filename": "R04_M13_duo_hero.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M13_duo_hero.png",
+      "sha256": "3e0c682c3cd3d6473f085c9d2b952f7e1575ff91ec327d822b71837cee53682e",
+      "bytes": 1952127,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2372895,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "3e0c682c3cd3d6473f085c9d2b952f7e1575ff91ec327d822b71837cee53682e"
+      }
+    },
+    {
+      "id": "M14",
+      "filename": "R04_M14_duo_front.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M14_duo_front.png",
+      "sha256": "b98681448acf270f90b13ac2e73c57ba838df54a59e6a65db784b611b8573ba3",
+      "bytes": 1660147,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2680394,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "b98681448acf270f90b13ac2e73c57ba838df54a59e6a65db784b611b8573ba3"
+      }
+    },
+    {
+      "id": "M15",
+      "filename": "R04_M15_duo_rear.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M15_duo_rear.png",
+      "sha256": "38d459bd4995413dbf799a499552a1cf0d2deeb26ff23e0022359b95890b716a",
+      "bytes": 1259585,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2899057,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "38d459bd4995413dbf799a499552a1cf0d2deeb26ff23e0022359b95890b716a"
+      }
+    },
+    {
+      "id": "M16",
+      "filename": "R04_M16_duo_high.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M16_duo_high.png",
+      "sha256": "b1acb38b3257fa65f31b674173c81272e1cba31449074de478b728fc4421aaf7",
+      "bytes": 1622887,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 2669927,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "b1acb38b3257fa65f31b674173c81272e1cba31449074de478b728fc4421aaf7"
+      }
+    },
+    {
+      "id": "M17",
+      "filename": "R04_M17_duo_low.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M17_duo_low.png",
+      "sha256": "cc8075419b0575ad27697a715c192f7ecd80d19cb3890540c9a039b0adb337c6",
+      "bytes": 1001699,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 3389575,
+      "edge_nonwhite": 0,
+      "intentional_detail_crop": false,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "cc8075419b0575ad27697a715c192f7ecd80d19cb3890540c9a039b0adb337c6"
+      }
+    },
+    {
+      "id": "M18",
+      "filename": "R04_M18_duo_detail.png",
+      "repo_path": "A1/Stereo-Multigrip-R04-USB18/presentation/mono-series/R04_M18_duo_detail.png",
+      "sha256": "a9e0364bc24d2aca51da279a0a4c89a76134c206902eeec82ec7a0779a13e942",
+      "bytes": 2237589,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "mode": "RGB",
+      "white_pixels": 1702106,
+      "edge_nonwhite": 3062,
+      "intentional_detail_crop": true,
+      "visual_qa": {
+        "status": "passed",
+        "reviewer": "root",
+        "sha256": "a9e0364bc24d2aca51da279a0a4c89a76134c206902eeec82ec7a0779a13e942"
+      }
+    }
+  ]
+}
