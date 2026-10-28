@@ -102,7 +102,7 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 - **Utløysaren krev kode:** IO13 mot GND, med SD i 1-bit-modus og debounce. Hald blitzen (GPIO4) av. Legg inn OTA-oppdatering, for MB-knappane er innebygde.
 - **USB-C-porten på grepet er berre form.**
 - **EF-fatninga er form, ikkje funksjon.** Klørne og kontaktane har EF-måla (Ø54-hals, 44 mm flensavstand er ikkje halden), men det er ingen låsefjør; eit objektiv kan stå i halsen, ikkje låsast.
-- Overgangen frå EC11-pipa til akselhòlet er 3,5 mm høg, så hjørna står brattare enn 45°; dei ligg over det opne sjaktet og kan få støtte om du vil.
+- Overgangen frå EC11-pipa til akselhòlet er 2 mm høg, så sidene står 56–60° og hjørna 72°; dei ligg over det opne sjaktet og kan få trestøtte om du vil, elles sig dei litt over Ø7,4-hòlet.
 - Filene har ikkje miniatyrbilete.
 
 ## Regenerering
