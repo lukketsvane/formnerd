@@ -12,8 +12,8 @@ A3-designet frå `arkiv/entropi-a3` bygd opp att som rein CAD: alle delane er B-
 
 | Fil i `print/` | Delar | Tid | PLA |
 | --- | --- | --- | --- |
-| `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal med skinne | 3 t 02 min | 74 g |
-| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 4 t 05 min | 98 g |
+| `A3-Entropi-botn-P1S.gcode.3mf` | Botnskal med skinne | 2 t 44 min | 77 g |
+| `A3-Entropi-topp-P1S.gcode.3mf` | Toppskal | 3 t 54 min | 99 g |
 | `A3-Entropi-smaadelar-P1S.gcode.3mf` | Utløysar, USB-lokk, hjulaksel | 12 min | 2 g |
 | `A3-Entropi-hjul-A17-P1S.gcode.3mf` | A17-hjulet V1–V4, vel eitt | 39 min | 10 g |
 
