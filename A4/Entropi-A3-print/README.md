@@ -8,6 +8,10 @@ A3-designet frå `arkiv/entropi-a3` bygd opp att som rein CAD: alle delane er B-
 
 ![Snitt gjennom linseaksen](bilete/snitt.png)
 
+![EF-fatninga framme](bilete/ef-fatning.png)
+
+![Tubane sett ovanfrå](bilete/ovanfraa.png)
+
 ## Prent i denne rekkjefølgja
 
 | Fil i `print/` | Delar | Tid | PLA |
