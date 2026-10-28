@@ -6,7 +6,8 @@ from shapely.ops import unary_union
 from omriss import glatt, resample
 
 HER = pathlib.Path(__file__).resolve().parent
-SPALTE_R = json.loads((HER / "delar_konfig.json").read_text())["form"]["linse"]["kappe_spalte_r"]
+sys.path.insert(0, str(HER))
+import tonnespalte
 M = trimesh.load(HER / "../../arkiv/entropi-a3/03-3d/a3-entropi-print-120mm.stl")
 AY, AZ = 65.0, 32.0
 N_PKT = 96
@@ -32,9 +33,7 @@ def kropp_seksjonar():
         if p is None:
             continue
         full = glatt(p).simplify(0.1)
-        R = 28.0 if z <= 14.5 else SPALTE_R
-        w = np.sqrt(max(R**2 - (z - AZ) ** 2, 0.0))
-        p = p.difference(box(66.0, AY - w, 95.0, AY + w)) if w > 0.5 else p
+        p = tonnespalte.kutt(p, z)
         p = p.difference(box(-5, 44.0, 18.5, 85.0)) if z > 56 else p
         if p.geom_type != "Polygon":
             p = max(p.geoms, key=lambda q: q.area)

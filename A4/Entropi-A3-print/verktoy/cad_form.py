@@ -26,7 +26,7 @@ def forskove(punkt, d):
     p = ShPolygon(punkt).buffer(d, join_style=1)
     if p.geom_type != "Polygon":
         p = max(p.geoms, key=lambda q: q.area)
-    return resample(glatt(p, 2.0), front=(95.0, K["akse"]["y"]) if p.bounds[2] > 80 else (58.0, K["akse"]["y"]))
+    return resample(glatt(p, 2.0), front=(58.0, K["akse"]["y"]))
 
 
 def seksjonar_kropp(full=False):
@@ -43,17 +43,12 @@ def kappe(topp, z0, z1, d0, R, steg=12):
 
 
 def tonnekutt(punkt, z):
-    """Tek bort tonneregionen (x >= 58 innanfor korda til linseløpet) frå eit fullt snitt."""
-    from shapely.geometry import box as shbox
-    ay, az = K["akse"]["y"], K["akse"]["z"]
-    R = K["form"]["linse"].get("kappe_spalte_r", 30.6)
-    w = np.sqrt(max(R**2 - (z - az) ** 2, 0.0))
-    p = ShPolygon(punkt)
-    if w > 0.5:
-        p = p.difference(shbox(66.0, ay - w, 95.0, ay + w))
-        if p.geom_type != "Polygon":
-            p = max(p.geoms, key=lambda q: q.area)
-    return resample(glatt(p, 2.0), front=(58.0, ay))
+    """Tek bort tonneregionen (løpsradius + spalte frå x 66) frå eit fullt snitt."""
+    import tonnespalte
+    p = tonnespalte.kutt(ShPolygon(punkt), z)
+    if p.geom_type != "Polygon":
+        p = max(p.geoms, key=lambda q: q.area)
+    return resample(glatt(p, 2.0), front=(58.0, K["akse"]["y"]))
 
 
 def vegg_y(S, z, x):
@@ -111,7 +106,7 @@ def riller(k):
         L = float(np.hypot(*d))
         v = float(np.degrees(np.arctan2(d[1], d[0])))
         m = (a + b) / 2
-        if m[0] > 65.9 and np.hypot(m[1] - K["akse"]["y"], dz - K["akse"]["z"]) < 29.5:
+        if m[0] > 65.9 and np.hypot(m[1] - K["akse"]["y"], dz - K["akse"]["z"]) < 33.5:
             continue
         seg.append(Pos(m[0], m[1], dz) * Rot(0, 0, v) * Box(L + 0.3, 2.0 + df["djupn"], 2 * df["breidd"], align=(Align.CENTER, Align.MAX, Align.CENTER)).moved(Pos(0, df["djupn"], 0)))
     u = seg[0]
@@ -204,7 +199,7 @@ def knappboss():
 
 def bygg_form():
     import hashlib
-    nokkel = hashlib.sha1(("v8" + json.dumps(K["detalj"]["riller"]) + json.dumps(K["detalj"]["delingsfas"]) + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
+    nokkel = hashlib.sha1(("v9" + json.dumps(K["detalj"]["riller"]) + json.dumps(K["detalj"]["delingsfas"]) + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
     cache = HER.parent / "print" / "cad" / f"form_{nokkel}"
     if (cache / "union.brep").exists():
         delar = {p.stem: import_brep(p) for p in sorted(cache.glob("*.brep")) if p.stem != "union"}
