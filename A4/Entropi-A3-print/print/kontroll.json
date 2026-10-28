@@ -27,7 +27,7 @@
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 140.839,
+      "volum_cm3": 140.645,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -99,7 +99,7 @@
     }
   },
   "veggar_mm": {
-    "stabel": 9.17,
+    "stabel": 8.34,
     "brytarlomme": 4.41,
     "ec11_pipe": 5.5,
     "magnetlommer": 1.5,
@@ -176,6 +176,6 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "ytre_volum_cm3": 534.2,
+  "ytre_volum_cm3": 534.0,
   "brytargolv_mm": 2.6
 }
