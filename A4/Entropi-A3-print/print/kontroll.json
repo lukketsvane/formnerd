@@ -27,9 +27,11 @@
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 141.547,
-      "komponentar": 1,
-      "smaa_komponentar_mm3": [],
+      "volum_cm3": 141.469,
+      "komponentar": 2,
+      "smaa_komponentar_mm3": [
+        -0.337
+      ],
       "bbox": [
         [
           -1.2,
@@ -176,6 +178,6 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "ytre_volum_cm3": 534.9,
+  "ytre_volum_cm3": 534.8,
   "brytargolv_mm": 2.6
 }
