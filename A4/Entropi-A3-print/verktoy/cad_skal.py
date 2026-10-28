@@ -100,7 +100,25 @@ prof = Polygon((xm_ - hb, sk_["z_botn"]), (xm_ + hb, sk_["z_botn"]), (xm_ + ht, 
 KROPP0 += Pos(0, sk_["y"][0], 0) * Rot(90, 0, 0) * extrude(prof, -(sk_["y"][1] - sk_["y"][0]))
 lr = D["linsering"]
 L = F["linse"]
-KROPP0 -= xsyl(lr["x_flate"], L["profil"][-1][0] + 5, lr["r_ytre"])
+EF = F["ef"]
+
+
+def vinkel_pos(rr, grader):
+    return ay + rr * math.cos(math.radians(grader)), az + rr * math.sin(math.radians(grader))
+
+
+def bogesegment(r0, r1, senter_grader, spenn_grader, x0, x1):
+    a = senter_grader + 90.0
+    pts = [(0.0, 0.0)] + [(60 * math.cos(math.radians(a - spenn_grader / 2 + spenn_grader * i / 8)), 60 * math.sin(math.radians(a - spenn_grader / 2 + spenn_grader * i / 8))) for i in range(9)]
+    kile = Polygon(*pts, align=None)
+    ring = (Circle(r1) - Circle(r0)) & kile
+    return Pos(x0, ay, az) * Rot(0, 90, 0) * extrude(ring, x1 - x0)
+
+
+ef_pin_y, ef_pin_z = vinkel_pos(EF["pinne"]["rr"], EF["pinne"]["vinkel"])
+KROPP0 += xsyl(EF["flens_x"][1] - 0.5, EF["flens_x"][1] + EF["pinne"]["hogd"], EF["pinne"]["r"], ef_pin_y, ef_pin_z)
+eu = EF["utloysar"]
+KROPP0 += Pos(eu["x"][0], eu["senter"][0], eu["senter"][1]) * Rot(0, 90, 0) * fillet(Cylinder(eu["r"], eu["x"][1] - eu["x"][0], align=(Align.CENTER, Align.CENTER, Align.MIN)).edges().group_by(Axis.Z)[-1], 1.0)
 tid("kropp0")
 
 # --- stabelen ----------------------------------------------------------------
@@ -124,7 +142,20 @@ x_kort = x_cam_front + 0.6
 ks, lk, lt = K["kamerasete"], K["linsekonus"], S["linsetrakt"]
 sete = boks([S["front_x"] - 1.0, x_konus + 0.8], [ay - ks["side"] / 2, ay + ks["side"] / 2], [az - ks["side"] / 2, az + ks["side"] / 2])
 konus = xkjegle(x_konus, lk["front_x"], lk["bak_r"], lk["front_r"]) + xsyl(lk["front_x"], lk["fram_til_x"], lk["front_r"])
-trakt = union([xkjegle(x1, x2, r1, r2) for (r1, x1), (r2, x2) in zip(lt["profil"][1:], lt["profil"][:-1])])
+ef_hals = xsyl(EF["hals_x"][0], EF["hals_x"][1], EF["hals_r"])
+ek = EF["kammer"]
+ef_kammer = boks(ek["x"], [ay - ek["y_halv"], ay + ek["y_halv"]], [az - ek["z_halv"], az + ek["z_halv"]])
+es = EF["sensor"]
+ef_sensor = boks(es["x"], [ay - es["b"] / 2, ay + es["b"] / 2], [az - es["h"] / 2, az + es["h"] / 2])
+kl_ = EF["klor"]
+EF_KLOR = union([bogesegment(kl_["r_indre"], EF["hals_r"] + 0.3, kl_["start"] + 360.0 * i / kl_["n"], kl_["spenn"], kl_["x"][0], kl_["x"][1]) for i in range(kl_["n"])])
+ko_ = EF["kontaktar"]
+EF_KONTAKT = bogesegment(ko_["r_indre"], EF["hals_r"] + 0.3, ko_["senter"], ko_["spenn"], ko_["x"][0], ko_["x"][1])
+EF_KONTAKTHOL = union([xsyl(ko_["x"][1] - ko_["djupn"], ko_["x"][1] + 1.0, ko_["hol_r"], *vinkel_pos(ko_["r"], ko_["senter"] - ko_["spenn"] / 2 + 4 + (ko_["spenn"] - 8) * i / (ko_["n"] - 1))) for i in range(ko_["n"])])
+sk_ef = EF["skruar"]
+EF_SKRUAR = union([Pos(EF["flens_x"][1] - sk_ef["djupn"], *vinkel_pos(sk_ef["r"], sk_ef["start"] + 360.0 * i / sk_ef["n"])) * Rot(0, 90, 0) * Cone(sk_ef["r_hovud"] / 2, sk_ef["r_hovud"], sk_ef["djupn"], align=(Align.CENTER, Align.CENTER, Align.MIN)) for i in range(sk_ef["n"])] + [xsyl(EF["flens_x"][1] - 0.01, EF["flens_x"][1] + 1.0, sk_ef["r_hovud"], *vinkel_pos(sk_ef["r"], sk_ef["start"] + 360.0 * i / sk_ef["n"])) for i in range(sk_ef["n"])])
+pr_ = EF["prikk"]
+EF_PRIKK = xsyl(EF["flens_x"][1] - pr_["djupn"], EF["flens_x"][1] + 1.0, pr_["r"], *vinkel_pos(pr_["rr"], pr_["vinkel"]))
 ut_ = K["utloysar"]
 ux, uy = ut_["senter"]
 brunn_golv = ut_["kapp_z"] - ut_["vandring"]
@@ -188,17 +219,13 @@ ri = D["riller"]
 tid("riller")
 over_golv = boks([-50, 200], [-50, 200], [D["knurl_z_min"], 200])
 KNURL = Part()
-for kn, v0 in ((D["knurl_linse"], 0.0), (D["knurl_linse2"], 3.0)):
+for kn, v0 in ((D["knurl_linse2"], 3.0),):
     rm = linse_r((kn["x"][0] + kn["x"][1]) / 2)
     KNURL += polar_x(kn["n"], rm - kn["djupn"], rm + 1.5, kn["tjukn"], kn["x"], v0) & over_golv
 pl = D["panel_linje"]
 rp = linse_r(pl["x"])
 PANEL = (xsyl(pl["x"] - pl["breidd"] / 2, pl["x"] + pl["breidd"] / 2, rp + 1.5) - xsyl(pl["x"] - 1, pl["x"] + 1, rp - pl["djupn"])) & over_golv
 KNURL = (KNURL + PANEL) - YTRE_BLOKK
-SKALA = Part()
-for lang, n, v0 in ((False, lr["n"], 0.0), (True, lr["n"] // lr["lang_kvar"], 0.0)):
-    SKALA += polar_x(n, lr["r"][0], lr["r_lang"] if lang else lr["r"][1], lr["tjukn"] + (0.2 if lang else 0.0), [lr["x_flate"] - lr["djupn"], lr["x_flate"] + 3.0], v0)
-SKALA = SKALA & boks([-50, 200], [-50, 200], [D["knurl_z_min"], 200])
 hs = D["hjulskala"]
 HJULSKALA = polar_z(hs["n"], hs["r"][0], hs["r"][1], hs["tjukn"], (hx, hy), hs["z"]) + polar_z(hs["n"] // hs["lang_kvar"], hs["r"][0], hs["r_lang"], hs["tjukn"] + 0.2, (hx, hy), hs["z"])
 nm = D["namn"]
@@ -218,7 +245,7 @@ andre = union([KOMP[n] for n in KOMP if n not in ("kropp", "sokar", "hjulboss", 
 SAUM = (saum_sokar + saum_hjul + saum_knapp) - andre
 tid("saumar")
 
-kutt_ = [("knurl", KNURL), ("skala", SKALA), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)]
+kutt_ = [("knurl", KNURL), ("ef_skruar", EF_SKRUAR), ("ef_prikk", EF_PRIKK), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)]
 for namn_, op_ in kutt_:
     try:
         ny_ = KROPP - op_
@@ -292,10 +319,14 @@ def hol_solid(ytre, indre):
 KROPP = hol_solid(KROPP0, KJ)
 print("hol kropp gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()), "skal", len(KROPP.solids()[0].shells()))
 tid("kropp med holrom")
-for namn_, op_ in (("sete", sete), ("konus", konus), ("trakt", trakt), ("brunn", brunn), ("brytarlomme", brytarlomme), ("brytarhol", brytarhol), ("usb_tunnel", usb_tunnel),
+for namn_, op_ in (("sete", sete), ("konus", konus), ("ef_hals", ef_hals), ("ef_kammer", ef_kammer), ("ef_sensor", ef_sensor), ("brunn", brunn), ("brytarlomme", brytarlomme), ("brytarhol", brytarhol), ("usb_tunnel", usb_tunnel),
                    ("usbc", usbc), ("okular", okular), ("EC11", EC11), ("stativ_hol", stativ_hol)):
     KROPP = KROPP - op_
     tid("  - " + namn_)
+KROPP = KROPP + EF_KLOR + EF_KONTAKT
+KROPP = KROPP - EF_KONTAKTHOL
+print("EF-klør og kontaktar lagde til: gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
+tid("ef-klør")
 print("KROPP gyldig", KROPP.is_valid, "solidar", len(KROPP.solids()))
 
 if "--form" in sys.argv:

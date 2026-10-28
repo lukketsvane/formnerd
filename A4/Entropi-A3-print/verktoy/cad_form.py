@@ -154,13 +154,13 @@ def holrom_loft():
 
 
 def linsetonne():
-    L = F["linse"]
+    L, ef = F["linse"], F["ef"]
     ay, az = K["akse"]["y"], K["akse"]["z"]
-    pr = L["profil"]
+    pr = L["profil"] + [[ef["flens_x"][0], pr_r] for pr_r in [L["profil"][-1][1]]] + [[ef["flens_x"][0], ef["flens_r"]], [ef["flens_x"][1], ef["flens_r"]]]
     prof = Polyline((pr[0][0], 0), *[(x, r) for x, r in pr], (pr[-1][0], 0), close=True)
     k = revolve(make_face(prof), Axis.X)
     k = Pos(0, ay, az) * k
-    return fillet(k.edges().group_by(Axis.X)[-1], L["front_fillet"])
+    return chamfer(k.edges().group_by(Axis.X)[-1], ef["flens_fas"])
 
 
 def royr(p, r, b=None):
@@ -173,7 +173,12 @@ def royr(p, r, b=None):
 def sokarblokk():
     b = F["sokar"]
     k = Box(b["x"][1] - b["x"][0], b["y"][1] - b["y"][0], b["z"][1] - b["z"][0], align=(Align.MIN, Align.MIN, Align.MIN)).moved(Pos(b["x"][0], b["y"][0], b["z"][0]))
-    return fillet([e for e in k.edges() if e.center().Z > b["z"][0] + 1], b["fillet"])
+    k = fillet([e for e in k.edges() if e.center().Z > b["z"][0] + 1], b["fillet"])
+    pl = b["plint"]
+    u = pl["utvid"]
+    plint = Box(b["x"][1] - b["x"][0] + u, b["y"][1] - b["y"][0] + 2 * u, pl["z"][1] - pl["z"][0], align=(Align.MIN, Align.MIN, Align.MIN)).moved(Pos(b["x"][0], b["y"][0] - u, pl["z"][0]))
+    plint = fillet([e for e in plint.edges() if e.center().Z > pl["z"][1] - 0.1 or abs(e.center().Z - (pl["z"][0] + pl["z"][1]) / 2) < 0.5], 1.0)
+    return k + plint
 
 
 def syl(cx, cy, r, z0, z1):
@@ -183,7 +188,9 @@ def syl(cx, cy, r, z0, z1):
 def hjulboss():
     b = F["hjulboss"]
     c = syl(b["senter"][0], b["senter"][1], b["r"], b["z"][0], b["z"][1])
-    return fillet(c.edges().group_by(Axis.Z)[-1], b["fillet"])
+    c = fillet(c.edges().group_by(Axis.Z)[-1], b["fillet"])
+    kr = b["krage"]
+    return c + Pos(b["senter"][0], b["senter"][1], kr["z"][0]) * Cone(kr["r"], b["r"], kr["z"][1] - kr["z"][0], align=(Align.CENTER, Align.CENTER, Align.MIN))
 
 
 def knappboss():
@@ -194,7 +201,7 @@ def knappboss():
 
 def bygg_form():
     import hashlib
-    nokkel = hashlib.sha1(("v3" + json.dumps(K["detalj"]["riller"]) + json.dumps(K["detalj"]["delingsfas"]) + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
+    nokkel = hashlib.sha1(("v4" + json.dumps(K["detalj"]["riller"]) + json.dumps(K["detalj"]["delingsfas"]) + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
     cache = HER.parent / "print" / "cad" / f"form_{nokkel}"
     if (cache / "union.brep").exists():
         delar = {p.stem: import_brep(p) for p in sorted(cache.glob("*.brep")) if p.stem != "union"}

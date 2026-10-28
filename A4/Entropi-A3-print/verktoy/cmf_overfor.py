@@ -18,7 +18,7 @@ def moerk(p, K):
     sokar = (x < 18.2) & over_saum
     hjul = (np.hypot(x - H["senter"][0], y - H["senter"][1]) < H["r"] + 0.3) & over_saum
     knapp = (np.hypot(x - U["senter"][0], y - U["senter"][1]) < K["form"]["knappboss"]["r"] + 0.3) & over_saum
-    linse = (x > D["panel_linje"]["x"]) & (r_l < 31.5)
+    linse = (x > D["panel_linje"]["x"]) & (r_l < 34.0)
     skinne = (z < sk["z_topp"] + 0.2) & (x > sk["x"][0] - 0.5) & (x < sk["x"][1] + 0.5) & (y > sk["y"][0] - 0.5) & (y < sk["y"][1] + 0.5)
     okular = (x < 1.0) & (np.hypot(y - ok["senter"][0], z - ok["senter"][1]) < ok["r_ytre"] + 0.8)
     return sokar | hjul | knapp | linse | skinne | okular
