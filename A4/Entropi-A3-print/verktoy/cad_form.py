@@ -46,7 +46,7 @@ def tonnekutt(punkt, z):
     """Tek bort tonneregionen (x >= 58 innanfor korda til linseløpet) frå eit fullt snitt."""
     from shapely.geometry import box as shbox
     ay, az = K["akse"]["y"], K["akse"]["z"]
-    R = 28.0 + 2.1 * min(max(z - 54.0, 0.0), 4.0) / 4.0
+    R = K["form"]["linse"].get("kappe_spalte_r", 30.6)
     w = np.sqrt(max(R**2 - (z - az) ** 2, 0.0))
     p = ShPolygon(punkt)
     if w > 0.5:
@@ -204,7 +204,7 @@ def knappboss():
 
 def bygg_form():
     import hashlib
-    nokkel = hashlib.sha1(("v7" + json.dumps(K["detalj"]["riller"]) + json.dumps(K["detalj"]["delingsfas"]) + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
+    nokkel = hashlib.sha1(("v8" + json.dumps(K["detalj"]["riller"]) + json.dumps(K["detalj"]["delingsfas"]) + json.dumps(F, sort_keys=True) + json.dumps(MAAL["kropp"]) + json.dumps(K["akse"]) + json.dumps(K["utloysar"])).encode()).hexdigest()[:12]
     cache = HER.parent / "print" / "cad" / f"form_{nokkel}"
     if (cache / "union.brep").exists():
         delar = {p.stem: import_brep(p) for p in sorted(cache.glob("*.brep")) if p.stem != "union"}
