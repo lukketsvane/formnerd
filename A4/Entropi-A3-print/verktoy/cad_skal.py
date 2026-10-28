@@ -277,10 +277,14 @@ if KROPP0_LASTA is None:
 # --- holkjerne ---------------------------------------------------------------
 v = S["vegg"]
 KJERNE = cf.holrom_loft() & boks([-50, S["front_x"]], [-50, 200], [-50, 200])
-vern = Pos(bx - br["side_x"] / 2 - v, by - br["side_y"] / 2 - v, lomme_botn - v) * Box(br["side_x"] + 2 * v, br["side_y"] + 2 * v, 90 - lomme_botn + v, align=MN)
+vern = vsyl(bx, by, 8.8, lomme_botn - v, 90.0)
 vern += vsyl(ux, uy, ut_["brunn_r"] + v, brunn_golv - v, 90)
 uh = S["usb_hylse"]
 vern += rboks_y(y_hjul_usb - uh["djupn"], y_hjul_usb + 5, x_usb, az + 2.0, ut_t["b_x"] + 2 * uh["vegg"], ut_t["h_z"] + 4 + 2 * uh["vegg"], ut_t["r"] + uh["vegg"])
+kjol_b = ut_t["b_x"] + 2 * uh["vegg"]
+kjol_zu = az + 2.0 - (ut_t["h_z"] + 4 + 2 * uh["vegg"]) / 2
+kjol_prof = Polygon((x_usb - kjol_b / 2, kjol_zu + 0.5), (x_usb + kjol_b / 2, kjol_zu + 0.5), (x_usb, kjol_zu + 0.5 - kjol_b / 2), align=None)
+vern += Pos(0, y_hjul_usb - uh["djupn"], 0) * Rot(90, 0, 0) * extrude(kjol_prof, -(5 + uh["djupn"]))
 vern += boks([ug["x"] - r_s - v, ug["x"] + r_s + v], [y_grep - 3, y_grep + ug["djupn"] + v], [ug["z"] - ug["lengd_z"] / 2 - v, ug["z"] + ug["lengd_z"] / 2 + v])
 vern += boks([hx - pw / 2 - v, hx + pw / 2 + v], [hy - pd / 2 - v, hy + pd / 2 + v], [S["tak_z"] - 6, 90])
 vern += vsyl(stv["senter"][0], stv["senter"][1], stv["boss_r"], sk_["z_botn"] - 1, stv["boss_z_topp"])
@@ -312,11 +316,15 @@ def hol_solid(ytre, indre):
     skal = getattr(TopoDS, "Shell_s", None) or TopoDS.Shell
     orient = getattr(BRepLib, "OrientClosedSolid_s", None) or BRepLib.OrientClosedSolid
     ys = sorted(ytre.solids()[0].shells(), key=lambda sh: -sh.bounding_box().diagonal)
+    behald = []
     for sh in ys[1:]:
         bb = sh.bounding_box()
-        print("   indre skal i ytre kropp:", [round(v, 1) for v in (bb.min.X, bb.min.Y, bb.min.Z, bb.max.X, bb.max.Y, bb.max.Z)])
+        tynn = min(bb.size.X, bb.size.Y, bb.size.Z) < 0.5
+        print("   indre skal i ytre kropp:", [round(v, 1) for v in (bb.min.X, bb.min.Y, bb.min.Z, bb.max.X, bb.max.Y, bb.max.Z)], "(fjerna, tynnare enn 0,5 mm)" if tynn else "(behalden)")
+        if not tynn:
+            behald.append(sh)
     ms = BRepBuilderAPI_MakeSolid(skal(ys[0].wrapped))
-    for sh in ys[1:]:
+    for sh in behald:
         ms.Add(skal(sh.wrapped))
     for sol in indre.solids():
         for sh in sol.shells():
