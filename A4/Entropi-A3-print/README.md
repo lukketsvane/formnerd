@@ -1,6 +1,6 @@
 # Entropi · A3-print (delt skal)
 
-A3-designet frå `arkiv/entropi-a3` bygd opp att som rein CAD: alle delane er B-rep-solidar (NURBS/analytiske flater i OCCT via build123d), ikkje mesh. Tripo-meshen er berre brukt som målestokk for forma. Kvar del ligg som STEP i `print/step/` og som tett tessellert STL i `print/stl/`. Modellen skal målast i to gråtonar, så renderane viser berre dei. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Linsa sit i ei glatt trakt med éin skarp kant, hendingshorisonten, i staden for den tynne ringen og sporet. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
+A3-designet frå `arkiv/entropi-a3` bygd opp att som rein CAD: alle delane er B-rep-solidar (NURBS/analytiske flater i OCCT via build123d), ikkje mesh. Tripo-meshen er berre brukt som målestokk for forma. Kvar del ligg som STEP i `print/step/` og som tett tessellert STL i `print/stl/`. Modellen skal målast i to gråtonar, så renderane viser berre dei. Kroppen er delt vassrett gjennom linseaksen (z = 32) i eit botnskal og eit toppskal som blir haldne saman av seks magnetar og tre pinnar. Innsida er holt ut til ein jamn vegg på 2,6 mm, og elektronikken står i to sporstolpar. Framme på linseløpet sit ei Canon EF-bajonettfatning for fullformat: Ø66-flens, Ø54-hals, tre bajonettklør, kontaktblokk, utløysarpinne og raud-prikk-merke, og bak halsen eit spegelkammer med ein 36 × 24-sensorforsenking rundt linseopninga. Hjulet på toppen er bytt ut med A17-entropihjulet (`../../A17/entropihjul/`) på ein EC11-dreieknapp.
 
 ![CMF](bilete/cmf.png)
 
@@ -37,10 +37,11 @@ Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, ve
 | Del | Solid |
 | --- | --- |
 | Kroppen med grepet | Ruled loft gjennom snitta, kvart snitt ein periodisk B-spline gjennom 140 punkt med fire faste ankerpunkt, og elleve innoverforskove snitt som rundar toppen av (r 8). Rillene i grepet og sporet langs delinga er skorne i dette loftet før samanføyinga |
-| Linseløpet | Omdreiingsflate av den målte profilen (r 29,5 → 27,9 frå x 70 til 90) med ein krage r 31,5 → 31 der løpet går inn i kroppen (x 58–66), fillet 1,5 mm framme, forsenking r 26,8 frå x 85 og trakt innover |
-| Tubebunten | Ni sveip langs splinar: ein ellipse-bunt (12 × 8 mm) midt på toppen, tre tubar (r 8) frå søkarblokka, gripryggen (ellipse 8,7 × 7) og gripframen (r 9) ned i grepet, armen frå hjulbossen (r 7,5), armen ned til linseløpet og armen over på løpet (r 9,5) |
-| Søkarblokka | Boks 18 × 40,5 × 32 mm med fillet 2,5 mm |
-| Hjulbossen | Sylinder r 17,5 til z 80, fillet 2 mm |
+| Linseløpet | Omdreiingsflate av den målte profilen (r 31,5 → 28,6 frå x 58 til 86) som går mjukt frå kragen i kroppen og ut i EF-flensen |
+| EF-fatninga | Flens Ø66 (x 86,5–90) med 0,8 mm fas, hals Ø54 (x 84–90,5), tre bajonettklør r 23,8–27,3 over 42° (x 88–90), kontaktblokk nedst med åtte kontaktgroper, fire forsenkte skruehovud på r 30,5, utløysarpinne på r 30,3 og prikk på toppen. Bak halsen eit spegelkammer 44 × 30 mm (x 72–84) og ein sensorforsenking 36 × 24 mm. Utløysarknappen for objektivet er ein sylinder r 5 på sida av løpet |
+| Tubane | Fem sveip (r 8,5) langs splinar som heng saman i kjeder: frå søkarblokka går éin tube over toppen og ned grepsryggen, éin over og ned på linseløpet, og éin ut mot hjulsida og ned bak løpet. Armen frå hjulbossen (r 7,5) endar inne i den tredje, og gripframen endar inne i den første, så kvar skøyt er ein tube som går inn i ein annan, ikkje ein klump |
+| Søkarblokka | Boks 18 × 40,5 × 32 mm med fillet 2,5 mm, på ein plint 1,5 mm breiare (z 55–59) som tek overgangen til kroppen |
+| Hjulbossen | Sylinder r 17,5 til z 80, fillet 2 mm, med ein kjegleforma krage r 20,5 → 17,5 (z 53–60) mot kroppen |
 | Utløysarbossen | Sylinder r 9 til z 63,5, fillet 2,5 mm |
 
 Holrommet er eit ruled loft av dei uskorne snitta forskove 2,6 mm inn (det minste av snitta ved z − 2,6, z og z + 2,6, så veggen held der flata hallar; golv z 5, tak z 55), lagt inn i kroppen som eit indre skal utan boolsk operasjon. Søyler, stolpar, trakter og lommer er boksar, sylindrar og loft som blir trekte frå etterpå, éin om gongen. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
@@ -53,13 +54,14 @@ Detaljane er skorne eller lagde til i `verktoy/cad_skal.py` som eitt solid per d
 | --- | --- | --- |
 | Riller i grepet, 0,8 × 0,5 mm med 2,4 mm deling | Grepsida, z 8–50 | Nocs-kikkert, Hasselblad-grep |
 | Arca-Swiss-skinne, 38 mm brei med 45° svalehale, og lomme for 1/4"-20-mutter med Ø7-hol | Under botnskalet, x 18–56 | Sirui TY-70 |
-| Flat frontring med 72 skalastrek, og to knurla ringar (72 og 60 spor) | Linseløpet, x 73–77 og 84–89 | Leica Summicron |
+| Knurla ring med 60 spor | Linseløpet, x 73–77 | Leica Summicron |
+| EF-bajonett med klør, kontaktar, skruar og pinne | Fronten, x 84–91 | Canon EF |
 | Panel-linje rundt linsebasen, saum mellom gråtonane | x 71,2 | Canon Colani |
 | Gradskala med 36 strek rundt hjulet | Toppen, r 12–15,5 | Sirui BH-60 |
 | Gravert «ENTROPI» og tre små knappar | Toppen av søkarblokka | Hasselblad X2D |
 | Knurla okularring som stikk 1,2 mm ut | Baksida | Leica |
 | 0,4 mm fas på begge sider av delinga | Rundt heile kroppen | |
-| To gråtonar: lys på kropp, tubar og linsering, mørk på søkarblokk, hjulboss, utløysar, linsefront, skinne og okular, skilde av spor i overflata | CMF, etter kursregelen om form | |
+| To gråtonar: lys på kropp, tubar og linsering, mørk på søkarblokk, hjulboss, utløysar, linsefront med EF-fatninga, skinne og okular, skilde av spor i overflata | CMF, etter kursregelen om form | |
 
 ## Innkjøp
 
