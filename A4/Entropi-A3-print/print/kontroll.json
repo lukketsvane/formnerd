@@ -9,7 +9,7 @@
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 99.606,
+      "volum_cm3": 99.333,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -107,11 +107,11 @@
   },
   "kollisjonar_mm3": {
     "mb_kort": {
-      "botn": 62.272,
+      "botn": 0.0,
       "topp": 0.0
     },
     "mb_tappar": {
-      "botn": 30.71,
+      "botn": 0.0,
       "topp": 0.0
     },
     "usb_kontakt": {
@@ -119,7 +119,7 @@
       "topp": 0.0
     },
     "mb_knappar": {
-      "botn": 48.761,
+      "botn": 0.0,
       "topp": 0.0
     },
     "headerar": {
@@ -131,7 +131,7 @@
       "topp": 0.0
     },
     "esp32s": {
-      "botn": 5.952,
+      "botn": 0.0,
       "topp": 0.0
     },
     "cam_kort": {
@@ -166,14 +166,14 @@
     "botn_mot_topp": 0.0
   },
   "sveip_mm3": {
-    "stabel_ned_i_botn": 147.694,
+    "stabel_ned_i_botn": 0.0,
     "topp_ned_paa_stabelen": 0.0,
     "usb_plugg_inn": 0.0,
     "ec11_opp_gjennom_pipa": 0.0,
     "brytar_ned_i_lomma": 0.0
   },
   "klaring_stabel_mm": {
-    "botn": 0.0,
+    "botn": 0.2,
     "topp": 0.2
   },
   "ytre_volum_cm3": 534.9,
