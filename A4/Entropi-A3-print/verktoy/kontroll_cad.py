@@ -78,7 +78,7 @@ OPNINGAR = {
     "linse": propp(boks([x_front - 6.0, x_front + 1.0], [-50, 200], [-50, 200])),
     "utloysar": propp(vsyl(ux, uy, kb["r"] - 0.5, kb["z"][1] - 3.0, kb["z"][1] + 1.0)),
     "hjulaksel": propp(vsyl(hx, hy, hb["r"] - 0.5, hb["z"][1] - 3.0, hb["z"][1] + 1.0)),
-    "usb-lokk": propp(boks([x_usb - ut_t["b_x"] / 2 - 1.5, x_usb + ut_t["b_x"] / 2 + 1.5], [y_usb_munn - 4.0, y_usb_munn + 1.0], [az - ut_t["h_z"] / 2 - 1.5, tak_usb + 1.0])),
+    "usb-lokk": propp(boks([x_usb - ut_t["b_x"] / 2 - 3.0, x_usb + ut_t["b_x"] / 2 + 3.0], [y_usb_munn - ut_t["lokk_lengd"] - 0.5, y_usb_munn + 1.0], [az - ut_t["h_z"] / 2 - 1.5, tak_usb + 1.0])),
 }
 zr = [ri["z"][0] - 1.0, ri["z"][1] + 1.0]
 RILLEKANTAR = {
