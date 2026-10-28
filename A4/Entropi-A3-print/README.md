@@ -32,18 +32,18 @@ Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, ve
 
 ## Forma som CAD
 
-`verktoy/form_fraa_mesh.py` måler A3-forma frå Tripo-meshen (`arkiv/entropi-a3`) og skriv tala til `verktoy/form_maal.json`: 19 vassrette snitt gjennom kroppen (z 0,6–54), radiusprofilen til linseløpet og toppen av søkarblokka. `verktoy/royr_fraa_mesh.py` finn tubane som ryggar i eit høgdekart sett ovanfrå. `verktoy/cad_form.py` byggjer så forma som B-rep utan å røre meshen:
+`verktoy/form_fraa_mesh.py` måler A3-forma frå Tripo-meshen (`arkiv/entropi-a3`) og skriv tala til `verktoy/form_maal.json`: 20 vassrette snitt gjennom kroppen (z 0,3–50), radiusprofilen til linseløpet og toppen av søkarblokka. `verktoy/royr_fraa_mesh.py` finn tubane som ryggar i eit høgdekart sett ovanfrå. `verktoy/cad_form.py` byggjer så forma som B-rep utan å røre meshen:
 
 | Del | Solid |
 | --- | --- |
-| Kroppen med grepet | Loft gjennom snitta, kvart snitt ein periodisk B-spline gjennom 140 punkt, og fire innoverforskove snitt som rundar toppen av |
-| Linseløpet | Omdreiingsflate av den målte profilen (r 29,9 → 27,9 frå x 60 til 90), kjegleforma rot inne i kroppen, fillet 1,5 mm framme, forsenking r 26,8 frå x 85 og trakt innover |
-| Dei åtte tubane | Sirkel (r 7,5–9,5) eller ellipse sveipt langs ein spline kvar: tre frå søkarblokka, gripryggen og gripframen ned til grepet, armen frå hjulbossen, armen ned til linseløpet og armen over på linseløpet |
-| Søkarblokka | Boks 18 × 37 × 32 mm med fillet 2,5 mm |
+| Kroppen med grepet | Ruled loft gjennom snitta, kvart snitt ein periodisk B-spline gjennom 140 punkt med fire faste ankerpunkt, og elleve innoverforskove snitt som rundar toppen av (r 8). Rillene i grepet og sporet langs delinga er skorne i dette loftet før samanføyinga |
+| Linseløpet | Omdreiingsflate av den målte profilen (r 29,5 → 27,9 frå x 70 til 90) med ein krage r 31,5 → 31 der løpet går inn i kroppen (x 58–66), fillet 1,5 mm framme, forsenking r 26,8 frå x 85 og trakt innover |
+| Tubebunten | Ni sveip langs splinar: ein ellipse-bunt (12 × 8 mm) midt på toppen, tre tubar (r 8) frå søkarblokka, gripryggen (ellipse 8,7 × 7) og gripframen (r 9) ned i grepet, armen frå hjulbossen (r 7,5), armen ned til linseløpet og armen over på løpet (r 9,5) |
+| Søkarblokka | Boks 18 × 40,5 × 32 mm med fillet 2,5 mm |
 | Hjulbossen | Sylinder r 17,5 til z 80, fillet 2 mm |
 | Utløysarbossen | Sylinder r 9 til z 63,5, fillet 2,5 mm |
 
-Holrommet er eit loft av dei same snitta forskove 2,6 mm inn (golv z 5, tak z 55,4), og søyler, stolpar, trakter og lommer er boksar, sylindrar og loft. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
+Holrommet er eit ruled loft av dei uskorne snitta forskove 2,6 mm inn (det minste av snitta ved z − 2,6, z og z + 2,6, så veggen held der flata hallar; golv z 5, tak z 55), lagt inn i kroppen som eit indre skal utan boolsk operasjon. Søyler, stolpar, trakter og lommer er boksar, sylindrar og loft som blir trekte frå etterpå, éin om gongen. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
 
 ## Overflatedetaljar
 
@@ -87,14 +87,12 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 
 | Kontroll | Resultat |
 | --- | --- |
-| Delar | Botnskal 72,2 cm³ og toppskal 132,7 cm³. Alle fem delane er ein lekam kvar (manifold). |
-| Innvendig rom | om lag 290 cm³ |
-| Kollisjon mellom elektronikk og skal | 0 mm³ for alle proxyar. Klaringa til stabelen er 0,2 mm i begge skala. |
+| Delar | Botnskal 98.1 cm³ og toppskal 139.1 cm³. Alle fem delane er eitt gyldig B-rep-solid kvar (BRepCheck), og STL-ane er vasstette. |
+| Kollisjon mellom elektronikk og skal | 0 mm³ for alle proxyar og for magnetane i lommene. Klaringa til stabelen er 0.2 mm i begge skala. |
 | Monteringsbaner | 0 mm³ for: stabel ned i botnen, toppskal ned over stabelen, USB-plugg inn, EC11 opp i pipa, brytar ned i lomma |
-| Veggar mot holrom | Holkjerna minst 1,34 mm, magnetlommer 2,20, pinnehol 1,93, brønnen 1,32, brytarlomma 2,52, USB-tunnelen 2,01, EC11-pipa 3,3 |
-| Tynne parti (strålar frå 60 000 overflatepunkt) | Linseringen i skulpturen, knivkanten i USB-opninga og ei finne i den eine kortstolpen |
-| Hjulet | Skore av ved z = 80 innanfor r = 11,0 rundt (31,1; 103,9). A17-hjulet er Ø24. |
-| Linsetrakta | Den tynne ringen og sporet (r 17–24, om lag 14 mm djupt) er fylte med det konvekse skrovet av trakta innanfor r 26,8. Ei ny trakt går frå r 26,5 ved x 87,5 til r 17 ved x 74. Der møter ho kamerakonusen i éin skarp kant, og synsfeltet er uendra. |
+| Veggar mot holrom | Stabelen 8.0 mm, brytarlomma 4.41, EC11-pipa 5.5, magnetlommene 1.5, USB-tunnelen 8.68 |
+| Hjulet | Hjulbossen r 17,5 rundt (31.1; 103.9), toppen ved z 80. A17-hjulet er Ø24. |
+| Forma mot Tripo-meshen | Kroppssnitta er målte frå meshen, så omrisset følgjer A3-forma; tubane, bossane og løpet er reine solidar lagde oppå |
 
 ## Kjende avgrensingar
 
