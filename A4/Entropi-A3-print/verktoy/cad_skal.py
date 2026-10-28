@@ -319,8 +319,8 @@ def hol_solid(ytre, indre):
     behald = []
     for sh in ys[1:]:
         bb = sh.bounding_box()
-        tynn = min(bb.size.X, bb.size.Y, bb.size.Z) < 0.5
-        print("   indre skal i ytre kropp:", [round(v, 1) for v in (bb.min.X, bb.min.Y, bb.min.Z, bb.max.X, bb.max.Y, bb.max.Z)], "(fjerna, tynnare enn 0,5 mm)" if tynn else "(behalden)")
+        tynn = min(bb.size.X, bb.size.Y, bb.size.Z) < 0.5 or bb.size.X * bb.size.Y * bb.size.Z < 10.0
+        print("   indre skal i ytre kropp:", [round(v, 1) for v in (bb.min.X, bb.min.Y, bb.min.Z, bb.max.X, bb.max.Y, bb.max.Z)], "(fjerna: tynnare enn 0,5 mm eller under 10 mm3)" if tynn else "(behalden)")
         if not tynn:
             behald.append(sh)
     ms = BRepBuilderAPI_MakeSolid(skal(ys[0].wrapped))
