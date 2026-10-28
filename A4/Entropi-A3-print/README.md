@@ -32,19 +32,19 @@ Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, ve
 
 ## Forma som CAD
 
-`verktoy/form_fraa_mesh.py` måler A3-forma frå Tripo-meshen (`arkiv/entropi-a3`) og skriv tala til `verktoy/form_maal.json`: 20 vassrette snitt gjennom kroppen (z 0,3–50), radiusprofilen til linseløpet og toppen av søkarblokka. `verktoy/royr_fraa_mesh.py` finn tubane som ryggar i eit høgdekart sett ovanfrå. `verktoy/cad_form.py` byggjer så forma som B-rep utan å røre meshen:
+`verktoy/form_fraa_mesh.py` måler A3-forma frå Tripo-meshen (`arkiv/entropi-a3`) og skriv tala til `verktoy/form_maal.json`: 19 vassrette snitt gjennom kroppen (z 0,3–50), radiusprofilen til linseløpet og toppen av søkarblokka. `verktoy/royr_fraa_mesh.py` finn tubane som ryggar i eit høgdekart sett ovanfrå. `verktoy/cad_form.py` byggjer så forma som B-rep utan å røre meshen:
 
 | Del | Solid |
 | --- | --- |
 | Kroppen med grepet | Ruled loft gjennom snitta, kvart snitt ein periodisk B-spline gjennom 140 punkt med fire faste ankerpunkt, og elleve innoverforskove snitt som rundar toppen av (r 8). Rillene i grepet og sporet langs delinga er skorne i dette loftet før samanføyinga |
-| Linseløpet | Omdreiingsflate av den målte profilen (r 31,5 → 28,6 frå x 58 til 86) som går mjukt frå kragen i kroppen og ut i EF-flensen |
+| Linseløpet | Omdreiingsflate av den målte profilen (r 31,5 → 28,6 frå x 58 til 86) som går mjukt frå kragen i kroppen og ut i EF-flensen. Kroppen er skoren vekk innanfor r 28 rundt linseaksen frå x 66, så løpet alltid ligg minst 0,6 mm utanpå kroppen og det ikkje blir spalter eller finnar langs skuldrene |
 | EF-fatninga | Flens Ø66 (x 86,5–90) med 0,8 mm fas, hals Ø54 (x 84–90,5), tre bajonettklør r 23,8–27,3 over 42° (x 88–90), kontaktblokk nedst med åtte kontaktgroper, fire forsenkte skruehovud på r 30,5, utløysarpinne på r 30,3 og prikk på toppen. Bak halsen eit spegelkammer 44 × 30 mm (x 72–84) og ein sensorforsenking 36 × 24 mm. Utløysarknappen for objektivet er ein sylinder r 5 på sida av løpet |
 | Tubane | Seks sveip (r 8,5, hjularmen 7,5) langs splinar med bøyeradius minst 10 mm, kontrollert mot tuberadiusen så sveipa ikkje skjer seg sjølve. Frå søkarblokka går éin tube til ein kule-knoke (r 9,5) over grepet der grepsryggen og gripframen tek av, éin over toppen og ned på linseløpet, og éin ut mot hjulsida og ned bak løpet med ein knoke der armen frå hjulbossen kjem inn. Kvar tube endar inne i ein knoke, blokka, løpet eller kroppen, så ingen endeflater er synlege |
 | Søkarblokka | Boks 18 × 40,5 × 32 mm med fillet 2,5 mm, på ein plint 1,5 mm breiare (z 55–59) som tek overgangen til kroppen |
 | Hjulbossen | Sylinder r 17,5 til z 80, fillet 2 mm, med ein kjegleforma krage r 20,5 → 17,5 (z 53–60) mot kroppen |
 | Utløysarbossen | Sylinder r 9 til z 63,5, fillet 2,5 mm |
 
-Holrommet er eit ruled loft av dei uskorne snitta forskove 2,6 mm inn (det minste av snitta ved z − 2,6, z og z + 2,6, så veggen held der flata hallar; golv z 5, tak z 55), lagt inn i kroppen som eit indre skal utan boolsk operasjon. Søyler, stolpar, trakter og lommer er boksar, sylindrar og loft som blir trekte frå etterpå, éin om gongen. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
+Holrommet er eit ruled loft av dei uskorne snitta forskove 2,6 mm inn (det minste av snitta ved z − 2,6, z og z + 2,6, så veggen held der flata hallar; golv z 5, tak z 55), lagt inn i kroppen som eit indre skal utan boolsk operasjon. Verneklossane som skal stå att i holrommet (golvet under brytarlomma, hylsa rundt USB-tunnelen med ein 45°-kjøl under, EC11-pipa) blir trekte frå kjernen før ho blir snudd; golvet under brytarlomma er ein sylinder r 8,8, for OCCT ignorerte ein boks på akkurat den staden stille. Søyler, stolpar, trakter og lommer er boksar, sylindrar og loft som blir trekte frå etterpå, éin om gongen. Tynne lukka skal (under 0,5 mm) som rillene etterlèt der dei går inn under løpet, blir kasta før holrommet blir lagt inn. Saumane mellom dei to gråtonane er spor skorne ved z 59 rundt søkarblokka, hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
 
 ## Overflatedetaljar
 
@@ -101,6 +101,8 @@ Måla på elektronikken er nominelle, og fysisk passform er ikkje prøvd.
 - **Fysisk passform er ikkje prøvd.** Prøv stabelen i stolpane og skala mot kvarandre før du limer noko.
 - **Utløysaren krev kode:** IO13 mot GND, med SD i 1-bit-modus og debounce. Hald blitzen (GPIO4) av. Legg inn OTA-oppdatering, for MB-knappane er innebygde.
 - **USB-C-porten på grepet er berre form.**
+- **EF-fatninga er form, ikkje funksjon.** Klørne og kontaktane har EF-måla (Ø54-hals, 44 mm flensavstand er ikkje halden), men det er ingen låsefjør; eit objektiv kan stå i halsen, ikkje låsast.
+- Overgangen frå EC11-pipa til akselhòlet er 3,5 mm høg, så hjørna står brattare enn 45°; dei ligg over det opne sjaktet og kan få støtte om du vil.
 - Filene har ikkje miniatyrbilete.
 
 ## Regenerering
@@ -115,6 +117,7 @@ python3 kontroll_cad.py   # kontroll.json frå STL-ane og proxyane
 python3 print_skal.py     # prentretning
 bash bambu_skal.sh A3-Entropi-botn-P1S ../print/printretning/botn.stl
 bash bambu_skal.sh A3-Entropi-topp-P1S ../print/printretning/topp.stl
+bash bambu_skal.sh A3-Entropi-smaadelar-P1S ../print/printretning/utloysar.stl ../print/printretning/usb-lokk.stl ../print/printretning/hjulaksel.stl
 python3 cmf_overfor.py && python3 vis.py
 ```
 

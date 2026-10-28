@@ -26,12 +26,12 @@ def storste_polygon(z):
 def kropp_seksjonar():
     ut = []
     senter = (36.0, 60.0)
-    for z in [0.3, 0.6, 1.0, 1.5, 2.0, 2.6, 3.3, 4.1, 5.0, 6.0, 7.2, 8.5, 10, 14.5, 21, 29, 37, 44, 48.5, 50]:
+    for z in [0.3, 0.6, 1.0, 1.5, 2.0, 2.6, 3.3, 4.1, 5.0, 6.0, 8.5, 10, 14.5, 21, 29, 37, 44, 48.5, 50]:
         p = storste_polygon(z)
         if p is None:
             continue
         full = glatt(p).simplify(0.1)
-        w = np.sqrt(max(29.6**2 - (z - AZ) ** 2, 0.0)) + 0.3
+        w = np.sqrt(max(28.0**2 - (z - AZ) ** 2, 0.0))
         p = p.difference(box(66.0, AY - w, 95.0, AY + w)) if w > 0.5 else p
         p = p.difference(box(-5, 44.0, 18.5, 85.0)) if z > 56 else p
         if p.geom_type != "Polygon":

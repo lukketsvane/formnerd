@@ -124,5 +124,17 @@ rap["klaring_stabel_mm"] = {k: rund(STABEL.min_gap(DELAR[k], 3.0), 2) for k in (
 rap["ytre_volum_cm3"] = rund((BOKS.volume() - UTE.volume()) / 1000, 1)
 tid("klaring")
 
+br_, ut__ = K["brytar"], K["utloysar"]
+lb_ = ut__["kapp_z"] - br_["hogd_med_bein"]
+bx_, by_ = br_["senter"]
+tm_topp = trimesh.load(UT / "stl" / "topp.stl", force="mesh")
+golv = []
+for dx_ in (2.5, -2.5):
+    loc_ = tm_topp.ray.intersects_location(np.array([[bx_ + dx_, by_, lb_ + 0.3]]), np.array([[0.0, 0.0, -1.0]]))[0]
+    zs_ = sorted(np.atleast_2d(loc_)[:, 2], reverse=True) if len(loc_) else []
+    golv.append(rund(zs_[0] - zs_[1], 2) if len(zs_) >= 2 else 0.0)
+rap["brytargolv_mm"] = min(golv)
+tid("brytargolv")
+
 (UT / "kontroll.json").write_text(json.dumps(rap, indent=2, ensure_ascii=False))
 print(json.dumps(rap, indent=1, ensure_ascii=False))
