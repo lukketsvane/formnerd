@@ -15,7 +15,7 @@ def moerk(p, K):
     sk, ok = D["skinne"], D["okularring"]
     r_l = np.hypot(y - A["y"], z - A["z"])
     over_saum = z > 58.5
-    sokar = (x < 18.2) & over_saum
+    sokar = (x < 18.2) & (z > 60.5)
     hjul = (np.hypot(x - H["senter"][0], y - H["senter"][1]) < H["r"] + 0.3) & over_saum
     knapp = (np.hypot(x - U["senter"][0], y - U["senter"][1]) < K["form"]["knappboss"]["r"] + 0.3) & over_saum
     linse = (x > D["panel_linje"]["x"]) & (r_l < 34.0)
