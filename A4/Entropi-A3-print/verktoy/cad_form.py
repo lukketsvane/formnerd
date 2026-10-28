@@ -221,6 +221,7 @@ def _bygg_form():
     tid("kropp-loft")
     delar = {"kropp": k, "linse": linsetonne()}
     delar.update({p["namn"]: royr(p["punkt"], p["r"], p.get("b")) for p in F["royr"]})
+    delar.update({q["namn"]: Pos(*q["senter"]) * Sphere(q["r"]) for q in F.get("kular", [])})
     delar.update({"sokar": sokarblokk(), "hjulboss": hjulboss(), "knappboss": knappboss()})
     tid("delar")
     u = k
