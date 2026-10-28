@@ -9,7 +9,7 @@
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 99.333,
+      "volum_cm3": 99.067,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -27,7 +27,7 @@
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 140.645,
+      "volum_cm3": 140.317,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -99,7 +99,7 @@
     }
   },
   "veggar_mm": {
-    "stabel": 8.34,
+    "stabel": 6.44,
     "brytarlomme": 4.41,
     "ec11_pipe": 5.5,
     "magnetlommer": 1.5,
@@ -176,6 +176,6 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "ytre_volum_cm3": 534.0,
+  "ytre_volum_cm3": 533.3,
   "brytargolv_mm": 2.6
 }
