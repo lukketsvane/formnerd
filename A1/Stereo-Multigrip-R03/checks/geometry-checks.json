@@ -1,0 +1,338 @@
+{
+  "status": "NOMINAL FIT PROTOTYPE; physical/cable fitting not verified",
+  "parts": {
+    "01_bank_cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 21351.99,
+      "bbox_mm": [
+        104.609,
+        82.801,
+        18.412
+      ]
+    },
+    "02_multigrip_carrier": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28617.21,
+      "bbox_mm": [
+        107.844,
+        80.8,
+        35.85
+      ],
+      "validation": "Validated standalone solid following assembly STEP round-trip/ShapeFix."
+    },
+    "03_MB_keeper_left": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2185.19,
+      "bbox_mm": [
+        49.459,
+        63.701,
+        13.452
+      ]
+    },
+    "04_MB_keeper_right": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2185.19,
+      "bbox_mm": [
+        49.459,
+        63.701,
+        13.452
+      ]
+    },
+    "05_sensor_yoke_left": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 885.59,
+      "bbox_mm": [
+        15.718,
+        47.659,
+        8.75
+      ]
+    },
+    "06_sensor_yoke_right": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 885.59,
+      "bbox_mm": [
+        15.718,
+        47.659,
+        8.75
+      ]
+    },
+    "10_frame_1_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        24.301,
+        10.001,
+        4.401
+      ]
+    },
+    "10_frame_1_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.001,
+        3.001,
+        16.0
+      ]
+    },
+    "10_frame_2_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        24.301,
+        10.001,
+        4.401
+      ]
+    },
+    "10_frame_2_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.001,
+        3.001,
+        16.0
+      ]
+    },
+    "10_frame_3_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        24.301,
+        10.001,
+        4.401
+      ]
+    },
+    "10_frame_3_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.001,
+        3.001,
+        16.0
+      ]
+    },
+    "10_frame_4_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        24.301,
+        10.001,
+        4.401
+      ]
+    },
+    "10_frame_4_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.001,
+        3.001,
+        16.0
+      ]
+    },
+    "20_keeper_L_down_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "20_keeper_L_down_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    },
+    "20_keeper_L_up_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "20_keeper_L_up_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    },
+    "30_yoke_L_down_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "30_yoke_L_down_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    },
+    "30_yoke_L_up_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "30_yoke_L_up_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    },
+    "20_keeper_R_down_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "20_keeper_R_down_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    },
+    "20_keeper_R_up_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "20_keeper_R_up_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    },
+    "30_yoke_R_down_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "30_yoke_R_down_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    },
+    "30_yoke_R_up_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 638.0,
+      "bbox_mm": [
+        25.219,
+        12.664,
+        4.401
+      ]
+    },
+    "30_yoke_R_up_wedge": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 170.62,
+      "bbox_mm": [
+        7.248,
+        4.167,
+        16.0
+      ]
+    }
+  },
+  "printed_pair_intersections": [],
+  "hardware_intersections": [],
+  "plug_material_intersections": [],
+  "assumptions": [
+    "Bank, camera PCB and baseline are nominal geometry from supplied PDF; not measured physical parts.",
+    "Power bank recentered under the stereo pair to reduce the earlier right-side overhang.",
+    "The PDF omits ESP32-CAM-MB programmer boards. MB dimensions, header height, pin projection and USB envelopes are adjustable assumptions.",
+    "Camera carrier shoulders and ribbon geometry are simplified from photos. Verify contact footprints before fitting yokes.",
+    "Yoke hard stops give nominal zero-gap sensor-corner pad contact, without designed compression. Tune pad thickness only after checking the real carrier height; never force a printed key to push down the sensor.",
+    "MB width and height parameters are guarded against exceeding current nests. Larger MB boards require coordinated cage and keeper resizing.",
+    "USB service openings are modeled; actual cables and connector bend envelopes are not yet validated.",
+    "Hardware models are simplified fit envelopes, not vendor-certified CAD. Electronics and pads in assembly are reference-only.",
+    "R03 uses printed T-pins and removable cross wedges instead of metal screws. Print fit coupon first.",
+    "Cable opening is reserved for compact right-angle plug bodies with cable routed through the open centre and bottom. Actual cable compatibility is not verified."
+  ],
+  "plug_pair_overlap_mm3": 0.0,
+  "dimensions_mm": {
+    "harness_bbox": [
+      109.778,
+      82.801,
+      48.257
+    ],
+    "baseline": 76.326,
+    "module_roll_deg": 12.0,
+    "bank": [
+      94.0,
+      62.0,
+      15.0
+    ],
+    "sensor_gap": 0.0
+  },
+  "step_roundtrip_healing": "Carrier transferred through named assembly STEP to remove invalid extraneous topology; standalone carrier and both assemblies validated after export."
+}

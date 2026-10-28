@@ -1,0 +1,107 @@
+{
+  "CAM-front": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "21a7d44852a3b6a85096e239bee8c8070889c43f8d6d1bdf2ddae517c7983a8c"
+  },
+  "CAM-back": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "f34f507cddda657bb0cf49fec1aabad43dbd735422b5f18ceee3b4f4471c58d8"
+  },
+  "M01": {
+    "status": "passed",
+    "reviewer": "few_parts_review",
+    "sha256": "74066c97ad09944e64374b86fd65ffd8c6944b9aa4ba51e18752356f4490962e"
+  },
+  "M07": {
+    "status": "passed",
+    "reviewer": "r04_manual_mechanics",
+    "sha256": "033c909bc9d5c65137945d8c97fb982351ac688231e3d4bd3b52eadb902da9fa"
+  },
+  "M06": {
+    "status": "passed",
+    "reviewer": "few_parts_review",
+    "sha256": "6502c83c5d714a4d0f3b2d104438bad6d0175c81c6c2dbfb99ae5fee6963183b"
+  },
+  "M13": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "3e0c682c3cd3d6473f085c9d2b952f7e1575ff91ec327d822b71837cee53682e"
+  },
+  "M18": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "a9e0364bc24d2aca51da279a0a4c89a76134c206902eeec82ec7a0779a13e942"
+  },
+  "M08": {
+    "status": "passed",
+    "reviewer": "r04_manual_mechanics",
+    "sha256": "6a0d59a0458d055911dddf92b0105b49eacc4ac707ec903b06e6c0258f852df4"
+  },
+  "M12": {
+    "status": "passed",
+    "reviewer": "r04_manual_mechanics",
+    "sha256": "a4953314daa86086194f9e6304f810bbc06afb6ef0146a515d9d2050e3ac7fed"
+  },
+  "M02": {
+    "status": "passed",
+    "reviewer": "few_parts_review",
+    "sha256": "64f4d90d9d5a2203c4b91befb2ecd007dce808a3e6a8caa565eb308ab827414b"
+  },
+  "M03": {
+    "status": "passed",
+    "reviewer": "few_parts_review",
+    "sha256": "41b2180c12b519cc7c49178492f1214a8650113301c5051a4cf1d46bc0365ebb"
+  },
+  "M14": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "b98681448acf270f90b13ac2e73c57ba838df54a59e6a65db784b611b8573ba3"
+  },
+  "M09": {
+    "status": "passed",
+    "reviewer": "r04_manual_mechanics",
+    "sha256": "03aeef6f61a475cca09f1e012cc37328c38fa0411248d9b3e11574a3259f32d2"
+  },
+  "M15": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "38d459bd4995413dbf799a499552a1cf0d2deeb26ff23e0022359b95890b716a"
+  },
+  "M04": {
+    "status": "passed",
+    "reviewer": "few_parts_review",
+    "sha256": "61a52dce8c52a14965c1cca9c8a5374d8634b3739c339842b9bbbce591b73365"
+  },
+  "M10": {
+    "status": "passed",
+    "reviewer": "r04_manual_mechanics",
+    "sha256": "b70fea9b7498ee940946dcbbbdcab6c4d9517a0c62497f38bc59f5498f5b311e"
+  },
+  "M05": {
+    "status": "passed",
+    "reviewer": "few_parts_review",
+    "sha256": "1272245c3b6f0e35397ff128282222a44c4c8ef31476544a2c7ac35a5e43b2da"
+  },
+  "M11": {
+    "status": "passed",
+    "reviewer": "r04_manual_mechanics",
+    "sha256": "502547678dc58104236eb0d22ef56cbe990a9a1c9e9221faf2634a1efa9bc29e"
+  },
+  "M16": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "b1acb38b3257fa65f31b674173c81272e1cba31449074de478b728fc4421aaf7"
+  },
+  "M17": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "cc8075419b0575ad27697a715c192f7ecd80d19cb3890540c9a039b0adb337c6"
+  },
+  "MB-hero": {
+    "status": "passed",
+    "reviewer": "root",
+    "sha256": "f33e176f3a12bb8f654d22f40a6457c94b9ff0361e04049157742621a142feef"
+  }
+}

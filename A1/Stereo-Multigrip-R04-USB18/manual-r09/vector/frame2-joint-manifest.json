@@ -1,0 +1,173 @@
+{
+  "geometry_modified": false,
+  "joint": "10_frame_2",
+  "source_STEP_sha256": {
+    "01_bank_cradle": "03ca1367db49e0ad88f6b229e1965d9d26a18b20b509d8c0fcbc9b598fa25f1f",
+    "02_multigrip_carrier": "ae1e979cef5ad574d0dad64e31e1e9f7b97a159b6af52f574b336fcfc7ae9e54",
+    "10_frame_2_pin": "efc5a9c3392809522af34416a61b45196d2b0be17c2e2ae106a8441e218c372a",
+    "10_frame_2_wedge": "c007f8ce0d730d4d90d942ef140bb2b358fa6099437b817d8b27f0d194ac1551"
+  },
+  "figures": [
+    {
+      "parts": [
+        "01_bank_cradle",
+        "02_multigrip_carrier",
+        "10_frame_2_pin"
+      ],
+      "basis": [
+        [
+          -0.5547001962252291,
+          -0.8320502943378437,
+          0.0
+        ],
+        [
+          0.5878949576358872,
+          -0.39192997175725813,
+          0.7076513378950493
+        ],
+        [
+          -0.5888015039841447,
+          0.3925343359894298,
+          0.7065618047809736
+        ]
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -28.0,
+          36.4,
+          8.150000000000002
+        ],
+        "rotate_z_deg": -90
+      },
+      "crop": {
+        "scope": "cradle and carrier only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "translations_mm": {
+        "10_frame_2_pin": [
+          0,
+          24,
+          0
+        ]
+      },
+      "basis_matches_reference_exactly": true,
+      "max_fastener_center_error_vs_frame1_local_coordinates_mm": 2.8337937313003255e-15,
+      "source_geometry_note": "Actual frame2 surrounding cradle/carrier geometry read from original assembly-position STEP, moved only to local display coordinates. Section crop applies only to surrounding cradle/carrier.",
+      "name": "frame2_pin_stage",
+      "line_groups": 201
+    },
+    {
+      "parts": [
+        "01_bank_cradle",
+        "02_multigrip_carrier",
+        "10_frame_2_pin",
+        "10_frame_2_wedge"
+      ],
+      "basis": [
+        [
+          0.5547001962252291,
+          -0.8320502943378437,
+          0.0
+        ],
+        [
+          0.5878949576358872,
+          0.39192997175725813,
+          0.7076513378950493
+        ],
+        [
+          -0.5888015039841447,
+          -0.3925343359894298,
+          0.7065618047809736
+        ]
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -28.0,
+          36.4,
+          8.150000000000002
+        ],
+        "rotate_z_deg": -90
+      },
+      "crop": {
+        "scope": "cradle and carrier only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "translations_mm": {
+        "10_frame_2_wedge": [
+          0,
+          0,
+          22
+        ]
+      },
+      "basis_matches_reference_exactly": true,
+      "max_fastener_center_error_vs_frame1_local_coordinates_mm": 4.783019397069336e-15,
+      "source_geometry_note": "Actual frame2 surrounding cradle/carrier geometry read from original assembly-position STEP, moved only to local display coordinates. Section crop applies only to surrounding cradle/carrier.",
+      "name": "frame2_wedge_stage",
+      "line_groups": 208
+    },
+    {
+      "parts": [
+        "01_bank_cradle",
+        "02_multigrip_carrier",
+        "10_frame_2_pin",
+        "10_frame_2_wedge"
+      ],
+      "basis": [
+        [
+          0.5547001962252291,
+          -0.8320502943378437,
+          0.0
+        ],
+        [
+          0.5878949576358872,
+          0.39192997175725813,
+          0.7076513378950493
+        ],
+        [
+          -0.5888015039841447,
+          -0.3925343359894298,
+          0.7065618047809736
+        ]
+      ],
+      "local_transform": {
+        "world_pivot_mm": [
+          -28.0,
+          36.4,
+          8.150000000000002
+        ],
+        "rotate_z_deg": -90
+      },
+      "crop": {
+        "scope": "cradle and carrier only; surrounding material sectioned for close-up",
+        "local_box_mm": [
+          -11,
+          -13,
+          -6,
+          11,
+          13,
+          16
+        ]
+      },
+      "translations_mm": {},
+      "basis_matches_reference_exactly": true,
+      "max_fastener_center_error_vs_frame1_local_coordinates_mm": 4.783019397069336e-15,
+      "source_geometry_note": "Actual frame2 surrounding cradle/carrier geometry read from original assembly-position STEP, moved only to local display coordinates. Section crop applies only to surrounding cradle/carrier.",
+      "name": "frame2_lock_seated",
+      "line_groups": 187
+    }
+  ]
+}

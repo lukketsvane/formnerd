@@ -1,0 +1,29 @@
+{
+  "objects": [
+    {
+      "id": "P02",
+      "path": "cad/P02.stl",
+      "color": "#62676c",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "camera": {
+    "direction": [
+      -1,
+      2,
+      1
+    ]
+  },
+  "margin": 0.12,
+  "mode": "line",
+  "size": [
+    2000,
+    1185
+  ],
+  "supersample": 1.35,
+  "line_width": 3.629032258064516
+}

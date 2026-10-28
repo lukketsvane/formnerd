@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "method": "Individually visually inspected model-derived HLR PNGs",
+  "geometry_modified": false,
+  "source_commit": "88cc8f327fba72e6517ea30dcadc4e978419da37",
+  "notes": "Camera for yoke/frame pin entry is oppositeY to wedge-slot view to expose corresponding openings; source basis included per figure. Bank is a nominal source envelope, not exact measured hardware.",
+  "figures": [
+    {
+      "name": "bank_placement_with_bank",
+      "status": "PASS",
+      "finding": "Nominal rounded bank visible seated inside cradle, both separated42mm from camera carrier. Four frame joint relationships shown; no fabricated ports. Camera electronics omitted to expose printed geometry.",
+      "files": {
+        "json": "2119c0fc87e223a7be3ac49f2dd55ab2130e6a6acde51545dbf4c7f0aec7f170",
+        "svg": "3fc02185be81c48b7f38341f0ff2be0375050f24b4ba6b4100f97acf3a9eed51",
+        "png": "b847cc8d3fe3e1892f347cce4950fd25ba948c3f12c1824ab4022806d0df1dec"
+      }
+    },
+    {
+      "name": "yoke_pin_stage",
+      "status": "PASS",
+      "finding": "OppositeY view exposes rectangular entry aperture and pin tip with a clear gap. Pin translated+24localY; actual insertion-localY.",
+      "files": {
+        "json": "6579003c690bd25f0862f6f7ec6fc61436565a278483a06ac34d7602d645ece7",
+        "svg": "70759228f9d953781a0228658dc450d2eaa4f6797fac4143078a99fc1d95392c",
+        "png": "4f67198f7760362983c30b0322771ee5c34dc44601be4772a74d5d1ab0da9a9b"
+      }
+    },
+    {
+      "name": "yoke_wedge_stage",
+      "status": "PASS",
+      "finding": "Short wedge separated above seated pin; transverse slot visible on right, direct downward localZ path.",
+      "files": {
+        "json": "8ab2c75bd45df1a4f316cd34cd340a8453e7698bf516b7b0d6cc8570d758621e",
+        "svg": "443b0741f4b1fd395ae0a143df4137595ed839bf7877f5266b721631c43bc356",
+        "png": "268eeaca26fee0289159abd06f442856b59e6aa185e203ca279fb5d01cbaf073"
+      }
+    },
+    {
+      "name": "yoke_lock_seated",
+      "status": "PASS",
+      "finding": "Pin and short wedge seated in actual yoke/carrier joint; crop documented as a section, not an independent part.",
+      "files": {
+        "json": "87019d01d36f7cc1fa6dbd280df1021b560e11ab720a7a64b5f5c479beeb81ff",
+        "svg": "e58f64bf426ff3ef8a036c3e5d2ac8b680cf8ec23b2fbbbcf43ef32a0f2b4947",
+        "png": "dd52e24c77bd988351ee9a29c0dc8c132fca5580e0b29e4c72c70353dfe77ecd"
+      }
+    },
+    {
+      "name": "frame_pin_stage",
+      "status": "PASS",
+      "finding": "Actual frame pin translated+24localY, entry aperture visible below frame bridge; long wedge omitted until following action.",
+      "files": {
+        "json": "e95ca982a1df64858198b8814146721bf25bec951216b6f06be3a35e10bf9737",
+        "svg": "2fb8d37033b89bc895c3132aa6fbd06833819ac9b8f4c3ab0146ee11e5ed3b0e",
+        "png": "a8917c44ed8c0efb64c83573c5fd0b623c1f7fb489ccf6f9e5ddd13b41a40380"
+      }
+    }
+  ]
+}

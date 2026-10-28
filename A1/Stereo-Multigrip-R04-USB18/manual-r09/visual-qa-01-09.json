@@ -1,0 +1,120 @@
+{
+  "edition": "09",
+  "reviewer": "manual_visual_review",
+  "comparison_references": [
+    "MILSBO AA-2094158-9 pages1/7/11",
+    "PAX AA-2582799-1 pages5–13",
+    "MOSSJON AA-2390862-4 pages6/10/12"
+  ],
+  "baseline": "Edition 08 individually reviewed pages01–09",
+  "individual_png_review": true,
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "3f9ef130b024ed14a9766845197f4cfce9d08757515583acef21db8791e09976",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Clear single product cover; page 7 prototype gate pointer correct."
+    },
+    {
+      "page": 2,
+      "sha256": "0c42cd7d862a6172e48d9c781583d0300ed327b9fc1a37d6978e9653124e17e9",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Actual main parts with stronger 0.5/0.75 pt contours and 18 pt quantities; no crowding."
+    },
+    {
+      "page": 3,
+      "sha256": "5c675ac67efe374dac19a57f825997f637fa26c1992a907de8012dbfe45c0e46",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Hardware quantities and family IDs clear; optional frame bounded;21/30 totals correct."
+    },
+    {
+      "page": 4,
+      "sha256": "2dfd5f22200318887f3274277bbb4d2762c4c9149c09a81e81df9818a37c22a6",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Detailed electronics remain readable; correct opposing orientations and lens-side L/R."
+    },
+    {
+      "page": 5,
+      "sha256": "9aa343b67d6c066ffe8b45915637db5689a27d9d27f93605d2273dc61536c3bd",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Connected open-circle callout tails match actual MILSBO/PAX grammar, reach actual fork and guide features, avoid caption collisions and retain preservation reference readability."
+    },
+    {
+      "page": 6,
+      "sha256": "eab4c0c64e3491e5c87a0e08ac6665e13a1c6465de61647e66021fa99d72d81e",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Two equal-scale wedge profiles, verified dashed pin/wedge axes and three stage dryfit; shorter instructions remain explicit. Final 8 pt line clarifies that details show only the joint; inspected and collision-free."
+    },
+    {
+      "page": 7,
+      "sha256": "9b77b2e14c8192c671e9d4486bf66966f5ff3a34279f88d1b01dc0f20690f28f",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Clear PCB fit gate, no unverified insertion arrow and no decorative warning icon."
+    },
+    {
+      "page": 8,
+      "sha256": "8a85b9fdb0642d36301cb2763b79b94fe8e9b281d70c74c7251419b76116f70d",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "Part callouts remain correctly associated; exploded view disclaimer preserved."
+    },
+    {
+      "page": 9,
+      "sha256": "711202df6a02275569e9105e872904f4d0dfb90a52561397eb2a286614850c5f",
+      "dimensions_px": [
+        1489,
+        2105
+      ],
+      "visual_review": "approved",
+      "notes": "32 pt step number, rearview label and two correct keeper motions; readable installation caption."
+    }
+  ],
+  "blocking_issues": [],
+  "regenerated_png_note": "Page04 had been 0 bytes in an earlier export; root regenerated it from final PDF before this visual approval. Current PNG fully decodes.",
+  "final_update": {
+    "changed_page": 6,
+    "other_page_hashes_unchanged": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "new_line": "Berre skjøten er vist i detaljane.",
+    "result": "approved after visual inspection"
+  }
+}

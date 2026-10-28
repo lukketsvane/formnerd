@@ -1,0 +1,1324 @@
+{
+  "items": [
+    {
+      "name": "01_bank_cradle",
+      "stl": "STL/01_bank_cradle.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -18
+      ]
+    },
+    {
+      "name": "02_multigrip_carrier",
+      "stl": "STL/02_multigrip_carrier.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        18
+      ]
+    },
+    {
+      "name": "03_MB_keeper_left",
+      "stl": "STL/03_MB_keeper_left.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "04_MB_keeper_right",
+      "stl": "STL/04_MB_keeper_right.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "05_sensor_yoke_left",
+      "stl": "STL/05_sensor_yoke_left.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "06_sensor_yoke_right",
+      "stl": "STL/06_sensor_yoke_right.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "10_frame_1_pin",
+      "stl": "STL/10_frame_1_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "10_frame_1_wedge",
+      "stl": "STL/10_frame_1_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "10_frame_2_pin",
+      "stl": "STL/10_frame_2_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "10_frame_2_wedge",
+      "stl": "STL/10_frame_2_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "10_frame_3_pin",
+      "stl": "STL/10_frame_3_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "10_frame_3_wedge",
+      "stl": "STL/10_frame_3_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "10_frame_4_pin",
+      "stl": "STL/10_frame_4_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "10_frame_4_wedge",
+      "stl": "STL/10_frame_4_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "20_keeper_L_down_pin",
+      "stl": "STL/20_keeper_L_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "20_keeper_L_down_wedge",
+      "stl": "STL/20_keeper_L_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "20_keeper_L_up_pin",
+      "stl": "STL/20_keeper_L_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "20_keeper_L_up_wedge",
+      "stl": "STL/20_keeper_L_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "30_yoke_L_down_pin",
+      "stl": "STL/30_yoke_L_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "30_yoke_L_down_wedge",
+      "stl": "STL/30_yoke_L_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "30_yoke_L_up_pin",
+      "stl": "STL/30_yoke_L_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "30_yoke_L_up_wedge",
+      "stl": "STL/30_yoke_L_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "20_keeper_R_down_pin",
+      "stl": "STL/20_keeper_R_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "20_keeper_R_down_wedge",
+      "stl": "STL/20_keeper_R_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "20_keeper_R_up_pin",
+      "stl": "STL/20_keeper_R_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "20_keeper_R_up_wedge",
+      "stl": "STL/20_keeper_R_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        -6
+      ]
+    },
+    {
+      "name": "30_yoke_R_down_pin",
+      "stl": "STL/30_yoke_R_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "30_yoke_R_down_wedge",
+      "stl": "STL/30_yoke_R_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "30_yoke_R_up_pin",
+      "stl": "STL/30_yoke_R_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "30_yoke_R_up_wedge",
+      "stl": "STL/30_yoke_R_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed",
+      "translation": [
+        0,
+        0,
+        35
+      ]
+    },
+    {
+      "name": "REF_power_bank",
+      "stl": "STL/REF_power_bank.stl",
+      "color": [
+        0.055,
+        0.065,
+        0.073
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_bank_indicator",
+      "stl": "STL/REF_bank_indicator.stl",
+      "color": [
+        0.018,
+        0.025,
+        0.03
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_LED_9",
+      "stl": "STL/REF_LED_9.stl",
+      "color": [
+        0.15,
+        0.65,
+        0.72
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_LED_16",
+      "stl": "STL/REF_LED_16.stl",
+      "color": [
+        0.15,
+        0.65,
+        0.72
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_MB",
+      "stl": "STL/REF_L_MB.stl",
+      "color": [
+        0.045,
+        0.075,
+        0.065
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_CAM",
+      "stl": "STL/REF_L_CAM.stl",
+      "color": [
+        0.035,
+        0.065,
+        0.06
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_socket_-1",
+      "stl": "STL/REF_L_socket_-1.stl",
+      "color": [
+        0.055,
+        0.06,
+        0.065
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_0",
+      "stl": "STL/REF_L_pin_-1_0.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_1",
+      "stl": "STL/REF_L_pin_-1_1.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_2",
+      "stl": "STL/REF_L_pin_-1_2.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_3",
+      "stl": "STL/REF_L_pin_-1_3.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_4",
+      "stl": "STL/REF_L_pin_-1_4.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_5",
+      "stl": "STL/REF_L_pin_-1_5.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_6",
+      "stl": "STL/REF_L_pin_-1_6.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_-1_7",
+      "stl": "STL/REF_L_pin_-1_7.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_socket_1",
+      "stl": "STL/REF_L_socket_1.stl",
+      "color": [
+        0.055,
+        0.06,
+        0.065
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_0",
+      "stl": "STL/REF_L_pin_1_0.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_1",
+      "stl": "STL/REF_L_pin_1_1.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_2",
+      "stl": "STL/REF_L_pin_1_2.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_3",
+      "stl": "STL/REF_L_pin_1_3.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_4",
+      "stl": "STL/REF_L_pin_1_4.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_5",
+      "stl": "STL/REF_L_pin_1_5.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_6",
+      "stl": "STL/REF_L_pin_1_6.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_pin_1_7",
+      "stl": "STL/REF_L_pin_1_7.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_SD_cage",
+      "stl": "STL/REF_L_SD_cage.stl",
+      "color": [
+        0.59,
+        0.62,
+        0.64
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_sensor_carrier",
+      "stl": "STL/REF_L_sensor_carrier.stl",
+      "color": [
+        0.09,
+        0.095,
+        0.1
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_lens_barrel",
+      "stl": "STL/REF_L_lens_barrel.stl",
+      "color": [
+        0.06,
+        0.065,
+        0.073
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_lens_glass",
+      "stl": "STL/REF_L_lens_glass.stl",
+      "color": [
+        0.05,
+        0.23,
+        0.24
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_flex",
+      "stl": "STL/REF_L_flex.stl",
+      "color": [
+        0.75,
+        0.31,
+        0.055
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_flex_socket",
+      "stl": "STL/REF_L_flex_socket.stl",
+      "color": [
+        0.82,
+        0.82,
+        0.74
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_L_USB_socket",
+      "stl": "STL/REF_L_USB_socket.stl",
+      "color": [
+        0.57,
+        0.6,
+        0.62
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_MB",
+      "stl": "STL/REF_R_MB.stl",
+      "color": [
+        0.045,
+        0.075,
+        0.065
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_CAM",
+      "stl": "STL/REF_R_CAM.stl",
+      "color": [
+        0.035,
+        0.065,
+        0.06
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_socket_-1",
+      "stl": "STL/REF_R_socket_-1.stl",
+      "color": [
+        0.055,
+        0.06,
+        0.065
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_0",
+      "stl": "STL/REF_R_pin_-1_0.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_1",
+      "stl": "STL/REF_R_pin_-1_1.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_2",
+      "stl": "STL/REF_R_pin_-1_2.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_3",
+      "stl": "STL/REF_R_pin_-1_3.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_4",
+      "stl": "STL/REF_R_pin_-1_4.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_5",
+      "stl": "STL/REF_R_pin_-1_5.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_6",
+      "stl": "STL/REF_R_pin_-1_6.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_-1_7",
+      "stl": "STL/REF_R_pin_-1_7.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_socket_1",
+      "stl": "STL/REF_R_socket_1.stl",
+      "color": [
+        0.055,
+        0.06,
+        0.065
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_0",
+      "stl": "STL/REF_R_pin_1_0.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_1",
+      "stl": "STL/REF_R_pin_1_1.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_2",
+      "stl": "STL/REF_R_pin_1_2.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_3",
+      "stl": "STL/REF_R_pin_1_3.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_4",
+      "stl": "STL/REF_R_pin_1_4.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_5",
+      "stl": "STL/REF_R_pin_1_5.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_6",
+      "stl": "STL/REF_R_pin_1_6.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_pin_1_7",
+      "stl": "STL/REF_R_pin_1_7.stl",
+      "color": [
+        0.62,
+        0.65,
+        0.66
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_SD_cage",
+      "stl": "STL/REF_R_SD_cage.stl",
+      "color": [
+        0.59,
+        0.62,
+        0.64
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_sensor_carrier",
+      "stl": "STL/REF_R_sensor_carrier.stl",
+      "color": [
+        0.09,
+        0.095,
+        0.1
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_lens_barrel",
+      "stl": "STL/REF_R_lens_barrel.stl",
+      "color": [
+        0.06,
+        0.065,
+        0.073
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_lens_glass",
+      "stl": "STL/REF_R_lens_glass.stl",
+      "color": [
+        0.05,
+        0.23,
+        0.24
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_flex",
+      "stl": "STL/REF_R_flex.stl",
+      "color": [
+        0.75,
+        0.31,
+        0.055
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_flex_socket",
+      "stl": "STL/REF_R_flex_socket.stl",
+      "color": [
+        0.82,
+        0.82,
+        0.74
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "REF_R_USB_socket",
+      "stl": "STL/REF_R_USB_socket.stl",
+      "color": [
+        0.57,
+        0.6,
+        0.62
+      ],
+      "category": "hardware",
+      "translation": [
+        0,
+        0,
+        5
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "purpose": "Retrofit existing R03 cradle and multigrip carrier",
+  "status": "Nominal CAD preflight only; physical fit not yet confirmed",
+  "nominal_slot_mm": [
+    6.5,
+    4.5
+  ],
+  "pin_sizes_mm": {
+    "A_EASY": {
+      "width": 6.0,
+      "height": 4.3,
+      "identifying_notches": 1,
+      "slot_minus_width": 0.5,
+      "slot_minus_height": 0.2
+    },
+    "B_SNUG": {
+      "width": 6.16,
+      "height": 4.41,
+      "identifying_notches": 2,
+      "slot_minus_width": 0.34,
+      "slot_minus_height": 0.09
+    },
+    "C_FIRM": {
+      "width": 6.28,
+      "height": 4.47,
+      "identifying_notches": 3,
+      "slot_minus_width": 0.22,
+      "slot_minus_height": 0.03
+    }
+  },
+  "retaining_wedge": "R03 original taper and exterior dimensions",
+  "files": [
+    {
+      "path": "3MF/R03-00-FIT-TEST-TRY-FIRST.3mf",
+      "bytes": 61527,
+      "sha256": "dce92dde387f3762c8d4a6e06c1bbe94277bbf22d08fb833d666dac8e088acdf"
+    },
+    {
+      "path": "3MF/R03-00-FIT-TEST-TRY-FIRST.json",
+      "bytes": 1234,
+      "sha256": "106d2e5d84d0f1af6ec8e5cc0e23cf745c5d7c818c9ab4f19b8ad3c670968f56"
+    },
+    {
+      "path": "3MF/R03-01-FOUR-FRAME-LOCKS-A_EASY.3mf",
+      "bytes": 65989,
+      "sha256": "95f1d819a638d854824c8a9cf0fa964b0d5674e820bd1076c22bfc73c8f17953"
+    },
+    {
+      "path": "3MF/R03-01-FOUR-FRAME-LOCKS-A_EASY.json",
+      "bytes": 2167,
+      "sha256": "6218923974930164191a79fab6266061724c3ff615a9e928a274b561f5591374"
+    },
+    {
+      "path": "3MF/R03-01-FOUR-FRAME-LOCKS-B_SNUG.3mf",
+      "bytes": 81046,
+      "sha256": "e495f5c75dc5def1efb45355e81b96714ba0b5dcd713d62b6988945ab2758665"
+    },
+    {
+      "path": "3MF/R03-01-FOUR-FRAME-LOCKS-B_SNUG.json",
+      "bytes": 2171,
+      "sha256": "6d15e28f0a431fe5281e8ae096ada1f708333c5be61515504544a100b6051dcb"
+    },
+    {
+      "path": "3MF/R03-01-FOUR-FRAME-LOCKS-C_FIRM.3mf",
+      "bytes": 96681,
+      "sha256": "9a43f1bc1efefde7cca02b2b097faff73c85eada7cfeaa698ab346e662be3e44"
+    },
+    {
+      "path": "3MF/R03-01-FOUR-FRAME-LOCKS-C_FIRM.json",
+      "bytes": 2171,
+      "sha256": "5973a1aaab0127e6706bdf6d234b0ff60b2cd55da97d1dcef1a2d4fbba65981e"
+    },
+    {
+      "path": "3MF/R03-02-REMAINING-SMALL-PARTS.3mf",
+      "bytes": 304750,
+      "sha256": "1a9ccbc23888dd4d3a70afc131c74e612723947612f12bc2675849a8ca00247b"
+    },
+    {
+      "path": "3MF/R03-02-REMAINING-SMALL-PARTS.json",
+      "bytes": 5264,
+      "sha256": "65c3d85273498b0b419123a8874bd4daa63affbfdf90ededf01eb2ca936b2d25"
+    },
+    {
+      "path": "STEP/R03_CROSS_WEDGE_ORIGINAL.step",
+      "bytes": 55440,
+      "sha256": "d19987ced60447c1ba0bc4247cce689f3fec8792c63e24dde63e43847ae2df0b"
+    },
+    {
+      "path": "STEP/R03_FRAME_PIN_A_EASY.step",
+      "bytes": 123123,
+      "sha256": "14f295b5fc8d1a51a55878e6d61ae06eabc4aa893f3b87521acf723227f8f7fd"
+    },
+    {
+      "path": "STEP/R03_FRAME_PIN_B_SNUG.step",
+      "bytes": 155047,
+      "sha256": "5fe6289d5b83aadd6f6902d640ffc54831f84b7ae5cbcef46c442a7c5ad7b7e4"
+    },
+    {
+      "path": "STEP/R03_FRAME_PIN_C_FIRM.step",
+      "bytes": 186797,
+      "sha256": "23b80be72f84475478500269e850c9c12b3e952c208c98f53c2b35a3b13e27d5"
+    },
+    {
+      "path": "STL/R03_CROSS_WEDGE_ORIGINAL.stl",
+      "bytes": 23484,
+      "sha256": "cc1217cf390a904aa1e7161d00ec6bb6187ca75cdc0da706898b6ab00914e5ce"
+    },
+    {
+      "path": "STL/R03_FRAME_PIN_A_EASY.stl",
+      "bytes": 89684,
+      "sha256": "dc7084d2e956f9cfcc9997c61d498cef07f02655f3cd078d6933d87689d01f0b"
+    },
+    {
+      "path": "STL/R03_FRAME_PIN_B_SNUG.stl",
+      "bytes": 112084,
+      "sha256": "a6db8eab86b34210504227afae1113eab6d8ce891597e44e5de0c9f0e60c529a"
+    },
+    {
+      "path": "STL/R03_FRAME_PIN_C_FIRM.stl",
+      "bytes": 134484,
+      "sha256": "ea6ac4a276db1eb5339eb60ed6ca0a01c04e649cfff96e08f5e5017843a1b417"
+    }
+  ]
+}

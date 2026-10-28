@@ -1,0 +1,35 @@
+{
+  "base_repository": "lukketsvane/formnerd",
+  "base_commit": "cb36ab0ee9cd445fa80a6a6a46a129ef46517f56",
+  "base_design": "A1/Stereo-Multigrip-R03",
+  "target_design": "A1/Stereo-Multigrip-R04-USB18",
+  "user_request": "More angle for cable connection clearance on the printed dual-camera frame",
+  "reference_images": [
+    {
+      "name": "IMG_9521.jpeg",
+      "sha256": "a26ea4a76ecab84582ba0f55549273353bdffa328de2e93149c1dd896beeec50"
+    },
+    {
+      "name": "IMG_9527.jpeg",
+      "sha256": "8ade9724070be7a8bc658f3235e897de53881313272b390a1a222012e8eef5b6"
+    },
+    {
+      "name": "IMG_9529.jpeg",
+      "sha256": "24527523d545450c146358efa47471df0a51e6bebebfdbb626f736a1d6e37af4"
+    },
+    {
+      "name": "IMG_9531.jpeg",
+      "sha256": "1a8288e76c64954f324e6a53cbd1bf2ebec70ff1266ea5a5ed6206fc5f65b52d"
+    },
+    {
+      "name": "signal-2026-10-25-001648.jpeg",
+      "sha256": "3b5cdd16f280d7a3e2f1ed6bb1afa38eacd6eeebc6e1397e2b38a6bb027db267"
+    }
+  ],
+  "angle_degrees": {
+    "before": 12,
+    "after": 18
+  },
+  "physical_fit_status": "not verified with the actual cables",
+  "original_R03_preserved": true
+}

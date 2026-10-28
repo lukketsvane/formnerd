@@ -1,0 +1,143 @@
+{
+  "name": "USB insertion axis guides for existing detailed rear_usb figure",
+  "source_figure_json": "figures/technical_rear_usb.json",
+  "source_figure_json_sha256": "11fd9be1148346be0f93504cfbc633a0c353bb56a64bcc52ad4045f04837e491",
+  "source_files": [
+    "source/build_harness.py:pod",
+    "source/build_harness.py:USB plug body and continuous insertion keepout",
+    "source/build_harness.py:REF_L_USB_socket / REF_R_USB_socket",
+    "source/parameters.json"
+  ],
+  "coordinate_convention": "Millimetres in R04 assembly coordinates. ImageUV origin bottom-left. L/R viewed from lens front, so positions reverse on the rear view.",
+  "projection_affine_mm_homogeneous_to_uv": [
+    [
+      -0.006960996594271506,
+      -0.0006666352356187255
+    ],
+    [
+      5.684645185133341e-10,
+      0.008127153368326182
+    ],
+    [
+      -0.0013386522843304137,
+      0.0034665032571526222
+    ],
+    [
+      0.545514152049159,
+      0.4068538470166075
+    ]
+  ],
+  "projection_fit_anchors": 23,
+  "projection_max_uv_residual": 9.268236542751518e-08,
+  "arrows": [
+    {
+      "side_from_lens_front": "L",
+      "source_usb_socket": "REF_L_USB_socket",
+      "source_nominal_plug": "USB_L_plug_body",
+      "socket_mouth_center_mm": [
+        -6.140927096342175,
+        10.40460220060448,
+        24.8
+      ],
+      "socket_mouth_uv": [
+        0.5550625539157193,
+        0.5814766839965166
+      ],
+      "plug_body_center_mm": [
+        5.271751099199669,
+        14.112806133103849,
+        24.8
+      ],
+      "plug_body_center_uv": [
+        0.4756189419730183,
+        0.6040057326590436
+      ],
+      "insertion_unit_vector_mm": [
+        -0.9510565162951535,
+        -0.3090169943749474,
+        0.0
+      ],
+      "approach_travel_mm": 20.0,
+      "arrow_start_mm": [
+        12.880203229560895,
+        16.58494208810343,
+        24.8
+      ],
+      "arrow_end_mm": [
+        -6.140927096342175,
+        10.40460220060448,
+        24.8
+      ],
+      "arrow_start_uv": [
+        0.4226565340112176,
+        0.6190250984340615
+      ],
+      "arrow_end_uv": [
+        0.5550625539157193,
+        0.5814766839965166
+      ],
+      "guide_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "mouth_distance_to_exported_socket_STL_mm": 1.4251809234425412e-07,
+      "socket_STL_sha256": "0083178f297263988fd9da955211a22e7b2e3655bc0433f116945c222f412361"
+    },
+    {
+      "side_from_lens_front": "R",
+      "source_usb_socket": "REF_R_USB_socket",
+      "source_nominal_plug": "USB_R_plug_body",
+      "socket_mouth_center_mm": [
+        6.140927096342175,
+        -10.40460220060448,
+        24.8
+      ],
+      "socket_mouth_uv": [
+        0.46956859687981006,
+        0.4041695715914683
+      ],
+      "plug_body_center_mm": [
+        -5.271751099199669,
+        -14.112806133103849,
+        24.8
+      ],
+      "plug_body_center_uv": [
+        0.5490122088225111,
+        0.3816405229289414
+      ],
+      "insertion_unit_vector_mm": [
+        0.9510565162951535,
+        0.3090169943749474,
+        0.0
+      ],
+      "approach_travel_mm": 20.0,
+      "arrow_start_mm": [
+        -12.880203229560895,
+        -16.58494208810343,
+        24.8
+      ],
+      "arrow_end_mm": [
+        6.140927096342175,
+        -10.40460220060448,
+        24.8
+      ],
+      "arrow_start_uv": [
+        0.6019746167843119,
+        0.36662115715392346
+      ],
+      "arrow_end_uv": [
+        0.46956859687981006,
+        0.4041695715914683
+      ],
+      "guide_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "mouth_distance_to_exported_socket_STL_mm": 1.4251809234425412e-07,
+      "socket_STL_sha256": "38c0883054200a2de4c6eddf94f0c96835648da23e13b86c7677b8fe01e2b20f"
+    }
+  ],
+  "qualification": "Nominal socket/plug geometry and verified 20mm approach direction. Arrows indicate straight socket axes, not the physical connector engagement depth. Actual plug size, seating and cable fit are unverified. Existing image remains the seated reference pose; these guides do not depict the plugs as translated or prove physical fit."
+}

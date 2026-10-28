@@ -1,0 +1,77 @@
+{
+  "status": "PASS_NOMINAL_DIGITAL_REVIEW",
+  "reviewed_geometry_checks_sha256": "2c3c93f33aa14bd1e08c8592ed386bd336585840e086b657fee0106d914fb449",
+  "printed_parts": {
+    "count": 30,
+    "valid_single_positive_count": 30
+  },
+  "collision_counts": {
+    "printed_pair_intersections": 0,
+    "hardware_intersections": 0,
+    "plug_material_intersections": 0,
+    "service_hardware_intersections": 0,
+    "keeper_insertion_hardware_intersections": 0
+  },
+  "keeper_surface_audit": {
+    "03_MB_keeper_left": {
+      "valid": true,
+      "solids": 1,
+      "plane_faces": 118,
+      "vertical_z_cylinder_faces": 67,
+      "downward_planar_faces": 19,
+      "non_prismatic_surfaces": 0
+    },
+    "04_MB_keeper_right": {
+      "valid": true,
+      "solids": 1,
+      "plane_faces": 112,
+      "vertical_z_cylinder_faces": 64,
+      "downward_planar_faces": 20,
+      "non_prismatic_surfaces": 0
+    }
+  },
+  "keeper_rear_assembly": {
+    "actual_insertion_direction": "+Z from rear toward the seated position",
+    "checked_sweep_direction": "negative Z from the seated position",
+    "rear_limit_z_mm": -1.6,
+    "carrier_minimum_z_mm": 10.4,
+    "continuity_argument": "The final keeper surfaces are exclusively horizontal or vertical planes and cylinders with vertical Z axes. At each XY position its occupied Z intervals therefore have planar lower boundaries. Extruding every downward planar face to the common rear limit and uniting these extrusions with the seated keeper covers the continuous negative-Z approach wherever carrier material exists. No sloped or curved lower boundary was found that could be omitted by the downward-planar-face selection.",
+    "sequence_condition": "The bank, sensor yokes, printed pins, wedges and cables are fitted after the rear keepers. The checked electronics references remain in place during the keeper approach.",
+    "scope": "Nominal CAD geometry and the stated sequence only; physical fit, hand access and print tolerances are not proven."
+  },
+  "short_camera_wedge_engagement": {
+    "camera_wedge_count": 8,
+    "removed_local_z_mm": [
+      -3.75,
+      2.75
+    ],
+    "retained_pin_engagement_local_z_mm": [
+      4.05,
+      8.45
+    ],
+    "engagement_material_before_mm3": 44.663606557,
+    "engagement_material_after_mm3": 44.663606557,
+    "engagement_material_difference_mm3": 0.0,
+    "tip_thickness_mm": 3.039344262,
+    "slot_thickness_mm": 3.6,
+    "pull_tab_and_neck": "unchanged"
+  },
+  "required_new_part_scope": {
+    "count": 11,
+    "parts": [
+      "02_multigrip_carrier",
+      "03_MB_keeper_left",
+      "04_MB_keeper_right",
+      "20_keeper_L_down_wedge",
+      "20_keeper_L_up_wedge",
+      "30_yoke_L_down_wedge",
+      "30_yoke_L_up_wedge",
+      "20_keeper_R_down_wedge",
+      "20_keeper_R_up_wedge",
+      "30_yoke_R_down_wedge",
+      "30_yoke_R_up_wedge"
+    ],
+    "note": "All eight camera wedges are shortened in R04; do not reuse the original full-length camera wedges."
+  },
+  "physical_validation": "NOT_PERFORMED"
+}

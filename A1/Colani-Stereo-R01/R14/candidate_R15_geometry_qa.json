@@ -1,0 +1,55 @@
+{
+  "test": "R15 proposed shell 96\u00d7145\u00d755mm and adjusted internals",
+  "reference_model": "R14 Tripo R12 external shape depth scaled only",
+  "status": "nominal collision check",
+  "parts": {
+    "REF_Linocell_5000mAh": {
+      "total_mm3": 87420.0,
+      "outside_mm3": 141.7,
+      "overlap_with_shell_mm3": [
+        0.0,
+        2229.7
+      ]
+    },
+    "REF_ESP32_CAM_L": {
+      "total_mm3": 4592.7,
+      "outside_mm3": 0.0,
+      "overlap_with_shell_mm3": [
+        12.9,
+        0.0
+      ]
+    },
+    "REF_ESP32_CAM_R": {
+      "total_mm3": 4592.7,
+      "outside_mm3": 288.2,
+      "overlap_with_shell_mm3": [
+        658.6,
+        0.0
+      ]
+    },
+    "P03_cradle_wall_-33.1": {
+      "total_mm3": 4888.6,
+      "outside_mm3": 333.7,
+      "overlap_with_shell_mm3": [
+        2.1,
+        669.1
+      ]
+    },
+    "P03_cradle_wall_33.1": {
+      "total_mm3": 4888.6,
+      "outside_mm3": 78.0,
+      "overlap_with_shell_mm3": [
+        212.0,
+        1077.9
+      ]
+    },
+    "P04_vertical_0": {
+      "total_mm3": 810.0,
+      "outside_mm3": 6.5,
+      "overlap_with_shell_mm3": [
+        104.7,
+        0.0
+      ]
+    }
+  }
+}

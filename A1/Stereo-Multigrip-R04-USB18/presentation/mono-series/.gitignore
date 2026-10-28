@@ -1,0 +1,7 @@
+*_preview.png
+*.blend1
+logs/
+raw/
+__pycache__/
+*.blend
+PAUSED

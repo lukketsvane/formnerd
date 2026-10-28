@@ -1,0 +1,54 @@
+{
+  "source": "Tripo R12 shell + nominal R13 reconstructed for R14 preview",
+  "valid_for": "static solid intersections only",
+  "tested": {
+    "REF_Linocell_5000mAh": {
+      "nominal_volume_mm3": 87420.0,
+      "outside_envelope_mm3": 16723.4,
+      "intersection_with_shell_mm3": [
+        0.0,
+        11027.1
+      ]
+    },
+    "REF_ESP32_CAM_L": {
+      "nominal_volume_mm3": 4592.7,
+      "outside_envelope_mm3": 109.4,
+      "intersection_with_shell_mm3": [
+        607.5,
+        0.0
+      ]
+    },
+    "REF_ESP32_CAM_R": {
+      "nominal_volume_mm3": 4592.7,
+      "outside_envelope_mm3": 1217.5,
+      "intersection_with_shell_mm3": [
+        1282.7,
+        0.0
+      ]
+    },
+    "P03_cradle_wall_-33.1": {
+      "nominal_volume_mm3": 4888.6,
+      "outside_envelope_mm3": 2118.5,
+      "intersection_with_shell_mm3": [
+        0.0,
+        735.9
+      ]
+    },
+    "P03_cradle_wall_33.1": {
+      "nominal_volume_mm3": 4888.6,
+      "outside_envelope_mm3": 1829.6,
+      "intersection_with_shell_mm3": [
+        0.0,
+        1086.0
+      ]
+    },
+    "P04_vertical_0": {
+      "nominal_volume_mm3": 810.0,
+      "outside_envelope_mm3": 125.1,
+      "intersection_with_shell_mm3": [
+        124.1,
+        0.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+*.blend
+*.blend1
+*.log
+raw/
+*_preview.png
+!ESP32_MB_reconstructed.blend
+delivery-manifest.json
+private-model-manifest.json

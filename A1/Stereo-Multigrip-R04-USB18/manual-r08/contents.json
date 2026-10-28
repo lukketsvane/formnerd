@@ -1,0 +1,87 @@
+[
+  {
+    "page": 1,
+    "title": "ENTROPI",
+    "step": null
+  },
+  {
+    "page": 2,
+    "title": "Hovuddelar",
+    "step": null
+  },
+  {
+    "page": 3,
+    "title": "Pinnar og kilar",
+    "step": null
+  },
+  {
+    "page": 4,
+    "title": "Elektronikk",
+    "step": null
+  },
+  {
+    "page": 5,
+    "title": "Dette skal stå att",
+    "step": null
+  },
+  {
+    "page": 6,
+    "title": "Prøv låsen",
+    "step": null
+  },
+  {
+    "page": 7,
+    "title": "Kontroller korta",
+    "step": null
+  },
+  {
+    "page": 8,
+    "title": "Deloversikt",
+    "step": null
+  },
+  {
+    "page": 9,
+    "title": "Bakhaldarar",
+    "step": 1
+  },
+  {
+    "page": 10,
+    "title": "Lås bakhaldarane",
+    "step": 2
+  },
+  {
+    "page": 11,
+    "title": "Linsebøylar",
+    "step": 3
+  },
+  {
+    "page": 12,
+    "title": "Lås linsebøylane",
+    "step": 4
+  },
+  {
+    "page": 13,
+    "title": "USB og test",
+    "step": 5
+  },
+  {
+    "page": 14,
+    "title": "Valfri batteriramme",
+    "step": 6
+  },
+  {
+    "page": 15,
+    "title": "Lås batteriramma",
+    "step": 7
+  },
+  {
+    "page": 16,
+    "title": "Kontroller",
+    "step": null
+  },
+  {
+    "page": 17,
+    "title": "Opne og kontrollere",
+    "step": null
+  }
+]

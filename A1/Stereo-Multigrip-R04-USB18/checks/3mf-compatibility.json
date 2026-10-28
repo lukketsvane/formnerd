@@ -1,0 +1,35 @@
+{
+  "issue": "Bambu Studio namespace-unaware OPC relationship parser misses prefixed Relationship elements",
+  "source": "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Format/bbs_3mf.cpp",
+  "checks": "Namespace-unaware Expat tag recognition; ZIP/XML; positive mesh volume; separation; bed containment. Actual Bambu Studio import pending.",
+  "files": {
+    "3MF/00_USB_CLEARANCE_TEST_FIRST.3mf": {
+      "old_sha256": "79510f7a7d1785c6de104af0e2c97693cb360e2e6670264a18caf581493d529d",
+      "sha256": "d7cdf0ed3baa02cd6a407269b43d0e88b7053594b79631749d9859e2b655c505",
+      "model_xml_unchanged": true,
+      "old_relationship_tags": [
+        "ns0:Relationships",
+        "ns0:Relationship"
+      ],
+      "new_relationship_tags": [
+        "Relationships",
+        "Relationship"
+      ],
+      "objects": 1
+    },
+    "3MF/01_R04_REPLACEMENT_PARTS.3mf": {
+      "old_sha256": "be402de3015084ce6ee95e58055e5f5082a6bbaadae9990fb31603fc210abed7",
+      "sha256": "fd3c76e408d4a84c0bcc6ec5e56c8ddd219ae712e69a3a7b8cc697032e230ee4",
+      "model_xml_unchanged": true,
+      "old_relationship_tags": [
+        "ns0:Relationships",
+        "ns0:Relationship"
+      ],
+      "new_relationship_tags": [
+        "Relationships",
+        "Relationship"
+      ],
+      "objects": 11
+    }
+  }
+}

@@ -1,0 +1,1192 @@
+{
+  "project": "ENTROPI_MASTER.3mf",
+  "unit": "millimeter",
+  "parts_total": 30,
+  "plates": [
+    {
+      "number": 1,
+      "name": "01 BACKCASE - selected organic pattern",
+      "parts": 1,
+      "sliced": true,
+      "prediction_seconds": 11449,
+      "weight_g": 31.25,
+      "layers": 153
+    },
+    {
+      "number": 2,
+      "name": "02 CARRIER + MB KEEPERS",
+      "parts": 3,
+      "sliced": true,
+      "prediction_seconds": 27085,
+      "weight_g": 52.27,
+      "layers": 298
+    },
+    {
+      "number": 3,
+      "name": "03 SENSOR YOKES + ALL LOCKS",
+      "parts": 26,
+      "sliced": true,
+      "prediction_seconds": 6439,
+      "weight_g": 13.9,
+      "layers": 72
+    }
+  ],
+  "selected_plate": 1,
+  "machine": "Bambu Lab P1S 0.4 nozzle",
+  "material": "Yellow Generic PLA",
+  "intended_AMS_slot": "A3; map in printer dialog",
+  "process": {
+    "layer_height": "0.12",
+    "wall_loops": "4",
+    "sparse_infill_density": "30%",
+    "support_type": "tree(auto)",
+    "support_style": "tree_organic",
+    "brim_width": "3"
+  },
+  "native_plate_layout_source": "BambuStudio PartPlate.cpp: stride = bed_dimension * 1.2; cols = ceil(sqrt(plate_count))",
+  "parts": [
+    {
+      "source_sha256": "1ae5bbe228d5b6908be78b444dfd4be579cb416bd53a5d1b19748e6af7675207",
+      "size_mm": [
+        104.5999984741211,
+        82.80000305175781,
+        18.399999618530273
+      ],
+      "mesh_volume_mm3": 24978.491887145006,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        1.3877787807814457e-15
+      ],
+      "part_id": "01_backcase",
+      "plate": 1,
+      "object_id": 2,
+      "mesh_id": 1,
+      "source": "cad/01_backcase.stl",
+      "triangles": 47682,
+      "bed_bounds_xy_mm": [
+        75.70000076293945,
+        86.5999984741211,
+        180.29999923706055,
+        169.4000015258789
+      ],
+      "bed_center_mm": [
+        128,
+        128,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -0.0,
+        0
+      ],
+      "quantity": 1,
+      "status": "selected backcase"
+    },
+    {
+      "source_sha256": "4ca1abc5fed95ec95400031534a559ab00f4bb73d238228ad39c7d73d3f87d07",
+      "size_mm": [
+        106.55773162841797,
+        80.80000305175781,
+        35.850000943639316
+      ],
+      "mesh_volume_mm3": 22894.097762718808,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -0.00027981807943433523
+      ],
+      "part_id": "02_multigrip_carrier",
+      "plate": 2,
+      "object_id": 4,
+      "mesh_id": 3,
+      "source": "models/PRINT_02_multigrip_carrier.stl",
+      "triangles": 32842,
+      "bed_bounds_xy_mm": [
+        27.721134185791016,
+        87.5999984741211,
+        134.27886581420898,
+        168.4000015258789
+      ],
+      "bed_center_mm": [
+        81,
+        128,
+        0
+      ],
+      "plate_origin_mm": [
+        307.2,
+        -0.0,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "5036ba4eb13878e5e1dc6d30a44eb00be9ae7aaa613092cce251904bf5368fc0",
+      "size_mm": [
+        55.84195518493652,
+        62.51344299316406,
+        20.45000015909318
+      ],
+      "mesh_volume_mm3": 2666.446071326524,
+      "source_centering_translation_mm": [
+        0.0007276535034179688,
+        -0.0,
+        -0.0013986903941258788
+      ],
+      "part_id": "03_MB_keeper_left",
+      "plate": 2,
+      "object_id": 6,
+      "mesh_id": 5,
+      "source": "models/PRINT_03_MB_keeper_left.stl",
+      "triangles": 7636,
+      "bed_bounds_xy_mm": [
+        162.07902240753174,
+        50.74327850341797,
+        217.92097759246826,
+        113.25672149658203
+      ],
+      "bed_center_mm": [
+        190,
+        82,
+        0
+      ],
+      "plate_origin_mm": [
+        307.2,
+        -0.0,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "584d51a03109222b23d027cb7ef8ffe8b87b31be76ce7e98678d64f46727b461",
+      "size_mm": [
+        55.84195518493652,
+        62.51344299316406,
+        20.45000015909318
+      ],
+      "mesh_volume_mm3": 2676.5479722201985,
+      "source_centering_translation_mm": [
+        -0.0007276535034179688,
+        -0.0,
+        -0.0013986903941258788
+      ],
+      "part_id": "04_MB_keeper_right",
+      "plate": 2,
+      "object_id": 8,
+      "mesh_id": 7,
+      "source": "models/PRINT_04_MB_keeper_right.stl",
+      "triangles": 7230,
+      "bed_bounds_xy_mm": [
+        162.07902240753174,
+        142.74327850341797,
+        217.92097759246826,
+        205.25672149658203
+      ],
+      "bed_center_mm": [
+        190,
+        174,
+        0
+      ],
+      "plate_origin_mm": [
+        307.2,
+        -0.0,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "2ee9566ee974cfc5cfb4b7b3fb45e0e2b4818e554ebb9d183a1dee74551c4076",
+      "size_mm": [
+        20.207273483276367,
+        46.91611862182617,
+        8.74999990791548
+      ],
+      "mesh_volume_mm3": 885.6221944355943,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -8.40154243633151e-05
+      ],
+      "part_id": "05_sensor_yoke_left",
+      "plate": 3,
+      "object_id": 10,
+      "mesh_id": 9,
+      "source": "models/PRINT_05_sensor_yoke_left.stl",
+      "triangles": 3968,
+      "bed_bounds_xy_mm": [
+        95.89636325836182,
+        183.5419406890869,
+        116.10363674163818,
+        230.4580593109131
+      ],
+      "bed_center_mm": [
+        106,
+        207,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "c3d99c34c249c4ec65446d2a772ac62ae22ec0c44463a4704123890f7de19192",
+      "size_mm": [
+        20.207273483276367,
+        46.91611862182617,
+        8.74999990791548
+      ],
+      "mesh_volume_mm3": 885.6221905406086,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -8.40154243633151e-05
+      ],
+      "part_id": "06_sensor_yoke_right",
+      "plate": 3,
+      "object_id": 12,
+      "mesh_id": 11,
+      "source": "models/PRINT_06_sensor_yoke_right.stl",
+      "triangles": 3968,
+      "bed_bounds_xy_mm": [
+        139.89636325836182,
+        183.5419406890869,
+        160.10363674163818,
+        230.4580593109131
+      ],
+      "bed_center_mm": [
+        150,
+        207,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8",
+      "size_mm": [
+        24.300000190734863,
+        10.0,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944526073681,
+      "source_centering_translation_mm": [
+        -8.726119995117188e-05,
+        -0.0,
+        -0.0004896066384389997
+      ],
+      "part_id": "10_frame_1_pin",
+      "plate": 3,
+      "object_id": 14,
+      "mesh_id": 13,
+      "source": "models/PRINT_10_frame_1_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        27.84999990463257,
+        41.0,
+        52.15000009536743,
+        51.0
+      ],
+      "bed_center_mm": [
+        40,
+        46,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a36a18d66e3232b4fd675ff96c2e25bb940d7feff034e83c058b5dff3396c9a8",
+      "size_mm": [
+        24.300000190734863,
+        10.0,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944526073681,
+      "source_centering_translation_mm": [
+        -8.726119995117188e-05,
+        -0.0,
+        -0.0004896066384389997
+      ],
+      "part_id": "10_frame_2_pin",
+      "plate": 3,
+      "object_id": 16,
+      "mesh_id": 15,
+      "source": "models/PRINT_10_frame_2_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        62.84999990463257,
+        41.0,
+        87.15000009536743,
+        51.0
+      ],
+      "bed_center_mm": [
+        75,
+        46,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8",
+      "size_mm": [
+        24.300000190734863,
+        10.0,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944526073681,
+      "source_centering_translation_mm": [
+        -8.726119995117188e-05,
+        -0.0,
+        -0.0004896066384389997
+      ],
+      "part_id": "10_frame_3_pin",
+      "plate": 3,
+      "object_id": 18,
+      "mesh_id": 17,
+      "source": "models/PRINT_10_frame_3_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        97.84999990463257,
+        41.0,
+        122.15000009536743,
+        51.0
+      ],
+      "bed_center_mm": [
+        110,
+        46,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "2260b9a807dc250184edb76e876c740eeead4b47211139a6bec9b2b3044dcba8",
+      "size_mm": [
+        24.300000190734863,
+        10.0,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944526073681,
+      "source_centering_translation_mm": [
+        -8.726119995117188e-05,
+        -0.0,
+        -0.0004896066384389997
+      ],
+      "part_id": "10_frame_4_pin",
+      "plate": 3,
+      "object_id": 20,
+      "mesh_id": 19,
+      "source": "models/PRINT_10_frame_4_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        132.84999990463257,
+        41.0,
+        157.15000009536743,
+        51.0
+      ],
+      "bed_center_mm": [
+        145,
+        46,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a97ca624b72832a346f20077ac51787123c9652f300ad1d1f61adca5eaae6d85",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442947,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "20_keeper_L_down_pin",
+      "plate": 3,
+      "object_id": 22,
+      "mesh_id": 21,
+      "source": "models/PRINT_20_keeper_L_down_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        167.35829305648804,
+        38.59091520309448,
+        192.64170694351196,
+        53.40908479690552
+      ],
+      "bed_center_mm": [
+        180,
+        46,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a6d78d073c23e05c2b91a0a4684983980c0b9770955858b5d53de8cbdfbd9640",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442947,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "20_keeper_L_up_pin",
+      "plate": 3,
+      "object_id": 24,
+      "mesh_id": 23,
+      "source": "models/PRINT_20_keeper_L_up_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        202.35829305648804,
+        38.59091520309448,
+        227.64170694351196,
+        53.40908479690552
+      ],
+      "bed_center_mm": [
+        215,
+        46,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "253f68ea26da0936528b4f64f96de9bc087c9454491a5f9932bb1670fdbf382d",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442947,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "20_keeper_R_down_pin",
+      "plate": 3,
+      "object_id": 26,
+      "mesh_id": 25,
+      "source": "models/PRINT_20_keeper_R_down_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        27.358293056488037,
+        70.59091520309448,
+        52.64170694351196,
+        85.40908479690552
+      ],
+      "bed_center_mm": [
+        40,
+        78,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a4308108b3a9c6e17d5ece6b45495c78863fedaf32f4fb2d916a5583666c42d3",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442947,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "20_keeper_R_up_pin",
+      "plate": 3,
+      "object_id": 28,
+      "mesh_id": 27,
+      "source": "models/PRINT_20_keeper_R_up_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        62.35829305648804,
+        70.59091520309448,
+        87.64170694351196,
+        85.40908479690552
+      ],
+      "bed_center_mm": [
+        75,
+        78,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "8f9b694929d3b6737e77d13390045f46088166d8ff7edfa7b4f63987067f8b5c",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442946,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "30_yoke_L_down_pin",
+      "plate": 3,
+      "object_id": 30,
+      "mesh_id": 29,
+      "source": "models/PRINT_30_yoke_L_down_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        97.35829305648804,
+        70.59091520309448,
+        122.64170694351196,
+        85.40908479690552
+      ],
+      "bed_center_mm": [
+        110,
+        78,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "0da5248ad8dc121d35184ab70c2ab741dd9e9c7a1f23f35ee47ad2a44fb60af0",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442947,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "30_yoke_L_up_pin",
+      "plate": 3,
+      "object_id": 32,
+      "mesh_id": 31,
+      "source": "models/PRINT_30_yoke_L_up_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        132.35829305648804,
+        70.59091520309448,
+        157.64170694351196,
+        85.40908479690552
+      ],
+      "bed_center_mm": [
+        145,
+        78,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "41fa73449e86fbd48bae0739d197bd599d40a29a12708e3fbc48827171a9347f",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442947,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "30_yoke_R_down_pin",
+      "plate": 3,
+      "object_id": 34,
+      "mesh_id": 33,
+      "source": "models/PRINT_30_yoke_R_down_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        167.35829305648804,
+        70.59091520309448,
+        192.64170694351196,
+        85.40908479690552
+      ],
+      "bed_center_mm": [
+        180,
+        78,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "db557326db4f8f42504a14098a1cad915e414d3d99bbf9ff5284c39504651362",
+      "size_mm": [
+        25.283413887023926,
+        14.818169593811035,
+        4.400000200490467
+      ],
+      "mesh_volume_mm3": 637.9944735442947,
+      "source_centering_translation_mm": [
+        -0.00010728836059570312,
+        -0.00010728836059570312,
+        -0.0004896066384389997
+      ],
+      "part_id": "30_yoke_R_up_pin",
+      "plate": 3,
+      "object_id": 36,
+      "mesh_id": 35,
+      "source": "models/PRINT_30_yoke_R_up_pin.stl",
+      "triangles": 1344,
+      "bed_bounds_xy_mm": [
+        202.35829305648804,
+        70.59091520309448,
+        227.64170694351196,
+        85.40908479690552
+      ],
+      "bed_center_mm": [
+        215,
+        78,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+      "size_mm": [
+        16.0,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 170.6206653754251,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "10_frame_1_wedge",
+      "plate": 3,
+      "object_id": 38,
+      "mesh_id": 37,
+      "source": "models/PRINT_10_frame_1_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        42.0,
+        106.5,
+        58.0,
+        113.5
+      ],
+      "bed_center_mm": [
+        50,
+        110,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+      "size_mm": [
+        16.0,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 170.6206653754251,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "10_frame_2_wedge",
+      "plate": 3,
+      "object_id": 40,
+      "mesh_id": 39,
+      "source": "models/PRINT_10_frame_2_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        94.0,
+        106.5,
+        110.0,
+        113.5
+      ],
+      "bed_center_mm": [
+        102,
+        110,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+      "size_mm": [
+        16.0,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 170.6206653754251,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "10_frame_3_wedge",
+      "plate": 3,
+      "object_id": 42,
+      "mesh_id": 41,
+      "source": "models/PRINT_10_frame_3_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        146.0,
+        106.5,
+        162.0,
+        113.5
+      ],
+      "bed_center_mm": [
+        154,
+        110,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "5568ba5037ac2196181cc174af3ae1c775d4faa37ca0d358ec007585fe07e02f",
+      "size_mm": [
+        16.0,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 170.6206653754251,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "10_frame_4_wedge",
+      "plate": 3,
+      "object_id": 44,
+      "mesh_id": 43,
+      "source": "models/PRINT_10_frame_4_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        198.0,
+        106.5,
+        214.0,
+        113.5
+      ],
+      "bed_center_mm": [
+        206,
+        110,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "20_keeper_L_down_wedge",
+      "plate": 3,
+      "object_id": 46,
+      "mesh_id": 45,
+      "source": "models/PRINT_20_keeper_L_down_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        45.25,
+        131.5,
+        54.75,
+        138.5
+      ],
+      "bed_center_mm": [
+        50,
+        135,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "20_keeper_L_up_wedge",
+      "plate": 3,
+      "object_id": 48,
+      "mesh_id": 47,
+      "source": "models/PRINT_20_keeper_L_up_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        97.25,
+        131.5,
+        106.75,
+        138.5
+      ],
+      "bed_center_mm": [
+        102,
+        135,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "20_keeper_R_down_wedge",
+      "plate": 3,
+      "object_id": 50,
+      "mesh_id": 49,
+      "source": "models/PRINT_20_keeper_R_down_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        149.25,
+        131.5,
+        158.75,
+        138.5
+      ],
+      "bed_center_mm": [
+        154,
+        135,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "20_keeper_R_up_wedge",
+      "plate": 3,
+      "object_id": 52,
+      "mesh_id": 51,
+      "source": "models/PRINT_20_keeper_R_up_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        201.25,
+        131.5,
+        210.75,
+        138.5
+      ],
+      "bed_center_mm": [
+        206,
+        135,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "30_yoke_L_down_wedge",
+      "plate": 3,
+      "object_id": 54,
+      "mesh_id": 53,
+      "source": "models/PRINT_30_yoke_L_down_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        45.25,
+        156.5,
+        54.75,
+        163.5
+      ],
+      "bed_center_mm": [
+        50,
+        160,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "30_yoke_L_up_wedge",
+      "plate": 3,
+      "object_id": 56,
+      "mesh_id": 55,
+      "source": "models/PRINT_30_yoke_L_up_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        97.25,
+        156.5,
+        106.75,
+        163.5
+      ],
+      "bed_center_mm": [
+        102,
+        160,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "30_yoke_R_down_wedge",
+      "plate": 3,
+      "object_id": 58,
+      "mesh_id": 57,
+      "source": "models/PRINT_30_yoke_R_down_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        149.25,
+        156.5,
+        158.75,
+        163.5
+      ],
+      "bed_center_mm": [
+        154,
+        160,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    },
+    {
+      "source_sha256": "a435480645459abccd1b2f20f9699c6022057bda6722941b75e6e934208028d0",
+      "size_mm": [
+        9.5,
+        7.0,
+        2.999999899999999
+      ],
+      "mesh_volume_mm3": 117.58705985152535,
+      "source_centering_translation_mm": [
+        -0.0,
+        -0.0,
+        -1.0000000116860974e-07
+      ],
+      "part_id": "30_yoke_R_up_wedge",
+      "plate": 3,
+      "object_id": 60,
+      "mesh_id": 59,
+      "source": "models/PRINT_30_yoke_R_up_wedge.stl",
+      "triangles": 468,
+      "bed_bounds_xy_mm": [
+        201.25,
+        156.5,
+        210.75,
+        163.5
+      ],
+      "bed_center_mm": [
+        206,
+        160,
+        0
+      ],
+      "plate_origin_mm": [
+        0.0,
+        -307.2,
+        0
+      ],
+      "quantity": 1,
+      "status": "existing R04 geometry preserved; physical assembly fit not certified"
+    }
+  ],
+  "scope": "Exactly one complete 30-part assembly. Historical replacement quantities are not duplicated. No electronics meshes in print resources.",
+  "physical_validation": "New rear case is not physically fit tested. Existing R04 camera insertion limitations remain; see original manual.",
+  "delivery_status": "All three plates sliced and digitally checked; physical first-article fit remains unverified."
+}

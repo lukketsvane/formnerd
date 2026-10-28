@@ -1,0 +1,96 @@
+{
+  "source": "Stereo-Multigrip-R03",
+  "target": "Stereo-Multigrip-R04-USB18",
+  "new_prints": [
+    "02_multigrip_carrier",
+    "03_MB_keeper_left",
+    "04_MB_keeper_right",
+    "20_keeper_L_up_wedge",
+    "20_keeper_L_down_wedge",
+    "20_keeper_R_up_wedge",
+    "20_keeper_R_down_wedge",
+    "30_yoke_L_up_wedge",
+    "30_yoke_L_down_wedge",
+    "30_yoke_R_up_wedge",
+    "30_yoke_R_down_wedge"
+  ],
+  "reused_parts": {
+    "01_bank_cradle": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 3.2753012
+    },
+    "05_sensor_yoke_left": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "06_sensor_yoke_right": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_1_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_4_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_2_wedge": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_2_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_4_wedge": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_3_wedge": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_1_wedge": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "10_frame_3_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "20_keeper_R_down_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "20_keeper_L_up_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "20_keeper_R_up_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "20_keeper_L_down_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "30_yoke_L_up_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "30_yoke_L_down_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "30_yoke_R_up_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    },
+    "30_yoke_R_down_pin": {
+      "material_outside_new_mm3": 0,
+      "new_material_not_in_old_mm3": 0
+    }
+  },
+  "status": "passed"
+}

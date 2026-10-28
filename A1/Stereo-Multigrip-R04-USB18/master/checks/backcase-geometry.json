@@ -1,0 +1,307 @@
+{
+  "version": "selected_asymmetric_backcase",
+  "reference_image": "signal-2026-10-27-224818.jpeg",
+  "source_step_sha256": "03ca1367db49e0ad88f6b229e1965d9d26a18b20b509d8c0fcbc9b598fa25f1f",
+  "units": "mm",
+  "solid_count": 1,
+  "solid_valid": true,
+  "volume_mm3": 24977.184016523242,
+  "bounds_mm": [
+    -52.3,
+    -41.4,
+    -1.0000000095033761e-07,
+    52.3,
+    41.4,
+    18.4
+  ],
+  "original_volume_mm3": 21355.265787080054,
+  "added_volume_mm3": 3644.6728379680244,
+  "original_geometry_removed_mm3": 22.754608526339805,
+  "removed_material_purpose": "Rear exposed perimeter chamfer and recessed branding, all within Z0..0.3 mm",
+  "unintended_original_geometry_removed_mm3": 0.0,
+  "functional_geometry_removed_above_z_0_301_mm3": 0.0,
+  "rear_web_thickness_mm": 2.4,
+  "cutout_count": 8,
+  "hole_construction": "Closed cubic Bezier analytic CAD wires traced from selected reference; mm scale retains original cradle interfaces",
+  "rear_outer_edge_chamfer_mm": 0.3,
+  "opening_edge_chamfer_mm": 0,
+  "step_roundtrip_valid": true,
+  "step_roundtrip_solid_count": 1,
+  "step_roundtrip_volume_mm3": 24977.184016522526,
+  "minimum_web_width_between_cutouts": {
+    "between": [
+      "lower_middle_left",
+      "lower_middle_right"
+    ],
+    "distance_mm": 3.9494504945032567
+  },
+  "minimum_web_at_rear_face_mm": 3.9494504945032567,
+  "cutout_pair_clearances": [
+    {
+      "between": [
+        "left_slender",
+        "upper_left"
+      ],
+      "distance_mm": 5.522266219539121
+    },
+    {
+      "between": [
+        "left_slender",
+        "upper_middle"
+      ],
+      "distance_mm": 22.359684066088004
+    },
+    {
+      "between": [
+        "left_slender",
+        "upper_right"
+      ],
+      "distance_mm": 42.581509732578574
+    },
+    {
+      "between": [
+        "left_slender",
+        "lower_left"
+      ],
+      "distance_mm": 6.13895196564217
+    },
+    {
+      "between": [
+        "left_slender",
+        "lower_middle_left"
+      ],
+      "distance_mm": 14.250256417709446
+    },
+    {
+      "between": [
+        "left_slender",
+        "lower_middle_right"
+      ],
+      "distance_mm": 31.226395826472327
+    },
+    {
+      "between": [
+        "left_slender",
+        "lower_right"
+      ],
+      "distance_mm": 59.6888358905501
+    },
+    {
+      "between": [
+        "upper_left",
+        "upper_middle"
+      ],
+      "distance_mm": 5.060454874199514
+    },
+    {
+      "between": [
+        "upper_left",
+        "upper_right"
+      ],
+      "distance_mm": 25.415141643900203
+    },
+    {
+      "between": [
+        "upper_left",
+        "lower_left"
+      ],
+      "distance_mm": 8.88337498293255
+    },
+    {
+      "between": [
+        "upper_left",
+        "lower_middle_left"
+      ],
+      "distance_mm": 5.386892054798623
+    },
+    {
+      "between": [
+        "upper_left",
+        "lower_middle_right"
+      ],
+      "distance_mm": 23.57291363839075
+    },
+    {
+      "between": [
+        "upper_left",
+        "lower_right"
+      ],
+      "distance_mm": 39.88140655155529
+    },
+    {
+      "between": [
+        "upper_middle",
+        "upper_right"
+      ],
+      "distance_mm": 4.39498877443948
+    },
+    {
+      "between": [
+        "upper_middle",
+        "lower_left"
+      ],
+      "distance_mm": 27.771800732700783
+    },
+    {
+      "between": [
+        "upper_middle",
+        "lower_middle_left"
+      ],
+      "distance_mm": 5.590530963073159
+    },
+    {
+      "between": [
+        "upper_middle",
+        "lower_middle_right"
+      ],
+      "distance_mm": 10.295513540575094
+    },
+    {
+      "between": [
+        "upper_middle",
+        "lower_right"
+      ],
+      "distance_mm": 5.044890675475768
+    },
+    {
+      "between": [
+        "upper_right",
+        "lower_left"
+      ],
+      "distance_mm": 46.61855003186815
+    },
+    {
+      "between": [
+        "upper_right",
+        "lower_middle_left"
+      ],
+      "distance_mm": 17.73734642482564
+    },
+    {
+      "between": [
+        "upper_right",
+        "lower_middle_right"
+      ],
+      "distance_mm": 23.07650499860765
+    },
+    {
+      "between": [
+        "upper_right",
+        "lower_right"
+      ],
+      "distance_mm": 5.392763978727626
+    },
+    {
+      "between": [
+        "lower_left",
+        "lower_middle_left"
+      ],
+      "distance_mm": 5.217987163883686
+    },
+    {
+      "between": [
+        "lower_left",
+        "lower_middle_right"
+      ],
+      "distance_mm": 16.651642332059907
+    },
+    {
+      "between": [
+        "lower_left",
+        "lower_right"
+      ],
+      "distance_mm": 51.983704168225984
+    },
+    {
+      "between": [
+        "lower_middle_left",
+        "lower_middle_right"
+      ],
+      "distance_mm": 3.9494504945032567
+    },
+    {
+      "between": [
+        "lower_middle_left",
+        "lower_right"
+      ],
+      "distance_mm": 13.16839884427808
+    },
+    {
+      "between": [
+        "lower_middle_right",
+        "lower_right"
+      ],
+      "distance_mm": 6.998748486061141
+    }
+  ],
+  "original_window_mm": [
+    84,
+    52,
+    6
+  ],
+  "brand_engrave_depth_mm": 0.3,
+  "brand_text": [
+    "finne",
+    "ENTROPI"
+  ],
+  "bank_envelope_mm": [
+    94,
+    62,
+    15
+  ],
+  "bank_start_z_mm": 2.8,
+  "bank_collision_mm3": 0.0,
+  "added_web_to_bank_clearance_mm": 0.3999999999999999,
+  "bank_to_original_rear_lip_clearance_mm": 0.2,
+  "hardware_dimensions": "Nominal existing design values, not newly measured",
+  "print_orientation": {
+    "description": "Rear face on bed, cavity/forks up, identical to assembly coordinates",
+    "transform_4x4": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "file": "01_backcase.stl"
+  },
+  "mesh_check": {
+    "triangles": 47682,
+    "nonmanifold_or_boundary_edges": 0,
+    "degenerate_triangles": 0,
+    "signed_volume_mm3": 24978.491887145006,
+    "mesh_bounds_mm": [
+      -52.29999923706055,
+      -41.400001525878906,
+      -1.3877787807814457e-15,
+      52.29999923706055,
+      41.400001525878906,
+      18.399999618530273
+    ]
+  },
+  "step_sha256": "398aea30f6f22c4b865c1cfb26737d511d3e9bee92e44c442b5f2e88b7d73538",
+  "stl_sha256": "1ae5bbe228d5b6908be78b444dfd4be579cb416bd53a5d1b19748e6af7675207",
+  "physical_fit_verified": false,
+  "slicer_verified": true,
+  "status": "CAD and mesh digitally validated, all three plates sliced, physical first-article fit unverified.",
+  "slicing_report": "slicing.json"
+}

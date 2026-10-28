@@ -1,0 +1,68 @@
+{
+  "file": "output/stereo-multigrip-r03/Bambu-Studio/Stereo-Multigrip-R03-01-Lock-Test.3mf",
+  "type": "unsliced 3MF Core build layout",
+  "bed_mm": [
+    256,
+    256
+  ],
+  "margin_mm": 16,
+  "gap_mm": 8,
+  "parts": [
+    {
+      "name": "TEST_pin",
+      "size_mm": [
+        10.0,
+        24.3,
+        4.4
+      ],
+      "translation_mm": [
+        21.0,
+        28.15,
+        0
+      ],
+      "triangles": 1584
+    },
+    {
+      "name": "TEST_fork",
+      "size_mm": [
+        10.0,
+        16.0,
+        10.25
+      ],
+      "translation_mm": [
+        39.0,
+        24.0,
+        0
+      ],
+      "triangles": 1092
+    },
+    {
+      "name": "TEST_wedge",
+      "size_mm": [
+        16.0,
+        7.0,
+        3.0
+      ],
+      "translation_mm": [
+        60.0,
+        19.5,
+        0
+      ],
+      "triangles": 548
+    },
+    {
+      "name": "TEST_tongue",
+      "size_mm": [
+        8.0,
+        6.0,
+        8.0
+      ],
+      "translation_mm": [
+        80.0,
+        19.0,
+        0
+      ],
+      "triangles": 544
+    }
+  ]
+}

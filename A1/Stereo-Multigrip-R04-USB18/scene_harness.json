@@ -1,0 +1,304 @@
+{
+  "items": [
+    {
+      "name": "01_bank_cradle",
+      "stl": "STL/01_bank_cradle.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "02_multigrip_carrier",
+      "stl": "STL/02_multigrip_carrier.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "03_MB_keeper_left",
+      "stl": "STL/03_MB_keeper_left.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "04_MB_keeper_right",
+      "stl": "STL/04_MB_keeper_right.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "05_sensor_yoke_left",
+      "stl": "STL/05_sensor_yoke_left.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "06_sensor_yoke_right",
+      "stl": "STL/06_sensor_yoke_right.stl",
+      "color": [
+        0.69,
+        0.71,
+        0.72
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_1_pin",
+      "stl": "STL/10_frame_1_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_1_wedge",
+      "stl": "STL/10_frame_1_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_2_pin",
+      "stl": "STL/10_frame_2_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_2_wedge",
+      "stl": "STL/10_frame_2_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_3_pin",
+      "stl": "STL/10_frame_3_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_3_wedge",
+      "stl": "STL/10_frame_3_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_4_pin",
+      "stl": "STL/10_frame_4_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "10_frame_4_wedge",
+      "stl": "STL/10_frame_4_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_L_down_pin",
+      "stl": "STL/20_keeper_L_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_L_down_wedge",
+      "stl": "STL/20_keeper_L_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_L_up_pin",
+      "stl": "STL/20_keeper_L_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_L_up_wedge",
+      "stl": "STL/20_keeper_L_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_L_down_pin",
+      "stl": "STL/30_yoke_L_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_L_down_wedge",
+      "stl": "STL/30_yoke_L_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_L_up_pin",
+      "stl": "STL/30_yoke_L_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_L_up_wedge",
+      "stl": "STL/30_yoke_L_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_R_down_pin",
+      "stl": "STL/20_keeper_R_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_R_down_wedge",
+      "stl": "STL/20_keeper_R_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_R_up_pin",
+      "stl": "STL/20_keeper_R_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "20_keeper_R_up_wedge",
+      "stl": "STL/20_keeper_R_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_R_down_pin",
+      "stl": "STL/30_yoke_R_down_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_R_down_wedge",
+      "stl": "STL/30_yoke_R_down_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_R_up_pin",
+      "stl": "STL/30_yoke_R_up_pin.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    },
+    {
+      "name": "30_yoke_R_up_wedge",
+      "stl": "STL/30_yoke_R_up_wedge.stl",
+      "color": [
+        0.26,
+        0.29,
+        0.31
+      ],
+      "category": "printed"
+    }
+  ]
+}
