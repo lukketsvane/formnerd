@@ -220,14 +220,21 @@ tid("saumar")
 
 kutt_ = [("knurl", KNURL), ("skala", SKALA), ("hjulskala", HJULSKALA), ("namn", NAMN), ("okularknurl", OKULARKNURL), ("saum", SAUM)]
 for namn_, op_ in kutt_:
-    ny_ = KROPP - op_
+    try:
+        ny_ = KROPP - op_
+    except Exception as e_:
+        print("   feil i kutt", namn_, e_)
+        ny_ = None
     ok_ = ny_ is not None and ny_.is_valid and len(ny_.solids()) == 1
     if not ok_ and ny_ is not None:
-        ny_ = ny_.fix()
-        ok_ = ny_.is_valid and len(ny_.solids()) == 1
+        try:
+            ny_ = ny_.fix()
+            ok_ = ny_.is_valid and len(ny_.solids()) == 1
+        except Exception as e_:
+            ok_ = False
         print("   fix etter", namn_, "gyldig", ok_)
     if ok_:
-        KROPP = ny_
+        KROPP = Solid(ny_.solids()[0].wrapped)
     else:
         print("   HOPPA OVER", namn_, "(ugyldig resultat)")
     tid("  - " + namn_)
