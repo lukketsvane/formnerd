@@ -10,7 +10,7 @@
       118.8,
       39.5
     ],
-    "volum_cm3": 99.07
+    "volum_cm3": 100.63
   },
   "topp": {
     "botn_mot_bordet": [
@@ -23,7 +23,7 @@
       124.4,
       52.7
     ],
-    "volum_cm3": 140.32
+    "volum_cm3": 142.53
   },
   "utloysar": {
     "botn_mot_bordet": [
@@ -45,11 +45,11 @@
       0
     ],
     "storleik_mm": [
-      17.0,
-      11.8,
+      17.3,
+      12.5,
       9.6
     ],
-    "volum_cm3": 1.22
+    "volum_cm3": 1.31
   },
   "hjulaksel": {
     "botn_mot_bordet": [
@@ -58,10 +58,10 @@
       -1
     ],
     "storleik_mm": [
-      11.7,
-      11.7,
+      14.2,
+      14.2,
       11.0
     ],
-    "volum_cm3": 0.65
+    "volum_cm3": 0.88
   }
 }
