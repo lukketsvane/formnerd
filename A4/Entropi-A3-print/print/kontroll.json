@@ -9,25 +9,25 @@
   "delar": {
     "botn": {
       "status": "Error.NoError",
-      "volum_cm3": 99.067,
+      "volum_cm3": 100.632,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          6.4,
+          6.39,
           0.04,
           -4.5
         ],
         [
           91.0,
-          118.86,
+          118.85,
           35.0
         ]
       ]
     },
     "topp": {
       "status": "Error.NoError",
-      "volum_cm3": 140.317,
+      "volum_cm3": 142.529,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
@@ -63,47 +63,47 @@
     },
     "usb-lokk": {
       "status": "Error.NoError",
-      "volum_cm3": 1.224,
+      "volum_cm3": 1.313,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          43.5,
+          43.15,
           108.66,
-          25.6
+          25.65
         ],
         [
-          55.3,
-          118.21,
-          42.6
+          55.65,
+          118.27,
+          42.93
         ]
       ]
     },
     "hjulaksel": {
       "status": "Error.NoError",
-      "volum_cm3": 0.651,
+      "volum_cm3": 0.88,
       "komponentar": 1,
       "smaa_komponentar_mm3": [],
       "bbox": [
         [
-          25.25,
-          98.05,
+          24.0,
+          96.8,
           74.5
         ],
         [
-          36.95,
-          109.75,
+          38.2,
+          111.0,
           85.5
         ]
       ]
     }
   },
   "veggar_mm": {
-    "stabel": 6.44,
-    "brytarlomme": 4.41,
-    "ec11_pipe": 5.5,
+    "stabel": 0.0,
+    "brytarlomme": 0.0,
+    "ec11_pipe": 0.0,
     "magnetlommer": 1.5,
-    "usb_tunnel": 8.68
+    "usb_tunnel": 0.0
   },
   "kollisjonar_mm3": {
     "mb_kort": {
@@ -176,6 +176,6 @@
     "botn": 0.2,
     "topp": 0.2
   },
-  "ytre_volum_cm3": 533.3,
+  "ytre_volum_cm3": 261.4,
   "brytargolv_mm": 2.6
 }
