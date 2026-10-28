@@ -48,7 +48,7 @@ Slik sender du ei fil: opne `.gcode.3mf` i Bambu Studio, trykk *Print plate*, ve
 | Hjulbossen | Sylinder r 17,5 til z 80, fillet 2 mm, med ein kjegleforma krage r 20,5 → 17,5 (z 46–58,4) som kjem opp or kroppen utan flat underside |
 | Utløysarbossen | Sylinder r 9 til z 63,5, fillet 2,5 mm |
 
-Holrommet er eit ruled loft av dei uskorne snitta forskove 2,6 mm inn (det minste av snitta ved z − 2,6, z og z + 2,6, så veggen held der flata hallar; golv z 5, tak z 55), lagt inn i kroppen som eit indre skal utan boolsk operasjon. Verneklossane som skal stå att i holrommet (golvet under brytarlomma, hylsa rundt USB-tunnelen med ein 45°-kjøl under og ein 45°-gavl over, EC11-pipa) blir trekte frå kjernen før ho blir snudd; golvet under brytarlomma er ein sylinder r 8,8, for OCCT ignorerte ein boks på akkurat den staden stille. Søyler, stolpar, trakter og lommer er boksar, sylindrar og loft som blir trekte frå etterpå, éin om gongen. Tynne lukka skal (under 0,5 mm) som rillene etterlèt der dei går inn under løpet, blir kasta før holrommet blir lagt inn. Saumane mellom dei to gråtonane er spor skorne ved z 61 rundt søkarblokka (over plinten) og z 59 rundt hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
+Holrommet er eit ruled loft av dei uskorne snitta forskove 2,6 mm inn (det minste av snitta ved z − 2,6, z og z + 2,6, så veggen held der flata hallar; golv z 5, tak z 55), lagt inn i kroppen som eit indre skal utan boolsk operasjon. Verneklossane som skal stå att i holrommet (golvet under brytarlomma, hylsa rundt USB-tunnelen med ein 45°-kjøl under og ein 45°-gavl over, EC11-pipa) blir trekte frå kjernen før ho blir snudd; golvet under brytarlomma er ein sylinder r 8,8, for OCCT ignorerte ein boks på akkurat den staden stille. Søyler, stolpar, trakter og lommer er boksar, sylindrar og loft som blir trekte frå etterpå, éin om gongen. Tynne lukka skal (under 0,5 mm) som rillene etterlèt der dei går inn under løpet, blir kasta før holrommet blir lagt inn. STEP-filene blir skrivne gjennom `verktoy/step_eksport.py`: forskyvingskurvene som delingsfasen etterlèt, blir konverterte til B-splinar først, elles droppar OCCT-skrivaren dei sju flatene langs fasen og STEP-en blir eit ope skal; kvar fil blir lesen inn att og kontrollert som eitt gyldig solid. Saumane mellom dei to gråtonane er spor skorne ved z 61 rundt søkarblokka (over plinten) og z 59 rundt hjulbossen og utløysarbossen, og panel-linja ved x 71,2 på linseløpet.
 
 ## Overflatedetaljar
 
@@ -118,7 +118,8 @@ cd verktoy
 npm install
 pip install build123d
 python3 form_fraa_mesh.py && python3 royr_fraa_mesh.py   # mål frå Tripo-meshen -> form_maal.json
-python3 cad_skal.py       # B-rep-delar: print/step og print/stl
+python3 cad_skal.py       # B-rep-delar: print/step og print/stl (print/cad/*.brep)
+python3 step_eksport.py   # skriv STEP på nytt frå B-rep-ane om du berre vil ha dei
 python3 kontroll_cad.py   # kontroll.json frå STL-ane og proxyane
 python3 print_skal.py     # prentretning
 bash bambu_skal.sh A3-Entropi-botn-P1S ../print/printretning/botn.stl

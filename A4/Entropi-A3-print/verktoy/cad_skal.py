@@ -3,6 +3,7 @@ import json, pathlib, sys, time, math
 import numpy as np
 from build123d import *
 import cad_form as cf
+import step_eksport
 
 HER = pathlib.Path(__file__).resolve().parent
 K, F, S, D = cf.K, cf.F, cf.K["skal"], cf.K["detalj"]
@@ -402,7 +403,6 @@ for n, m in DELAR.items():
     print(f"{n:<10} gyldig {m.is_valid!s:<5} solidar {len(m.solids())}  stl vasstett {vasstett!s:<5} volum {vol:6.2f} cm3")
     if n in ("botn", "topp"):
         export_brep(m, UT / "cad" / f"{n}.brep")
-    export_step(m, UT / "step" / f"{n}.step")
-    inn = import_step(UT / "step" / f"{n}.step")
-    print(f"{n:<10} STEP lesen att: solidar {len(inn.solids())} skal {len(inn.shells())} flater {len(inn.faces())}")
+    r_ = step_eksport.skriv(m, UT / "step" / f"{n}.step")
+    print(f"{n:<10} STEP lesen att: solidar {r_[0]} flater {r_[1]} frie kantar {r_[2]} gyldig {r_[3]}")
 tid("eksport")
