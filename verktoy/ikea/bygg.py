@@ -19,7 +19,9 @@ HER = os.path.dirname(os.path.abspath(__file__))
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONTB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 PX = 2400
-STIL = {"line": 3, "crease": 38.0, "depth_eps": 0.004, "min_px": 30, "new_fill": [236, 236, 236], "margin": 22}
+STIL = {"line": 3, "crease": 38.0, "depth_eps": 0.004, "min_px": 30, "new_fill": [236, 236, 236], "margin": 22,
+        "steg_pt": 44, "mengd_pt": 13, "mengd_fyrst": False, "tittel_pt": 30, "tittel_feit": False, "sidetal_pt": 10,
+        "del_pt": 13, "lett_pt": None, "ramme": True, "beslagkolonne": True}
 
 
 class Delar:
@@ -99,7 +101,8 @@ def linjer(mappe, fyll, stil, crease=None, min_px=None, skala=2):
         eigar = np.zeros(k + 1, int)
         np.maximum.at(eigar, lab.ravel(), idb.ravel())
         inne &= storleik[lab] >= mp[eigar[lab]]
-    kant = ndimage.binary_dilation(sil | inne, iterations=max(0, stil["line"] - 1))
+    n = int(stil["line"]) - 1          # iterations=0 i scipy dilaterer til heile biletet er fylt
+    kant = ndimage.binary_dilation(sil | inne, iterations=n) if n > 0 else sil | inne
     ut = np.full(fg.shape + (3,), 255, np.uint8)
     for i, rgb in fyll.items():
         ut[idb == i] = rgb
@@ -191,7 +194,7 @@ class Dok:
     def stipla(self, a, b):
         c = self.c
         c.setStrokeGray(0)
-        c.setLineWidth(1.0)
+        c.setLineWidth(self.stil["lett_pt"] or 1.0)
         c.setDash(4, 3)
         c.line(*a, *b)
         c.setDash()
@@ -222,21 +225,33 @@ class Dok:
         self.reg("merke", x - r, y - r, x + r, y + r)
 
     def merke(self, ident, mengd, x, y, size=16):
-        self.sirkel(ident, x + 13, y + 5, 13, 13 if len(ident) < 3 else 10)
-        return 30 + (self.tekst(f"x{mengd}", x + 30, y, size) if mengd is not None else 0)
+        r = self.stil["del_pt"]
+        self.sirkel(ident, x + r, y + 5, r, r if len(ident) < 3 else r * 10 / 13)
+        return 2 * r + 4 + (self.tekst(f"x{mengd}", x + 2 * r + 4, y, size) if mengd is not None else 0)
 
     def leiar(self, ident, mål, ved):
         a, p = np.asarray(ved, float), np.asarray(mål, float)
         d = p - a
         L = np.linalg.norm(d)
         c = self.c
-        if L > 16:
+        r = self.stil["del_pt"]
+        if L > r + 3:
             c.setStrokeGray(0)
-            c.setLineWidth(.7)
-            c.line(*(a + d / L * 13), *p)
+            c.setLineWidth(self.stil["lett_pt"] or .7)
+            c.line(*(a + d / L * r), *p)
             c.setFillGray(0)
             c.circle(*p, 1.5, fill=1, stroke=0)
-        self.sirkel(ident, *a, 13, 13 if len(ident) < 3 else 10)
+        self.sirkel(ident, *a, r, r if len(ident) < 3 else r * 10 / 13)
+
+    def glas(self, p, s=1.0):
+        """To korte skrå parallelle strekar: glas eller anna klar flate."""
+        c = self.c
+        c.setStrokeGray(0)
+        c.setLineWidth(self.stil["lett_pt"] or .7)
+        c.setLineCap(1)
+        for dx, lengd in ((-3.0, 16.0), (3.0, 10.0)):
+            c.line(p[0] + dx * s - lengd * s * .35, p[1] - lengd * s * .5, p[0] + dx * s + lengd * s * .35, p[1] + lengd * s * .5)
+        c.setLineCap(0)
 
     def ikon(self, kind, x, y, s=1.0):
         c = self.c
@@ -273,11 +288,12 @@ class Dok:
     def ny_side(self, tittel):
         m = self.stil["margin"]
         c = self.c
-        c.setStrokeGray(0)
-        c.setLineWidth(1.2)
-        c.rect(m, m + 14, self.W - 2 * m, self.H - 2 * m - 14, fill=0, stroke=1)
+        if self.stil["ramme"]:
+            c.setStrokeGray(0)
+            c.setLineWidth(1.2)
+            c.rect(m, m + 14, self.W - 2 * m, self.H - 2 * m - 14, fill=0, stroke=1)
         self.n += 1
-        self.tekst(str(self.n), self.W / 2, m - 2, 10, juster="c", reg=False)
+        self.tekst(str(self.n), self.W / 2, m - 2, self.stil["sidetal_pt"], juster="c", reg=False)
         if self.meta.get("footer"):
             self.tekst(self.meta["footer"], self.W - m, m - 2, 7, juster="r", reg=False)
         c.bookmarkPage(f"p{self.n}")
@@ -321,7 +337,19 @@ class Byggjar:
                     bevegelse.append((item["part"], c + ex, c, item.get("line"), flytt))
         return obj, roller, delnamn, bevegelse
 
-    def figur(self, scene, view, senter=None, span=None, zoom=1.05):
+    def figur(self, scene, view, senter=None, span=None, zoom=1.05, boks=None, krop=True):
+        """Med style.line_pt og ein boks blir strekbreidda vald slik at streken blir om lag line_pt i ferdig storleik."""
+        res = self._figur(scene, view, senter, span, zoom, self.stil)
+        if self.stil.get("line_pt") and boks is not None:
+            cb = beskjer(res[0]) if krop else (0, 0, res[0].width, res[0].height)
+            s = min(boks[2] / max(1, cb[2] - cb[0]), boks[3] / max(1, cb[3] - cb[1]))    # pt per piksel
+            k = max(1, int(round(self.stil["line_pt"] / s)))
+            if k != self.stil["line"]:
+                res = self._figur(scene, view, senter, span, zoom, {**self.stil, "line": k})
+            res[5]["strek_pt"] = round(k * s, 2)
+        return res
+
+    def _figur(self, scene, view, senter, span, zoom, stilen):
         obj, roller, delnamn, bev = self.objekt(scene)
         if senter is None:
             hjørne = np.array([self.delar.grenser[n] + t for (_, t), n in zip(obj, delnamn)]).reshape(-1, 3)
@@ -336,9 +364,9 @@ class Byggjar:
             min_px = {k + 1: self.del_(delnamn[i])["min_px"] for k, i in enumerate(idx) if "min_px" in self.del_(delnamn[i])}
             im, sk = linjer(mappe, fyll, stil, crease, min_px)
             return im, sk, cam, mappe
-        im, sk, cam, mappe = pass_(synleg, self.stil)
+        im, sk, cam, mappe = pass_(synleg, stilen)
         if spøkje:
-            gim, _, _, _ = pass_(spøkje, {**self.stil, "line": max(1, self.stil["line"] - 1)})
+            gim, _, _, _ = pass_(spøkje, {**stilen, "line": max(1, stilen["line"] - 1)})
             a, g = np.asarray(im).copy(), np.asarray(gim.convert("L"))
             kvit = (a == 255).all(-1) & (g < 128)
             a[kvit] = self.stil.get("ghost_grey", 150)
@@ -357,7 +385,7 @@ class Byggjar:
 
     def scenefigur(self, fig, boks, side):
         d = self.dok
-        im, P3, bev, roller, delnamn, info = self.figur(fig["scene"], fig.get("view", side.get("view", "iso")), zoom=fig.get("zoom", 1.05))
+        im, P3, bev, roller, delnamn, info = self.figur(fig["scene"], fig.get("view", side.get("view", "iso")), zoom=fig.get("zoom", 1.05), boks=boks)
         tilpdf, ramme = d.bilete(im, boks)
         P = lambda w: tilpdf(P3(w))
         grupper = {}
@@ -366,7 +394,7 @@ class Byggjar:
             hw = self.del_(namn).get("kind") == "hardware"
             if (stil or ("dashed" if hw else "arrow")) == "dashed":
                 d.stipla(a, b)
-            else:
+            elif stil != "none":
                 d.pil(a + (b - a) * 0.15, b - (b - a) * 0.15)
             lo, hi = self.delar.grenser[namn]
             hjørne = np.array([P(np.array([x, y, z]) + flytt) for x in (lo[0], hi[0]) for y in (lo[1], hi[1]) for z in (lo[2], hi[2])])
@@ -377,7 +405,12 @@ class Byggjar:
             h = max(hjørnelister, key=lambda q: q[:, 1].max())
             høgre, midt = h[:, 0].max(), (h[:, 1].min() + h[:, 1].max()) / 2
             if self.del_(namn).get("kind") == "hardware":
-                d.tekst(f"{self.ident(namn)}x{len(hjørnelister)}", høgre + 8, midt - 4, 13, reg=False)
+                mp = self.stil["mengd_pt"]
+                if self.stil["mengd_fyrst"]:
+                    w = d.tekst(f"{len(hjørnelister)}x", høgre + 8, midt - mp * .3, mp, reg=False)
+                    d.tekst(self.ident(namn), høgre + 12 + w, midt - mp * .3, self.stil["del_pt"], reg=False)
+                else:
+                    d.tekst(f"{self.ident(namn)}x{len(hjørnelister)}", høgre + 8, midt - 4, mp, reg=False)
             else:
                 d.leiar(self.ident(namn), np.array([høgre - 4, midt]), np.array([høgre + 30, midt + 16]))
         for co in fig.get("callouts", []):
@@ -385,6 +418,8 @@ class Byggjar:
             d.leiar(self.ident(co["part"]), t, t + np.array(co.get("offset", [40, 30])))
         for a, b in fig.get("arrows", []):
             d.pil(P(a), P(b))
+        for g in fig.get("glas", []):
+            d.glas(P(g))
         if fig.get("detail"):
             self.boble(fig, fig["detail"], P, boks, side)
         if fig.get("multiplier"):
@@ -394,14 +429,15 @@ class Byggjar:
 
     def boble(self, fig, det, P, boks, side):
         d = self.dok
-        im, _, _, _, _, _ = self.figur(det.get("scene", fig["scene"]), fig.get("view", side.get("view", "iso")), det["centre"], det["span"])
         r = det.get("r", 62)
+        im, _, _, _, _, _ = self.figur(det.get("scene", fig["scene"]), fig.get("view", side.get("view", "iso")), det["centre"], det["span"],
+                                       boks=(0, 0, 2 * r, 2 * r), krop=False)
         x, y, w, h = boks
         cx, cy = {"right": (x + w - r - 4, y + r + 4), "left": (x + r + 4, y + r + 4), "topright": (x + w - r - 4, y + h - r - 4)}[det.get("pos", "right")]
         src = P(det["centre"])
         c = d.c
         c.setStrokeGray(0)
-        c.setLineWidth(.9)
+        c.setLineWidth(self.stil["lett_pt"] or .9)
         c.circle(*src, 12, stroke=1, fill=0)
         v = np.array([cx, cy]) - src
         v /= np.linalg.norm(v) + 1e-9
@@ -422,11 +458,16 @@ class Byggjar:
     def cover(self, side):
         d = self.dok
         m = self.stil["margin"]
-        d.tekst(side.get("title", "MONTERINGSRETTLEIING"), m + 30, d.H - m - 70, 30)
+        tp = self.stil["tittel_pt"]
+        ekstra = max(0.0, tp - 30) * .75
+        d.tekst(side.get("title", "MONTERINGSRETTLEIING"), m + 30, d.H - m - 70 - ekstra, tp, self.stil["tittel_feit"])
         if self.spec.get("meta", {}).get("subtitle"):
-            d.tekst(self.spec["meta"]["subtitle"], m + 32, d.H - m - 96, 12)
-        im, *_ = self.figur(side["scene"], side.get("view", "iso"), zoom=1.0)
-        d.bilete(im, (m + 40, m + 60, d.W - 2 * m - 80, d.H - 2 * m - 220))
+            d.tekst(self.spec["meta"]["subtitle"], m + 32, d.H - m - 96 - ekstra, 12)
+        boks = (m + 40, m + 60, d.W - 2 * m - 80, d.H - 2 * m - 220 - ekstra)
+        im, P3, *_ = self.figur(side["scene"], side.get("view", "iso"), zoom=1.0, boks=boks)
+        tilpdf, _ = d.bilete(im, boks)
+        for g in side.get("glas", []):
+            d.glas(tilpdf(P3(g)))
         d.ny_side("Framside")
 
     def inventory(self, side):
@@ -528,10 +569,15 @@ class Byggjar:
     def step(self, side):
         d = self.dok
         m = self.stil["margin"]
-        self.steg += 1
-        nr = side.get("n", self.steg)
-        d.tekst(str(nr), m + 16, d.H - m - 56, 44, True)
-        tx = m + 16 + 44 * 0.62 * len(str(nr)) + 20
+        utan = side.get("n") is False          # side utan stegnummer: port, kontroll, bakside
+        if not utan:
+            self.steg += 1
+        nr = None if utan else side.get("n", self.steg)
+        sp = self.stil["steg_pt"]
+        tx = m + 16
+        if nr is not None:
+            d.tekst(str(nr), m + 16, d.H - m - 56, sp, True)
+            tx += sp * 0.62 * len(str(nr)) + 20
         for k in side.get("icons", []):
             d.ikon(k, tx, d.H - m - 60, 0.9)
             tx += 44
@@ -546,7 +592,7 @@ class Byggjar:
         for k, v in beslag:
             self.brukt[k] = self.brukt.get(k, 0) + v
         høgre = d.W - m - 10
-        if beslag:
+        if beslag and self.stil["beslagkolonne"]:
             sb = 108
             høgre = d.W - m - sb - 8
             y = d.H - m - 8
@@ -588,8 +634,8 @@ class Byggjar:
         if side.get("note"):
             d.tekst(side["note"], m + 16, y, 11)
         nye = sum(1 for f in figs for s in f["scene"] if s.get("role") == "new")
-        self.rapport.append({"side": d.n + 1, "steg": nr, "nye_delar": nye, "figurar": info_figs})
-        d.ny_side(f"{nr} {side.get('title', '')}")
+        self.rapport.append({"side": d.n + 1, "steg": nr, **({} if utan else {"nye_delar": nye}), "figurar": info_figs})
+        d.ny_side(side.get("title", "") if utan else f"{nr} {side.get('title', '')}")
 
     def warnings(self, side):
         d = self.dok
