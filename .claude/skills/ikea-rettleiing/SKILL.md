@@ -97,7 +97,7 @@ Målt i MILSBO, PAX og MOSSJÖN (A4 595,28 × 841,89 pt). Bruk tala i faktisk A4
 | Produktnamn på framsida | 90 til 140 pt, tilpassa lengda på namnet |
 | Fargar | svart strek, kvit botn, éin lys grå fyll for nye delar og ein mørkare grå for markering |
 
-Eigne tidlegare forsøk med 0,32/0,52 pt strek var for tynne; 0,5/0,75 pt var vedtaket som fungerte. Kontroller at tjukkare strek ikkje gjer tette detaljar (kretskort, gjenger) svarte. `bygg.py` teiknar strek som raster på 2400 px, så `style.line` er pikslar: `line ≈ 0,75 × 2400 / figurbreidd i pt`. Ein figur på 500 pt breidd gir om lag 3,6, altså er standardverdien 3 litt for tynn for store figurar.
+Eigne tidlegare forsøk med 0,32/0,52 pt strek var for tynne; 0,5/0,75 pt var vedtaket som fungerte. Kontroller at tjukkare strek ikkje gjer tette detaljar (kretskort, gjenger) svarte. `bygg.py` teiknar strek som raster, og fast `style.line` gir om lag `line × figurbreidd / 1200` pt (målt: standardverdien 3 gir om lag 1,5 pt). Set difor `style.line_pt` til 0,75, så vel byggjaren strekbreidda per figur og boble; `rapport.json` viser `strek_pt`. Set òg `steg_pt` 32, `mengd_pt` 18, `mengd_fyrst` true, `tittel_pt` 90 eller meir med `tittel_feit` true, `sidetal_pt` 9, `del_pt` 7,5, `lett_pt` 0,5, `ramme` false og `beslagkolonne` false; standardverdiane er frå før målinga. Port, kontroll og bakside er `step` med `n: false`, og glas er figurfeltet `glas`.
 
 ### 6. Kontroll før levering
 
