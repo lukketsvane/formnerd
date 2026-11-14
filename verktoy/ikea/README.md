@@ -34,30 +34,32 @@ Alle stiar er relative til spesifikasjonsfila. Alle delar må liggje i same mont
 
 **Stil.** `line` er strekbreidd i pikslar på 2400 px-rasteret (streken blir om lag `line` px etter nedskalering til 1200 px). Med `line_pt` (t.d. 0,75) vel byggjaren `line` per figur, boble og miniatyr slik at streken blir om lag så mange pt i ferdig storleik; `rapport.json` viser `strek_pt` per figur. Desse nøklane har standardverdiar som gir same utsjånad som før: `steg_pt` (44), `mengd_pt` (13, mengd ved handlinga), `mengd_fyrst` (`false`: «Ex4»; `true`: «4x E», og «4x» på del- og beslagsida), `tittel_pt` (30) og `tittel_feit` (`false`) på framsida, `sidetal_pt` (10), `del_pt` (13, nummer i sirkel), `lett_pt` (leiarar, stipla aksar og bobleleiar; `null` gir 0,7/1,0/0,9 pt), `ramme` (`true`, sideramme) og `beslagkolonne` (`true`). Stilarket i skillen `ikea-rettleiing` gir verdiane som matchar IKEA-referansane.
 
-`kontur` (standard 1) gjer omriss og grenser mellom delar så mange gonger tjukkare enn dei indre kantane; IKEA ligg rundt 1,5. `svarting` (standard 1) skalerer dekninga i den nedskalerte streken, så han står svart og ikkje grå; 1,5 høver.
+`kontur` (standard 1) gjer omriss og grenser mellom delar så mange gonger tjukkare enn dei indre kantane; IKEA ligg rundt 1,5. `svarting` (standard 1) skalerer dekninga i den nedskalerte streken, så han står svart og ikkje grå; 1,5 høver. Med `line_pt` blir strekbreidda vald i steg på éin høgoppløyst piksel, så streken held seg innanfor om lag ±0,1 pt mellom figurar i ulik skala. `boble_pt` (1,6) er ringen rundt detaljbobla. `sidetal_ytre` set sidetalet i ytre hjørne, dokumentkoden berre på partalssider og ingenting på framsida.
 
 **Delar.** `mesh` er éi fil eller ei liste som blir slått saman. `primitive` er `cylinder {r, h}` eller `box [x, y, z]`, sentrert i origo med valfri `axis`. `kind: "hardware"` gir bokstav og beslagkolonne, alt anna gir nummer. `counts_as: "<nøkkel>"` på eit beslag gjer at det blir talt og merkt som eit anna beslag: same skrue i ei anna stilling treng eiga mesh, men er éi vare i dellista. `crease` (grader) og `min_px` (minste strek i pikslar) per del dempar krot på tette Tripo-flater.
+
+`fill: false` på ein del gjer at han ikkje får grå fyll når han er ny. Bruk det på store flater; IKEA held dei kvite.
 
 **Scene.** Ei liste av `{"part", "role", "at", "explode", "line"}`:
 
 - `role`: `context` (kvit, standard), `new` (grå fyll, flytt med `explode`, med pil eller stipla line), `ghost` (gjennomsiktig grå kontur, for delar som elles skjuler innmaten) eller `exploded` (berre forskyving).
 - `at`: liste av posisjonar, éin per eksemplar.
-- `label`: `false` tek bort den automatiske etiketten for delen; set han heller med `callouts`.
+- `label`: `false` tek bort den automatiske etiketten for delen; set han heller med `callouts`. `label_offset [dx, dy]` flyttar han i pt. Leiaren peikar på midten av delen der han er teikna.
 - `line`: `dashed`, `arrow` eller `none`. Standard er stipla for beslag og pil for andre delar. Med `none` teiknar du pila sjølv med `arrows`, slik at ho endar ved grensesnittet.
 
 **Sidetypar** (`type`):
 
 | Type | Felt |
 | --- | --- |
-| `cover` | `title`, `view`, `scene` |
+| `cover` | `title`, `view`, `scene`, `inset_pt` (luft på kvar side av figuren, standard 40) |
 | `inventory` | `parts` (standard: alle som ikkje er beslag), `cols`, `proportional` (storleik etter verkeleg storleik, standard av) |
-| `hardware` | `parts` (standard: alle beslag), `cols`, `proportional` (storleik etter verkeleg storleik, standard på) |
+| `hardware` | `parts` (standard: alle beslag), `cols`, `row_height`, `proportional` (storleik etter verkeleg storleik, standard på), `centred` (IKEA-oppsett: figur i midten, mengd under, bokstav lita ved sida, ingen liner) |
 | `exploded` | `view`, `scene` med `explode` på delane, `inset {scene, view, multiplier}`, `all_instances` |
-| `step` | `title`, `icons` (`lim`, `snu`, `ok`, `atvaring`, `klikk`, `lodd`, `klokke`, `vater`, `spray`), `figures`, `flow` (`down`/`right`), `hardware` (standard: talt frå nye beslag), `note`, `warning`, `n` (`false` gir side utan stegnummer, til port, kontroll og bakside) |
+| `step` | `title`, `icons` (`lim`, `snu`, `ok`, `atvaring`, `klikk`, `lodd`, `klokke`, `vater`, `spray`), `figures`, `flow` (`down`/`right`), `hardware` (standard: talt frå nye beslag), `note`, `warning`, `icon_text` (kort tal ved piktogramma, t.d. «24 h»), `flow_arrow` (`false` tek bort pila mellom figurane), `n` (`false` gir side utan stegnummer, til port, kontroll og bakside) |
 | `steps` | `steps` (to `step`-oppføringar som deler sida, over kvarandre), `split` (delen av høgda det øvste får, standard 0,5) |
 | `warnings` | `items`, `icons` |
 
-Ein figur i `step` har `view`, `scene`, `zoom`, `centre` og `span` (fast utsnitt i mm, same for alle figurane i ein sekvens gir same skala; delar utanfor blir skorne av), `callouts [{part, point, offset}]`, `arrows [[a, b]]`, `texts [{point, text, offset, size}]` (mål og korte merke i figuren, t.d. «242 mm»), `labels` (av med `false`), `multiplier` (t.d. `"x2"`), `detail {centre, span, pos, label, scene, r}` for ei forstørringsboble (`pos` er `right`, `left`, `topright` eller `[fx, fy]`, brøkdel av figurboksen frå nedre venstre hjørne) og `glas [[x, y, z]]` for to skrå parallelle strekar på glas eller klar plast.
+Ein figur i `step` har `view`, `scene`, `zoom`, `centre` og `span` (fast utsnitt i mm, same for alle figurane i ein sekvens gir same skala; delar utanfor blir skorne av), `callouts [{part, point, offset}]`, `arrows [[a, b]]`, `texts [{point, text, offset, size}]` (mål og korte merke i figuren, t.d. «242 mm»), `labels` (av med `false`), `multiplier` (t.d. `"x2"`; `multiplier_text: false` tel utan å skrive), `detail {centre, span, pos, label, scene, r, qty, letter}` (eller ei liste av dei) for ei forstørringsboble med kile frå staden; `qty` og `letter` set mengda på ringen oppe til venstre (`pos` er `right`, `left`, `topright` eller `[fx, fy]`, brøkdel av figurboksen frå nedre venstre hjørne) og `glas [[x, y, z]]` for to skrå parallelle strekar på glas eller klar plast.
 
 ## Avgrensingar
 

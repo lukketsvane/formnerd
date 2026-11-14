@@ -119,7 +119,10 @@ Lag `P/rettleiing/` (eller `manual/`) med PDF, `sider/side-NN.png`, kontaktark, 
 ## Kjende feil frå tidlegare manualar
 
 - **Luft og setningar**: eitt lite steg per side, ein figur som fyller halve sida og ei forklarande setning under. Ruta M03 hadde 18 slike sider. M04 fekk 10 ved å setje to steg på kvar side, la mål stå som tal i figuren (`texts`) og byte setningar mot piktogram (`lim`, `vater`, `klokke`, `spray`). Det som ikkje kan teiknast, høyrer heime i README.
-- **Beslag utan boble**: ein skrue på 20 mm forsvinn i ein figur av heile produktet. IKEA viser han stor i ei boble ved staden. Bruk `detail` med eigen `scene` der skruen står rett over holet.
+- **Beslag utan boble**: ein skrue på 20 mm forsvinn i ein figur av heile produktet. IKEA viser han stor i ei boble ved staden, med mengda på ringen. Bruk `detail` med eigen `scene` der skruen står rett over holet, og `qty` og `letter`. Slå av den lause mengdteksten i hovudfiguren med `label: false`.
+- **Beslag som glatte sylindrar**: ein skrue utan gjenger og spor ser ut som ein pinne. Lag beslaga med gjenger og spor (sjå `skrue()` i `lag_delar.py` i Ruta-heftet, CadQuery) og teikn alle med hovudet opp på beslagsida (`centred: true`).
+- **Delballongar overalt**: sirkla delnummer med leiar på kvar del i kvart steg ser ut som ei teknisk teikning. Set `label: false` der forma er eintydig, og `fill: false` på store flater.
+- **Dommarpanel**: eit eige blikk er ikkje nok. Tre dommarar som kvar samanlikna Ruta M04 med ein ekte manual (MOSSJÖN, PAX, SUNNERSTA) gav 6 av 10 og fann dei same fire tinga. Rendre referansesidene til PNG og la dommarane lese både dei og våre.
 - **Katalogrytme**: overskrift, seksjonsnamn, undertittel, biletekst og avsnitt på kvar side. R04 gjekk frå 26 til 17 sider ved å fjerne dette og slå saman like låsesteg.
 - **Innhaldsliste og teknisk ingress** på framsida eller side 2. IKEA har ingen av delane.
 - **Flytande detaljutsnitt** utan heil figur og leiar.
