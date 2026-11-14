@@ -32,7 +32,7 @@ Alle stiar er relative til spesifikasjonsfila. Alle delar må liggje i same mont
 }
 ```
 
-**Stil.** `line` er strekbreidd i pikslar på 2400 px-rasteret (streken blir om lag `line` px etter nedskalering til 1200 px). Med `line_pt` (t.d. 0,75) vel byggjaren `line` per figur og boble slik at streken blir om lag så mange pt i ferdig storleik; `rapport.json` viser `strek_pt` per figur. Desse nøklane har standardverdiar som gir same utsjånad som før: `steg_pt` (44), `mengd_pt` (13, mengd ved handlinga), `mengd_fyrst` (`false`: «Ex4»; `true`: «4x E»), `tittel_pt` (30) og `tittel_feit` (`false`) på framsida, `sidetal_pt` (10), `del_pt` (13, nummer i sirkel), `lett_pt` (leiarar, stipla aksar og bobleleiar; `null` gir 0,7/1,0/0,9 pt), `ramme` (`true`, sideramme) og `beslagkolonne` (`true`). Stilarket i skillen `ikea-rettleiing` gir verdiane som matchar IKEA-referansane.
+**Stil.** `line` er strekbreidd i pikslar på 2400 px-rasteret (streken blir om lag `line` px etter nedskalering til 1200 px). Med `line_pt` (t.d. 0,75) vel byggjaren `line` per figur, boble og miniatyr slik at streken blir om lag så mange pt i ferdig storleik; `rapport.json` viser `strek_pt` per figur. Desse nøklane har standardverdiar som gir same utsjånad som før: `steg_pt` (44), `mengd_pt` (13, mengd ved handlinga), `mengd_fyrst` (`false`: «Ex4»; `true`: «4x E», og «4x» på del- og beslagsida), `tittel_pt` (30) og `tittel_feit` (`false`) på framsida, `sidetal_pt` (10), `del_pt` (13, nummer i sirkel), `lett_pt` (leiarar, stipla aksar og bobleleiar; `null` gir 0,7/1,0/0,9 pt), `ramme` (`true`, sideramme) og `beslagkolonne` (`true`). Stilarket i skillen `ikea-rettleiing` gir verdiane som matchar IKEA-referansane.
 
 **Delar.** `mesh` er éi fil eller ei liste som blir slått saman. `primitive` er `cylinder {r, h}` eller `box [x, y, z]`, sentrert i origo med valfri `axis`. `kind: "hardware"` gir bokstav og beslagkolonne, alt anna gir nummer. `crease` (grader) og `min_px` (minste strek i pikslar) per del dempar krot på tette Tripo-flater.
 
@@ -40,6 +40,7 @@ Alle stiar er relative til spesifikasjonsfila. Alle delar må liggje i same mont
 
 - `role`: `context` (kvit, standard), `new` (grå fyll, flytt med `explode`, med pil eller stipla line), `ghost` (gjennomsiktig grå kontur, for delar som elles skjuler innmaten) eller `exploded` (berre forskyving).
 - `at`: liste av posisjonar, éin per eksemplar.
+- `label`: `false` tek bort den automatiske etiketten for delen; set han heller med `callouts`.
 - `line`: `dashed`, `arrow` eller `none`. Standard er stipla for beslag og pil for andre delar. Med `none` teiknar du pila sjølv med `arrows`, slik at ho endar ved grensesnittet.
 
 **Sidetypar** (`type`):
@@ -47,13 +48,13 @@ Alle stiar er relative til spesifikasjonsfila. Alle delar må liggje i same mont
 | Type | Felt |
 | --- | --- |
 | `cover` | `title`, `view`, `scene` |
-| `inventory` | `parts` (standard: alle som ikkje er beslag), `cols` |
+| `inventory` | `parts` (standard: alle som ikkje er beslag), `cols`, `proportional` (storleik etter verkeleg storleik, standard av) |
 | `hardware` | `parts` (standard: alle beslag), `cols`, `proportional` (storleik etter verkeleg storleik, standard på) |
 | `exploded` | `view`, `scene` med `explode` på delane, `inset {scene, view, multiplier}`, `all_instances` |
-| `step` | `title`, `icons` (`lim`, `snu`, `ok`, `atvaring`, `klikk`), `figures`, `flow` (`down`/`right`), `hardware` (standard: talt frå nye beslag), `note`, `warning`, `n` (`false` gir side utan stegnummer, til port, kontroll og bakside) |
+| `step` | `title`, `icons` (`lim`, `snu`, `ok`, `atvaring`, `klikk`, `lodd`), `figures`, `flow` (`down`/`right`), `hardware` (standard: talt frå nye beslag), `note`, `warning`, `n` (`false` gir side utan stegnummer, til port, kontroll og bakside) |
 | `warnings` | `items`, `icons` |
 
-Ein figur i `step` har `view`, `scene`, `zoom`, `callouts [{part, point, offset}]`, `arrows [[a, b]]`, `labels` (av med `false`), `multiplier` (t.d. `"x2"`), `detail {centre, span, pos, label, scene, r}` for ei forstørringsboble og `glas [[x, y, z]]` for to skrå parallelle strekar på glas eller klar plast.
+Ein figur i `step` har `view`, `scene`, `zoom`, `centre` og `span` (fast utsnitt i mm, same for alle figurane i ein sekvens gir same skala; delar utanfor blir skorne av), `callouts [{part, point, offset}]`, `arrows [[a, b]]`, `labels` (av med `false`), `multiplier` (t.d. `"x2"`), `detail {centre, span, pos, label, scene, r}` for ei forstørringsboble (`pos` er `right`, `left`, `topright` eller `[fx, fy]`, brøkdel av figurboksen frå nedre venstre hjørne) og `glas [[x, y, z]]` for to skrå parallelle strekar på glas eller klar plast.
 
 ## Avgrensingar
 

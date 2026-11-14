@@ -154,13 +154,17 @@ class Dok:
             self.reg("tekst", x0, y - size * 0.22, x0 + w, y + size * 0.78)
         return w
 
-    def bilete(self, im, boks, crop=True, reg=True):
-        cb = beskjer(im) if crop else (0, 0, im.width, im.height)
+    def bilete(self, im, boks, crop=True, reg=True, fast=False):
+        """fast: skala og plassering frå heile biletet (fast utsnitt), men berre innhaldet blir teikna."""
+        cb = beskjer(im) if crop or fast else (0, 0, im.width, im.height)
         sub = im.crop(cb)
         x, y, w, h = boks
-        s = min(w / sub.width, h / sub.height)
+        s = min(w / im.width, h / im.height) if fast else min(w / sub.width, h / sub.height)
         dw, dh = sub.width * s, sub.height * s
-        dx, dy = x + (w - dw) / 2, y + (h - dh) / 2
+        if fast:
+            dx, dy = x + (w - im.width * s) / 2 + cb[0] * s, y + (h - im.height * s) / 2 + (im.height - cb[3]) * s
+        else:
+            dx, dy = x + (w - dw) / 2, y + (h - dh) / 2
         self.c.drawImage(ImageReader(sub), dx, dy, dw, dh)
         if reg:
             self.reg("figur", dx, dy, dx + dw, dy + dh)
@@ -227,7 +231,8 @@ class Dok:
     def merke(self, ident, mengd, x, y, size=16):
         r = self.stil["del_pt"]
         self.sirkel(ident, x + r, y + 5, r, r if len(ident) < 3 else r * 10 / 13)
-        return 2 * r + 4 + (self.tekst(f"x{mengd}", x + 2 * r + 4, y, size) if mengd is not None else 0)
+        tal = f"{mengd}x" if self.stil.get("mengd_fyrst") else f"x{mengd}"
+        return 2 * r + 4 + (self.tekst(tal, x + 2 * r + 4, y, size) if mengd is not None else 0)
 
     def leiar(self, ident, mål, ved):
         a, p = np.asarray(ved, float), np.asarray(mål, float)
@@ -284,6 +289,11 @@ class Dok:
             c.line(x + 13 * s, y + 9 * s, x + 23 * s, y + 22 * s)
         elif kind == "klikk":
             self.tekst("klikk!", x, y + 8 * s, 13 * s, True, reg=False)
+        elif kind == "lodd":
+            c.roundRect(x, y + 10 * s, 20 * s, 8 * s, 3 * s, fill=1, stroke=1)      # handtak
+            c.line(x + 20 * s, y + 14 * s, x + 31 * s, y + 14 * s)                     # skaft
+            c.line(x + 31 * s, y + 14 * s, x + 37 * s, y + 7 * s)                      # spiss
+            c.line(x, y + 14 * s, x - 5 * s, y + 5 * s)                               # leidning
 
     def ny_side(self, tittel):
         m = self.stil["margin"]
@@ -374,19 +384,29 @@ class Byggjar:
         mørk = float((np.asarray(im.convert("L")) < 200).mean())
         return im, projektor(cam, sk), bev, roller, delnamn, {"mappe": mappe, "mørk_del": round(mørk, 4)}
 
-    def mini(self, namn):
-        if namn not in self.miniar:
+    def mini(self, namn, boks=None):
+        """Med style.line_pt og boks (breidd, høgd i pt) blir streken om lag line_pt også i miniatyrane."""
+        nøkkel = (namn, None if boks is None else tuple(round(v, 1) for v in boks))
+        if nøkkel not in self.miniar:
             p = self.del_(namn)
             self.delar.get(namn)
             mappe, cam = render([(self.delar.glb[namn], (0, 0, 0))], self.view(p.get("thumb_view", "iso")), self.work)
-            im, _ = linjer(mappe, {}, {**self.stil, "line": 6}, {1: p["crease"]} if "crease" in p else None, {1: p["min_px"]} if "min_px" in p else None)
-            self.miniar[namn] = im.crop(beskjer(im, 10))
-        return self.miniar[namn]
+            arg = ({1: p["crease"]} if "crease" in p else None, {1: p["min_px"]} if "min_px" in p else None)
+            im, _ = linjer(mappe, {}, {**self.stil, "line": 6}, *arg)
+            if self.stil.get("line_pt") and boks:
+                cb = beskjer(im, 10)
+                k = max(1, int(round(self.stil["line_pt"] / min(boks[0] / (cb[2] - cb[0]), boks[1] / (cb[3] - cb[1])))))
+                if k != 6:
+                    im, _ = linjer(mappe, {}, {**self.stil, "line": k}, *arg)
+            self.miniar[nøkkel] = im.crop(beskjer(im, 10))
+        return self.miniar[nøkkel]
 
     def scenefigur(self, fig, boks, side):
         d = self.dok
-        im, P3, bev, roller, delnamn, info = self.figur(fig["scene"], fig.get("view", side.get("view", "iso")), zoom=fig.get("zoom", 1.05), boks=boks)
-        tilpdf, ramme = d.bilete(im, boks)
+        fast = fig.get("centre") is not None                     # fast utsnitt: ingen autobeskjering, så skalaen blir lik i sekvensen
+        im, P3, bev, roller, delnamn, info = self.figur(fig["scene"], fig.get("view", side.get("view", "iso")), fig.get("centre"), fig.get("span"),
+                                                        zoom=fig.get("zoom", 1.05), boks=boks, krop=not fast)
+        tilpdf, ramme = d.bilete(im, boks, fast=fast)
         P = lambda w: tilpdf(P3(w))
         grupper = {}
         for namn, frå, til, stil, flytt in bev:
@@ -399,8 +419,9 @@ class Byggjar:
             lo, hi = self.delar.grenser[namn]
             hjørne = np.array([P(np.array([x, y, z]) + flytt) for x in (lo[0], hi[0]) for y in (lo[1], hi[1]) for z in (lo[2], hi[2])])
             grupper.setdefault(namn, []).append(hjørne)
+        utan = {s["part"] for s in fig["scene"] if s.get("label") is False}
         for namn, hjørnelister in grupper.items():
-            if fig.get("labels", True) is False:
+            if fig.get("labels", True) is False or namn in utan:
                 continue
             h = max(hjørnelister, key=lambda q: q[:, 1].max())
             høgre, midt = h[:, 0].max(), (h[:, 1].min() + h[:, 1].max()) / 2
@@ -433,7 +454,9 @@ class Byggjar:
         im, _, _, _, _, _ = self.figur(det.get("scene", fig["scene"]), fig.get("view", side.get("view", "iso")), det["centre"], det["span"],
                                        boks=(0, 0, 2 * r, 2 * r), krop=False)
         x, y, w, h = boks
-        cx, cy = {"right": (x + w - r - 4, y + r + 4), "left": (x + r + 4, y + r + 4), "topright": (x + w - r - 4, y + h - r - 4)}[det.get("pos", "right")]
+        pos = det.get("pos", "right")
+        cx, cy = (x + pos[0] * w, y + pos[1] * h) if isinstance(pos, list) else \
+            {"right": (x + w - r - 4, y + r + 4), "left": (x + r + 4, y + r + 4), "topright": (x + w - r - 4, y + h - r - 4)}[pos]
         src = P(det["centre"])
         c = d.c
         c.setStrokeGray(0)
@@ -474,7 +497,8 @@ class Byggjar:
         d = self.dok
         m = self.stil["margin"]
         namn = side.get("parts") or [k for k, p in self.spec["parts"].items() if p.get("kind") != "hardware"]
-        self.rutenett(namn, side.get("cols"), lambda k, x, y, cw: d.merke(self.ident(k), self.del_(k).get("qty", 1), x, y))
+        self.rutenett(namn, side.get("cols"), lambda k, x, y, cw: d.merke(self.ident(k), self.del_(k).get("qty", 1), x, y),
+                      proporsjonal=side.get("proportional", False))
         d.ny_side(side.get("title", "Delar"))
 
     def hardware(self, side):
@@ -501,8 +525,9 @@ class Byggjar:
             f = min(1.0, max(0.3, math.sqrt(self.delar.storleik[k] / størst))) if side.get("proportional", True) else 1.0
             iw, ih = (cw - 20) * f, (rh - 80) * f
             base = y - rh + 22
-            d.bilete(self.mini(k), (x + 8, base + 24, iw, ih))
-            d.tekst(f"x{self.del_(k).get('qty', 1)}", x + 8, base, 18)
+            d.bilete(self.mini(k, (iw, ih)), (x + 8, base + 24, iw, ih))
+            q = self.del_(k).get('qty', 1)
+            d.tekst(f"{q}x" if self.stil["mengd_fyrst"] else f"x{q}", x + 8, base, 18)
         d.ny_side(side.get("title", "Beslag"))
 
     def rutenett(self, namn, cols, topp, under=None, linjer=False, proporsjonal=False):
@@ -529,7 +554,7 @@ class Byggjar:
                     self.delar.get(n_)
                 f = min(1.0, max(0.3, math.sqrt(self.delar.storleik[k] / max(self.delar.storleik[n_] for n_ in namn))))
                 bx, by, bw, bh = bx, by, bw * f, bh * f
-            d.bilete(self.mini(k), (bx, by, bw, bh))
+            d.bilete(self.mini(k, (bw, bh)), (bx, by, bw, bh))
             if under:
                 under(k, x + 4, y - ch + 12, cw)
         if linjer:
@@ -602,7 +627,7 @@ class Byggjar:
                 d.c.setLineWidth(1)
                 d.c.rect(d.W - m - sb, y - bh, sb, bh, fill=0, stroke=1)
                 d.tekst(self.ident(k), d.W - m - sb + 6, y - 18, 15)
-                d.bilete(self.mini(k), (d.W - m - sb + 14, y - bh + 22, sb - 28, bh - 44))
+                d.bilete(self.mini(k, (sb - 28, bh - 44)), (d.W - m - sb + 14, y - bh + 22, sb - 28, bh - 44))
                 d.tekst(f"x{v}", d.W - m - 8, y - bh + 8, 13, juster="r")
                 y -= bh
         figs = side["figures"]
@@ -658,6 +683,9 @@ class Byggjar:
         pdf = f"{self.ut}/rettleiing.pdf"
         os.makedirs(f"{self.ut}/sider", exist_ok=True)
         subprocess.run(["pdftoppm", "-r", "110", "-png", pdf, f"{self.ut}/sider/side"], check=True)
+        for f in os.listdir(f"{self.ut}/sider"):                 # pdftoppm skalerer kvitt i store bilete ned til 254: gjer det kvitt att
+            if f.endswith(".png"):
+                Image.open(f"{self.ut}/sider/{f}").convert("RGB").point(lambda v: 255 if v >= 250 else v).save(f"{self.ut}/sider/{f}")
         bom = {k: {"i_steg": self.brukt.get(k, 0), "i_delliste": p.get("qty", 1)} for k, p in self.spec["parts"].items() if p.get("kind") == "hardware"}
         åtvaringar = [f"{k}: {v['i_steg']} brukt i steg, {v['i_delliste']} i dellista" for k, v in bom.items() if v["i_steg"] != v["i_delliste"]]
         åtvaringar += [f"side {r['side']}: steget har ingen ny del" for r in self.rapport if r.get("nye_delar") == 0]
