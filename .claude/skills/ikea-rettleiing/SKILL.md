@@ -51,7 +51,7 @@ Standard sidefølgje, tilpassa objektet:
 3. **Beslag**: bokstav eller familie-ID over, mengd under, i reell storleik der det går.
 4. **Verktøy og førebuing**, berre dersom det trengst. Åtvaringar der risikoen er, ikkje på ei generell side.
 5. **Eksplodert oversikt**, når delane har eit samanheng som ikkje er openbert.
-6. **Steg**: éi hovudhandling per steg. To påfølgjande handlingar på same objekt kan dele side (plassér, så lås).
+6. **Steg**: éi hovudhandling per steg, men to steg per side er det vanlege hjå IKEA (`type: "steps"` i `bygg.py`). Eitt steg åleine på ei side er for det som treng plassen: heile produktet, eller ei stor detaljboble.
 7. **Kontroll**: eitt stort ferdigbilete og ei svært kort sjekkliste.
 8. **Opne og feil**, om produktet skal kunne takast frå kvarandre.
 9. **Bakside**: ferdig produkt frå ein annan nyttig vinkel, revisjon og kjeldelenkje.
@@ -97,7 +97,7 @@ Målt i MILSBO, PAX og MOSSJÖN (A4 595,28 × 841,89 pt). Bruk tala i faktisk A4
 | Produktnamn på framsida | 90 til 140 pt, tilpassa lengda på namnet |
 | Fargar | svart strek, kvit botn, éin lys grå fyll for nye delar og ein mørkare grå for markering |
 
-Eigne tidlegare forsøk med 0,32/0,52 pt strek var for tynne; 0,5/0,75 pt var vedtaket som fungerte. Kontroller at tjukkare strek ikkje gjer tette detaljar (kretskort, gjenger) svarte. `bygg.py` teiknar strek som raster, og fast `style.line` gir om lag `line × figurbreidd / 1200` pt (målt: standardverdien 3 gir om lag 1,5 pt). Set difor `style.line_pt` til 0,75, så vel byggjaren strekbreidda per figur og boble; `rapport.json` viser `strek_pt`. Set òg `steg_pt` 32, `mengd_pt` 18, `mengd_fyrst` true, `tittel_pt` 90 eller meir med `tittel_feit` true, `sidetal_pt` 9, `del_pt` 7,5, `lett_pt` 0,5, `ramme` false og `beslagkolonne` false; standardverdiane er frå før målinga. Port, kontroll og bakside er `step` med `n: false`, og glas er figurfeltet `glas`.
+Eigne tidlegare forsøk med 0,32/0,52 pt strek var for tynne; 0,5/0,75 pt var vedtaket som fungerte. Kontroller at tjukkare strek ikkje gjer tette detaljar (kretskort, gjenger) svarte. `bygg.py` teiknar strek som raster, og fast `style.line` gir om lag `line × figurbreidd / 1200` pt (målt: standardverdien 3 gir om lag 1,5 pt). Set difor `style.line_pt` til 0,75, så vel byggjaren strekbreidda per figur og boble; `rapport.json` viser `strek_pt`. Set òg `steg_pt` 32, `mengd_pt` 18, `mengd_fyrst` true, `tittel_pt` 90 eller meir med `tittel_feit` true, `sidetal_pt` 9, `del_pt` 7,5, `lett_pt` 0,5, `ramme` false og `beslagkolonne` false; standardverdiane er frå før målinga. Port, kontroll og bakside er `step` med `n: false`, og glas er figurfeltet `glas`. Set `kontur` 1,5 og `svarting` 1,5: utan dei blir streken jamtjukk og grå, og sida verkar bleik ved sida av ei IKEA-side sjølv om målet i pt er rett.
 
 ### 6. Kontroll før levering
 
@@ -118,6 +118,8 @@ Lag `P/rettleiing/` (eller `manual/`) med PDF, `sider/side-NN.png`, kontaktark, 
 
 ## Kjende feil frå tidlegare manualar
 
+- **Luft og setningar**: eitt lite steg per side, ein figur som fyller halve sida og ei forklarande setning under. Ruta M03 hadde 18 slike sider. M04 fekk 10 ved å setje to steg på kvar side, la mål stå som tal i figuren (`texts`) og byte setningar mot piktogram (`lim`, `vater`, `klokke`, `spray`). Det som ikkje kan teiknast, høyrer heime i README.
+- **Beslag utan boble**: ein skrue på 20 mm forsvinn i ein figur av heile produktet. IKEA viser han stor i ei boble ved staden. Bruk `detail` med eigen `scene` der skruen står rett over holet.
 - **Katalogrytme**: overskrift, seksjonsnamn, undertittel, biletekst og avsnitt på kvar side. R04 gjekk frå 26 til 17 sider ved å fjerne dette og slå saman like låsesteg.
 - **Innhaldsliste og teknisk ingress** på framsida eller side 2. IKEA har ingen av delane.
 - **Flytande detaljutsnitt** utan heil figur og leiar.
