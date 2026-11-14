@@ -328,7 +328,7 @@ class Byggjar:
         return self.spec["parts"][namn]
 
     def ident(self, namn):
-        p = self.del_(namn)
+        p = self.del_(self.del_(namn).get("counts_as", namn))
         return p.get("letter") or str(p.get("id", namn))
 
     def objekt(self, scene):
@@ -612,7 +612,8 @@ class Byggjar:
             for fig in side["figures"]:
                 for s in fig["scene"]:
                     if s.get("role") == "new" and self.del_(s["part"]).get("kind") == "hardware":
-                        tel[s["part"]] = tel.get(s["part"], 0) + len(s.get("at") or [0]) * int(str(fig.get("multiplier", "x1")).lstrip("x") or 1)
+                        k = self.del_(s["part"]).get("counts_as", s["part"])
+                        tel[k] = tel.get(k, 0) + len(s.get("at") or [0]) * int(str(fig.get("multiplier", "x1")).lstrip("x") or 1)
             beslag = [[k, v] for k, v in tel.items()]
         for k, v in beslag:
             self.brukt[k] = self.brukt.get(k, 0) + v
@@ -686,7 +687,7 @@ class Byggjar:
         for f in os.listdir(f"{self.ut}/sider"):                 # pdftoppm skalerer kvitt i store bilete ned til 254: gjer det kvitt att
             if f.endswith(".png"):
                 Image.open(f"{self.ut}/sider/{f}").convert("RGB").point(lambda v: 255 if v >= 250 else v).save(f"{self.ut}/sider/{f}")
-        bom = {k: {"i_steg": self.brukt.get(k, 0), "i_delliste": p.get("qty", 1)} for k, p in self.spec["parts"].items() if p.get("kind") == "hardware"}
+        bom = {k: {"i_steg": self.brukt.get(k, 0), "i_delliste": p.get("qty", 1)} for k, p in self.spec["parts"].items() if p.get("kind") == "hardware" and "counts_as" not in p}
         åtvaringar = [f"{k}: {v['i_steg']} brukt i steg, {v['i_delliste']} i dellista" for k, v in bom.items() if v["i_steg"] != v["i_delliste"]]
         åtvaringar += [f"side {r['side']}: steget har ingen ny del" for r in self.rapport if r.get("nye_delar") == 0]
         åtvaringar += [f"side {r['side']}: tom figur" for r in self.rapport for f in r.get("figurar", [r]) if f.get("mørk_del", 1) < 0.002]
