@@ -71,11 +71,11 @@ Start frå `verktoy/ikea/eksempel/entropi-a3.json`. Sidetypar: `cover`, `invento
 
 Reglane som gjer figurane rette:
 
-- **Same kamera og skala** gjennom ein samanhengande sekvens. Byt berre synsretning for å vise ei skjult handling, og vis vendinga med ein liten vendingsfigur eller pil først.
+- **Same kamera og skala** gjennom ein samanhengande sekvens. Byt berre synsretning for å vise ei skjult handling, og vis vendinga med ein liten vendingsfigur eller pil først. I `bygg.py` gir same `centre` og `span` på alle figurane i sekvensen same skala; rekn dei frå delane, ikkje for hand.
 - **Ny del er grå, resten kvitt.** Lesaren ser kva som kjem til utan tekst. Unngå nesten kvite, blanke delar mot kvit bakgrunn; gi dei lys grå fyll og kontur.
 - **Rørslepila** er tjukk, kort, har éi retning og endar ved det faktiske grensesnittet.
 - **Innføringsaksen** for beslag er ei fin stipla line, skild frå rørslepila.
-- **Detaljbobla** er knytt til staden: ein liten heil figur, ein ring rundt festet, éin samanhengande leiar til bobla. Leiaren er open mot bobla, treffer rett skøyt og går klar av tekst. Ei boble som flyt åleine er ein feil.
+- **Detaljbobla** er knytt til staden: ein liten heil figur, ein ring rundt festet, éin samanhengande leiar til bobla. Leiaren er open mot bobla, treffer rett skøyt og går klar av tekst. Ei boble som flyt åleine er ein feil. Den automatiske etiketten sit ved kanten av boksen til delen og bommar på lange, skrå delar: set då `label: false` og ein `callout` med punkt på delen.
 - **Sluttstillinga** blir vist etter kvar låsing, i same vinkel.
 - **Rett og feil** blir vist som eit par med kryss på det feile, ikkje forklart i ord.
 - **Glas** er to skrå parallelle strekar.
